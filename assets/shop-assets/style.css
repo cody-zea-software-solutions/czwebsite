@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: 'DM Sans', sans-serif;
+} */
+
+/* Default Desktop Layout */
+.left {
+    width: 67%;
+    background-color: #F8F8F8;
+    min-height: 100vh;
+}
+
+.right {
+    width: 33%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+
+.cb {
+    border-radius: 25px !important;
+    padding: 10px 20px !important;
+    background: transparent !important;
+    border: 1px solid !important;
+    border-color: #000000 !important;
+}
+
+.cb:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+    transform: translateY(-5px) !important;
+}
+
+/* Click Effect */
+.cb-active {
+    border-radius: 25px !important;
+    padding: 10px 20px !important;
+    background: transparent !important;
+    border: 1px solid !important;
+    background-color: #000000 !important;
+    color: white !important;
+    border-color: #000000 !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card .widget-49-meeting-info p {
+    margin: 0;
+    padding: 2px 0; /* Adds minimal space */
+    line-height: 1.1;
+}
+
+@media (min-width: 992px) {
+    /* Initially hide the "Read More" link */
+.card .custom-small-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block; /* Ensure it's always in the DOM */
+}
+
+/* Show the "Read More" link with animation on hover */
+.card:hover .custom-small-text {
+    max-height: 50px; /* Adjust this value based on the content height */
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.card .btn-warning {
+    position: absolute !important; /* Position it relative to the card */
+    top: 0px !important; /* Distance from the top */
+    right: -20px !important;
+    width: 40px;
+    /* Set the width */
+    height: 40px;
+    /* Set the height to the same as width */
+    font-size: 24px;
+    /* Adjust icon size if needed */
+    padding-bottom: 12px;
+    display: flex;
+    /* Flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    top: 50%;
+    /* Vertically center the button */
+    transform: translateY(-50%);
+    /* Fine-tune vertical centering */
+    background-color: #ffc720;
+    /* Original button color */
+    color: #000;
+    /* Original text color */
+    border: none;
+    /* Remove border */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+}
+
+}
+
+/* Mobile & Tablet View */
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .right {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #121212;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .drag-handle {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        user-select: none;
+    }
+
+    .right-content {
+        width: 100%;
+        padding: 20px;
+        background-color: #121212;
+        display: none;
+        overflow-y: auto;
+        flex-grow: 1;
+    }
+
+    .right.open {
+        height: 80vh;
+    }
+
+    .right.open .right-content {
+        display: block;
+    }
+
+    .card .btn-warning {
+        width: 40px;
+        /* Set the width */
+        height: 40px;
+        /* Set the height to the same as width */
+        font-size: 24px;
+        /* Adjust icon size if needed */
+        padding-bottom: 12px;
+        display: flex;
+        /* Flexbox for centering */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        top: 50%;
+        /* Vertically center the button */
+        transform: translateY(-50%);
+        /* Fine-tune vertical centering */
+        background-color: #ffc720;
+        /* Original button color */
+        color: #000;
+        /* Original text color */
+        border: none;
+        /* Remove border */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        /* Smooth transition */
+    }
+
+}
+
+.custom-small-text {
+    font-size: 0.75rem;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px !important;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(95, 95, 95, 0.1);
+}
+
+.card-header {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card .btn-warning:hover {
+    background-color: #000 !important;
+    /* Change button color on hover */
+    color: #fff !important;
+    /* Change text color on hover */
+}
+
+
+/* Optional: Style the "Inquired" button */
+.card .btn-secondary {
+    width: auto;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.div-hover {
+    cursor: pointer;
+    /* Change the cursor to a hand on hover */
+}
+
+/* Fullscreen overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Make sure it's above all other content */
+}
+
+/* Centering the spinner and text */
+.spinner-container {
+    text-align: center;
+}
