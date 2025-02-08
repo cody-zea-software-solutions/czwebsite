@@ -108,7 +108,7 @@
                         <ul class="sub-menu">
                             <li><a href="home-seo-agency.html">Home SEO Agency</a></li>
                             <li><a href="home-digital-agency.html">Home Digital Agency</a></li>
-                            <li><a href="home-seo-analysis.html">Home SEO Analysis Agency</a></li>
+                            <li><a href="index.php">Home SEO Analysis Agency</a></li>
                             <li><a href="home-seo-marketing.html">Home SEO Marketing</a></li>
 
                         </ul>
@@ -177,7 +177,7 @@
                                         <ul class="sub-menu">
                                             <li><a href="home-seo-agency.html">Home SEO Agency</a></li>
                                             <li><a href="home-digital-agency.html">Home Digital Agency</a></li>
-                                            <li><a href="home-seo-analysis.html">Home SEO Analysis Agency</a></li>
+                                            <li><a href="index.php">Home SEO Analysis Agency</a></li>
                                             <li><a href="home-seo-marketing.html">Home SEO Marketing</a></li>
 
                                         </ul>

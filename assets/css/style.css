@@ -86,7 +86,7 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #FED91F;
+  --theme-color: #FF5C35;
   --theme-color2: #F93E5E;
   --title-color: #121212;
   --body-color: #797E88;
@@ -133,6 +133,18 @@ body {
 
 body.theme-bg {
   background-color: #F0EFE9;
+}
+
+.text-b{
+  color: #413124 !important;
+}
+
+.text-o{
+  color: #ff7300 !important;
+}
+
+.header-top-color{
+  background-color: #FF5C35 !important;
 }
 
 iframe {
@@ -2732,7 +2744,7 @@ textarea.is-invalid {
 }
 
 .th-btn.blue-btn {
-  background-color: #6D2CF8;
+  background-color: #FF7300;
   color: var(--white-color);
 }
 
@@ -2840,6 +2852,16 @@ textarea.is-invalid {
 
 .icon-btn.th-radius {
   border-radius: 100px;
+}
+
+.header-text{
+  font-size: 30px !important;
+}
+
+.text-large{
+  font-weight: bold;
+  font-size: 100px !important;
+  line-height: 80px;
 }
 
 .play-btn {
@@ -3443,6 +3465,15 @@ textarea.is-invalid {
 @media (max-width: 1199px) {
   .sec-text2 {
     max-width: 100%;
+  }
+  .header-text{
+    font-size: 20px !important;
+  }
+  
+  .text-large{
+    font-weight: bold;
+    font-size: 80px !important;
+    line-height: 80px;
   }
 }
 
@@ -9205,6 +9236,10 @@ blockquote.has-very-dark-gray-color {
   /* Large devices */
 }
 
+.middle-box-icon{
+  background-color: #FF7300 !important;
+}
+
 @media (max-width: 1199px) {
   .wp-block-query .blog-single {
     padding: 25px;
@@ -10338,16 +10373,18 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 }
 
 .hero-3 .hero-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  margin-top: 200px;
   /* Medium Large devices */
   /* Large devices */
 }
 
+.bg-color{
+  background-color: #fffbf5 !important;
+}
+
 @media (max-width: 1299px) {
   .hero-3 .hero-img {
-    margin-right: -200px;
+    margin-top: 40px !important;
   }
 }
 
@@ -10394,14 +10431,25 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 }
 
 .hero-style3 {
-  padding: 346px 0 207px 0;
+  margin-top: 250px;
   /* Large devices */
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 991.98px) {
   .hero-style3 {
-    padding: 246px 0 0px 0;
-    text-align: center;
+      margin-top: 220px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-style3 {
+      margin-top: 150px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-style3 {
+      margin-top: 150px !important;
   }
 }
 
@@ -11777,12 +11825,6 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 .hero-7 .hero7-image .hero-img .hero7-shape.style7 {
   bottom: -7%;
   right: 15%;
-}
-
-@media (max-width: 480px) {
-  .hero-7 .hero7-image .hero-img .hero7-shape.style7 {
-    display: none;
-  }
 }
 
 .hero-7 .hero7-image .client-box2 {
