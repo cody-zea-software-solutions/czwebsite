@@ -134,6 +134,9 @@ body {
 body.theme-bg {
   background-color: #F0EFE9;
 }
+.cody-bg{
+  background-color: #FEF4EA !important;
+}
 
 .text-b{
   color: #413124 !important;
@@ -29144,6 +29147,9 @@ span.select2-selection.select2-selection--single:focus {
   .space-extra2-bottom {
     padding-bottom: 70px;
   }
+}
+.cody-text{
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
