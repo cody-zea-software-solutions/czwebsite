@@ -185,7 +185,7 @@
                                 </li>
                                 <li class="menu-item-has-children">
                                     <a href="#" class="text-b fw-semibold">Blogs</a>
-                                    <ul class="mega-menu" style="width: 1200px;">
+                                    <ul class="mega-menu" style="width: 1500px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
                                             <div class="col-12 col-lg-6 d-flex">

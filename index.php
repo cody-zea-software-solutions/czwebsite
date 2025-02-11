@@ -47,7 +47,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <!--==============================
 	    All CSS File
 	============================== -->
@@ -75,7 +77,7 @@
     <div class="th-hero-wrapper hero-3 mb-5 bg-color" id="hero">
         <div class="container px-md-5">
             <div class="row">
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-7">
                     <div class="hero-style3">
                         <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span>
                         <h6 class="hero-title text-ani-style3 text-b mt-4 header-text">Innovative Web, Software & App Solutions <div class="mt-3"></div> <span class="text-o text-large">Built for Your Success</span></h6>
@@ -86,9 +88,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-4 mt-5">
+                <div class="col-12 d-md-none d-lg-block col-lg-5 mt-5">
                     <div class="hero-img tilt-active">
-                        <img src="assets/img/hero/hero_3_1.svg" alt="Hero Image">
+                        <img src="assets/img/hero/hero_3_1.png" class="img-fluid w-100" alt="Hero Image">
                     </div>
                 </div>
             </div>
