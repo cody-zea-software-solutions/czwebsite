@@ -104,7 +104,7 @@ Version: 1.0.0
   --success-color: #28a745;
   --error-color: #dc3545;
   --th-border-color: #E0E0E0;
-  --title-font: "Outfit", serif;
+  --title-font:  "Outfit", serif;
   --body-font: "Outfit", serif;
   --body-font2: "DM Sans", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
@@ -131,9 +131,26 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+@font-face {
+  font-family: "sofia";
+  src: url("font/sofia.otf");
+}
 
+@font-face {
+  font-family: "Joan";
+  src: url("font/Joane-Light.ttf");
+}
+.text-black{
+  color: #000000 !important;
+}
+.font-jon{
+  font-family: "Joan";
+}
+.font-sofia{
+  font-family: "sofia";
+}
 body.theme-bg {
-  background-color: #F0EFE9;
+  background-color: #FEF4EA;
 }
 .cody-bg{
   background-color: #FEF4EA !important;
@@ -144,7 +161,10 @@ body.theme-bg {
 }
 
 .text-o{
-  color: #ff7300 !important;
+  color: #213343 !important;
+}
+.bg-orange{
+   background-color: #FF5C35 !important;
 }
 
 .header-top-color{
@@ -10383,7 +10403,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 }
 
 .bg-color{
-  background-color: #fffbf5 !important;
+  background-color: #FEF4EA !important;
 }
 
 @media (max-width: 1299px) {

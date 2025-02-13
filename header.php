@@ -220,9 +220,12 @@
                         <div class="header-button">
                             <button type="button" class="icon-btn th-radius searchBoxToggler"><i
                                     class="far fa-search text-b fw-semibold"></i></button>
-                            <a href="contact.html" class="th-btn style1 th-radius th-icon">Get A Quote <i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
+
                         </div>
+                        <!-- <div class="btn-group">
+                            <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started Now<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        </div> -->
                     </div>
                 </div>
             </div>

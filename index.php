@@ -40,19 +40,28 @@
 
 
     <!--==============================
-	  Google Fonts
-	============================== -->
+      Google Fonts
+    ============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <!--==============================
-	    All CSS File
-	============================== -->
+        All CSS File
+    ============================== -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -74,23 +83,27 @@
     <?php require_once "header.php"; ?>
 
     <!--============================== Hero Area ==============================-->
-    <div class="th-hero-wrapper hero-3 mb-5 bg-color" id="hero">
+    <div class="th-hero-wrapper hero-3 bg-color" id="hero">
         <div class="container px-md-5">
             <div class="row">
                 <div class="col-12 col-lg-7">
                     <div class="hero-style3">
                         <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span>
-                        <h6 class="hero-title text-ani-style3 text-b mt-4 header-text">Innovative Web, Software & App Solutions <div class="mt-3"></div> <span class="text-o text-large">Built for Your Success</span></h6>
-                        <p class="hero-text">At Codyzea, we craft customized digital solutions that empower your business. Whether it's a website, a mobile app, or software, we help you scale, optimize, and succeed in the digital world.</p>
+                        <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software & App
+                            Solutions <div class="mt-3"></div> <span class="text-o text-large font-jon text-black">Built
+                                for Your Success</span></h6>
+                        <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that empower
+                            your business. Whether it's a website, a mobile app, or software, we help you scale,
+                            optimize, and succeed in the digital world.</p>
                         <div class="btn-group">
-                            <a href="about.html" class="th-btn th-icon th-radius style1 ">Get Started Now<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                            <a href="contact.html" class="th-btn blue-btn style1 th-icon th-radius">Contact Us<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started Now<i
+                                    class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 d-md-none d-lg-block col-lg-5 mt-5">
                     <div class="hero-img tilt-active">
-                        <img src="assets/img/hero/hero_3_1.png" class="img-fluid w-100" alt="Hero Image">
+                        <img src="assets/img/hero/hero_3_1.png" class="img-fluid" alt="Hero Image">
                     </div>
                 </div>
             </div>
@@ -103,18 +116,34 @@
                 <img src="assets/img/shape/analysis.png" alt="">
             </div>
         </div>
-        <div class="shape-mockup z-index-3 movingX d-none d-xl-block" data-top="26%" data-right="9%"><img src="assets/img/shape/shape-17.png" alt=""></div>
+        <div class="shape-mockup z-index-3 movingX d-none d-xl-block" data-top="26%" data-right="9%"><img
+                src="assets/img/shape/shape-17.png" alt=""></div>
 
-        
+
     </div>
     <!--======== / Hero Section ========-->
 
 
+    <!--======== / Work Section ========-->
+    <div class="row text-center p-5">
+        <div class="col-12">
+            <span class="display-4 text-black fw-semibold">See more of our work</span>
+            <div class="btn-group d-flex justify-content-center mt-3">
+                <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Our Work<i
+                        class="fa-regular fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--======== / Work Section ========-->
+
+
+
+
     <!--============================== Brand Area ==============================-->
-    <div class="brand-sec overflow-hidden bg-white space-extra2 overflow-hidden">
+    <!-- <div class="brand-sec overflow-hidden bg-white space-extra2 overflow-hidden">
         <div class="container th-container px-md-5">
             <div class="title-area mb-60 text-center">
-                <h3 class="brand-title2 mt-n3 text-ani-style3">Trusted by businesses worldwide</h3>
+                <h3 class="brand-title2 mt-n3 text-ani-style3 fs-1 fw-semibold">Trusted by businesses worldwide</h3>
                 <img src="assets/img/theme-img/title_shape6.svg" alt="">
             </div>
             <div class="slider-area text-center">
@@ -158,19 +187,21 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!--============================== About Area ==============================-->
     <div class="overflow-hidden bg-color space" id="about-sec">
         <div class="container px-md-5">
             <div class="row gy-4 flex-row-reverse">
                 <div class="col-xl-6">
-                    <div class="title-area mb-35">
-                        <span class="sub-title sub-title6 style1 text-ani-style2">Get to Know Us</span>
-                        <h3 class="sec-title sec-title2 text-ani-style3">Headquartered in </h3>
-                        <h3><span class="text-o">New Zealand</span>, Serving the World</h3>
+                    <div class="title-area mb-25 mt-n1">
+                        <span class="sub-title sub-title4 style1 text-ani-style2">About Us</span>
+                        <h2 class="sec-title text-ani-style3">Innovative Digital Solutions for Modern Businesses</h2>
                     </div>
-                    <p class="mt-n2 mb-30">Founded just two years ago, we are a proudly <b class="text-b">New Zealand</b> registered company with a branch in <b class="text-b">Sri Lanka</b>. Despite our young age, we specialize in innovative web development, software, and app solutions, delivering top-tier results to our clients.</p>
+                    <p class="mt-n2 mb-30">Founded just two years ago, we are a proudly <b class="text-b">New
+                            Zealand</b> registered company with a branch in <b class="text-b">Sri Lanka</b>. Despite our
+                        young age, we specialize in innovative web development, software, and app solutions, delivering
+                        top-tier results to our clients.</p>
                     <div class="counter-item-wrap mt-3">
                         <div class="counter-item">
                             <div class="box-icon middle-box-icon text-white">
@@ -201,8 +232,9 @@
                         </div>
                     </div>
                     <div class="btn-group about-btn justify-content-start">
-                        <a href="about.html" class="th-btn th-icon th-radius">Learn More About Us<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                        
+                        <a href="about.html" class="th-btn th-icon th-radius">Learn More About Us<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -231,7 +263,8 @@
                 <div class="col-lg-7">
                     <div class="title-area text-center">
                         <span class="sub-title sub-title6 style1 text-ani-style2">Our Expert Services</span>
-                        <h3 class="sec-title text-ani-style3"><b class="text-o">Solutions</b> Tailored to Your <b class="text-o">Business Needs</b></h3>
+                        <h3 class="sec-title text-ani-style3"><b class="text-o">Solutions</b> Tailored to Your <b
+                                class="text-o">Business Needs</b></h3>
                     </div>
                 </div>
             </div>
@@ -246,7 +279,8 @@
 
                     </div>
                     <div class="service-content">
-                        <p class="box-text">Creating responsive, visually appealing websites that balance functionality and design.</p>
+                        <p class="box-text">Creating responsive, visually appealing websites that balance functionality
+                            and design.</p>
                         <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -260,7 +294,8 @@
 
                     </div>
                     <div class="service-content">
-                        <p class="box-text">Building user-friendly e-commerce platforms to enhance sales and streamline operations.</p>
+                        <p class="box-text">Building user-friendly e-commerce platforms to enhance sales and streamline
+                            operations.</p>
                         <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -274,7 +309,8 @@
 
                     </div>
                     <div class="service-content">
-                        <p class="box-text">Designing intuitive mobile apps for seamless user experiences on iOS and Android.</p>
+                        <p class="box-text">Designing intuitive mobile apps for seamless user experiences on iOS and
+                            Android.</p>
                         <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -288,7 +324,8 @@
 
                     </div>
                     <div class="service-content">
-                        <p class="box-text">Boosting brand visibility and engagement through effective digital marketing strategies.</p>
+                        <p class="box-text">Boosting brand visibility and engagement through effective digital marketing
+                            strategies.</p>
                         <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -302,7 +339,8 @@
 
                     </div>
                     <div class="service-content">
-                        <p class="box-text">Developing tailored software solutions to meet unique business needs with scalability.</p>
+                        <p class="box-text">Developing tailored software solutions to meet unique business needs with
+                            scalability.</p>
                         <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -316,7 +354,8 @@
 
                     </div>
                     <div class="service-content">
-                        <p class="box-text">Crafting intuitive, user-focused designs for a smooth and engaging digital experience.</p>
+                        <p class="box-text">Crafting intuitive, user-focused designs for a smooth and engaging digital
+                            experience.</p>
                         <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
                         </div>
                     </div>
@@ -329,16 +368,25 @@
         <div class="marquee-content positive-relative overflow-hidden">
             <div class="marquee">
                 <div class="marquee-group style3">
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Custom Web Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Custom Web Development</span>
+                    </div>
                     <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>SEO Optimization</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Digital Marketing Strategy</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Content Creation & Management</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>E-commerce Solutions</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Website Maintenance & Support</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Social Media Marketing</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Branding & Identity Design</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Business Intelligence & Analytics</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Mobile App Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Digital Marketing
+                            Strategy</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Content Creation &
+                            Management</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>E-commerce Solutions</span>
+                    </div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Website Maintenance &
+                            Support</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Social Media Marketing</span>
+                    </div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Branding & Identity
+                            Design</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Business Intelligence &
+                            Analytics</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Mobile App Development</span>
+                    </div>
                     <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Cloud Solutions</span></div>
 
                     <!-- <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
@@ -376,7 +424,8 @@
         <div class="container px-md-5">
             <div class="title-area text-center mb-25">
                 <span class="sub-title sub-title6 style1 text-ani-style2">Our Expert Services</span>
-                <h3 class="sec-title">Discover the <b class="text-o">Impact</b> of Our <b class="text-o">Successful Projects</b></h3>
+                <h3 class="sec-title">Discover the <b class="text-o">Impact</b> of Our <b class="text-o">Successful
+                        Projects</b></h3>
             </div>
             <div class="filter-menu filter-menu-active">
                 <!-- <button data-filter="*" class="tab-btn active" type="button">All Works</button>
@@ -393,7 +442,8 @@
                                 <img src="assets/img/project/project_1_1.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="https://ceynap.co.nz/" target="_blank">Ceynap Transforming the Coco Coir Industry with Innovative Solutions</a></h3>
+                                <h3 class="box-title"><a href="https://ceynap.co.nz/" target="_blank">Ceynap
+                                        Transforming the Coco Coir Industry with Innovative Solutions</a></h3>
                                 <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_1.jpg"
@@ -406,7 +456,8 @@
                                 <img src="assets/img/project/project_1_2.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="https://ceylonmoss.com/" target="_blank">Ceylon Moss Pioneering Excellence in the Moss Industry</a></h3>
+                                <h3 class="box-title"><a href="https://ceylonmoss.com/" target="_blank">Ceylon Moss
+                                        Pioneering Excellence in the Moss Industry</a></h3>
                                 <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
@@ -419,7 +470,8 @@
                                 <img src="assets/img/project/project_1_3.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="https://www.pradeepasv.com/" target="_blank">Pradeepa Sangeetha Vidyapeetaya Excellence in Classical Music Education</a></h3>
+                                <h3 class="box-title"><a href="https://www.pradeepasv.com/" target="_blank">Pradeepa
+                                        Sangeetha Vidyapeetaya Excellence in Classical Music Education</a></h3>
                                 <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_3.jpg"
@@ -445,7 +497,8 @@
                                 <img src="assets/img/project/project_1_5.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="https://edupathlk.codylanka.com/" target="_blank">EduPathLK - Learning Management System (LMS)</a></h3>
+                                <h3 class="box-title"><a href="https://edupathlk.codylanka.com/"
+                                        target="_blank">EduPathLK - Learning Management System (LMS)</a></h3>
                                 <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_5.jpg"
@@ -471,7 +524,8 @@
                                 <img src="assets/img/project/project_1_7.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="https://boozebites.co.nz/" target="_blank">Booze Bites Revolutionizing After-Work Bites in New Zealand</a></h3>
+                                <h3 class="box-title"><a href="https://boozebites.co.nz/" target="_blank">Booze Bites
+                                        Revolutionizing After-Work Bites in New Zealand</a></h3>
                                 <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_7.jpg"
@@ -503,9 +557,12 @@
                 <div class="col-xl-6">
                     <div class="title-area mb-20">
                         <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us?</span>
-                        <h3 class="sec-title text-ani-style3 text-white">Your <b class="text-o">Trusted</b> Partner for Quality & Affordable Services</h3>
+                        <h3 class="sec-title text-ani-style3 text-white">Your <b class="text-o">Trusted</b> Partner for
+                            Quality & Affordable Services</h3>
                     </div>
-                    <p class="sec-text mb-35">At Codyzea, we're committed to providing exceptional digital solutions. We're a registered company in both <b>New Zealand</b> and <b>Sri Lanka</b>, offering trust, transparency, and reliability. Here’s why you can trust us:</p>
+                    <p class="sec-text mb-35">At Codyzea, we're committed to providing exceptional digital solutions.
+                        We're a registered company in both <b>New Zealand</b> and <b>Sri Lanka</b>, offering trust,
+                        transparency, and reliability. Here’s why you can trust us:</p>
                     <div class="choose-feature-wrap">
                         <div class="choose-feature">
                             <div class="box-icon">
@@ -513,7 +570,8 @@
                             </div>
                             <div class="media-body">
                                 <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
-                                <p class="box-text">We operate as a fully registered company in both countries, ensuring credibility and trust in every project.</p>
+                                <p class="box-text">We operate as a fully registered company in both countries, ensuring
+                                    credibility and trust in every project.</p>
                             </div>
                         </div>
                         <div class="choose-feature">
@@ -522,7 +580,8 @@
                             </div>
                             <div class="media-body">
                                 <h3 class="box-title">24/7 Customer Support</h3>
-                                <p class="box-text">Our dedicated support team is always available, ready to assist and update you on your projects at any time.</p>
+                                <p class="box-text">Our dedicated support team is always available, ready to assist and
+                                    update you on your projects at any time.</p>
                             </div>
                         </div>
                         <div class="choose-feature">
@@ -531,7 +590,8 @@
                             </div>
                             <div class="media-body">
                                 <h3 class="box-title">Affordable & High-Quality Services</h3>
-                                <p class="box-text">We provide top-quality services at competitive prices, delivering value with every solution we offer.</p>
+                                <p class="box-text">We provide top-quality services at competitive prices, delivering
+                                    value with every solution we offer.</p>
                             </div>
                         </div>
                     </div>
@@ -577,13 +637,13 @@
                             'name' => 'John Doe',
                             'role' => 'Web Developer',
                             'image' => 'assets/img/team/team_1_2.jpg',
-                            'social' => 'https://linkedin.com/' 
+                            'social' => 'https://linkedin.com/'
                         ],
                         [
                             'name' => 'Sarah Lee',
                             'role' => 'Project Manager',
                             'image' => 'assets/img/team/team_1_3.jpg',
-                            'social' =>  'https://linkedin.com/' 
+                            'social' => 'https://linkedin.com/'
                         ],
                         [
                             'name' => 'David Green',
@@ -603,7 +663,8 @@
                                     </div>
                                     <div class="box-content">
                                         <div>
-                                            <h3 class="box-title"><a href="<?php echo $member['social']; ?>" target="_blank"><?php echo $member['name']; ?></a></h3>
+                                            <h3 class="box-title"><a href="<?php echo $member['social']; ?>"
+                                                    target="_blank"><?php echo $member['name']; ?></a></h3>
                                             <span class="team-desig"><?php echo $member['role']; ?></span>
                                         </div>
                                     </div>
