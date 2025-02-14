@@ -120,18 +120,8 @@ Hero Area
 
     <!--======== / Hero Section ========-->
 
-    <!--======== / Work Section ========-->
-    <div class="row text-center p-5">
-        <div class="col-12">
-            <span class="display-4 text-black fw-semibold">See more of our work</span>
-            <div class="btn-group d-flex justify-content-center mt-3">
-                <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Our Work<i
-                        class="fa-regular fa-arrow-right ms-2"></i></a>
-            </div>
-        </div>
-    </div>
-    <!--======== / Work Section ========-->
-<!--==============================
+
+    <!--==============================
 About Area  
 ==============================-->
     <div class="position-relative overflow-hidden space" id="about-sec">
@@ -191,8 +181,8 @@ About Area
         <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-right="0%"><img
                 src="assets/img/shape/shape-23.png" alt=""></div>
     </div>
-    
-    
+
+
     <div class="brand-sec overflow-hidden space-extra2 overflow-hidden">
         <div class="container th-container">
             <div class="title-area mb-60 text-center">
@@ -313,7 +303,7 @@ Service Area
         data-bg-src="assets/img/bg/service_bg_2.jpg">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center">
-                <div class="col-xl-4">
+                <div class="col-xl-5">
                     <div class="title-area mb-35 text-center text-lg-start pe-xl-5">
                         <span class="sub-title sub-title7 style1 text-ani-style2">Our Services</span>
                         <h2 class="sec-title text-ani-style3">Smart Solutions,<span class="text-orange">Seamless
@@ -327,52 +317,56 @@ Service Area
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-xl-8">
+                <div class="col-xl-7">
                     <div class="service-grid_wrapp">
                         <div class="service-grid hover-item ">
                             <div class="box-icon">
-                                <img src="assets/img/icon/service_2_1.svg" alt="Icon">
+                                <img src="assets/img/icon/service_2_1.png" class="img-fluid w-50" alt="Icon">
                             </div>
                             <div class="service-grid_content">
                                 <h3 class="box-title"><a href="service-details.html">Web Design
                                     </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
+                                <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
+                                    images, and
                                     internal links to ensure search engines can easily</p>
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item ">
+                        <div class="service-grid hover-item">
                             <div class="box-icon">
-                                <img src="assets/img/icon/service_2_2.svg" alt="Icon">
+                                <img src="assets/img/icon/service_2_2.png" class="img-fluid w-50" alt="Icon">
                             </div>
                             <div class="service-grid_content">
                                 <h3 class="box-title"><a href="service-details.html">App Development
-                                </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
+                                    </a></h3>
+                                <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
+                                    images, and
                                     internal links to ensure search engines can easily</p>
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
                         <div class="service-grid hover-item item-active">
                             <div class="box-icon">
-                                <img src="assets/img/icon/service_2_3.svg" alt="Icon">
+                                <img src="assets/img/icon/service_2_4.svg" alt="Icon">
                             </div>
                             <div class="service-grid_content">
                                 <h3 class="box-title"><a href="service-details.html">Digital Marketing
-                                </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
+                                    </a></h3>
+                                <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
+                                    images, and
                                     internal links to ensure search engines can easily</p>
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item ">
+                        <div class="service-grid hover-item">
                             <div class="box-icon">
-                                <img src="assets/img/icon/service_2_4.svg" alt="Icon">
+                                <img src="assets/img/icon/service_2_4.png" class="img-fluid w-50" alt="Icon">
                             </div>
                             <div class="service-grid_content">
                                 <h3 class="box-title"><a href="service-details.html">Custom Software Development
-                                </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
+                                    </a></h3>
+                                <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
+                                    images, and
                                     internal links to ensure search engines can easily</p>
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
@@ -388,180 +382,182 @@ About Area
         <div class="marquee-content positive-relative overflow-hidden">
             <div class="marquee">
                 <div class="marquee-group style3">
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Network Security</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Data Security</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Network Security</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Data Security</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
-
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Web Design</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Branding</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Digital Marketing</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Custom Software
+                            Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>App Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Web Design</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Branding</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Digital Marketing</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Custom Software
+                            Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>App Development</span></div>
                 </div>
                 <div aria-hidden="true" class="marquee-group style3">
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Network Security</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Data Security</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Network Security</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Data Security</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Web Design</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Branding</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Digital Marketing</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Custom Software
+                            Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>App Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Web Design</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Branding</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Digital Marketing</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Custom Software
+                            Development</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>App Development</span></div>
                 </div>
             </div>
+
         </div>
     </div><!--==============================
 portfolio Area  
 ==============================-->
-    <div class="overflow-hidden position-relative space-extra-top space-bottom" id="portfolio-sec">
-        <div class="container">
-            <div class="title-area text-center mb-25">
-                <span class="sub-title sub-title6 style1 text-ani-style2">Our Portfolio</span>
-                <h2 class="sec-title">Creative Work Portfolio</h2>
-            </div>
-            <div class="filter-menu filter-menu-active">
-                <button data-filter="*" class="tab-btn active" type="button">All Works</button>
-                <button data-filter=".cat1" class="tab-btn" type="button">Apps</button>
-                <button data-filter=".cat2" class="tab-btn" type="button">Branding</button>
-                <button data-filter=".cat3" class="tab-btn" type="button">Creative</button>
-
-            </div>
-            <div class="portfolio-area">
-                <div class="row gy-4  filter-active">
-                    <div class="col-md-6 col-xl-auto filter-item cat1 cat5 cat7 cat3">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_1.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Portfolio Center Slider</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_1.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat5 cat5 cat8 cat1">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_2.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Twice Profit Than Before</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat5 cat3 cat2">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_3.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Social Engagement</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_3.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat4 cat1 cat6">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_4.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">UI Projects</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_4.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat2 cat3">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_5.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">E-commerce Solutions</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_5.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat7 cat5 cat3">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_6.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Content Strategy</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_6.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat4 cat6">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_7.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Creative Art & Design</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_7.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat1 cat2 cat5">
-                        <div class="project-item">
-                            <div class="box-img global-img">
-                                <img src="assets/img/project/project_1_8.jpg" alt="project image">
-                            </div>
-                            <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Logo Animation</a></h3>
-                                <p class="box-subtitle">Branding</p>
-                            </div>
-                            <div class="box-btn"><a href="assets/img/project/project_1_8.jpg"
-                                    class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
-                        </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <!--======== / Work Section ========-->
+            <div class="row text-center p-5">
+                <div class="col-12">
+                    <img src="assets/start.svg" class="img-fluid" style="width:500px;" alt="Illustration">
+                </div>
+                <div class="col-12 mb-5">
+                    <span class="display-4 text-black fw-semibold">See more of our work</span>
+                    <div class="btn-group d-flex justify-content-center mt-3">
+                        <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Our Work<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="project-btn mt-60"><a href="portfolio.html" class="th-btn th-radius">View All Portfolio</a>
+            </div>
+            <!--======== / Work Section ========-->
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="overflow-hidden position-relative space-extra-top space-bottom" id="portfolio-sec">
+                <div class="container">
+                    <div class="title-area text-center mb-25">
+                        <span class="sub-title sub-title6 style1 text-ani-style2">Our Portfolio</span>
+                        <h2 class="sec-title">Creative Work Portfolio</h2>
+                    </div>
+                    <div class="filter-menu filter-menu-active">
+                        <button data-filter="*" class="tab-btn active text-black" type="button">All Works</button>
+                        <button data-filter=".cat1" class="tab-btn text-black" type="button">Web</button>
+                        <button data-filter=".cat2" class="tab-btn text-black" type="button">Apps</button>
+                        <button data-filter=".cat3" class="tab-btn text-black" type="button">Branding</button>
+                    </div>
+                    <div class="portfolio-area">
+                        <div class="row gy-4 filter-active">
+                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                <div class="project-item">
+                                    <div class="box-img global-img">
+                                        <img src="assets/img/project/project_1_2.jpg" alt="project image">
+                                    </div>
+                                    <div class="box-content">
+                                        <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss - https://ceylonmoss.com/</a></h3>
+                                        <p class="box-subtitle">Web Design & Development</p>
+                                    </div>
+                                    <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                            class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-xl-auto filter-item cat4 cat1 cat6">
+                                <div class="project-item">
+                                    <div class="box-img global-img">
+                                        <img src="assets/img/project/project_1_5.jpg" alt="project image">
+                                    </div>
+                                    <div class="box-content">
+                                        <h3 class="box-title"><a href="portfolio-details.html">Booze Bites Delivery App</a></h3>
+                                        <p class="box-subtitle">App Design & Development</p>
+                                    </div>
+                                    <div class="box-btn"><a href="assets/img/project/project_1_4.jpg"
+                                            class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+        <div class="overflow-hidden position-relative space-extra-top space-bottom" id="portfolio-sec">
+                <div class="container">
+                <div class="portfolio-area">
+                        <div class="row gy-4 filter-active">
+                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                <div class="project-item">
+                                    <div class="box-img global-img">
+                                        <img src="assets/img/project/project_1_2.jpg" alt="project image">
+                                    </div>
+                                    <div class="box-content">
+                                        <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss - https://ceylonmoss.com/</a></h3>
+                                        <p class="box-subtitle">Web Design & Development</p>
+                                    </div>
+                                    <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                            class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                <div class="project-item">
+                                    <div class="box-img global-img">
+                                        <img src="assets/img/project/project_1_3.jpg" alt="project image">
+                                    </div>
+                                    <div class="box-content">
+                                        <h3 class="box-title"><a href="portfolio-details.html">Booze Bites - https://boozebites.co.nz/</a></h3>
+                                        <p class="box-subtitle">Web Design & Development</p>
+                                    </div>
+                                    <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                            class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                <div class="project-item">
+                                    <div class="box-img global-img">
+                                        <img src="assets/img/project/project_1_4.jpg" alt="project image">
+                                    </div>
+                                    <div class="box-content">
+                                        <h3 class="box-title"><a href="portfolio-details.html">Ceynap - https://ceynap.co.nz/</a></h3>
+                                        <p class="box-subtitle">Web Design & Development</p>
+                                    </div>
+                                    <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                            class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+
     <div class="choose-area bg-title overflow-hidden" data-mask-src="assets/img/bg/choose_bg_3.png">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
                     <div class="title-area mb-20">
-                        <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Benefits You Can't
-                            Ignore</span>
-                        <h2 class="sec-title text-ani-style3 text-white">The Powerful Benefits of Saor SEO</h2>
+                        <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us</span>
+                        <h2 class="sec-title text-ani-style3 text-white">Cody Zea – Solutions Bright, Done Right</h2>
                     </div>
-                    <p class="sec-text mb-35">In today's digital landscape, a strong online presence is critical for
-                        business success. But simply having a website isn't enough.</p>
+                    <p class="sec-text mb-35">In a fast-moving digital world, choosing the right tech partner is crucial</p>
                     <div class="choose-feature-wrap">
                         <div class="choose-feature">
                             <div class="box-icon">
                                 <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
                             </div>
                             <div class="media-body">
-                                <h3 class="box-title">Increased Website Traffic</h3>
+                                <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
                                 <p class="box-text">Our SEO strategies will attract more qualified visitors to your
                                     website, bringing you closer.</p>
                             </div>
@@ -571,7 +567,7 @@ portfolio Area
                                 <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
                             </div>
                             <div class="media-body">
-                                <h3 class="box-title">Enhanced Brand Awareness</h3>
+                                <h3 class="box-title">Affordable Pricing Solutions</h3>
                                 <p class="box-text">Increased website traffic and the improved rankings naturally lead
                                     to greater brand awareness.</p>
                             </div>
@@ -581,7 +577,7 @@ portfolio Area
                                 <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
                             </div>
                             <div class="media-body">
-                                <h3 class="box-title">More Leads & Conversions</h3>
+                                <h3 class="box-title">Virtual & Physical Meetings</h3>
                                 <p class="box-text">By attracting qualified the traffic and optimizing your website for
                                     conversions, we'll help you.</p>
                             </div>
@@ -591,7 +587,7 @@ portfolio Area
                 <div class="col-xl-6">
                     <div class="choose-image">
                         <div class="img1 tilt-active">
-                            <img src="assets/img/normal/choose_1.png" alt="Choose">
+                            <img src="assets/man-wcu.png" alt="Choose">
                             <div class="choose-shape"><img src="assets/img/shape/choose-shape.png" alt=""></div>
                         </div>
                     </div>
@@ -602,131 +598,148 @@ portfolio Area
 
 Testimonial Area  
 ==============================-->
-    <section class="">
-        <div class="testi-sec positive-relative round-container bg-smoke2 overflow-hidden space">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-xl-5">
-                        <div class="testi-block-image tilt-active">
-                            <img src="assets/img/normal/testi-img.png" alt="quote">
-                        </div>
-                    </div>
-                    <div class="col-xl-7">
-                        <div class="ms-xl-3">
-                            <div class="title-area">
-                                <span class="sub-title sub-title6 style1 text-ani-style2">Testimonials</span>
-                                <h2 class="sec-title text-ani-style3">Client Success Stories</h2>
-                            </div>
-                            <div class="swiper th-slider has-shadow testi-slider4"
-                                data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="testi-block">
-                                            <div class="testi-wrapp">
-                                                <div class="box-avater">
-                                                    <img src="assets/img/testimonial/testi_4_1.png" alt="Avater">
-                                                </div>
-                                                <div class="box-review">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <p class="box-text">We were struggling to rank for relevant keywords before
-                                                partnering with Saor. Their team developed a comprehensive SEO strategy
-                                                that the helped us climb the search engine rankings and attract our most
-                                                target audience. We're highly more impressed with their results
-                                                difference in our online They optimized our website for international
-                                                search engines.</p>
-                                            <div class="box-profile">
-                                                <div class="media-body">
-                                                    <h3 class="box-title">Jackson Hobber</h3>
-                                                    <p class="box-desig">CEO,AB Tech</p>
-                                                </div>
-                                            </div>
-                                            <div class="testi-quote">
-                                                <img src="assets/img/icon/quote.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testi-block">
-                                            <div class="testi-wrapp">
-                                                <div class="box-avater">
-                                                    <img src="assets/img/testimonial/testi_4_2.png" alt="Avater">
-                                                </div>
-                                                <div class="box-review">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <p class="box-text">We can work with your existing website if it's
-                                                technically sound and meets your needs. If necessary, we can also
-                                                recommend and implement improvements or a complete redesign to enhance
-                                                performance and user experience. We start with a comprehensive analysis
-                                                of your business, industry, target audience, and current digital
-                                                presence.</p>
-                                            <div class="box-profile">
-                                                <div class="media-body">
-                                                    <h3 class="box-title">Abraham Khalil</h3>
-                                                    <p class="box-desig">CEO,Ac Tech</p>
-                                                </div>
-                                            </div>
-                                            <div class="testi-quote">
-                                                <img src="assets/img/icon/quote.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="testi-block">
-                                            <div class="testi-wrapp">
-                                                <div class="box-avater">
-                                                    <img src="assets/img/testimonial/testi_4_1.png" alt="Avater">
-                                                </div>
-                                                <div class="box-review">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <p class="box-text">We were struggling to rank for relevant keywords before
-                                                partnering with Saor. Their team developed a comprehensive SEO strategy
-                                                that the helped us climb the search engine rankings and attract our most
-                                                target audience. We're highly more impressed with their results
-                                                difference in our online They optimized our website for international
-                                                search engines.</p>
-                                            <div class="box-profile">
-                                                <div class="media-body">
-                                                    <h3 class="box-title">Jackson Hobber</h3>
-                                                    <p class="box-desig">CEO,Ad Tech</p>
-                                                </div>
-                                            </div>
-                                            <div class="testi-quote">
-                                                <img src="assets/img/icon/quote.svg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-pagination"></div>
-                            </div>
-                        </div>
+<section class="overflow-hidden space-bottom mt-5" id="testi-sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="title-area mb-20 text-center">
+                        <span class="sub-title sub-title7 text-ani-style2">Testimonials</span>
+                        <h2 class="sec-title text-ani-style3">What our clients say?</h2>
                     </div>
                 </div>
+
             </div>
-            <div class="shape-mockup d-none d-lg-block" data-top="0%" data-right="0%"><img
-                    src="assets/img/shape/shape-21.png" alt=""></div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="slider-area testi-box-area">
+                <div class="swiper th-slider has-shadow testiSlider3" id="testiSlide3" data-slider-options='{"centeredSlides":true,"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"3"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">“IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.”</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/img/testimonial/testi_4_1.png" alt="Avater">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">David Ade Smith</h3>
+                                            <span class="box-desig">Business Student</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">“Objectively visualize error-free technology for B2B alignment. Monotonectally harness reinvent prospective an expanded array of models via effective collaboration in the success. Professionally metrics.”</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/img/testimonial/testi_4_2.png" alt="Avater">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Ceynap,New Zealand</h3>
+                                            <span class="box-desig">Coco Coir</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">“Completely drive innovative value reinvent prospective whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global say that they results. Professionally metrics expedite .”</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/img/testimonial/testi_4_3.png" alt="Avater">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Jackline Techie</h3>
+                                            <span class="box-desig">Project Manager</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">“The best service reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric or analyzing before expedite methods or analyzing feel free customer”</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/img/testimonial/testi_4_4.png" alt="Avater">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Mary Crispy</h3>
+                                            <span class="box-desig">Head Manager</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">“Completely drive innovative value whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global results. Globally plagiarize intermandated opportunities with. Progressively leverage”</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/img/testimonial/testi_4_1.png" alt="Avater">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Jenny Wilson</h3>
+                                            <span class="box-desig">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-pagination"></div>
+                    <button data-slider-prev="#testiSlide3" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button>
+                    <button data-slider-next="#testiSlide3" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </section><!--==============================
 Cta Area  
 ==============================-->
-    <section class="cta-sec2 overflow-hidden space-bottom" data-pos-for=".testi-sec" data-sec-pos="top-half">
+    <section class="cta-sec2 overflow-hidden space-bottom mt-4" data-pos-for=".testi-sec" data-sec-pos="top-half">
         <div class="container">
             <div class="cta-area4">
                 <div class="title-area mb-0">

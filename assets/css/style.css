@@ -144,11 +144,20 @@ body {
 .text-black{
   color: #000000 !important;
 }
+.text-white-o{
+  color: black;
+}
+.text-white-o:hover{
+  color: white !important;
+}
 .font-jon{
   font-family: "Joan";
 }
 .font-sofia{
   font-family: "sofia";
+}
+.color-hover:hover{
+  color: white !important;
 }
 body.theme-bg {
   background-color: #FEF4EA;
@@ -19948,7 +19957,7 @@ span.select2-selection.select2-selection--single:focus {
 .counter-box .box-icon {
   margin-bottom: 10px;
 }
-
+.box
 .counter-box .box-number {
   font-size: 74px;
   line-height: 74px;
@@ -23227,7 +23236,9 @@ span.select2-selection.select2-selection--single:focus {
   box-shadow: 0px 10px 30px 6px rgba(20, 18, 46, 0.1);
   margin: auto;
 }
-
+.colorc:hover{
+  color: rgb(255, 255, 255);
+}
 .service-featured.style2 .box-title {
   margin: 45px 0 15px 0;
 }
