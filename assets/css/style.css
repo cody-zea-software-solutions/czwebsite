@@ -90,7 +90,7 @@ Version: 1.0.0
   --theme-color: #FF5C35;
   --theme-color2: #F93E5E;
   --title-color: #121212;
-  --body-color: #797E88;
+  --body-color: #ffffff;
   --smoke-color: #D8DDE1;
   --smoke-color2: #F8F8F8;
   --smoke-color3: #EBEEFF;
@@ -120,6 +120,8 @@ Version: 1.0.0
 html,
 body {
   scroll-behavior: auto !important;
+  overflow-x: hidden;
+
 }
 
 body {
@@ -128,7 +130,6 @@ body {
   font-weight: 300;
   color: var(--body-color);
   line-height: 26px;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 @font-face {
@@ -165,6 +166,9 @@ body.theme-bg {
 }
 .bg-orange{
    background-color: #FF5C35 !important;
+}
+.text-orange{
+   color: #FF5C35 !important;
 }
 
 .header-top-color{

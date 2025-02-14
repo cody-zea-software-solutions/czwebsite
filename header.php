@@ -89,12 +89,12 @@
                         <ul>
                             <li class="d-none d-xl-inline-block text-white"><i
                                     class="fa-solid fa-location-dot text-white"></i>
-                                523 Jerry Mench Dr.USA</li>
+                               Auckland,New Zealand</li>
                             <li><i class="fa-solid fa-phone text-white"></i><a href="tel:+163217322978"
-                                    class="text-white">+163 2173 229788</a>
+                                    class="text-white">+64 22 356 8614</a>
                             </li>
                             <li><i class="fa-solid fa-envelope text-white"></i><a href="mailto:saorhelp@gmail.com"
-                                    class="text-white">saorhelp@gmail.com</a>
+                                    class="text-white">info@codyzeadep.com</a>
                             </li>
                         </ul>
                     </div>
@@ -131,10 +131,10 @@
                     <div class="col-auto">
                         <nav class="main-menu d-none d-lg-inline-block">
                             <ul>
-                                <li><a href="index.php" class="text-b fw-semibold">Home</a></li>
-                                <li><a href="about.html" class="text-b fw-semibold">Pricing</a></li>
+                                <li><a href="index.php" class="text-black fw-semibold fs-6">Home</a></li>
+                                <li><a href="about.html" class="text-black fw-semibold fs-6">Pricing</a></li>
                                 <li class="menu-item-has-children">
-                                    <a href="#" class="text-b fw-semibold">Offers</a>
+                                    <a href="#" class="text-black fw-semibold fs-6">Offers</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -159,7 +159,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#" class="text-b fw-semibold">Solutions</a>
+                                    <a href="#" class="text-black fw-semibold fs-6">Solutions</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -184,7 +184,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#" class="text-b fw-semibold">Blogs</a>
+                                    <a href="#" class="text-black fw-semibold fs-6">Blogs</a>
                                     <ul class="mega-menu" style="width: 1500px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -208,7 +208,7 @@
                                         </div>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html" class="text-b fw-semibold">Contact Us</a></li>
+                                <li><a href="contact.html" class="text-black fw-semibold fs-6">Contact Us</a></li>
                             </ul>
                         </nav>
                         <div class="header-button">

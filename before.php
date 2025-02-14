@@ -4,33 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Home SEO Analysis Agency</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <title>Codyzea - Web, Software & App Development Services</title>
+    <meta name="author" content="Codyzea">
+    <meta name="description"
+        content="Codyzea offers expert web, software, and app development services to build modern, secure, and high-performing digital solutions for businesses.">
+    <meta name="keywords"
+        content="web development, software development, mobile app development, website design, custom software, Codyzea, e-commerce solutions">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/logocz.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logocz.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logocz.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logocz.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/logocz.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logocz.png">
+    <link rel="manifest" href="assets/img/logocz.png">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="assets/img/logocz.png">
+
     <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <!--==============================
       Google Fonts
@@ -40,7 +47,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <!--==============================
         All CSS File
     ============================== -->
@@ -61,23 +79,9 @@
 
 <body>
 
-
-
-
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-
-
-    <!--********************************
-           Code Start From Here 
-    ******************************** -->
+    <!--******************************** Code Start From Here ******************************** -->
     <?php require_once "header.php"; ?>
 
-    <!--==============================
-Hero Area
-==============================-->
     <!--============================== Hero Area ==============================-->
     <div class="th-hero-wrapper hero-3 bg-color" id="hero">
         <div class="container px-md-5">
@@ -86,7 +90,7 @@ Hero Area
                     <div class="hero-style3">
                         <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span>
                         <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software & App
-                            Solutions <div class="mt-3"></div> <span class="text-large font-jon text-o">Built
+                            Solutions <div class="mt-3"></div> <span class="text-o text-large font-jon text-black">Built
                                 for Your Success</span></h6>
                         <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that empower
                             your business. Whether it's a website, a mobile app, or software, we help you scale,
@@ -117,8 +121,8 @@ Hero Area
 
 
     </div>
-
     <!--======== / Hero Section ========-->
+
 
     <!--======== / Work Section ========-->
     <div class="row text-center p-5">
@@ -131,73 +135,15 @@ Hero Area
         </div>
     </div>
     <!--======== / Work Section ========-->
-<!--==============================
-About Area  
-==============================-->
-    <div class="position-relative overflow-hidden space" id="about-sec">
-        <div class="container">
-            <div class="row gy-4 align-items-end">
-                <div class="col-xl-6 mt-30 mt-xl-0">
-                    <div class="img-box5">
-                        <div class="img1 th-anim">
-                            <img src="assets/img/normal/about_4_1.jpg" alt="About">
-                        </div>
-                        <div class="img2 th-anim">
-                            <img src="assets/img/normal/about_4_2.jpg" alt="About">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="title-area mb-25">
-                        <span class="sub-title sub-title7 style1 text-ani-style2">About Us</span>
-                        <h2 class="sec-title text-ani-style3">Smart solutions, seamless growth</h2>
-                    </div>
-                    <p class="mt-n2 mb-25 text-black">Cody Zea Software Solutions is an authorized software company in
-                        New Zealand
-                        and Sri Lanka, offering over two years of expertise in delivering innovative and reliable tech
-                        solutions. We specialize in custom software, development, UI/UX design, and customer support to
-                        help businesses grow and thrive in the digital world.</p>
-                    <div class="about-wrapper">
-                        <div class="checklist style3">
-                            <ul>
-                                <li><i class="fa-solid fa-shield-check text-orange"></i>Global Expert Team</li>
-                                <li><i class="fa-solid fa-shield-check text-orange"></i>Globally Recognized </li>
-                                <li><i class="fa-solid fa-shield-check text-orange"></i>24/7 Hour Customer Support</li>
-                            </ul>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="th-experience2">
-                            <h2 class="experience-year"><span class="counter-number">02</span>+</h2>
-                            <p class="experience-text">Years of Experiences</p>
-                        </div>
-                    </div>
-                    <div class="btn-group style3 mt-35">
-                        <a href="about.html" class="th-btn th-radius th-icon text-white fs-4">More About<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
-                        <div class="call-btn style2">
-                            <div class="icon bg-orange"><i class="fas fa-phone"></i></div>
-                            <div class="media-body">
-                                <span class="btn-text">Call Now</span>
-                                <a href="tel:+64223568614" class="btn-title">
-                                    +64 22 356 8614</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shape-mockup spin d-none d-xl-block" data-top="5%" data-left="10%"><img
-                src="assets/img/shape/shape-22.png" alt=""></div>
-        <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-right="0%"><img
-                src="assets/img/shape/shape-23.png" alt=""></div>
-    </div>
-    
-    
-    <div class="brand-sec overflow-hidden space-extra2 overflow-hidden">
-        <div class="container th-container">
+
+
+
+
+    <!--============================== Brand Area ==============================-->
+    <!-- <div class="brand-sec overflow-hidden bg-white space-extra2 overflow-hidden">
+        <div class="container th-container px-md-5">
             <div class="title-area mb-60 text-center">
-                <h3 class="brand-title2 mt-n3 text-ani-style3 fs-1">Trusted Worldwide, Serving <span
-                        class="text-orange">Millions with Excellence</span></h3>
+                <h3 class="brand-title2 mt-n3 text-ani-style3 fs-1 fw-semibold">Trusted by businesses worldwide</h3>
                 <img src="assets/img/theme-img/title_shape6.svg" alt="">
             </div>
             <div class="slider-area text-center">
@@ -231,72 +177,8 @@ About Area
                         <div class="swiper-slide">
                             <div class="brand-item style4">
                                 <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
+                                    <img class="original" src="assets/img/brand/brand_1_4.svg" style="width: 60px;" alt="Brand Logo">
+                                    <img class="gray" src="assets/img/brand/brand_1_4.svg" style="width: 60px;" alt="Brand Logo">
                                 </a>
                             </div>
                         </div>
@@ -305,90 +187,209 @@ About Area
                 </div>
             </div>
         </div>
-    </div>
-    <!--==============================
-Service Area  
-==============================-->
-    <section class="bg-top-center z-index-common space overflow-hidden" id="service-sec"
-        data-bg-src="assets/img/bg/service_bg_2.jpg">
-        <div class="container">
-            <div class="row justify-content-lg-between justify-content-center">
-                <div class="col-xl-4">
-                    <div class="title-area mb-35 text-center text-lg-start pe-xl-5">
-                        <span class="sub-title sub-title7 style1 text-ani-style2">Our Services</span>
-                        <h2 class="sec-title text-ani-style3">Smart Solutions,<span class="text-orange">Seamless
-                                Evolution</span></h2>
-                        <p class="text-black fs-5 fw-lighter">We provide smart solutions that fuel your business growth.
-                            Our
-                            custom software ensures seamless evolution, tailored to meet your unique needs.</p>
+    </div> -->
+
+    <!--============================== About Area ==============================-->
+    <div class="overflow-hidden bg-color space" id="about-sec">
+        <div class="container px-md-5">
+            <div class="row gy-4 flex-row-reverse">
+                <div class="col-xl-6">
+                    <div class="title-area mb-25 mt-n1">
+                        <span class="sub-title sub-title4 style1 text-ani-style2">About Us</span>
+                        <h2 class="sec-title text-ani-style3">Innovative Digital Solutions for Modern Businesses</h2>
                     </div>
-                    <div class="sec-btn text-center text-lg-start">
-                        <a href="service.html" class="th-btn th-icon th-radius text-white fs-5">View All Services<i
+                    <p class="mt-n2 mb-30">Founded just two years ago, we are a proudly <b class="text-b">New
+                            Zealand</b> registered company with a branch in <b class="text-b">Sri Lanka</b>. Despite our
+                        young age, we specialize in innovative web development, software, and app solutions, delivering
+                        top-tier results to our clients.</p>
+                    <div class="counter-item-wrap mt-3">
+                        <div class="counter-item">
+                            <div class="box-icon middle-box-icon text-white">
+                                <img src="assets/img/icon/counter_card_1_3.svg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title"><span class="counter-number">5</span>+</h3>
+                                <p class="counter-text mb-0">Successful Projects</p>
+                            </div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="box-icon middle-box-icon">
+                                <img src="assets/img/icon/counter_card_1_2.svg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title"><span class="counter-number">15</span>+</h3>
+                                <p class="counter-text mb-0">Talented Team Members</p>
+                            </div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="box-icon middle-box-icon">
+                                <img src="assets/img/icon/counter_card_1_3.svg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title"><span class="counter-number">3</span>+</h3>
+                                <p class="counter-text mb-0">Countries Served</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group about-btn justify-content-start">
+                        <a href="about.html" class="th-btn th-icon th-radius">Learn More About Us<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
+
                     </div>
                 </div>
-                <div class="col-xl-8">
-                    <div class="service-grid_wrapp">
-                        <div class="service-grid hover-item ">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/service_2_1.svg" alt="Icon">
-                            </div>
-                            <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">Web Design
-                                    </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
-                                    internal links to ensure search engines can easily</p>
-                            </div>
-                            <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
+                <div class="col-xl-6">
+                    <div class="img-box4">
+                        <div class="img1">
+                            <img src="assets/img/shape/shape-19.png" alt="About">
                         </div>
-                        <div class="service-grid hover-item ">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/service_2_2.svg" alt="Icon">
-                            </div>
-                            <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">App Development
-                                </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
-                                    internal links to ensure search engines can easily</p>
-                            </div>
-                            <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
+                        <div class="img2">
+                            <img src="assets/img/shape/shape-20.png" alt="About">
                         </div>
-                        <div class="service-grid hover-item item-active">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/service_2_3.svg" alt="Icon">
-                            </div>
-                            <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">Digital Marketing
-                                </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
-                                    internal links to ensure search engines can easily</p>
-                            </div>
-                            <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
-                        </div>
-                        <div class="service-grid hover-item ">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/service_2_4.svg" alt="Icon">
-                            </div>
-                            <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">Custom Software Development
-                                </a></h3>
-                                <p class="box-text">We optimize your website's content, meta tags, headers, images, and
-                                    internal links to ensure search engines can easily</p>
-                            </div>
-                            <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
+                        <div class="th-experience">
+                            <h2 class="experience-year"><span class="counter-number">2</span>+</h2>
+                            <p class="experience-text">Years of Expertise</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!--==============================
-About Area  
-==============================-->
-    <div class="marquee-area style3 bg-smoke2">
+    </div>
+
+
+    <!--============================== Service Area ==============================-->
+    <section class="overflow-hidden space-top space-extra-bottom bg-white" id="service-sec">
+        <div class="container px-md-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-7">
+                    <div class="title-area text-center">
+                        <span class="sub-title sub-title6 style1 text-ani-style2">Our Expert Services</span>
+                        <h3 class="sec-title text-ani-style3"><b class="text-o">Solutions</b> Tailored to Your <b
+                                class="text-o">Business Needs</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="service-card tg-img-reveal-item" data-fx="1" data-img="assets/img/service/service_1_1.jpg">
+                    <div class="service-wrapp">
+                        <div class="box-icon">
+                            <img src="assets/img/icon/service_1_1.svg" alt="Icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Web Design</a></h3>
+
+                    </div>
+                    <div class="service-content">
+                        <p class="box-text">Creating responsive, visually appealing websites that balance functionality
+                            and design.</p>
+                        <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card tg-img-reveal-item" data-fx="1" data-img="assets/img/service/service_1_2.jpg">
+                    <div class="service-wrapp">
+                        <div class="box-icon">
+                            <img src="assets/img/icon/service_1_2.svg" alt="Icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">E-Commerce Solutions</a></h3>
+
+                    </div>
+                    <div class="service-content">
+                        <p class="box-text">Building user-friendly e-commerce platforms to enhance sales and streamline
+                            operations.</p>
+                        <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card tg-img-reveal-item" data-fx="1" data-img="assets/img/service/service_1_3.jpg">
+                    <div class="service-wrapp">
+                        <div class="box-icon">
+                            <img src="assets/img/icon/service_1_3.svg" alt="Icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Mobile App Development</a></h3>
+
+                    </div>
+                    <div class="service-content">
+                        <p class="box-text">Designing intuitive mobile apps for seamless user experiences on iOS and
+                            Android.</p>
+                        <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card tg-img-reveal-item" data-fx="1" data-img="assets/img/service/service_1_4.jpg">
+                    <div class="service-wrapp">
+                        <div class="box-icon">
+                            <img src="assets/img/icon/service_1_4.svg" alt="Icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Digital Marketing</a></h3>
+
+                    </div>
+                    <div class="service-content">
+                        <p class="box-text">Boosting brand visibility and engagement through effective digital marketing
+                            strategies.</p>
+                        <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card tg-img-reveal-item" data-fx="1" data-img="assets/img/service/service_1_5.jpg">
+                    <div class="service-wrapp">
+                        <div class="box-icon">
+                            <img src="assets/img/icon/service_1_4.svg" alt="Icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Custom Software</a></h3>
+
+                    </div>
+                    <div class="service-content">
+                        <p class="box-text">Developing tailored software solutions to meet unique business needs with
+                            scalability.</p>
+                        <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card tg-img-reveal-item" data-fx="1" data-img="assets/img/service/service_1_6.jpg">
+                    <div class="service-wrapp">
+                        <div class="box-icon">
+                            <img src="assets/img/icon/service_1_4.svg" alt="Icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">UI/UX Design</a></h3>
+
+                    </div>
+                    <div class="service-content">
+                        <p class="box-text">Crafting intuitive, user-focused designs for a smooth and engaging digital
+                            experience.</p>
+                        <div class="icon-btn"><a href="service.html"><i class="fa-regular fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee-area style3 bg-color">
         <div class="marquee-content positive-relative overflow-hidden">
             <div class="marquee">
                 <div class="marquee-group style3">
-                    <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Custom Web Development</span>
+                    </div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>SEO Optimization</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Digital Marketing
+                            Strategy</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Content Creation &
+                            Management</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>E-commerce Solutions</span>
+                    </div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Website Maintenance &
+                            Support</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Social Media Marketing</span>
+                    </div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Branding & Identity
+                            Design</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Business Intelligence &
+                            Analytics</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Mobile App Development</span>
+                    </div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Cloud Solutions</span></div>
+
+                    <!-- <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
                     <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
                     <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Network Security</span></div>
                     <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Data Security</span></div>
@@ -398,7 +399,7 @@ About Area
                     <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>Data Security</span></div>
                     <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
                     <div class="item "><img src="assets/img/icon/star3.svg" alt=""><span>Technology</span></div>
-                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div>
+                    <div class="item"><img src="assets/img/icon/star3.svg" alt=""><span>IT Solution</span></div> -->
 
                 </div>
                 <div aria-hidden="true" class="marquee-group style3">
@@ -416,20 +417,21 @@ About Area
                 </div>
             </div>
         </div>
-    </div><!--==============================
-portfolio Area  
-==============================-->
+    </div>
+
+    <!--============================== portfolio Area ==============================-->
     <div class="overflow-hidden position-relative space-extra-top space-bottom" id="portfolio-sec">
-        <div class="container">
+        <div class="container px-md-5">
             <div class="title-area text-center mb-25">
-                <span class="sub-title sub-title6 style1 text-ani-style2">Our Portfolio</span>
-                <h2 class="sec-title">Creative Work Portfolio</h2>
+                <span class="sub-title sub-title6 style1 text-ani-style2">Our Expert Services</span>
+                <h3 class="sec-title">Discover the <b class="text-o">Impact</b> of Our <b class="text-o">Successful
+                        Projects</b></h3>
             </div>
             <div class="filter-menu filter-menu-active">
-                <button data-filter="*" class="tab-btn active" type="button">All Works</button>
+                <!-- <button data-filter="*" class="tab-btn active" type="button">All Works</button>
                 <button data-filter=".cat1" class="tab-btn" type="button">Apps</button>
                 <button data-filter=".cat2" class="tab-btn" type="button">Branding</button>
-                <button data-filter=".cat3" class="tab-btn" type="button">Creative</button>
+                <button data-filter=".cat3" class="tab-btn" type="button">Creative</button> -->
 
             </div>
             <div class="portfolio-area">
@@ -440,8 +442,9 @@ portfolio Area
                                 <img src="assets/img/project/project_1_1.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Portfolio Center Slider</a></h3>
-                                <p class="box-subtitle">Branding</p>
+                                <h3 class="box-title"><a href="https://ceynap.co.nz/" target="_blank">Ceynap
+                                        Transforming the Coco Coir Industry with Innovative Solutions</a></h3>
+                                <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_1.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
@@ -453,8 +456,9 @@ portfolio Area
                                 <img src="assets/img/project/project_1_2.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Twice Profit Than Before</a></h3>
-                                <p class="box-subtitle">Branding</p>
+                                <h3 class="box-title"><a href="https://ceylonmoss.com/" target="_blank">Ceylon Moss
+                                        Pioneering Excellence in the Moss Industry</a></h3>
+                                <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
@@ -466,40 +470,42 @@ portfolio Area
                                 <img src="assets/img/project/project_1_3.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Social Engagement</a></h3>
-                                <p class="box-subtitle">Branding</p>
+                                <h3 class="box-title"><a href="https://www.pradeepasv.com/" target="_blank">Pradeepa
+                                        Sangeetha Vidyapeetaya Excellence in Classical Music Education</a></h3>
+                                <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_3.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat4 cat1 cat6">
+                    <!-- <div class="col-md-6 col-xl-auto filter-item cat4 cat1 cat6">
                         <div class="project-item">
                             <div class="box-img global-img">
                                 <img src="assets/img/project/project_1_4.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">UI Projects</a></h3>
-                                <p class="box-subtitle">Branding</p>
+                                <h3 class="box-title"><a href="portfolio-details.html">Booze Bites Revolutionizing After-Work Bites in New Zealand</a></h3>
+                                <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_4.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-6 col-xl-auto filter-item cat2 cat3">
                         <div class="project-item">
                             <div class="box-img global-img">
                                 <img src="assets/img/project/project_1_5.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">E-commerce Solutions</a></h3>
-                                <p class="box-subtitle">Branding</p>
+                                <h3 class="box-title"><a href="https://edupathlk.codylanka.com/"
+                                        target="_blank">EduPathLK - Learning Management System (LMS)</a></h3>
+                                <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_5.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat7 cat5 cat3">
+                    <!-- <div class="col-md-6 col-xl-auto filter-item cat7 cat5 cat3">
                         <div class="project-item">
                             <div class="box-img global-img">
                                 <img src="assets/img/project/project_1_6.jpg" alt="project image">
@@ -511,21 +517,22 @@ portfolio Area
                             <div class="box-btn"><a href="assets/img/project/project_1_6.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-6 col-xl-auto filter-item cat4 cat6">
                         <div class="project-item">
                             <div class="box-img global-img">
                                 <img src="assets/img/project/project_1_7.jpg" alt="project image">
                             </div>
                             <div class="box-content">
-                                <h3 class="box-title"><a href="portfolio-details.html">Creative Art & Design</a></h3>
-                                <p class="box-subtitle">Branding</p>
+                                <h3 class="box-title"><a href="https://boozebites.co.nz/" target="_blank">Booze Bites
+                                        Revolutionizing After-Work Bites in New Zealand</a></h3>
+                                <p class="box-subtitle">Web</p>
                             </div>
                             <div class="box-btn"><a href="assets/img/project/project_1_7.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-auto filter-item cat1 cat2 cat5">
+                    <!-- <div class="col-md-6 col-xl-auto filter-item cat1 cat2 cat5">
                         <div class="project-item">
                             <div class="box-img global-img">
                                 <img src="assets/img/project/project_1_8.jpg" alt="project image">
@@ -537,33 +544,34 @@ portfolio Area
                             <div class="box-btn"><a href="assets/img/project/project_1_8.jpg"
                                     class="icon-btn popup-image"><i class="fa-solid fa-arrow-up-right"></i></a></div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="project-btn mt-60"><a href="portfolio.html" class="th-btn th-radius">View All Portfolio</a>
+                <div class="project-btn mt-60"><a href="all=projects.php" class="th-btn th-radius">View All Projects</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="choose-area bg-title overflow-hidden" data-mask-src="assets/img/bg/choose_bg_3.png">
+    <div class="choose-area bg-title overflow-hidden " data-mask-src="assets/img/bg/choose_bg_3.png">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
                     <div class="title-area mb-20">
-                        <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Benefits You Can't
-                            Ignore</span>
-                        <h2 class="sec-title text-ani-style3 text-white">The Powerful Benefits of Saor SEO</h2>
+                        <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us?</span>
+                        <h3 class="sec-title text-ani-style3 text-white">Your <b class="text-o">Trusted</b> Partner for
+                            Quality & Affordable Services</h3>
                     </div>
-                    <p class="sec-text mb-35">In today's digital landscape, a strong online presence is critical for
-                        business success. But simply having a website isn't enough.</p>
+                    <p class="sec-text mb-35">At Codyzea, we're committed to providing exceptional digital solutions.
+                        We're a registered company in both <b>New Zealand</b> and <b>Sri Lanka</b>, offering trust,
+                        transparency, and reliability. Here’s why you can trust us:</p>
                     <div class="choose-feature-wrap">
                         <div class="choose-feature">
                             <div class="box-icon">
                                 <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
                             </div>
                             <div class="media-body">
-                                <h3 class="box-title">Increased Website Traffic</h3>
-                                <p class="box-text">Our SEO strategies will attract more qualified visitors to your
-                                    website, bringing you closer.</p>
+                                <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
+                                <p class="box-text">We operate as a fully registered company in both countries, ensuring
+                                    credibility and trust in every project.</p>
                             </div>
                         </div>
                         <div class="choose-feature">
@@ -571,9 +579,9 @@ portfolio Area
                                 <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
                             </div>
                             <div class="media-body">
-                                <h3 class="box-title">Enhanced Brand Awareness</h3>
-                                <p class="box-text">Increased website traffic and the improved rankings naturally lead
-                                    to greater brand awareness.</p>
+                                <h3 class="box-title">24/7 Customer Support</h3>
+                                <p class="box-text">Our dedicated support team is always available, ready to assist and
+                                    update you on your projects at any time.</p>
                             </div>
                         </div>
                         <div class="choose-feature">
@@ -581,9 +589,9 @@ portfolio Area
                                 <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
                             </div>
                             <div class="media-body">
-                                <h3 class="box-title">More Leads & Conversions</h3>
-                                <p class="box-text">By attracting qualified the traffic and optimizing your website for
-                                    conversions, we'll help you.</p>
+                                <h3 class="box-title">Affordable & High-Quality Services</h3>
+                                <p class="box-text">We provide top-quality services at competitive prices, delivering
+                                    value with every solution we offer.</p>
                             </div>
                         </div>
                     </div>
@@ -591,20 +599,93 @@ portfolio Area
                 <div class="col-xl-6">
                     <div class="choose-image">
                         <div class="img1 tilt-active">
-                            <img src="assets/img/normal/choose_1.png" alt="Choose">
+                            <img src="assets/img/normal/choose_1.svg" alt="Choose">
                             <div class="choose-shape"><img src="assets/img/shape/choose-shape.png" alt=""></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!--==============================
 
-Testimonial Area  
-==============================-->
+    </div>
+
+    <!--============================== Team Area ==============================-->
+    <section class="team-sec overflow-hidden space ">
+        <div class="container z-index-common px-md-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-xxl-5">
+                    <div class="title-area text-center">
+                        <span class="sub-title sub-title6 style1 text-ani-style2">Our Team</span>
+                        <h3 class="sec-title text-ani-style3">Experts Behind <b class="text-o">Your Success</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="teamSlider1"
+                    data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1300":{"slidesPerView":"4"}}}'>
+                    <?php
+                    // Define the team members array with their details
+                    $team_members = [
+                        [
+                            'name' => 'Miler Michel',
+                            'role' => 'UI/UX Designer',
+                            'image' => 'assets/img/team/team_1_1.jpg',
+                            'social' => 'https://linkedin.com/'
+                        ],
+                        [
+                            'name' => 'John Doe',
+                            'role' => 'Web Developer',
+                            'image' => 'assets/img/team/team_1_2.jpg',
+                            'social' => 'https://linkedin.com/'
+                        ],
+                        [
+                            'name' => 'Sarah Lee',
+                            'role' => 'Project Manager',
+                            'image' => 'assets/img/team/team_1_3.jpg',
+                            'social' => 'https://linkedin.com/'
+                        ],
+                        [
+                            'name' => 'David Green',
+                            'role' => 'SEO Specialist',
+                            'image' => 'assets/img/team/team_1_4.jpg',
+                            'social' => 'https://linkedin.com/'
+                        ]
+                    ];
+                    ?>
+
+                    <div class="swiper-wrapper">
+                        <?php foreach ($team_members as $member): ?>
+                            <div class="swiper-slide">
+                                <div class="th-team team-card">
+                                    <div class="box-img">
+                                        <img src="<?php echo $member['image']; ?>" alt="Team">
+                                    </div>
+                                    <div class="box-content">
+                                        <div>
+                                            <h3 class="box-title"><a href="<?php echo $member['social']; ?>"
+                                                    target="_blank"><?php echo $member['name']; ?></a></h3>
+                                            <span class="team-desig"><?php echo $member['role']; ?></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+
+                </div>
+                <button data-slider-prev="#teamSlider1" class="slider-arrow slider-prev"><i
+                        class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#teamSlider1" class="slider-arrow slider-next"><i
+                        class="far fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!--============================== Testimonial Area ==============================-->
     <section class="">
-        <div class="testi-sec positive-relative round-container bg-smoke2 overflow-hidden space">
-            <div class="container">
+        <div class="testi-sec positive-relative round-container bg-color rounded-0 overflow-hidden space">
+            <div class="container px-md-5">
                 <div class="row gy-4">
                     <div class="col-xl-5">
                         <div class="testi-block-image tilt-active">
@@ -615,7 +696,7 @@ Testimonial Area
                         <div class="ms-xl-3">
                             <div class="title-area">
                                 <span class="sub-title sub-title6 style1 text-ani-style2">Testimonials</span>
-                                <h2 class="sec-title text-ani-style3">Client Success Stories</h2>
+                                <h3 class="sec-title text-ani-style3">Client Success Stories</h3>
                             </div>
                             <div class="swiper th-slider has-shadow testi-slider4"
                                 data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'>
@@ -655,7 +736,7 @@ Testimonial Area
                                         <div class="testi-block">
                                             <div class="testi-wrapp">
                                                 <div class="box-avater">
-                                                    <img src="assets/img/testimonial/testi_4_2.png" alt="Avater">
+                                                    <img src="assets/img/testimonial/testi_4_1.png" alt="Avater">
                                                 </div>
                                                 <div class="box-review">
                                                     <i class="fa-solid fa-star"></i>
@@ -723,11 +804,11 @@ Testimonial Area
             <div class="shape-mockup d-none d-lg-block" data-top="0%" data-right="0%"><img
                     src="assets/img/shape/shape-21.png" alt=""></div>
         </div>
-    </section><!--==============================
-Cta Area  
-==============================-->
-    <section class="cta-sec2 overflow-hidden space-bottom" data-pos-for=".testi-sec" data-sec-pos="top-half">
-        <div class="container">
+    </section>
+
+    <!--============================== Cta Area ==============================-->
+    <section class="cta-sec2 overflow-hidden space-bottom bg-white" data-pos-for=".testi-sec" data-sec-pos="top-half">
+        <div class="container px-md-5">
             <div class="cta-area4">
                 <div class="title-area mb-0">
                     <h3 class="sec-title text-ani-style3 text-white mb-0">Elevate a Business to New Heights!</h3>
@@ -747,14 +828,14 @@ Cta Area
                 <div class="cta-shate"><img src="assets/img/shape/cta-shape.png" alt=""></div>
             </div>
         </div>
-    </section><!--==============================
-Price Area  
-==============================-->
-    <section class=" bg-smoke2 overflow-hidden space">
-        <div class="container">
+    </section>
+
+    <!--============================== Price Area  ==============================-->
+    <section class=" bg-color overflow-hidden space">
+        <div class="container px-md-5">
             <div class="title-area text-center">
-                <span class="sub-title sub-title6 style1 text-ani-style2">Pricing Plan</span>
-                <h2 class="sec-title">Choose Your SEO Package</h2>
+                <span class="sub-title sub-title6 style1 text-ani-style2">Special Offers</span>
+                <h3 class="sec-title">Grab Your <b class="text-o">Deal</b> Today!</h3>
                 <div class="pricing-tabs style2">
                     <div class="switch-area">
                         <label class="toggler toggler--is-active ms-0" id="filt-monthly">Monthly</label>
@@ -925,11 +1006,11 @@ Price Area
                 </div>
             </div>
         </div>
-    </section><!--==============================
-software Area
-==============================-->
+    </section>
+
+    <!--============================== software Area ==============================-->
     <div class="software-sec bg-smoke2 overflow-hidden">
-        <div class="software-area2 position-relative overflow-hidden" data-bg-src="assets/img/bg/software_bg_1.png">
+        <div class="software-area2 position-relative overflow-hidden">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
@@ -940,8 +1021,6 @@ software Area
                         </div>
                         <div class="btn-group justify-content-center">
                             <a href="service.html" class="th-btn th-radius style1 th-icon">Browse All Services<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
-                            <a href="contact.html" class="th-btn blue-btn style1 th-icon th-radius">Get In Touch<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -954,10 +1033,10 @@ software Area
                     src="assets/img/shape/logo-right.png" alt="">
             </div>
         </div>
-    </div><!--==============================
-Blog Area  
-==============================-->
-    <section class="blog-area3 overflow-hidden space" id="blog-sec">
+    </div>
+
+    <!--============================== Blog Area  ==============================-->
+    <!-- <section class="blog-area3 overflow-hidden space" id="blog-sec">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-lg-7">
@@ -1057,17 +1136,17 @@ Blog Area
                 </div>
             </div>
         </div>
-    </section><!--==============================
-Cta Area  
-==============================-->
-    <section class="cta-sec" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
+    </section> -->
+
+    <!--============================== Cta Area  ==============================-->
+    <section class="cta-sec mt-5" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
         <div class="container">
-            <div class="cta-area space-extra2 text-center" data-bg-src="assets/img/bg/cta_shape_1.png">
+            <div class="cta-area space-extra2 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="title-area mb-25 mt-n2 text-center">
                             <span class="sub-title2">Join Our Community</span>
-                            <h2 class="sec-title cta-title">Subscribe to our newsletter</h2>
+                            <h4 class="sec-title cta-title">Subscribe to our newsletter</h4>
                             <p class="cta-text">But I must explain to you how all this mistaken idea of denouncing
                                 pleasure and praising pain was born.</p>
                         </div>
@@ -1082,22 +1161,11 @@ Cta Area
             </div>
         </div>
     </section>
-    <!--==============================
-    Footer Area
-==============================-->
-    <?php require_once "footer.php" ?>
-    <!--********************************
-            Code End  Here 
-    ******************************** -->
+    <!--============================== Footer Area ==============================-->
+<?php 
+require "footer.php"
 
-    <!-- Scroll To Top -->
-    <div class="scroll-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
-            </path>
-        </svg>
-    </div>
+?>
 
     <!--==============================
     All Js File
