@@ -77,7 +77,6 @@
     <!--==============================
      Preloader
   ==============================-->
-    <?php require_once "header.php" ?>
     <div class="preloader ">
         <button class="th-btn style1 preloaderCls">Cancel Preloader </button>
         <div class="preloader-inner">
@@ -91,56 +90,73 @@
             <input type="text" placeholder="What are you looking for?">
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
-    </div>
+    </div><!--==============================
 
-
-    <!--======== / Work Section ========-->
-    <section>
-        <div class="row text-center p-5 mt-5 d-flex justify-content-center align-items-center vh-100">
-            <div class="col-12 col-lg-6">
-                <img src="assets/start.svg" class="img-fluid" alt="Illustration">
-            </div>
-            <div
-                class="col-12 col-lg-6 mb-5 bg-black vh-100 d-flex justify-content-center align-items-center flex-column">
-                <span class="display-4 text-white fw-semibold">Web Design</span>
-                <p class="text-white fw-light">
-                    We create stunning websites designed to convert. With a keen eye for detail, responsive designs, and
-                    a focus on user experience, we ensure your site not only looks great but drives measurable results
-                </p>
-                <div class="btn-group d-flex justify-content-center mt-3">
-                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-orange">Our Work<i
-                            class="fa-regular fa-arrow-right ms-2"></i></a>
-                </div>
+    Header Area
+==============================-->
+    <?php require_once "header.php" ?>
+    <!--==============================
+    Breadcumb
+============================== -->
+    <!-- 
+    <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+        <div class="container">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Services Details</h1>
+                <ul class="breadcumb-menu">
+                    <li><a href="home-seo-agency.html">Home</a></li>
+                    <li>Services Details</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div> -->
+    <div class="container space-extra2">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img src="assets/webdesigncol6.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="rounded-20 bg-white shadow-lg p-5 d-flex justify-content-center flex-column">
+                    <span class="display-1 text-black">Web <span class="text-orange">Design</span></span>
+                    <p class="text-black text-center fs-2 fw-semibold">
+                        Design that dazzles. Speed that sells. Websites built to wow and win.
+                    </p>
+                    <div class="btn-group">
+                        <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Build Your Website <i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
 
-    <!--======== / Work Section ========-->
-    <section class="space-top space-extra-bottom">
-        <div class="container mt-5">
-            <div class="row mt-5">
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+    Service Area
+==============================-->
+    <section class="space-top space-extra mb-5">
+        <div class="container">
+            <div class="row">
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
                         <div class="page-img global-img mb-35">
-                            <img src="assets/img/service/service_details.jpg" alt="Service Image">
+                            <img src="assets/webd.jpg" alt="Service Image">
                         </div>
                         <div class="page-content">
-                            <h2 class="h2 page-title mb-20">Web Development</h2>
-                            <p class="blog-text">At Saor, with over 25 years of experience serving clients globally
-                                (established since 1995), we understand the power of exceptional UI/UX design in driving
-                                user engagement and achieving your business goals. Our team of passionate designers
-                                creates
-                                user-centric interfaces that are not only visually stunning but also intuitive and
-                                effective
-                                across all devices and cultural contexts.
+                            <h2 class="h2 page-title mb-20">Web Design & Development</h2>
+                            <p class="blog-text text-black">Your website is more than just a page—it’s your brand’s
+                                first impression, sales engine, and credibility booster. We craft custom,
+                                high-performance websites that blend aesthetics with functionality, ensuring a seamless
+                                experience for your visitors.
                             </p>
-                            <p class="blog-text mb-30">We delve deep to understand your target audience, their needs,
+                            <!-- <p class="blog-text mb-30 text-black">We delve deep to understand your target audience,
+                                their needs,
                                 and
                                 pain points.This research forms the foundation for crafting user journeys and
                                 information
                                 architecture that optimizes the user experience.We create interactive prototypes that
                                 allow
-                                stakeholders to experience the website's flow.</p>
+                                stakeholders to experience the website's flow.</p> -->
 
                             <div class="row gy-4 gx-40">
                                 <div class="col-xl-5">
@@ -149,68 +165,75 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-7">
-                                    <h4 class="mb-20">How We Can Help</h4>
-                                    <p class="mt-n1 mb-4 blog-text">Our designers translate your brand identity into a
-                                        captivating visual language, ensuring consistency across all touchpoints.</p>
+                                    <h4 class="mb-20">What You Get</h4>
+                                    <p class="mt-n1 mb-4 blog-text text-black">Your website is more than just a
+                                        page—it’s your brand’s first impression, sales engine, and credibility booster.
+                                        We craft custom, high-performance websites that blend aesthetics with
+                                        functionality, ensuring a seamless experience for your visitors.</p>
                                     <div class="checklist style4 mb-20">
                                         <ul>
-                                            <li><i class="fa-solid fa-shield-check"></i>Increased User Engagement &
-                                                Conversion Rates</li>
-                                            <li><i class="fa-solid fa-shield-check"></i>Enhanced Brand Perception</li>
-                                            <li><i class="fa-solid fa-shield-check"></i>Improved Global Reach &
-                                                Accessibility</li>
-                                            <li><i class="fa-solid fa-shield-check"></i>Reduced Development Costs</li>
+                                            <li><i class="fa-solid fa-shield-check"></i> Custom Designs </li>
+                                            <li><i class="fa-solid fa-shield-check"></i>Lightning-Fast Performance</li>
+                                            <li><i class="fa-solid fa-shield-check"></i>Mobile-First Approach</li>
+                                            <li><i class="fa-solid fa-shield-check"></i>SEO-Optimized </li>
+                                            <li><i class="fa-solid fa-shield-check"></i>Scalable & Secure</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <h4 class="mt-35">Benefits of Working with Saor</h4>
-                            <p class="blog-text mb-35">Overall, the results of a challenge can be highly rewarding,
-                                leading to growth, innovation, and progress. However, it's important to be prepared for
-                                potential difficulties and approach challenges strategically to maximize your chances of
-                                success.</p>
-
+                            <h4 class="mt-35 display-4">Why NZ Businesses Trust Us for <span class="text-orange"> Web
+                                    Design?</span></h4>
+                            <p class="blog-text mb-35 text-black">When it comes to building a powerful online presence,
+                                businesses
+                                across New Zealand choose us because we deliver more than just good-looking websites—we
+                                create digital experiences that drive results. </p>
+                            <!-- 
                             <div class="service-process-wrap">
                                 <div class="service-process">
                                     <div class="service-process_img"><img src="assets/img/icon/process_2_1.svg" alt="">
                                     </div>
                                     <div class="service-process_centent">
-                                        <h5 class="service-process_title">Finding Problem</h5>
-                                        <p class="service-process_text">These companies provide services for a digital
-                                            agency.</p>
+                                        <h5 class="service-process_title">Tailored for Your Brand</h5>
+                                        <p class="service-process_text text-black">No cookie-cutter templates; every design is unique.</p>
                                     </div>
                                 </div>
                                 <div class="service-process">
                                     <div class="service-process_img"><img src="assets/img/icon/process_2_2.svg" alt="">
                                     </div>
                                     <div class="service-process_centent">
-                                        <h5 class="service-process_title">Scalable Solutions</h5>
-                                        <p class="service-process_text">These companies provide services for a digital
-                                            agency</p>
+                                        <h5 class="service-process_title">Blazing-Fast Performance</h5>
+                                        <p class="service-process_text text-black">Speed matters, and we optimize for it.</p>
                                     </div>
                                 </div>
                                 <div class="service-process">
                                     <div class="service-process_img"><img src="assets/img/icon/process_2_3.svg" alt="">
                                     </div>
                                     <div class="service-process_centent">
-                                        <h5 class="service-process_title">24/7 Online Support</h5>
-                                        <p class="service-process_text">These companies provide services for a digital
-                                            agency</p>
+                                        <h5 class="service-process_title">Seamless on All Devices</h5>
+                                        <p class="service-process_text text-black">Mobile-first, always.</p>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="service-process">
+                                    <div class="service-process_img"><img src="assets/img/icon/process_2_3.svg" alt="">
+                                    </div>
+                                    <div class="service-process_centent">
+                                        <h5 class="service-process_title">Seamless on All Devices</h5>
+                                        <p class="service-process_text text-black">Mobile-first, always.</p>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-4">
                     <aside class="sidebar-area">
-                        <div class="widget widget_search   ">
+                        <!-- <div class="widget widget_search   ">
                             <form class="search-form">
                                 <input type="text" placeholder="Enter Keyword">
                                 <button type="submit"><i class="far fa-search"></i></button>
                             </form>
-                        </div>
-                        <div class="widget widget_categories style2  ">
+                        </div> -->
+                        <!-- <div class="widget widget_categories style2  ">
                             <h3 class="widget_title">Categories</h3>
                             <ul>
                                 <li>
@@ -229,7 +252,7 @@
                                     <a href="blog.html">Growth Hacking</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="widget widget_call  ">
                             <div class="widget-call">
                                 <h4 class="box-title text-white">Need Any Help?</h4>
@@ -274,6 +297,162 @@
                         </div>
                     </aside>
                 </div>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                            <img src="assets/services/s001.png" class="img-flud w-25" alt="Feature001"> <br />
+                            <div class="col-12 mt-3">
+                                <span class="fs-2 text-black"> No Templates, 100% Unique</span>
+                                <p class="text-black fw-thin fs-5">
+                                    Every design is custom-made to fit your brand.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                            <img src="assets/services/s007.png" class="img-flud w-25" alt="Feature001"> <br />
+                            <div class="col-12 mt-3">
+                                <span class="fs-2 text-black">Easy to Edit </span>
+                                <p class="text-black fw-thin fs-5">
+                                    Update text and images effortlessly without tech skills.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                            <img src="assets/services/s003.png" class="img-flud w-25" alt="Feature001"> <br />
+                            <div class="col-12 mt-3">
+                                <span class="fs-2 text-black">Responsive Design</span>
+                                <p class="text-black fw-thin fs-5">
+                                    Perfect on mobile, tablet, and desktop. </p>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                            <img src="assets/services/s006.png" class="img-flud w-25" alt="Feature001"> <br />
+                            <div class="col-12 mt-3">
+                                <span class="fs-2 text-black">Fast & Optimized</span>
+                                <p class="text-black fw-thin fs-5">
+                                    Lightning-speed performance for a seamless experience. </p>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                            <img src="assets/services/s004.png" class="img-flud w-25" alt="Feature001"> <br />
+                            <div class="col-12 mt-3">
+                                <span class="fs-2 text-black">SEO Friendly </span>
+                                <p class="text-black fw-thin fs-5">
+                                    Designed to rank higher and attract more visitors. </p>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                            <img src="assets/services/s005.png" class="img-flud w-25" alt="Feature001"> <br />
+                            <div class="col-12 mt-3">
+                                <span class="fs-2 text-black">Secure & Reliable</span>
+                                <p class="text-black fw-thin fs-5">
+                                    Built with top security and future scalability in mind. </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <span class="display-4 text-black mt-5">
+                            Discover the Power of Great Web Design in Our Works
+                        </span>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="overflow-hidden position-relative space-extra-top space-bottom" id="portfolio-sec">
+                            <div class="container">
+                                <div class="portfolio-area">
+                                    <div class="row gy-4 filter-active offset-0 offset-lg-2">
+                                        <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                            <div class="project-item">
+                                                <div class="box-img global-img">
+                                                    <img src="assets/img/project/project_1_2.jpg" alt="project image">
+                                                </div>
+                                                <div class="box-content">
+                                                    <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss -
+                                                            https://ceylonmoss.com/</a></h3>
+                                                    <p class="box-subtitle">Web Design & Development</p>
+                                                </div>
+                                                <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                                        class="icon-btn popup-image"><i
+                                                            class="fa-solid fa-arrow-up-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                            <div class="project-item">
+                                                <div class="box-img global-img">
+                                                    <img src="assets/img/project/project_1_3.jpg" alt="project image">
+                                                </div>
+                                                <div class="box-content">
+                                                    <h3 class="box-title"><a href="portfolio-details.html">Booze Bites -
+                                                            https://boozebites.co.nz/</a></h3>
+                                                    <p class="box-subtitle">Web Design & Development</p>
+                                                </div>
+                                                <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                                        class="icon-btn popup-image"><i
+                                                            class="fa-solid fa-arrow-up-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                            <div class="project-item">
+                                                <div class="box-img global-img">
+                                                    <img src="assets/img/project/project_1_4.jpg" alt="project image">
+                                                </div>
+                                                <div class="box-content">
+                                                    <h3 class="box-title"><a href="portfolio-details.html">Ceynap -
+                                                            https://ceynap.co.nz/</a></h3>
+                                                    <p class="box-subtitle">Web Design & Development</p>
+                                                </div>
+                                                <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                                        class="icon-btn popup-image"><i
+                                                            class="fa-solid fa-arrow-up-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                            <div class="project-item">
+                                                <div class="box-img global-img">
+                                                    <img src="assets/img/project/project_1_2.jpg" alt="project image">
+                                                </div>
+                                                <div class="box-content">
+                                                    <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss -
+                                                            https://ceylonmoss.com/</a></h3>
+                                                    <p class="box-subtitle">Web Design & Development</p>
+                                                </div>
+                                                <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                                        class="icon-btn popup-image"><i
+                                                            class="fa-solid fa-arrow-up-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                                <div class="col-12 mt-5 d-flex justify-content-center">
+  <div class="btn-group">
+                                    <a href="works.html"
+                                        class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">View More Website
+                                        Work <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section><!--==============================
@@ -387,116 +566,8 @@ Brand Area
             </div>
         </div>
     </div><!--==============================
-    Footer Area
-==============================-->
-    <footer class="footer-wrapper bg-title default-footer">
-        <div class="widget-area">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 col-xxl-3 col-xl-4">
-                        <div class="widget footer-widget">
-                            <div class="th-widget-about">
-                                <div class="about-logo">
-                                    <a class="icon-masking" href="index.html"><span data-mask-src="assets/img/logo.svg"
-                                            class="mask-icon"></span><img src="assets/img/logo.svg" alt="saor"></a>
-                                </div>
-                                <p class="about-text">Saor, meaning "free" in Gaelic, embodies our dedication to
-                                    liberating your brand's potential in the digital realm. Founded in 1995, we boast a
-                                    rich history.</p>
-                                <div class="th-social">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Company</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="service.html">Our Services</a></li>
-                                    <li><a href="blog.html">Our Blogs</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Quick Links</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="contact.html">Terms & Conditions</a></li>
-                                    <li><a href="contact.html">Forum Community</a></li>
-                                    <li><a href="contact.html">Business Support</a></li>
-                                    <li><a href="contact.html">Payment Gateway</a></li>
-                                    <li><a href="contact.html">Web Development</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget footer-widget">
-                            <h3 class="widget_title">Get In Touch</h3>
-                            <div class="th-widget-contact">
-                                <div class="info-box">
-                                    <div class="box-icon">
-                                        <img src="assets/img/icon/location.svg" alt="">
-                                    </div>
-                                    <p class="box-text">77815 Hartmann Plaza Suite 202,Idaho,USA</p>
-                                </div>
-                                <div class="info-box">
-                                    <div class="box-icon">
-                                        <img src="assets/img/icon/call.svg" alt="">
-                                    </div>
-                                    <p class="box-text">
-                                        <a href="tel:+13217322978" class="box-link">+13217322978</a>
-                                    </p>
-                                </div>
-                                <div class="info-box">
-                                    <div class="box-icon">
-                                        <img src="assets/img/icon/mail.svg" alt="">
-                                    </div>
-                                    <p class="box-text">
-                                        <a href="mailto:saorhelp@gmail.com" class="box-link">saorhelp@gmail.com</a>
-                                    </p>
-                                </div>
-                                <div class="info-box">
-                                    <div class="box-icon">
-                                        <img src="assets/img/icon/clock.svg" alt="">
-                                    </div>
-                                    <p class="box-text">09am - 05pm Mon-Sat</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-wrap">
-            <div class="container">
-                <div class="row gy-2 align-items-center justify-content-between">
-                    <div class="col-md-6">
-                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a
-                                href="https://themeforest.net/user/themeholy">Saor</a>. All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-links">
-                            <ul>
-                                <li><a href="contact.html">Privacy Policy</a></li>
-                                <li><a href="contact.html">Terms & Condition</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    Footer Area==============================-->
+    <?php require_once "footer.php" ?>
 
     <!--********************************
             Code End  Here 

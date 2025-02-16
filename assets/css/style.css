@@ -144,6 +144,10 @@ body {
 .text-black{
   color: #000000 !important;
 }
+.fw-thin{
+  font-optical-sizing: auto;
+  font-weight: 200 !important;
+}
 .text-white-o{
   color: black;
 }
