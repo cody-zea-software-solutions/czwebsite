@@ -993,7 +993,7 @@ Blog Area
                         <div class="swiper-slide">
                             <div class="blog-card style2">
                                 <div class="box-img global-img">
-                                    <img src="assets/img/blog/blog_3_1.jpg" alt="blog image">
+                                    <img src="assets/blog001.jpg" alt="blog image">
                                 </div>
                                 <div class="box-content">
                                     <div class="blog-meta">
@@ -1012,7 +1012,7 @@ Blog Area
                         <div class="swiper-slide">
                             <div class="blog-card style2">
                                 <div class="box-img global-img">
-                                    <img src="assets/img/blog/blog_3_2.jpg" alt="blog image">
+                                    <img src="assets/blog002.jpg" alt="blog image">
                                 </div>
                                 <div class="box-content">
                                     <div class="blog-meta">
@@ -1070,18 +1070,19 @@ Blog Area
                 </div>
             </div>
         </div>
-    </section><!--==============================
+    </section>
+    <!--==============================
 Cta Area  
 ==============================-->
     <section class="cta-sec" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
         <div class="container">
-            <div class="cta-area space-extra2 text-center" data-bg-src="assets/img/bg/cta_shape_1.png">
+            <div class="cta-area space-extra2 text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="title-area mb-25 mt-n2 text-center">
                             <span class="sub-title2">Join Our Community</span>
                             <h2 class="sec-title cta-title">Subscribe to our newsletter</h2>
-                            <p class="cta-text">But I must explain to you how all this mistaken idea of denouncing
+                            <p class="cta-text text-black">But I must explain to you how all this mistaken idea of denouncing
                                 pleasure and praising pain was born.</p>
                         </div>
                         <form class="newsletter-form style4">

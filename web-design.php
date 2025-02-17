@@ -134,7 +134,7 @@
     <!--==============================
     Service Area
 ==============================-->
-    <section class="space-top space-extra mb-5">
+    <section class="space-top space-extra">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-8">
@@ -143,12 +143,12 @@
                             <img src="assets/webd.jpg" alt="Service Image">
                         </div>
                         <div class="page-content">
-                            <h2 class="h2 page-title mb-20">Web Design & Development</h2>
+                            <!-- <h2 class="h2 page-title mb-20">Web Design & Development</h2>
                             <p class="blog-text text-black">Your website is more than just a page—it’s your brand’s
                                 first impression, sales engine, and credibility booster. We craft custom,
                                 high-performance websites that blend aesthetics with functionality, ensuring a seamless
                                 experience for your visitors.
-                            </p>
+                            </p> -->
                             <!-- <p class="blog-text mb-30 text-black">We delve deep to understand your target audience,
                                 their needs,
                                 and
@@ -158,35 +158,7 @@
                                 allow
                                 stakeholders to experience the website's flow.</p> -->
 
-                            <div class="row gy-4 gx-40">
-                                <div class="col-xl-5">
-                                    <div class="page-img global-img">
-                                        <img class="w-100" src="assets/img/service/service_inner_1.jpg" alt="service">
-                                    </div>
-                                </div>
-                                <div class="col-xl-7">
-                                    <h4 class="mb-20">What You Get</h4>
-                                    <p class="mt-n1 mb-4 blog-text text-black">Your website is more than just a
-                                        page—it’s your brand’s first impression, sales engine, and credibility booster.
-                                        We craft custom, high-performance websites that blend aesthetics with
-                                        functionality, ensuring a seamless experience for your visitors.</p>
-                                    <div class="checklist style4 mb-20">
-                                        <ul>
-                                            <li><i class="fa-solid fa-shield-check"></i> Custom Designs </li>
-                                            <li><i class="fa-solid fa-shield-check"></i>Lightning-Fast Performance</li>
-                                            <li><i class="fa-solid fa-shield-check"></i>Mobile-First Approach</li>
-                                            <li><i class="fa-solid fa-shield-check"></i>SEO-Optimized </li>
-                                            <li><i class="fa-solid fa-shield-check"></i>Scalable & Secure</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4 class="mt-35 display-4">Why NZ Businesses Trust Us for <span class="text-orange"> Web
-                                    Design?</span></h4>
-                            <p class="blog-text mb-35 text-black">When it comes to building a powerful online presence,
-                                businesses
-                                across New Zealand choose us because we deliver more than just good-looking websites—we
-                                create digital experiences that drive results. </p>
+
                             <!-- 
                             <div class="service-process-wrap">
                                 <div class="service-process">
@@ -298,7 +270,69 @@
                     </aside>
                 </div>
                 <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <span class="text-black fs-1">Web Design & Development</span> <br /><br />
+                            <p class="text-black" style="text-align: justify;">
+                                A great website is more than just an online presence; it’s a powerful tool to connect
+                                with your audience and drive business growth. Our <span class="text-orange">Web Design &
+                                    Development</span> services
+                                <br />
+                                <br />
+                                focus on creating visually stunning, user-friendly websites that not only look amazing
+                                but also function seamlessly.
+                                From the initial design concept to the final launch, we ensure every detail is carefully
+                                crafted. Our team combines creativity with the latest development technologies to build
+                                responsive, fast, and SEO-optimized websites tailored to your brand and business needs.
+                                Whether it’s a simple portfolio, a dynamic e-commerce site, or a complex web platform,
+                                we bring your vision to life.
+                                <br />
+                                <br />
+                                Our goal is to deliver a website that enhances user experience, builds trust with your
+                                customers, and supports your business objectives. With us, you get a beautifully
+                                designed website that’s easy to use, easy to manage, and ready to grow with your
+                                business.
+                            </p>
+
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <img src="assets/webcover.png" class="img-fluid" alt="webdesignservices">
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4 gx-40">
+                    <div class="col-xl-6">
+                        <div class="page-img global-img">
+                            <img class="w-100" src="assets/wyg.jpg" alt="service">
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <h4 class="mb-20 display-4">What You Get</h4>
+                        <p class="mt-n1 mb-4 blog-text text-black fs-5">Your website is more than just a
+                            page—it’s your brand’s first impression, sales engine, and credibility booster.
+                            We craft custom, high-performance websites that blend aesthetics with
+                            functionality, ensuring a seamless experience for your visitors.</p>
+                        <div class="checklist style4 mb-20">
+                            <ul>
+                                <li><i class="fa-solid fa-shield-check"></i> Custom Designs </li>
+                                <li><i class="fa-solid fa-shield-check"></i>Lightning-Fast Performance</li>
+                                <li><i class="fa-solid fa-shield-check"></i>Mobile-First Approach</li>
+                                <li><i class="fa-solid fa-shield-check"></i>SEO-Optimized </li>
+                                <li><i class="fa-solid fa-shield-check"></i>Scalable & Secure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
                     <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <h4 class="mt-35 display-4">Why NZ Businesses Trust Us for <span class="text-orange"> Web
+                                    Design?</span></h4>
+                            <p class="blog-text mb-35 text-black">When it comes to building a powerful online presence,
+                                businesses
+                                across New Zealand choose us because we deliver more than just good-looking websites—we
+                                create digital experiences that drive results. </p>
+                        </div>
                         <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                             <img src="assets/services/s001.png" class="img-flud w-25" alt="Feature001"> <br />
                             <div class="col-12 mt-3">
@@ -441,131 +475,252 @@
 
                                 </div>
                                 <div class="col-12 mt-5 d-flex justify-content-center">
-  <div class="btn-group">
-                                    <a href="works.html"
-                                        class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">View More Website
-                                        Work <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    <div class="btn-group">
+                                        <a href="works.html"
+                                            class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">View More
+                                            Website
+                                            Work <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    </div>
                                 </div>
-                                </div>
-                              
+
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
 
             </div>
         </div>
-    </section><!--==============================
+        <div class="conatiner-fluid">
+            <img src="assets/codyzeaweb.jpg" class="img-fluid d-lg-none d-block" alt="">
+            <div class="row p-5 d-none d-lg-block"
+                style="background-image: url(assets/codyzeaweb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
+            </div>
+        </div>
+    </section>
+
+    <section class="space-extra-top space-bottom overflow-hidden" id="process-sec">
+        <div class="container">
+            <div class="row flex-row-reverse align-items-end">
+                <div class="col-xl-6">
+                    <div class="ps-xl-3 mb-40">
+                        <div class="title-area text-center text-xl-start">
+                            <h2 class="sec-title text-ani-style3">Our Working Process Faster And Easier.</h2>
+                        </div>
+                        <div class="process-item">
+                            <span class="box-number">01</span>
+                            <div class="box-content">
+                                <h3 class="box-title">Creative ideas</h3>
+                                <p class="box-text text-black">Every business is unique. That's why we tailor our SEO
+                                    and marketing
+                                    services to meet your specific goals, industry requirements, and target audience.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <span class="box-number">02</span>
+                            <div class="box-content">
+                                <h3 class="box-title">Execution</h3>
+                                <p class="box-text text-black">Every business is unique. That's why we tailor our SEO
+                                    and marketing
+                                    services to meet your specific goals, industry requirements, and target audience.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <span class="box-number">03</span>
+                            <div class="box-content">
+                                <h3 class="box-title">Finishing</h3>
+                                <p class="box-text text-black">Every business is unique. That's why we tailor our SEO
+                                    and marketing
+                                    services to meet your specific goals, industry requirements, and target audience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mt-35 mt-xl-0">
+                    <img src="assets/wprocess.jpg" class="img-fluid" alt="WorkProcess">
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup spin  d-none d-xl-block" data-top="3%" data-right="18%"><img
+                src="assets/img/shape/shape-9.png" alt=""></div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <span class="display-3 text-black">
+                    Your Website, <span class="text-orange"> Your NZ Brand</span>
+                </span>
+                <p class="fs-4 text-black">
+                    Your website should be as unique as your business. We don’t use templates—every design is
+                    custom-built to reflect your brand’s personality and goals. Whether you’re a startup or an
+                    established NZ business, we create a site that makes a strong, lasting first impression.
+                </p>
+                <div class="btn-group">
+                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a Free Consultation<i
+                            class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="assets/web001.jpg" class="img-fluid" alt="webdesignillus001">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img src="assets/web002.jpg" class="img-fluid" alt="webdesignillus002">
+            </div>
+            <div class="col-12 col-lg-6">
+                <span class="display-3 text-black">
+                    Designed for NZ, <span class="text-orange"> Built for All</span>
+                </span>
+                <p class="fs-4 text-black">
+                    With more customers browsing on mobile than ever, we design fully responsive websites that adapt
+                    seamlessly to any screen—whether it’s a phone, tablet, or desktop. No matter where your customers
+                    are in New Zealand or beyond, they’ll enjoy a smooth, user-friendly experience.
+                </p>
+                <div class="btn-group">
+                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a Free Consultation<i
+                            class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="me-xl-5 pe-xl-3">
+                        <div class="title-area mb-30 text-center text-xl-start">
+                            <span class="sub-title sub-title7 style1 text-ani-style2">FAQS</span>
+                            <h2 class="sec-title text-ani-style3">Have Any Questions?</h2>
+                            <p class="text-black fs-4">We know you might have questions about our web design services—so
+                                we’ve answered the most common ones below. If you need more details, feel free to reach
+                                out!</p>
+                        </div>
+                        <div class="text-center text-xl-start">
+                            <a href="about.html" class="th-btn style4 th-radius fs-5">Ask a Question</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mt-35 mt-xl-0">
+                    <div class="accordion-area accordion" id="faqAccordion">
+                        <div class="accordion-card active">
+                            <div class="accordion-header" id="collapse-item-1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">How
+                                    long does it take to build a website?</button>
+                            </div>
+                            <div id="collapse-1" class="accordion-collapse collapse " aria-labelledby="collapse-item-1"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">For standard business websites, we can have it ready
+                                        in 4-6 days. More complex websites with advanced features may take 2-4 weeks,
+                                        depending on the project requirements. We’ll provide a clear timeline before we
+                                        start.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"> Can I
+                                    update my website myself?</button>
+                            </div>
+                            <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="collapse-item-2"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Yes! We build websites with an easy-to-use content
+                                        management system (CMS), allowing you to edit text, images, and pages without
+                                        any technical knowledge. We also provide training if needed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">Will
+                                    my website work on mobile and tablets?</button>
+                            </div>
+                            <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="collapse-item-3"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Absolutely! We use responsive design, ensuring your
+                                        website looks and functions perfectly on all devices, including phones, tablets,
+                                        and desktops.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">Do you
+                                    offer SEO services?</button>
+                            </div>
+                            <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="collapse-item-4"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Yes! Our websites are built with SEO best practices
+                                        to help you rank higher in search engines. We also offer ongoing SEO services
+                                        for businesses that want to improve their visibility.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">How
+                                    much does a website cost?</button>
+                            </div>
+                            <div id="collapse-5" class="accordion-collapse collapse " aria-labelledby="collapse-item-5"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Pricing depends on the features and complexity of
+                                        your website. We offer flexible packages tailored to your needs. <span
+                                            class="text-orange text-decoration-underline"> Contact us </span>for
+                                        a free quote!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
 Brand Area  
 ==============================-->
-    <div class="brand-sec overflow-hidden bg-smoke2  bg-white space-bottom">
-        <div class="container th-container">
-            <div class="slider-area text-center">
-                <div class="swiper th-slider" id="brandSlider1"
-                    data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"476":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"6"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
+    <section class="d-flex justify-content-center">
+        <div class="container mt-5 m-5">
+            <div class="row bg-black rounded-20 p-5">
+                <div class="col-12 col-lg-4">
+                    <img src="assets/conillus.png" class="img-fluid w-75" alt="ContactUsIllustration">
+                </div>
+                <div class="col-12 col-lg-8">
+                    <span class="text-white display-4">Let’s Build Something Amazing Together
+
+                    </span>
+                    <p class="text-white fs-4">
+                        Your dream website is within reach. Ready to get started? We’re excited to bring your vision to
+                        life.
+                    </p>
+                    <div class="text-center text-xl-start">
+                        <a href="about.html" class="th-btn style4 th-radius fs-5 bg-orange">Ask a Question</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div><!--==============================
+
+    </section>
+
+    <!--==============================
     Footer Area==============================-->
     <?php require_once "footer.php" ?>
 
