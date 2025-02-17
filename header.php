@@ -1,7 +1,7 @@
 <!--==============================
      Preloader
   ==============================-->
-<div class="preloader ">
+  <div class="preloader ">
     <div class="preloader-inner">
         <img src="assets/img/logo.svg" alt="Rasm">
         <span class="loader"></span>

@@ -17,13 +17,13 @@ function changeFeatures(id,uid) {
 
     // Loop through all elements with the name 'select-btn' and remove 'cb-active' from each
     btn2.forEach(element => {
-        element.classList.remove('cb-active');
-        element.classList.add('cb');
+        element.classList.remove('gradient-border-button-active');
+        element.classList.add('gradient-border-button');
     });
 
     // Apply class changes to the clicked button
-    btn.classList.remove('cb');
-    btn.classList.add('cb-active');
+    // btn.classList.remove('gradient-border-button');
+    btn.classList.add('gradient-border-button-active');
 
     // Show loading overlay
     document.getElementById('loadingOverlay').classList.remove('d-none');

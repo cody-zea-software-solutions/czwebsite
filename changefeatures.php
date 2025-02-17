@@ -12,10 +12,10 @@ if (isset($_POST['id'])) {
     for ($i = 1; $i <= $result->num_rows; $i++) {
         $row = $result->fetch_assoc();
 ?>
-        <div class="col-6 col-lg-3 mt-3">
+        <div class="col-6 col-lg-3 mt-4">
             <div class="card card-margine position-relative">
                 <!-- "+" Button at Top Right -->
-                <button class="btn btn-warning position-absolute top-0 end-0 m-2 rounded-circle d-flex justify-content-center align-items-center" onclick="addFeatures('<?php echo $_SESSION['user_id']; ?>','<?php echo $row['f_id']; ?>','<?php echo $row['types_type_id']; ?>');">+</button>
+                <button class="btn btn-warning position-absolute plus-btn rounded-circle d-flex justify-content-center align-items-center" onclick="addFeatures('<?php echo $_SESSION['user_id']; ?>','<?php echo $row['f_id']; ?>','<?php echo $row['types_type_id']; ?>');"><img src="assets/img/add.svg" class="img-fluid"></button>
 
                 <!-- Card content -->
                 <div class="card-header border-0 bg-white d-flex justify-content-center align-items-center">
@@ -25,8 +25,8 @@ if (isset($_POST['id'])) {
                     <div class="widget-49">
                         <div class="widget-49-title-wrapper">
                             <div class="widget-49-meeting-info px-1 text-lg-center">
-                                <p class="text-dark m-0 h5"><?php echo $row['f_name']; ?><i class="fa fa-check ms-2"></i></p>
-                                <p class="box-text2 m-0">USD <?php echo $row['price']; ?></p>
+                                <p class="box-text2 m-0 scrolling-text"><?php echo $row['f_name']; ?></p>
+                                <p class="box-text2 m-0">NZD <?php echo $row['price']; ?></p>
                             </div>
                             <a class="custom-small-text mt-1 text-decoration-underline text-dark fw-bold px-1 div-hover" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $i; ?>">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>

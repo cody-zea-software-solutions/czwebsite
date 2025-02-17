@@ -11,15 +11,53 @@
 /* Default Desktop Layout */
 .left {
     width: 67%;
-    background-color: #F8F8F8;
+    background-color: #FEF4EA;
     min-height: 100vh;
 }
 
 .right {
     width: 33%;
-    background-color: #121212;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
+}
+
+.c-btn {
+    background-color: #FF5C35 !important;
+    border-radius: 40px !important;
+    border: none;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.c-btn:hover {
+    background-color: #ffffff !important;
+    border-radius: 40px !important;
+    border: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05); /* Slightly enlarges the button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+.i-btn {
+    background-color: white !important;
+    border-radius: 40px !important;
+    border: none;
+    font-weight: bold;
+    color: #FF5C35;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.i-btn:hover {
+    background-color: #ffffff !important;
+    border-radius: 40px !important;
+    border: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05); /* Slightly enlarges the button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
 }
 
 .cb {
@@ -47,60 +85,219 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
+.roudiv {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    animation: floatAnimation 5s infinite ease-in-out alternate;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        /* Moves up slightly */
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.roudiv:nth-child(1) {
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+.roudiv:nth-child(2) {
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.roudiv:nth-child(3) {
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+}
+
+.pricing-image{
+    animation: floatAnimation 6s infinite ease-in-out alternate;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(20px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.random-svg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /* Prevent interaction */
+    overflow: hidden;
+}
+
+.random-svg {
+    position: absolute;
+    width: 200px;
+    /* Adjust as needed */
+    height: auto;
+    opacity: 0.1;
+    /* Light effect */
+    animation: floatAnimation 6s infinite ease-in-out alternate;
+    /* Apply animation */
+}
+
+/* Floating animation */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+        /* Moves up slightly and rotates */
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Random positions */
+.random-svg:nth-child(1) {
+    top: 5%;
+    left: 5%;
+    animation-duration: 5s;
+    /* Slight variation in timing */
+}
+
+.random-svg:nth-child(2) {
+    top: 30%;
+    right: 10%;
+    animation-duration: 7s;
+}
+
+.random-svg:nth-child(3) {
+    bottom: 15%;
+    left: 20%;
+    animation-duration: 6s;
+}
+
+.random-svg:nth-child(4) {
+    bottom: 50%;
+    right: 50%;
+    animation-duration: 8s;
+}
+
+.random-svg:nth-child(5) {
+    bottom: -5%;
+    right: 25%;
+    animation-duration: 6.5s;
+}
+
+
+.border-orange {
+    border: 2px solid #FF5C35;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+.click-svg {
+    width: 30px;
+}
+
 .card .widget-49-meeting-info p {
     margin: 0;
-    padding: 2px 0; /* Adds minimal space */
+    padding: 2px 0;
+    /* Adds minimal space */
     line-height: 1.1;
 }
 
+@media (min-width: 768px) {
+
+    /* Your styles for col-md here */
+    .small-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: bisque;
+    }
+
+}
+
 @media (min-width: 992px) {
+
     /* Initially hide the "Read More" link */
-.card .custom-small-text {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: block; /* Ensure it's always in the DOM */
-}
+    .card .custom-small-text {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: block;
+        /* Ensure it's always in the DOM */
+    }
 
-/* Show the "Read More" link with animation on hover */
-.card:hover .custom-small-text {
-    max-height: 50px; /* Adjust this value based on the content height */
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
+    /* Show the "Read More" link with animation on hover */
+    .card:hover .custom-small-text {
+        max-height: 50px;
+        /* Adjust this value based on the content height */
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
 
-.card .btn-warning {
-    position: absolute !important; /* Position it relative to the card */
-    top: 0px !important; /* Distance from the top */
-    right: -20px !important;
-    width: 40px;
-    /* Set the width */
-    height: 40px;
-    /* Set the height to the same as width */
-    font-size: 24px;
-    /* Adjust icon size if needed */
-    padding-bottom: 12px;
-    display: flex;
-    /* Flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    top: 50%;
-    /* Vertically center the button */
-    transform: translateY(-50%);
-    /* Fine-tune vertical centering */
-    background-color: #ffc720;
-    /* Original button color */
-    color: #000;
-    /* Original text color */
-    border: none;
-    /* Remove border */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* Smooth transition */
-}
+    .card .btn-warning {
+        position: absolute !important;
+        /* Position it relative to the card */
+        top: 0px !important;
+        /* Distance from the top */
+        right: -20px !important;
+        width: 40px;
+        /* Set the width */
+        height: 40px;
+        /* Set the height to the same as width */
+        font-size: 24px;
+        /* Adjust icon size if needed */
+        padding-bottom: 12px;
+        display: flex;
+        /* Flexbox for centering */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        top: 50%;
+        /* Vertically center the button */
+        transform: translateY(-50%);
+        /* Fine-tune vertical centering */
+        background-color: #ffc720;
+        /* Original button color */
+        color: #000;
+        /* Original text color */
+        border: none;
+        /* Remove border */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        /* Smooth transition */
+    }
 
 }
 
@@ -117,10 +314,11 @@
 
     .right {
         width: 100%;
-        height: 60px;
+        height: 100px;
         position: fixed;
         bottom: 0;
         left: 0;
+        border-top: 5px solid #FF5C35;
         background-color: #121212;
         box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
         border-top-left-radius: 15px;
@@ -162,32 +360,18 @@
         display: block;
     }
 
-    .card .btn-warning {
-        width: 40px;
-        /* Set the width */
-        height: 40px;
-        /* Set the height to the same as width */
-        font-size: 24px;
-        /* Adjust icon size if needed */
-        padding-bottom: 12px;
-        display: flex;
-        /* Flexbox for centering */
-        justify-content: center;
-        /* Center horizontally */
-        align-items: center;
-        /* Center vertically */
-        top: 50%;
-        /* Vertically center the button */
-        transform: translateY(-50%);
-        /* Fine-tune vertical centering */
-        background-color: #ffc720;
-        /* Original button color */
-        color: #000;
-        /* Original text color */
-        border: none;
-        /* Remove border */
-        transition: background-color 0.3s ease, color 0.3s ease;
-        /* Smooth transition */
+    .plus-btn {
+        background-color: #FF5C35 !important;
+        margin-top: -22px !important;
+        left: 35% !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .plus-btn img {
+        padding-top: 5px;
+        width: 20px;
+        transition: transform 0.3s ease-in-out;
     }
 
 }
@@ -196,16 +380,51 @@
     font-size: 0.75rem;
 }
 
+.plus-btn {
+    background-color: #FF5C35 !important;
+    margin-top: 5px;
+    left: 35% !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.plus-btn img {
+    padding-top: 5px;
+    width: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ri {
+    width: 17px !important;
+}
+
+.plus-btn:hover img {
+    transform: rotate(10deg);
+}
+
+.scrolling-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #121212;
+    white-space: nowrap;       /* Prevents text from wrapping */
+    overflow: hidden;          /* Hides overflow text */
+    text-overflow: ellipsis;   /* Adds "..." when text is cut off */
+    max-width: 100%;           /* Ensures it doesn't exceed the container */
+    display: block;  
+}
+
 .card {
     position: relative;
-    border-radius: 15px !important;
+    border-bottom: 2px solid #ff5d35 !important;
+    border-radius: 25px !important;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 6px 12px rgba(95, 95, 95, 0.1);
 }
 
 .card-header {
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important;
+    border-top: 2 solid #000 !important;
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
 }
 
 .card:hover {
@@ -240,11 +459,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    background: rgba(0, 0, 0, 0.7);
+    /* Transparent black background */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Make sure it's above all other content */
+    z-index: 9999;
+    /* Make sure it's above all other content */
 }
 
 /* Centering the spinner and text */

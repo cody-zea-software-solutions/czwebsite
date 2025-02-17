@@ -1183,9 +1183,7 @@ Cta Area
         </svg>
     </div>
 
-    <!--==============================
-    All Js File
-============================== -->
+    <!--============================== All Js File ============================== -->
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->

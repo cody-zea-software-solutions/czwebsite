@@ -1,11 +1,14 @@
-<?php require_once "guest.php"; ?>
+<?php
+require_once "db.php";
+$s_d = Databases::Search("SELECT * FROM `solution`");
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Web, Software & App Development Services</title>
+    <title>Codyzea - Web, Software & App Development Pricing Plans</title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
     <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -31,8 +34,12 @@
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/logocz.png">
+
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
 	  Google Fonts
@@ -74,126 +81,87 @@
 
 </head>
 
-<body onload="changeFeatures('1','<?php echo $_SESSION['user_id']; ?>');">
+<body onload="triggerBtnOnload(1);">
 
 
     <?php require_once "header.php"; ?>
-
+    
     <div class="container">
         <div class="row space-extra"></div>
     </div>
 
     <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5 bg-color">
-        <div class="row mt-3">
-            <div class="col-md-6 order-2 order-md-1">
-                <div class="row px-5 d-lg-flex justify-content-center d-none" style="gap: 20px;">
-                    <div class="small-img"></div>
-                    <div class="small-img"></div>
-                </div>
-                <div class="row px-5 mt-4 d-flex justify-content-center">
-                    <div style="width:420px; height: 200px; border-radius: 20px; background-color: bisque;" class="large-img"></div>
-                </div>
+        <div class="row mt-0 mt-md-3">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex justify-content-center">
+                <img src="assets/img/hero/hero_3_1.png" alt="" class="img-fluid pricing-image d-none d-md-flex" style="width: 400px; height: 450px;">
             </div>
-            <div class="col-md-6 order-1 order-md-2 mt-3" style="padding-right: 20px !important;">
-                <div class="title-area mb-25 mt-n1 mt-4">
-                    <span class="sub-title sub-title4 style1 text-ani-style2">Web builder</span>
-                    <h2 class="sec-title text-ani-style3">Tailor Your Website - Add Features to Cart and Get Started</h2>
+            <div class="col-lg-6 order-1 order-lg-2 mt-3 px-md-5 px-lg-0">
+                <div class="title-area mb-25 mt-n1 mt-4 text-start text-md-end text-lg-start">
+                    <span class="sub-title sub-title4 style1 text-ani-style2">Pricing</span>
+                    <h2 class="sec-title text-ani-style3 text-start">Choose the Perfect Plan for Your Business Needs</h2>
                 </div>
-                <p class="mt-n2 mb-25 text-dark">Start by selecting the <b>website type</b> you want.
-                    Then, simply <b>click the plus button</b> of the features below to add them to your shopping list.
-                    Once you're done, you can either proceed to <b>checkout</b> or reach out to us for <b>further inquiries</b>.</p>
-                <div class="row ps-5 mt-1 d-lg-flex justify-content-start d-none">
-                    <div class="roudiv me-5">
-                        <div class="border-orange d-flex justify-content-center align-items-center hover"><img src="assets/img/click.svg"></div>
-                        <div class="text-center h6" style="width: 80px;">Click</div>
+                <p class="mt-n2 mb-30 d-none">Click on any of the packages below to explore <b>detailed pricing and features</b>. Each package is designed to meet different business needs, ensuring you get the best digital solutions for your goals.</p>
+                <div class="info-list">
+                    <div class="info-item">
+                        <span class="info-icon"></span>
+                        <p class="info-text">Offering <?php echo $s_d->num_rows; ?>+ innovative digital solutions to boost business growth.</p>
                     </div>
-                    <div class="roudiv me-5">
-                        <div class="border-orange d-flex justify-content-center align-items-center hover"><img src="assets/img/plus.svg"></div>
-                        <div class="text-center h6" style="width: 80px;">Add</div>
+                    <div class="info-item">
+                        <span class="info-icon"></span>
+                        <p class="info-text">Trusted by startups and enterprises for cutting-edge digital strategies.</p>
                     </div>
-                    <div class="roudiv me-4 text-black">
-                        <div class="border-orange d-flex justify-content-center align-items-center hover"><img src="assets/img/buy.svg"></div>
-                        <div class="text-center h6" style="width: 80px;">Purchase</div>
+                    <div class="info-item">
+                        <span class="info-icon"></span>
+                        <p class="info-text">Dedicated to delivering innovative strategies for long-term success.</p>
                     </div>
+                </div>
+
+                <div class="btn-group about-btn justify-content-center justify-content-md-start">
+                    <a href="about.html" class="th-btn th-icon th-radius">Learn More About Us<i
+                            class="fa-regular fa-arrow-right ms-2"></i></a>
+
                 </div>
             </div>
         </div>
     </div>
 
-
-
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
+        <div class="col-12 position-relative overflow-hidden">
+            <div class="random-svg-container">
+                <img src="assets/img/a1.svg" class="random-svg">
+                <img src="assets/img/a2.svg" class="random-svg">
+                <img src="assets/img/a2.svg" class="random-svg d-none">
+                <img src="assets/img/a3.svg" class="random-svg d-none">
+                <img src="assets/img/a1.svg" class="random-svg d-none">
+            </div>
+        </div>
         <div class="row">
-
-            <!-- Overlay with spinner and "Please Wait" text -->
-            <div id="loadingOverlay" class="loading-overlay d-none">
-                <div class="spinner-container">
-                    <div class="spinner-border text-white" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                    <p class="text-white mt-3">Please Wait...</p>
+            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Select a Package </span><br>
+                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">Simply click on any of the packages below to view its pricing and features.</span>
+                <p class="d-md-none mt-4 px-3">Simply click on any of the packages below to view its pricing and features.</p>
+            </div>
+            <div class="col-12 pb-5 px-50 mt-4">
+                <div class="row d-flex gap-4 align-items-center justify-content-center px-0 px-md-5">
+                    <?php
+                    while ($sd = $s_d->fetch_assoc()) {
+                    ?>
+                        <button class="gradient-border-button w-auto px-3 px-md-5 py-2 py-md-3" id="triggerBtn_<?php echo $sd['sol_id']; ?>" onclick="triggerBtn('<?php echo $sd['sol_id']; ?>');">
+                            <span><?php echo $sd['sol_name']; ?></span>
+                        </button>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="col-12 position-relative overflow-hidden my-5">
-                <div class="random-svg-container">
-                    <img src="assets/img/a1.svg" class="random-svg">
-                    <img src="assets/img/a2.svg" class="random-svg">
-                    <img src="assets/img/a2.svg" class="random-svg d-none">
-                    <img src="assets/img/a3.svg" class="random-svg d-none">
-                    <img src="assets/img/a1.svg" class="random-svg d-none">
-                </div>
-                <div class="row">
+    <div class="container-fluid" id="resBox">
+        <div class="row">
+            <!--============================== Price Area  ==============================-->
+            <section class="overflow-hidden space bg-color mt-4" style="padding-top: 60px !important;" id="resultsView">
 
-                    <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Select Web Type</span><br>
-                        <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">Simply click on any of the packages below to view its pricing and features.</span>
-                        <p class="d-md-none mt-4 px-3">Simply click on any of these types below to view its features.</p>
-                    </div>
-                    <div class="col-12 pb-5 px-50 mt-4">
-                        <div class="row d-flex gap-4 align-items-center justify-content-center px-0 px-md-5">
-                            <?php
-                            $result = Databases::Search("SELECT * FROM `types`");
-                            while ($row = $result->fetch_assoc()) {
-                            ?>
-                                <button name="select-btn" class="gradient-border-button w-auto px-3 px-md-5 py-2 py-md-3" id="featureButton<?php echo $row['type_id']; ?>" onclick="changeFeatures('<?php echo $row['type_id']; ?>','<?php echo $_SESSION['user_id']; ?>');">
-                                    <span><?php echo $row['type_name']; ?></span>
-                                </button>
-
-                            <?php
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Left Panel Start -->
-            <div class="left col-lg-8">
-
-                <div class="row px-md-5 py-5" id="results">
-
-
-
-                </div>
-
-            </div>
-            <!-- Left Panel End -->
-
-            <!-- Right Panel Start -->
-            <div class="right col-lg-4 pt-md-4">
-                <div class="drag-handle d-lg-none mt-3">
-                    <span><i class="fa fa-angle-double-up" aria-hidden="true"></i>&nbsp;&nbsp; Shopping List</span>
-                </div>
-                <div class="right-content">
-                    <div class="row px-md-4 mt-4" id="results_side">
-
-                    </div>
-
-                </div>
-            </div>
-            <!-- Right Panel End -->
-
+            </section>
         </div>
     </div>
 
@@ -215,7 +183,7 @@
     <!--==============================
     All Js File
 ============================== -->
-    <script src="assets/shop-assets/js.js"></script>
+    <script src="assets/js/pricing.js"></script>
     <script src="assets/shop-assets/bootstrap.min.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
