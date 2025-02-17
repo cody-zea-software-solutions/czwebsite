@@ -453,7 +453,8 @@ portfolio Area
                                         <img src="assets/img/project/project_1_2.jpg" alt="project image">
                                     </div>
                                     <div class="box-content">
-                                        <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss - https://ceylonmoss.com/</a></h3>
+                                        <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss -
+                                                https://ceylonmoss.com/</a></h3>
                                         <p class="box-subtitle">Web Design & Development</p>
                                     </div>
                                     <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
@@ -468,7 +469,8 @@ portfolio Area
                                         <img src="assets/img/project/project_1_5.jpg" alt="project image">
                                     </div>
                                     <div class="box-content">
-                                        <h3 class="box-title"><a href="portfolio-details.html">Booze Bites Delivery App</a></h3>
+                                        <h3 class="box-title"><a href="portfolio-details.html">Booze Bites Delivery
+                                                App</a></h3>
                                         <p class="box-subtitle">App Design & Development</p>
                                     </div>
                                     <div class="box-btn"><a href="assets/img/project/project_1_4.jpg"
@@ -484,9 +486,9 @@ portfolio Area
             </div>
         </div>
         <div class="col-12">
-        <div class="overflow-hidden position-relative space-extra-top space-bottom" id="portfolio-sec">
+            <div class="overflow-hidden position-relative space-extra-top space-bottom" id="portfolio-sec">
                 <div class="container">
-                <div class="portfolio-area">
+                    <div class="portfolio-area">
                         <div class="row gy-4 filter-active">
                             <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
                                 <div class="project-item">
@@ -494,7 +496,8 @@ portfolio Area
                                         <img src="assets/img/project/project_1_2.jpg" alt="project image">
                                     </div>
                                     <div class="box-content">
-                                        <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss - https://ceylonmoss.com/</a></h3>
+                                        <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss -
+                                                https://ceylonmoss.com/</a></h3>
                                         <p class="box-subtitle">Web Design & Development</p>
                                     </div>
                                     <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
@@ -508,7 +511,8 @@ portfolio Area
                                         <img src="assets/img/project/project_1_3.jpg" alt="project image">
                                     </div>
                                     <div class="box-content">
-                                        <h3 class="box-title"><a href="portfolio-details.html">Booze Bites - https://boozebites.co.nz/</a></h3>
+                                        <h3 class="box-title"><a href="portfolio-details.html">Booze Bites -
+                                                https://boozebites.co.nz/</a></h3>
                                         <p class="box-subtitle">Web Design & Development</p>
                                     </div>
                                     <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
@@ -522,7 +526,8 @@ portfolio Area
                                         <img src="assets/img/project/project_1_4.jpg" alt="project image">
                                     </div>
                                     <div class="box-content">
-                                        <h3 class="box-title"><a href="portfolio-details.html">Ceynap - https://ceynap.co.nz/</a></h3>
+                                        <h3 class="box-title"><a href="portfolio-details.html">Ceynap -
+                                                https://ceynap.co.nz/</a></h3>
                                         <p class="box-subtitle">Web Design & Development</p>
                                     </div>
                                     <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
@@ -531,7 +536,7 @@ portfolio Area
                                 </div>
                             </div>
 
-                         
+
                         </div>
 
                     </div>
@@ -550,7 +555,8 @@ portfolio Area
                         <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us</span>
                         <h2 class="sec-title text-ani-style3 text-white">Cody Zea – Solutions Bright, Done Right</h2>
                     </div>
-                    <p class="sec-text mb-35">In a fast-moving digital world, choosing the right tech partner is crucial</p>
+                    <p class="sec-text mb-35">In a fast-moving digital world, choosing the right tech partner is crucial
+                    </p>
                     <div class="choose-feature-wrap">
                         <div class="choose-feature">
                             <div class="box-icon">
@@ -598,7 +604,7 @@ portfolio Area
 
 Testimonial Area  
 ==============================-->
-<section class="overflow-hidden space-bottom mt-5" id="testi-sec">
+    <section class="overflow-hidden space-bottom mt-5" id="testi-sec">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
@@ -610,21 +616,25 @@ Testimonial Area
 
             </div>
         </div>
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0 space">
             <div class="slider-area testi-box-area">
-                <div class="swiper th-slider has-shadow testiSlider3" id="testiSlide3" data-slider-options='{"centeredSlides":true,"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"3"}}}'>
+                <div class="swiper th-slider has-shadow testiSlider3" id="testiSlide3"
+                    data-slider-options='{"centeredSlides":true,"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"3"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="testi-box th-ani">
-                                <p class="box-text">“IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.”</p>
+                                <p class="box-text">I had a great experience with Cody zea while building my e-commerce
+                                    website. They delivered a high-quality site on time and provided excellent customer
+                                    support throughout the process. I highly recommend them for anyone looking to create
+                                    a professional website! </p>
                                 <div class="box-wrapper">
                                     <div class="box-profile">
                                         <div class="box-author">
-                                            <img src="assets/img/testimonial/testi_4_1.png" alt="Avater">
+                                            <img src="assets/clients/ceynap.png" alt="Avater">
                                         </div>
                                         <div class="box-info">
-                                            <h3 class="box-title">David Ade Smith</h3>
-                                            <span class="box-desig">Business Student</span>
+                                            <h3 class="box-title">Ceynap,Auckland</h3>
+                                            <span class="box-desig">Coco Cir NZ</span>
                                         </div>
                                     </div>
                                     <div class="box-review">
@@ -639,15 +649,19 @@ Testimonial Area
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-box th-ani">
-                                <p class="box-text">“Objectively visualize error-free technology for B2B alignment. Monotonectally harness reinvent prospective an expanded array of models via effective collaboration in the success. Professionally metrics.”</p>
+                                <p class="box-text">Booze Bites has had an outstanding experience working with Cody Zea
+                                    Software Solutions. Their team delivered a seamless and efficient service, helping
+                                    us establish our online presence with a sleek, user-friendly website. Their
+                                    attention to detail, creativity, and ability to understand our brand made the
+                                    process smooth and hassle-free.</p>
                                 <div class="box-wrapper">
                                     <div class="box-profile">
                                         <div class="box-author">
-                                            <img src="assets/img/testimonial/testi_4_2.png" alt="Avater">
+                                            <img src="assets/clients/boozebites.png" alt="Avater">
                                         </div>
                                         <div class="box-info">
-                                            <h3 class="box-title">Ceynap,New Zealand</h3>
-                                            <span class="box-desig">Coco Coir</span>
+                                            <h3 class="box-title">Booze Bites,Auckland</h3>
+                                            <span class="box-desig">Food & Drinks</span>
                                         </div>
                                     </div>
                                     <div class="box-review">
@@ -662,15 +676,18 @@ Testimonial Area
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-box th-ani">
-                                <p class="box-text">“Completely drive innovative value reinvent prospective whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global say that they results. Professionally metrics expedite .”</p>
+                                <p class="box-text">At Pradeepa Sangeeth Institute, we were looking for a reliable
+                                    partner to help us enhance our digital presence, and Cody Zea Software Solutions
+                                    exceeded our expectations. Their team created a beautifully designed website that
+                                    perfectly reflects our institute’s artistic vision and cultural values.</p>
                                 <div class="box-wrapper">
                                     <div class="box-profile">
                                         <div class="box-author">
-                                            <img src="assets/img/testimonial/testi_4_3.png" alt="Avater">
+                                            <img src="assets/clients/pradeepasv.png" alt="Avater">
                                         </div>
                                         <div class="box-info">
-                                            <h3 class="box-title">Jackline Techie</h3>
-                                            <span class="box-desig">Project Manager</span>
+                                            <h3 class="box-title">Pradeepa Sangeeth Institute</h3>
+                                            <span class="box-desig">Founder</span>
                                         </div>
                                     </div>
                                     <div class="box-review">
@@ -685,7 +702,9 @@ Testimonial Area
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-box th-ani">
-                                <p class="box-text">“The best service reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric or analyzing before expedite methods or analyzing feel free customer”</p>
+                                <p class="box-text">“The best service reinvent prospective metrics before granular
+                                    schema. Professionally metrics before expedite client-centric or analyzing before
+                                    expedite methods or analyzing feel free customer”</p>
                                 <div class="box-wrapper">
                                     <div class="box-profile">
                                         <div class="box-author">
@@ -708,7 +727,9 @@ Testimonial Area
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-box th-ani">
-                                <p class="box-text">“Completely drive innovative value whereas out-of-the-box paradigms. Interactively pursue stand-alone markets after global results. Globally plagiarize intermandated opportunities with. Progressively leverage”</p>
+                                <p class="box-text">“Completely drive innovative value whereas out-of-the-box paradigms.
+                                    Interactively pursue stand-alone markets after global results. Globally plagiarize
+                                    intermandated opportunities with. Progressively leverage”</p>
                                 <div class="box-wrapper">
                                     <div class="box-profile">
                                         <div class="box-author">
@@ -731,8 +752,10 @@ Testimonial Area
                         </div>
                     </div>
                     <div class="slider-pagination"></div>
-                    <button data-slider-prev="#testiSlide3" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button>
-                    <button data-slider-next="#testiSlide3" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
+                    <button data-slider-prev="#testiSlide3" class="slider-arrow slider-prev"><i
+                            class="far fa-arrow-left"></i></button>
+                    <button data-slider-next="#testiSlide3" class="slider-arrow slider-next"><i
+                            class="far fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -760,7 +783,83 @@ Cta Area
                 <div class="cta-shate"><img src="assets/img/shape/cta-shape.png" alt=""></div>
             </div>
         </div>
-    </section><!--==============================
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <span class="display-3 text-black">
+                    The First Impression <span class="text-orange">is the Last Impression</span>
+                </span>
+                <p class="fs-5 text-black" style="text-align: justify;">
+                    Your website is often the first interaction a customer will have with your brand, and first
+                    impressions are everything. At Cody Zea Software Solutions, we specialize in creating visually
+                    captivating and user-friendly websites that immediately engage visitors. We focus on seamless
+                    navigation, responsive design, and optimized user experience, ensuring that your website stands out
+                    and leaves a lasting impact. A well-designed site not only reflects your brand but also encourages
+                    visitors to stay, explore, and take action.
+                </p>
+                <div class="btn-group">
+                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Create Your Website<i
+                            class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="assets/homei001.jpg" class="img-fluid" alt="webdesignillus001">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container-fluid">
+        <div class="row vh-100 d-flex justify-content-end align-items-center p-5"
+            style="background-image: url(assets/branding.jpg); background-size: cover;">
+            <div class="col-12 col-lg-4 bg-white text-center p-5" style="height:60vh;">
+                <span class="text-uppercase sans fs-5 text-black">Cody Zea - bRANDING</span><br><br>
+                <span class="text-uppercase rel fs-4 text-orange">Need Branding Solutions to Stand Out in New
+                    Zealand?</span><br>
+                <p class="text-black fs-5">
+                    A strong brand identity is key to making your business memorable. Let our branding experts help you
+                    craft a unique and impactful brand that connects with your audience and builds trust.
+
+
+                </p>
+
+                <div class="btn-group d-flex justify-content-center">
+                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Create Your
+                        Brand Identity<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container space">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img src="assets/marketing.jpg" class="img-fluid" alt="webdesignillus001">
+            </div>
+            <div class="col-12 col-lg-6">
+                <span class="display-3 text-black">
+                    Reaching the Right Audience, <span class="text-orange">at the Right Time</span>
+                </span>
+                <p class="fs-5 text-black" style="text-align: justify;">
+                    Digital marketing is the key to connecting with the right people at the right time. We create
+                    targeted campaigns that ensure your business reaches its ideal audience through the right channels.
+                    From SEO and social media to paid advertising, our strategies are designed to increase your
+                    visibility, engage your audience, and drive conversions. With our approach, you can turn online
+                    interactions into meaningful relationships that fuel business growth.
+                </p>
+                <div class="btn-group">
+                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Grow Your Audience
+                    <i
+                            class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--==============================
 Price Area  
 ==============================-->
     <section class=" bg-smoke2 overflow-hidden space">
@@ -788,19 +887,19 @@ Price Area
                             <div class="text-center">
                                 <h3 class="box-title">Free Plan</h3>
                                 <h4 class="box-price">$00<span class="duration">/Per Month</span></h4>
-                                <p class="box-text2">Consider offering a limited version of your services</p>
+                                <p class="box-text2 text-black">Consider offering a limited version of your services</p>
                             </div>
                             <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="box-content">
                                 <div class="available-list">
                                     <ul>
-                                        <li>Unlimited Products Updates</li>
-                                        <li>Custom Infrastructure</li>
-                                        <li>Custom Permission</li>
-                                        <li>Custom Design and Replace</li>
-                                        <li class="unavailable">Unlimited Feature Updates</li>
-                                        <li class="unavailable">24/7 Hour Customer Support</li>
+                                        <li class="text-black">Unlimited Products Updates</li>
+                                        <li class="text-black">Custom Infrastructure</li>
+                                        <li class="text-black">Custom Permission</li>
+                                        <li class="text-black">Custom Design and Replace</li>
+                                        <li class="unavailable text-black">Unlimited Feature Updates</li>
+                                        <li class="unavailable text-black">24/7 Hour Customer Support</li>
                                     </ul>
                                 </div>
                             </div>
@@ -813,19 +912,19 @@ Price Area
                             <div class="text-center">
                                 <h3 class="box-title">Business Plan</h3>
                                 <h4 class="box-price">$85<span class="duration">/Per Month</span></h4>
-                                <p class="box-text2">Consider offering a limited version of your services</p>
+                                <p class="box-text2 text-black">Consider offering a limited version of your services</p>
                             </div>
                             <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="box-content">
                                 <div class="available-list">
                                     <ul>
-                                        <li>Unlimited Products Updates</li>
-                                        <li>Custom Infrastructure</li>
-                                        <li>Custom Permission</li>
-                                        <li>Custom Design and Replace</li>
-                                        <li>Unlimited Feature Updates</li>
-                                        <li class="unavailable">24/7 Hour Customer Support</li>
+                                        <li class="text-black">Unlimited Products Updates</li>
+                                        <li class="text-black">Custom Infrastructure</li>
+                                        <li class="text-black">Custom Permission</li>
+                                        <li class="text-black">Custom Design and Replace</li>
+                                        <li class="text-black">Unlimited Feature Updates</li>
+                                        <li class="unavailable text-black">24/7 Hour Customer Support</li>
                                     </ul>
                                 </div>
                             </div>
@@ -838,19 +937,19 @@ Price Area
                             <div class="text-center">
                                 <h3 class="box-title">Enterprise Plan</h3>
                                 <h4 class="box-price">$95<span class="duration">/Per Month</span></h4>
-                                <p class="box-text2">Consider offering a limited version of your services</p>
+                                <p class="box-text2 text-black">Consider offering a limited version of your services</p>
                             </div>
                             <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="box-content">
                                 <div class="available-list">
                                     <ul>
-                                        <li>Unlimited Products Updates</li>
-                                        <li>Custom Infrastructure</li>
-                                        <li>Custom Permission</li>
-                                        <li>Custom Design and Replace</li>
-                                        <li>Unlimited Feature Updates</li>
-                                        <li>24/7 Hour Customer Support</li>
+                                        <li class="text-black">Unlimited Products Updates</li>
+                                        <li class="text-black">Custom Infrastructure</li>
+                                        <li class="text-black">Custom Permission</li>
+                                        <li class="text-black">Custom Design and Replace</li>
+                                        <li class="text-black">Unlimited Feature Updates</li>
+                                        <li class="text-black">24/7 Hour Customer Support</li>
                                     </ul>
                                 </div>
                             </div>
@@ -867,19 +966,19 @@ Price Area
                             <div class="text-center">
                                 <h3 class="box-title">Free Plan</h3>
                                 <h4 class="box-price">$100<span class="duration">/Per Month</span></h4>
-                                <p class="box-text2">Consider offering a limited version of your services</p>
+                                <p class="box-text2 text-black">Consider offering a limited version of your services</p>
                             </div>
                             <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="box-content">
                                 <div class="available-list">
                                     <ul>
-                                        <li>Unlimited Products Updates</li>
-                                        <li>Custom Infrastructure</li>
-                                        <li>Custom Permission</li>
-                                        <li>Custom Design and Replace</li>
-                                        <li class="unavailable">Unlimited Feature Updates</li>
-                                        <li class="unavailable">24/7 Hour Customer Support</li>
+                                        <li class="text-black">Unlimited Products Updates</li>
+                                        <li class="text-black">Custom Infrastructure</li>
+                                        <li class="text-black">Custom Permission</li>
+                                        <li class="text-black">Custom Design and Replace</li>
+                                        <li class="unavailable text-black">Unlimited Feature Updates</li>
+                                        <li class="unavailable text-black">24/7 Hour Customer Support</li>
                                     </ul>
                                 </div>
                             </div>
@@ -892,19 +991,19 @@ Price Area
                             <div class="text-center">
                                 <h3 class="box-title">Business Plan</h3>
                                 <h4 class="box-price">$185<span class="duration">/Per Month</span></h4>
-                                <p class="box-text2">Consider offering a limited version of your services</p>
+                                <p class="box-text2 text-black">Consider offering a limited version of your services</p>
                             </div>
                             <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="box-content">
                                 <div class="available-list">
                                     <ul>
-                                        <li>Unlimited Products Updates</li>
-                                        <li>Custom Infrastructure</li>
-                                        <li>Custom Permission</li>
-                                        <li>Custom Design and Replace</li>
-                                        <li>Unlimited Feature Updates</li>
-                                        <li class="unavailable">24/7 Hour Customer Support</li>
+                                        <li class="text-black">Unlimited Products Updates</li>
+                                        <li class="text-black">Custom Infrastructure</li>
+                                        <li class="text-black">Custom Permission</li>
+                                        <li class="text-black">Custom Design and Replace</li>
+                                        <li class="text-black">Unlimited Feature Updates</li>
+                                        <li class="unavailable text-black">24/7 Hour Customer Support</li>
                                     </ul>
                                 </div>
                             </div>
@@ -917,19 +1016,19 @@ Price Area
                             <div class="text-center">
                                 <h3 class="box-title">Enterprise Plan</h3>
                                 <h4 class="box-price">$295<span class="duration">/Per Month</span></h4>
-                                <p class="box-text2">Consider offering a limited version of your services</p>
+                                <p class="box-text2 text-black">Consider offering a limited version of your services</p>
                             </div>
                             <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="box-content">
                                 <div class="available-list">
                                     <ul>
-                                        <li>Unlimited Products Updates</li>
-                                        <li>Custom Infrastructure</li>
-                                        <li>Custom Permission</li>
-                                        <li>Custom Design and Replace</li>
-                                        <li>Unlimited Feature Updates</li>
-                                        <li>24/7 Hour Customer Support</li>
+                                        <li class="text-black">Unlimited Products Updates</li>
+                                        <li class="text-black">Custom Infrastructure</li>
+                                        <li class="text-black">Custom Permission</li>
+                                        <li class="text-black">Custom Design and Replace</li>
+                                        <li class="text-black">Unlimited Feature Updates</li>
+                                        <li class="text-black">24/7 Hour Customer Support</li>
                                     </ul>
                                 </div>
                             </div>
@@ -938,38 +1037,8 @@ Price Area
                 </div>
             </div>
         </div>
-    </section><!--==============================
-software Area
-==============================-->
-    <div class="software-sec bg-smoke2 overflow-hidden">
-        <div class="software-area2 position-relative overflow-hidden" data-bg-src="assets/img/bg/software_bg_1.png">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="title-area text-center">
-                            <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Integration
-                                Software</span>
-                            <h2 class="sec-title text-white">Integrated with 20+ Widely Used Software</h2>
-                        </div>
-                        <div class="btn-group justify-content-center">
-                            <a href="service.html" class="th-btn th-radius style1 th-icon">Browse All Services<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
-                            <a href="contact.html" class="th-btn blue-btn style1 th-icon th-radius">Get In Touch<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="shape-mockup spin d-none d-xl-block" data-top="15%" data-left="5%"><img
-                    src="assets/img/shape/logo-left.png" alt="">
-            </div>
-            <div class="shape-mockup spin d-none d-xl-block" data-top="15%" data-right="5%"><img
-                    src="assets/img/shape/logo-right.png" alt="">
-            </div>
-        </div>
-    </div><!--==============================
-Blog Area  
-==============================-->
+    </section>
+ 
     <section class="blog-area3 overflow-hidden space" id="blog-sec">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">
@@ -1082,7 +1151,8 @@ Cta Area
                         <div class="title-area mb-25 mt-n2 text-center">
                             <span class="sub-title2">Join Our Community</span>
                             <h2 class="sec-title cta-title">Subscribe to our newsletter</h2>
-                            <p class="cta-text text-black">But I must explain to you how all this mistaken idea of denouncing
+                            <p class="cta-text text-black">But I must explain to you how all this mistaken idea of
+                                denouncing
                                 pleasure and praising pain was born.</p>
                         </div>
                         <form class="newsletter-form style4">

@@ -89,7 +89,7 @@
                         <ul>
                             <li class="d-none d-xl-inline-block text-white"><i
                                     class="fa-solid fa-location-dot text-white"></i>
-                               Auckland,New Zealand</li>
+                                Auckland,New Zealand</li>
                             <li><i class="fa-solid fa-phone text-white"></i><a href="tel:+163217322978"
                                     class="text-white">+64 22 356 8614</a>
                             </li>
@@ -138,19 +138,56 @@
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
-                                            <div class="col-12 col-lg-6 d-flex">
+                                            <div class="col-12 col-lg-4 d-flex">
                                                 <div class="choose-feature-wrap">
                                                     <div class="choose-feature cody-bg p-3 rounded-20">
                                                         <div class="box-icon">
-                                                            <img src="assets/img/icon/choose_feature_1_1.svg"
-                                                                alt="Icon">
+                                                            <img src="assets/offers.svg" alt="Icon">
                                                         </div>
                                                         <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Registered in New Zealand & Sri Lanka
+                                                            <h3 class="cody-text fs-5">24-Hour Website Delivery </h3>
+                                                            <p class="cody-text">Launch your website in just 24 hours!
+                                                                Get your custom website designed, developed, and ready
+                                                                to go live within one day.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 d-flex">
+                                                <div class="choose-feature-wrap">
+                                                    <div class="choose-feature cody-bg p-3 rounded-20">
+                                                        <div class="box-icon">
+                                                            <img src="assets/offers.svg" alt="Icon">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h3 class="cody-text fs-5">Pay for Hosting, Get a Website
+                                                                Free
+
                                                             </h3>
-                                                            <p class="cody-text">We operate as a fully registered company
-                                                                in both countries, ensuring credibility and trust in
-                                                                every project.</p>
+                                                            <p class="cody-text">Launch your website in just 24 hours!
+                                                                Get your custom website designed, developed, and ready
+                                                                to go live within one day.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 d-flex">
+                                                <div class="choose-feature-wrap">
+                                                    <div class="choose-feature cody-bg p-3 rounded-20">
+                                                        <div class="box-icon">
+                                                            <img src="assets/offers.svg" alt="Icon">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h3 class="cody-text fs-5">Exclusive Package for Small
+                                                                Businesses
+
+
+
+                                                            </h3>
+                                                            <p class="cody-text">Special pricing for startups or
+                                                                businesses under 5 employees, combining all four
+                                                                services (Web Design, Branding, Digital Marketing, App
+                                                                Development) for a tailored budget.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -171,9 +208,11 @@
                                                                 alt="Icon">
                                                         </div>
                                                         <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Registered in New Zealand & Sri Lanka
+                                                            <h3 class="cody-text fs-5">Registered in New Zealand & Sri
+                                                                Lanka
                                                             </h3>
-                                                            <p class="cody-text">We operate as a fully registered company
+                                                            <p class="cody-text">We operate as a fully registered
+                                                                company
                                                                 in both countries, ensuring credibility and trust in
                                                                 every project.</p>
                                                         </div>
@@ -196,9 +235,11 @@
                                                                 alt="Icon">
                                                         </div>
                                                         <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Registered in New Zealand & Sri Lanka
+                                                            <h3 class="cody-text fs-5">Registered in New Zealand & Sri
+                                                                Lanka
                                                             </h3>
-                                                            <p class="cody-text">We operate as a fully registered company
+                                                            <p class="cody-text">We operate as a fully registered
+                                                                company
                                                                 in both countries, ensuring credibility and trust in
                                                                 every project.</p>
                                                         </div>
@@ -220,7 +261,8 @@
                         <div class="header-button">
                             <button type="button" class="icon-btn th-radius searchBoxToggler"><i
                                     class="far fa-search text-b fw-semibold"></i></button>
-                                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i
+                                    class="fa-regular fa-arrow-right ms-2"></i></a>
 
                         </div>
                         <!-- <div class="btn-group">
