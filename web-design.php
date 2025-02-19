@@ -512,30 +512,27 @@
                         <div class="process-item">
                             <span class="box-number">01</span>
                             <div class="box-content">
-                                <h3 class="box-title">Creative ideas</h3>
-                                <p class="box-text text-black">Every business is unique. That's why we tailor our SEO
-                                    and marketing
-                                    services to meet your specific goals, industry requirements, and target audience.
+                                <h3 class="box-title">Strategy & Planning</h3>
+                                <p class="box-text text-black">Understand your business, goals, and audience.
+                                    Plan website structure, design direction, and key features.
                                 </p>
                             </div>
                         </div>
                         <div class="process-item">
                             <span class="box-number">02</span>
                             <div class="box-content">
-                                <h3 class="box-title">Execution</h3>
-                                <p class="box-text text-black">Every business is unique. That's why we tailor our SEO
-                                    and marketing
-                                    services to meet your specific goals, industry requirements, and target audience.
+                                <h3 class="box-title">Design & Development</h3>
+                                <p class="box-text text-black">Create visually stunning UI/UX designs.
+                                    Develop a responsive, high-performance website.
                                 </p>
                             </div>
                         </div>
                         <div class="process-item">
                             <span class="box-number">03</span>
                             <div class="box-content">
-                                <h3 class="box-title">Finishing</h3>
-                                <p class="box-text text-black">Every business is unique. That's why we tailor our SEO
-                                    and marketing
-                                    services to meet your specific goals, industry requirements, and target audience.
+                                <h3 class="box-title"> Testing & Launch</h3>
+                                <p class="box-text text-black">Ensure seamless functionality across devices.
+                                    Deploy the site with final optimizations and support.
                                 </p>
                             </div>
                         </div>
