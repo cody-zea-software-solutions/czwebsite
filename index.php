@@ -316,15 +316,33 @@ Service Area
                         <a href="service.html" class="th-btn th-icon th-radius text-white fs-5">View All Services<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
+                    <div class="row">
+                        <div class="col-10 col-lg-8">
+                            <div class="service-grid hover-item">
+                                <div class="box-icon">
+                                    <img src="assets/ecommerce.png" class="img-fluid w-50" alt="Icon">
+                                </div>
+                                <div class="service-grid_content">
+                                    <h3 class="box-title"><a href="ecommerce.php">E-Commerce Platform
+                                        </a></h3>
+                                    <p class="box-text text-white-o">Drive online sales with user-friendly, secure, and
+                                        scalable e-commerce solutions tailored to your business needs.</p>
+                                </div>
+                                <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
                 </div>
                 <div class="col-xl-7">
                     <div class="service-grid_wrapp">
-                        <div class="service-grid hover-item ">
+                        <div class="service-grid hover-item">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_1.png" class="img-fluid w-50" alt="Icon">
                             </div>
                             <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">Web Design
+                                <h3 class="box-title"><a href="web-design.php">Web Design
                                     </a></h3>
                                 <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
                                     images, and
@@ -337,7 +355,7 @@ Service Area
                                 <img src="assets/img/icon/service_2_2.png" class="img-fluid w-50" alt="Icon">
                             </div>
                             <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">App Development
+                                <h3 class="box-title"><a href="app-development.php">App Development
                                     </a></h3>
                                 <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
                                     images, and
@@ -345,12 +363,13 @@ Service Area
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
+
                         <div class="service-grid hover-item item-active">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_4.svg" alt="Icon">
                             </div>
                             <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">Digital Marketing
+                                <h3 class="box-title"><a href="digital-marketing.php">Digital Marketing
                                     </a></h3>
                                 <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
                                     images, and
@@ -363,11 +382,23 @@ Service Area
                                 <img src="assets/img/icon/service_2_4.png" class="img-fluid w-50" alt="Icon">
                             </div>
                             <div class="service-grid_content">
-                                <h3 class="box-title"><a href="service-details.html">Custom Software Development
+                                <h3 class="box-title"><a href="custom-software.html">Custom Software Development
                                     </a></h3>
                                 <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
                                     images, and
                                     internal links to ensure search engines can easily</p>
+                            </div>
+                            <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
+                        </div>
+                        <div class="service-grid hover-item">
+                            <div class="box-icon">
+                                <img src="assets/brand-icon.png" class="img-fluid w-50" alt="Icon">
+                            </div>
+                            <div class="service-grid_content">
+                                <h3 class="box-title"><a href="branding.php">Branding
+                                    </a></h3>
+                                <p class="box-text text-white-o">Transform your brand with unique, impactful designs
+                                    that resonate with your audience and elevate your business presence./p>
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
@@ -850,8 +881,7 @@ Cta Area
                 </p>
                 <div class="btn-group">
                     <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Grow Your Audience
-                    <i
-                            class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
@@ -1038,7 +1068,7 @@ Price Area
             </div>
         </div>
     </section>
- 
+
     <section class="blog-area3 overflow-hidden space" id="blog-sec">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">

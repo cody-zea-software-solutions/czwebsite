@@ -169,7 +169,9 @@ body.theme-bg {
 .cody-bg{
   background-color: #FEF4EA !important;
 }
-
+.hover:hover{
+  opacity: 75%;
+}
 .text-b{
   color: #413124 !important;
 }
