@@ -135,29 +135,30 @@
     </div>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-5 mt-2 mx-2">
+            <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#smarthost" data-bs-toggle="modal">
                 <img src="assets/offers/offer001.jpg" class="img-fluid" alt="">
             </div>
-            <div class="col-12 col-lg-5 mt-2 mx-2">
+            <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#quickweb" data-bs-toggle="modal">
                 <img src="assets/offers/offer002.jpg" class="img-fluid" alt="">
             </div>
-            <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="col-12 col-lg-5 mt-2 mx-2">
                 <img src="assets/offers/offer003.jpg" class="img-fluid" alt="">
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal 001 -->
+        <div class="modal fade" id="smarthost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content rounded-0 border-0">
 
                     <div class="modal-body m-0 p-0">
                         <div class="row m-0 p-0">
-                            <div class="col-12 col-lg-6 p-0 m-0">
-                                <img src="assets/smarthostoffer.jpg" class="img-fluid m-0 p-0" alt="offersmodal">
+                            <div class="col-12 col-lg-6 p-0 m-0 d-none d-lg-block"
+                                style="background-image: url('assets/cover-modalo.jpg'); background-size: cover;">
+
                             </div>
-                            <div class="col-12 col-lg-6 p-2">
-                                <div class="col-12 d-flex justify-content-end">
-                                    <i class="fa-light fa-xmark-large fs-4 text-black"></i>
+                            <div class="col-12 col-lg-6 p-4">
+                                <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
+                                    <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                                 </div>
                                 <div class="col-12 text-center">
                                     <span class="fs-1 text-black">
@@ -169,27 +170,64 @@
                                     </p>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
-                                    <div class="coupon">
-                                        <div class="left">
-                                            <div>Enjoy Your Gift</div>
-                                        </div>
-                                        <div class="center">
-                                            <div>
-                                                <h2>50% OFF</h2>
-                                                <h3>Coupon</h3>
-                                                <small>Valid until May, 2023</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="right">
-                                            <div>87878521112</div>
-                                        </div>
-
+                                    <div class="coupon-row">
+                                        <span id="cpnCode">SMARTHOST50</span>
+                                        <span id="cpnBtn">Copy Code</span>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-2 d-flex justify-content-center">
-                                    <div class="text-center text-xl-start col-12">
-                                        <a href="contact.php" class="th-btn style4 th-radius fs-6 bg-black fs-5 col-12"> Claim Your Offer
+                                    <div class="text-center text-xl-start col-10">
+                                        <a href="https://wa.me/64223568614?text=Hi%20Cody%20Zea!%20I%20would%20like%20to%20claim%20the%20SMARTHOST50%20offer%20using%20the%20coupon%20code%20SMARTHOST50"
+                                            class="th-btn style4 th-radius fs-5 bg-black fs-5 col-12">
+                                            Claim Your Offer
+                                            Today
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal 002 -->
+        <div class="modal fade" id="quickweb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content rounded-0 border-0">
+
+                    <div class="modal-body m-0 p-0">
+                        <div class="row m-0 p-0">
+                            <div class="col-12 col-lg-6 p-0 m-0 d-none d-lg-block"
+                                style="background-image: url('assets/cover-modalo.jpg'); background-size: cover;">
+
+                            </div>
+                            <div class="col-12 col-lg-6 p-4">
+                                <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
+                                    <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <span class="fs-1 text-black">
+                                        QUICKWEB <span class="text-orange"> Live in 24 Hours!</span>
+                                    </span>
+                                    <p class="text-black fs-6">
+                                        Get your one-page website up and running in just 24 hours. Fast,
+                                        mobile-friendly, and SEO optimized!
+                                    </p>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="coupon-row">
+                                        <span id="cpnCode">QUICKWEB</span>
+                                        <span id="cpnBtn">Copy Code</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2 d-flex justify-content-center">
+                                    <div class="text-center text-xl-start col-10">
+                                        <a href="https://wa.me/64223568614?text=I%20want%20to%20claim%20the%20QuickWeb%20Solution%20Offer%20with%20coupon%20code%20QUICKWEB"
+                                            class="th-btn style4 th-radius fs-5 bg-black fs-5 col-12">
+                                            Claim Your Offer
                                             Today
                                         </a>
                                     </div>
