@@ -396,7 +396,8 @@
                 <div class="container">
                     <div class="row">
                         <span class="display-4 text-black mt-5">
-                            Unlock the Potential of Exceptional E-Commerce Website Design in Our Work </span>
+                            Unlock the Potential of Exceptional <span class="text-orange"> E-Commerce Website Design
+                            </span>in Our Work </span>
                     </div>
 
                     <div class="col-12">
@@ -436,6 +437,41 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                            <div class="project-item">
+                                                <div class="box-img global-img">
+                                                    <img src="assets/works/e001.svg" alt="project image">
+                                                </div>
+                                                <div class="box-content">
+                                                    <h3 class="box-title">
+                                                        <rket href="portfolio-details.html">MarketPro e-Commerce</a>
+                                                    </h3>
+                                                    <p class="box-subtitle">e-Commerce Website Solution</p>
+                                                </div>
+                                                <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                                        class="icon-btn popup-image"><i
+                                                            class="fa-solid fa-arrow-up-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                                            <div class="project-item">
+                                                <div class="box-img global-img">
+                                                    <img src="assets/works/e002.svg" alt="project image">
+                                                </div>
+                                                <div class="box-content">
+                                                    <h3 class="box-title">
+                                                        <rket href="portfolio-details.html">NeonCart e-Commerce</a>
+                                                    </h3>
+                                                    <p class="box-subtitle">e-Commerce Website Solution</p>
+                                                </div>
+                                                <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
+                                                        class="icon-btn popup-image"><i
+                                                            class="fa-solid fa-arrow-up-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
 
 
                                     </div>
@@ -460,9 +496,9 @@
             </div>
         </div>
         <div class="conatiner-fluid">
-            <img src="assets/app-cover.jpg" class="img-fluid d-lg-none d-block" alt="">
+            <img src="assets/ecommerce-coverweb.jpg" class="img-fluid d-lg-none d-block" alt="">
             <div class="row p-5 d-none d-lg-block"
-                style="background-image: url(assets/app-cover.jpg); background-size: cover; background-position: center; min-height: 150vh;">
+                style="background-image: url(assets/ecommerce-coverweb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
             </div>
         </div>
     </section>
@@ -478,26 +514,27 @@
                         <div class="process-item">
                             <span class="box-number">01</span>
                             <div class="box-content">
-                                <h3 class="box-title">Plan & Strategize</h3>
-                                <p class="box-text text-black"> We understand your goals, research, and create a roadmap
+                                <h3 class="box-title">Plan & Design</h3>
+                                <p class="box-text text-black">We research your business needs, create a strategy, and
+                                    design a visually appealing, user-friendly store.
                                 </p>
                             </div>
                         </div>
                         <div class="process-item">
                             <span class="box-number">02</span>
                             <div class="box-content">
-                                <h3 class="box-title">Design & Develop</h3>
-                                <p class="box-text text-black">We craft intuitive designs and build a powerful,
-                                    high-performing app.
+                                <h3 class="box-title">Develop & Integrate</h3>
+                                <p class="box-text text-black">We build a fast, secure website with seamless payment,
+                                    shipping, and third-party integrations.
                                 </p>
                             </div>
                         </div>
                         <div class="process-item">
                             <span class="box-number">03</span>
                             <div class="box-content">
-                                <h3 class="box-title">Launch & Support </h3>
-                                <p class="box-text text-black">We deploy your app smoothly and provide ongoing updates &
-                                    support.
+                                <h3 class="box-title">Launch & Grow</h3>
+                                <p class="box-text text-black">We optimize for performance, go live, and support your
+                                    growth with SEO, marketing, and ongoing maintenance.
                                 </p>
                             </div>
                         </div>
@@ -515,38 +552,39 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <span class="display-3 text-black">
-                    Design with Purpose, <span class="text-orange">Build for NZ</span>
+                    Sell Smart,<span class="text-orange">Grow Fast</span>
                 </span>
                 <p class="fs-4 text-black">
                     We design apps that resonate with your audience and meet the unique needs of the New Zealand market.
-                    With each feature, we ensure your app is built with a clear purpose and a passion for local
-                    innovation.
+                    Our e-commerce solutions are designed for speed, security, and sales. With seamless navigation and
+                    mobile-friendly designs, your customers get the best shopping experience—anytime, anywhere.
                 </p>
                 <div class="btn-group">
-                    <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5"> App Development
-                        Inquiry<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                    <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Launch Your Store
+                        Today<i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="assets/appi001.png" class="img-fluid" alt="webdesignillus001">
+                <img src="assets/ecoms001.jpg" class="img-fluid" alt="ecommerceillus001">
             </div>
         </div>
         <div class="row space-extra">
             <div class="col-12 col-lg-6">
-                <img src="assets/appi002.jpg" class="img-fluid" alt="webdesignillus002">
+                <img src="assets/ecom-cover002.svg" class="img-fluid" alt="webdesignillus002">
             </div>
             <div class="col-12 col-lg-6">
                 <span class="display-3 text-black">
-                    Crafting Ideas, <span class="text-orange">Creating NZ Impact</span>
+                    Seamless Payments,<span class="text-orange">Effortless Sales</span>
                 </span>
                 <p class="fs-4 text-black">
-                    With more customers browsing on mobile than ever, we design fully responsive websites that adapt
-                    seamlessly to any screen—whether it’s a phone, tablet, or desktop. No matter where your customers
-                    are in New Zealand or beyond, they’ll enjoy a smooth, user-friendly experience.
+                    A complicated checkout process can drive customers away. That’s why we integrate secure, fast, and
+                    flexible payment gateways to keep transactions simple. Whether it’s credit cards, digital wallets,
+                    or bank transfers, we ensure a frictionless buying experience that keeps your customers coming back
+                    for more.
                 </p>
                 <div class="btn-group">
-                    <a href="works.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">See Our Work<i
-                            class="fa-regular fa-arrow-right ms-2"></i></a>
+                    <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Launch Your Store
+                        Today<i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
 
@@ -561,10 +599,8 @@
                         <div class="title-area mb-30 text-center text-xl-start">
                             <span class="sub-title sub-title7 style1 text-ani-style2">FAQS</span>
                             <h2 class="sec-title text-ani-style3">Have Any Questions?</h2>
-                            <p class="text-black fs-4">Have questions? We’ve got answers! Our Frequently Asked Questions
-                                section covers everything from app development timelines to security features. If you
-                                still need help, feel free to reach out directly. We’re here to guide you through every
-                                step of your app journey!</p>
+                            <p class="text-black fs-4">Got questions? We’ve got answers! Explore our FAQs to learn more
+                                about our e-commerce solutions, timelines, features, and post-launch support.</p>
                         </div>
                         <div class="text-center text-xl-start">
                             <a href="contact.php" class="th-btn style4 th-radius fs-5">Still Have Questions?</a>
@@ -576,79 +612,106 @@
                         <div class="accordion-card active">
                             <div class="accordion-header" id="collapse-item-1">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">What
-                                    type of apps do you develop?</button>
+                                    data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                                    How quickly can you build an e-commerce website?
+                                </button>
                             </div>
                             <div id="collapse-1" class="accordion-collapse collapse " aria-labelledby="collapse-item-1"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text text-black">We develop custom mobile and web applications,
-                                        including e-commerce, business solutions, and customer engagement platforms. Our
-                                        focus is on creating apps that are tailored to your specific needs.</p>
+                                    <p class="faq-text text-black">We can develop a basic e-commerce website in as fast
+                                        as **1-2 weeks**. For more advanced custom solutions with unique features, the
+                                        timeline may extend to **4-8 weeks** based on requirements.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"> How
-                                    long does it take to build an app?</button>
+                                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    What e-commerce platforms do you use?
+                                </button>
                             </div>
                             <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="collapse-item-2"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text text-black">The timeline depends on the complexity of your
-                                        project. Generally, we can deliver a basic app within 1-6 weeks, with more
-                                        complex apps taking longer. We work closely with you to set realistic deadlines.
-                                    </p>
+                                    <p class="faq-text text-black">We specialize in **custom e-commerce solutions**
+                                        tailored to your needs. Additionally, we work with leading platforms like
+                                        **Shopify, WooCommerce, Magento**, and fully custom-built platforms for complete
+                                        flexibility and scalability.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">Do you
-                                    offer ongoing support after the app is launched?</button>
+                                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                    Can I integrate multiple payment gateways?
+                                </button>
                             </div>
                             <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="collapse-item-3"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text text-black">Yes, we provide full post-launch support, including
-                                        maintenance, updates, and troubleshooting to ensure your app continues to run
-                                        smoothly.</p>
+                                    <p class="faq-text text-black">Yes! We integrate secure payment gateways such as
+                                        **Stripe, PayPal, Afterpay, Apple Pay, and Google Pay** to provide a seamless
+                                        checkout experience.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">What
-                                    industries do you work with?</button>
+                                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                    Will my e-commerce site be mobile-friendly?
+                                </button>
                             </div>
                             <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="collapse-item-4"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text text-black">We work with a wide range of industries, including
-                                        retail, healthcare, finance, education, and more. Our team is equipped to handle
-                                        unique requirements for each sector.</p>
+                                    <p class="faq-text text-black">Absolutely! All our websites are **fully
+                                        responsive**, ensuring a smooth and engaging shopping experience across all
+                                        devices.</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5"> How
-                                    do you ensure my app is secure?</button>
+                                    data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                    Do you offer SEO and digital marketing services?
+                                </button>
                             </div>
                             <div id="collapse-5" class="accordion-collapse collapse " aria-labelledby="collapse-item-5"
                                 data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text text-black">We implement the latest security protocols to protect
-                                        user data and ensure that your app is safe from threats. Regular updates and
-                                        security checks are part of our post-launch services.</p>
+                                    <p class="faq-text text-black">Yes! We provide **SEO optimization, Google Ads,
+                                        social media marketing, and content strategies** to help drive traffic and
+                                        increase conversions.</p>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                                    Do you provide ongoing support after launch?
+                                </button>
+                            </div>
+                            <div id="collapse-6" class="accordion-collapse collapse " aria-labelledby="collapse-item-6"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Yes! We offer **post-launch support, maintenance,
+                                        security updates, performance monitoring, and feature enhancements** to ensure
+                                        your e-commerce site runs smoothly.</p>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
@@ -670,8 +733,8 @@ Brand Area
 
                     </span>
                     <p class="text-white fs-4">
-                        Your dream website is within reach. Ready to get started? We’re excited to bring your vision to
-                        life.
+                        Your dream online store is closer than you think. Ready to launch? Let’s build a powerful
+                        e-commerce experience together!
                     </p>
                     <div class="text-center text-xl-start">
                         <a href="contact.php" class="th-btn style4 th-radius fs-5 bg-orange">Get Started Today

@@ -703,7 +703,8 @@
                                 <p class="box-text2 text-black">Ideal for businesses looking for a professional and
                                     cohesive brand presence.</p>
                             </div>
-                            <a href="basicbranding.php" class="th-btn style4 btn-fw th-radius th-icon fs-5 bg-orange text-white">See
+                            <a href="basicbranding.php"
+                                class="th-btn style4 btn-fw th-radius th-icon fs-5 bg-orange text-white">See
                                 Pricing<i class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="box-content">
                                 <div class="available-list">
@@ -972,18 +973,11 @@ Brand Area
 
                     </span>
                     <p class="text-white fs-4">
-                        Your dream website is within reach. Ready to get started? We’re excited to bring your vision to
-                        life.
+                        Your brand’s potential is waiting to be unleashed. Ready to stand out? Let’s craft a memorable
+                        identity that speaks to your audience!
                     </p>
                     <div class="text-center text-xl-start">
                         <a href="contact.php" class="th-btn style4 th-radius fs-5 bg-orange">Get Started Today
-
-
-
-
-
-
-
                         </a>
                     </div>
                 </div>

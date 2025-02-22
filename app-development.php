@@ -475,7 +475,7 @@
                                     <div class="btn-group">
                                         <a href="contact.html"
                                             class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">View More
-                                            App 
+                                            App
                                             Work <i class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -701,19 +701,12 @@ Brand Area
 
                     </span>
                     <p class="text-white fs-4">
-                        Your dream website is within reach. Ready to get started? We’re excited to bring your vision to
-                        life.
+                        Your ideal app is just a step away. Ready to make it happen? Let’s create an app that brings
+                        your ideas to life!
                     </p>
                     <div class="text-center text-xl-start">
                         <a href="contact.php" class="th-btn style4 th-radius fs-5 bg-orange">Get Started Today
-
-
-
-
-
-
-
-                        </a>
+ </a>
                     </div>
                 </div>
             </div>
