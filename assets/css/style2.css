@@ -258,6 +258,21 @@ a:hover {
   font-size: 30px;
 }
 
+.feature-box-2 {
+  background-color: var(--white-color);
+  border: 1px solid var(--smoke-color);
+  border-radius: 30px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Medium devices */
+  /* Small devices */
+}
+
+.feature-box-2:hover {
+  transform: scale(1.05); /* Scales the div by 5% */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional shadow for better effect */
+}
+
 .f-list {
   color: #121212 !important;
   text-decoration: dashed underline;
