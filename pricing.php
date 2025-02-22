@@ -85,7 +85,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
 
 
     <?php require_once "header.php"; ?>
-    
+
     <div class="container">
         <div class="row space-extra"></div>
     </div>
@@ -157,7 +157,9 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
     </div>
 
     <div class="container-fluid" id="resBox">
+        
         <div class="row">
+
             <!--============================== Price Area  ==============================-->
             <section class="overflow-hidden space bg-color mt-4" style="padding-top: 60px !important;" id="resultsView">
 
@@ -180,9 +182,6 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         </svg>
     </div>
 
-    <!--==============================
-    All Js File
-============================== -->
     <script src="assets/js/pricing.js"></script>
     <script src="assets/shop-assets/bootstrap.min.js"></script>
     <!-- Jquery -->

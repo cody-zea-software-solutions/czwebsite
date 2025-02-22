@@ -141,7 +141,7 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="project-details.html">Ceylon Moss - Website Design</a></h3>
+                                <h3 class="box-title"><a href="work-ceylonmoss.php">Ceylon Moss - Website Design</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -156,7 +156,7 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="project-details.html">Booze Bites - Website Design</a></h3>
+                                <h3 class="box-title"><a href="work-boozebites.php">Booze Bites - Website Design</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -171,7 +171,7 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="project-details.html">Pradeepa Sangeet Institute - Website Design</a></h3>
+                                <h3 class="box-title"><a href="work-p-s-Vidyapeetaya.php">Pradeepa Sangeet Institute - Website Design</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -186,7 +186,7 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="project-details.html">Ceynap - Web Design Auckland</a></h3>
+                                <h3 class="box-title"><a href="work-ceynap.php">Ceynap - Web Design Auckland</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -200,7 +200,7 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><tme href="project-details.html">EdupathLK - Learning Management System</tme></h3>
+                                <h3 class="box-title"><tme href="work-edupathlk.php">EdupathLK - Learning Management System</tme></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -214,7 +214,7 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="project-details.html">Cheers Lanka Travels - Web Design</a></h3>
+                                <h3 class="box-title"><a href="#">Cheers Lanka Travels - Web Design</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>

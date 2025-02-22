@@ -2,9 +2,9 @@
 <html class="no-js" lang="zxx">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Ceynap Transforming the Coco Coir Industry with Innovative Solutions
+    <title>ReadingLK - Book Management System
     </title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -94,12 +94,12 @@
     </div>
     <?php require_once "header.php" ?>
     <div class="container-fluid space-extra2">
-        <div class="row"  style="background-image: url(assets/works-cover/img_caro-001.webp); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
+        <div class="row" style="background-image: url(assets/works-cover/img_caro-005.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
-                    <span class="display-1 text-white">Ceynap - Web Design</span>
+                    <span class="display-1 text-white">ReadingLK - Web Design</span>
                     <p class="fs-2 fw-semibold text-white">
-                        Sustainability, Innovation, Efficiency
+                    Illustration, Branding, Poster Design
                     </p>
                     <div class="btn-group">
                         <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get in Touch <i
@@ -109,7 +109,7 @@
 
             </div>
             <div class="col-12 col-lg-6">
-                <img src="assets/herocw.png" class="img-fluid" alt="">
+                <img src="assets/herocw5.png" class="img-fluid" alt="">
             </div>
 
         </div>
@@ -125,8 +125,8 @@
             </div> -->
             <div class="row">
                 <div class="col-12">
-                    <span class="display-5 text-black">Services Provided to Ceynap</span>
-                    <p class="fs-5 text-black">Ceynap partnered with Cody Zea Software Solutions for <span
+                    <span class="display-5 text-black">Services Provided to EduPathLK</span>
+                    <p class="fs-5 text-black">ReadingLK partnered with Cody Zea Software Solutions for <span
                             class="text-orange">Web
                             Design,Branding,Social Media Management</span> , ensuring a seamless and high-performing
                         solution tailored to their
@@ -164,24 +164,13 @@
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
                         <div class="page-content">
-                            <h2 class="page-title">Ceynap Transforming the Coco Coir Industry with Innovative Solutions
+                            <h2 class="page-title">ReadingLK - Book Management System
                             </h2>
                             <span class="text-orange display-4">Description</span>
                             <br />
                             <br />
-                            <p class="text-black fs-5">Organic traffic growth is all about attracting more visitors to
-                                your
-                                website through
-                                unpaid search engine results. This is achieved primarily through a strategic approach to
-                                Search Engine Optimization (SEO). Here's a breakdown of key strategies to consider for
-                                organic traffic growth Plan a content calendar with a mix of blog posts, infographics,
-                                videos, and other formats.</p>
-                            <p class="text-black fs-5">We can work with your existing website if it's technically sound
-                                and
-                                meets your needs. If
-                                necessary, we can also recommend and implement improvements or a complete redesign to
-                                enhance performance and user experience.
-                                The timeline for seeing results can vary depending on the services you choose.</p>
+                            <p class="text-black fs-5">ReadingLK is at the forefront of transforming library management with its innovative book management system. Designed to address the challenges of modern libraries, the system streamlines cataloging, borrowing, and user management while integrating with digital platforms to support e-books and audiobooks.</p>
+                            <p class="text-black fs-5">The solution developed by Cody Zea Software Solutions offers a user-friendly interface, powerful analytics, and scalable architecture, empowering libraries to operate more efficiently and effectively.</p>
 
                         </div>
                     </div>
@@ -194,7 +183,7 @@
                                 <div class="project-info_icon"><i class="fa-solid fa-user"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Clients:</p>
-                                    <h6 class="project-info_title">Supun Viduranga</h6>
+                                    <h6 class="project-info_title">Malitha Fernando</h6>
                                 </div>
                             </div>
                             <div class="project-info">
@@ -208,14 +197,14 @@
                                 <div class="project-info_icon"><i class="fa-solid fa-calendar-days"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Date:</p>
-                                    <h6 class="project-info_title">Aug 16, 2024</h6>
+                                    <h6 class="project-info_title">AUG 05, 2023</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Website:</p>
-                                    <h6 class="project-info_title"><a href="https://ceynap.co.nz/" target="_black">ceynap.co.nz</a></h6>
+                                    <h6 class="project-info_title"><a href="https://readinglk.codylanka.com/" target="_black">readinglk.codylanka.com</a></h6>
                                 </div>
                             </div>
                         </div>
@@ -234,18 +223,12 @@
                 <div class="col-12 col-lg-6">
                     <span class="fs-3 text-black">Background</span> <br /> <br />
                     <p class="text-black">
-                        As Ceynap’s business grew, they began encountering limitations with their Shopify platform.
-                        While initially suitable, Shopify’s out-of-the-box features could no longer meet the expanding
-                        needs of the business. The growing complexity of their product catalog, customer base, and order
-                        management required a more flexible, secure, and scalable solution.
-                    </p>
+                    ReadingLK is dedicated to modernizing how libraries and book collections are managed. With the growing demands for digital solutions, ReadingLK faced challenges in cataloging, tracking, and managing large volumes of books. The absence of a streamlined system made it difficult to handle user requests, monitor borrowing histories, and integrate with digital reading platforms.
+                </p>
                     <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
-                        Our immediate goal was to complete the testing phase and achieve the certification necessary to
-                        bring our product to market by the end of the year. We actively engaged with waste-to-energy
-                        operators, concrete manufacturers, and the wider construction industry to ensure a seamless
-                        transition and widespread adoption of our solutions.
-                    </p>
+                    The client needed a comprehensive book management system that could handle cataloging, facilitate user registrations, and track borrowing and return activities. Additionally, the system required integrations with e-book providers, robust search functionalities, and detailed analytics to optimize library operations.
+                </p>
                 </div>
             </div>
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
@@ -254,14 +237,10 @@
                     <img src="assets/solution.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Customized E-commerce Platform</span> <br /> <br />
+                    <span class="fs-3 text-black">Tailored Book Management System</span> <br /> <br />
                     <p class="text-black">
-                        Ceynap required a highly secure, custom-coded application to replace its Shopify platform. The
-                        solution provided a scalable, user-friendly e-commerce platform capable of managing a growing
-                        product catalog and customer base while ensuring secure and seamless data migration.
-                        Additionally, advanced order and inventory management systems were implemented to streamline
-                        operations and enhance efficiency.
-                    </p>
+                    Cody Zea Software Solutions designed a custom book management system for ReadingLK, featuring an intuitive dashboard, advanced search and filtering options, and automated notifications for borrowing and returns. The system integrated with e-book platforms, supported multi-format cataloging, and included detailed reporting and analytics to enhance operational efficiency.
+                </p>
                     <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
                         Our immediate goal was to complete the testing phase and achieve the certification necessary to
@@ -277,13 +256,10 @@
                     <img src="assets/cons.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Ongoing Optimization</span> <br /> <br />
+                    <span class="fs-3 text-black">Future Enhancements</span> <br /> <br />
                     <p class="text-black">
-                        While the new platform significantly improved operations, ongoing refinements are necessary to
-                        accommodate future features like integration with third-party logistics providers, dynamic
-                        pricing models, and AI-driven customer insights. These continuous improvements aim to solidify
-                        Ceynap’s position as an industry leader.
-                    </p>
+                    Planned upgrades include mobile app development for on-the-go access, AI-based book recommendation systems, and multilingual support to cater to a diverse user base.
+                </p>
                     <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
                         Our immediate goal was to complete the testing phase and achieve the certification necessary to
@@ -336,7 +312,7 @@
     <div class="conatiner-fluid">
         <img src="assets/codyzeaweb.jpg" class="img-fluid d-lg-none d-block" alt="">
         <div class="row p-5 d-none d-lg-block"
-            style="background-image: url(assets/ceynapthumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
+            style="background-image: url(assets/readinglkthumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
         </div>
     </div>
     <?php require_once "footer.php" ?>

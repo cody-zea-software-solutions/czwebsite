@@ -2,9 +2,9 @@
 <html class="no-js" lang="zxx">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Ceynap Transforming the Coco Coir Industry with Innovative Solutions
+    <title>Codyzea - Pradeepa Sangeetha Vidyapeetaya Excellence in Classical Music Education
     </title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -94,12 +94,12 @@
     </div>
     <?php require_once "header.php" ?>
     <div class="container-fluid space-extra2">
-        <div class="row"  style="background-image: url(assets/works-cover/img_caro-001.webp); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
+        <div class="row" style="background-image: url(assets/works-cover/img_caro-002.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
-                    <span class="display-1 text-white">Ceynap - Web Design</span>
+                    <span class="display-1 text-white">P. S. Vidyapeetaya - Web Design</span>
                     <p class="fs-2 fw-semibold text-white">
-                        Sustainability, Innovation, Efficiency
+                    Classical Music, Bhatkhande Exams, Music Education
                     </p>
                     <div class="btn-group">
                         <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get in Touch <i
@@ -109,7 +109,7 @@
 
             </div>
             <div class="col-12 col-lg-6">
-                <img src="assets/herocw.png" class="img-fluid" alt="">
+                <img src="assets/herocw2.png" class="img-fluid" alt="">
             </div>
 
         </div>
@@ -125,8 +125,8 @@
             </div> -->
             <div class="row">
                 <div class="col-12">
-                    <span class="display-5 text-black">Services Provided to Ceynap</span>
-                    <p class="fs-5 text-black">Ceynap partnered with Cody Zea Software Solutions for <span
+                    <span class="display-5 text-black">Services Provided to Pradeepa Sangeetha Vidyapeetaya</span>
+                    <p class="fs-5 text-black">Pradeepa Sangeetha Vidyapeetaya partnered with Cody Zea Software Solutions for <span
                             class="text-orange">Web
                             Design,Branding,Social Media Management</span> , ensuring a seamless and high-performing
                         solution tailored to their
@@ -164,24 +164,14 @@
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
                         <div class="page-content">
-                            <h2 class="page-title">Ceynap Transforming the Coco Coir Industry with Innovative Solutions
+                            <h2 class="page-title">Pradeepa Sangeetha Vidyapeetaya Excellence in Classical Music Education
+
                             </h2>
                             <span class="text-orange display-4">Description</span>
                             <br />
                             <br />
-                            <p class="text-black fs-5">Organic traffic growth is all about attracting more visitors to
-                                your
-                                website through
-                                unpaid search engine results. This is achieved primarily through a strategic approach to
-                                Search Engine Optimization (SEO). Here's a breakdown of key strategies to consider for
-                                organic traffic growth Plan a content calendar with a mix of blog posts, infographics,
-                                videos, and other formats.</p>
-                            <p class="text-black fs-5">We can work with your existing website if it's technically sound
-                                and
-                                meets your needs. If
-                                necessary, we can also recommend and implement improvements or a complete redesign to
-                                enhance performance and user experience.
-                                The timeline for seeing results can vary depending on the services you choose.</p>
+                            <p class="text-black fs-5">Pradeepa Sangeetha Vidyapeetaya is a renowned institution dedicated to classical music education, known for its commitment to nurturing talent and preserving cultural heritage. To adapt to the digital era, the institute required a platform that could reflect its legacy while addressing modern demands.</p>
+                            <p class="text-black fs-5">Cody Zea Software Solutions developed a robust digital solution that combined tradition with innovation, enabling the institute to expand its reach and streamline operations effectively.</p>
 
                         </div>
                     </div>
@@ -194,7 +184,7 @@
                                 <div class="project-info_icon"><i class="fa-solid fa-user"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Clients:</p>
-                                    <h6 class="project-info_title">Supun Viduranga</h6>
+                                    <h6 class="project-info_title">Tudor Wijesinghe</h6>
                                 </div>
                             </div>
                             <div class="project-info">
@@ -208,14 +198,14 @@
                                 <div class="project-info_icon"><i class="fa-solid fa-calendar-days"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Date:</p>
-                                    <h6 class="project-info_title">Aug 16, 2024</h6>
+                                    <h6 class="project-info_title">May 18, 2023</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Website:</p>
-                                    <h6 class="project-info_title"><a href="https://ceynap.co.nz/" target="_black">ceynap.co.nz</a></h6>
+                                    <h6 class="project-info_title"><a href="https://pradeepasv.com/" target="_black">ceylonmoss.com</a></h6>
                                 </div>
                             </div>
                         </div>
@@ -234,18 +224,11 @@
                 <div class="col-12 col-lg-6">
                     <span class="fs-3 text-black">Background</span> <br /> <br />
                     <p class="text-black">
-                        As Ceynap’s business grew, they began encountering limitations with their Shopify platform.
-                        While initially suitable, Shopify’s out-of-the-box features could no longer meet the expanding
-                        needs of the business. The growing complexity of their product catalog, customer base, and order
-                        management required a more flexible, secure, and scalable solution.
-                    </p>
+                    Pradeepa Sangeetha Vidyapeetaya has been a beacon of excellence in classical music education, nurturing talent and preserving tradition for over a decade. However, the institute faced challenges in modernizing its digital presence to reach a broader audience and manage administrative tasks efficiently. The existing platform lacked features to support online class registrations, event management, and course offerings.
+                </p>
                     <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
-                        Our immediate goal was to complete the testing phase and achieve the certification necessary to
-                        bring our product to market by the end of the year. We actively engaged with waste-to-energy
-                        operators, concrete manufacturers, and the wider construction industry to ensure a seamless
-                        transition and widespread adoption of our solutions.
-                    </p>
+                    To maintain its legacy and expand its reach, the institution required a comprehensive platform that could streamline operations, promote its programs effectively, and provide an interactive online experience for students and music enthusiasts worldwide.</p>
                 </div>
             </div>
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
@@ -254,14 +237,10 @@
                     <img src="assets/solution.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Customized E-commerce Platform</span> <br /> <br />
+                    <span class="fs-3 text-black">Modernized Digital Platform for Music Education</span> <br /> <br />
                     <p class="text-black">
-                        Ceynap required a highly secure, custom-coded application to replace its Shopify platform. The
-                        solution provided a scalable, user-friendly e-commerce platform capable of managing a growing
-                        product catalog and customer base while ensuring secure and seamless data migration.
-                        Additionally, advanced order and inventory management systems were implemented to streamline
-                        operations and enhance efficiency.
-                    </p>
+                    We developed a custom website for Pradeepa Sangeetha Vidyapeetaya, featuring an interactive class scheduling system, an event calendar for performances, and a secure portal for student registrations. The platform also included a multimedia gallery to showcase performances and an e-learning module to extend classical music education to remote learners.
+                </p>
                     <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
                         Our immediate goal was to complete the testing phase and achieve the certification necessary to
@@ -277,13 +256,10 @@
                     <img src="assets/cons.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Ongoing Optimization</span> <br /> <br />
+                    <span class="fs-3 text-black">Future Upgrades</span> <br /> <br />
                     <p class="text-black">
-                        While the new platform significantly improved operations, ongoing refinements are necessary to
-                        accommodate future features like integration with third-party logistics providers, dynamic
-                        pricing models, and AI-driven customer insights. These continuous improvements aim to solidify
-                        Ceynap’s position as an industry leader.
-                    </p>
+                    Planned enhancements include integrating virtual masterclasses, implementing AI-based progress tracking for students, and expanding the e-learning module with additional courses and interactive content.
+                </p>
                     <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
                         Our immediate goal was to complete the testing phase and achieve the certification necessary to
@@ -336,7 +312,7 @@
     <div class="conatiner-fluid">
         <img src="assets/codyzeaweb.jpg" class="img-fluid d-lg-none d-block" alt="">
         <div class="row p-5 d-none d-lg-block"
-            style="background-image: url(assets/ceynapthumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
+            style="background-image: url(assets/psvthumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
         </div>
     </div>
     <?php require_once "footer.php" ?>

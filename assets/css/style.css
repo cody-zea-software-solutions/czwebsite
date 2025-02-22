@@ -25030,6 +25030,17 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
+.hand{
+  cursor: pointer;
+}
+
+.blog-text.truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limit the text to 3 lines */
+  overflow: hidden;
+}
+
 .price-grid .box-text span {
   background: #FFE4E9;
   border-radius: 30px;

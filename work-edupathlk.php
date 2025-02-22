@@ -2,10 +2,9 @@
 <html class="no-js" lang="zxx">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Ceynap Transforming the Coco Coir Industry with Innovative Solutions
-    </title>
+    <title>Codyzea - EduPathLK - Learning Management System</title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
     <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -94,12 +93,12 @@
     </div>
     <?php require_once "header.php" ?>
     <div class="container-fluid space-extra2">
-        <div class="row"  style="background-image: url(assets/works-cover/img_caro-001.webp); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
+        <div class="row" style="background-image: url(assets/works-cover/img_caro-004.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
-                    <span class="display-1 text-white">Ceynap - Web Design</span>
+                    <span class="display-1 text-white">EduPathLK - Web Design</span>
                     <p class="fs-2 fw-semibold text-white">
-                        Sustainability, Innovation, Efficiency
+                    Marketing, Rendering, 3D Design
                     </p>
                     <div class="btn-group">
                         <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get in Touch <i
@@ -109,7 +108,7 @@
 
             </div>
             <div class="col-12 col-lg-6">
-                <img src="assets/herocw.png" class="img-fluid" alt="">
+                <img src="assets/herocw4.png" class="img-fluid" alt="">
             </div>
 
         </div>
@@ -125,8 +124,8 @@
             </div> -->
             <div class="row">
                 <div class="col-12">
-                    <span class="display-5 text-black">Services Provided to Ceynap</span>
-                    <p class="fs-5 text-black">Ceynap partnered with Cody Zea Software Solutions for <span
+                    <span class="display-5 text-black">Services Provided to EduPathLK</span>
+                    <p class="fs-5 text-black">Ceylon Moss partnered with Cody Zea Software Solutions for <span
                             class="text-orange">Web
                             Design,Branding,Social Media Management</span> , ensuring a seamless and high-performing
                         solution tailored to their
@@ -164,24 +163,13 @@
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
                         <div class="page-content">
-                            <h2 class="page-title">Ceynap Transforming the Coco Coir Industry with Innovative Solutions
+                            <h2 class="page-title">EduPathLK - Learning Management System (LMS)
                             </h2>
                             <span class="text-orange display-4">Description</span>
                             <br />
                             <br />
-                            <p class="text-black fs-5">Organic traffic growth is all about attracting more visitors to
-                                your
-                                website through
-                                unpaid search engine results. This is achieved primarily through a strategic approach to
-                                Search Engine Optimization (SEO). Here's a breakdown of key strategies to consider for
-                                organic traffic growth Plan a content calendar with a mix of blog posts, infographics,
-                                videos, and other formats.</p>
-                            <p class="text-black fs-5">We can work with your existing website if it's technically sound
-                                and
-                                meets your needs. If
-                                necessary, we can also recommend and implement improvements or a complete redesign to
-                                enhance performance and user experience.
-                                The timeline for seeing results can vary depending on the services you choose.</p>
+                            <p class="text-black fs-5">EduPathLK is committed to revolutionizing education through technology, offering an engaging and accessible platform for learners and educators alike. The bespoke LMS developed by Cody Zea Software Solutions combines innovation with user-centered design to deliver exceptional online learning experiences.</p>
+                            <p class="text-black fs-5">The platform features gamification, robust analytics, and a mobile-friendly design, ensuring it meets the needs of modern learners while supporting educators with powerful administrative tools.</p>
 
                         </div>
                     </div>
@@ -194,7 +182,7 @@
                                 <div class="project-info_icon"><i class="fa-solid fa-user"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Clients:</p>
-                                    <h6 class="project-info_title">Supun Viduranga</h6>
+                                    <h6 class="project-info_title">S T Jayasundara</h6>
                                 </div>
                             </div>
                             <div class="project-info">
@@ -208,14 +196,14 @@
                                 <div class="project-info_icon"><i class="fa-solid fa-calendar-days"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Date:</p>
-                                    <h6 class="project-info_title">Aug 16, 2024</h6>
+                                    <h6 class="project-info_title">DEC 12, 2023</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Website:</p>
-                                    <h6 class="project-info_title"><a href="https://ceynap.co.nz/" target="_black">ceynap.co.nz</a></h6>
+                                    <h6 class="project-info_title"><a href="https://edupathlk.codylanka.com/" target="_black">edupathlk.codylanka.com</a></h6>
                                 </div>
                             </div>
                         </div>
@@ -234,18 +222,12 @@
                 <div class="col-12 col-lg-6">
                     <span class="fs-3 text-black">Background</span> <br /> <br />
                     <p class="text-black">
-                        As Ceynap’s business grew, they began encountering limitations with their Shopify platform.
-                        While initially suitable, Shopify’s out-of-the-box features could no longer meet the expanding
-                        needs of the business. The growing complexity of their product catalog, customer base, and order
-                        management required a more flexible, secure, and scalable solution.
-                    </p>
+                    EduPathLK is a forward-thinking platform aiming to redefine online education in Sri Lanka. Despite its vision, the lack of an intuitive and scalable learning management system limited its potential to reach a wider audience. Challenges included inefficient content delivery, absence of progress tracking, and inadequate user engagement tools.
+                </p>
                     <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
-                        Our immediate goal was to complete the testing phase and achieve the certification necessary to
-                        bring our product to market by the end of the year. We actively engaged with waste-to-energy
-                        operators, concrete manufacturers, and the wider construction industry to ensure a seamless
-                        transition and widespread adoption of our solutions.
-                    </p>
+                    EduPathLK required a sophisticated LMS that could deliver seamless learning experiences, support diverse course content formats, and include features like gamification, analytics, and a mobile-friendly design. The platform also needed robust admin tools to streamline course management and monitor student progress.
+                   </p>
                 </div>
             </div>
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
@@ -254,14 +236,10 @@
                     <img src="assets/solution.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Customized E-commerce Platform</span> <br /> <br />
+                    <span class="fs-3 text-black">Comprehensive LMS Solution</span> <br /> <br />
                     <p class="text-black">
-                        Ceynap required a highly secure, custom-coded application to replace its Shopify platform. The
-                        solution provided a scalable, user-friendly e-commerce platform capable of managing a growing
-                        product catalog and customer base while ensuring secure and seamless data migration.
-                        Additionally, advanced order and inventory management systems were implemented to streamline
-                        operations and enhance efficiency.
-                    </p>
+                    Cody Zea Software Solutions developed a tailor-made LMS for EduPathLK, featuring user-friendly navigation, gamification elements, and tools for interactive learning. Key functionalities included an integrated student and instructor dashboard, real-time progress tracking, automated grading systems, and advanced analytics. The system was designed to handle diverse content formats and support a wide range of learning activities.
+                </p>
                     <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
                         Our immediate goal was to complete the testing phase and achieve the certification necessary to
@@ -277,13 +255,10 @@
                     <img src="assets/cons.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Ongoing Optimization</span> <br /> <br />
+                    <span class="fs-3 text-black">Scalable Enhancements</span> <br /> <br />
                     <p class="text-black">
-                        While the new platform significantly improved operations, ongoing refinements are necessary to
-                        accommodate future features like integration with third-party logistics providers, dynamic
-                        pricing models, and AI-driven customer insights. These continuous improvements aim to solidify
-                        Ceynap’s position as an industry leader.
-                    </p>
+                    Future updates will focus on AI-driven personalized learning paths, multilingual support for broader accessibility, and integration with popular virtual classroom tools for enhanced live learning experiences.
+                </p>
                     <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
                         Our immediate goal was to complete the testing phase and achieve the certification necessary to
@@ -336,7 +311,7 @@
     <div class="conatiner-fluid">
         <img src="assets/codyzeaweb.jpg" class="img-fluid d-lg-none d-block" alt="">
         <div class="row p-5 d-none d-lg-block"
-            style="background-image: url(assets/ceynapthumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
+            style="background-image: url(assets/edupaththumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
         </div>
     </div>
     <?php require_once "footer.php" ?>

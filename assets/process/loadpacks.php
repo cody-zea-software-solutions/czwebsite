@@ -13,24 +13,21 @@ if (isset($_POST['id'])) {
 
     if ($result->num_rows > 0) {
         $sol_name = $result->fetch_assoc();
+
 ?>
+
         <div class="container px-md-5">
             <div class="title-area text-center">
-                <h3 class="sec-title text-o"><?php echo $sol_name['sol_name'];
-                                                $result->data_seek(0); ?> package</h3>
-                <p class=""><?php echo $sol_name['sol_desc']; ?></p>
+                <h3 class="sec-title text-o"><?php echo $sol_name['sol_name']; ?> package</h3>
+                <p class="text-dark px-5"><?php echo $sol_name['sol_desc']; ?></p>
             </div>
             <div id="monthly" class="wrapper-full">
                 <div class="row gy-4 justify-content-center">
 
                     <?php
-                    $index = 1;
-                    while ($packData = $result->fetch_assoc()) {
-                        $packs[$index] = $packData['pack_id'];
-                        $index++;
-                    }
                     $result->data_seek(0);
-                    $n = 1;
+                    $n = 0;
+                    $f_round = 0;
 
                     for ($x = 1; $x <= $result->num_rows; $x++) {
                         $data = $result->fetch_assoc();
@@ -47,133 +44,74 @@ if (isset($_POST['id'])) {
                                                                     } ?></span>
                                 <div class="text-center">
                                     <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
-                                    <h4 class="box-price"><span class="text-orange">$<?php echo $data['pack_price']; ?></span><span class="duration">/Per Month</span></h4>
-                                    <p class="box-text2"><?php echo $data['pack_desc']; ?></p>
+
+                                    <h4 class="box-price" style="margin-bottom: 0px !important;"><span class="price-tag"></span><span class="text-orange">$<?php echo $data['pack_price']; ?></span></h4>
+                                    <h5 style="margin-top: 0px !important; font-weight: 600 !important;" class="text-decoration-line-through text-o">$<?php echo $data['pack_before_price']; ?></h5>
+                                    <p class="box-text2" style="padding: 0px;"><?php echo $data['pack_desc']; ?></p>
                                 </div>
-                                <a href="pack-details.php?id=<?php echo $data['pack_id']; ?>" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
+                                <a href="<?php echo $data['pack_path']; ?>.php" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                         class="fa-regular fa-arrow-right ms-2"></i></a>
                                 <div class="box-content">
-                                    <div class="available-list">
+                                    <div class="available-list" style="padding-left: 10px !important; padding-right: 10px !important; margin: 0px !important;">
 
                                         <ul>
                                             <?php
 
                                             // Prepare and execute SQL query
-                                            $stmt = $conn->prepare("SELECT * FROM `pack_features` WHERE `pack_pack_id` = ? OR `pack_pack_id` = ? OR `pack_pack_id` = ? ORDER BY `f_id` ASC ");
-                                            $stmt->bind_param("iii", $packs[1], $packs[2], $packs[3]);
+                                            $query = "(SELECT * FROM `pack_features` WHERE `pack_pack_id` = ? AND `status` = 1 ORDER BY `f_id` ASC)
+                                                        UNION
+                                                        (SELECT * FROM `pack_features` WHERE `pack_pack_id` = ? AND `status` != 1 ORDER BY `f_id` ASC) ";
+                                            $stmt = $conn->prepare($query);
+                                            $stmt->bind_param("ii", $data['pack_id'], $data['pack_id']);
                                             $stmt->execute();
                                             $results = $stmt->get_result();
 
-                                            $part1 = floor($results->num_rows / 2);
-                                            $part2 = ceil($results->num_rows / 2);
-
                                             if ($x == 1) {
-
-                                                for ($y = 1; $y <= $part1; $y++) {
-                                                    $fet = $results->fetch_assoc();
-                                                    if ($fet['pack_pack_id'] == $packs[$n]) {
-                                            ?>
-                                                        <li><?php echo $fet['f_name']; ?></li>
-                                                    <?php
-                                                    } else {
-                                                    ?>
-                                                        <li class="unavailable"><?php echo $fet['f_name']; ?></li>
-                                                <?php
-                                                    }
-                                                }
-                                                ?>
-                                                <div class="d-none mb-3" id="showMoreList_1">
-                                                    <?php
-                                                    for ($y = 1; $y <= $part2; $y++) {
-                                                        $fet = $results->fetch_assoc();
-                                                        if ($fet['pack_pack_id'] == $packs[$n]) {
-                                                    ?>
-                                                            <li><?php echo $fet['f_name']; ?></li>
-                                                        <?php
-                                                        } else {
-                                                        ?>
-                                                            <li class="unavailable"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
-                                                        }
-                                                    }
-                                                    ?>
-                                                </div>
-                                                <?php
-                                            } elseif ($x == 2) {
-
-                                                for ($y = 1; $y <= $part1; $y++) {
-                                                    $fet = $results->fetch_assoc();
-                                                    if ($fet['pack_pack_id'] == $packs[$n] || $fet['pack_pack_id'] == $packs[$n + 1]) {
-                                                ?>
-                                                        <li><?php echo $fet['f_name']; ?></li>
-                                                    <?php
-                                                    } else {
-                                                    ?>
-                                                        <li class="unavailable"><?php echo $fet['f_name']; ?></li>
-                                                <?php
-                                                    }
-                                                }
-                                                ?>
-                                                <div class="d-none mb-3" id="showMoreList_2">
-                                                    <?php
-                                                    for ($y = 1; $y <= $part2; $y++) {
-                                                        $fet = $results->fetch_assoc();
-                                                        if ($fet['pack_pack_id'] == $packs[$n] || $fet['pack_pack_id'] == $packs[$n + 1]) {
-                                                    ?>
-                                                            <li><?php echo $fet['f_name']; ?></li>
-                                                        <?php
-                                                        } else {
-                                                        ?>
-                                                            <li class="unavailable"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
-                                                        }
-                                                    }
-                                                    ?>
-                                                </div>
-                                                <?php
-
-                                            } elseif ($x == 3) {
-
-                                                for ($y = 1; $y <= $part1; $y++) {
-                                                    $fet = $results->fetch_assoc();
-                                                    if ($fet['pack_pack_id'] == $packs[$n] || $fet['pack_pack_id'] == $packs[$n + 1] || $fet['pack_pack_id'] == $packs[$n + 2]) {
-                                                ?>
-                                                        <li><?php echo $fet['f_name']; ?></li>
-                                                    <?php
-                                                    } else {
-                                                    ?>
-                                                        <li class="unavailable"><?php echo $fet['f_name']; ?></li>
-                                                <?php
-                                                    }
-                                                }
-                                                ?>
-                                                <div class="d-none mb-3" id="showMoreList_3">
-                                                    <?php
-                                                    for ($y = 1; $y <= $part2; $y++) {
-                                                        $fet = $results->fetch_assoc();
-                                                        if ($fet['pack_pack_id'] == $packs[$n] || $fet['pack_pack_id'] == $packs[$n + 1] || $fet['pack_pack_id'] == $packs[$n + 2]) {
-                                                    ?>
-                                                            <li><?php echo $fet['f_name']; ?></li>
-                                                        <?php
-                                                        } else {
-                                                        ?>
-                                                            <li class="unavailable"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
-                                                        }
-                                                    }
-                                                    ?>
-                                                </div>
-                                            <?php
-
+                                                $part1 = floor($results->num_rows / 2);
+                                                $part2 = ceil($results->num_rows / 2);
+                                                $f_round = $part1;
+                                            }else{
+                                                $part1 = $f_round;
+                                                $part2 = $results->num_rows-$part1;
                                             }
 
+                                            for ($y = 1; $y <= $part1; $y++) {
+                                                $n = $n + 1;
+                                                $fet = $results->fetch_assoc();
+                                                if ($fet['status'] == 1) {
                                             ?>
+                                                    <li class="f-list"><?php echo $fet['f_name']; ?></li>
+                                                <?php
+                                                } else {
+                                                ?>
+                                                    <li class="nf-list unavailable"><?php echo $fet['f_name']; ?></li>
+                                            <?php
+                                                }
+                                            }
+                                            ?>
+                                            <div class="d-none mb-3" id="showMoreList_<?php echo $x; ?>">
+                                                <?php
+                                                $n = $n + 1;
+                                                for ($y = 1; $y <= $part2; $y++) {
+                                                    $fet = $results->fetch_assoc();
+                                                    if ($fet['status'] == 1) {
+                                                ?>
+                                                        <li class="f-list"><?php echo $fet['f_name']; ?></li>
+                                                    <?php
+                                                    } else {
+                                                    ?>
+                                                        <li class="nf-list unavailable"><?php echo $fet['f_name']; ?></li>
+                                                <?php
+                                                    }
+                                                }
+                                                ?>
+                                            </div>
                                         </ul>
 
                                     </div>
                                 </div>
 
-                                <div class="text-center text-dark">
+                                <div class="text-center text-dark mt-3">
                                     <span class="text-o fw-semibold hover" onclick="showMore(<?php echo $x; ?>);" id="showMoreBtn_<?php echo $x; ?>"><i class="bi bi-chevron-double-down h6"></i>&nbsp;More Features</span>
                                 </div>
                             </div>
@@ -185,6 +123,20 @@ if (isset($_POST['id'])) {
 
                 </div>
             </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+            <script>
+                // Initialize all popovers when the document is ready
+                document.addEventListener('DOMContentLoaded', function() {
+                    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+                    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+                        return new bootstrap.Popover(popoverTriggerEl);
+                    });
+                });
+            </script>
+
         </div>
     <?php
     } else {
