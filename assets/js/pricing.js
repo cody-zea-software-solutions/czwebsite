@@ -45,6 +45,90 @@ function triggerBtn(id) {
     r.send(formData);
 }
 
+let CatID = 0;
+
+function changeCategory(event, id) {
+
+    const buttons = document.querySelectorAll('.tagcloud a');
+    const listItems = document.querySelectorAll('ul li a');
+
+    buttons.forEach(button => {
+        button.classList.remove('bg-orange');
+    });
+    listItems.forEach(button => {
+        button.classList.remove('bg-orange');
+    });
+
+    const clickedButton = Array.from(buttons).find(button => {
+        return button.getAttribute('data-id') == id;
+    });
+
+    if (clickedButton) {
+        clickedButton.classList.add('bg-orange');
+    }
+
+    const listButton = Array.from(listItems).find(button => {
+        return button.getAttribute('data-id') == id;
+    });
+
+    if (listButton) {
+        listButton.classList.add('bg-orange');
+    }
+
+    CatID = id;
+
+    var r = new XMLHttpRequest();
+    var formData = new FormData();
+    formData.append("id", id);
+
+    r.open("POST", "assets/process/blogchange.php", true);
+    r.onreadystatechange = function () {
+        if (r.readyState === 4 && r.status === 200) {
+            document.getElementById("resultsView").innerHTML = r.responseText;
+            document.getElementById('top').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    };
+    r.send(formData);
+
+}
+
+function toggleReadMore(id) {
+    const blogDesc = document.getElementById('blogDesc'+id);
+    const readMoreBtn = document.getElementById('readMoreBtn'+id);
+
+    // If the text is currently truncated, reveal the full text
+    if (blogDesc.classList.contains('truncate')) {
+        blogDesc.classList.remove('truncate');
+        readMoreBtn.innerHTML = 'Read Less <i class="fa-regular fa-arrow-right ms-2"></i>';
+    } else {
+        // If the text is full, truncate it back to 3 lines
+        blogDesc.classList.add('truncate');
+        readMoreBtn.innerHTML = 'Read More <i class="fa-regular fa-arrow-left ms-2"></i>';
+    }
+}
+
+
+function blogPagination(id) {
+
+    var r = new XMLHttpRequest();
+    var formData = new FormData();
+    formData.append("id", id);
+    formData.append("catid", CatID);
+
+    r.open("POST", "assets/process/blogpagination.php", true);
+    r.onreadystatechange = function () {
+        if (r.readyState === 4 && r.status === 200) {
+            document.getElementById("resultsView").innerHTML = r.responseText;
+            document.getElementById('top').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    };
+    r.send(formData);
+}
+
 function triggerBtnOnload(id) {
 
     document.getElementById('resultsView').innerHTML = '<div class="container px-md-5">' +
