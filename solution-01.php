@@ -73,8 +73,8 @@
                         <img src="assets/solubulb.jpg" class="img-fluid" alt="SolutionCoverPageIllustration">
                     </div>
                     <div class="col-12 col-lg-9">
-                        <span class="text-black fs-1">Startup Made Easy – Choose Cody Zea</span>
-                        <p class="text-black">
+                        <span class="text-black display-5">Startup Made Easy – Choose Cody Zea</span>
+                        <p class="text-black fs-3">
                             Effortless branding, web design, and digital growth—let’s build your success together!
                         </p>
                     </div>
@@ -296,33 +296,382 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
-                <div class="col-12 col-lg-6 offset-0 offset-lg-8 mt-4">
+                <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
                     <div class="price-box th-ani">
                         <span class="offer-tag"></span>
                         <div class="text-center">
-                            <h3 class="box-title">Free Plan</h3>
-                            <h4 class="box-price tetx-center">$00<span class="duration">/Per Month</span></h4>
-                            <p class="box-text2 text-black">Consider offering a limited version of your services</p>
+                            <h3 class="box-title">Growth Package</h3>
+                            <h4 class="box-price text-center text-orange">NZ$ 1500</h4>
+                            <p class="box-text2 text-black">Ideal for small businesses, this pack enhances your online
+                                presence with product info, easy contact, and professional updates. Boost your business
+                                credibility!</p>
                         </div>
-                        <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
+                        <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                         <div class="box-content">
                             <div class="available-list">
                                 <ul>
-                                    <li class="text-black">Unlimited Products Updates</li>
-                                    <li class="text-black">Custom Infrastructure</li>
-                                    <li class="text-black">Custom Permission</li>
-                                    <li class="text-black">Custom Design and Replace</li>
-                                    <li class="unavailable text-black">Unlimited Feature Updates</li>
-                                    <li class="unavailable text-black">24/7 Hour Customer Support</li>
+                                    <ul>
+                                        <li class="text-black"><strong>Website Features:</strong> 5–8-page custom
+                                            website</li>
+                                        <li class="text-black"><strong>Design:</strong> Mobile-responsive design</li>
+                                        <li class="text-black"><strong>SEO:</strong> Basic SEO setup</li>
+                                        <li class="text-black"><strong>Communication:</strong> Enquiry to E-Mail</li>
+                                        <!-- <li class="text-black"><strong>Visuals:</strong> Free stock images</li>
+                                        <li class="text-black"><strong>Social Media:</strong> Social media integration
+                                        </li>
+                                        <li class="text-black"><strong>Business Setup:</strong> Google business setup
+                                        </li>
+                                        <li class="text-black"><strong>Content:</strong> Free web content writing</li> -->
+                                        <!-- <li class="text-black"><strong>Visuals:</strong> Photo/video gallery page added
+                                        </li>
+                                        <li class="text-black"><strong>Email:</strong> 03 business emails</li>
+                                        <li class="text-black"><strong>Support:</strong> Live chat bot</li>
+                                        <li class="text-black"><strong>Content Management:</strong> Web content
+                                            management system (Admin Panel)</li>
+                                        <li class="text-black"><strong>Design:</strong> Interactive sliding banners</li>
+                                        <li class="text-black"><strong>Analytics:</strong> Google Analytics board setup
+                                        </li>
+                                        <li class="text-black"><strong>Marketing:</strong> Free one graphic post</li>
+                                        <li class="text-black"><strong>Products:</strong> Product Showcase - Shop Page
+                                        </li> -->
+
+                                    </ul>
+
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-1">
+
+            </div>
+            <div class="col-12 col-lg-4 space">
+                <div class="col-12 mt-0 mt-lg-5">
+                    <span class="text-orange fs-3">
+                        The Problem :
+                    </span>
+                    <p class="text-black fs-5">
+                        A business without a website lacks credibility and struggles to attract customers. A poorly
+                        designed website makes navigation difficult, leading to lost potential clients.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <span class="text-orange fs-3">
+                        Solution Impact:
+                    </span>
+                    <p class="text-black fs-5">
+                        This package gives your startup an online presence, helping you attract and engage customers
+                        effectively.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center space-extra">
+            <div class="col-12 text-center">
+                <span class="text-black display-3"> Branding<span class="text-orange"> - Cody Zea</span>
+                </span>
+                <p class="text-black fs-4">
+                    Your brand is more than just a logo—it’s the face of your business. At Cody Zea, we craft stunning
+                    visual identities that build trust, make an impact, and set you apart from the competition. Let’s
+                    create a brand that speaks for you!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6 vh-100 bg-black">
+                <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
+                    <div class="price-box th-ani">
+                        <span class="offer-tag"></span>
+                        <div class="text-center">
+                            <h3 class="box-title">Identity Package</h3>
+                            <h4 class="box-price text-center text-orange">NZ$ 1500</h4>
+                            <p class="box-text2 text-black">Ideal for small businesses, this pack enhances your online
+                                presence with product info, easy contact, and professional updates. Boost your business
+                                credibility!</p>
+                        </div>
+                        <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="box-content">
+                            <div class="available-list">
+                                <ul>
+                                    <ul>
+                                        <li class="text-black"><strong>Website Features:</strong> 5–8-page custom
+                                            website</li>
+                                        <li class="text-black"><strong>Design:</strong> Mobile-responsive design</li>
+                                        <li class="text-black"><strong>SEO:</strong> Basic SEO setup</li>
+                                        <li class="text-black"><strong>Communication:</strong> Enquiry to E-Mail</li>
+                                        <!-- <li class="text-black"><strong>Visuals:</strong> Free stock images</li>
+                                        <li class="text-black"><strong>Social Media:</strong> Social media integration
+                                        </li>
+                                        <li class="text-black"><strong>Business Setup:</strong> Google business setup
+                                        </li>
+                                        <li class="text-black"><strong>Content:</strong> Free web content writing</li> -->
+                                        <!-- <li class="text-black"><strong>Visuals:</strong> Photo/video gallery page added
+                                        </li>
+                                        <li class="text-black"><strong>Email:</strong> 03 business emails</li>
+                                        <li class="text-black"><strong>Support:</strong> Live chat bot</li>
+                                        <li class="text-black"><strong>Content Management:</strong> Web content
+                                            management system (Admin Panel)</li>
+                                        <li class="text-black"><strong>Design:</strong> Interactive sliding banners</li>
+                                        <li class="text-black"><strong>Analytics:</strong> Google Analytics board setup
+                                        </li>
+                                        <li class="text-black"><strong>Marketing:</strong> Free one graphic post</li>
+                                        <li class="text-black"><strong>Products:</strong> Product Showcase - Shop Page
+                                        </li> -->
+
+                                    </ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-1">
+
+            </div>
+            <div class="col-12 col-lg-4 space">
+                <div class="col-12 mt-0 mt-lg-5">
+                    <span class="text-orange fs-3">
+                        The Problem :
+                    </span>
+                    <p class="text-black fs-5">
+                        Without proper branding, startups fail to differentiate themselves, making it harder to gain
+                        customer trust and recognition.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <span class="text-orange fs-3">
+                        Solution Impact:
+                    </span>
+                    <p class="text-black fs-5">
+                        This package builds a strong brand identity, making your business memorable and trustworthy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center space-extra">
+            <div class="col-12 text-center">
+                <span class="text-black display-3"> Digital<span class="text-orange"> Marketing</span>
+                </span>
+                <p class="text-black fs-4">
+                    Boost your brand’s visibility and attract customers with expert SEO, social media, and targeted ads.
+                    Cody Zea helps you stand out and drive real results!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6 vh-100 bg-black">
+                <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
+                    <div class="price-box th-ani">
+                        <span class="offer-tag"></span>
+                        <div class="text-center">
+                            <h3 class="box-title">Identity Package</h3>
+                            <h4 class="box-price text-center text-orange">NZ$ 1500</h4>
+                            <p class="box-text2 text-black">Ideal for small businesses, this pack enhances your online
+                                presence with product info, easy contact, and professional updates. Boost your business
+                                credibility!</p>
+                        </div>
+                        <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="box-content">
+                            <div class="available-list">
+                                <ul>
+                                    <ul>
+                                        <li class="text-black"><strong>Website Features:</strong> 5–8-page custom
+                                            website</li>
+                                        <li class="text-black"><strong>Design:</strong> Mobile-responsive design</li>
+                                        <li class="text-black"><strong>SEO:</strong> Basic SEO setup</li>
+                                        <li class="text-black"><strong>Communication:</strong> Enquiry to E-Mail</li>
+                                        <!-- <li class="text-black"><strong>Visuals:</strong> Free stock images</li>
+                                        <li class="text-black"><strong>Social Media:</strong> Social media integration
+                                        </li>
+                                        <li class="text-black"><strong>Business Setup:</strong> Google business setup
+                                        </li>
+                                        <li class="text-black"><strong>Content:</strong> Free web content writing</li> -->
+                                        <!-- <li class="text-black"><strong>Visuals:</strong> Photo/video gallery page added
+                                        </li>
+                                        <li class="text-black"><strong>Email:</strong> 03 business emails</li>
+                                        <li class="text-black"><strong>Support:</strong> Live chat bot</li>
+                                        <li class="text-black"><strong>Content Management:</strong> Web content
+                                            management system (Admin Panel)</li>
+                                        <li class="text-black"><strong>Design:</strong> Interactive sliding banners</li>
+                                        <li class="text-black"><strong>Analytics:</strong> Google Analytics board setup
+                                        </li>
+                                        <li class="text-black"><strong>Marketing:</strong> Free one graphic post</li>
+                                        <li class="text-black"><strong>Products:</strong> Product Showcase - Shop Page
+                                        </li> -->
+
+                                    </ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-1">
+
+            </div>
+            <div class="col-12 col-lg-4 space">
+                <div class="col-12 mt-0 mt-lg-5">
+                    <span class="text-orange fs-3">
+                        The Problem :
+                    </span>
+                    <p class="text-black fs-5">
+                        Startups often struggle to attract customers due to poor digital marketing and low online
+                        visibility.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <span class="text-orange fs-3">
+                        Solution Impact:
+                    </span>
+                    <p class="text-black fs-5">
+                        This package ensures people find your business online and engage with your content, leading to
+                        higher conversions and sales. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container space">
+        <div class="row">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="me-xl-5 pe-xl-3">
+                        <div class="title-area mb-30 text-center text-xl-start">
+                            <span class="sub-title sub-title7 style1 text-ani-style2">FAQS</span>
+                            <h2 class="sec-title text-ani-style3">Have Any Questions?</h2>
+                            <p class="text-black fs-4">We know you might have questions about our startup solutions—so
+                                we’ve answered the most common ones below. If you need more details, feel free to reach
+                                out!</p>
+                        </div>
+                        <div class="text-center text-xl-start">
+                            <a href="contact.html" class="th-btn style4 th-radius fs-5">Ask a Question</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 mt-35 mt-xl-0">
+                    <div class="accordion-area accordion" id="faqAccordion">
+                        <div class="accordion-card active">
+                            <div class="accordion-header" id="collapse-item-1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">How
+                                    long does it take to build my startup website?</button>
+                            </div>
+                            <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="collapse-item-1"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">For standard business websites, we can have it ready
+                                        in 4-6 days. Complex websites with advanced features may take 2-4 weeks. We will
+                                        provide a clear timeline before we start so you're always informed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">Can I
+                                    update my website myself?</button>
+                            </div>
+                            <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Yes! We provide an easy-to-use content management
+                                        system (CMS) for your website. You can edit text, images, and pages at any time
+                                        without technical knowledge. We also offer training if needed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">Is the
+                                    website mobile-friendly?</button>
+                            </div>
+                            <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Absolutely! We ensure that every website we build is
+                                        mobile-responsive, meaning it will look great and work smoothly on all devices,
+                                        from phones and tablets to desktops.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">Do you
+                                    offer SEO services to improve my site’s visibility?</button>
+                            </div>
+                            <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Yes! We build all our websites with SEO best
+                                        practices to help you rank higher in search engines. We also offer ongoing SEO
+                                        services to keep improving your visibility online.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">How
+                                    much does the branding and website package cost?</button>
+                            </div>
+                            <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text text-black">Pricing depends on your specific needs and the
+                                        features you want. We offer flexible packages that can be tailored to your
+                                        startup’s budget. <span class="text-orange text-decoration-underline">Contact
+                                            us</span> for a free consultation and quote!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+    <section class="d-flex justify-content-center">
+        <div class="container mt-5 m-5">
+            <div class="row bg-black rounded-20 p-2 p-lg-5">
+                <div class="col-12 col-lg-4">
+                    <img src="assets/conillus.png" class="img-fluid w-75" alt="ContactUsIllustration">
+                </div>
+                <div class="col-12 col-lg-8">
+                    <span class="text-white display-4">Ready to Take Your Startup to the Next Level?</span>
+                    <p class="text-white fs-4">
+                        Our comprehensive web design, branding, and digital marketing solutions are crafted to bring
+                        your business vision to life. Whether you're looking to build your online presence, improve
+                        brand visibility, or engage more customers, we’re here to help!
+                    </p>
+                    <div class="text-center text-xl-start">
+                        <a href="contact.php" class="th-btn style4 th-radius fs-5 bg-orange">Let’s Talk About Your
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--==============================
     Footer Area==============================-->
     <?php require_once "footer.php" ?>
