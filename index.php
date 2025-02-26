@@ -845,7 +845,7 @@ Cta Area
     <div class="container-fluid">
         <div class="row vh-100 d-flex justify-content-end align-items-center p-5"
             style="background-image: url(assets/branding.jpg); background-size: cover;">
-            <div class="col-12 col-lg-4 bg-white text-center p-5" style="height:60vh;">
+            <div class="col-12 col-lg-4 bg-white text-center p-5" style="height:70vh;">
                 <span class="text-uppercase sans fs-5 text-black">Cody Zea - bRANDING</span><br><br>
                 <span class="text-uppercase rel fs-4 text-orange">Need Branding Solutions to Stand Out in New
                     Zealand?</span><br>
