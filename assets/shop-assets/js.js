@@ -121,6 +121,8 @@ function addFeatures(uid, id, tid) {
     xmlhttp.send(params);
 }
 
+
+
 function removeFeatures(uid, id, tid) {
     // Show loading overlay
     document.getElementById('loadingOverlay').classList.remove('d-none');

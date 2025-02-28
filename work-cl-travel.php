@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Booze Bites Revolutionizing After-Work Bites in New Zealand</title>
+    <title>Codyzea - Cheers Lanka Travels - Explore Sri Lanka</title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
     <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -92,13 +92,14 @@
         </form>
     </div>
     <?php require_once "header.php" ?>
+
     <div class="container-fluid space-extra2">
-        <div class="row" style="background-image: url(assets/works-cover/img_caro-003.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
+        <div class="row" style="background-image: url(assets/works-cover/img_caro-006.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column mt-5">
-                    <span class="display-1 text-white">Booze Bites - Web Design</span>
+                    <span class="display-1 text-white">Cheers Lanka Travels - Website Development</span>
                     <p class="fs-2 fw-semibold text-white">
-                        Food, Innovation, Convenience
+                        Showcasing Sri Lankan Destinations
                     </p>
                     <div class="btn-group">
                         <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get in Touch <i
@@ -108,30 +109,21 @@
 
             </div>
             <div class="col-12 col-lg-6">
-                <img src="assets/herocw3.png" class="img-fluid" alt="">
+                <img src="assets/herocw7.png" class="img-fluid" alt="Sri Lanka Travel">
             </div>
-
         </div>
     </div>
-    <!--==============================
 
-    Project Area
-==============================-->
-    <section class="">
+    <!--==============================
+     Project Area
+  ==============================-->
+    <section class="mt-5">
         <div class="container">
-            <!-- <div class="page-img global-img mb-50">
-                <img src="assets/img/project/project_details.jpg" alt="Project Image">
-            </div> -->
             <div class="row">
                 <div class="col-12">
-                    <span class="display-5 text-black">Services Provided to Booze Bites</span>
-                    <p class="fs-5 text-black">Booze Bites partnered with Cody Zea Software Solutions for <span
-                            class="text-orange">Web
-                            Design,Branding,Social Media Management</span> , ensuring a seamless and high-performing
-                        solution tailored to their
-                        needs.</p>
+                    <span class="display-5 text-black">Services Provided for Cheers Lanka Travels</span>
+                    <p class="fs-5 text-black">Cheers Lanka Travels partnered with our team for the <span class="text-orange">Website Development</span> to provide a platform showcasing Sri Lanka’s stunning destinations without offering travel packages.</p>
                 </div>
-
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
@@ -163,14 +155,12 @@
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
                         <div class="page-content">
-                            <h2 class="page-title">Booze Bites Revolutionizing After-Work Bites in New Zealand
-                            </h2>
+                            <h2 class="page-title">Cheers Lanka Travels Website Development</h2>
                             <span class="text-orange display-4">Description</span>
                             <br />
                             <br />
-                            <p class="text-black fs-5">Booze Bites is a growing business that pairs evening drinks with perfectly curated bites, aiming to revolutionize the way customers experience dining and beverages. As the business expanded, it faced challenges with its existing platform, which could not scale to meet the increasing demand for customization, personalized offerings, and seamless transactions.</p>
-                            <p class="text-black fs-5">To address these challenges, Booze Bites required a highly secure, flexible, and scalable platform that would provide greater control over the user experience and order management while enabling future growth.</p>
-
+                            <p class="text-black fs-5">Cheers Lanka Travels is dedicated to providing a platform where travelers can explore Sri Lanka's rich culture, scenic landscapes, and beautiful destinations. The website was developed to showcase these experiences without offering specific travel packages, allowing users to freely discover the country's gems.</p>
+                            <p class="text-black fs-5">The website was designed with user-friendliness in mind, ensuring visitors can easily browse and explore various destinations in Sri Lanka through a responsive, modern design that adapts to both mobile and desktop experiences.</p>
                         </div>
                     </div>
                 </div>
@@ -182,28 +172,28 @@
                                 <div class="project-info_icon"><i class="fa-solid fa-user"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Clients:</p>
-                                    <h6 class="project-info_title">Yogi Fernando</h6>
+                                    <h6 class="project-info_title">Cheers Lanka Travels Team</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-regular fa-folder-open"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Category:</p>
-                                    <h6 class="project-info_title">Digital Marketing</h6>
+                                    <h6 class="project-info_title">Website Development</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-solid fa-calendar-days"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Date:</p>
-                                    <h6 class="project-info_title">April 30, 2024</h6>
+                                    <h6 class="project-info_title">01, February 2025</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Website:</p>
-                                    <h6 class="project-info_title"><a href="https://boozebites.co.nz/" target="_black">boozebites.co.nz</a></h6>
+                                    <h6 class="project-info_title"><a href="https://cheerslankatravels.com" target="_black">cheerslankatravels.com</a></h6>
                                 </div>
                             </div>
                         </div>
@@ -212,6 +202,10 @@
             </div>
         </div>
     </section>
+
+    <!--==============================  
+     Project Areas
+    ==============================-->
     <section class="m-5">
         <div class="container">
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
@@ -222,11 +216,11 @@
                 <div class="col-12 col-lg-6">
                     <span class="fs-3 text-black">Background</span> <br /> <br />
                     <p class="text-black">
-                        As Booze Bites expanded its services, it began facing limitations with the initial platform. While originally adequate for its needs, the platform could not support the growing complexity of customer interactions, drink and bite pairings, and personalized experiences. To effectively scale, a more flexible, secure, and scalable solution was essential to meet the increasing demand and allow for smooth customer interactions.
+                        As "Cheers Lanka Travels" expanded its services to showcase Sri Lankan destinations, it encountered limitations with its initial platform. While it served its purpose in the early stages, the website could not accommodate the increasing complexity of user interactions, travel information, and booking details. To support the growing demand and offer a more intuitive user experience, the website needed an upgrade that would provide better navigation, more detailed travel packages, and seamless integration with local service providers.
                     </p>
                     <span class="fs-3 text-black">Challenge</span> <br /> <br />
                     <p class="text-black">
-                        The goal is to enhance the customer experience through personalized product recommendations and efficient order management. This project aims to bring Booze Bites to the forefront of the market by delivering a unique, seamless platform that ensures scalability and ease of access to customers. We are actively engaging with multiple industry partners, including food and beverage suppliers, to create a cohesive experience.
+                        The challenge was to deliver a website that could scale alongside the growing interest in Sri Lankan tourism. The platform needed to showcase multiple destinations, provide rich, interactive content, and allow visitors to explore diverse travel packages. Additionally, the site needed to create a streamlined user experience for easy access to information and booking details while integrating with third-party services for smooth operations.
                     </p>
                 </div>
             </div>
@@ -236,17 +230,10 @@
                     <img src="assets/solution.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Customized Web Application</span> <br /> <br />
+                    <span class="fs-3 text-black">Custom Web Platform for Sri Lankan Tourism</span> <br /> <br />
                     <p class="text-black">
-                        The solution provided a fully custom-coded e-commerce platform tailored to Booze Bites' unique needs. With an intuitive user interface, the platform allows customers to effortlessly pair drinks with bites, while the back-end offers advanced inventory management, secure transactions, and personalized recommendations.
+                        The solution was a fully responsive and interactive website tailored to the needs of Sri Lankan tourism. The platform was designed with an easy-to-use interface that allowed users to explore different regions of Sri Lanka, read detailed travel guides, and discover available accommodation, activities, and tours. The backend was developed to manage dynamic content and provide real-time updates to travelers regarding package availability, local events, and seasonal promotions. Integration with payment gateways allowed for easy and secure bookings.
                     </p>
-                    <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
-                    <p class="text-black">
-                        Our immediate goal was to complete the testing phase and achieve the certification necessary to
-                        bring our product to market by the end of the year. We actively engaged with waste-to-energy
-                        operators, concrete manufacturers, and the wider construction industry to ensure a seamless
-                        transition and widespread adoption of our solutions.
-                    </p> -->
                 </div>
             </div>
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
@@ -255,23 +242,15 @@
                     <img src="assets/cons.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Ongoing Enhancements</span> <br /> <br />
+                    <span class="fs-3 text-black">Future Enhancements</span> <br /> <br />
                     <p class="text-black">
-                        Continuous improvements are being made to integrate new product offerings and enhance the overall user experience. This includes the addition of new features such as dynamic pricing, a loyalty rewards program, and integration with local delivery services to streamline customer orders.
+                        As the tourism industry continues to grow, "Cheers Lanka Travels" is committed to ongoing improvements to meet the needs of its users. Future enhancements will include adding virtual tours of destinations, expanding the travel packages section with customizable options, and integrating local businesses for enhanced services. We also aim to offer multilingual support, making Sri Lanka’s beauty accessible to travelers from all over the world.
                     </p>
-                    <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
-                    <p class="text-black">
-                        Our immediate goal was to complete the testing phase and achieve the certification necessary to
-                        bring our product to market by the end of the year. We actively engaged with waste-to-energy
-                        operators, concrete manufacturers, and the wider construction industry to ensure a seamless
-                        transition and widespread adoption of our solutions.
-                    </p> -->
                 </div>
             </div>
         </div>
-        </div>
-
     </section>
+
     <section>
         <div class="container d-flex justify-content-center">
             <div class="row">
@@ -311,7 +290,7 @@
     <div class="conatiner-fluid">
         <img src="assets/codyzeaweb.jpg" class="img-fluid d-lg-none d-block" alt="">
         <div class="row p-5 d-none d-lg-block"
-            style="background-image: url(assets/boozebitesthumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
+            style="background-image: url(assets/cltumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
         </div>
     </div>
     <?php require_once "footer.php" ?>

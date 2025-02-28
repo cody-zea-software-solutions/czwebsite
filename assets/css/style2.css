@@ -273,6 +273,108 @@ a:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional shadow for better effect */
 }
 
+.icon-container {
+  height: 70px;
+  width: 70px;
+  border: 2px solid #FF5C35;
+  border-radius: 25px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moveUpDown 2s infinite;
+}
+
+.icon-container i {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 575px) {
+  .cdf {
+      margin-top: 20px; /* Adjust margin-top for small screens */
+  }
+}
+
+/* Medium devices (tablets, >=576px and <992px) */
+@media (min-width: 576px) and (max-width: 991px) {
+  .cdf {
+      margin-top: 60px; /* Adjust margin-top for medium screens */
+  }
+}
+
+/* Large devices (desktops, >=992px) */
+@media (min-width: 992px) {
+  .cdf {
+      margin-top: 120px; /* Maintain original margin-top for large screens */
+  }
+}
+
+.cart {
+  margin: 20px;
+  display: inline-block; /* Ensures the div only takes up as much width as its content */
+  text-align: left; /* Align content to the left */
+}
+
+.coupon-section {
+  margin-top: 20px;
+}
+
+.coupon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.coupon-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.remove-coupon-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff; /* Ensure the color is white */
+  font-size: 40px; /* Increase font size for a larger "×" */
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px; /* Optional: Space between text and the remove button */
+}
+
+
+.add-coupon-btn {
+  background-color: #cd595a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-coupon-btn:hover {
+  background-color: #a84f4b;
+}
+
+
 .f-list {
   color: #121212 !important;
   text-decoration: dashed underline;

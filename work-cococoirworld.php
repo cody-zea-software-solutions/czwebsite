@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Booze Bites Revolutionizing After-Work Bites in New Zealand</title>
+    <title>Codyzea - Coco Coir World - Sustainable Coir Solutions</title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
     <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -93,117 +93,95 @@
     </div>
     <?php require_once "header.php" ?>
     <div class="container-fluid space-extra2">
-        <div class="row" style="background-image: url(assets/works-cover/img_caro-003.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-color: rgb(9, 12, 15,0.2); background-blend-mode: multiply;">
+        <div class="row" style="background-image: url(assets/works-cover/coco-coir-banner.jpg); background-size: cover; background-position: center;">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column mt-5">
-                    <span class="display-1 text-white">Booze Bites - Web Design</span>
-                    <p class="fs-2 fw-semibold text-white">
-                        Food, Innovation, Convenience
-                    </p>
+                    <span class="display-1 text-white">Coco Coir World - Web Design</span>
+                    <p class="fs-2 fw-semibold text-white">Sustainability, Quality, Innovation</p>
                     <div class="btn-group">
-                        <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get in Touch <i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get in Touch <i class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-
             </div>
             <div class="col-12 col-lg-6">
-                <img src="assets/herocw3.png" class="img-fluid" alt="">
+                <img src="assets/herocw6.png" class="img-fluid" alt="Coco Coir World">
             </div>
-
         </div>
     </div>
-    <!--==============================
 
+    <!--==============================
     Project Area
-==============================-->
+    ==============================-->
     <section class="">
         <div class="container">
-            <!-- <div class="page-img global-img mb-50">
-                <img src="assets/img/project/project_details.jpg" alt="Project Image">
-            </div> -->
             <div class="row">
                 <div class="col-12">
-                    <span class="display-5 text-black">Services Provided to Booze Bites</span>
-                    <p class="fs-5 text-black">Booze Bites partnered with Cody Zea Software Solutions for <span
-                            class="text-orange">Web
-                            Design,Branding,Social Media Management</span> , ensuring a seamless and high-performing
-                        solution tailored to their
-                        needs.</p>
+                    <span class="display-5 text-black">Services Provided to Coco Coir World</span>
+                    <p class="fs-5 text-black">Coco Coir World partnered with Cody Zea Software Solutions for <span class="text-orange">Web Design, E-commerce Solutions, Branding</span>, delivering a robust and sustainable platform for the sale of coir products.</p>
                 </div>
-
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                     <img src="assets/img/icon/service_2_1.png" class="img-flud w-50" alt="Feature001"> <br />
                     <div class="col-12 mt-3">
                         <span class="fs-2 text-black">Web Design</span>
-
                     </div>
-
                 </div>
                 <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
-                    <img src="assets/img/icon/service_2_2.png" class="img-flud w-50" alt="Feature001"> <br />
+                    <img src="assets/img/icon/service_2_2.png" class="img-flud w-50" alt="Feature002"> <br />
                     <div class="col-12 mt-3">
-                        <span class="fs-2 text-black">App Development</span>
-
+                        <span class="fs-2 text-black">E-commerce Solutions</span>
                     </div>
-
                 </div>
                 <div class="col-12 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
-                    <img src="assets/branding.png" class="img-flud w-50" alt="Feature001"> <br />
+                    <img src="assets/branding.png" class="img-flud w-50" alt="Feature003"> <br />
                     <div class="col-12 mt-3">
                         <span class="fs-2 text-black">Branding</span>
-
                     </div>
-
                 </div>
             </div>
             <div class="row space">
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
                         <div class="page-content">
-                            <h2 class="page-title">Booze Bites Revolutionizing After-Work Bites in New Zealand
-                            </h2>
+                            <h2 class="page-title">Coco Coir World - Sustainable Coir Solutions</h2>
                             <span class="text-orange display-4">Description</span>
-                            <br />
-                            <br />
-                            <p class="text-black fs-5">Booze Bites is a growing business that pairs evening drinks with perfectly curated bites, aiming to revolutionize the way customers experience dining and beverages. As the business expanded, it faced challenges with its existing platform, which could not scale to meet the increasing demand for customization, personalized offerings, and seamless transactions.</p>
-                            <p class="text-black fs-5">To address these challenges, Booze Bites required a highly secure, flexible, and scalable platform that would provide greater control over the user experience and order management while enabling future growth.</p>
-
+                            <br /><br />
+                            <p class="text-black fs-5">Coco Coir World offers high-quality coir products used for gardening and agriculture. The company sought a robust online presence to enhance its visibility and sales. Cody Zea Software Solutions provided a custom web design that focuses on sustainability and user experience, making it easier for customers to order coir products online.</p>
+                            <p class="text-black fs-5">The new platform also included advanced features such as inventory management and personalized customer experiences to support business growth.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xxl-4 col-lg-4">
                     <aside class="sidebar-area">
-                        <div class="widget widget_info  ">
+                        <div class="widget widget_info">
                             <h3 class="widget_title">Project Info</h3>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-solid fa-user"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Clients:</p>
-                                    <h6 class="project-info_title">Yogi Fernando</h6>
+                                    <h6 class="project-info_title">Coco Coir World Team</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-regular fa-folder-open"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Category:</p>
-                                    <h6 class="project-info_title">Digital Marketing</h6>
+                                    <h6 class="project-info_title">E-commerce and Web Design</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-solid fa-calendar-days"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Date:</p>
-                                    <h6 class="project-info_title">April 30, 2024</h6>
+                                    <h6 class="project-info_title">February 23, 2025</h6>
                                 </div>
                             </div>
                             <div class="project-info">
                                 <div class="project-info_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
                                 <div class="project-info_content">
                                     <p class="project-info_subtitle text-black">Website:</p>
-                                    <h6 class="project-info_title"><a href="https://boozebites.co.nz/" target="_black">boozebites.co.nz</a></h6>
+                                    <h6 class="project-info_title"><a href="https://www.coirceylon.com/" target="_blank">coirceylon.com</a></h6>
                                 </div>
                             </div>
                         </div>
@@ -212,66 +190,52 @@
             </div>
         </div>
     </section>
+
+    <!-- Additional Sections for Challenge, Solution, Conclusion -->
     <section class="m-5">
         <div class="container">
+            <!-- Challenge and Solution updates -->
+
+            <!-- The Challenge -->
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
                 <div class="col-12 col-lg-6">
                     <span class="text-black display-4">The <span class="text-orange">Challenge</span></span>
                     <img src="assets/challenge.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Background</span> <br /> <br />
-                    <p class="text-black">
-                        As Booze Bites expanded its services, it began facing limitations with the initial platform. While originally adequate for its needs, the platform could not support the growing complexity of customer interactions, drink and bite pairings, and personalized experiences. To effectively scale, a more flexible, secure, and scalable solution was essential to meet the increasing demand and allow for smooth customer interactions.
-                    </p>
-                    <span class="fs-3 text-black">Challenge</span> <br /> <br />
-                    <p class="text-black">
-                        The goal is to enhance the customer experience through personalized product recommendations and efficient order management. This project aims to bring Booze Bites to the forefront of the market by delivering a unique, seamless platform that ensures scalability and ease of access to customers. We are actively engaging with multiple industry partners, including food and beverage suppliers, to create a cohesive experience.
-                    </p>
+                    <span class="fs-3 text-black">Background</span><br /><br />
+                    <p class="text-black">As Coco Coir World’s customer base expanded, the demand for a scalable online solution grew. The challenge was to create an e-commerce platform that could handle various coir product variations, ensure secure transactions, and deliver a seamless user experience.</p>
+                    <span class="fs-3 text-black">Challenge</span><br /><br />
+                    <p class="text-black">The goal was to create a solution that could cater to both retail customers and bulk orders from businesses, while maintaining efficient inventory management and personalized service.</p>
                 </div>
             </div>
+
+            <!-- The Solution -->
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
                 <div class="col-12 col-lg-6">
                     <span class="text-black display-4">The <span class="text-orange">Solution</span></span>
                     <img src="assets/solution.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Customized Web Application</span> <br /> <br />
-                    <p class="text-black">
-                        The solution provided a fully custom-coded e-commerce platform tailored to Booze Bites' unique needs. With an intuitive user interface, the platform allows customers to effortlessly pair drinks with bites, while the back-end offers advanced inventory management, secure transactions, and personalized recommendations.
-                    </p>
-                    <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
-                    <p class="text-black">
-                        Our immediate goal was to complete the testing phase and achieve the certification necessary to
-                        bring our product to market by the end of the year. We actively engaged with waste-to-energy
-                        operators, concrete manufacturers, and the wider construction industry to ensure a seamless
-                        transition and widespread adoption of our solutions.
-                    </p> -->
+                    <span class="fs-3 text-black">Customized E-commerce Platform</span><br /><br />
+                    <p class="text-black">We developed a custom e-commerce solution with seamless integration for inventory tracking, secure payments, and user-friendly product pages. The platform allows customers to easily explore various coir products, add them to the cart, and make purchases.</p>
                 </div>
             </div>
+
+            <!-- The Conclusion -->
             <div class="row bg-white shadow-sm rounded-20 p-lg-5 p-0 mt-3">
                 <div class="col-12 col-lg-6">
                     <span class="text-black display-4">The <span class="text-orange">Conclusion</span></span>
                     <img src="assets/cons.jpg" class="img-fluid w-50" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
-                    <span class="fs-3 text-black">Ongoing Enhancements</span> <br /> <br />
-                    <p class="text-black">
-                        Continuous improvements are being made to integrate new product offerings and enhance the overall user experience. This includes the addition of new features such as dynamic pricing, a loyalty rewards program, and integration with local delivery services to streamline customer orders.
-                    </p>
-                    <!-- <span class="fs-3 text-black">Challenge</span> <br /> <br />
-                    <p class="text-black">
-                        Our immediate goal was to complete the testing phase and achieve the certification necessary to
-                        bring our product to market by the end of the year. We actively engaged with waste-to-energy
-                        operators, concrete manufacturers, and the wider construction industry to ensure a seamless
-                        transition and widespread adoption of our solutions.
-                    </p> -->
+                    <span class="fs-3 text-black">Ongoing Enhancements</span><br /><br />
+                    <p class="text-black">The platform continues to evolve with the addition of new features, such as live customer support and dynamic pricing based on order volume, ensuring Coco Coir World stays ahead in the market.</p>
                 </div>
             </div>
         </div>
-        </div>
-
     </section>
+
     <section>
         <div class="container d-flex justify-content-center">
             <div class="row">
@@ -311,7 +275,7 @@
     <div class="conatiner-fluid">
         <img src="assets/codyzeaweb.jpg" class="img-fluid d-lg-none d-block" alt="">
         <div class="row p-5 d-none d-lg-block"
-            style="background-image: url(assets/boozebitesthumb.jpg); background-size: cover; background-position: center; min-height: 150vh;">
+            style="background-image: url(assets/conillus.jpg); background-size: cover; background-position: center; min-height: 150vh;">
         </div>
     </div>
     <?php require_once "footer.php" ?>

@@ -9,12 +9,13 @@ if (isset($_GET['package_identity'])) {
     $stmt->execute();
     $result = $stmt->get_result();
     if ($result->num_rows != 1) {
-        die("s");
+        die("no results were found.");
     } else {
         $data = $result->fetch_assoc();
     }
 } else {
-    die("d");
+    header("Location: pricing.php");
+    exit();
 }
 ?>
 <!doctype html>
@@ -109,16 +110,19 @@ if (isset($_GET['package_identity'])) {
     <div class="container-fluid border-top border-dark">
         <div class="row">
             <div class="text-center mt-3">
-                <span class="display-4 text-dark fw-semibold h1"><span class="sub-title sub-title4 style1 text-ani-style2 text-center">features</span><br><span class="text-orange h1"><?php echo $data['pack_name2']; ?></span> <?php echo $data['sol_name']; ?></span><br><span class="fw-semibold text-dark display-4">package</span><br>
+                <span class="display-4 text-dark fw-semibold h1"><span class="sub-title sub-title4 style1 text-ani-style2 text-center">features</span><br><span class="text-orange h1"><?php echo $data['pack_name2']; ?></span> <?php echo $data['sol_name']; ?></span><br><span class="text-dark fw-semibold display-6 text-decoration-line-through">$<?php echo $data['pack_before_price']; ?></span>&nbsp;<span class="fw-semibold text-dark display-4">$<?php echo $data['pack_price']; ?></span><br>
                 <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">This package is designed to meet your needs and drive your business toward success.</span>
                 <p class="d-md-none mt-4 px-3">This package is designed to meet your needs and drive your business toward success.</p>
+            </div>
+            <div class="text-center mt-0 d-none">
+                <span class="display-4 fw-semibold h1"><span class="text-dark h3 text-decoration-line-through">$<?php echo $data['pack_before_price']; ?></span>&nbsp;<span class=" h1 text-dark">$<?php echo $data['pack_price']; ?></span></span>
             </div>
         </div>
     </div>
 
-    <div class="container mb-5 px-5" style="margin-top: 120px;">
+    <div class="container mb-5 px-5 cdf">
         <div class="row">
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
                 <div class="row">
                     <div class="col-6">
                         <div style=" height: 400px; background-image: url('assets/img/adfg.jpg'); background-size: cover; background-position: center; border-radius: 40px;"></div>
@@ -129,35 +133,45 @@ if (isset($_GET['package_identity'])) {
                 </div>
             </div>
 
-            <div class="col-7">
+            <div class="col-12 col-lg-7 mt-5">
                 <div class="row">
-                    <div class="h2 ps-5 fw-dark">Who Needs This Package the Most?</div>
+                    <div class="text-center"><span class="sub-title sub-title4 style1 text-ani-style2 text-end">Target</span></div>
+                    <div class="h2 ps-md-5 fw-dark text-center text-md-start">Who Needs This Package the Most?</div>
 
                     <!-- 10 Column div starts here -->
-                    <div class="col-10 mt-4">
-                        <ul class="list-unstyled ps-5">
-                            <li class="d-flex align-items-center h6 fw-normal">
-                                <i class="bi bi-arrow-up-right-circle text-dark fw-bold h5 me-2"></i>&nbsp;
-                                <span><?php echo $wn1; ?></span>
-                            </li>
-                            <li class="d-flex align-items-center h6 fw-normal">
-                                <i class="bi bi-arrow-up-right-circle text-dark fw-bold h5 me-2"></i>&nbsp;
-                                <span><?php echo $wn2; ?></span>
-                            </li>
-                            <li class="d-flex align-items-center h6 fw-normal">
-                                <i class="bi bi-arrow-up-right-circle text-dark fw-bold h5 me-2"></i>&nbsp;
-                                <span><?php echo $wn3; ?></span>
-                            </li>
-                            <!-- Add more list items as needed -->
-                        </ul>
+                    <div class="col-12 col-md-10 mt-4 mt-md-0">
+                        <p class="ps-md-5 fs-5 text-dark text-center text-md-start"><?php echo $data['aud']; ?></p>
+                        <div class="row d-flex justify-content-center">
+                            <div class="d-flex justify-content-center"><a onclick="addToCart(<?php echo $pid; ?>);" class="th-btn th-radius th-icon text-white fs-4">Add to Cart<i
+                                        class="fa-regular fa-arrow-right ms-2"></i></a></div>
+                        </div>
                     </div>
-                    <div class="col-2 d-flex flex-column justify-content-center">
-                        <div style="height: 70px; width: 70px; border: 2px solid #FF5C35; margin-top: 10px;"></div>
-                        <div style="height: 70px; width: 70px; border: 2px solid #FF5C35; margin-top: 10px;"></div>
-                        <div style="height: 70px; width: 70px; border: 2px solid #FF5C35; margin-top: 10px;"></div>
+
+                    <div class="col-2 d-md-flex flex-column justify-content-center d-none">
+                        <div class="icon-container">
+                            <i class="fas fa-rocket"></i> <!-- First Icon: Heart -->
+                        </div>
+                        <div class="icon-container">
+                            <i class="fas fa-hourglass-half"></i> <!-- Second Icon: Star -->
+                        </div>
+                        <div class="icon-container">
+                            <i class="fas fa-credit-card-alt"></i> <!-- Third Icon: Check -->
+                        </div>
                     </div>
+
                 </div>
 
+            </div>
+            <div class="col-12 mt-3 d-md-none d-flex justify-content-center">
+                <div class="icon-container" style="margin-left: 10px;">
+                    <i class="fas fa-rocket"></i> <!-- First Icon: Heart -->
+                </div>
+                <div class="icon-container" style="margin-left: 10px;">
+                    <i class="fas fa-hourglass-half"></i> <!-- Second Icon: Star -->
+                </div>
+                <div class="icon-container" style="margin-left: 10px;">
+                    <i class="fas fa-credit-card-alt"></i> <!-- Third Icon: Check -->
+                </div>
             </div>
         </div>
     </div>
@@ -174,10 +188,10 @@ if (isset($_GET['package_identity'])) {
 
     <div class="container-fluid mb-5 px-5 bg-color py-5">
         <div class="row text-center">
-            <h2 class="text-o">Features of the package</h2>
+            <h2 class="text-o mt-4">Features of the package</h2>
         </div>
         <div class="row py-5">
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="row">
                     <ul class="list-unstyled">
                         <?php
@@ -196,11 +210,11 @@ if (isset($_GET['package_identity'])) {
                 </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-12 d-md-none d-lg-block col-lg-4">
                 <img src="assets/img/hero/hero_3_1.png" class="img-fluid pricing-image text-end">
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-0">
                 <div class="row">
                     <ul class="list-unstyled">
                         <?php
@@ -219,16 +233,20 @@ if (isset($_GET['package_identity'])) {
             </div>
 
         </div>
+        <div class="row d-flex justify-content-center">
+            <div class="d-flex justify-content-center"><a onclick="addToCart(<?php echo $pid; ?>);" class="th-btn th-radius th-icon text-white fs-4">Add to Cart<i
+                        class="fa-regular fa-arrow-right ms-2"></i></a></div>
+        </div>
     </div>
 
     <div class="container-fluid mb-5 px-5">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center px-md-5">
             <?php
             $result->data_seek(0);
             for ($x = 1; $x <= $result->num_rows; $x++) {
                 $pack_d = $result->fetch_assoc();
             ?>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="row p-4">
                         <div class="col-12 shadow feature-box-2" style="border-left: 2px solid #FF5C35;">
                             <div class="mt-3 d-flex align-items-start">
@@ -245,6 +263,10 @@ if (isset($_GET['package_identity'])) {
             <?php
             }
             ?>
+        </div>
+        <div class="row d-flex justify-content-center my-5">
+            <div class="d-flex justify-content-center"><a onclick="addToCart(<?php echo $pid; ?>);" class="th-btn th-radius th-icon text-white fs-4">Add to Cart<i
+                        class="fa-regular fa-arrow-right ms-2"></i></a></div>
         </div>
     </div>
 
@@ -310,3 +332,4 @@ if (isset($_GET['package_identity'])) {
 </body>
 
 </html>
+<?php $stmt->close(); ?>

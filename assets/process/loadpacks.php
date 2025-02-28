@@ -49,7 +49,9 @@ if (isset($_POST['id'])) {
                                     <h5 style="margin-top: 0px !important; font-weight: 600 !important;" class="text-decoration-line-through text-o">$<?php echo $data['pack_before_price']; ?></h5>
                                     <p class="box-text2" style="padding: 0px;"><?php echo $data['pack_desc']; ?></p>
                                 </div>
-                                <a href="<?php echo $data['pack_path']; ?>.php" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
+                                <a href="package-details.php?package_identity=<?php echo $data['pack_id']; ?>" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
+                                        class="fa-regular fa-arrow-right ms-2"></i></a><br>
+                                <a onclick="addToCart(<?php echo $data['pack_id']; ?>);" class="th-btn btn-fw th-radius hover" style="background-color: white !important; border: 2px solid !important;">Add To Cart<i
                                         class="fa-regular fa-arrow-right ms-2"></i></a>
                                 <div class="box-content">
                                     <div class="available-list" style="padding-left: 10px !important; padding-right: 10px !important; margin: 0px !important;">
@@ -70,9 +72,9 @@ if (isset($_POST['id'])) {
                                                 $part1 = floor($results->num_rows / 2);
                                                 $part2 = ceil($results->num_rows / 2);
                                                 $f_round = $part1;
-                                            }else{
+                                            } else {
                                                 $part1 = $f_round;
-                                                $part2 = $results->num_rows-$part1;
+                                                $part2 = $results->num_rows - $part1;
                                             }
 
                                             for ($y = 1; $y <= $part1; $y++) {

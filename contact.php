@@ -2,9 +2,10 @@
 <html class="no-js" lang="zxx">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Contact Us</title>
+    <title>Feel free to contact us - Codyzea</title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
     <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -14,45 +15,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/logocz.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/logocz.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/logocz.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/logocz.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/logocz.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/logocz.png">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/logocz.png">
+
     <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
-      Google Fonts
-    ============================== -->
+	  Google Fonts
+	============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <!--==============================
-        All CSS File
-    ============================== -->
-    <!-- Bootstrap -->
+	    All CSS File
+	============================== -->
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -63,7 +72,9 @@
     <!-- imageRevealHover -->
     <link rel="stylesheet" href="assets/css/imageRevealHover.css">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/shop-assets/style.css">
+    <link rel="stylesheet" href="assets/css/pricing-styles.css">
 
 </head>
 
@@ -262,7 +273,7 @@
 
                                 <!-- Submit Button -->
                                 <div class="btn-group">
-                                    <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12">Request a Visit<i
+                                    <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12" id="th-btn" onclick="submitVisitRequest();">Request a Visit<i
                                             class="fa-regular fa-arrow-right ms-2"></i></a>
                                 </div>
                             </div>
@@ -293,17 +304,17 @@ Contact Area
                     <div class="row">
                         <div class="col-12 mt-3">
                             <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <input type="text" class="form-control" id="fname">
                         </div>
                         <div class="col-12 mt-3">
                             <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                            <input type="email" class="form-control" id="fmail">
                         </div>
                         <div class="col-12">
                             <!-- Message -->
                             <div class="mt-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="2"
+                                <textarea class="form-control" id="fmessage" rows="2"
                                     placeholder="Any details or special requests?" required></textarea>
                             </div>
                         </div>
@@ -311,8 +322,8 @@ Contact Area
                     <div class="col-10 mt-3 d-flex justify-content-center">
                         <!-- Submit Button -->
                         <div class="btn-group col-12">
-                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black">Get in Touch
-                            <i
+                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn" onclick="sendMessage();">Get in Touch
+                                <i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -450,6 +461,8 @@ Contact Area
     All Js File
 ============================== -->
     <!-- Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/pricing.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
     <script src="assets/js/swiper-bundle.min.js"></script>

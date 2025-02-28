@@ -32,7 +32,7 @@ if (isset($_COOKIE[$cookie_name_guest])) {
         // Store both guest_id and user_id in cookies for future visits
         setcookie($cookie_name_guest, $guest_id, $cookie_lifetime, "/");
         setcookie($cookie_name_user, $user_id, $cookie_lifetime, "/");
-        $_SESSION['guest_id'] = $guest_id; // Store in session
+        $_SESSION['guest_id'] = $guest_id;
     } else {
         die("Error creating guest account.");
     }
