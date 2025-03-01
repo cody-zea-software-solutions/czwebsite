@@ -1317,3 +1317,86 @@ if ($('.text-ani-style').length) {
     //   }     
 
 })(jQuery);
+
+function copyCode(id){
+    var cpnBtn = document.getElementById("cpnBtn"+id);
+    var cpnCode = document.getElementById("cpnCode"+id);
+
+    cpnBtn.onclick = function(){
+        navigator.clipboard.writeText(cpnCode.innerHTML);
+        cpnBtn.innerHTML ="COPIED";
+        setTimeout(function(){
+            cpnBtn.innerHTML="COPY CODE";
+        }, 3000);
+    }
+}
+
+function claimCoupon(id) {
+
+    var xmlhttp = new XMLHttpRequest();  // Create a new XMLHttpRequest object
+    var url = "assets/process/claimprocess.php";
+    // Prepare the request parameters
+    var params = "id=" + encodeURIComponent(id);
+
+
+    // Set up the HTTP request
+    xmlhttp.open("POST", url, true);
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState === 4) { // Check if the request is completed
+
+            if (xmlhttp.status === 200) {
+                if(xmlhttp.responseText=="success"){
+                    location.href="cart.php";
+                }else if(xmlhttp.responseText=="em"){
+                    Swal.fire({
+                        text: "Please Enter the Coupon Code.",
+                        confirmButtonText: 'OK',
+                        customClass: {
+                            confirmButton: 'th-btn',
+                            htmlContainer: 'box-text2 fw-semibold mt-3',
+                        }
+                    })
+                    
+                }else if(xmlhttp.responseText=="au"){
+                    Swal.fire({
+                        text: "Another coupon code is already applied to your cart.",
+                        confirmButtonText: 'OK',
+                        customClass: {
+                            confirmButton: 'th-btn',
+                            htmlContainer: 'box-text2 fw-semibold mt-3',
+                        }
+                    })
+                    
+                }else if(xmlhttp.responseText=="ex"){
+                    Swal.fire({
+                        text: "Sorry! Coupon Code has been Expired.",
+                        confirmButtonText: 'OK',
+                        customClass: {
+                            confirmButton: 'th-btn',
+                            htmlContainer: 'box-text2 fw-semibold mt-3',
+                        }
+                    })
+                    
+                }else{
+                    Swal.fire({
+                        text: xmlhttp.responseText,
+                        confirmButtonText: 'OK',
+                        customClass: {
+                            confirmButton: 'th-btn',
+                            htmlContainer: 'box-text2 fw-semibold mt-3',
+                        }
+                    })
+                }
+                
+            } else {
+                // Error: log the error status
+                console.error("Error: " + xmlhttp.status);
+            }
+        }
+    };
+
+    // Send the request with the ID and UID as parameters
+    xmlhttp.send(params);
+}

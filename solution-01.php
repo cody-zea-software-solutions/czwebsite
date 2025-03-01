@@ -1,3 +1,7 @@
+<?php require_once "db.php";
+$d_r = Databases::Search("SELECT * FROM pack WHERE solution_sol_id=1");
+$dd = $d_r->fetch_assoc();
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -40,6 +44,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
         All CSS File
@@ -297,49 +302,47 @@
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
                 <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
-                    <div class="price-box th-ani">
+                    <div class="price-box th-ani " style="z-index: 9 !important; border-bottom: 2px solid #FF5C35;">
                         <span class="offer-tag"></span>
                         <div class="text-center">
-                            <h3 class="box-title">Growth Package</h3>
-                            <h4 class="box-price text-center text-orange">NZ$ 1500</h4>
-                            <p class="box-text2 text-black">Ideal for small businesses, this pack enhances your online
-                                presence with product info, easy contact, and professional updates. Boost your business
-                                credibility!</p>
+                            <h3 class="box-title"><?php echo $dd["pack_name"]; ?></h3>
+                            <h4 class="box-price text-center text-orange">NZ$ <?php echo $dd["pack_price"]; ?></h4>
+                            <p class="box-text2 text-black"><?php echo $dd["pack_desc"]; ?></p>
                         </div>
-                        <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
+                        <a href="package-details.php?package_identity=<?php echo $dd["pack_id"]; ?>" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                         <div class="box-content">
                             <div class="available-list">
                                 <ul>
                                     <ul>
-                                        <li class="text-black"><strong>Website Features:</strong> 5–8-page custom
-                                            website</li>
-                                        <li class="text-black"><strong>Design:</strong> Mobile-responsive design</li>
-                                        <li class="text-black"><strong>SEO:</strong> Basic SEO setup</li>
-                                        <li class="text-black"><strong>Communication:</strong> Enquiry to E-Mail</li>
-                                        <!-- <li class="text-black"><strong>Visuals:</strong> Free stock images</li>
-                                        <li class="text-black"><strong>Social Media:</strong> Social media integration
-                                        </li>
-                                        <li class="text-black"><strong>Business Setup:</strong> Google business setup
-                                        </li>
-                                        <li class="text-black"><strong>Content:</strong> Free web content writing</li> -->
-                                        <!-- <li class="text-black"><strong>Visuals:</strong> Photo/video gallery page added
-                                        </li>
-                                        <li class="text-black"><strong>Email:</strong> 03 business emails</li>
-                                        <li class="text-black"><strong>Support:</strong> Live chat bot</li>
-                                        <li class="text-black"><strong>Content Management:</strong> Web content
-                                            management system (Admin Panel)</li>
-                                        <li class="text-black"><strong>Design:</strong> Interactive sliding banners</li>
-                                        <li class="text-black"><strong>Analytics:</strong> Google Analytics board setup
-                                        </li>
-                                        <li class="text-black"><strong>Marketing:</strong> Free one graphic post</li>
-                                        <li class="text-black"><strong>Products:</strong> Product Showcase - Shop Page
-                                        </li> -->
+                                        <?php
+                                        $fd = Databases::Search("SELECT * FROM `pack_features` WHERE `pack_pack_id` = '" . $dd["pack_id"] . "' AND `status` = 1");
+                                        for ($x = 0; $x < 2; $x++) {
+                                            $ff = $fd->fetch_assoc();
+                                        ?>
+                                            <li class="text-black"><?php echo $ff["f_name"]; ?></li>
+                                        <?php
+                                        }
+                                        $rest = $fd->num_rows - 2;
+                                        ?>
+                                        <div class="d-none mb-3" id="showMoreList_<?php echo $dd['pack_id']; ?>">
+                                            <?php
+                                            for ($x = 0; $x < $rest; $x++) {
+                                                $ff = $fd->fetch_assoc();
+                                            ?>
+                                                <li class="text-black"><?php echo $ff["f_name"]; ?></li>
+                                            <?php
+                                            }
+                                            ?>
+                                        </div>
 
                                     </ul>
 
                                 </ul>
                             </div>
+                        </div>
+                        <div class="text-center text-dark mt-3">
+                            <span class="text-dark fw-bold h5" style="cursor: pointer;" onclick="showMore(<?php echo $dd['pack_id']; ?>);" id="showMoreBtn_<?php echo $dd['pack_id']; ?>"><i class="bi bi-chevron-double-down h6"></i>&nbsp;More Features</span>
                         </div>
                     </div>
                 </div>
@@ -388,49 +391,48 @@
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
                 <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
-                    <div class="price-box th-ani">
+                    <?php $dd = $d_r->fetch_assoc(); ?>
+                    <div class="price-box th-ani " style="z-index: 9 !important; border-bottom: 2px solid #FF5C35;">
                         <span class="offer-tag"></span>
                         <div class="text-center">
-                            <h3 class="box-title">Identity Package</h3>
-                            <h4 class="box-price text-center text-orange">NZ$ 1500</h4>
-                            <p class="box-text2 text-black">Ideal for small businesses, this pack enhances your online
-                                presence with product info, easy contact, and professional updates. Boost your business
-                                credibility!</p>
+                            <h3 class="box-title"><?php echo $dd["pack_name"]; ?></h3>
+                            <h4 class="box-price text-center text-orange">NZ$ <?php echo $dd["pack_price"]; ?></h4>
+                            <p class="box-text2 text-black"><?php echo $dd["pack_desc"]; ?></p>
                         </div>
-                        <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
+                        <a href="package-details.php?package_identity=<?php echo $dd["pack_id"]; ?>" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                         <div class="box-content">
                             <div class="available-list">
                                 <ul>
                                     <ul>
-                                        <li class="text-black"><strong>Website Features:</strong> 5–8-page custom
-                                            website</li>
-                                        <li class="text-black"><strong>Design:</strong> Mobile-responsive design</li>
-                                        <li class="text-black"><strong>SEO:</strong> Basic SEO setup</li>
-                                        <li class="text-black"><strong>Communication:</strong> Enquiry to E-Mail</li>
-                                        <!-- <li class="text-black"><strong>Visuals:</strong> Free stock images</li>
-                                        <li class="text-black"><strong>Social Media:</strong> Social media integration
-                                        </li>
-                                        <li class="text-black"><strong>Business Setup:</strong> Google business setup
-                                        </li>
-                                        <li class="text-black"><strong>Content:</strong> Free web content writing</li> -->
-                                        <!-- <li class="text-black"><strong>Visuals:</strong> Photo/video gallery page added
-                                        </li>
-                                        <li class="text-black"><strong>Email:</strong> 03 business emails</li>
-                                        <li class="text-black"><strong>Support:</strong> Live chat bot</li>
-                                        <li class="text-black"><strong>Content Management:</strong> Web content
-                                            management system (Admin Panel)</li>
-                                        <li class="text-black"><strong>Design:</strong> Interactive sliding banners</li>
-                                        <li class="text-black"><strong>Analytics:</strong> Google Analytics board setup
-                                        </li>
-                                        <li class="text-black"><strong>Marketing:</strong> Free one graphic post</li>
-                                        <li class="text-black"><strong>Products:</strong> Product Showcase - Shop Page
-                                        </li> -->
+                                        <?php
+                                        $fd = Databases::Search("SELECT * FROM `pack_features` WHERE `pack_pack_id` = '" . $dd["pack_id"] . "' AND `status` = 1");
+                                        for ($x = 0; $x < 2; $x++) {
+                                            $ff = $fd->fetch_assoc();
+                                        ?>
+                                            <li class="text-black"><?php echo $ff["f_name"]; ?></li>
+                                        <?php
+                                        }
+                                        $rest = $fd->num_rows - 2;
+                                        ?>
+                                        <div class="d-none mb-3" id="showMoreList_<?php echo $dd['pack_id']; ?>">
+                                            <?php
+                                            for ($x = 0; $x < $rest; $x++) {
+                                                $ff = $fd->fetch_assoc();
+                                            ?>
+                                                <li class="text-black"><?php echo $ff["f_name"]; ?></li>
+                                            <?php
+                                            }
+                                            ?>
+                                        </div>
 
                                     </ul>
 
                                 </ul>
                             </div>
+                        </div>
+                        <div class="text-center text-dark mt-3">
+                            <span class="text-dark fw-bold h5" style="cursor: pointer;" onclick="showMore(<?php echo $dd['pack_id']; ?>);" id="showMoreBtn_<?php echo $dd['pack_id']; ?>"><i class="bi bi-chevron-double-down h6"></i>&nbsp;More Features</span>
                         </div>
                     </div>
                 </div>
@@ -477,49 +479,48 @@
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
                 <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
-                    <div class="price-box th-ani">
+                <?php $dd = $d_r->fetch_assoc(); ?>
+                    <div class="price-box th-ani " style="z-index: 9 !important; border-bottom: 2px solid #FF5C35;">
                         <span class="offer-tag"></span>
                         <div class="text-center">
-                            <h3 class="box-title">Identity Package</h3>
-                            <h4 class="box-price text-center text-orange">NZ$ 1500</h4>
-                            <p class="box-text2 text-black">Ideal for small businesses, this pack enhances your online
-                                presence with product info, easy contact, and professional updates. Boost your business
-                                credibility!</p>
+                            <h3 class="box-title"><?php echo $dd["pack_name"]; ?></h3>
+                            <h4 class="box-price text-center text-orange">NZ$ <?php echo $dd["pack_price"]; ?></h4>
+                            <p class="box-text2 text-black"><?php echo $dd["pack_desc"]; ?></p>
                         </div>
-                        <a href="contact.html" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
+                        <a href="package-details.php?package_identity=<?php echo $dd["pack_id"]; ?>" class="th-btn style4 btn-fw th-radius th-icon fs-5">Get Started<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                         <div class="box-content">
                             <div class="available-list">
                                 <ul>
                                     <ul>
-                                        <li class="text-black"><strong>Website Features:</strong> 5–8-page custom
-                                            website</li>
-                                        <li class="text-black"><strong>Design:</strong> Mobile-responsive design</li>
-                                        <li class="text-black"><strong>SEO:</strong> Basic SEO setup</li>
-                                        <li class="text-black"><strong>Communication:</strong> Enquiry to E-Mail</li>
-                                        <!-- <li class="text-black"><strong>Visuals:</strong> Free stock images</li>
-                                        <li class="text-black"><strong>Social Media:</strong> Social media integration
-                                        </li>
-                                        <li class="text-black"><strong>Business Setup:</strong> Google business setup
-                                        </li>
-                                        <li class="text-black"><strong>Content:</strong> Free web content writing</li> -->
-                                        <!-- <li class="text-black"><strong>Visuals:</strong> Photo/video gallery page added
-                                        </li>
-                                        <li class="text-black"><strong>Email:</strong> 03 business emails</li>
-                                        <li class="text-black"><strong>Support:</strong> Live chat bot</li>
-                                        <li class="text-black"><strong>Content Management:</strong> Web content
-                                            management system (Admin Panel)</li>
-                                        <li class="text-black"><strong>Design:</strong> Interactive sliding banners</li>
-                                        <li class="text-black"><strong>Analytics:</strong> Google Analytics board setup
-                                        </li>
-                                        <li class="text-black"><strong>Marketing:</strong> Free one graphic post</li>
-                                        <li class="text-black"><strong>Products:</strong> Product Showcase - Shop Page
-                                        </li> -->
+                                        <?php
+                                        $fd = Databases::Search("SELECT * FROM `pack_features` WHERE `pack_pack_id` = '" . $dd["pack_id"] . "' AND `status` = 1");
+                                        for ($x = 0; $x < 2; $x++) {
+                                            $ff = $fd->fetch_assoc();
+                                        ?>
+                                            <li class="text-black"><?php echo $ff["f_name"]; ?></li>
+                                        <?php
+                                        }
+                                        $rest = $fd->num_rows - 2;
+                                        ?>
+                                        <div class="d-none mb-3" id="showMoreList_<?php echo $dd['pack_id']; ?>">
+                                            <?php
+                                            for ($x = 0; $x < $rest; $x++) {
+                                                $ff = $fd->fetch_assoc();
+                                            ?>
+                                                <li class="text-black"><?php echo $ff["f_name"]; ?></li>
+                                            <?php
+                                            }
+                                            ?>
+                                        </div>
 
                                     </ul>
 
                                 </ul>
                             </div>
+                        </div>
+                        <div class="text-center text-dark mt-3">
+                            <span class="text-dark fw-bold h5" style="cursor: pointer;" onclick="showMore(<?php echo $dd['pack_id']; ?>);" id="showMoreBtn_<?php echo $dd['pack_id']; ?>"><i class="bi bi-chevron-double-down h6"></i>&nbsp;More Features</span>
                         </div>
                     </div>
                 </div>
@@ -693,6 +694,7 @@
     All Js File
 ============================== -->
     <!-- Jquery -->
+    <script src="assets/js/pricing.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
     <script src="assets/js/swiper-bundle.min.js"></script>

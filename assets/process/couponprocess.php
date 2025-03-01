@@ -23,14 +23,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($round->num_rows == 1) {
                     $c_d = $round->fetch_assoc();
 
-                    if($total<$c_d['max_expend']){
-                        die("Sorry! You have to expend minimum NZD ".$c_d['max_expend']." to claim this offer.");
+                    if ($total < $c_d['max_expend']) {
+                        die("Sorry! You have to expend minimum NZD " . $c_d['max_expend'] . " to claim this offer.");
                     }
 
                     $cc = $c_d['c_id'];
 
                     $round2 = Databases::Search("SELECT * FROM `user_has_coupon` WHERE `user_id` = '$uid' ");
                     if ($round2->num_rows == 0) {
+
+                        if ($c_d['c_type'] == 1) {
+                            $isThereCouponD = Databases::Search("SELECT * FROM `coupon_offers` WHERE `coupon_id` = '" . $c_d['c_id'] . "' ");
+                            if($isThereCouponD->num_rows != 0 ){
+                                $isThereCoupon = $isThereCouponD->fetch_assoc();
+                                $isTherePackageD = Databases::Search("SELECT * FROM `cart` WHERE `pack_id` = '" . $isThereCoupon['pack_id'] . "' AND `user_id` = '".$uid."' ");
+                                if($isTherePackageD->num_rows == 0 ){
+                                    Databases::iud("INSERT INTO `cart`(`user_id`,`pack_id`) VALUES ('$uid','" . $isThereCoupon['pack_id'] . "') ");
+                                }
+                            }
+                        }
+
                         $stmt = $conn->prepare("INSERT INTO `user_has_coupon` (user_id, coupon_id) VALUES (?, ?) ; ");
                         $stmt->bind_param("ii", $uid, $cc);
                         if ($stmt->execute()) {

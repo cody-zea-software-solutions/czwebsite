@@ -1,3 +1,6 @@
+<?php
+require_once "guest.php";
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -49,6 +52,8 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
     <!--==============================
@@ -135,64 +140,66 @@
     </div>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#smarthost" data-bs-toggle="modal">
-                <img src="assets/offers/offer001.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#quickweb" data-bs-toggle="modal">
-                <img src="assets/offers/offer002.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-12 col-lg-5 mt-2 mx-2">
-                <img src="assets/offers/offer003.jpg" class="img-fluid" alt="">
-            </div>
-        </div>
-        <!-- Modal 001 -->
-        <div class="modal fade" id="smarthost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content rounded-0 border-0">
 
-                    <div class="modal-body m-0 p-0">
-                        <div class="row m-0 p-0">
-                            <div class="col-12 col-lg-6 p-0 m-0 d-none d-lg-block"
-                                style="background-image: url('assets/cover-modalo.jpg'); background-size: cover;">
-
-                            </div>
-                            <div class="col-12 col-lg-6 p-4">
-                                <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
-                                    <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <span class="fs-1 text-black">
-                                        SMARTHOST <span class="text-orange">DEAL</span>
-                                    </span>
-                                    <p class="text-black fs-6">
-                                        🚀 Get 1 Year of FREE Hosting with our E-Commerce Essential or Growth Package!
-                                        🚀
-                                    </p>
-                                </div>
-                                <div class="col-12 d-flex justify-content-center">
-                                    <div class="coupon-row">
-                                        <span id="cpnCode">SMARTHOST50</span>
-                                        <span id="cpnBtn">Copy Code</span>
-                                    </div>
-                                </div>
-                                <div class="col-12 mt-2 d-flex justify-content-center">
-                                    <div class="text-center text-xl-start col-10">
-                                        <a href="https://wa.me/64223568614?text=Hi%20Cody%20Zea!%20I%20would%20like%20to%20claim%20the%20SMARTHOST50%20offer%20using%20the%20coupon%20code%20SMARTHOST50"
-                                            class="th-btn style4 th-radius fs-5 bg-black fs-5 col-12">
-                                            Claim Your Offer
-                                            Today
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
+            <?php
+            $couponD = Databases::Search("SELECT * FROM `offer` INNER JOIN `coupon` ON `coupon`.`c_id`=`offer`.`of_coupon` ");
+            while ($coupon = $couponD->fetch_assoc()) {
+            ?>
+                <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#couponModal<?php echo $coupon['of_id']; ?>" data-bs-toggle="modal">
+                    <img src="assets/offers/offer001.jpg" class="img-fluid" alt="">
                 </div>
-            </div>
+                <!-- Modal 001 -->
+                <div class="modal fade" id="couponModal<?php echo $coupon['of_id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content rounded-0 border-0">
+
+                            <div class="modal-body m-0 p-0">
+                                <div class="row m-0 p-0">
+                                    <div class="col-12 col-lg-6 p-0 m-0 d-none d-lg-block"
+                                        style="background-image: url('<?php echo $coupon['of_img']; ?>'); background-size: cover;">
+
+                                    </div>
+                                    <div class="col-12 col-lg-6 p-4">
+                                        <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
+                                            <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <span class="fs-1 text-black">
+                                            <?php echo $coupon['of_name']; ?>
+                                            </span>
+                                            <p class="text-black fs-6">
+                                            <?php echo $coupon['of_desc']; ?>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <div class="coupon-row">
+                                            <span class="cpnCode" id="cpnCode<?php echo $coupon['of_id']; ?>"><?php echo $coupon['c_code']; ?></span>
+                                            <span class="cpnBtn" id="cpnBtn<?php echo $coupon['of_id']; ?>" onclick="copyCode(<?php echo $coupon['of_id']; ?>)">Copy Code</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-2 d-flex justify-content-center">
+                                            <div class="text-center text-xl-start col-10">
+                                                <a onclick="claimCoupon(<?php echo $coupon['c_id']; ?>);" style="cursor: pointer;"
+                                                    class="th-btn style4 th-radius fs-5 bg-black fs-5 col-12">
+                                                    Claim Your Offer
+                                                    Today
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            <?php
+            };
+            ?>
         </div>
+
         <!-- Modal 002 -->
         <div class="modal fade" id="quickweb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -267,7 +274,7 @@
     <?php
     require "footer.php"
 
-        ?>
+    ?>
 
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

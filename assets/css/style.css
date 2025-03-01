@@ -228,13 +228,13 @@ iframe {
   width: fit-content;
 
 }
-#cpnCode{
+.cpnCode{
   border: 1px dashed #000000;
   padding: 10px 20px;
   border-right: 0;
   color: black;
 }
-#cpnBtn{
+.cpnBtn{
   border: 1px solid #000000;
   background: #fff;
   padding: 10px 20px;

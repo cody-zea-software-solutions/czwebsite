@@ -109,6 +109,7 @@ $res = Databases::search($query);
                 <?php
 
                 $subtotal = 0;
+                $distotal = 0;
                 $final_price = 0;
                 $discount = 0;
 
@@ -137,6 +138,8 @@ $res = Databases::search($query);
                             for ($x = 0; $x < $res->num_rows; $x++) {
                                 $results = $res->fetch_assoc();
                                 $subtotal = $subtotal + $results['pack_price'];
+                                $beforePriceAdded = 0;
+
                             ?>
                                 <tr class="cart_item">
                                     <td data-title="Product">
@@ -156,7 +159,75 @@ $res = Databases::search($query);
                                         <a onclick="removeFromCart('<?php echo $results['cart_id'] ?>','<?php echo $subtotal; ?>');" class="remove hover"><i class="fal fa-trash-alt text-dark"></i></a>
                                     </td>
                                 </tr>
+                                <?php
+
+                                $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $_SESSION['user_id'] . "' AND `c_status` = '1' ");
+                                if ($coupond->num_rows == 1) {
+                                    $coupon = $coupond->fetch_assoc();
+                                    $cid = Databases::Search("SELECT * FROM `coupon_offers` WHERE `coupon_id`='" . $coupon['c_id'] . "' AND `pack_id`='" . $results['pack_id'] . "' ");
+                                    if ($cid->num_rows != 0) {
+                                        while ($ci = $cid->fetch_assoc()) {
+                                            if ($ci['offer_pack_id'] == 0) {
+
+                                ?>
+                                                <tr class="cart_item">
+                                                    <td data-title="Product">
+                                                        <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
+                                                                src="assets\img\product\offer_img.jpg" alt="Image"></a>
+                                                    </td>
+                                                    <td data-title="Name">
+                                                        <a class="cart-productname h6 text-o"><?php echo $ci['offer_name'] ?></a>
+                                                    </td>
+                                                    <td data-title="Price">
+                                                        <span class="cart-productname text-orange h6 text-uppercase">Special Offers</span>
+                                                    </td>
+                                                    <td data-title="Total">
+                                                        <span class="amount h5 text-orange"><bdi>FREE</bdi></span>
+                                                    </td>
+                                                    <td data-title="Remove">
+
+                                                    </td>
+                                                </tr>
+                                                <?php
+
+                                            } else {
+                                                $pod = Databases::Search("SELECT * FROM `pack` INNER JOIN `solution` ON `pack`.`solution_sol_id` = `solution`.`sol_id` WHERE `pack_id` = '" . $ci['offer_pack_id'] . "' ");
+                                                if ($pod->num_rows == 1) {
+                                                    $po = $pod->fetch_assoc();
+                                                    $subtotal = $subtotal + $po['pack_price'];
+                                                    $distotal = $distotal + $po['pack_price'];
+                                                    if ($beforePriceAdded == 0) {
+                                                        $distotal = $distotal + $results['pack_price'];
+                                                        $beforePriceAdded == 1;
+                                                    }
+                                                    $isPrintedD = Databases::Search("SELECT * FROM `cart` WHERE `user_id`= '" . $_SESSION['user_id'] . "' AND `pack_id`='" . $ci['offer_pack_id'] . "' ");
+                                                    if ($isPrintedD->num_rows == 0) {
+
+                                                ?>
+                                                        <tr class="cart_item">
+                                                            <td data-title="Product">
+                                                                <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
+                                                                        src="assets\img\product\offer_img.jpg" alt="Image"></a>
+                                                            </td>
+                                                            <td data-title="Name">
+                                                                <a class="cart-productname h6 text-o"><?php echo $po['pack_name'] ?></a>
+                                                            </td>
+                                                            <td data-title="Price">
+                                                                <span class="cart-productname text-o h6"><?php echo $po['sol_name'] ?><br><span class="text-orange text-uppercase">Special Offers</span></span>
+                                                            </td>
+                                                            <td data-title="Total">
+                                                                <span class="amount h5 text-orange"><bdi><span>$</span><?php echo $po['pack_price'] ?></bdi></span>
+                                                            </td>
+                                                            <td data-title="Remove"></td>
+                                                        </tr>
                             <?php
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                             ?>
                             <tr>
@@ -179,29 +250,57 @@ $res = Databases::search($query);
                                             $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $_SESSION['user_id'] . "' AND `c_status` = '1' ");
                                             if ($coupond->num_rows == 1) {
                                                 $coupon = $coupond->fetch_assoc();
-                                                if ($coupon['c_mode'] == 1) {
-                                                    $max_expend = $coupon['max_expend'];
-                                                    $discount = $coupon['amount'];
+                                                $couponHasPackD = Databases::Search("SELECT * FROM `coupon_offers` WHERE `coupon_id`='" . $coupon['c_id'] . "' AND `offer_pack_id` != 0 ");
+                                                if ($couponHasPackD->num_rows == 0) {
+                                                    if ($coupon['c_mode'] == 1) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $discount = $coupon['amount'];
 
-                                                    if ($subtotal >= $max_expend) {
-                                                        $final_price = $subtotal - $discount;
-                                                        // Ensure final price has exactly two decimal places
-                                                        $final_price = number_format($final_price, 2, '.', '');
+                                                        if ($subtotal >= $max_expend) {
+                                                            $final_price = $subtotal - $discount;
+                                                            // Ensure final price has exactly two decimal places
+                                                            $final_price = number_format($final_price, 2, '.', '');
+                                                        }
+                                                    }
+
+                                                    if ($coupon['c_mode'] == 2) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $percentage = $coupon['amount'];
+
+                                                        if ($subtotal >= $max_expend) {
+                                                            $perc = $subtotal * $percentage / 100;
+                                                            $final_price = $subtotal - $perc;
+                                                            // Ensure final price has exactly two decimal places
+                                                            $final_price = number_format($final_price, 2, '.', '');
+                                                            $discount = $subtotal - $final_price;
+                                                        }
+                                                    }
+                                                } else {
+                                                    if ($coupon['c_mode'] == 1) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $discount = $coupon['amount'];
+
+                                                        if ($subtotal >= $max_expend) {
+                                                            $final_price = $subtotal - $discount;
+                                                            // Ensure final price has exactly two decimal places
+                                                            $final_price = number_format($final_price, 2, '.', '');
+                                                        }
+                                                    }
+
+                                                    if ($coupon['c_mode'] == 2) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $percentage = $coupon['amount'];
+
+                                                        if ($distotal >= $max_expend) {
+                                                            $perc = $distotal * $percentage / 100;
+                                                            $final_price = $subtotal - $perc;
+                                                            // Ensure final price has exactly two decimal places
+                                                            $final_price = number_format($final_price, 2, '.', '');
+                                                            $discount = $subtotal - $final_price;
+                                                        }
                                                     }
                                                 }
 
-                                                if ($coupon['c_mode'] == 2) {
-                                                    $max_expend = $coupon['max_expend'];
-                                                    $percentage = $coupon['amount'];
-
-                                                    if ($subtotal >= $max_expend) {
-                                                        $perc = $subtotal * $percentage / 100;
-                                                        $final_price = $subtotal - $perc;
-                                                        // Ensure final price has exactly two decimal places
-                                                        $final_price = number_format($final_price, 2, '.', '');
-                                                        $discount = $subtotal - $final_price;
-                                                    }
-                                                }
 
 
                                             ?>
