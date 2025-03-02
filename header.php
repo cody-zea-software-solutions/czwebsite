@@ -132,9 +132,9 @@
                         <nav class="main-menu d-none d-lg-inline-block">
                             <ul>
                                 <li><a href="index.php" class="text-black fw-semibold fs-6">Home</a></li>
-                                <li><a href="about.html" class="text-black fw-semibold fs-6">Pricing</a></li>
+                                <li><a href="pricing.php" class="text-black fw-semibold fs-6">Pricing</a></li>
                                 <li class="menu-item-has-children">
-                                    <a href="#" class="text-black fw-semibold fs-6">Offers</a>
+                                    <a href="offers.php" class="text-black fw-semibold fs-6">Offers</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -196,7 +196,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#" class="text-black fw-semibold fs-6">Solutions</a>
+                                    <a href="solutions.php" class="text-black fw-semibold fs-6">Solutions</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -223,7 +223,7 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#" class="text-black fw-semibold fs-6">Blogs</a>
+                                    <a href="blog.php" class="text-black fw-semibold fs-6">Blogs</a>
                                     <ul class="mega-menu" style="width: 1500px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -249,7 +249,7 @@
                                         </div>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html" class="text-black fw-semibold fs-6">Contact Us</a></li>
+                                <li><a href="contact.php" class="text-black fw-semibold fs-6">Contact Us</a></li>
                             </ul>
                         </nav>
                         <div class="header-button">
