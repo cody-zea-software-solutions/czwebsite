@@ -175,7 +175,17 @@ body.theme-bg {
 .text-b{
   color: #413124 !important;
 }
-
+.hc{
+  min-height: 70vh;
+}
+.border-dashed {
+  border-bottom-style: dashed !important;
+}
+@media (max-width: 576px) {
+  .hc{
+   min-height: 60vh !important;
+  }
+}
 .text-o{
   color: #213343 !important;
 }
