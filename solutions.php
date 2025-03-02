@@ -92,7 +92,7 @@
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
     </div>
-    <div class="container space-extra2">
+    <div class="container space-extra2 mt-5 mt-lg-0">
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
@@ -132,17 +132,33 @@
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-4 rounded-20 shadow-lg">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3">
                 <div class="col-12 rounded-20"
                     style="background-image: url(assets/solution001.webp); background-size: cover; background-position: center; min-height: 40vh;">
                 </div>
                 <div class="col-12 p-4">
-                    <span class="text-black fs-3 p-3">
-                    Solution
-                </span>  
+                    <span class="text-black fs-4">
+                        Startup Success Made Simple: Your All-in-One Solution
+                    </span>
+                    <p>
+
+                    </p>
                 </div>
-              
+
+            </div>
+            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3">
+                <div class="col-12 rounded-20"
+                    style="background-image: url(assets/solu002.jpg); background-size: cover; background-position: center; min-height: 40vh;">
+                </div>
+                <div class="col-12 p-4">
+                    <span class="text-black fs-4">
+                        Growth Business Solution for Shop Owners </span>
+                    <p>
+
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
