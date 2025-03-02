@@ -83,7 +83,30 @@
         <div class="row space-extra"></div>
     </div>
 
-    <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5 bg-color">
+    <div class="container-fluid py-5 mb-5">
+        <div class="row text-center mb-5">
+            <div class="col-12 mt-5 mt-md-0">
+                <h1>COMING SOON</h1>
+                <span class="fs-4 text-dark fw-normal">Easily Drag & Drop Features to Your Cart, Then Pay Securely Online</span>
+            </div>
+        </div>
+        <div class="row ps-5 mt-1 d-lg-flex justify-content-center my-5">
+            <div class="roudiv me-5">
+                <div class="border-orange d-flex justify-content-center align-items-center hover"><img src="assets/img/click.svg"></div>
+                <div class="text-center h6" style="width: 80px;">Click</div>
+            </div>
+            <div class="roudiv me-5">
+                <div class="border-orange d-flex justify-content-center align-items-center hover"><img src="assets/img/plus.svg"></div>
+                <div class="text-center h6" style="width: 80px;">Add</div>
+            </div>
+            <div class="roudiv me-4 text-black mt-4 mt-md-0">
+                <div class="border-orange d-flex justify-content-center align-items-center hover"><img src="assets/img/buy.svg"></div>
+                <div class="text-center h6" style="width: 80px;">Purchase</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5 bg-color d-none">
         <div class="row mt-3">
             <div class="col-md-6 order-2 order-md-1">
                 <div class="row px-5 d-lg-flex justify-content-center d-none" style="gap: 20px;">
@@ -120,9 +143,7 @@
         </div>
     </div>
 
-
-
-    <div class="container-fluid">
+    <div class="container-fluid d-none">
         <div class="row">
 
             <!-- Overlay with spinner and "Please Wait" text -->

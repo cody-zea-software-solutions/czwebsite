@@ -392,7 +392,7 @@ $dd = $d_r->fetch_assoc();
             <div class="col-12 col-lg-6 vh-100 bg-black">
                 <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
                     <?php $dd = $d_r->fetch_assoc(); ?>
-                    <div class="price-box th-ani " style="z-index: 9 !important; border-bottom: 2px solid #FF5C35;">
+                    <div class="price-box th-ani " style="z-index: 8 !important; border-bottom: 2px solid #FF5C35;">
                         <span class="offer-tag"></span>
                         <div class="text-center">
                             <h3 class="box-title"><?php echo $dd["pack_name"]; ?></h3>
@@ -479,8 +479,8 @@ $dd = $d_r->fetch_assoc();
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
                 <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
-                <?php $dd = $d_r->fetch_assoc(); ?>
-                    <div class="price-box th-ani " style="z-index: 9 !important; border-bottom: 2px solid #FF5C35;">
+                    <?php $dd = $d_r->fetch_assoc(); ?>
+                    <div class="price-box th-ani " style="z-index: 7 !important; border-bottom: 2px solid #FF5C35;">
                         <span class="offer-tag"></span>
                         <div class="text-center">
                             <h3 class="box-title"><?php echo $dd["pack_name"]; ?></h3>

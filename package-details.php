@@ -177,6 +177,82 @@ if (isset($_GET['package_identity'])) {
     </div>
 
     <?php
+    $oneTime = $data['pack_price'];
+    $monthly = $oneTime / 12;
+    $monthly = ceil($monthly * 100) / 100;
+    $monthly = number_format($monthly, 2, '.', '');
+    ?>
+
+    <div class="container mb-5 px-5 cdf">
+    <div class="row text-center">
+            <h2 class="text-dark mb-3 pb-0">Payment Plans</h2>
+            <span class="fs-5 fw-medium text-o px-5 d-none d-md-block">Choose a flexible payment plan that fits your budget and business goals. Our tailored packages ensure you get the best value while scaling your success effortlessly.</span>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-12 col-md-6 px-2 px-md-5">
+                <div class="row bg-orange rounded-20 pricing-box">
+                    <div class="col-12 text-center mt-5">
+                        <h2 class="text-white text-decoration-underline">One Time</h2>
+                        <span class="fs-5 fw-medium text-white d-none d-md-block">Make a single payment and enjoy lifetime access.</span>
+                    </div>
+                    <div class="col-12 text-center mt-5 mb-3">
+                        <button class="btn py-4 px-5 bg-white rounded-5"><span class="text-orange fs-5">from&nbsp;</span><span class="text-orange fs-1 fw-bold">NZD <?php echo $oneTime; ?></span><br><span class="text-orange fs-4">/Full Payment</span></button>
+                    </div>
+                    <div class="col-12 text-center mt-5 mb-4">
+                        <ul class="list-unstyled text-center">
+                            <li class=" mb-2">
+                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
+                                <span class=" h6 fw-normal text-white">Full access to premium features</span>
+                            </li>
+                            <li class=" mb-2">
+                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
+                                <span class=" h6 fw-normal text-white">Priority customer support included</span>
+                            </li>
+                            <li class=" mb-2">
+                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
+                                <span class=" h6 fw-normal text-white">Cancel anytime with no hidden fees</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2 px-md-5 pt-3 pb-5 text-center">
+                        <a href="contact.php" class="btn btn-dark px-5 py-3 fs-3 rounded-pill" style="background-color: #000;">Inquiry Now<i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 px-2 px-md-5 pt-5 pt-md-0">
+                <div class="row orange-border rounded-20 pricing-box">
+                    <div class="col-12 text-center mt-5">
+                        <h2 class="text-dark text-decoration-underline">Monthly</h2>
+                        <span class="fs-5 fw-medium text-dark d-none d-md-inline-block">Pay your full payment month by month</span>
+                    </div>
+                    <div class="col-12 text-center mt-5 mb-3">
+                        <button class="btn py-4 px-5 bg-orange rounded-5"><span class="text-white fs-5">from&nbsp;</span><span class="text-white fs-1 fw-bold">NZD <?php echo $monthly; ?></span><br><span class="text-white fs-4">/Per month</span></button>
+                    </div>
+                    <div class="col-12 text-center mt-5 mb-4">
+                        <ul class="list-unstyled text-center">
+                            <li class=" mb-2">
+                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
+                                <span class=" h6 fw-normal text-dark">Full access to premium features</span>
+                            </li>
+                            <li class=" mb-2">
+                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
+                                <span class=" h6 fw-normal text-dark">Priority customer support included</span>
+                            </li>
+                            <li class=" mb-2">
+                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
+                                <span class=" h6 fw-normal text-dark">Cancel anytime with no hidden fees</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-2 px-md-5 pt-3 pb-5 text-center">
+                        <a href="contact.php" class="btn btn-dark px-5 py-3 fs-3 rounded-pill" style="background-color: #000;">Inquiry Now<i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php
     $conn = Databases::getConnection();
     $stmt = $conn->prepare("SELECT * FROM `pack_features` WHERE `pack_pack_id`= ? AND `status`=1 ORDER BY `f_id` ASC ; ");
     $stmt->bind_param("i", $pid);

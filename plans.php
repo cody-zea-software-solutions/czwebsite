@@ -91,112 +91,166 @@ require_once "assets/process/database.php";
 
     <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5">
         <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
-                <div class="row px-5 mt-4 d-flex justify-content-center">
-                    <div style="width:420px; height: 500px; border-radius: 20px; background-color: bisque;" class="large-img"></div>
+            <div class="col-12 mt-3 ps-md-5" >
+                <div class="row ps-md-5">
+                    <div class="col-12">
+                        <div class="title-area mb-25 mt-n1 mt-4">
+                            <h1 class="sec-title text-ani-style3">Flexible Payment Options to Suit Your Needs.</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4 mt-md-5">
+                        <img src="assets/pay-2.png" class="rounded-20">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2 mt-3" style="padding-right: 20px !important;">
-                <div class="title-area mb-25 mt-n1 mt-4">
-                    <h2 class="sec-title text-ani-style3">Tailor Your Website - Add Features to Cart and Get Started</h2>
-                </div>
-                <p class="mt-n2 mb-25 text-dark">Start by selecting the <b>website type</b> you want.
-                    Then, simply <b>click the plus button</b> of the features below to add them to your shopping list.
-                    Once you're done, you can either proceed to <b>checkout</b> or reach out to us for <b>further inquiries</b>.</p>
-                <div class="row mt-5 d-flex justify-content-start">
-                    <img src="assets/pay-2.png" alt="">
-                </div>
 
+            <!-- Image on the right (col-6 with offset-6) -->
+            <div class="col-6 offset-6 d-flex justify-content-end position-absolute" style="padding-right: 100px !important; margin-top: 0px;">
+                <div style="width:420px; height: 500px; border-radius: 20px; background-image: url('assets/p.jpg'); background-size: cover; opacity: 1;" class="large-img col-6-under-img pricing-box-2 d-none d-md-flex"></div>
             </div>
+
         </div>
     </div>
 
     <div class="container mb-5 px-5 cdf">
-        <?php
-        $d = Databases::Search("SELECT * FROM `solution` ");
-        while ($solD = $d->fetch_assoc()) {
-            $dd = Databases::Search("SELECT * FROM `pack` WHERE `solution_sol_id` = '" . $solD['sol_id'] . "' ORDER BY `pack_price` ASC ");
-            $dn = $dd->fetch_assoc();
-            $oneTime = $dn['pack_price'];
-            $monthly = $oneTime / 12;
-            $monthly = ceil($monthly * 100) / 100;
-            $monthly = number_format($monthly, 2, '.', '');
-        ?>
-            <div class="row mt-5">
-                <div class="col-12 text-center mt-4">
-                    <span class="sec-title text-ani-style3 text-center h2"><?php echo $solD['sol_name']; ?></span>
-                    <span class="sub-title sub-title6 style1 text-ani-style2 mt-0 text-o">You can easily choose from any of these pricing plans.</span>
-                </div>
-                <div class="col-12">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1><span class="text-orange">Our</span> Pricing Plans</h1>
+                <span class="fs-5 text-dark fw-normal">Find the perfect payment option that fits your budget and business needs.</span>
+            </div>
+        </div>
+        <div class="row my-5 pt-4">
+            <div class="col-12 my-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-5 order-2 order-md-1">
+                        <div class="row">
+                            <div class="col-12 text-end"><span class="sub-title sub-title4 style1 text-ani-style2">Benefits</span></div>
+                            <div class="col-12 mt-4">
 
-                    <div class="row">
-                        <div class="col-12 col-md-6 px-5">
-                            <div class="row bg-orange rounded-20">
-                                <div class="col-12 text-center mt-5">
-                                    <h2 class="text-white">One Time</h2>
-                                    <p class="fs-4 text-white">Make a single payment and enjoy lifetime access.</p>
-                                </div>
-                                <div class="col-12 text-center mt-5 mb-3">
-                                    <button class="btn py-4 px-5 bg-white rounded-5"><span class="text-orange fs-5">from&nbsp;</span><span class="text-orange fs-1 fw-bold">NZD <?php echo $oneTime; ?></span><br><span class="text-orange fs-4">/Full Payment</span></button>
-                                </div>
-                                <div class="col-12 text-center mt-5 mb-4">
-                                    <ul class="list-unstyled text-center">
-                                        <li class=" mb-2">
-                                            <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
-                                            <span class=" h6 fw-normal text-white">Full access to premium features</span>
-                                        </li>
-                                        <li class=" mb-2">
-                                            <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
-                                            <span class=" h6 fw-normal text-white">Priority customer support included</span>
-                                        </li>
-                                        <li class=" mb-2">
-                                            <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
-                                            <span class=" h6 fw-normal text-white">Cancel anytime with no hidden fees</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="px-5 pt-3 pb-5 text-center">
-                                    <a href="contact.php" class="btn btn-dark px-5 py-3 fs-3 rounded-pill" style="background-color: #000;">Inquiry Now<i class="bi bi-arrow-up-right"></i></a>
-                                </div>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">Pay once and access all features without any recurring charges.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">No monthly payments, giving you peace of mind with a single payment.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">Full access to all product features immediately after payment.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">Simple and straightforward payment method for hassle-free experience.</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-
-                        <div class="col-12 col-md-6 px-5">
-                            <div class="row orange-border rounded-20">
-                                <div class="col-12 text-center mt-5">
-                                    <h2 class="text-dark">Monthly</h2>
-                                    <p class="fs-4 text-dark">ubscribe monthly and cancel anytime—no long-term commitment!</p>
-                                </div>
-                                <div class="col-12 text-center mt-5 mb-3">
-                                    <button class="btn py-4 px-5 bg-orange rounded-5"><span class="text-white fs-5">from&nbsp;</span><span class="text-white fs-1 fw-bold">NZD <?php echo $monthly; ?></span><br><span class="text-white fs-4">/Per month</span></button>
-                                </div>
-                                <div class="col-12 text-center mt-5 mb-4">
-                                    <ul class="list-unstyled text-center">
-                                        <li class=" mb-2">
-                                            <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
-                                            <span class=" h6 fw-normal text-dark">Full access to premium features</span>
-                                        </li>
-                                        <li class=" mb-2">
-                                            <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
-                                            <span class=" h6 fw-normal text-dark">Priority customer support included</span>
-                                        </li>
-                                        <li class=" mb-2">
-                                            <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
-                                            <span class=" h6 fw-normal text-dark">Cancel anytime with no hidden fees</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="px-5 pt-3 pb-5 text-center">
-                                    <a href="contact.php" class="btn btn-dark px-5 py-3 fs-3 rounded-pill" style="background-color: #000;">Inquiry Now<i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="col-12 col-md-6 order-1 order-md-2">
+                        <div class="row">
+                            <div class="col-12 px-2 px-md-5">
+                                <div class="row bg-orange rounded-20 pricing-box">
+                                    <div class="col-12 text-center mt-5">
+                                        <h2 class="text-white text-decoration-underline">One Time</h2>
+                                        <span class="fs-5 fw-medium text-white d-none d-md-block">Make a single payment and enjoy lifetime access.</span>
+                                    </div>
+                                    <div class="col-12 text-center mt-5 mb-3">
+                                        <button class="btn py-4 px-5 bg-white rounded-5"><span class="text-orange fs-5">from&nbsp;</span><span class="text-orange fs-1 fw-bold">NZD 25</span><br><span class="text-orange fs-4">/Full Payment</span></button>
+                                    </div>
+                                    <div class="col-12 text-center mt-5 mb-4">
+                                        <ul class="list-unstyled text-center">
+                                            <li class=" mb-2">
+                                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
+                                                <span class=" h6 fw-normal text-white">Full access to premium features</span>
+                                            </li>
+                                            <li class=" mb-2">
+                                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
+                                                <span class=" h6 fw-normal text-white">Priority customer support included</span>
+                                            </li>
+                                            <li class=" mb-2">
+                                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-white h6 fw-normal"></i>
+                                                <span class=" h6 fw-normal text-white">Cancel anytime with no hidden fees</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-2 px-md-5 pt-3 pb-5 text-center">
+                                        <a href="contact.php" class="btn btn-dark px-5 py-3 fs-3 rounded-pill" style="background-color: #000;">Inquiry Now<i class="bi bi-arrow-up-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <?php
-        }
-        ?>
+
+            <div class="col-12 my-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-5 order-2">
+                        <div class="row">
+                            <div class="col-12 text-end"><span class="sub-title sub-title4 style1 text-ani-style2">Benefits</span></div>
+                            <div class="col-12 mt-4">
+
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">Pay in 12 equal monthly installments, making it easy on your budget.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">Spread out your payments over the year with no interest or hidden fees.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">Stay in control by paying a fixed amount each month, making budgeting simple.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-check-circle text-orange me-3" style="font-size: 20px;"></i>
+                                        <span class="fs-5 text-dark fw-normal">Enjoy the full access to all features while paying over time.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-1">
+                        <div class="row">
+                            <div class="col-12 px-2 px-md-5">
+                                <div class="row orange-border rounded-20 pricing-box">
+                                    <div class="col-12 text-center mt-5">
+                                        <h2 class="text-dark text-decoration-underline">Monthly</h2>
+                                        <span class="fs-5 fw-medium text-dark d-none d-md-inline-block">Pay your full payment month by month</span>
+                                    </div>
+                                    <div class="col-12 text-center mt-5 mb-3">
+                                        <button class="btn py-4 px-5 bg-orange rounded-5"><span class="text-white fs-5">from&nbsp;</span><span class="text-white fs-1 fw-bold">NZD 50</span><br><span class="text-white fs-4">/Per month</span></button>
+                                    </div>
+                                    <div class="col-12 text-center mt-5 mb-4">
+                                        <ul class="list-unstyled text-center">
+                                            <li class=" mb-2">
+                                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
+                                                <span class=" h6 fw-normal text-dark">Full access to premium features</span>
+                                            </li>
+                                            <li class=" mb-2">
+                                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
+                                                <span class=" h6 fw-normal text-dark">Priority customer support included</span>
+                                            </li>
+                                            <li class=" mb-2">
+                                                <i class="bi bi-arrow-up-right-circle-fill me-2 text-dark h6 fw-normal"></i>
+                                                <span class=" h6 fw-normal text-dark">Cancel anytime with no hidden fees</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-2 px-md-5 pt-3 pb-5 text-center">
+                                        <a href="contact.php" class="btn btn-dark px-5 py-3 fs-3 rounded-pill" style="background-color: #000;">Inquiry Now<i class="bi bi-arrow-up-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!--============================== Footer Area ==============================-->

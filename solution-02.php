@@ -1,5 +1,5 @@
 <?php require_once "db.php";
-$d_r = Databases::Search("SELECT * FROM pack WHERE solution_sol_id=1");
+$d_r = Databases::Search("SELECT * FROM pack WHERE solution_sol_id=3");
 $dd = $d_r->fetch_assoc();
 ?>
 <!doctype html>
@@ -53,6 +53,7 @@ $dd = $d_r->fetch_assoc();
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
         All CSS File
@@ -278,6 +279,7 @@ $dd = $d_r->fetch_assoc();
             </div>
         </div>
     </div>
+    <?php $dd = $d_r->fetch_assoc(); ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
@@ -850,6 +852,7 @@ $dd = $d_r->fetch_assoc();
     <!--==============================
     All Js File
 ============================== -->
+<script src="assets/js/pricing.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->

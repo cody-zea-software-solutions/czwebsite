@@ -14,7 +14,7 @@ if (isset($_POST['id'])) {
     if ($result->num_rows > 0) {
         $sol_name = $result->fetch_assoc();
 
-?>
+    ?>
 
         <div class="container px-md-5">
             <div class="title-area text-center">
