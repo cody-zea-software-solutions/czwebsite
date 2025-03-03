@@ -70,12 +70,12 @@ $dd = $d_r->fetch_assoc();
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+
 </head>
 
 <body>
 
     <?php require_once "header.php" ?>
-
 
 
     <div class="container-fluid space-extra2">

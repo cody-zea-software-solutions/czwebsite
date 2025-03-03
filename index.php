@@ -56,13 +56,29 @@
     <link rel="stylesheet" href="assets/css/imageRevealHover.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
 
 
+    <div class="wrapper" style="z-index: 1000;">
+        <div class="title-box">
+            <i class="bx bx-cookie"></i>
+            <h3>Cookies Consent</h3>
+        </div>
+        <div class="info">
+            <p>
+                This website use cookies to help you have a superior and more relevant
+                browsing experience on the website. <a href="#"> Read more...</a>
+            </p>
+        </div>
+        <div class="buttons">
+            <button class="button bg-orange" id="acceptBtn">Accept</button>
+            <button class="button">Decline</button>
+        </div>
+    </div>
 
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -183,7 +199,7 @@ About Area
     </div>
 
 
-    <div class="brand-sec overflow-hidden space-extra2 overflow-hidden">
+    <!-- <div class="brand-sec overflow-hidden space-extra2 overflow-hidden">
         <div class="container th-container">
             <div class="title-area mb-60 text-center">
                 <h3 class="brand-title2 mt-n3 text-ani-style3 fs-1">Trusted Worldwide, Serving <span
@@ -295,7 +311,7 @@ About Area
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--==============================
 Service Area  
 ==============================-->
@@ -332,7 +348,7 @@ Service Area
                             </div>
 
                         </div>
-                       
+
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -456,7 +472,7 @@ portfolio Area
                 <div class="col-12 mb-5">
                     <span class="display-4 text-black fw-semibold">See more of our work</span>
                     <div class="btn-group d-flex justify-content-center mt-3">
-                        <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Our Work<i
+                        <a href="works.php" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Our Work<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
@@ -586,7 +602,7 @@ portfolio Area
                         <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us</span>
                         <h2 class="sec-title text-ani-style3 text-white">Cody Zea – Solutions Bright, Done Right</h2>
                     </div>
-                    <p class="sec-text mb-35">In a fast-moving digital world, choosing the right tech partner is crucial
+                    <p class="sec-text mb-35 fs-4">In a fast-moving digital world, choosing the right tech partner is crucial
                     </p>
                     <div class="choose-feature-wrap">
                         <div class="choose-feature">
@@ -831,7 +847,7 @@ Cta Area
                     visitors to stay, explore, and take action.
                 </p>
                 <div class="btn-group">
-                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Create Your Website<i
+                    <a href="web-design.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Create Your Website<i
                             class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
@@ -857,7 +873,7 @@ Cta Area
                 </p>
 
                 <div class="btn-group d-flex justify-content-center">
-                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Create Your
+                    <a href="branding.php" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Create Your
                         Brand Identity<i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
@@ -880,7 +896,7 @@ Cta Area
                     interactions into meaningful relationships that fuel business growth.
                 </p>
                 <div class="btn-group">
-                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Grow Your Audience
+                    <a href="digital-marketing.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Grow Your Audience
                         <i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
