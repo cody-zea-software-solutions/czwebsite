@@ -6,28 +6,20 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Feel free to contact us - Codyzea</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <meta name="author" content="Cody Zea Software Solutions">
+    <meta name="description"
+        content="Get in Touch with Cody Zea Software Solutions - Have questions? Let's connect! Reach out for Web Design, Branding, Digital Marketing, and App Development inquiries.">
+    <meta name="keywords"
+        content="Cody Zea, Contact Cody Zea, Get in Touch, Web Design Support, App Development Consultation, Digital Marketing Help, Business Solutions, Customer Support">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/logocz.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/logocz.png">
@@ -39,9 +31,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
-	  Google Fonts
-	============================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+      Google Fonts
+    ============================== -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
@@ -57,10 +49,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <!--==============================
-	    All CSS File
-	============================== -->
+        All CSS File
+    ============================== -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -273,7 +265,8 @@
 
                                 <!-- Submit Button -->
                                 <div class="btn-group">
-                                    <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12" id="th-btn" onclick="submitVisitRequest();">Request a Visit<i
+                                    <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12" id="th-btn"
+                                        onclick="submitVisitRequest();">Request a Visit<i
                                             class="fa-regular fa-arrow-right ms-2"></i></a>
                                 </div>
                             </div>
@@ -322,9 +315,9 @@ Contact Area
                     <div class="col-10 mt-3 d-flex justify-content-center">
                         <!-- Submit Button -->
                         <div class="btn-group col-12">
-                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn" onclick="sendMessage();">Get in Touch
-                                <i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
+                                onclick="sendMessage();">Get in Touch
+                                <i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>

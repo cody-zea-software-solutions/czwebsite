@@ -9,29 +9,21 @@ $res = Databases::search($query);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Web, Software & App Development Pricing Plans</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <title>Codyzea - Cart</title>
+    <meta name="author" content="Cody Zea Software Solutions">
+    <meta name="description"
+        content="Review your selected digital solutions before checkout. Complete your order with Cody Zea Software Solutions for expert web development, branding, and more.">
+    <meta name="keywords"
+        content="Cody Zea, Shopping Cart, Checkout, Digital Solutions, Web Development, Branding, E-Commerce, App Development">
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/logocz.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/logocz.png">
@@ -43,8 +35,8 @@ $res = Databases::search($query);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
-	  Google Fonts
-	============================== -->
+      Google Fonts
+    ============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -63,8 +55,8 @@ $res = Databases::search($query);
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <!--==============================
-	    All CSS File
-	============================== -->
+        All CSS File
+    ============================== -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -114,14 +106,16 @@ $res = Databases::search($query);
                 $discount = 0;
 
                 if ($res->num_rows == 0) {
-                ?>
+                    ?>
                     <div class="py-5 bg-color my-5"><span class="text-dark h6">Cart is Empty</span><br>
                         <a href="pricing.php" class="h4 text-orange text-decoration-underline mt-5">Continue Shopping</a>
                     </div>
-                <?php
+                    <?php
                 } else {
-                ?>
-                    <div class="mt-5 text-dark text-start fw-semibold "><a href="pricing.php" class="text-o text-decoration-underline"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>&nbsp;Back to Shopping</a></div>
+                    ?>
+                    <div class="mt-5 text-dark text-start fw-semibold "><a href="pricing.php"
+                            class="text-o text-decoration-underline"><i class="fa fa-long-arrow-left"
+                                aria-hidden="true"></i>&nbsp;Back to Shopping</a></div>
                     <table class="cart_table mt-2">
                         <thead>
                             <tr>
@@ -140,7 +134,7 @@ $res = Databases::search($query);
                                 $subtotal = $subtotal + $results['pack_price'];
                                 $beforePriceAdded = 0;
 
-                            ?>
+                                ?>
                                 <tr class="cart_item">
                                     <td data-title="Product">
                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -153,10 +147,12 @@ $res = Databases::search($query);
                                         <span class="cart-productname text-o h6"><?php echo $results['sol_name'] ?></span>
                                     </td>
                                     <td data-title="Total">
-                                        <span class="amount h5 text-orange"><bdi><span>$</span><?php echo $results['pack_price'] ?></bdi></span>
+                                        <span
+                                            class="amount h5 text-orange"><bdi><span>$</span><?php echo $results['pack_price'] ?></bdi></span>
                                     </td>
                                     <td data-title="Remove">
-                                        <a onclick="removeFromCart('<?php echo $results['cart_id'] ?>','<?php echo $subtotal; ?>');" class="remove hover"><i class="fal fa-trash-alt text-dark"></i></a>
+                                        <a onclick="removeFromCart('<?php echo $results['cart_id'] ?>','<?php echo $subtotal; ?>');"
+                                            class="remove hover"><i class="fal fa-trash-alt text-dark"></i></a>
                                     </td>
                                 </tr>
                                 <?php
@@ -169,7 +165,7 @@ $res = Databases::search($query);
                                         while ($ci = $cid->fetch_assoc()) {
                                             if ($ci['offer_pack_id'] == 0) {
 
-                                ?>
+                                                ?>
                                                 <tr class="cart_item">
                                                     <td data-title="Product">
                                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -203,7 +199,7 @@ $res = Databases::search($query);
                                                     $isPrintedD = Databases::Search("SELECT * FROM `cart` WHERE `user_id`= '" . $_SESSION['user_id'] . "' AND `pack_id`='" . $ci['offer_pack_id'] . "' ");
                                                     if ($isPrintedD->num_rows == 0) {
 
-                                                ?>
+                                                        ?>
                                                         <tr class="cart_item">
                                                             <td data-title="Product">
                                                                 <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -213,14 +209,16 @@ $res = Databases::search($query);
                                                                 <a class="cart-productname h6 text-o"><?php echo $po['pack_name'] ?></a>
                                                             </td>
                                                             <td data-title="Price">
-                                                                <span class="cart-productname text-o h6"><?php echo $po['sol_name'] ?><br><span class="text-orange text-uppercase">Special Offers</span></span>
+                                                                <span class="cart-productname text-o h6"><?php echo $po['sol_name'] ?><br><span
+                                                                        class="text-orange text-uppercase">Special Offers</span></span>
                                                             </td>
                                                             <td data-title="Total">
-                                                                <span class="amount h5 text-orange"><bdi><span>$</span><?php echo $po['pack_price'] ?></bdi></span>
+                                                                <span
+                                                                    class="amount h5 text-orange"><bdi><span>$</span><?php echo $po['pack_price'] ?></bdi></span>
                                                             </td>
                                                             <td data-title="Remove"></td>
                                                         </tr>
-                            <?php
+                                                        <?php
 
                                                     }
                                                 }
@@ -234,9 +232,11 @@ $res = Databases::search($query);
                                 <td colspan="6" class="actions pb-0">
                                     <div class="th-cart-coupon mt-4">
                                         <input type="text" class="form-control" placeholder="Coupon Code..." id="c_code">
-                                        <button type="submit" class="th-btn rounded-pill text-white" onclick="applyCoupon(<?php echo $subtotal; ?>);">Apply Coupon</button>
+                                        <button type="submit" class="th-btn rounded-pill text-white"
+                                            onclick="applyCoupon(<?php echo $subtotal; ?>);">Apply Coupon</button>
                                     </div>
-                                    <a href="cart.php" class="pe-5 h2 text-o mt-4 d-none d-md-block"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                    <a href="cart.php" class="pe-5 h2 text-o mt-4 d-none d-md-block"><i
+                                            class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -303,12 +303,15 @@ $res = Databases::search($query);
 
 
 
-                                            ?>
-                                                <div class="coupon p-3 mt-md-3 rounded-0 bg-color" style="border: 2px dashed rgb(167, 162, 162) !important;">
-                                                    <span class="coupon-text text-o fw-semibold mx-3"><?php echo $coupon['c_code'] ?></span>
-                                                    <button class="remove-coupon-btn text-o fw-bold ms-3" onclick="removeCoupon(<?php echo $coupon['uc_id']; ?>);">×</button>
+                                                ?>
+                                                <div class="coupon p-3 mt-md-3 rounded-0 bg-color"
+                                                    style="border: 2px dashed rgb(167, 162, 162) !important;">
+                                                    <span
+                                                        class="coupon-text text-o fw-semibold mx-3"><?php echo $coupon['c_code'] ?></span>
+                                                    <button class="remove-coupon-btn text-o fw-bold ms-3"
+                                                        onclick="removeCoupon(<?php echo $coupon['uc_id']; ?>);">×</button>
                                                 </div>
-                                            <?php
+                                                <?php
                                             }
                                             $subtotal = number_format($subtotal, 2, '.', '');
                                             ?>
@@ -321,7 +324,7 @@ $res = Databases::search($query);
 
                         </tbody>
                     </table>
-                <?php
+                    <?php
                 }
                 ?>
 
@@ -331,13 +334,15 @@ $res = Databases::search($query);
                     <div class="row">
                         <div class="col-12">
                             <div class="row pe-md-5 pt-5">
-                                <div class="col-12 mt-4 bg-color"
-                                    style="height: 200px; border-radius: 30px; 
+                                <div class="col-12 mt-4 bg-color" style="height: 200px; border-radius: 30px; 
                     background-image: url('assets/pin_7.jpg'); 
                     background-size: cover; 
                     background-position: center; ">
                                 </div>
-                                <div class="col-12 h6 fw-semibold text-o mt-5 text-center">Select your <span class="text-orange">desired packages</span> , apply any available <span class="text-orange">coupons for discounts</span>, review your order, and <span class="text-orange">proceed to checkout</span> to complete your purchase.</div>
+                                <div class="col-12 h6 fw-semibold text-o mt-5 text-center">Select your <span
+                                        class="text-orange">desired packages</span> , apply any available <span
+                                        class="text-orange">coupons for discounts</span>, review your order, and <span
+                                        class="text-orange">proceed to checkout</span> to complete your purchase.</div>
                             </div>
                         </div>
                     </div>
@@ -350,7 +355,8 @@ $res = Databases::search($query);
                             <tr>
                                 <td><span class="h6 fw-semibold text-o">Subtotal</span></td>
                                 <td data-title="Cart Subtotal">
-                                    <span class="amount h6"><bdi><span>&nbsp;&nbsp;&nbsp;$</span><?php echo $subtotal; ?></bdi></span>
+                                    <span
+                                        class="amount h6"><bdi><span>&nbsp;&nbsp;&nbsp;$</span><?php echo $subtotal; ?></bdi></span>
                                 </td>
                             </tr>
                             <tr>
@@ -364,15 +370,18 @@ $res = Databases::search($query);
                             <tr class="order-total">
                                 <td><span class="h6 fw-semibold text-orange">Order Total</span></td>
                                 <td data-title="Total">
-                                    <strong><span class="amount h6"><bdi><span>&nbsp;&nbsp;&nbsp;$</span><?php echo $final_price; ?></bdi></span></strong>
+                                    <strong><span
+                                            class="amount h6"><bdi><span>&nbsp;&nbsp;&nbsp;$</span><?php echo $final_price; ?></bdi></span></strong>
                                 </td>
                             </tr>
                         </tfoot>
                     </table>
                     <div class="wc-proceed-to-checkout text-center mt-5">
-                        <button type="submit" class="th-btn rounded-pill text-white fs-4 mt-3">Proceed to checkout&nbsp;<i class="fa fa-credit-card-alt ms-2"></i></button>
+                        <button type="submit" class="th-btn rounded-pill text-white fs-4 mt-3">Proceed to
+                            checkout&nbsp;<i class="fa fa-credit-card-alt ms-2"></i></button>
                     </div>
-                    <div class="text-secondary text-center mt-4 mb-30">Enjoy <b>secure payments</b> with advanced encryption to protect your information.</div>
+                    <div class="text-secondary text-center mt-4 mb-30">Enjoy <b>secure payments</b> with advanced
+                        encryption to protect your information.</div>
                 </div>
             </div>
         </div>
@@ -381,8 +390,8 @@ $res = Databases::search($query);
     <?php require_once "footer.php"; ?>
 
     <!--********************************
-			Code End  Here 
-	******************************** -->
+            Code End  Here 
+    ******************************** -->
 
     <!-- Scroll To Top -->
     <div class="scroll-top">

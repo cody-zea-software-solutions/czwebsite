@@ -9,28 +9,20 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Codyzea - Web, Software & App Development Pricing Plans</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <meta name="author" content="Cody Zea Software Solutions">
+    <meta name="description"
+        content="Transparent & Affordable Pricing - Explore Cody Zea Software Solutions' pricing plans for Web Design, Branding, Digital Marketing, and App Development. Choose a plan that fits your business!">
+    <meta name="keywords"
+        content="Cody Zea, Pricing Plans, Web Design Pricing, App Development Costs, Digital Marketing Packages, Affordable Software Solutions, Custom Pricing, Business Growth">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/logocz.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/logocz.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/logocz.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/logocz.png">
@@ -42,8 +34,8 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
-	  Google Fonts
-	============================== -->
+      Google Fonts
+    ============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -62,8 +54,8 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <!--==============================
-	    All CSS File
-	============================== -->
+        All CSS File
+    ============================== -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -93,22 +85,28 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
     <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5 bg-color">
         <div class="row mt-0 mt-md-3">
             <div class="col-lg-6 order-2 order-lg-1 d-flex justify-content-center">
-                <img src="assets/img/hero/hero_3_1.png" alt="" class="img-fluid pricing-image d-none d-md-flex" style="width: 400px; height: 450px;">
+                <img src="assets/img/hero/hero_3_1.png" alt="" class="img-fluid pricing-image d-none d-md-flex"
+                    style="width: 400px; height: 450px;">
             </div>
             <div class="col-lg-6 order-1 order-lg-2 mt-3 px-md-5 px-lg-0">
                 <div class="title-area mb-25 mt-n1 mt-4 text-start text-md-end text-lg-start">
                     <span class="sub-title sub-title4 style1 text-ani-style2">Pricing</span>
-                    <h2 class="sec-title text-ani-style3 text-start">Choose the Perfect Plan for Your Business Needs</h2>
+                    <h2 class="sec-title text-ani-style3 text-start">Choose the Perfect Plan for Your Business Needs
+                    </h2>
                 </div>
-                <p class="mt-n2 mb-30 d-none">Click on any of the packages below to explore <b>detailed pricing and features</b>. Each package is designed to meet different business needs, ensuring you get the best digital solutions for your goals.</p>
+                <p class="mt-n2 mb-30 d-none">Click on any of the packages below to explore <b>detailed pricing and
+                        features</b>. Each package is designed to meet different business needs, ensuring you get the
+                    best digital solutions for your goals.</p>
                 <div class="info-list">
                     <div class="info-item">
                         <span class="info-icon"></span>
-                        <p class="info-text">Offering <?php echo $s_d->num_rows; ?>+ innovative digital solutions to boost business growth.</p>
+                        <p class="info-text">Offering <?php echo $s_d->num_rows; ?>+ innovative digital solutions to
+                            boost business growth.</p>
                     </div>
                     <div class="info-item">
                         <span class="info-icon"></span>
-                        <p class="info-text">Trusted by startups and enterprises for cutting-edge digital strategies.</p>
+                        <p class="info-text">Trusted by startups and enterprises for cutting-edge digital strategies.
+                        </p>
                     </div>
                     <div class="info-item">
                         <span class="info-icon"></span>
@@ -137,18 +135,22 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         </div>
         <div class="row">
             <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Select a Package </span><br>
-                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">Simply click on any of the packages below to view its pricing and features.</span>
-                <p class="d-md-none mt-4 px-3">Simply click on any of the packages below to view its pricing and features.</p>
+                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">Simply
+                    click on any of the packages below to view its pricing and features.</span>
+                <p class="d-md-none mt-4 px-3">Simply click on any of the packages below to view its pricing and
+                    features.</p>
             </div>
             <div class="col-12 pb-5 px-50 mt-4">
                 <div class="row d-flex gap-4 align-items-center justify-content-center px-0 px-md-5">
                     <?php
                     while ($sd = $s_d->fetch_assoc()) {
-                    ?>
-                        <button class="gradient-border-button w-auto px-3 px-md-5 py-2 py-md-3" id="triggerBtn_<?php echo $sd['sol_id']; ?>" onclick="triggerBtn('<?php echo $sd['sol_id']; ?>');">
+                        ?>
+                        <button class="gradient-border-button w-auto px-3 px-md-5 py-2 py-md-3"
+                            id="triggerBtn_<?php echo $sd['sol_id']; ?>"
+                            onclick="triggerBtn('<?php echo $sd['sol_id']; ?>');">
                             <span><?php echo $sd['sol_name']; ?></span>
                         </button>
-                    <?php
+                        <?php
                     }
                     ?>
                 </div>
@@ -157,7 +159,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
     </div>
 
     <div class="container-fluid" id="resBox">
-        
+
         <div class="row">
 
             <!--============================== Price Area  ==============================-->
@@ -171,13 +173,14 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
     <?php require_once "footer.php"; ?>
 
     <!--********************************
-			Code End  Here 
-	******************************** -->
+            Code End  Here 
+    ******************************** -->
 
     <!-- Scroll To Top -->
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
         </svg>
     </div>

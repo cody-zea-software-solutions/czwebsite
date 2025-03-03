@@ -7,29 +7,21 @@ require_once "guest.php";
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Portfolio</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <title>Offers - Cody Zea</title>
+    <meta name="author" content="Cody Zea Software Solutions">
+    <meta name="description"
+        content="Exclusive Offers from Cody Zea Software Solutions - Get the Best Deals on Web Design, Branding, Digital Marketing, and App Development Services. Limited-Time Discounts!">
+    <meta name="keywords"
+        content="Cody Zea, Web Design Offers, App Development Deals, Branding Discounts, Digital Marketing Packages, Software Solutions, Best Prices, Limited-Time Offers">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
@@ -144,12 +136,14 @@ require_once "guest.php";
             <?php
             $couponD = Databases::Search("SELECT * FROM `offer` INNER JOIN `coupon` ON `coupon`.`c_id`=`offer`.`of_coupon` ");
             while ($coupon = $couponD->fetch_assoc()) {
-            ?>
-                <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#couponModal<?php echo $coupon['of_id']; ?>" data-bs-toggle="modal">
+                ?>
+                <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#couponModal<?php echo $coupon['of_id']; ?>"
+                    data-bs-toggle="modal">
                     <img src="assets/offers/offer001.jpg" class="img-fluid" alt="">
                 </div>
                 <!-- Modal 001 -->
-                <div class="modal fade" id="couponModal<?php echo $coupon['of_id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="couponModal<?php echo $coupon['of_id']; ?>" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content rounded-0 border-0">
 
@@ -165,21 +159,24 @@ require_once "guest.php";
                                         </div>
                                         <div class="col-12 text-center">
                                             <span class="fs-1 text-black">
-                                            <?php echo $coupon['of_name']; ?>
+                                                <?php echo $coupon['of_name']; ?>
                                             </span>
                                             <p class="text-black fs-6">
-                                            <?php echo $coupon['of_desc']; ?>
+                                                <?php echo $coupon['of_desc']; ?>
                                             </p>
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
                                             <div class="coupon-row">
-                                            <span class="cpnCode" id="cpnCode<?php echo $coupon['of_id']; ?>"><?php echo $coupon['c_code']; ?></span>
-                                            <span class="cpnBtn" id="cpnBtn<?php echo $coupon['of_id']; ?>" onclick="copyCode(<?php echo $coupon['of_id']; ?>)">Copy Code</span>
+                                                <span class="cpnCode"
+                                                    id="cpnCode<?php echo $coupon['of_id']; ?>"><?php echo $coupon['c_code']; ?></span>
+                                                <span class="cpnBtn" id="cpnBtn<?php echo $coupon['of_id']; ?>"
+                                                    onclick="copyCode(<?php echo $coupon['of_id']; ?>)">Copy Code</span>
                                             </div>
                                         </div>
                                         <div class="col-12 mt-2 d-flex justify-content-center">
                                             <div class="text-center text-xl-start col-10">
-                                                <a onclick="claimCoupon(<?php echo $coupon['c_id']; ?>);" style="cursor: pointer;"
+                                                <a onclick="claimCoupon(<?php echo $coupon['c_id']; ?>);"
+                                                    style="cursor: pointer;"
                                                     class="th-btn style4 th-radius fs-5 bg-black fs-5 col-12">
                                                     Claim Your Offer
                                                     Today
@@ -195,8 +192,9 @@ require_once "guest.php";
                         </div>
                     </div>
                 </div>
-            <?php
-            };
+                <?php
+            }
+            ;
             ?>
         </div>
 
@@ -274,7 +272,7 @@ require_once "guest.php";
     <?php
     require "footer.php"
 
-    ?>
+        ?>
 
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

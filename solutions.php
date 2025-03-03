@@ -4,29 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Portfolio</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <title>Solutions – Smart Strategies for Business Growth</title>
+    <meta name="author" content="Cody Zea Software Solutions">
+    <meta name="description"
+        content="Smart solutions, big results! Cody Zea Software Solutions offers expert web development, branding, digital marketing, and custom software to drive your success.">
+    <meta name="keywords"
+        content="Cody Zea, Business Solutions, Web Development, Digital Marketing, Branding, Custom Software, E-Commerce, App Development">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
@@ -133,8 +125,9 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-            
-            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='solution-01.php'" style="cursor: pointer;">
+
+            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='solution-01.php'"
+                style="cursor: pointer;">
                 <div class="col-12 rounded-20"
                     style="background-image: url(assets/solution001.webp); background-size: cover; background-position: center; min-height: 40vh;">
                 </div>
@@ -151,7 +144,8 @@
                 </div>
 
             </div>
-            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='solution-02.php'" style="cursor: pointer;">
+            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='solution-02.php'"
+                style="cursor: pointer;">
                 <div class="col-12 rounded-20"
                     style="background-image: url(assets/solu002.jpg); background-size: cover; background-position: center; min-height: 40vh;">
                 </div>
@@ -168,7 +162,8 @@
                 </div>
 
             </div>
-            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='solution-03.php'" style="cursor: pointer;">
+            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='solution-03.php'"
+                style="cursor: pointer;">
                 <div class="col-12 rounded-20"
                     style="background-image: url(assets/hmsolbg.jpg); background-size: cover; background-position: center; min-height: 40vh;">
                 </div>

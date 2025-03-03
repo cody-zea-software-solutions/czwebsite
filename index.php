@@ -7,29 +7,20 @@ require_once "assets/process/database.php";
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Home SEO Analysis Agency</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <title>Home - Cody Zea</title>
+    <meta name="author" content="Cody Zea Software Solutions">
+    <meta name="description"
+        content="Cody Zea Software Solutions - Expert Web Design, Branding, Digital Marketing, and App Development Services. Build faster, smarter, and better with us!">
+    <meta name="keywords"
+        content="Cody Zea, Web Design, App Development, Branding, Digital Marketing, Software Solutions, E-Commerce, Fast Websites, Business Growth">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
@@ -66,7 +57,8 @@ require_once "assets/process/database.php";
         .orange-border {
             border: 2px solid #FF5C35 !important;
         }
-        .hover{
+
+        .hover {
             cursor: pointer;
         }
     </style>
@@ -115,7 +107,7 @@ Hero Area
                     <div class="hero-style3">
                         <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span>
                         <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software & App
-                            Solutions <div class="mt-3"></div> <span class="text-large font-jon text-o">Built
+                            Solutions <div class="mt-3"></div> <span class="text-large">Built
                                 for Your Success</span></h6>
                         <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that empower
                             your business. Whether it's a website, a mobile app, or software, we help you scale,
@@ -615,7 +607,8 @@ portfolio Area
                         <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us</span>
                         <h2 class="sec-title text-ani-style3 text-white">Cody Zea – Solutions Bright, Done Right</h2>
                     </div>
-                    <p class="sec-text mb-35 fs-4">In a fast-moving digital world, choosing the right tech partner is crucial
+                    <p class="sec-text mb-35 fs-4">In a fast-moving digital world, choosing the right tech partner is
+                        crucial
                     </p>
                     <div class="choose-feature-wrap">
                         <div class="choose-feature">
@@ -909,7 +902,8 @@ Cta Area
                     interactions into meaningful relationships that fuel business growth.
                 </p>
                 <div class="btn-group">
-                    <a href="digital-marketing.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Grow Your Audience
+                    <a href="digital-marketing.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Grow Your
+                        Audience
                         <i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
@@ -921,7 +915,7 @@ Cta Area
     <!--==============================
 Price Area  
 ==============================-->
-<section class=" bg-smoke2 overflow-hidden space">
+    <section class=" bg-smoke2 overflow-hidden space">
         <?php
         $gg = 1;
         $conn = Databases::getConnection();
@@ -933,7 +927,7 @@ Price Area
         if ($result->num_rows > 0) {
             $sol_name = $result->fetch_assoc();
 
-        ?>
+            ?>
 
             <div class="container px-md-5">
                 <div class="title-area text-center">
@@ -953,28 +947,35 @@ Price Area
 
                         for ($x = 1; $x <= $result->num_rows; $x++) {
                             $data = $result->fetch_assoc();
-                        ?>
+                            ?>
 
                             <div class="col-xl-4 col-md-6">
                                 <div class="price-box th-ani <?php if ($x == 2) {
-                                                                    echo "active orange-border";
-                                                                } else {
-                                                                    echo "side-border";
-                                                                } ?>">
+                                    echo "active orange-border";
+                                } else {
+                                    echo "side-border";
+                                } ?>">
                                     <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                                                            echo "popular";
-                                                                        } ?></span>
+                                        echo "popular";
+                                    } ?></span>
                                     <div class="text-center">
                                         <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
-                                        <h4 class="box-price" style="margin-bottom: 0px !important;"><span class="price-tag"></span><span class="text-orange">$<?php echo $data['pack_price']; ?></span></h4>
-                                        <h5 style="margin-top: 0px !important; font-weight: 600 !important;" class="text-decoration-line-through text-o">$<?php echo $data['pack_before_price']; ?></h5>
-                                        <p class="box-text2 text-dark" style="padding: 0px;"><?php echo $data['pack_desc']; ?></p>
+                                        <h4 class="box-price" style="margin-bottom: 0px !important;"><span
+                                                class="price-tag"></span><span
+                                                class="text-orange">$<?php echo $data['pack_price']; ?></span></h4>
+                                        <h5 style="margin-top: 0px !important; font-weight: 600 !important;"
+                                            class="text-decoration-line-through text-o">
+                                            $<?php echo $data['pack_before_price']; ?></h5>
+                                        <p class="box-text2 text-dark" style="padding: 0px;"><?php echo $data['pack_desc']; ?>
+                                        </p>
                                     </div>
-                                    <a href="package-details.php?package_identity=<?php echo $data['pack_id']; ?>" class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
+                                    <a href="package-details.php?package_identity=<?php echo $data['pack_id']; ?>"
+                                        class="th-btn style4 btn-fw th-radius th-icon">Get Started<i
                                             class="fa-regular fa-arrow-right ms-2"></i></a>
                                     <div class="box-content">
-                                        <div class="available-list" style="padding-left: 10px !important; padding-right: 10px !important; margin: 0px !important;">
+                                        <div class="available-list"
+                                            style="padding-left: 10px !important; padding-right: 10px !important; margin: 0px !important;">
 
                                             <ul>
                                                 <?php
@@ -1001,13 +1002,13 @@ Price Area
                                                     $n = $n + 1;
                                                     $fet = $results->fetch_assoc();
                                                     if ($fet['status'] == 1) {
-                                                ?>
+                                                        ?>
                                                         <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
+                                                        <?php
                                                     } else {
-                                                    ?>
+                                                        ?>
                                                         <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                <?php
+                                                        <?php
                                                     }
                                                 }
                                                 ?>
@@ -1017,13 +1018,13 @@ Price Area
                                                     for ($y = 1; $y <= $part2; $y++) {
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                    ?>
+                                                            ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                            <?php
                                                         } else {
-                                                        ?>
+                                                            ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
+                                                            <?php
                                                         }
                                                     }
                                                     ?>
@@ -1034,12 +1035,14 @@ Price Area
                                     </div>
 
                                     <div class="text-center text-dark mt-3">
-                                        <span class="text-o fw-semibold hover" onclick="showMore(<?php echo $x; ?>);" id="showMoreBtn_<?php echo $x; ?>"><i class="bi bi-chevron-double-down h6"></i>&nbsp;More Features</span>
+                                        <span class="text-o fw-semibold hover" onclick="showMore(<?php echo $x; ?>);"
+                                            id="showMoreBtn_<?php echo $x; ?>"><i
+                                                class="bi bi-chevron-double-down h6"></i>&nbsp;More Features</span>
                                     </div>
                                 </div>
                             </div>
 
-                        <?php
+                            <?php
                         }
                         ?>
 
@@ -1047,7 +1050,7 @@ Price Area
                 </div>
 
             </div>
-        <?php
+            <?php
         }
         ?>
     </section>

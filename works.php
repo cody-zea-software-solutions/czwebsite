@@ -4,29 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Portfolio</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <title>Our Work – Proven Results, Real Impact</title>
+    <meta name="author" content="Cody Zea Software Solutions">
+    <meta name="description"
+        content="Explore our work – See how Cody Zea Software Solutions has helped businesses grow with expert web design, branding, digital marketing, and app development.">
+    <meta name="keywords"
+        content="Cody Zea, Our Work, Portfolio, Web Design Projects, Branding Case Studies, Digital Marketing Success, App Development Examples">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
@@ -141,7 +133,8 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="work-ceylonmoss.php">Ceylon Moss - Website Design</a></h3>
+                                <h3 class="box-title"><a href="work-ceylonmoss.php">Ceylon Moss - Website Design</a>
+                                </h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -156,7 +149,8 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="work-boozebites.php">Booze Bites - Website Design</a></h3>
+                                <h3 class="box-title"><a href="work-boozebites.php">Booze Bites - Website Design</a>
+                                </h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -171,7 +165,8 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="work-p-s-Vidyapeetaya.php">Pradeepa Sangeet Institute - Website Design</a></h3>
+                                <h3 class="box-title"><a href="work-p-s-Vidyapeetaya.php">Pradeepa Sangeet Institute -
+                                        Website Design</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -200,7 +195,9 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><tme href="work-edupathlk.php">EdupathLK - Learning Management System</tme></h3>
+                                <h3 class="box-title">
+                                    <tme href="work-edupathlk.php">EdupathLK - Learning Management System</tme>
+                                </h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -226,114 +223,7 @@
     </section><!--==============================
 Brand Area  
 ==============================-->
-    <div class="brand-sec overflow-hidden bg-smoke2 bg-white space-bottom">
-        <div class="container th-container">
-            <div class="slider-area text-center">
-                <div class="swiper th-slider" id="brandSlider1"
-                    data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"476":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"6"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_1.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_2.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_3.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_4.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_5.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-item style4">
-                                <a href="">
-                                    <img class="original" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                    <img class="gray" src="assets/img/brand/brand_1_6.svg" alt="Brand Logo">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
 
     <?php
     require "footer.php"

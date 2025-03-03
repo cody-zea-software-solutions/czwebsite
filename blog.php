@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Codyzea - Tech Talks: Exploring the World of Software</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="author" content="Cody Zea Software Solutions">
+<meta name="description" content="Stay updated with the latest trends, insights, and expert tips on web development, branding, digital marketing, and business growth.">
+<meta name="keywords" content="Cody Zea, Blog, Digital Marketing Tips, Web Development, Branding Strategies, Business Growth, E-Commerce Insights">
+<meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
