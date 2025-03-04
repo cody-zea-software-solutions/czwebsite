@@ -1,4 +1,7 @@
-<footer class="footer-wrapper footer-layout3">
+<!--==============================
+    Footer Area
+==============================-->
+<footer class="footer-wrapper bg-title default-footer">
         <div class="widget-area">
             <div class="container">
                 <div class="row justify-content-between">
@@ -6,8 +9,8 @@
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo">
-                                    <a class="icon-masking" href="index.html"><img src="assets/img/logo-white.svg"
-                                            alt="saor"></a>
+                                    <a class="icon-masking" href="index.html"><span data-mask-src="assets/img/logo.svg"
+                                            class="mask-icon"></span><img src="assets/img/logo.svg" alt="codyzea"></a>
                                 </div>
                                 <p class="about-text">Codyzea represents our commitment to unlocking your brand’s true potential in the digital world. As a registered company in New Zealand and Sri Lanka, we provide innovative solutions to help your business grow.</p>
                                 <div class="th-social">
@@ -24,32 +27,30 @@
                             <h3 class="widget_title">Company</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="service.html">Our Services</a></li>
-                                    <li><a href="blog.html">Our Blogs</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="pricing.php">Pricing</a></li>
+                                    <li><a href="offers.php">Offers</a></li>
+                                    <li><a href="blog.php">Blogs</a></li>
+                                    <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Quick Links</h3>
+                            <h3 class="widget_title">Our Business Solutions</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="contact.html">Terms & Conditions</a></li>
-                                    <li><a href="contact.html">Forum Community</a></li>
-                                    <li><a href="contact.html">Business Support</a></li>
-                                    <li><a href="contact.html">Payment Gateway</a></li>
-                                    <li><a href="contact.html">Web Development</a></li>
+                                    <li><a href="solution-01.php">for Startup Businesses</a></li>
+                                    <li><a href="solution-02.php">for Shop Owners</a></li>
+                                    <li><a href="solution-03.php">for Restaurants & Motels</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget footer-widget">
-                            <h3 class="widget_title">Contact Info</h3>
+                            <h3 class="widget_title">Get In Touch</h3>
                             <div class="th-widget-contact">
                                 <div class="info-box">
                                     <div class="box-icon">
@@ -90,7 +91,7 @@
                 <div class="row gy-2 align-items-center justify-content-between">
                     <div class="col-md-6">
                         <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a
-                                href="https://codyzea.com">Cody Zea</a>. All Rights Reserved.</p>
+                                href="codyzeafooter.com">Cody Zea</a>. All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-links">

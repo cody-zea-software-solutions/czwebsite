@@ -29845,3 +29845,66 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.fullscreen-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fullscreen-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.fullscreen-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 100%;
+  transition: left 0.5s ease-in-out;
+}
+
+.fullscreen-slide.active-slide {
+  left: 0;
+}
+
+.fullscreen-nav-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.fullscreen-nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wave-section {
+  position: relative;
+  background-color: #FF5C35;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  background-color: #FF5C35;
+}

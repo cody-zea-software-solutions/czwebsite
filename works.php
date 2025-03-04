@@ -117,12 +117,12 @@
                         <h2 class="sec-title text-ani-style3">Our Recent Work Gallerys</h2>
                     </div>
                 </div>
-                <div class="col-auto">
+                <!-- <div class="col-auto">
                     <div class="sec-btn">
                         <a href="service.html" class="th-btn ser-btn th-icon">View All Work<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div> <!-- / Title row -->
             <div class="row gx-80">
                 <div class="col-md-6 project-box_wrapp">
@@ -195,9 +195,7 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title">
-                                    <tme href="work-edupathlk.php">EdupathLK - Learning Management System</tme>
-                                </h3>
+                                <h3 class="box-title"><a href="work-edupathlk.php">EdupathLK - Learning Management System</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -211,7 +209,35 @@
                         <div class="box-wrapp">
                             <div class="project-content">
                                 <p class="box-subtitle">Solution</p>
-                                <h3 class="box-title"><a href="#">Cheers Lanka Travels - Web Design</a></h3>
+                                <h3 class="box-title"><a href="work-cl-travel.php">Cheers Lanka Travels - Web Design</a></h3>
+                            </div>
+                            <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-box_wrapp">
+                    <div class="project-box style2">
+                        <div class="box-img global-img">
+                            <img src="assets/conillus.jpg" alt="project image">
+                        </div>
+                        <div class="box-wrapp">
+                            <div class="project-content">
+                                <p class="box-subtitle">Solution</p>
+                                <h3 class="box-title"><a href="work-cococoirworld.php">Coco Coir World - Web Design</a></h3>
+                            </div>
+                            <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-box_wrapp">
+                    <div class="project-box style2">
+                        <div class="box-img global-img">
+                            <img src="assets/works-cover/img_caro-005.jpg" alt="project image">
+                        </div>
+                        <div class="box-wrapp">
+                            <div class="project-content">
+                                <p class="box-subtitle">Solution</p>
+                                <h3 class="box-title"><a href="work-readinglk.php">ReadingLK - Online Book Management System</a></h3>
                             </div>
                             <span class="icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                         </div>

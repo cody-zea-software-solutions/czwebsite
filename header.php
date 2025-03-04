@@ -1,3 +1,11 @@
+<?php
+$included_files = get_included_files();
+
+if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets/process/database.php'), $included_files)) {
+    require_once "db.php";
+}
+?>
+
 <!--==============================
      Preloader
   ==============================-->
@@ -12,16 +20,16 @@
     </div>
 
 </div>
-<div class="popup-search-box d-none d-lg-block">
+<!-- <div class="popup-search-box d-none d-lg-block">
     <button class="searchClose"><i class="fal fa-times"></i></button>
     <form action="#">
         <input type="text" placeholder="What are you looking for?">
         <button type="submit"><i class="fal fa-search"></i></button>
     </form>
-</div>
+</div> -->
 <!--==============================
-|    Mobile Menu                  |
-============================== -->
+    Mobile Menu
+  ============================== -->
 <div class="th-menu-wrapper">
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -144,21 +152,27 @@
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
-                                            <div class="col-12 col-lg-4 d-flex">
-                                                <div class="choose-feature-wrap">
-                                                    <div class="choose-feature cody-bg p-3 rounded-20">
-                                                        <div class="box-icon">
-                                                            <img src="assets/offers.svg" alt="Icon">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h3 class="cody-text fs-5">24-Hour Website Delivery </h3>
-                                                            <p class="cody-text">Launch your website in just 24 hours!
-                                                                Get your custom website designed, developed, and ready
-                                                                to go live within one day.</p>
+                                            <?php
+                                            $offerD = Databases::Search("SELECT * FROM `offer` LIMIT 3");
+                                            while ($offer = $offerD->fetch_assoc()) {
+                                            ?>
+                                                <div class="col-12 col-lg-4 d-flex">
+                                                    <div class="choose-feature-wrap">
+                                                        <div class="choose-feature cody-bg p-3 rounded-20">
+                                                            <div class="box-icon">
+                                                                <img src="assets/offers.svg" alt="Icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h3 class="cody-text fs-5"><?php echo $offer['of_name'] ?></h3>
+                                                                <p class="cody-text"><?php echo $offer['of_desc'] ?></p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            <?php
+                                            }
+                                            ?>
+
                                             <div class="col-12 col-lg-4 d-flex">
                                                 <div class="choose-feature-wrap">
                                                     <div class="choose-feature cody-bg p-3 rounded-20">
@@ -205,13 +219,20 @@
                                     <a href="solutions.php" class="text-black fw-semibold fs-6 hover-nav">Solutions</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
-                                        <div class="row d-flex justify-content-center">
-
-                                            <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
-                                                onclick="window.location.href='solution-01.php'"
-                                                style="cursor: pointer;">
-                                                <div class="col-12 rounded-20"
-                                                    style="background-image: url(assets/solution001.webp); background-size: cover; background-position: center; min-height: 40vh;">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6 d-flex">
+                                                <div class="choose-feature-wrap">
+                                                    <div class="choose-feature cody-bg p-3 rounded-20">
+                                                        <div class="box-icon">
+                                                            <img src="assets/img/icon/choose_feature_1_1.svg"
+                                                                alt="Icon">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h3 class="cody-text fs-5">Startup Made Easy – Choose Cody Zea
+                                                            </h3>
+                                                            <p class="cody-text">Effortless branding, web design, and digital growth—let’s build your success together!</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="col-12 p-4">
                                                     <span class="text-black fs-4 text-orange-hover">
@@ -257,14 +278,6 @@
                                                 </div>
 
                                             </div>
-                                        </div>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="blog.php" class="text-black fw-semibold fs-6 hover-nav">Blogs</a>
-                                    <ul class="mega-menu" style="width: 1500px;">
-                                        <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
-                                        <div class="row">
                                             <div class="col-12 col-lg-6 d-flex">
                                                 <div class="choose-feature-wrap">
                                                     <div class="choose-feature cody-bg p-3 rounded-20">
@@ -273,33 +286,71 @@
                                                                 alt="Icon">
                                                         </div>
                                                         <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Registered in New Zealand & Sri
-                                                                Lanka
+                                                            <h3 class="cody-text fs-5">Growth Business Solution for Shop Owners
                                                             </h3>
-                                                            <p class="cody-text">We operate as a fully registered
-                                                                company
-                                                                in both countries, ensuring credibility and trust in
-                                                                every project.</p>
+                                                            <p class="cody-text">A Complete E-Commerce & Marketing Package to Scale Your Business.</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="blog.php" class="text-black fw-semibold fs-6">Blogs</a>
+                                    <ul class="mega-menu" style="width: 1500px;">
+                                        <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
+                                        <div class="row">
+                                            <?php
+                                            $blogD = Databases::Search("SELECT * FROM `blogs` LIMIT 2");
+                                            while ($blog = $blogD->fetch_assoc()) {
+                                            ?>
+                                                <div class="col-12 col-lg-6 d-flex">
+                                                    <div class="choose-feature-wrap">
+                                                        <div class="choose-feature cody-bg p-3 rounded-20">
+                                                            <div class="box-icon">
+                                                                <img src="assets/img/icon/choose_feature_1_1.svg"
+                                                                    alt="Icon">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h3 class="cody-text fs-5"><?php echo $blog['blog_name'] ?>
+                                                                </h3>
+                                                                <style>
+                                                                    .cody-text {
+                                                                        display: -webkit-box;
+                                                                        -webkit-line-clamp: 2;
+                                                                        /* Adjust the number of lines */
+                                                                        -webkit-box-orient: vertical;
+                                                                        overflow: hidden;
+                                                                        text-overflow: ellipsis;
+                                                                        max-width: 100%;
+                                                                    }
+                                                                </style>
+                                                                <p class="cody-text" ><?php echo $blog['blog_desc'] ?></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php
+                                            }
+                                            ?>
                                         </div>
                                     </ul>
                                 </li>
                                 <li><a href="contact.php" class="text-black fw-semibold fs-6 hover-nav">Contact Us</a></li>
                             </ul>
                         </nav>
-                        <div class="header-button">
+                        <!-- <div class="header-button d-none">
                             <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i
                                     class="far fa-bars text-b fw-semibold"></i></button>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-button">
-                            <button type="button" class="icon-btn th-radius searchBoxToggler"><i
-                                    class="far fa-search text-b fw-semibold"></i></button>
-                            <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i
+                            <!-- <button type="button" class="icon-btn th-radius searchBoxToggler"><i
+                                    class="far fa-search text-b fw-semibold"></i></button> -->
+                            <a href="about.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
 
                         </div>
