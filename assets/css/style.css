@@ -144,6 +144,46 @@ body {
 .text-black{
   color: #000000 !important;
 }
+/* From Uiverse.io by csozidev */ 
+/* SVG loader made by: csozi | Website: www.csozi.hu*/
+.hover-nav:hover{
+  color: #FF5C35 !important;
+}
+
+.loader-2 {
+  width: 100px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #ffffff 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0px;
+  }
+
+  100% {
+    stroke-dashoffset: 200px;
+    /* <-- This number should always be 10 times the number up there*/
+  }
+}
+
 .fw-thin{
   font-optical-sizing: auto;
   font-weight: 200 !important;

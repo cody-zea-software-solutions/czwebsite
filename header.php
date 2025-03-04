@@ -1,11 +1,16 @@
 <!--==============================
      Preloader
   ==============================-->
-  <div class="preloader ">
+<div class="preloader ">
     <div class="preloader-inner">
-        <img src="assets/img/logo.svg" alt="Rasm">
-        <span class="loader"></span>
+        <img src="assets/loader.svg" class="w-50 img-fluid" alt="Rasm">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="loader-2">
+            </div>
+        </div>
+
     </div>
+
 </div>
 <div class="popup-search-box d-none d-lg-block">
     <button class="searchClose"><i class="fal fa-times"></i></button>
@@ -13,9 +18,10 @@
         <input type="text" placeholder="What are you looking for?">
         <button type="submit"><i class="fal fa-search"></i></button>
     </form>
-</div><!--==============================
-    Mobile Menu
-  ============================== -->
+</div>
+<!--==============================
+|    Mobile Menu                  |
+============================== -->
 <div class="th-menu-wrapper">
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -131,10 +137,10 @@
                     <div class="col-auto">
                         <nav class="main-menu d-none d-lg-inline-block">
                             <ul>
-                                <li><a href="index.php" class="text-black fw-semibold fs-6">Home</a></li>
-                                <li><a href="pricing.php" class="text-black fw-semibold fs-6">Pricing</a></li>
+                                <li><a href="index.php" class="text-black fw-semibold fs-6 hover-nav">Home</a></li>
+                                <li><a href="pricing.php" class="text-black fw-semibold fs-6 hover-nav">Pricing</a></li>
                                 <li class="menu-item-has-children">
-                                    <a href="offers.php" class="text-black fw-semibold fs-6">Offers</a>
+                                    <a href="offers.php" class="text-black fw-semibold fs-6 hover-nav">Offers</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -196,34 +202,66 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="solutions.php" class="text-black fw-semibold fs-6">Solutions</a>
+                                    <a href="solutions.php" class="text-black fw-semibold fs-6 hover-nav">Solutions</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6 d-flex">
-                                                <div class="choose-feature-wrap">
-                                                    <div class="choose-feature cody-bg p-3 rounded-20">
-                                                        <div class="box-icon">
-                                                            <img src="assets/img/icon/choose_feature_1_1.svg"
-                                                                alt="Icon">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Registered in New Zealand & Sri
-                                                                Lanka
-                                                            </h3>
-                                                            <p class="cody-text">We operate as a fully registered
-                                                                company
-                                                                in both countries, ensuring credibility and trust in
-                                                                every project.</p>
-                                                        </div>
-                                                    </div>
+                                        <div class="row d-flex justify-content-center">
+
+                                            <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
+                                                onclick="window.location.href='solution-01.php'"
+                                                style="cursor: pointer;">
+                                                <div class="col-12 rounded-20"
+                                                    style="background-image: url(assets/solution001.webp); background-size: cover; background-position: center; min-height: 40vh;">
                                                 </div>
+                                                <div class="col-12 p-4">
+                                                    <span class="text-black fs-4 text-orange-hover">
+                                                        <i class="fa-regular fa-rocket text-orange"></i> Startup Success
+                                                        Made Simple: Your All-in-One
+                                                        Solution
+                                                    </span>
+                                            
+                                                  
+                                                </div>
+
+                                            </div>
+                                            <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
+                                                onclick="window.location.href='solution-02.php'"
+                                                style="cursor: pointer;">
+                                                <div class="col-12 rounded-20"
+                                                    style="background-image: url(assets/solu002.jpg); background-size: cover; background-position: center; min-height: 40vh;">
+                                                </div>
+                                                <div class="col-12 p-4">
+                                                    <span class="text-black fs-4 text-orange-hover">
+                                                        <i class="fa-regular fa-rocket text-orange"></i> Growth Business
+                                                        Solution for Shop Owners
+                                                    </span>
+                                          
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
+                                                onclick="window.location.href='solution-03.php'"
+                                                style="cursor: pointer;">
+                                                <div class="col-12 rounded-20"
+                                                    style="background-image: url(assets/hmsolbg.jpg); background-size: cover; background-position: center; min-height: 40vh;">
+                                                </div>
+                                                <div class="col-12 p-4">
+                                                    <span class="text-black fs-4 text-orange-hover">
+                                                        <i class="fa-regular fa-rocket text-orange"></i> Complete
+                                                        Business Growth Solution for
+                                                        Restaurants &
+                                                        Motels</span>
+                                         
+
+                                                </div>
+
                                             </div>
                                         </div>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="blog.php" class="text-black fw-semibold fs-6">Blogs</a>
+                                    <a href="blog.php" class="text-black fw-semibold fs-6 hover-nav">Blogs</a>
                                     <ul class="mega-menu" style="width: 1500px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
@@ -249,7 +287,7 @@
                                         </div>
                                     </ul>
                                 </li>
-                                <li><a href="contact.php" class="text-black fw-semibold fs-6">Contact Us</a></li>
+                                <li><a href="contact.php" class="text-black fw-semibold fs-6 hover-nav">Contact Us</a></li>
                             </ul>
                         </nav>
                         <div class="header-button">

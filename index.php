@@ -100,107 +100,223 @@ require_once "assets/process/database.php";
 Hero Area
 ==============================-->
     <!--============================== Hero Area ==============================-->
-    <div class="th-hero-wrapper hero-3 bg-color" id="hero">
-        <div class="container px-md-5">
-            <div class="row">
-                <div class="col-12 col-lg-7">
-                    <div class="hero-style3">
-                        <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span>
-                        <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software & App
-                            Solutions <div class="mt-3"></div> <span class="text-large">Built
-                                for Your Success</span></h6>
-                        <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that empower
-                            your business. Whether it's a website, a mobile app, or software, we help you scale,
-                            optimize, and succeed in the digital world.</p>
-                        <div class="btn-group">
-                            <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started Now<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+    <div class="container-fluid">
+        <div class="th-hero-wrapper hero-3 bg-color" id="hero">
+            <div class="container px-md-5 p-3">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="hero-style3">
+                            <!-- <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span> -->
+                            <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software &
+                                App
+                                Solutions <div class="mt-3"></div> <span class="text-large">Built
+                                    for Your Success</span></h6>
+                            <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that
+                                empower
+                                your business. Whether it's a website, a mobile app, or software, we help you scale,
+                                optimize, and succeed in the digital world.</p>
+                            <div class="btn-group">
+                                <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started
+                                    Now<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-md-none d-lg-block col-lg-5 d-flex justify-content-center align-items-center">
+                        <div class="hero-img tilt-active">
+                            <img src="assets/img/hero/hero_3_1.png" class="img-fluid" alt="Hero Image">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-5 mt-5">
-                    <div class="hero-img tilt-active">
-                        <img src="assets/img/hero/hero_3_1.png" class="img-fluid" alt="Hero Image">
-                    </div>
+
+                <div class="th-circle">
+                    <span class="circle style1"></span>
+                    <span class="circle style2"></span>
                 </div>
-            </div>
 
-            <div class="th-circle">
-                <span class="circle style1"></span>
-                <span class="circle style2"></span>
+
             </div>
-            <div class="hero-shape">
-                <img src="assets/img/shape/analysis.png" alt="">
-            </div>
+            <div class="shape-mockup z-index-3 movingX d-none d-xl-block" data-top="26%" data-right="9%"><img
+                    src="assets/img/shape/shape-17.png" alt=""></div>
+
+
         </div>
-        <div class="shape-mockup z-index-3 movingX d-none d-xl-block" data-top="26%" data-right="9%"><img
-                src="assets/img/shape/shape-17.png" alt=""></div>
-
 
     </div>
 
+    <div class="container space-extra m-5">
+        <div class="container position-absolute start-50 translate-middle space-extra" style="z-index: 1000;">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                    <img src="assets/app-icon/ai001.png" class="img-flud w-25" alt="Feature001"> <br />
+                    <div class="col-12 mt-3">
+                        <span class="fs-2 text-black">Tailored for NZ</span>
+                        <p class="text-black fw-thin fs-5">
+                            E-commerce solutions that fit your business.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                    <img src="assets/app-icon/ai002.png" class="img-flud w-25" alt="Feature001"> <br />
+                    <div class="col-12 mt-3">
+                        <span class="fs-2 text-black"> Fast & Secure</span>
+                        <p class="text-black fw-thin fs-5">
+                            Smooth shopping experiences for your customers.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                    <img src="assets/app-icon/ai003.png" class="img-flud w-25" alt="Feature001"> <br />
+                    <div class="col-12 mt-3">
+                        <span class="fs-2 text-black">Honest Pricing </span>
+                        <p class="text-black fw-thin fs-5">
+                            Clear, affordable plans with no surprises.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--======== / Hero Section ========-->
 
 
     <!--==============================
 About Area  
 ==============================-->
-    <div class="position-relative overflow-hidden space" id="about-sec">
-        <div class="container">
-            <div class="row gy-4 align-items-end">
-                <div class="col-xl-6 mt-30 mt-xl-0">
-                    <div class="img-box5">
-                        <div class="img1 th-anim">
-                            <img src="assets/img/normal/about_4_1.jpg" alt="About">
-                        </div>
-                        <div class="img2 th-anim">
-                            <img src="assets/img/normal/about_4_2.jpg" alt="About">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="title-area mb-25">
-                        <span class="sub-title sub-title7 style1 text-ani-style2">About Us</span>
-                        <h2 class="sec-title text-ani-style3">Smart solutions, seamless growth</h2>
-                    </div>
-                    <p class="mt-n2 mb-25 text-black">Cody Zea Software Solutions is an authorized software company in
-                        New Zealand
-                        and Sri Lanka, offering over two years of expertise in delivering innovative and reliable tech
-                        solutions. We specialize in custom software, development, UI/UX design, and customer support to
-                        help businesses grow and thrive in the digital world.</p>
-                    <div class="about-wrapper">
-                        <div class="checklist style3">
-                            <ul>
-                                <li><i class="fa-solid fa-shield-check text-orange"></i>Global Expert Team</li>
-                                <li><i class="fa-solid fa-shield-check text-orange"></i>Globally Recognized </li>
-                                <li><i class="fa-solid fa-shield-check text-orange"></i>24/7 Hour Customer Support</li>
-                            </ul>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="th-experience2">
-                            <h2 class="experience-year"><span class="counter-number">02</span>+</h2>
-                            <p class="experience-text">Years of Experiences</p>
+    <div class="container space-extra">
+        <div class="position-relative overflow-hidden" id="about-sec">
+            <div class="container">
+                <div class="row gy-4 align-items-end">
+                    <div class="col-xl-6 mt-30 mt-xl-0">
+                        <div class="img-box5">
+                            <div class="img1 th-anim">
+                                <img src="assets/img/normal/about_4_1.jpg" alt="About">
+                            </div>
+                            <div class="img2 th-anim">
+                                <img src="assets/img/normal/about_4_2.jpg" alt="About">
+                            </div>
                         </div>
                     </div>
-                    <div class="btn-group style3 mt-35">
-                        <a href="about.html" class="th-btn th-radius th-icon text-white fs-4">More About<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
-                        <div class="call-btn style2">
-                            <div class="icon bg-orange"><i class="fas fa-phone"></i></div>
-                            <div class="media-body">
-                                <span class="btn-text">Call Now</span>
-                                <a href="tel:+64223568614" class="btn-title">
-                                    +64 22 356 8614</a>
+                    <div class="col-xl-6">
+                        <div class="title-area mb-25">
+                            <span class="sub-title sub-title7 style1 text-ani-style2">About Us</span>
+                            <h2 class="sec-title text-ani-style3 fs-1">Smart solutions, seamless growth</h2>
+                        </div>
+                        <p class="mt-n2 mb-25 text-black fs-5">Cody Zea Software Solutions is an authorized software
+                            company
+                            in
+                            New Zealand
+                            and Sri Lanka, offering over two years of expertise in delivering innovative and reliable
+                            tech
+                            solutions. We specialize in custom software, development, UI/UX design, and customer support
+                            to
+                            help businesses grow and thrive in the digital world.</p>
+                        <div class="about-wrapper">
+                            <div class="checklist style3">
+                                <ul>
+                                    <li class="fs-6"><i class="fa-solid fa-shield-check text-orange"></i>Global Expert
+                                        Team
+                                    </li>
+                                    <li class="fs-6"><i class="fa-solid fa-shield-check text-orange"></i>Globally
+                                        Recognized
+                                    </li>
+                                    <li class="fs-6"><i class="fa-solid fa-shield-check text-orange"></i>24/7 Hour
+                                        Customer
+                                        Support</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="th-experience2">
+                                <h2 class="experience-year"><span class="counter-number">02</span>+</h2>
+                                <p class="experience-text">Years of Experiences</p>
+                            </div>
+                        </div>
+                        <div class="btn-group style3 mt-35">
+                            <a href="about.html" class="th-btn th-radius th-icon text-white fs-4">More About<i
+                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <div class="call-btn style2">
+                                <div class="icon bg-orange"><i class="fas fa-phone"></i></div>
+                                <div class="media-body">
+                                    <span class="btn-text">Call Now</span>
+                                    <a href="tel:+64223568614" class="btn-title">
+                                        +64 22 356 8614</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="shape-mockup spin d-none d-xl-block" data-top="5%" data-left="10%"><img
-                src="assets/img/shape/shape-22.png" alt=""></div>
+            <!-- <div class="shape-mockup spin d-none d-xl-block" data-top="5%" data-left="10%"><img
+                src="assets/bulb-t.png" alt="illustartion-aboutussection"></div>
         <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-right="0%"><img
-                src="assets/img/shape/shape-23.png" alt=""></div>
+                src="assets/bulb-t.png" alt="illustartion-aboutussection"></div> -->
+        </div>
+
+    </div>
+
+    <div class="container position-relative">
+        <div class="row bg-color rounded-20 shadow-sm p-5">
+
+            <div class="col-12 col-lg-8 border-end border-1 border-dark">
+                <span class="text-black fs-1">Business Website Growth</span>
+                <p class="text-dark fs-5 mt-3">
+                    Accelerate your business growth with a website that drives traffic, enhances user experience, and
+                    converts visitors into loyal customers. Unlock the full potential of your online presence through
+                    optimization, SEO, and targeted digital strategies
+                </p>
+                <span class="text-black fs-2">What's Included</span>
+                <div class="row mt-3">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <ul class="list-unstyled">
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> SEO
+                                Friendly</li>
+                            <li class="text-black fs-5"></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <ul class="list-unstyled">
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> 05 Custom
+                                Page</li>
+                            <li class="text-black fs-5"></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <ul class="list-unstyled">
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Easy To
+                                Edit</li>
+                            <li class="text-black fs-5"></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <ul class="list-unstyled">
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Responsive
+                                Design</li>
+                            <li class="text-black fs-5"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 text-center">
+                <div class="col-12 mt-3">
+                    <span class="text-black fs-5">Pay As You Go</span> <br />
+                </div>
+                <div class="col-12 mt-3">
+                    <span class="text-black display-5">NZ$ 125</span> <br />
+                </div>
+                <div class="col-12 mt-3">
+                    <span class="text-black fs-1">Claim This Offer</span> <br />
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-3">
+                    <div class="btn-group">
+                        <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started Now<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -499,7 +615,7 @@ portfolio Area
                     </div>
                     <div class="portfolio-area">
                         <div class="row gy-4 filter-active">
-                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                            <div class="col-md-4 col-xl-auto filter-item cat1">
                                 <div class="project-item">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_2.jpg" alt="project image">
@@ -515,7 +631,7 @@ portfolio Area
                                 </div>
                             </div>
 
-                            <div class="col-md-6 col-xl-auto filter-item cat4 cat1 cat6">
+                            <div class="col-md-6 col-xl-auto filter-item cat2">
                                 <div class="project-item">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_5.jpg" alt="project image">
@@ -542,14 +658,16 @@ portfolio Area
                 <div class="container">
                     <div class="portfolio-area">
                         <div class="row gy-4 filter-active">
-                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                            <div class="col-md-4 col-xl-auto filter-item cat1">
                                 <div class="project-item">
                                     <div class="box-img global-img">
-                                        <img src="assets/img/project/project_1_2.jpg" alt="project image">
+                                        <img src="assets/img/project/ccw.svg" alt="project image">
                                     </div>
                                     <div class="box-content">
-                                        <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss -
-                                                https://ceylonmoss.com/</a></h3>
+                                        <h3 class="box-title">
+                                            <lon href="portfolio-details.html">Ceylon Coir World -
+                                                https://ceyloncoirworld.com/</lon>
+                                        </h3>
                                         <p class="box-subtitle">Web Design & Development</p>
                                     </div>
                                     <div class="box-btn"><a href="assets/img/project/project_1_2.jpg"
@@ -557,7 +675,7 @@ portfolio Area
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                            <div class="col-md-4 col-xl-auto filter-item cat1">
                                 <div class="project-item">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_3.jpg" alt="project image">
@@ -572,7 +690,7 @@ portfolio Area
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-xl-auto filter-item cat5 cat5 cat8 cat1">
+                            <div class="col-md-4 col-xl-auto filter-item cat1">
                                 <div class="project-item">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_4.jpg" alt="project image">
@@ -657,7 +775,7 @@ portfolio Area
 
 Testimonial Area  
 ==============================-->
-    <section class="overflow-hidden space-bottom mt-5" id="testi-sec">
+    <section class="overflow-hidden space-bottom mt-5 space" id="testi-sec">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
@@ -755,17 +873,21 @@ Testimonial Area
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-box th-ani">
-                                <p class="box-text">“The best service reinvent prospective metrics before granular
-                                    schema. Professionally metrics before expedite client-centric or analyzing before
-                                    expedite methods or analyzing feel free customer”</p>
+                                <p class="box-text">Working with Cody Zea Software Solutions was a game-changer for our
+                                    business. They took our vision and transformed it into a powerful digital presence.
+                                    From a sleek, user-friendly website to strategic branding and digital marketing,
+                                    every detail was handled with expertise and professionalism. Their team truly
+                                    understands business growth and goes beyond just creating a website – they craft
+                                    solutions that drive real results. Highly recommended for anyone looking to elevate
+                                    their brand!</p>
                                 <div class="box-wrapper">
                                     <div class="box-profile">
                                         <div class="box-author">
-                                            <img src="assets/img/testimonial/testi_4_4.png" alt="Avater">
+                                            <img src="assets/mini-ccw.svg" alt="Avater">
                                         </div>
                                         <div class="box-info">
-                                            <h3 class="box-title">Mary Crispy</h3>
-                                            <span class="box-desig">Head Manager</span>
+                                            <h3 class="box-title">Ceylon Coir World</h3>
+                                            <span class="box-desig">Founder</span>
                                         </div>
                                     </div>
                                     <div class="box-review">
@@ -780,17 +902,20 @@ Testimonial Area
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-box th-ani">
-                                <p class="box-text">“Completely drive innovative value whereas out-of-the-box paradigms.
-                                    Interactively pursue stand-alone markets after global results. Globally plagiarize
-                                    intermandated opportunities with. Progressively leverage”</p>
+                                <p class="box-text">ody Zea Software Solutions has been instrumental in transforming our
+                                    travel business. They designed a stunning, user-friendly website that makes booking
+                                    seamless for our customers. Their expertise in branding and digital marketing helped
+                                    us attract more travelers and stand out in the competitive tourism industry. The
+                                    team is professional, innovative, and always ready to go the extra mile. If you're
+                                    looking for real business growth, Cody Zea is the way to go!</p>
                                 <div class="box-wrapper">
                                     <div class="box-profile">
                                         <div class="box-author">
-                                            <img src="assets/img/testimonial/testi_4_1.png" alt="Avater">
+                                            <img src="assets/cl-mini.svg" alt="Avater">
                                         </div>
                                         <div class="box-info">
-                                            <h3 class="box-title">Jenny Wilson</h3>
-                                            <span class="box-desig">UI/UX Designer</span>
+                                            <h3 class="box-title">Cheers Travels</h3>
+                                            <span class="box-desig">Founder</span>
                                         </div>
                                     </div>
                                     <div class="box-review">
@@ -1156,6 +1281,51 @@ Price Area
             </div>
         </div>
     </section>
+
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-12 col-lg-6 mt-2">
+                <img src="assets/contact-hero.png" class="img-fluid" alt="ContactUsFormCover">
+            </div>
+            <div class="col-12 col-lg-6 mt-2">
+                <div class="col-12 bg-white rounded-20 border border-2 black-border p-2 p-lg-5">
+                    <span class="text-black display-6 text-orange">Have Questions?
+                    </span>
+                    <div class="col-12">
+                        <span class="display-5 text-black">Send us a Message
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fname">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="fmail">
+                        </div>
+                        <div class="col-12">
+                            <!-- Message -->
+                            <div class="mt-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="fmessage" rows="2"
+                                    placeholder="Any details or special requests?" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 mt-3 d-flex justify-content-center">
+                        <!-- Submit Button -->
+                        <div class="btn-group col-12">
+                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
+                                onclick="sendMessage();">Get in Touch
+                                <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--==============================
 Cta Area  
 ==============================-->
