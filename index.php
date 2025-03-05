@@ -1052,7 +1052,7 @@ Price Area
         if ($result->num_rows > 0) {
             $sol_name = $result->fetch_assoc();
 
-            ?>
+        ?>
 
             <div class="container px-md-5">
                 <div class="title-area text-center">
@@ -1072,17 +1072,17 @@ Price Area
 
                         for ($x = 1; $x <= $result->num_rows; $x++) {
                             $data = $result->fetch_assoc();
-                            ?>
+                        ?>
 
                             <div class="col-xl-4 col-md-6">
                                 <div class="price-box th-ani <?php if ($x == 2) {
-                                    echo "active orange-border";
-                                } else {
-                                    echo "side-border";
-                                } ?>">
+                                                                    echo "active orange-border";
+                                                                } else {
+                                                                    echo "side-border";
+                                                                } ?>">
                                     <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                        echo "popular";
-                                    } ?></span>
+                                                                            echo "popular";
+                                                                        } ?></span>
                                     <div class="text-center">
                                         <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
@@ -1127,13 +1127,13 @@ Price Area
                                                     $n = $n + 1;
                                                     $fet = $results->fetch_assoc();
                                                     if ($fet['status'] == 1) {
-                                                        ?>
+                                                ?>
                                                         <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                    <?php
                                                     } else {
-                                                        ?>
+                                                    ?>
                                                         <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                <?php
                                                     }
                                                 }
                                                 ?>
@@ -1143,13 +1143,13 @@ Price Area
                                                     for ($y = 1; $y <= $part2; $y++) {
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                            ?>
+                                                    ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                        <?php
                                                         } else {
-                                                            ?>
+                                                        ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                    <?php
                                                         }
                                                     }
                                                     ?>
@@ -1167,7 +1167,7 @@ Price Area
                                 </div>
                             </div>
 
-                            <?php
+                        <?php
                         }
                         ?>
 
@@ -1175,7 +1175,7 @@ Price Area
                 </div>
 
             </div>
-            <?php
+        <?php
         }
         ?>
     </section>
@@ -1200,81 +1200,64 @@ Price Area
                 <div class="swiper th-slider has-shadow" id="blogSlider4"
                     data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"}}}'>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="blog-card style2">
-                                <div class="box-img global-img">
-                                    <img src="assets/blog001.jpg" alt="blog image">
-                                </div>
-                                <div class="box-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fa-light fa-calendar"></i>january 10,
-                                            2025</a>
-                                        <a href="blog.html"><i class="fa-regular fa-clock"></i>08 min read</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">The Ultimate Guide to th Keywords
-                                            Research for SEO Success</a></h3>
-                                    <a href="blog-details.html" class="th-btn th-icon th-radius style2">Read More<i
-                                            class="fa-regular fa-arrow-right ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="swiper-slide">
-                            <div class="blog-card style2">
-                                <div class="box-img global-img">
-                                    <img src="assets/blog002.jpg" alt="blog image">
-                                </div>
-                                <div class="box-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fa-light fa-calendar"></i>january 10,
-                                            2025</a>
-                                        <a href="blog.html"><i class="fa-regular fa-clock"></i>08 min read</a>
+                        <?php
+                        $db = Databases::Search("SELECT * FROM `blogs` INNER JOIN `blog_categories` ON `blogs`.`blog_categories_bc_id` = `blog_categories`.`bc_id` ORDER BY `blog_date` ASC LIMIT 3");
+                        for ($x = 1; $x <= $db->num_rows; $x++) {
+                            $res = $db->fetch_assoc();
+                            $formattedDate = date('F j, Y', strtotime($res['blog_date']));
+                        ?>
+                            <div class="swiper-slide">
+                                <div class="blog-card style2">
+                                    <div class="box-img global-img">
+                                        <img src="<?php echo $res['blog_img']; ?>" alt="blog image">
                                     </div>
-                                    <h3 class="box-title"><a href="blog-details.html">What trends do we expect to start
-                                            growing in the coming future?</a></h3>
-                                    <a href="blog-details.html" class="th-btn th-icon th-radius style2">Read More<i
-                                            class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    <div class="box-content">
+                                        <div class="blog-meta">
+                                            <a class="text-orange"><i class="text-orange fa-light fa-calendar"></i><?php echo $formattedDate; ?></a>
+                                            <a class="text-orange"><i class="text-orange fa-regular fa-tags"></i><?php echo $res['bc_name']; ?></a>
+                                        </div>
+                                        <h3 class="box-title"><a><?php echo $res['blog_name']; ?></a></h3>
+                                        <a class="th-btn th-icon th-radius style2 hover" onclick="loadBlog(<?php echo $res['blog_id']; ?>);">Read More<i
+                                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php
+                        }
+                        ?>
 
-                        <div class="swiper-slide">
-                            <div class="blog-card style2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/blog/blog_3_1.jpg" alt="blog image">
-                                </div>
-                                <div class="box-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fa-light fa-calendar"></i>january 10,
-                                            2025</a>
-                                        <a href="blog.html"><i class="fa-regular fa-clock"></i>08 min read</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">The Ultimate Guide to th Keywords
-                                            Research for SEO Success</a></h3>
-                                    <a href="blog-details.html" class="th-btn th-icon th-radius style2">Read More<i
-                                            class="fa-regular fa-arrow-right ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <script>
+                            function loadBlog(id) {
+                                // Create a new XMLHttpRequest object
+                                var xhr = new XMLHttpRequest();
 
-                        <div class="swiper-slide">
-                            <div class="blog-card style2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/blog/blog_3_2.jpg" alt="blog image">
-                                </div>
-                                <div class="box-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fa-light fa-calendar"></i>january 10,
-                                            2025</a>
-                                        <a href="blog.html"><i class="fa-regular fa-clock"></i>08 min read</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">What trends do we expect to start
-                                            growing in the coming future?</a></h3>
-                                    <a href="blog-details.html" class="th-btn th-icon th-radius style2">Read More<i
-                                            class="fa-regular fa-arrow-right ms-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                                // Configure the request: POST method, target URL (blog.php)
+                                xhr.open("POST", "loadblog.php", true);
+
+                                // Set the Content-Type header to application/x-www-form-urlencoded for form data
+                                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                                // Define what happens on successful response
+                                xhr.onload = function() {
+                                    if (xhr.status === 200) {
+                                        if(xhr.responseText=='success'){
+                                            location.href="blog.php";
+                                        }else{
+                                            location.href="index.php";
+                                        }
+                                    } else {
+                                        console.error("Request failed with status: " + xhr.status);
+                                    }
+                                };
+
+                                // Define the data to send (id in the POST body)
+                                var data = "id=" + encodeURIComponent(id);
+
+                                // Send the POST request with the data
+                                xhr.send(data);
+                            }
+                        </script>
 
                     </div>
                 </div>

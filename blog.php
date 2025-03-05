@@ -1,4 +1,6 @@
-<?php require_once "db.php"; ?>
+<?php
+session_start();
+require_once "db.php"; ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -7,9 +9,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Codyzea - Tech Talks: Exploring the World of Software</title>
     <meta name="author" content="Cody Zea Software Solutions">
-<meta name="description" content="Stay updated with the latest trends, insights, and expert tips on web development, branding, digital marketing, and business growth.">
-<meta name="keywords" content="Cody Zea, Blog, Digital Marketing Tips, Web Development, Branding Strategies, Business Growth, E-Commerce Insights">
-<meta name="robots" content="INDEX,FOLLOW">
+    <meta name="description" content="Stay updated with the latest trends, insights, and expert tips on web development, branding, digital marketing, and business growth.">
+    <meta name="keywords" content="Cody Zea, Blog, Digital Marketing Tips, Web Development, Branding Strategies, Business Growth, E-Commerce Insights">
+    <meta name="robots" content="INDEX,FOLLOW">
 
 
     <!-- Mobile Specific Metas -->
@@ -94,6 +96,7 @@
 
     <?php require_once "header.php"; ?>
 
+
     <div class="container space-extra">
         <!--============================== Blog Area ==============================-->
         <section class="th-blog-wrapper space-top ">
@@ -102,7 +105,59 @@
                     <div class="col-xxl-8 col-lg-7" id="resultsView">
 
                         <?php
-                        $db = Databases::Search("SELECT * FROM `blogs` INNER JOIN `blog_categories` ON `blogs`.`blog_categories_bc_id` = `blog_categories`.`bc_id` ORDER BY `blog_date` ASC ");
+                        $pass = 0;
+                        if (isset($_SESSION['blog_id'])) {
+                            $blid = $_SESSION['blog_id'];
+                            echo $blid;
+                            $db = Databases::Search("SELECT * FROM `blogs` INNER JOIN `blog_categories` ON `blogs`.`blog_categories_bc_id` = `blog_categories`.`bc_id` WHERE `blogs`.`blog_id`='$blid' ORDER BY `blog_date` ASC ");
+                            if ($db->num_rows == 1) {
+                                $res = $db->fetch_assoc();
+                                $formattedDate = date('F j, Y', strtotime($res['blog_date']));
+                        ?>
+
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function() {
+                                        // Get the element by id
+                                        const targetElement = document.getElementById('ddd');
+
+                                        if (targetElement) {
+                                            // Scroll to the element
+                                            targetElement.scrollIntoView({
+                                                behavior: 'smooth', // For smooth scrolling
+                                                block: 'start' // Scroll to the top of the element
+                                            });
+                                        }
+                                    });
+                                </script>
+
+                                <div class="th-blog blog-single has-post-thumbnail" id="ddd">
+                                    <div class="blog-img">
+                                        <a href=""><img src="<?php echo $res['blog_img']; ?>" alt="Blog Image"></a>
+                                    </div>
+                                    <div class="blog-content" >
+                                        <div class="blog-meta">
+                                            <a href="" class="text-orange"><i class="fa-light fa-calendar"></i><?php echo $formattedDate; ?></a>
+                                            <a href="" class="text-orange"><i class="fa-light fa-tags"></i> <?php echo $res['bc_name']; ?></a>
+                                        </div>
+                                        <h3 class="blog-title"><a href=""><?php echo $res['blog_name']; ?></a>
+                                        </h3>
+                                        <p class="blog-text text-secondary " id="blogDesc<?php echo $res['blog_id']; ?>">
+                                            <?php echo $res['blog_desc']; ?>
+                                        </p>
+                                        <a href="javascript:void(0);" onclick="toggleReadMore(<?php echo $res['blog_id']; ?>)" id="readMoreBtn<?php echo $res['blog_id']; ?>" class="th-btn black-border th-icon th-radius">
+                                            Read Less <i class="fa-regular fa-arrow-right ms-2"></i>
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                            <?php
+                                $pass = $blid;
+                            }
+                            unset($_SESSION['blog_id']);
+                        }
+
+                        $db = Databases::Search("SELECT * FROM `blogs` INNER JOIN `blog_categories` ON `blogs`.`blog_categories_bc_id` = `blog_categories`.`bc_id` WHERE `blogs`.`blog_id` != " . $pass . " ORDER BY `blog_date` ASC ");
                         $total_pages = ceil($db->num_rows / 3);
                         if ($db->num_rows < 3) {
                             $times = $db->num_rows;
@@ -113,7 +168,7 @@
                         for ($x = 1; $x <= $times; $x++) {
                             $res = $db->fetch_assoc();
                             $formattedDate = date('F j, Y', strtotime($res['blog_date']));
-                        ?>
+                            ?>
                             <div class="th-blog blog-single has-post-thumbnail">
                                 <div class="blog-img">
                                     <a href=""><img src="<?php echo $res['blog_img']; ?>" alt="Blog Image"></a>
@@ -189,7 +244,7 @@
                                                 <a><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="post-title"><a class="text-inherit" ><?php echo $bs['side_name']; ?></a></h4>
+                                                <h4 class="post-title"><a class="text-inherit"><?php echo $bs['side_name']; ?></a></h4>
                                                 <div class="recent-post-meta">
                                                     <a class="text-orange"><i class="fa-sharp fa-solid fa-calendar-days text-orange"></i><?php echo $bs['side_sub_name']; ?></a>
                                                 </div>

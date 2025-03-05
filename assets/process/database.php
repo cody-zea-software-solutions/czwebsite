@@ -5,7 +5,7 @@ class Databases {
     // Set up the database connection
     public static function SetupConnection() {
         if (!isset(self::$connection)) {
-            self::$connection = new mysqli("localhost", "root", "denuwan123A", "codyzea", 3306);
+            self::$connection = new mysqli("localhost", "root", "Uditha1#", "mydb", 3306);
 
             // Check connection and throw an error if it fails
             if (self::$connection->connect_error) {

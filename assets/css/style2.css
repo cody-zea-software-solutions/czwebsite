@@ -3868,6 +3868,26 @@ hr.title-line {
   margin-left: -20%;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+@keyframes zoomOutEffect {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.zoom-effect:hover {
+  animation: zoomOutEffect 0.5s ease-in-out !important;
+}
+
 /* Large devices */
 @media (max-width: 1199px) {
   .sub-title {
