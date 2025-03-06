@@ -425,8 +425,15 @@ function sendEBook(rbook) {
 
     // Validate required fields (basic validation)
     if (!firstname || !lastname || !workEmail || !companyName || !mobileNumber) {
-        Swal.fire('Error', 'All fields are required!', 'error');
-        return;
+        Swal.fire({
+            text: "All fields are required.",
+            allowOutsideClick: false,
+            confirmButtonText: 'OK',
+            customClass: {
+                confirmButton: 'th-btn style4',
+                htmlContainer: 'box-text2 text-success fw-semibold mt-3',
+            }
+        })
     }
 
     // Prepare form data to send
@@ -454,10 +461,23 @@ function sendEBook(rbook) {
             // If everything is OK
             var responseT = xhr.responseText;
             if (responseT === 'success') {
-                Swal.fire('Success', 'Done! Please check your Email.', 'success');
-                submitButton.style.backgroundColor = '#FF5C35'; // Change button color
+                Swal.fire({
+                    text: "Your request was received successfully. Our team will reach out to you shortly.",
+                    confirmButtonText: 'OK',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 text-success fw-semibold mt-3',
+                    }
+                })
             } else {
-                Swal.fire(responseT);
+                Swal.fire({
+                    text: responseT,
+                    confirmButtonText: 'OK',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 fw-semibold mt-3',
+                    }
+                })
             }
 
             // Reset the button text to original
