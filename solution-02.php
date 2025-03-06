@@ -1,5 +1,5 @@
 <?php require_once "db.php";
-$d_r = Databases::Search("SELECT * FROM pack WHERE solution_sol_id=3");
+$d_r = Databases::Search("SELECT * FROM pack WHERE `pack_id` = 5 OR `pack_id` = 11 ");
 $dd = $d_r->fetch_assoc();
 ?>
 <!doctype html>
@@ -177,7 +177,7 @@ $dd = $d_r->fetch_assoc();
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
                 <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
-                    <div class="price-box th-ani " style="z-index: 9 !important; border-bottom: 2px solid #FF5C35;">
+                    <div class="price-box th-ani " style="z-index: 10 !important; border-bottom: 2px solid #FF5C35;">
                         <span class="offer-tag"></span>
                         <div class="text-center">
                             <h3 class="box-title"><?php echo $dd["pack_name"]; ?></h3>

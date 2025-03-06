@@ -131,9 +131,9 @@ require_once "guest.php";
             $couponD = Databases::Search("SELECT * FROM `offer` INNER JOIN `coupon` ON `coupon`.`c_id`=`offer`.`of_coupon` ");
             while ($coupon = $couponD->fetch_assoc()) {
                 ?>
-                <div class="col-12 col-lg-5 mt-2 mx-2" data-bs-target="#couponModal<?php echo $coupon['of_id']; ?>"
+                <div class="col-12 col-lg-5 mt-5 mx-2" data-bs-target="#couponModal<?php echo $coupon['of_id']; ?>"
                     data-bs-toggle="modal">
-                    <img src="assets/offers/offer001.jpg" class="img-fluid" alt="">
+                    <img src="<?php echo $coupon['of_img']; ?>" class="img-fluid" alt="">
                 </div>
                 <!-- Modal 001 -->
                 <div class="modal fade" id="couponModal<?php echo $coupon['of_id']; ?>" tabindex="-1"

@@ -62,6 +62,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                     </ul> -->
                 </li>
                 <li><a href="pricing.php">Pricing</a></li>
+                <li><a href="cart.php">Cart</a></li>
                 <li class="menu-item-has-children">
                     <a href="offers.php">Offers</a>
                     <ul class="sub-menu">
@@ -161,6 +162,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                             <ul>
                                 <li><a href="index.php" class="text-black fw-semibold fs-6 hover-nav">Home</a></li>
                                 <li><a href="pricing.php" class="text-black fw-semibold fs-6 hover-nav">Pricing</a></li>
+                                <li><a href="cart.php" class="text-black fw-semibold fs-6 hover-nav">Cart</a></li>
                                 <li class="menu-item-has-children">
                                     <a href="offers.php" class="text-black fw-semibold fs-6 hover-nav">Offers</a>
                                     <ul class="mega-menu" style="width: 1200px;">
@@ -188,45 +190,6 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                             }
                                             ?>
 
-                                            <div class="col-12 col-lg-4 d-flex">
-                                                <div class="choose-feature-wrap">
-                                                    <div class="choose-feature cody-bg p-3 rounded-20">
-                                                        <div class="box-icon">
-                                                            <img src="assets/offers.svg" alt="Icon">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Pay for Hosting, Get a Website
-                                                                Free
-
-                                                            </h3>
-                                                            <p class="cody-text">Launch your website in just 24 hours!
-                                                                Get your custom website designed, developed, and ready
-                                                                to go live within one day.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-4 d-flex">
-                                                <div class="choose-feature-wrap">
-                                                    <div class="choose-feature cody-bg p-3 rounded-20">
-                                                        <div class="box-icon">
-                                                            <img src="assets/offers.svg" alt="Icon">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Exclusive Package for Small
-                                                                Businesses
-
-
-
-                                                            </h3>
-                                                            <p class="cody-text">Special pricing for startups or
-                                                                businesses under 5 employees, combining all four
-                                                                services (Web Design, Branding, Digital Marketing, App
-                                                                Development) for a tailored budget.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </ul>
                                 </li>
