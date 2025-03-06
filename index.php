@@ -310,7 +310,7 @@ About Area
                     </span> <br />
                 </div>
                 <div class="col-12 mt-3">
-                    <span class="text-black display-5">NZ$ 125</span> <br />
+                    <span class="text-black display-3">NZ$ 125</span> <br />
                 </div>
                 <div class="col-12 mt-3">
                     <span class="text-black fs-1">Claim This Offer</span> <br />
@@ -460,7 +460,7 @@ Service Area
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                     <div class="row">
-                        <div class="col-10 col-lg-8">
+                        <div class="col-12 col-lg-8 mb-3">
                             <div class="service-grid hover-item">
                                 <div class="box-icon">
                                     <img src="assets/ecommerce.png" class="img-fluid w-50" alt="Icon">
@@ -611,7 +611,7 @@ portfolio Area
                 <div class="container">
                     <div class="title-area text-center mb-25">
                         <span class="sub-title sub-title6 style1 text-ani-style2">Our Portfolio</span>
-                        <h2 class="sec-title">Creative Work Portfolio</h2>
+                        <h2 class="sec-title display-5">Creative Work Portfolio</h2>
                     </div>
                     <div class="filter-menu filter-menu-active">
                         <button data-filter="*" class="tab-btn active text-black" type="button">All Works</button>
@@ -637,7 +637,7 @@ portfolio Area
                                 </div>
                             </div>
 
-                            <div class="col-md-6 col-xl-auto filter-item cat2">
+                            <div class="col-md-6 col-xl-auto filter-item cat2 d-none d-lg-block">
                                 <div class="project-item">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_5.jpg" alt="project image">
@@ -971,7 +971,7 @@ Cta Area
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 p-4 p-lg-0">
                 <span class="display-3 text-black">
                     The First Impression <span class="text-orange">is the Last Impression</span>
                 </span>
@@ -1021,7 +1021,7 @@ Cta Area
             <div class="col-12 col-lg-6">
                 <img src="assets/marketing.jpg" class="img-fluid" alt="webdesignillus001">
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 p-4 p-lg-0">
                 <span class="display-3 text-black">
                     Reaching the Right Audience, <span class="text-orange">at the Right Time</span>
                 </span>
@@ -1061,7 +1061,7 @@ Cta Area
                         <i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 text-center p-0 m-0">
+            <div class="col-12 col-lg-6 text-center p-0 m-0 mt-3">
                 <img src="assets/ebook002.png" class="img-fluid" alt="poerofbrandingebook">
             </div>
         </div>
@@ -1303,7 +1303,7 @@ Price Area
                 <img src="assets/contact-hero.png" class="img-fluid" alt="ContactUsFormCover">
             </div>
             <div class="col-12 col-lg-6 mt-2">
-                <div class="col-12 bg-white rounded-20 border border-2 black-border p-2 p-lg-5">
+                <div class="col-12 bg-white rounded-20 border border-2 black-border p-4 p-lg-5">
                     <span class="text-black display-6 text-orange">Have Questions?
                     </span>
                     <div class="col-12">
