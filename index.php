@@ -100,7 +100,7 @@ require_once "assets/process/database.php";
 Hero Area
 ==============================-->
     <!--============================== Hero Area ==============================-->
-    <div class="container-fluid">
+    <div class="container-fluid p-0 m-0">
         <div class="th-hero-wrapper hero-3 bg-color" id="hero">
             <div class="container px-md-5 p-3">
                 <div class="row">
@@ -143,26 +143,26 @@ Hero Area
 
     </div>
 
-    <div class="container space-extra m-5">
+    <div class="container space-extra m-5 d-none d-lg-block">
         <div class="container position-absolute start-50 translate-middle space-extra" style="z-index: 1000;">
             <div class="row d-flex justify-content-center">
 
                 <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
-                    <img src="assets/app-icon/ai001.png" class="img-flud w-25" alt="Feature001"> <br />
+                    <img src="assets/kiwi.png" class="img-flud w-25" alt="Feature001"> <br />
                     <div class="col-12 mt-3">
-                        <span class="fs-2 text-black">Tailored for NZ</span>
+                        <span class="fs-2 text-black">Kiwi Web Designs</span>
                         <p class="text-black fw-thin fs-5">
-                            E-commerce solutions that fit your business.
+                            Crafted for speed & impact
                         </p>
                     </div>
 
                 </div>
                 <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
-                    <img src="assets/app-icon/ai002.png" class="img-flud w-25" alt="Feature001"> <br />
+                    <img src="assets/recog.png" class="img-flud w-25" alt="Feature001"> <br />
                     <div class="col-12 mt-3">
-                        <span class="fs-2 text-black"> Fast & Secure</span>
+                        <span class="fs-2 text-black"> Globally Recognized</span>
                         <p class="text-black fw-thin fs-5">
-                            Smooth shopping experiences for your customers.
+                            Trusted by businesses worldwide
                         </p>
                     </div>
 
@@ -170,9 +170,9 @@ Hero Area
                 <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                     <img src="assets/app-icon/ai003.png" class="img-flud w-25" alt="Feature001"> <br />
                     <div class="col-12 mt-3">
-                        <span class="fs-2 text-black">Honest Pricing </span>
+                        <span class="fs-2 text-black"> Affordable Pricing Solutions</span>
                         <p class="text-black fw-thin fs-5">
-                            Clear, affordable plans with no surprises.</p>
+                            Quality work within your budget</p>
                     </div>
 
                 </div>
@@ -235,7 +235,7 @@ About Area
                             </div>
                         </div>
                         <div class="btn-group style3 mt-35">
-                            <a href="about.html" class="th-btn th-radius th-icon text-white fs-4">More About<i
+                            <a href="about.html" class="th-btn th-radius th-icon text-white fs-4">Grab Our Business Profile<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="call-btn style2">
                                 <div class="icon bg-orange"><i class="fas fa-phone"></i></div>
@@ -257,43 +257,48 @@ About Area
 
     </div>
 
-    <div class="container position-relative">
+    <div class="container">
         <div class="row bg-color rounded-20 shadow-sm p-5">
 
             <div class="col-12 col-lg-8 border-end border-1 border-dark">
-                <span class="text-black fs-1">Business Website Growth</span>
+                <span class="text-black fs-1">Effortless Web Presence – Simple Monthly Plan
+                </span>
+
                 <p class="text-dark fs-5 mt-3">
-                    Accelerate your business growth with a website that drives traffic, enhances user experience, and
-                    converts visitors into loyal customers. Unlock the full potential of your online presence through
-                    optimization, SEO, and targeted digital strategies
+                    Get a custom website with free secure hosting, full maintenance, monthly updates, and a fresh UI
+                    redesign every year—all for a simple monthly fee!
                 </p>
                 <span class="text-black fs-2">What's Included</span>
                 <div class="row mt-3">
                     <div class="col-12 col-md-6 col-lg-6">
                         <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> SEO
-                                Friendly</li>
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Custom
+                                website design & content
+                            </li>
                             <li class="text-black fs-5"></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
                         <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> 05 Custom
-                                Page</li>
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Free
+                                secure hosting & full maintenance
+                            </li>
                             <li class="text-black fs-5"></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
                         <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Easy To
-                                Edit</li>
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Monthly
+                                updates (1 hour of changes)
+                            </li>
                             <li class="text-black fs-5"></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
                         <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Responsive
-                                Design</li>
+                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Annual UI
+                                redesign for a fresh look
+                            </li>
                             <li class="text-black fs-5"></li>
                         </ul>
                     </div>
@@ -301,7 +306,8 @@ About Area
             </div>
             <div class="col-12 col-lg-4 text-center">
                 <div class="col-12 mt-3">
-                    <span class="text-black fs-5">Pay As You Go</span> <br />
+                    <span class="text-black fs-5">No upfront fee! Just a fixed monthly price.
+                    </span> <br />
                 </div>
                 <div class="col-12 mt-3">
                     <span class="text-black display-5">NZ$ 125</span> <br />
@@ -311,8 +317,8 @@ About Area
                 </div>
                 <div class="col-12 d-flex justify-content-center mt-3">
                     <div class="btn-group">
-                        <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started Now<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
+                            FREE quote today<i class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -535,7 +541,7 @@ Service Area
                                 <h3 class="box-title"><a href="branding.php">Branding
                                     </a></h3>
                                 <p class="box-text text-white-o">Transform your brand with unique, impactful designs
-                                    that resonate with your audience and elevate your business presence./p>
+                                    that resonate with your audience and elevate your business presence.</p>
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
@@ -1037,6 +1043,29 @@ Cta Area
 
 
     </div>
+    <div class="container p-3">
+        <div class="row bg-color rounded-20 shadow-sm p-5">
+
+            <div class="col-12 col-lg-6">
+                <img src="assets/ebook-water.png" class="img-fluid w-25" alt="">
+                <p class="text-dark display-5 mt-3">
+                    Unlock the Power of Branding & UI for Business Growth
+
+                </p>
+                <span class="text-black fs-4">Your all-in-one eBook to mastering design, engagement, and brand success.
+
+                </span>
+                <div class="btn-group mt-3">
+                    <a href="digital-marketing.php" class="th-btn blue-btn style1 th-icon th-radius fs-5"> Download Your
+                        Free e-Book
+                        <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 text-center p-0 m-0">
+                <img src="assets/ebook002.png" class="img-fluid" alt="poerofbrandingebook">
+            </div>
+        </div>
+    </div>
     <!--==============================
 Price Area  
 ==============================-->
@@ -1052,7 +1081,7 @@ Price Area
         if ($result->num_rows > 0) {
             $sol_name = $result->fetch_assoc();
 
-        ?>
+            ?>
 
             <div class="container px-md-5">
                 <div class="title-area text-center">
@@ -1072,17 +1101,17 @@ Price Area
 
                         for ($x = 1; $x <= $result->num_rows; $x++) {
                             $data = $result->fetch_assoc();
-                        ?>
+                            ?>
 
                             <div class="col-xl-4 col-md-6">
                                 <div class="price-box th-ani <?php if ($x == 2) {
-                                                                    echo "active orange-border";
-                                                                } else {
-                                                                    echo "side-border";
-                                                                } ?>">
+                                    echo "active orange-border";
+                                } else {
+                                    echo "side-border";
+                                } ?>">
                                     <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                                                            echo "popular";
-                                                                        } ?></span>
+                                        echo "popular";
+                                    } ?></span>
                                     <div class="text-center">
                                         <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
@@ -1127,13 +1156,13 @@ Price Area
                                                     $n = $n + 1;
                                                     $fet = $results->fetch_assoc();
                                                     if ($fet['status'] == 1) {
-                                                ?>
+                                                        ?>
                                                         <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
+                                                        <?php
                                                     } else {
-                                                    ?>
+                                                        ?>
                                                         <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                <?php
+                                                        <?php
                                                     }
                                                 }
                                                 ?>
@@ -1143,13 +1172,13 @@ Price Area
                                                     for ($y = 1; $y <= $part2; $y++) {
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                    ?>
+                                                            ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                            <?php
                                                         } else {
-                                                        ?>
+                                                            ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
+                                                            <?php
                                                         }
                                                     }
                                                     ?>
@@ -1167,7 +1196,7 @@ Price Area
                                 </div>
                             </div>
 
-                        <?php
+                            <?php
                         }
                         ?>
 
@@ -1175,7 +1204,7 @@ Price Area
                 </div>
 
             </div>
-        <?php
+            <?php
         }
         ?>
     </section>
@@ -1206,7 +1235,7 @@ Price Area
                         for ($x = 1; $x <= $db->num_rows; $x++) {
                             $res = $db->fetch_assoc();
                             $formattedDate = date('F j, Y', strtotime($res['blog_date']));
-                        ?>
+                            ?>
                             <div class="swiper-slide">
                                 <div class="blog-card style2">
                                     <div class="box-img global-img">
@@ -1214,16 +1243,19 @@ Price Area
                                     </div>
                                     <div class="box-content">
                                         <div class="blog-meta">
-                                            <a class="text-orange"><i class="text-orange fa-light fa-calendar"></i><?php echo $formattedDate; ?></a>
-                                            <a class="text-orange"><i class="text-orange fa-regular fa-tags"></i><?php echo $res['bc_name']; ?></a>
+                                            <a class="text-orange"><i
+                                                    class="text-orange fa-light fa-calendar"></i><?php echo $formattedDate; ?></a>
+                                            <a class="text-orange"><i
+                                                    class="text-orange fa-regular fa-tags"></i><?php echo $res['bc_name']; ?></a>
                                         </div>
                                         <h3 class="box-title"><a><?php echo $res['blog_name']; ?></a></h3>
-                                        <a class="th-btn th-icon th-radius style2 hover" onclick="loadBlog(<?php echo $res['blog_id']; ?>);">Read More<i
+                                        <a class="th-btn th-icon th-radius style2 hover"
+                                            onclick="loadBlog(<?php echo $res['blog_id']; ?>);">Read More<i
                                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
-                        <?php
+                            <?php
                         }
                         ?>
 
@@ -1239,12 +1271,12 @@ Price Area
                                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                                 // Define what happens on successful response
-                                xhr.onload = function() {
+                                xhr.onload = function () {
                                     if (xhr.status === 200) {
-                                        if(xhr.responseText=='success'){
-                                            location.href="blog.php";
-                                        }else{
-                                            location.href="index.php";
+                                        if (xhr.responseText == 'success') {
+                                            location.href = "blog.php";
+                                        } else {
+                                            location.href = "index.php";
                                         }
                                     } else {
                                         console.error("Request failed with status: " + xhr.status);

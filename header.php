@@ -49,35 +49,28 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
 
                     </ul> -->
                 </li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.php">Pricing</a></li>
                 <li class="menu-item-has-children">
-                    <a href="#">Portfolio</a>
+                    <a href="offers.php">Offers</a>
                     <ul class="sub-menu">
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                        <li><a href="offers.php">SmartHost Deal
+                        </a></li>
+                        <li><a href="offers.php">Pay for Hosting, Get a Website Free
+                        </a></li>
+                        <li><a href="offers.php">Exclusive Package for Small Businesses
+                        </a></li>
                     </ul>
                 </li>
+                <li><a href="solutions.php">Solutions</a></li>
                 <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
+                    <a href="offers.php">Offers</a>
                     <ul class="sub-menu">
-                        <li class="menu-item-has-children">
-                            <a href="#">Shop</a>
-                            <ul class="sub-menu">
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="shop-details.html">Shop Details</a></li>
-                                <li><a href="cart.html">Cart Page</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="service-details.html">Service Details</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="team-details.html">Team Details</a></li>
-                        <li><a href="pricing.html">Price Table</a></li>
-                        <li><a href="testimonial.html">Testimonial</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="error.html">Error Page</a></li>
+                        <li><a href="offers.php">SmartHost Deal
+                        </a></li>
+                        <li><a href="offers.php">Pay for Hosting, Get a Website Free
+                        </a></li>
+                        <li><a href="offers.php">Exclusive Package for Small Businesses
+                        </a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
@@ -108,22 +101,22 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                     class="text-white">+64 22 356 8614</a>
                             </li>
                             <li><i class="fa-solid fa-envelope text-white"></i><a href="mailto:saorhelp@gmail.com"
-                                    class="text-white">info@codyzeadep.com</a>
+                                    class="text-white">info@codyzea.com</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="header-right">
-                        <p class="title text-white">Open Hours: 09am - 05pm Mon-Sat</p>
+                        <p class="title text-white">Building Tomorrow's Digital Solutions, Today.</p>
                         <div class="social-links">
-                            <a href="https://www.facebook.com/" class="text-white"><i
+                            <a href="https://web.facebook.com/profile.php?id=61570825186554" class="text-white"><i
                                     class="fab fa-facebook-f text-white"></i></a>
-                            <a href="https://www.linkedin.com/" class="text-white"><i
+                            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105796820&keywords=cody%20zea%20(pvt)%20ltd&origin=RICH_QUERY_SUGGESTION&position=0&searchId=14363f48-1b82-45c2-b16e-3e9ad3f7f4af&sid=.GT&spellCorrectionEnabled=false" class="text-white">
+                                <i
                                     class="fab fa-linkedin-in text-white"></i></a>
-                            <a href="https://www.twitter.com/" class="text-white"><i
-                                    class="fab fa-twitter text-white"></i></a>
-                            <a href="https://www.youtube.com/" class="text-white"><i
+                            <a href="https://x.com/codyzeashehan" class="text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.youtube.com/@CodyZea" class="text-white"><i
                                     class="fab fa-youtube text-white"></i></a>
                         </div>
                     </div>
@@ -155,7 +148,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                             <?php
                                             $offerD = Databases::Search("SELECT * FROM `offer` LIMIT 3");
                                             while ($offer = $offerD->fetch_assoc()) {
-                                            ?>
+                                                ?>
                                                 <div class="col-12 col-lg-4 d-flex">
                                                     <div class="choose-feature-wrap">
                                                         <div class="choose-feature cody-bg p-3 rounded-20">
@@ -163,13 +156,14 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                                 <img src="assets/offers.svg" alt="Icon">
                                                             </div>
                                                             <div class="media-body">
-                                                                <h3 class="cody-text fs-5"><?php echo $offer['of_name'] ?></h3>
+                                                                <h3 class="cody-text fs-5"><?php echo $offer['of_name'] ?>
+                                                                </h3>
                                                                 <p class="cody-text"><?php echo $offer['of_desc'] ?></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            <?php
+                                                <?php
                                             }
                                             ?>
 
@@ -220,19 +214,11 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
-                                            <div class="col-12 col-lg-6 d-flex">
-                                                <div class="choose-feature-wrap">
-                                                    <div class="choose-feature cody-bg p-3 rounded-20">
-                                                        <div class="box-icon">
-                                                            <img src="assets/img/icon/choose_feature_1_1.svg"
-                                                                alt="Icon">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Startup Made Easy – Choose Cody Zea
-                                                            </h3>
-                                                            <p class="cody-text">Effortless branding, web design, and digital growth—let’s build your success together!</p>
-                                                        </div>
-                                                    </div>
+                                        <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
+                                                onclick="window.location.href='solution-01.php'"
+                                                style="cursor: pointer;">
+                                                <div class="col-12 rounded-20"
+                                                    style="background-image: url(assets/solution001.webp); background-size: cover; background-position: center; min-height: 40vh;">
                                                 </div>
                                                 <div class="col-12 p-4">
                                                     <span class="text-black fs-4 text-orange-hover">
@@ -240,8 +226,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         Made Simple: Your All-in-One
                                                         Solution
                                                     </span>
-
-
+                                                   
                                                 </div>
 
                                             </div>
@@ -278,34 +263,20 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                 </div>
 
                                             </div>
-                                            <div class="col-12 col-lg-6 d-flex">
-                                                <div class="choose-feature-wrap">
-                                                    <div class="choose-feature cody-bg p-3 rounded-20">
-                                                        <div class="box-icon">
-                                                            <img src="assets/img/icon/choose_feature_1_1.svg"
-                                                                alt="Icon">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h3 class="cody-text fs-5">Growth Business Solution for Shop Owners
-                                                            </h3>
-                                                            <p class="cody-text">A Complete E-Commerce & Marketing Package to Scale Your Business.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                          
 
                                         </div>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="blog.php" class="text-black fw-semibold fs-6">Blogs</a>
+                                    <a href="blog.php" class="text-black fw-semibold fs-6 hover-nav">Blogs</a>
                                     <ul class="mega-menu" style="width: 1500px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
                                             <?php
                                             $blogD = Databases::Search("SELECT * FROM `blogs` LIMIT 2");
                                             while ($blog = $blogD->fetch_assoc()) {
-                                            ?>
+                                                ?>
                                                 <div class="col-12 col-lg-6 d-flex">
                                                     <div class="choose-feature-wrap">
                                                         <div class="choose-feature cody-bg p-3 rounded-20">
@@ -332,25 +303,26 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         </div>
                                                     </div>
                                                 </div>
-                                            <?php
+                                                <?php
                                             }
                                             ?>
                                         </div>
                                     </ul>
                                 </li>
-                                <li><a href="contact.php" class="text-black fw-semibold fs-6 hover-nav">Contact Us</a></li>
+                                <li><a href="contact.php" class="text-black fw-semibold fs-6 hover-nav">Contact Us</a>
+                                </li>
                             </ul>
                         </nav>
-                        <!-- <div class="header-button d-none">
+                        <div class="header-button">
                             <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i
-                                    class="far fa-bars text-b fw-semibold"></i></button>
-                        </div> -->
+                                    class="far fa-bars text-b fw-semibold text-white"></i></button>
+                        </div>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-button">
                             <!-- <button type="button" class="icon-btn th-radius searchBoxToggler"><i
                                     class="far fa-search text-b fw-semibold"></i></button> -->
-                            <a href="about.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i
+                            <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i
                                     class="fa-regular fa-arrow-right ms-2"></i></a>
 
                         </div>

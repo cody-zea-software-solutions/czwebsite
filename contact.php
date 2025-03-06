@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="assets/css/imageRevealHover.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/shop-assets/style.css">
     <link rel="stylesheet" href="assets/css/pricing-styles.css">
 
@@ -89,13 +90,7 @@
      Preloader
   ==============================-->
     <?php require_once "header.php" ?>
-    <div class="preloader ">
-        <button class="th-btn style1 preloaderCls">Cancel Preloader </button>
-        <div class="preloader-inner">
-            <img src="assets/img/logo.svg" alt="Rasm">
-            <span class="loader"></span>
-        </div>
-    </div>
+   
     <div class="popup-search-box d-none d-lg-block">
         <button class="searchClose"><i class="fal fa-times"></i></button>
         <form action="#">
@@ -147,7 +142,9 @@
                     <br />
                     <br />
                     <p class="text-dark fw-thin fs-5">
-                        Say Hello at <span class="text-orange">+64 22 356 8614</span>
+                        Say Hello at <br>
+                        <span>Kia Ora, Let’s Connect</span><br>
+                        <span class="text-orange">+64 22 356 8614</span>
                     </p>
                 </div>
 
@@ -158,7 +155,7 @@
                     <span class="fs-1 text-black">Send a Message</span>
                     <br /><br />
                     <p class="text-dark fw-thin fs-5">
-                        Drop us an email at <span class="text-orange">info@codyzea.com</span>
+                    Drop Us a Line – We’re All Ears <span class="text-orange">info@codyzea.com</span>
                     </p>
                 </div>
             </div>
@@ -169,7 +166,7 @@
                     <span class="fs-1 text-black">Visit Us</span>
                     <br /><br />
                     <p class="text-dark fw-thin fs-5">
-                        Find us at <span class="text-orange">6A, Tidey Road, Mount Wellington. Auckland, New Zealand
+                    Come Say G'day – Find Us Here <span class="text-orange">6A, Tidey Road, Mount Wellington. Auckland, New Zealand
                             1072</span>
                     </p>
                 </div>
