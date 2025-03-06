@@ -65,6 +65,8 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body class="bg-color">
@@ -91,12 +93,12 @@
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
-                    <span class="display-5 text-orange">Ready to Supercharge Your Website? 
+                    <span class="display-5 text-orange">Ready to Supercharge Your Website?
 
 
                     </span>
                     <span class="text-black display-6">Try These 14 Speed
-                    Optimization Tips!</span>
+                        Optimization Tips!</span>
                     <p class="text-black fs-5 fw-semibold">
                         Website speed is more than just a convenience—it’s a game-changer for conversions and SEO. In
                         Speed Sells: The Power of a Fast Website, you’ll discover 14 actionable tips to optimize your
@@ -104,7 +106,7 @@
                         responsiveness, or boosting user engagement, these strategies will help you unlock the full
                         potential of your website and keep visitors coming back for more.
                     </p>
-             
+
                 </div>
 
             </div>
@@ -119,12 +121,12 @@
                     <div class="row">
                         <div class="col-12 col-lg-6 mt-3">
                             <label for="fullName" class="form-label">First Name</label>
-                            <input type="text" class="form-control"  id="firstname" placeholder="Enter your First name"
+                            <input type="text" class="form-control" id="firstname" placeholder="Enter your First name"
                                 required>
                         </div>
                         <div class="col-12 col-lg-6 mt-3">
                             <label for="fullName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control"  id="lastname" placeholder="Enter your Last name"
+                            <input type="text" class="form-control" id="lastname" placeholder="Enter your Last name"
                                 required>
                         </div>
                         <div class="col-12 mt-3">
@@ -148,7 +150,7 @@
                     <div class="col-10 mt-3 d-flex justify-content-center">
                         <!-- Submit Button -->
                         <div class="btn-group col-12">
-                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black">Get Your Free
+                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn" onclick="sendEBook('ebook_name');">Get Your Free
                                 E-Book Now!
 
 
@@ -170,17 +172,17 @@
                     What's Included:
 
                 </span>
-             <br>
-             <br>
+                <br>
+                <br>
                 <ul>
                     <li class="text-black fs-5 fw-light"><strong class="text-orange">Speed Optimization Tips</strong>: Discover essential techniques to speed up your
                         website, reducing bounce rates and improving user experience.</li> <br>
                     <li class="text-black fs-5 fw-light"><strong class="text-orange">Mobile Optimization Best Practices</strong>: Learn how to make your website fast and
-                        responsive across all devices, especially mobile.</li> <br> 
+                        responsive across all devices, especially mobile.</li> <br>
                     <li class="text-black fs-5 fw-light"><strong class="text-orange">Conversion-Boosting Design</strong>: Uncover how a fast website increases conversion
-                        rates, keeping users engaged and ready to take action.</li> <br> 
+                        rates, keeping users engaged and ready to take action.</li> <br>
                     <li class="text-black fs-5 fw-light"><strong class="text-orange">SEO Benefits</strong>: Understand how a fast-loading website improves your search engine
-                        rankings and drives more traffic to your site.</li> <br> 
+                        rankings and drives more traffic to your site.</li> <br>
                     <li class="text-black fs-5 fw-light"><strong class="text-orange">Real-World Insights</strong>: Backed by data and statistics, this e-book offers
                         practical tips to optimize your site’s performance for maximum impact.</li>
                 </ul>
@@ -209,6 +211,8 @@
     <!--==============================
     All Js File
 ============================== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src=" assets/js/pricing.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->

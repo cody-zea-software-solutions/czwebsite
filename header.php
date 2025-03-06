@@ -240,8 +240,8 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         Made Simple: Your All-in-One
                                                         Solution
                                                     </span>
-                                            
-                                                  
+
+
                                                 </div>
 
                                             </div>
@@ -256,7 +256,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         <i class="fa-regular fa-rocket text-orange"></i> Growth Business
                                                         Solution for Shop Owners
                                                     </span>
-                                          
+
 
                                                 </div>
 
@@ -273,7 +273,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         Business Growth Solution for
                                                         Restaurants &
                                                         Motels</span>
-                                         
+
 
                                                 </div>
 
@@ -327,7 +327,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                                         max-width: 100%;
                                                                     }
                                                                 </style>
-                                                                <p class="cody-text" ><?php echo $blog['blog_desc'] ?></p>
+                                                                <p class="cody-text"><?php echo $blog['blog_desc'] ?></p>
                                                             </div>
                                                         </div>
                                                     </div>

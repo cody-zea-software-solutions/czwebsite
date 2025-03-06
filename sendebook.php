@@ -11,17 +11,21 @@ require 'PHPMailer/src/SMTP.php';
 // Check if the request is POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get POST data from the form
-    $fullName = isset($_POST['fullName']) ? trim($_POST['fullName']) : '';
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
+    $firstname = isset($_POST['firstname']) ? trim($_POST['firstname']) : '';
+    $lastname = isset($_POST['lastname']) ? trim($_POST['lastname']) : '';
+    $workEmail = isset($_POST['workEmail']) ? trim($_POST['workEmail']) : '';
+    $companyName = isset($_POST['companyName']) ? trim($_POST['companyName']) : '';
+    $mobileNumber = isset($_POST['mobileNumber']) ? trim($_POST['mobileNumber']) : '';
+    $rbook = isset($_POST['rbook']) ? trim($_POST['rbook']) : '';
+    $fullName = $firstname.' '.$lastname;
 
     // Validate fields (basic validation)
-    if (empty($fullName) || empty($email) || empty($message)) {
+    if (empty($firstname) || empty($lastname) || empty($workEmail) || empty($companyName) || empty($mobileNumber) || empty($rbook)) {
         die('All fields are required.');
     }
 
     // Validate email format
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($workEmail, FILTER_VALIDATE_EMAIL)) {
         die('Invalid email format.');
     }
 
@@ -46,10 +50,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Subject = 'Cody Zea';
         $mail->Body    = '<html>
                             <body>
-                                <h2>Message</h2>
-                                <p><strong>Full Name:</strong> ' . $fullName . '</p>
-                                <p><strong>Phone Number:</strong> ' . $email . '</p>
-                                <p><strong>Special Note:</strong> ' . nl2br($message) . '</p>
+                                <h2> ' . $rbook . '</h2>
+                                <p><strong>Full Name:</strong> ' . $firstname .' '. $lastname . '</p>
+                                <p><strong>Email:</strong> ' . $workEmail . '</p>
+                                <p><strong>Mobile:</strong> ' . $mobileNumber . '</p>
+                                <p><strong>Mobile:</strong> ' . $companyName . '</p>
+                                
                             </body>
                           </html>';
 
@@ -57,8 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Connect to the database (replace with your own database connection)
             $conn = Databases::getConnection();
-            $stmt = $conn->prepare("INSERT INTO `message` (m_name, m_mail, `m_message`) VALUES (?, ?, ?) ; ");
-            $stmt->bind_param("sss", $fullName, $email, $message);
+            $stmt = $conn->prepare("INSERT INTO `ebook_req` (`rname`, `remail`, `rmobile`, `rworkname`, `rbook`) VALUES (?, ?, ?, ?, ?) ; ");
+            $stmt->bind_param("sssss", $fullName, $workEmail, $mobileNumber, $companyName, $rbook);
             if ($stmt->execute()) {
                 echo "success";
             } else {

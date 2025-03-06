@@ -96,43 +96,55 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         <div class="row mt-0 mt-md-3">
             <div class="col-lg-6 mt-3 px-md-5 ps-md-5">
                 <div class="title-area mb-25 mt-n1 mt-4 text-start text-md-end text-lg-start">
-                    <h1 class="sec-title text-ani-style3 text-start text-orange">Get a stunning website for less.</h1>
+                    <div class="sec-title text-ani-style3 text-start text-orange h1">Get a stunning website for less.</div>
                 </div>
-                <p class="mt-n2 mb-30 fs-3 text-o fw-semibold">We'll build you an effective, affordable website that you love and that increases your sales.</p>
+                <p class="mt-n2 mb-30 fs-3 text-o fw-semibold">We create affordable, high-impact websites that you’ll love and that drive more sales.</p>
                 <div class="info-list">
+                    <style>
+                        .info-text {
+                            font-size: 20px !important;
+                            /* Adjust the size as needed */
+                        }
+
+                        .info-icon {
+                            font-size: 20px !important;
+                            /* Adjust the size as needed */
+                        }
+                    </style>
                     <div class="info-item">
                         <span class="info-icon"></span>
-                        <p class="info-text">Friendly kiwi website experts & designers.</p>
+                        <p class="info-text">Experienced Kiwi web designers & developers.</p>
                     </div>
                     <div class="info-item">
                         <span class="info-icon"></span>
-                        <p class="info-text">Easy to edit, mobile friendly & secure sites.</p>
+                        <p class="info-text">Easy-to-use, mobile-ready & fully secure.</p>
                     </div>
                     <div class="info-item">
                         <span class="info-icon"></span>
-                        <p class="info-text">High quality sites with a low price tag.</p>
+                        <p class="info-text">Premium websites without the premium price.</p>
                     </div>
                 </div>
 
                 <div class="col-12 pb-md-5 px-md-50 mt-5 d-flex justify-content-center justify-content-md-center">
-                    <a href="about.php" class="th-btn th-radius th-icon text-white fs-4">More About Us<i
+                    <a href="about.php" class="th-btn th-radius th-icon text-white fs-4">Learn More<i
                             class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
             <div class="col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-md-0">
                 <div class="row">
-                <img src="assets/kiwi-hero.webp" alt="" class="img-fluid pricing-image p-5 pb-0" style="background-color: #FF5C35; border-radius: 40px;">
+                    <img src="assets/kiwi-hero.webp" alt="" class="img-fluid pricing-image p-5 pb-0" style="background-color: #FF5C35; border-radius: 40px;">
                 </div>
             </div>
 
         </div>
     </div>
 
+
     <div class="container mt-md-5 pt-5">
         <div class="row">
-            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Getting an epic website has never been easier or cheaper. 🙌</span><br>
-                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">From a quick chat to a high converting website, we keep everything super straight forward.</span>
-                <p class="d-md-none mt-4 px-3">From a quick chat to a high converting website, we keep everything super straight forward.</p>
+            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Building a top-notch website is now effortless and affordable. 🚀</span><br>
+                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">From a simple chat to a high-performing website, we make the process seamless.</span>
+                <p class="d-md-none mt-4 px-3">From a simple chat to a high-performing website, we make the process seamless.</p>
             </div>
             <div class="col-12 pb-5 px-50 mt-4 d-flex justify-content-center">
                 <a href="contact.php" class="th-btn th-radius th-icon text-white fs-4">Contact Us<i
@@ -141,48 +153,28 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         </div>
     </div>
 
+
     <div class="container-fluid container-md mt-3 pb-5">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1954371169" data-icon-custom="true">
-                        <g>
-                            <path d="m31.945 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77734 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60937 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.1641 1.8594 4.1641 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3906-0.61328 1.3906-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047l-0.003907-1.5312c0-0.77734-0.60938-1.3867-1.3867-1.3867-0.77734 0-1.3906 0.60938-1.3906 1.3867v1.5273c-3.1641 0.64062-5.5547 3.4453-5.5547 6.8086 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3008-1.8633 4.1641-4.168 4.1641z"></path>
-                            <path d="m48.609 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3828 0.61328-1.3828 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8594-4.1641 4.1641-4.1641 2.3086 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.60938-1.3867-1.3906-1.3867-0.77734 0-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3047-1.8633 4.168-4.1719 4.168z"></path>
-                            <path d="m65.277 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77344-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.61328-1.3867-1.3906-1.3867s-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003907 2.3047-1.8672 4.168-4.1719 4.168z"></path>
-                            <path d="m86.109 54.168v-41.668c0-0.77734-0.60938-1.3906-1.3867-1.3906h-69.445c-0.77734 0-1.3867 0.61328-1.3867 1.3906v41.668c0 0.77734 0.60938 1.3867 1.3867 1.3867h31.945v28.582l-8.75-8.75c-0.55469-0.55469-1.418-0.55469-1.9727 0-0.55469 0.55469-0.55469 1.418 0 1.9727l11.109 11.109c0.14062 0.14062 0.27734 0.22266 0.44531 0.27734 0.19531 0.11328 0.39062 0.14453 0.55469 0.14453 0.16797 0 0.35938-0.027344 0.52734-0.10938 0.16797-0.054688 0.33203-0.16797 0.44531-0.30469l11.109-11.109c0.55469-0.55469 0.55469-1.418 0-1.9727-0.55469-0.55469-1.418-0.55469-1.9727 0l-8.7188 8.7461v-28.586h34.723c0.77734 0 1.3867-0.60938 1.3867-1.3867zm-2.7773-1.3906h-66.664v-38.887h66.668z"></path>
-                        </g>
-                    </svg><br>
-                    <span class="fs-3 fw-medium text-dark">Get your website for less</span>
-                    <p class=" text-o mt-2 text-justify ">Get a high-quality website for a fraction of the cost charged by our competitors. We design smarter to make your budget go further.</p>
+                    <img src="assets/1-1.svg" width="100px" height="100px" alt=""><br>
+                    <span class="fs-3 fw-medium text-dark">Get your website at a great price</span>
+                    <p class=" text-o mt-2 text-justify ">Get a top-notch website without the high cost. We optimize our designs to stretch your budget further.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1 ">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1954371169" data-icon-custom="true">
-                        <g>
-                            <path d="m31.945 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77734 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60937 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.1641 1.8594 4.1641 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3906-0.61328 1.3906-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047l-0.003907-1.5312c0-0.77734-0.60938-1.3867-1.3867-1.3867-0.77734 0-1.3906 0.60938-1.3906 1.3867v1.5273c-3.1641 0.64062-5.5547 3.4453-5.5547 6.8086 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3008-1.8633 4.1641-4.168 4.1641z"></path>
-                            <path d="m48.609 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3828 0.61328-1.3828 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8594-4.1641 4.1641-4.1641 2.3086 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.60938-1.3867-1.3906-1.3867-0.77734 0-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3047-1.8633 4.168-4.1719 4.168z"></path>
-                            <path d="m65.277 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77344-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.61328-1.3867-1.3906-1.3867s-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003907 2.3047-1.8672 4.168-4.1719 4.168z"></path>
-                            <path d="m86.109 54.168v-41.668c0-0.77734-0.60938-1.3906-1.3867-1.3906h-69.445c-0.77734 0-1.3867 0.61328-1.3867 1.3906v41.668c0 0.77734 0.60938 1.3867 1.3867 1.3867h31.945v28.582l-8.75-8.75c-0.55469-0.55469-1.418-0.55469-1.9727 0-0.55469 0.55469-0.55469 1.418 0 1.9727l11.109 11.109c0.14062 0.14062 0.27734 0.22266 0.44531 0.27734 0.19531 0.11328 0.39062 0.14453 0.55469 0.14453 0.16797 0 0.35938-0.027344 0.52734-0.10938 0.16797-0.054688 0.33203-0.16797 0.44531-0.30469l11.109-11.109c0.55469-0.55469 0.55469-1.418 0-1.9727-0.55469-0.55469-1.418-0.55469-1.9727 0l-8.7188 8.7461v-28.586h34.723c0.77734 0 1.3867-0.60938 1.3867-1.3867zm-2.7773-1.3906h-66.664v-38.887h66.668z"></path>
-                        </g>
-                    </svg><br>
-                    <span class="fs-3 fw-medium text-dark">Get your website for less</span>
-                    <p class=" text-o mt-2 text-justify">Get a high-quality website for a fraction of the cost charged by our competitors. We design smarter to make your budget go further.</p>
+                    <img src="assets/1-2.svg" width="100px" height="100px" alt=""><br>
+                    <span class="fs-3 fw-medium text-dark">Rank higher and boost sales</span>
+                    <p class=" text-o mt-2 text-justify">With our expertise, you’ll get a faster, SEO-optimized website that not only ranks better but also converts more, all while looking amazing.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1 ">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1954371169" data-icon-custom="true">
-                        <g>
-                            <path d="m31.945 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77734 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60937 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.1641 1.8594 4.1641 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3906-0.61328 1.3906-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047l-0.003907-1.5312c0-0.77734-0.60938-1.3867-1.3867-1.3867-0.77734 0-1.3906 0.60938-1.3906 1.3867v1.5273c-3.1641 0.64062-5.5547 3.4453-5.5547 6.8086 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3008-1.8633 4.1641-4.168 4.1641z"></path>
-                            <path d="m48.609 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3828 0.61328-1.3828 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8594-4.1641 4.1641-4.1641 2.3086 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.60938-1.3867-1.3906-1.3867-0.77734 0-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3047-1.8633 4.168-4.1719 4.168z"></path>
-                            <path d="m65.277 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77344-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.61328-1.3867-1.3906-1.3867s-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003907 2.3047-1.8672 4.168-4.1719 4.168z"></path>
-                            <path d="m86.109 54.168v-41.668c0-0.77734-0.60938-1.3906-1.3867-1.3906h-69.445c-0.77734 0-1.3867 0.61328-1.3867 1.3906v41.668c0 0.77734 0.60938 1.3867 1.3867 1.3867h31.945v28.582l-8.75-8.75c-0.55469-0.55469-1.418-0.55469-1.9727 0-0.55469 0.55469-0.55469 1.418 0 1.9727l11.109 11.109c0.14062 0.14062 0.27734 0.22266 0.44531 0.27734 0.19531 0.11328 0.39062 0.14453 0.55469 0.14453 0.16797 0 0.35938-0.027344 0.52734-0.10938 0.16797-0.054688 0.33203-0.16797 0.44531-0.30469l11.109-11.109c0.55469-0.55469 0.55469-1.418 0-1.9727-0.55469-0.55469-1.418-0.55469-1.9727 0l-8.7188 8.7461v-28.586h34.723c0.77734 0 1.3867-0.60938 1.3867-1.3867zm-2.7773-1.3906h-66.664v-38.887h66.668z"></path>
-                        </g>
-                    </svg><br>
-                    <span class="fs-3 fw-medium text-dark">Get your website for less</span>
-                    <p class=" text-o mt-2 text-justify">Get a high-quality website for a fraction of the cost charged by our competitors. We design smarter to make your budget go further.</p>
+                    <img src="assets/1-3.svg" width="100px" height="100px" alt=""><br>
+                    <span class="fs-3 fw-medium text-dark">Stay local</span>
+                    <p class=" text-o mt-2 text-justify">We understand what matters to NZ businesses and customers. As a Kiwi company, we’ve helped countless others get online.</p>
                 </div>
             </div>
         </div>
@@ -190,32 +182,60 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
 
     <div class="container-fluid mt-5 bg-color pt-5">
         <div class="row">
-            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Join our incredible <span class="text-orange">★★★★★</span> clients</span><br>
-                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o px-md-5">There is a reason we have a constantly growing list of 5 star reviews on Google. Our clients love us and we love them! Check out some of our recent sites below, but remember - every site is unique, and we'll build you the site that YOU want.</span>
-
+            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Join our amazing <span class="text-orange">★★★★★</span> clients</span><br>
+                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o px-md-5">Our 5-star reviews on Google speak for themselves. Clients love us, and we cherish working with them! Browse through some of our latest sites below, and remember - each site is custom-made just for you.</span>
             </div>
         </div>
+
         <div class="row mt-5 mt-md-0">
             <div class="fullscreen-container">
 
                 <div class="fullscreen-wrapper">
-                    <?php for ($x = 1; $x < 10; $x++) { ?>
-                        <div class="fullscreen-slide px-md-5 <?php echo $x === 1 ? 'active-slide' : ''; ?>">
-                            <div class="col-12 px-md-5 bg-white rounded-3">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 ">
-                                        <img src="assets/kiwi-last.webp" class="img-fluid p-5">
-                                    </div>
-                                    <div class="col-12 col-md-6 px-5 mt-md-5">
-                                        <h4 class="text-center text-md-start">Helping Children Thrive: Website & Branding</h4>
-                                        <p class="fs-5 text-secondary fw-normal text-justify">"543 has been a great help in helping us establish our online merchandise platform. They respond willingly and in a timely manner when help is needed, and are knowledgeable of the product they offer."</p>
-                                        <p class="fs-5 text-o fw-normal">★★★★★ - Emma Twigg (OLY)</p>
-                                    </div>
+                    <div class="fullscreen-slide px-md-5 active-slide">
+                        <div class="col-12 px-md-5 bg-white rounded-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 ">
+                                    <img src="assets/kiwi-last.webp" class="img-fluid p-5">
+                                </div>
+                                <div class="col-12 col-md-6 px-5 mt-md-5">
+                                    <h4 class="text-center text-md-start">Reliable and Innovative Solutions</h4>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">"The team has been a huge asset in developing our brand's online presence. They're quick to assist and really know their craft."</p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - John Doe (CEO)</p>
                                 </div>
                             </div>
                         </div>
-                    <?php } ?>
+                    </div>
+                    <div class="fullscreen-slide px-md-5 ">
+                        <div class="col-12 px-md-5 bg-white rounded-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 ">
+                                    <img src="assets/kiwi-last.webp" class="img-fluid p-5">
+                                </div>
+                                <div class="col-12 col-md-6 px-5 mt-md-5">
+                                    <h4 class="text-center text-md-start">Seamless Integration and Support</h4>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">"Working with this team was a dream. Their support has been prompt, and they truly understand the needs of our business."</p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - Sarah Lee (Marketing Manager)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fullscreen-slide px-md-5 ">
+                        <div class="col-12 px-md-5 bg-white rounded-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6 ">
+                                    <img src="assets/kiwi-last.webp" class="img-fluid p-5">
+                                </div>
+                                <div class="col-12 col-md-6 px-5 mt-md-5">
+                                    <h4 class="text-center text-md-start">A True Partner in Success</h4>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">"They helped us launch our new online store with great results. Their team is responsive and easy to work with."</p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - Michael Smith (Founder)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
         <div class="row mt-4">
@@ -228,12 +248,13 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
 
     <div class="container-fluid mt-5 pt-md-5">
         <div class="row">
-            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Pay however suits you.👍🏽 </span><br>
-                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">We want to give you the opportunity to have a stunning and effective website however it suits you best. Our low cost pricing options let you choose to pay for your site up front, or pay a simple monthly fee instead.</span>
-                <p class="d-md-none mt-4 px-3">We want to give you the opportunity to have a stunning and effective websites.</p>
+            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Choose your preferred payment method.👍🏽 </span><br>
+                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">We’re here to help you create an impactful website that fits your needs. Our affordable plans allow you to either pay upfront or enjoy a flexible monthly payment option.</span>
+                <p class="d-md-none mt-4 px-3">We’re here to help you create impactful websites.</p>
             </div>
         </div>
-        <div class="row px-3 px-md-0">
+
+        <div class="row px-3 px-md-0 mt-5">
             <div class="col-12 col-md-6">
                 <div class="row">
                     <div class="col-12 px-2 px-md-5">
@@ -243,7 +264,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                                 <span class="fs-5 fw-medium text-white d-none d-md-block">Make a single payment and enjoy lifetime access.</span>
                             </div>
                             <div class="col-12 text-center mt-5 mb-3">
-                                <button class="btn py-4 px-5 bg-white rounded-5"><span class="text-orange fs-5">from&nbsp;</span><span class="text-orange fs-1 fw-bold">NZD 25</span><br><span class="text-orange fs-4">/Full Payment</span></button>
+                                <button class="btn py-4 px-5 bg-white rounded-5"><span class="text-orange fs-5">from&nbsp;</span><span class="text-orange fs-1 fw-bold">NZD 100</span><br><span class="text-orange fs-4">/Full Payment</span></button>
                             </div>
                             <div class="col-12 text-center mt-5 mb-4">
                                 <ul class="list-unstyled text-center">
@@ -329,13 +350,13 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="faqHeading1">
                                     <button class="accordion-button d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true">
-                                        <span>What is your service about?</span>
-                                        <i class="bi bi-chevron-down ms-auto "></i>
+                                        <span>🎖️ Custom Logo & Identity</span>
+                                        <i class="bi bi-chevron-down ms-auto"></i>
                                     </button>
                                 </h2>
-                                <div id="faqCollapse1" class="accordion-collapse collapse show " aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        Our service provides high-quality web solutions to help businesses grow online.
+                                        We’ll design a logo that represents your business and provide all the necessary branding assets. From business cards to promotional materials, we’ve got you covered.
                                     </div>
                                 </div>
                             </div>
@@ -344,13 +365,13 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="faqHeading2">
                                     <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false">
-                                        How can I contact support?
-                                        <i class="bi bi-chevron-down ms-auto "></i>
+                                        🔎 SEO & Online Visibility
+                                        <i class="bi bi-chevron-down ms-auto"></i>
                                     </button>
                                 </h2>
                                 <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        You can contact our support team via email at support@example.com or through our live chat.
+                                        After building your site, we’ll optimize it to improve your visibility and rankings on search engines. Our goal is to help your business appear on top in search results.
                                     </div>
                                 </div>
                             </div>
@@ -359,13 +380,13 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="faqHeading3">
                                     <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false">
-                                        Do you offer refunds?
-                                        <i class="bi bi-chevron-down ms-auto "></i>
+                                        🎯 Paid Ads & Campaigns
+                                        <i class="bi bi-chevron-down ms-auto"></i>
                                     </button>
                                 </h2>
                                 <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        Yes, we offer a 30-day money-back guarantee on all our services.
+                                        We’ll help you reach the right audience with targeted ads on platforms like Google, Facebook, and Instagram, driving more traffic and boosting your site’s visibility.
                                     </div>
                                 </div>
                             </div>
@@ -374,16 +395,17 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="faqHeading4">
                                     <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false">
-                                        Is customization available?
-                                        <i class="bi bi-chevron-down ms-auto "></i>
+                                        🌏 Hosting, Domains & Email
+                                        <i class="bi bi-chevron-down ms-auto"></i>
                                     </button>
                                 </h2>
                                 <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        Yes, we provide custom development solutions tailored to your business needs.
+                                        We manage your domain, hosting, and email setup, ensuring everything runs smoothly. Clients love our hassle-free, all-inclusive service to get their website up and running.
                                     </div>
                                 </div>
                             </div>
+
 
                         </div>
                     </div>
@@ -395,14 +417,15 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         </div>
     </div>
 
-    <div class="container-fluid  mt-5 pt-md-2">
+    <div class="container-fluid mt-5 pt-md-2">
         <div class="row mt-md-5">
-            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Get online with a few simple steps. 🚀 </span><br>
-                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">Everything we do is about making life easier for you. Our no fuss approach means your site can be live in weeks (or days), not months.</span>
-                <p class="d-md-none mt-4 px-3">Everything we do is about making life easier for you. Our no fuss approach means your site can be live in weeks (or days), not months.</p>
+            <div class="text-center mt-3"><span class="display-4 text-dark fw-semibold">Launch your website in no time. 🚀 </span><br>
+                <span class="sub-title sub-title6 style1 text-ani-style2 mt-4 d-none d-md-inline-block text-o">We focus on simplicity, ensuring your site is live quickly. With our efficient process, your site can go live in days or weeks, not months.</span>
+                <p class="d-md-none mt-4 px-3">We focus on simplicity, ensuring your site is live quickly. With our efficient process, your site can go live in days or weeks, not months.</p>
             </div>
         </div>
     </div>
+
 
     <div class="container-fluid container-md mt-md-5">
         <div class="row">
@@ -461,14 +484,14 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         <div class="row mt-md-5">
             <div class="col-12 col-md-8 col-lg-6 mt-5">
                 <span class="h3 text-center text-md-start">
-                    Steering you in the right direction regardless whether you use us or not.
+                    Guiding you toward success, whether you choose us or not.
                 </span>
                 <div class="mt-4"></div>
                 <span class="fs-4 text-dark text-justify">
-                    Our team is always available to help out. We're committed to giving you the best advice - whether that means using 543 or someone else.
+                    Our experts are always ready to assist. We’re here to offer the best guidance, whether you go with 543 or another option.
                 </span>
                 <p class="text-o mt-4 text-justify">
-                    If you've got a question about absolutely anything design or online, don't hesitate to get in touch today. A chat is absolutely free and we'll make sure that after you talk to us you have a plan for whatever your individual situation is.
+                    Have questions about design or anything online? Feel free to reach out today. Our consultation is free, and we'll ensure you walk away with a clear plan tailored to your needs.
                 </p>
             </div>
             <div class="col-12 col-md-4 col-lg-6 mb-5">
@@ -476,6 +499,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
             </div>
         </div>
     </div>
+
 
     <script>
         let currentIndex = 0;

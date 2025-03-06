@@ -329,8 +329,69 @@ function sendMessage() {
             Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
 
             // Reset the button text to original
-            submitButton.innerHTML = 'Request a Visit <i class="fa-regular fa-arrow-right ms-2"></i>';
+            submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
         }
+    };
+
+    // Send the request with form data
+    xhr.send(formData);
+}
+
+function sendEBook(rbook) {
+    // Get form values
+    const firstname = document.getElementById('firstname').value;
+    const lastname = document.getElementById('lastname').value;
+    const workEmail = document.getElementById('workEmail').value;
+    const companyName = document.getElementById('companyName').value;
+    const mobileNumber = document.getElementById('mobileNumber').value;
+
+    // Validate required fields (basic validation)
+    if (!firstname || !lastname || !workEmail || !companyName || !mobileNumber ) {
+        Swal.fire('Error', 'All fields are required!', 'error');
+        return;
+    }
+
+    // Prepare form data to send
+    var formData = new FormData();
+    formData.append('rbook', rbook);
+    formData.append('firstname', firstname);
+    formData.append('lastname', lastname);
+    formData.append('workEmail', workEmail);
+    formData.append('companyName', companyName);
+    formData.append('mobileNumber', mobileNumber);
+
+    // Get button element
+    var submitButton = document.getElementById('thh-btn');
+
+    // Change button text to show spinner
+    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+    // Create a new XMLHttpRequest object
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'sendebook.php', true);
+    
+    // Handle response
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            // If everything is OK
+            var responseT = xhr.responseText;
+            if (responseT === 'success') {
+                Swal.fire('Success', 'Done! Please check your Email.', 'success');
+                submitButton.style.backgroundColor = '#FF5C35'; // Change button color
+            } else {
+                Swal.fire(responseT);
+            }
+        
+            // Reset the button text to original
+            submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
+        } else {
+            // Handle server error
+            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+        
+            // Reset the button text to original
+            submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
+        }
+        
     };
 
     // Send the request with form data
