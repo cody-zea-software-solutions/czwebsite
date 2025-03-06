@@ -1050,7 +1050,7 @@ Cta Area
         <div class="row d-flex justify-content-center">
 
             <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
-                <img src="assets/kiwi.png" class="img-flud w-25" alt="Feature001"> <br />
+                <img src="assets/homei001.png" class="img-flud w-25" alt="Feature001"> <br />
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black">Lightning-Fast Load Speeds</span>
                     <p class="text-black fw-thin fs-5">
@@ -1060,7 +1060,7 @@ Cta Area
 
             </div>
             <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
-                <img src="assets/recog.png" class="img-flud w-25" alt="Feature001"> <br />
+                <img src="assets/homei002.png" class="img-flud w-25" alt="Feature001"> <br />
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black">Conversion-Driven Designs </span>
                     <p class="text-black fw-thin fs-5">
@@ -1070,7 +1070,7 @@ Cta Area
 
             </div>
             <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
-                <img src="assets/app-icon/ai003.png" class="img-flud w-25" alt="Feature001"> <br />
+                <img src="assets/homei003.png" class="img-flud w-25" alt="Feature001"> <br />
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black">  SEO-Ready & Scalable </span>
                     <p class="text-black fw-thin fs-5">
