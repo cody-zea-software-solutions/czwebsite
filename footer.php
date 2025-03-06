@@ -9,8 +9,8 @@
                     <div class="widget footer-widget">
                         <div class="th-widget-about">
                             <div class="about-logo">
-                                <a class="icon-masking" href="index.php"><span data-mask-src="assets/img/logo.svg"
-                                        class="mask-icon"></span><img src="assets/img/logo.svg" alt="codyzea"></a>
+                                <a class="icon-masking" href="index.php"><span data-mask-src="assets/loader.svg"
+                                        class="mask-icon"></span><img src="assets/loader.svg" alt="codyzea"></a>
                             </div>
                             <p class="about-text">Codyzea represents our commitment to unlocking your brand’s true potential in the digital world. As a registered company in New Zealand and Sri Lanka, we provide innovative solutions to help your business grow.</p>
                             <div class="th-social">
@@ -45,9 +45,9 @@
                         <h3 class="widget_title">Our Business Solutions</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="solution-01.php">for Startup Businesses</a></li>
-                                <li><a href="solution-02.php">for Shop Owners</a></li>
-                                <li><a href="solution-03.php">for Restaurants & Motels</a></li>
+                                <li><a href="solution-01.php">For Startup Businesses</a></li>
+                                <li><a href="solution-02.php">For Shop Owners</a></li>
+                                <li><a href="solution-03.php">For Restaurants & Motels</a></li>
                             </ul>
                         </div>
                     </div>
@@ -95,13 +95,13 @@
             <div class="row gy-2 align-items-center justify-content-between">
                 <div class="col-md-6">
                     <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a
-                            href="codyzeafooter.com">Cody Zea</a>. All Rights Reserved.</p>
+                            href="codyzea.co.nz">Cody Zea Software Solutions</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-links">
                         <ul>
-                            <li><a href="contact.html">Privacy Policy</a></li>
-                            <li><a href="contact.html">Terms & Condition</a></li>
+                            <li><a href="assets/privacyandpolicycodyzea.pdf" target="_blank">Privacy Policy</a></li>
+                            <li><a href="assets/termsandconcodyzea.pdf" target="_blank">Terms & Condition</a></li>
                         </ul>
                     </div>
                 </div>

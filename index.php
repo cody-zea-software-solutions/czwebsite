@@ -34,9 +34,7 @@ require_once "assets/process/database.php";
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+
     <!--==============================
         All CSS File
     ============================== -->
@@ -88,14 +86,14 @@ require_once "assets/process/database.php";
             <button class="button">Decline</button>
         </div>
     </div>
-    
-         <a class="float-button" target="_blank"
+
+    <a class="float-button" target="_blank"
         href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
         <i class="fa-solid fa-phone-volume cta-btn"></i>
         <span class="fs-4">Talk Now<span>
-    </a>  
-  
- 
+    </a>
+
+
 
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -247,7 +245,8 @@ About Area
                             </div>
                         </div>
                         <div class="btn-group style3 mt-35">
-                            <a href="assets/codyzeabp.pdf"  target="_blank"  class="th-btn th-radius th-icon text-white fs-4">Grab Our Business
+                            <a href="assets/codyzeabp.pdf" target="_blank"
+                                class="th-btn th-radius th-icon text-white fs-4">Grab Our Business
                                 Profile<i class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="call-btn style2">
                                 <div class="icon bg-orange"><i class="fas fa-phone"></i></div>
@@ -454,8 +453,7 @@ About Area
     <!--==============================
 Service Area  
 ==============================-->
-    <section class="space ani-b" id="service-sec"
-        data-bg-src="assets/img/bg/service_bg_2.jpg">
+    <section class="space ani-b" id="service-sec" data-bg-src="assets/img/bg/service_bg_2.jpg">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center">
                 <div class="col-xl-5">
@@ -537,7 +535,7 @@ Service Area
                                 <img src="assets/img/icon/service_2_4.png" class="img-fluid w-50" alt="Icon">
                             </div>
                             <div class="service-grid_content">
-                                <h3 class="box-title"><a href="custom-software.html">Custom Software Development
+                                <h3 class="box-title"><a href="custom-software.php">Custom Software Development
                                     </a></h3>
                                 <p class="box-text text-white-o">We optimize your website's content, meta tags, headers,
                                     images, and
@@ -823,7 +821,7 @@ Testimonial Area
                                         </div>
                                         <div class="box-info">
                                             <h3 class="box-title">Ceynap,Auckland</h3>
-                                            <span class="box-desig">Coco Cir NZ</span>
+                                            <span class="box-desig">Coco Coir NZ</span>
                                         </div>
                                     </div>
                                     <div class="box-review">
@@ -1030,6 +1028,61 @@ Cta Area
     </div>
     <div class="container space ani-c">
         <div class="row">
+            <div class="col-12 col-lg-6 p-4 p-lg-0">
+                <span class="display-3 text-black">
+                    Kiwi Web Design: Crafted for Success,<span class="text-orange"> Tailored for You </span>
+                </span>
+                <p class="fs-5 text-black" style="text-align: justify;">
+                    Elevate your business with stunning, user-friendly websites designed by Kiwi experts. We blend
+                    creativity with functionality to help you stand out in a digital world. Fast, responsive, and built
+                    to grow your brand—let’s make your vision a reality!
+                </p>
+                <div class="btn-group">
+                    <a href="kiwi.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Make My Dream Website
+                        <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="assets/marketing.jpg" class="img-fluid" alt="webdesignillus001">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                <img src="assets/kiwi.png" class="img-flud w-25" alt="Feature001"> <br />
+                <div class="col-12 mt-3">
+                    <span class="fs-2 text-black">Lightning-Fast Load Speeds</span>
+                    <p class="text-black fw-thin fs-5">
+                    Keep visitors engaged with a seamless experience.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                <img src="assets/recog.png" class="img-flud w-25" alt="Feature001"> <br />
+                <div class="col-12 mt-3">
+                    <span class="fs-2 text-black">Conversion-Driven Designs </span>
+                    <p class="text-black fw-thin fs-5">
+                    More than just looks—our sites turn clicks into customers.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
+                <img src="assets/app-icon/ai003.png" class="img-flud w-25" alt="Feature001"> <br />
+                <div class="col-12 mt-3">
+                    <span class="fs-2 text-black">  SEO-Ready & Scalable </span>
+                    <p class="text-black fw-thin fs-5">
+                    Future-proof your business with built-in growth potential.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container space ani-c">
+        <div class="row">
             <div class="col-12 col-lg-6">
                 <img src="assets/marketing.jpg" class="img-fluid" alt="webdesignillus001">
             </div>
@@ -1232,7 +1285,7 @@ Price Area
                 </div>
                 <div class="col-auto">
                     <div class="sec-btn">
-                        <a href="blog.html" class="th-btn style2 th-radius th-icon">View All Post<i
+                        <a href="blog.php" class="th-btn style2 th-radius th-icon">View All Post<i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
