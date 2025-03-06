@@ -70,13 +70,7 @@
      Preloader
   ==============================-->
     <?php require_once "header.php" ?>
-    <div class="preloader ">
-        <button class="th-btn style1 preloaderCls">Cancel Preloader </button>
-        <div class="preloader-inner">
-            <img src="assets/img/logo.svg" alt="Rasm">
-            <span class="loader"></span>
-        </div>
-    </div>
+
     <div class="popup-search-box d-none d-lg-block">
         <button class="searchClose"><i class="fal fa-times"></i></button>
         <form action="#">

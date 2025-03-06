@@ -34,9 +34,9 @@ require_once "assets/process/database.php";
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
     <!--==============================
         All CSS File
     ============================== -->
@@ -55,6 +55,8 @@ require_once "assets/process/database.php";
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style2.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <style>
         .orange-border {
             border: 2px solid #FF5C35 !important;
@@ -86,6 +88,14 @@ require_once "assets/process/database.php";
             <button class="button">Decline</button>
         </div>
     </div>
+    
+         <a class="float-button" target="_blank"
+        href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
+        <i class="fa-solid fa-phone-volume cta-btn"></i>
+        <span class="fs-4">Talk Now<span>
+    </a>  
+  
+ 
 
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -237,8 +247,8 @@ About Area
                             </div>
                         </div>
                         <div class="btn-group style3 mt-35">
-                            <a href="about.html" class="th-btn th-radius th-icon text-white fs-4">Grab Our Business Profile<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <a href="assets/codyzeabp.pdf"  target="_blank"  class="th-btn th-radius th-icon text-white fs-4">Grab Our Business
+                                Profile<i class="fa-regular fa-arrow-right ms-2"></i></a>
                             <div class="call-btn style2">
                                 <div class="icon bg-orange"><i class="fas fa-phone"></i></div>
                                 <div class="media-body">
@@ -259,7 +269,7 @@ About Area
 
     </div>
 
-    <div class="container">
+    <div class="container ani-c">
         <div class="row bg-color rounded-20 shadow-sm p-5">
 
             <div class="col-12 col-lg-8 border-end border-1 border-dark">
@@ -444,15 +454,15 @@ About Area
     <!--==============================
 Service Area  
 ==============================-->
-    <section class="bg-top-center z-index-common space overflow-hidden" id="service-sec"
+    <section class="space ani-b" id="service-sec"
         data-bg-src="assets/img/bg/service_bg_2.jpg">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center">
                 <div class="col-xl-5">
                     <div class="title-area mb-35 text-center text-lg-start pe-xl-5">
                         <span class="sub-title sub-title7 style1 text-ani-style2">Our Services</span>
-                        <h2 class="sec-title text-ani-style3">Smart Solutions,<span class="text-orange">Seamless
-                                Evolution</span></h2>
+                        <p class="text-black display-4 fw-bold">Smart Solutions,<span class="text-orange">Seamless
+                                Evolution</span></p>
                         <p class="text-black fs-5 fw-lighter">We provide smart solutions that fuel your business growth.
                             Our
                             custom software ensures seamless evolution, tailored to meet your unique needs.</p>
@@ -591,7 +601,7 @@ About Area
     </div><!--==============================
 portfolio Area  
 ==============================-->
-    <div class="row">
+    <div class="row ani-c">
         <div class="col-12 col-lg-6">
             <!--======== / Work Section ========-->
             <div class="row text-center p-5">
@@ -725,7 +735,7 @@ portfolio Area
     </div>
 
 
-    <div class="choose-area bg-title overflow-hidden" data-mask-src="assets/img/bg/choose_bg_3.png">
+    <div class="choose-area bg-title overflow-hidden ani-c" data-mask-src="assets/img/bg/choose_bg_3.png">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -783,7 +793,7 @@ portfolio Area
 
 Testimonial Area  
 ==============================-->
-    <section class="overflow-hidden space-bottom mt-5 space" id="testi-sec">
+    <section class="overflow-hidden space-bottom mt-5 space ani-c" id="testi-sec">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
@@ -971,7 +981,7 @@ Cta Area
         </div>
     </section>
 
-    <div class="container">
+    <div class="container ani-c">
         <div class="row">
             <div class="col-12 col-lg-6 p-4 p-lg-0">
                 <span class="display-3 text-black">
@@ -997,7 +1007,7 @@ Cta Area
 
 
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid ani-b">
         <div class="row vh-100 d-flex justify-content-end align-items-center p-5"
             style="background-image: url(assets/branding.jpg); background-size: cover;">
             <div class="col-12 col-lg-4 bg-white text-center p-5" style="height:70vh;">
@@ -1018,7 +1028,7 @@ Cta Area
             </div>
         </div>
     </div>
-    <div class="container space">
+    <div class="container space ani-c">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <img src="assets/marketing.jpg" class="img-fluid" alt="webdesignillus001">
@@ -1045,7 +1055,7 @@ Cta Area
 
 
     </div>
-    <div class="container p-3">
+    <div class="container p-3 ani-c">
         <div class="row bg-color rounded-20 shadow-sm p-5">
 
             <div class="col-12 col-lg-6">
@@ -1058,7 +1068,7 @@ Cta Area
 
                 </span>
                 <div class="btn-group mt-3">
-                    <a href="digital-marketing.php" class="th-btn blue-btn style1 th-icon th-radius fs-5"> Download Your
+                    <a href="ebook-branding.php" class="th-btn blue-btn style1 th-icon th-radius fs-5"> Download Your
                         Free e-Book
                         <i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
@@ -1105,7 +1115,7 @@ Price Area
                             $data = $result->fetch_assoc();
                             ?>
 
-                            <div class="col-xl-4 col-md-6">
+                            <div class="col-xl-4 col-md-8">
                                 <div class="price-box th-ani <?php if ($x == 2) {
                                     echo "active orange-border";
                                 } else {
@@ -1211,7 +1221,7 @@ Price Area
         ?>
     </section>
 
-    <section class="blog-area3 overflow-hidden space" id="blog-sec">
+    <section class="blog-area3 overflow-hidden space ani-c" id="blog-sec">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-lg-7">
@@ -1299,7 +1309,7 @@ Price Area
         </div>
     </section>
 
-    <div class="container mb-3">
+    <div class="container mb-3 ani-b">
         <div class="row">
             <div class="col-12 col-lg-6 mt-2">
                 <img src="assets/contact-hero.png" class="img-fluid" alt="ContactUsFormCover">
@@ -1386,6 +1396,34 @@ Cta Area
         </svg>
     </div>
 
+    <script>
+        window.onload = function () {
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        };
+
+
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 1500,
+            delay: 200,
+
+        });
+        ScrollReveal().reveal('.contact ,  .tag', { delay: 100, origin: "left" });
+        ScrollReveal().reveal('.i1', { delay: 50, origin: "left" });
+        ScrollReveal().reveal('.i2', { delay: 50, origin: "right" });
+        ScrollReveal().reveal('.ani-b', { delay: 50, origin: "bottom" });
+        ScrollReveal().reveal('.i4', { delay: 50, origin: "left" });
+        ScrollReveal().reveal('.i5', { delay: 50, origin: "top" });
+        ScrollReveal().reveal('.i6', { delay: 50, origin: "left" });
+        ScrollReveal().reveal('.i7', { delay: 50, origin: "right" });
+        ScrollReveal().reveal('.ani-c', { delay: 50, origin: "top" });
+        ScrollReveal().reveal('.i9', { delay: 50, origin: "left" });
+
+        ScrollReveal().reveal('.tag-2', { delay: 200, origin: "right" });
+        ScrollReveal().reveal('.tag-3', { delay: 300, origin: "right" });
+    </script>
     <!--============================== All Js File ============================== -->
     <script src="assets/js/pricing.js"></script>
     <!-- Jquery -->

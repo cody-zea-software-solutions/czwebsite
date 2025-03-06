@@ -4,29 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Contact Us</title>
-    <meta name="author" content="themeholy">
-    <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-    <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
+    <title>Click with Confidence: Unlock the Power of Speed & Branding</title>
+    <meta name="author" content="Cody Zea">
+    <meta name="description"
+        content="Speed Sells: Learn how fast websites and powerful branding fuel business growth with this insightful e-book by Cody Zea.">
+    <meta name="keywords" content="Speed Sells, branding, fast websites, digital marketing, business growth, Cody Zea">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
@@ -93,6 +84,8 @@
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
+                <img src="assets/ebook-water.png" class="img-fluid w-25" alt="">
+
                     <span class="display-5 text-orange">Ready to Supercharge Your Website?
 
 
@@ -150,7 +143,8 @@
                     <div class="col-10 mt-3 d-flex justify-content-center">
                         <!-- Submit Button -->
                         <div class="btn-group col-12">
-                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn" onclick="sendEBook('ebook_name');">Get Your Free
+                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
+                                onclick="sendEBook('ebook_name');">Get Your Free
                                 E-Book Now!
 
 
@@ -175,15 +169,20 @@
                 <br>
                 <br>
                 <ul>
-                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Speed Optimization Tips</strong>: Discover essential techniques to speed up your
+                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Speed Optimization Tips</strong>:
+                        Discover essential techniques to speed up your
                         website, reducing bounce rates and improving user experience.</li> <br>
-                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Mobile Optimization Best Practices</strong>: Learn how to make your website fast and
+                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Mobile Optimization Best
+                            Practices</strong>: Learn how to make your website fast and
                         responsive across all devices, especially mobile.</li> <br>
-                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Conversion-Boosting Design</strong>: Uncover how a fast website increases conversion
+                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Conversion-Boosting
+                            Design</strong>: Uncover how a fast website increases conversion
                         rates, keeping users engaged and ready to take action.</li> <br>
-                    <li class="text-black fs-5 fw-light"><strong class="text-orange">SEO Benefits</strong>: Understand how a fast-loading website improves your search engine
+                    <li class="text-black fs-5 fw-light"><strong class="text-orange">SEO Benefits</strong>: Understand
+                        how a fast-loading website improves your search engine
                         rankings and drives more traffic to your site.</li> <br>
-                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Real-World Insights</strong>: Backed by data and statistics, this e-book offers
+                    <li class="text-black fs-5 fw-light"><strong class="text-orange">Real-World Insights</strong>:
+                        Backed by data and statistics, this e-book offers
                         practical tips to optimize your site’s performance for maximum impact.</li>
                 </ul>
             </div>
