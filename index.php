@@ -126,7 +126,7 @@ Hero Area
                                 your business. Whether it's a website, a mobile app, or software, we help you scale,
                                 optimize, and succeed in the digital world.</p>
                             <div class="btn-group">
-                                <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started
+                                <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started
                                     Now<i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>

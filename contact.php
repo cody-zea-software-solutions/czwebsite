@@ -163,7 +163,7 @@
                         </div>
                         <div class="col-10 col-lg-6 mt-3">
                             <div class="btn-group col-12">
-                                <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12">Get
+                                <a href="#form" class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12">Get
                                     Your Quote
                                     <i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
@@ -242,7 +242,7 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" style="z-index: 1000;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content rounded-0 border-0">
 
@@ -325,7 +325,7 @@
     <!--==============================
 Contact Area  
 ==============================-->
-    <div class="container mb-3">
+    <div class="container mb-3" id="form">
         <div class="row">
             <div class="col-12 col-lg-6 mt-2">
                 <img src="assets/contact-hero.png" class="img-fluid" alt="ContactUsFormCover">
