@@ -119,7 +119,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                             <li><i class="fa-solid fa-phone text-white"></i><a href="tel:+163217322978"
                                     class="text-white">+64 22 356 8614</a>
                             </li>
-                            <li><i class="fa-solid fa-envelope text-white"></i><a href="mailto:saorhelp@gmail.com"
+                            <li><i class="fa-solid fa-envelope text-white"></i><a href="mailto:info@codyzea.com"
                                     class="text-white">info@codyzea.com</a>
                             </li>
                         </ul>
