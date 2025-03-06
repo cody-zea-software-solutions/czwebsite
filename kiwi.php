@@ -8,7 +8,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - KIWI</title>
+    <title>Codyzea - Custom Websites Built for New Zealand Businesses – Fast, Secure & SEO-Optimized</title>
     <meta name="author" content="themeholy">
     <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
     <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
@@ -132,7 +132,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
             </div>
             <div class="col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-md-0">
                 <div class="row">
-                    <img src="assets/kiwi-hero.webp" alt="" class="img-fluid pricing-image p-5 pb-0" style="background-color: #FF5C35; border-radius: 40px;">
+                    <img src="assets/kiwi-hero.webp" alt="" class="img-fluid pricing-image p-5 pb-0" style="background-color:#FF5C35; border-radius: 40px;">
                 </div>
             </div>
 
@@ -158,23 +158,23 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <img src="assets/1-1.svg" width="100px" height="100px" alt=""><br>
+                    <img src="assets/1-1.svg" width="100px" height="100px" class="mb-4" alt=""><br>
                     <span class="fs-3 fw-medium text-dark">Get your website at a great price</span>
-                    <p class=" text-o mt-2 text-justify ">Get a top-notch website without the high cost. We optimize our designs to stretch your budget further.</p>
+                    <p class=" text-o mt-2 text-justify mt-3 ">Get a top-notch website without the high cost. We optimize our designs to stretch your budget further.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1 ">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <img src="assets/1-2.svg" width="100px" height="100px" alt=""><br>
+                    <img src="assets/1-2.svg" width="100px" height="100px" class="mb-4" alt=""><br>
                     <span class="fs-3 fw-medium text-dark">Rank higher and boost sales</span>
-                    <p class=" text-o mt-2 text-justify">With our expertise, you’ll get a faster, SEO-optimized website that not only ranks better but also converts more, all while looking amazing.</p>
+                    <p class=" text-o mt-2 text-justify mt-3">With our expertise, you’ll get a faster, SEO-optimized website that not only ranks better but also converts more, all while looking amazing.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1 ">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <img src="assets/1-3.svg" width="100px" height="100px" alt=""><br>
+                    <img src="assets/1-3.svg" width="100px" height="100px" class="mb-4" alt=""><br>
                     <span class="fs-3 fw-medium text-dark">Stay local</span>
-                    <p class=" text-o mt-2 text-justify">We understand what matters to NZ businesses and customers. As a Kiwi company, we’ve helped countless others get online.</p>
+                    <p class=" text-o mt-2 text-justify mt-3">We understand what matters to NZ businesses and customers. As a Kiwi company, we’ve helped countless others get online.</p>
                 </div>
             </div>
         </div>
@@ -195,10 +195,10 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                         <div class="col-12 px-md-5 bg-white rounded-3">
                             <div class="row">
                                 <div class="col-12 col-md-6 ">
-                                    <img src="assets/kiwi-last.webp" class="img-fluid p-5">
+                                    <img src="assets/review.svg" class="img-fluid p-2">
                                 </div>
-                                <div class="col-12 col-md-6 px-5 mt-md-5">
-                                    <h4 class="text-center text-md-start">Reliable and Innovative Solutions</h4>
+                                <div class="col-12 col-md-6 px-5 mt-md-5 ">
+                                    <h2 class="text-center text-md-start">Reliable and Innovative Solutions</h2>
                                     <p class="fs-5 text-secondary fw-normal text-justify">"The team has been a huge asset in developing our brand's online presence. They're quick to assist and really know their craft."</p>
                                     <p class="fs-5 text-o fw-normal">★★★★★ - John Doe (CEO)</p>
                                 </div>
@@ -209,10 +209,10 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                         <div class="col-12 px-md-5 bg-white rounded-3">
                             <div class="row">
                                 <div class="col-12 col-md-6 ">
-                                    <img src="assets/kiwi-last.webp" class="img-fluid p-5">
+                                    <img src="assets/review.svg" class="img-fluid p-2">
                                 </div>
                                 <div class="col-12 col-md-6 px-5 mt-md-5">
-                                    <h4 class="text-center text-md-start">Seamless Integration and Support</h4>
+                                    <h2 class="text-center text-md-start">Seamless Integration and Support</h2>
                                     <p class="fs-5 text-secondary fw-normal text-justify">"Working with this team was a dream. Their support has been prompt, and they truly understand the needs of our business."</p>
                                     <p class="fs-5 text-o fw-normal">★★★★★ - Sarah Lee (Marketing Manager)</p>
                                 </div>
@@ -223,10 +223,10 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                         <div class="col-12 px-md-5 bg-white rounded-3">
                             <div class="row">
                                 <div class="col-12 col-md-6 ">
-                                    <img src="assets/kiwi-last.webp" class="img-fluid p-5">
+                                    <img src="assets/review.svg" class="img-fluid p-2">
                                 </div>
                                 <div class="col-12 col-md-6 px-5 mt-md-5">
-                                    <h4 class="text-center text-md-start">A True Partner in Success</h4>
+                                    <h2 class="text-center text-md-start">A True Partner in Success</h2>
                                     <p class="fs-5 text-secondary fw-normal text-justify">"They helped us launch our new online store with great results. Their team is responsive and easy to work with."</p>
                                     <p class="fs-5 text-o fw-normal">★★★★★ - Michael Smith (Founder)</p>
                                 </div>
@@ -238,7 +238,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
 
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-2 mb-5">
             <div class="col-12 d-flex justify-content-center">
                 <button class="btn bg-color rounded-circle h3 me-3" style="width: 80px; height: 80px;" onclick="navigateSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
                 <button class="btn bg-color rounded-circle h3 ms-3" style="width: 80px; height: 80px;" onclick="navigateSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
@@ -431,44 +431,23 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1954371169" data-icon-custom="true">
-                        <g>
-                            <path d="m31.945 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77734 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60937 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.1641 1.8594 4.1641 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3906-0.61328 1.3906-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047l-0.003907-1.5312c0-0.77734-0.60938-1.3867-1.3867-1.3867-0.77734 0-1.3906 0.60938-1.3906 1.3867v1.5273c-3.1641 0.64062-5.5547 3.4453-5.5547 6.8086 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3008-1.8633 4.1641-4.168 4.1641z"></path>
-                            <path d="m48.609 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3828 0.61328-1.3828 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8594-4.1641 4.1641-4.1641 2.3086 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.60938-1.3867-1.3906-1.3867-0.77734 0-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3047-1.8633 4.168-4.1719 4.168z"></path>
-                            <path d="m65.277 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77344-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.61328-1.3867-1.3906-1.3867s-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003907 2.3047-1.8672 4.168-4.1719 4.168z"></path>
-                            <path d="m86.109 54.168v-41.668c0-0.77734-0.60938-1.3906-1.3867-1.3906h-69.445c-0.77734 0-1.3867 0.61328-1.3867 1.3906v41.668c0 0.77734 0.60938 1.3867 1.3867 1.3867h31.945v28.582l-8.75-8.75c-0.55469-0.55469-1.418-0.55469-1.9727 0-0.55469 0.55469-0.55469 1.418 0 1.9727l11.109 11.109c0.14062 0.14062 0.27734 0.22266 0.44531 0.27734 0.19531 0.11328 0.39062 0.14453 0.55469 0.14453 0.16797 0 0.35938-0.027344 0.52734-0.10938 0.16797-0.054688 0.33203-0.16797 0.44531-0.30469l11.109-11.109c0.55469-0.55469 0.55469-1.418 0-1.9727-0.55469-0.55469-1.418-0.55469-1.9727 0l-8.7188 8.7461v-28.586h34.723c0.77734 0 1.3867-0.60938 1.3867-1.3867zm-2.7773-1.3906h-66.664v-38.887h66.668z"></path>
-                        </g>
-                    </svg><br>
-                    <span class="fs-3 fw-medium text-dark">Get your website for less</span>
-                    <p class=" text-o mt-2 text-justify ">Get a high-quality website for a fraction of the cost charged by our competitors. We design smarter to make your budget go further.</p>
+                <img src="assets/2-1.svg" width="100px" height="100px" class="mb-4" alt=""><br>
+                    <span class="fs-3 fw-medium text-dark">Reach Out to Us</span>
+                    <p class=" text-o mt-2 text-justify mt-3 ">Simply fill out our contact form, give us a call, or send an email, and our founder, Jamie Twigg, will get back to you within 24 hours to discuss your project. Want to chat right away? Schedule a time that works for you below! 📅</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1 ">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1954371169" data-icon-custom="true">
-                        <g>
-                            <path d="m31.945 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77734 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60937 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.1641 1.8594 4.1641 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3906-0.61328 1.3906-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047l-0.003907-1.5312c0-0.77734-0.60938-1.3867-1.3867-1.3867-0.77734 0-1.3906 0.60938-1.3906 1.3867v1.5273c-3.1641 0.64062-5.5547 3.4453-5.5547 6.8086 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3008-1.8633 4.1641-4.168 4.1641z"></path>
-                            <path d="m48.609 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3828 0.61328-1.3828 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8594-4.1641 4.1641-4.1641 2.3086 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.60938-1.3867-1.3906-1.3867-0.77734 0-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3047-1.8633 4.168-4.1719 4.168z"></path>
-                            <path d="m65.277 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77344-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.61328-1.3867-1.3906-1.3867s-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003907 2.3047-1.8672 4.168-4.1719 4.168z"></path>
-                            <path d="m86.109 54.168v-41.668c0-0.77734-0.60938-1.3906-1.3867-1.3906h-69.445c-0.77734 0-1.3867 0.61328-1.3867 1.3906v41.668c0 0.77734 0.60938 1.3867 1.3867 1.3867h31.945v28.582l-8.75-8.75c-0.55469-0.55469-1.418-0.55469-1.9727 0-0.55469 0.55469-0.55469 1.418 0 1.9727l11.109 11.109c0.14062 0.14062 0.27734 0.22266 0.44531 0.27734 0.19531 0.11328 0.39062 0.14453 0.55469 0.14453 0.16797 0 0.35938-0.027344 0.52734-0.10938 0.16797-0.054688 0.33203-0.16797 0.44531-0.30469l11.109-11.109c0.55469-0.55469 0.55469-1.418 0-1.9727-0.55469-0.55469-1.418-0.55469-1.9727 0l-8.7188 8.7461v-28.586h34.723c0.77734 0 1.3867-0.60938 1.3867-1.3867zm-2.7773-1.3906h-66.664v-38.887h66.668z"></path>
-                        </g>
-                    </svg><br>
-                    <span class="fs-3 fw-medium text-dark">Get your website for less</span>
-                    <p class=" text-o mt-2 text-justify">Get a high-quality website for a fraction of the cost charged by our competitors. We design smarter to make your budget go further.</p>
+                <img src="assets/2-2.svg" width="100px" height="100px" class="mb-4" alt=""><br>
+                    <span class="fs-3 fw-medium text-dark">We Create Your Website</span>
+                    <p class=" text-o mt-2 text-justify mt-3">Within two weeks (or sooner if needed), we'll present an initial homepage draft. From there, we'll refine it as many times as necessary until you're completely satisfied! ❤️</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                    <svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="1954371169" data-icon-custom="true">
-                        <g>
-                            <path d="m31.945 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77734 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60937 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.1641 1.8594 4.1641 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3906-0.61328 1.3906-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047l-0.003907-1.5312c0-0.77734-0.60938-1.3867-1.3867-1.3867-0.77734 0-1.3906 0.60938-1.3906 1.3867v1.5273c-3.1641 0.64062-5.5547 3.4453-5.5547 6.8086 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3008-1.8633 4.1641-4.168 4.1641z"></path>
-                            <path d="m48.609 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3828 0.61328-1.3828 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8594-4.1641 4.1641-4.1641 2.3086 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.60938-1.3867-1.3906-1.3867-0.77734 0-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003906 2.3047-1.8633 4.168-4.1719 4.168z"></path>
-                            <path d="m65.277 41.668c-2.3047 0-4.168-1.8594-4.168-4.168 0-0.77734-0.60938-1.3906-1.3906-1.3906-0.77344 0-1.3867 0.61328-1.3867 1.3906 0 3.3594 2.3906 6.168 5.5547 6.8047v1.5273c0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77734 0 1.3906-0.60938 1.3906-1.3906v-1.5273c3.168-0.64063 5.5547-3.4453 5.5547-6.8047 0-3.832-3.1094-6.9453-6.9453-6.9453-2.3047 0-4.168-1.8594-4.168-4.168 0-2.3047 1.8633-4.1641 4.168-4.1641 2.3047 0 4.168 1.8594 4.168 4.168 0 0.77734 0.60938 1.3906 1.3906 1.3906 0.77344-0.003906 1.3867-0.61328 1.3867-1.3906 0-3.3594-2.3906-6.168-5.5547-6.8047v-1.5312c0-0.77734-0.61328-1.3867-1.3906-1.3867s-1.3867 0.60938-1.3867 1.3867v1.5273c-3.168 0.64062-5.5547 3.4453-5.5547 6.8047 0 3.832 3.1094 6.9453 6.9453 6.9453 2.3047 0 4.168 1.8594 4.168 4.168-0.003907 2.3047-1.8672 4.168-4.1719 4.168z"></path>
-                            <path d="m86.109 54.168v-41.668c0-0.77734-0.60938-1.3906-1.3867-1.3906h-69.445c-0.77734 0-1.3867 0.61328-1.3867 1.3906v41.668c0 0.77734 0.60938 1.3867 1.3867 1.3867h31.945v28.582l-8.75-8.75c-0.55469-0.55469-1.418-0.55469-1.9727 0-0.55469 0.55469-0.55469 1.418 0 1.9727l11.109 11.109c0.14062 0.14062 0.27734 0.22266 0.44531 0.27734 0.19531 0.11328 0.39062 0.14453 0.55469 0.14453 0.16797 0 0.35938-0.027344 0.52734-0.10938 0.16797-0.054688 0.33203-0.16797 0.44531-0.30469l11.109-11.109c0.55469-0.55469 0.55469-1.418 0-1.9727-0.55469-0.55469-1.418-0.55469-1.9727 0l-8.7188 8.7461v-28.586h34.723c0.77734 0 1.3867-0.60938 1.3867-1.3867zm-2.7773-1.3906h-66.664v-38.887h66.668z"></path>
-                        </g>
-                    </svg><br>
-                    <span class="fs-3 fw-medium text-dark">Get your website for less</span>
-                    <p class=" text-o mt-2 text-justify">Get a high-quality website for a fraction of the cost charged by our competitors. We design smarter to make your budget go further.</p>
+                <img src="assets/2-3.svg" width="100px" height="100px" class="mb-4" alt=""><br>
+                    <span class="fs-3 fw-medium text-dark">We Launch Your Website</span>
+                    <p class=" text-o mt-2 text-justify mt-3">Once you're happy with the design, we'll add content, optimize it for SEO, make it live, secure it with an SSL certificate, and submit it to Google Search Console for indexing. Your website will be up and running in just a few weeks! 🎉</p>
                 </div>
             </div>
         </div>

@@ -64,33 +64,42 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                     <a href="offers.php">Offers</a>
                     <ul class="sub-menu">
                         <li><a href="offers.php">SmartHost Deal
-                        </a></li>
+                            </a></li>
                         <li><a href="offers.php">Pay for Hosting, Get a Website Free
-                        </a></li>
+                            </a></li>
                         <li><a href="offers.php">Exclusive Package for Small Businesses
-                        </a></li>
+                            </a></li>
                     </ul>
                 </li>
                 <li><a href="solutions.php">Solutions</a></li>
                 <li class="menu-item-has-children">
                     <a href="offers.php">Offers</a>
                     <ul class="sub-menu">
-                        <li><a href="offers.php">SmartHost Deal
-                        </a></li>
-                        <li><a href="offers.php">Pay for Hosting, Get a Website Free
-                        </a></li>
-                        <li><a href="offers.php">Exclusive Package for Small Businesses
-                        </a></li>
+                        <?php
+                        $offerD = Databases::Search("SELECT * FROM `offer` LIMIT 3");
+                        while ($offer = $offerD->fetch_assoc()) {
+                        ?>
+                            <li><a href="offers.php"><?php echo $offer['of_name'] ?>
+                                </a></li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
+                    <a href="blog.php">Blog</a>
                     <ul class="sub-menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
+                        <?php
+                        $blogD = Databases::Search("SELECT * FROM `blogs` LIMIT 2");
+                        while ($blog = $blogD->fetch_assoc()) {
+                        ?>
+                            <li><a href="blog.php"><?php echo $blog['blog_name'] ?></a></li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
             </ul>
         </div>
     </div>
@@ -158,7 +167,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                             <?php
                                             $offerD = Databases::Search("SELECT * FROM `offer` LIMIT 3");
                                             while ($offer = $offerD->fetch_assoc()) {
-                                                ?>
+                                            ?>
                                                 <div class="col-12 col-lg-4 d-flex">
                                                     <div class="choose-feature-wrap">
                                                         <div class="choose-feature cody-bg p-3 rounded-20">
@@ -173,7 +182,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <?php
+                                            <?php
                                             }
                                             ?>
 
@@ -224,7 +233,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
                                         <div class="row">
-                                        <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
+                                            <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
                                                 onclick="window.location.href='solution-01.php'"
                                                 style="cursor: pointer;">
                                                 <div class="col-12 rounded-20"
@@ -236,7 +245,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         Made Simple: Your All-in-One
                                                         Solution
                                                     </span>
-                                                   
+
                                                 </div>
 
                                             </div>
@@ -273,7 +282,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                 </div>
 
                                             </div>
-                                          
+
 
                                         </div>
                                     </ul>
@@ -286,7 +295,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                             <?php
                                             $blogD = Databases::Search("SELECT * FROM `blogs` LIMIT 2");
                                             while ($blog = $blogD->fetch_assoc()) {
-                                                ?>
+                                            ?>
                                                 <div class="col-12 col-lg-6 d-flex">
                                                     <div class="choose-feature-wrap">
                                                         <div class="choose-feature cody-bg p-3 rounded-20">
@@ -313,7 +322,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <?php
+                                            <?php
                                             }
                                             ?>
                                         </div>
