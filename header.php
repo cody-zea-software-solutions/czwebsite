@@ -162,7 +162,6 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                             <ul>
                                 <li><a href="index.php" class="text-black fw-semibold fs-6 hover-nav">Home</a></li>
                                 <li><a href="pricing.php" class="text-black fw-semibold fs-6 hover-nav">Pricing</a></li>
-                                <li><a href="cart.php" class="text-black fw-semibold fs-6 hover-nav">Cart</a></li>
                                 <li class="menu-item-has-children">
                                     <a href="offers.php" class="text-black fw-semibold fs-6 hover-nav">Offers</a>
                                     <ul class="mega-menu" style="width: 1200px;">
@@ -304,6 +303,7 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-button">
+                            <a href="cart.php" class=""><i class="fa fa-cart-plus fs-3" aria-hidden="true"></i></a>
                             <!-- <button type="button" class="icon-btn th-radius searchBoxToggler"><i
                                     class="far fa-search text-b fw-semibold"></i></button> -->
                             <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i
