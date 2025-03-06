@@ -54,6 +54,7 @@ $res = Databases::search($query);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--==============================
         All CSS File
     ============================== -->
@@ -71,6 +72,38 @@ $res = Databases::search($query);
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/shop-assets/style.css">
     <link rel="stylesheet" href="assets/css/pricing-styles.css">
+
+    <style>
+        /* Basic spinner styles */
+        .spinner-border {
+            width: 2rem;
+            height: 2rem;
+            border: 0.3em solid transparent;
+            border-top-color: #ffffff;
+            /* Spinner color */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            /* Ensures the spinner is inline with text */
+        }
+
+        /* Spinner rotation animation */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Optional: Add a custom text for "loading" */
+        .visually-hidden {
+            visibility: hidden;
+        }
+    </style>
+
 
 </head>
 
@@ -106,13 +139,13 @@ $res = Databases::search($query);
                 $discount = 0;
 
                 if ($res->num_rows == 0) {
-                    ?>
+                ?>
                     <div class="py-5 bg-color my-5"><span class="text-dark h6">Cart is Empty</span><br>
                         <a href="pricing.php" class="h4 text-orange text-decoration-underline mt-5">Continue Shopping</a>
                     </div>
-                    <?php
+                <?php
                 } else {
-                    ?>
+                ?>
                     <div class="mt-5 text-dark text-start fw-semibold "><a href="pricing.php"
                             class="text-o text-decoration-underline"><i class="fa fa-long-arrow-left"
                                 aria-hidden="true"></i>&nbsp;Back to Shopping</a></div>
@@ -134,7 +167,7 @@ $res = Databases::search($query);
                                 $subtotal = $subtotal + $results['pack_price'];
                                 $beforePriceAdded = 0;
 
-                                ?>
+                            ?>
                                 <tr class="cart_item">
                                     <td data-title="Product">
                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -165,7 +198,7 @@ $res = Databases::search($query);
                                         while ($ci = $cid->fetch_assoc()) {
                                             if ($ci['offer_pack_id'] == 0) {
 
-                                                ?>
+                                ?>
                                                 <tr class="cart_item">
                                                     <td data-title="Product">
                                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -199,7 +232,7 @@ $res = Databases::search($query);
                                                     $isPrintedD = Databases::Search("SELECT * FROM `cart` WHERE `user_id`= '" . $_SESSION['user_id'] . "' AND `pack_id`='" . $ci['offer_pack_id'] . "' ");
                                                     if ($isPrintedD->num_rows == 0) {
 
-                                                        ?>
+                                                ?>
                                                         <tr class="cart_item">
                                                             <td data-title="Product">
                                                                 <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -218,7 +251,7 @@ $res = Databases::search($query);
                                                             </td>
                                                             <td data-title="Remove"></td>
                                                         </tr>
-                                                        <?php
+                            <?php
 
                                                     }
                                                 }
@@ -303,7 +336,7 @@ $res = Databases::search($query);
 
 
 
-                                                ?>
+                                            ?>
                                                 <div class="coupon p-3 mt-md-3 rounded-0 bg-color"
                                                     style="border: 2px dashed rgb(167, 162, 162) !important;">
                                                     <span
@@ -311,7 +344,7 @@ $res = Databases::search($query);
                                                     <button class="remove-coupon-btn text-o fw-bold ms-3"
                                                         onclick="removeCoupon(<?php echo $coupon['uc_id']; ?>);">×</button>
                                                 </div>
-                                                <?php
+                                            <?php
                                             }
                                             $subtotal = number_format($subtotal, 2, '.', '');
                                             ?>
@@ -324,7 +357,7 @@ $res = Databases::search($query);
 
                         </tbody>
                     </table>
-                    <?php
+                <?php
                 }
                 ?>
 
@@ -366,6 +399,14 @@ $res = Databases::search($query);
                                 </td>
                             </tr>
                         </tbody>
+
+                        <?php
+                        $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $_SESSION['user_id'] . "' AND `c_status` = '1' ");
+                        if ($coupond->num_rows == 0) {
+                            $final_price = $subtotal;
+                        }
+                        ?>
+
                         <tfoot>
                             <tr class="order-total">
                                 <td><span class="h6 fw-semibold text-orange">Order Total</span></td>
@@ -377,13 +418,67 @@ $res = Databases::search($query);
                         </tfoot>
                     </table>
                     <div class="wc-proceed-to-checkout text-center mt-5">
-                        <button type="submit" class="th-btn rounded-pill text-white fs-4 mt-3">Proceed to
-                            checkout&nbsp;<i class="fa fa-credit-card-alt ms-2"></i></button>
+                        <button type="submit" class="th-btn rounded-pill text-white fs-4 mt-3" data-bs-target="#qModal"
+                            data-bs-toggle="modal">Get a Quotation&nbsp;<i class="fa fa-credit-card-alt ms-2"></i></button>
                     </div>
                     <div class="text-secondary text-center mt-4 mb-30">Enjoy <b>secure payments</b> with advanced
                         encryption to protect your information.</div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="qModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-0 border-0">
+
+                        <div class="modal-body m-0 p-0">
+                            <div class="row m-0 p-0">
+                                <div class="col-12 col-lg-6 p-0 m-0 d-none d-lg-block border-end border-dark"
+                                    style="background-image: url('assets/wprocess.jpg'); background-size: cover;">
+
+                                </div>
+                                <div class="col-12 col-lg-6 p-4">
+                                    <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
+                                        <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
+                                    </div>
+                                    <span class="display-6 text-orange fw-bold">Get Your Free Quote!
+                                    </span>
+                                    <div class="col-12 mt-3">
+                                        <span class="text-o fs-4 ">Fill in the details, and we’ll send you a custom quotation.
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="uname">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <label for="exampleFormControlInput1" class="form-label">E mail</label>
+                                        <input type="text" class="form-control" id="uemail">
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Mobile</label>
+                                        <input type="text" class="form-control" id="umobile">
+                                    </div>
+                                    <div class="col-12 mt-5 d-flex justify-content-center">
+                                        <div class="text-center text-xl-start col-10">
+                                            <a onclick="getAQ(<?php echo $_SESSION['user_id']; ?>);" id="th-btnq"
+                                                style="cursor: pointer;"
+                                                class="th-btn th-radius fs-5 fs-5 col-12 text-white text-decoration-none ">
+                                                Send&nbsp;<i class="fa fa-credit-card-alt ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

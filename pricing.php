@@ -185,6 +185,8 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         </svg>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="assets/js/pricing.js"></script>
     <script src="assets/shop-assets/bootstrap.min.js"></script>
     <!-- Jquery -->

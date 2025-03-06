@@ -1,156 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once "assets/process/database.php";
+$_POST['uid'] = 2;
+$_POST['uname'] = "sdf sdf sdf";
+$_POST['uemail'] = 'fasa@gmail.com';
+$_POST['umobile'] = '+84548 54 855';
+
+$uid = $_POST['uid'];
+$uname = $_POST['uname'];
+$uemail = $_POST['uemail'];
+$umobile = $_POST['umobile'];
+
+$query = "SELECT * FROM `cart` INNER JOIN pack ON  pack.pack_id = cart.pack_id INNER JOIN solution ON solution.sol_id = pack.solution_sol_id WHERE `user_id` = " . $uid . " ORDER BY `cart_id` DESC";
+$res = Databases::search($query);
+?>
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Codyzea - Web, Software & App Development Pricing Plans</title>
-  <meta name="author" content="themeholy">
-  <meta name="description" content="Saor - SEO Digital Marketing Agency HTML Template">
-  <meta name="keywords" content="Saor - SEO Digital Marketing Agency HTML Template">
-  <meta name="robots" content="INDEX,FOLLOW">
-
-  <!-- Mobile Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Favicons - Place favicon.ico in the root directory -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/logocz.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/logocz.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/logocz.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/logocz.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/logocz.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/logocz.png">
-  <link rel="manifest" href="assets/img/favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/img/favicons/logocz.png">
-
-  <meta name="theme-color" content="#ffffff">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <!--==============================
-	  Google Fonts
-	============================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet">
-  <!--==============================
-	    All CSS File
-	============================== -->
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <!-- Fontawesome Icon -->
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-  <!-- Magnific Popup -->
-  <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-  <!-- Swiper Slider -->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <!-- imageRevealHover -->
-  <link rel="stylesheet" href="assets/css/imageRevealHover.css">
-  <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="assets/css/style2.css">
-  <link rel="stylesheet" href="assets/shop-assets/style.css">
   <link rel="stylesheet" href="assets/css/pricing-styles.css">
 
 </head>
 
 <body>
 
-  <div class="container mt-5">
-    <h2>Ordered List with Unique Popovers on Hover</h2>
-    <ol>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 1">Item 1</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 2">Item 2</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 3">Item 3</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 4">Item 4</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 5">Item 5</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 6">Item 6</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 7">Item 7</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 8">Item 8</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 9">Item 9</li>
-      <li class="list-group-item" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="This is popover for Item 10">Item 10</li>
-    </ol>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-12 text-center text-uppercase h3">cart quotation</div>
+      <div class="col-12 h5"><span class="text-o">Name : </span><?php echo $uname; ?></div>
+      <div class="col-12 h5"><span class="text-o">Email : <a href="mailto:<?php echo $uemail; ?>" class="text-decoration-underline"><?php echo $uemail; ?> </a></div>
+      <div class="col-12 h5"><span class="text-o">Mobile : </span><a href="https://wa.me/<?php echo $umobile; ?>" class="text-dark text-decoration-underline" target="_blank">
+          <?php echo $umobile; ?>
+        </a></div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+
+        <?php
+
+        $subtotal = 0;
+        $distotal = 0;
+        $final_price = 0;
+        $discount = 0;
+
+        if ($res->num_rows == 0) {
+        ?>
+          <div class="py-5 bg-color my-5"><span class="text-dark h6">Cart is Empty</span>
+          </div>
+        <?php
+        } else {
+        ?>
+
+          <div class="row">
+            <div class="col-12">
+
+              <div class="row mt-5 border-bottom border-dark">
+                <div class="col-5 text-center h5 text-o">Package Name</div>
+                <div class="col-5 text-center h5 text-o">Solution Name</div>
+                <div class="col-2 text-center h5 text-o">Price</div>
+              </div>
+
+              <?php
+
+              for ($x = 0; $x < $res->num_rows; $x++) {
+                $results = $res->fetch_assoc();
+                $subtotal = $subtotal + $results['pack_price'];
+                $beforePriceAdded = 0;
+
+              ?>
+
+                <div class="row mt-5">
+                  <div class="col-5 text-center h6"><?php echo $results['pack_name'] ?></div>
+                  <div class="col-5 text-center h6"><?php echo $results['sol_name'] ?></div>
+                  <div class="col-2 text-center h6 text-orange">$&nbsp;<?php echo $results['pack_price'] ?></div>
+                </div>
+
+                <?php
+
+                $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $uid . "' AND `c_status` = '1' ");
+                if ($coupond->num_rows == 1) {
+                  $coupon = $coupond->fetch_assoc();
+                  $cid = Databases::Search("SELECT * FROM `coupon_offers` WHERE `coupon_id`='" . $coupon['c_id'] . "' AND `pack_id`='" . $results['pack_id'] . "' ");
+                  if ($cid->num_rows != 0) {
+                    while ($ci = $cid->fetch_assoc()) {
+                      if ($ci['offer_pack_id'] == 0) {
+
+                ?>
+                        <div class="row">
+                          <div class="col-5 text-center h6"><?php echo $ci['offer_name'] ?></div>
+                          <div class="col-5 text-center h6 text-orange">Special Offers</div>
+                          <div class="col-2 text-center h6 text-orange">FREE</div>
+                        </div>
+                        <?php
+
+                      } else {
+                        $pod = Databases::Search("SELECT * FROM `pack` INNER JOIN `solution` ON `pack`.`solution_sol_id` = `solution`.`sol_id` WHERE `pack_id` = '" . $ci['offer_pack_id'] . "' ");
+                        if ($pod->num_rows == 1) {
+                          $po = $pod->fetch_assoc();
+                          $subtotal = $subtotal + $po['pack_price'];
+                          $distotal = $distotal + $po['pack_price'];
+                          if ($beforePriceAdded == 0) {
+                            $distotal = $distotal + $results['pack_price'];
+                            $beforePriceAdded == 1;
+                          }
+                          $isPrintedD = Databases::Search("SELECT * FROM `cart` WHERE `user_id`= '" . $uid . "' AND `pack_id`='" . $ci['offer_pack_id'] . "' ");
+                          if ($isPrintedD->num_rows == 0) {
+
+                              ?>
+
+                            <div class="row">
+                              <div class="col-5 h6 text-center"><?php echo $po['pack_name'] ?></div>
+                              <div class="col-5 h6 text-center"><?php echo $po['sol_name'] ?> || <span class="text-orange">FREE or DISCOUNT</span></div>
+                              <div class="col-2 h6 text-center text-orange">$<?php echo $po['pack_price'] ?></div>
+                            </div>
+                              <?php
+
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                ?>
+                <hr>
+              <?php
+              }
+              ?>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Discount Process  Start -->
+
+            <?php
+            $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $uid . "' AND `c_status` = '1' ");
+            if ($coupond->num_rows == 1) {
+              $coupon = $coupond->fetch_assoc();
+              $couponHasPackD = Databases::Search("SELECT * FROM `coupon_offers` WHERE `coupon_id`='" . $coupon['c_id'] . "' AND `offer_pack_id` != 0 ");
+              if ($couponHasPackD->num_rows == 0) {
+                if ($coupon['c_mode'] == 1) {
+                  $max_expend = $coupon['max_expend'];
+                  $discount = $coupon['amount'];
+
+                  if ($subtotal >= $max_expend) {
+                    $final_price = $subtotal - $discount;
+                    // Ensure final price has exactly two decimal places
+                    $final_price = number_format($final_price, 2, '.', '');
+                  }
+                }
+
+                if ($coupon['c_mode'] == 2) {
+                  $max_expend = $coupon['max_expend'];
+                  $percentage = $coupon['amount'];
+
+                  if ($subtotal >= $max_expend) {
+                    $perc = $subtotal * $percentage / 100;
+                    $final_price = $subtotal - $perc;
+                    // Ensure final price has exactly two decimal places
+                    $final_price = number_format($final_price, 2, '.', '');
+                    $discount = $subtotal - $final_price;
+                  }
+                }
+              } else {
+                if ($coupon['c_mode'] == 1) {
+                  $max_expend = $coupon['max_expend'];
+                  $discount = $coupon['amount'];
+
+                  if ($subtotal >= $max_expend) {
+                    $final_price = $subtotal - $discount;
+                    // Ensure final price has exactly two decimal places
+                    $final_price = number_format($final_price, 2, '.', '');
+                  }
+                }
+
+                if ($coupon['c_mode'] == 2) {
+                  $max_expend = $coupon['max_expend'];
+                  $percentage = $coupon['amount'];
+
+                  if ($distotal >= $max_expend) {
+                    $perc = $distotal * $percentage / 100;
+                    $final_price = $subtotal - $perc;
+                    // Ensure final price has exactly two decimal places
+                    $final_price = number_format($final_price, 2, '.', '');
+                    $discount = $subtotal - $final_price;
+                  }
+                }
+              }
+
+
+
+            ?>
+              <div class="col-12">
+                <div class="row">
+                  <div class="w-auto p-3 mt-md-3 rounded-0 bg-color"
+                    style="border: 2px dashed rgb(167, 162, 162) !important;">
+                    <span
+                      class="coupon-text text-o fw-semibold mx-3">Coupon Code : &nbsp;<?php echo $coupon['c_code'] ?></span>
+
+                  </div>
+                </div>
+              </div>
+            <?php
+            }
+            $subtotal = number_format($subtotal, 2, '.', '');
+            ?>
+
+            <!-- Discount Process  End -->
+
+            <div class="col-12">
+              <h2 class="text-end">Package Totals</h2>
+              <table class="mt-4">
+                <tbody>
+                  <tr>
+                    <td><span class="h6 fw-semibold text-o">Subtotal</span></td>
+                    <td data-title="Cart Subtotal">
+                      <span
+                        class="amount h6"><bdi><span>&nbsp;&nbsp;&nbsp;$&nbsp;</span><?php echo $subtotal; ?></bdi></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="h6 fw-semibold text-o">Discount</span></td>
+                    <td data-title="Cart Subtotal">
+                      <span class="amount h6"><bdi><span>- $&nbsp;</span><?php echo $discount; ?></bdi></span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="order-total">
+                    <td><span class="h6 fw-semibold text-orange">Order Total</span></td>
+                    <td data-title="Total">
+                      <strong><span
+                          class="amount h6 text-orange"><bdi><span>&nbsp;&nbsp;&nbsp;$&nbsp;</span><?php echo $final_price; ?></bdi></span></strong>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+          </div>
+        <?php
+        }
+        ?>
+
+      </div>
+    </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-  <script>
-    // Initialize all popovers when the document is ready
-    document.addEventListener('DOMContentLoaded', function() {
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-      var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl);
-      });
-    });
-  </script>
-
-  <script src="assets/js/pricing.js"></script>
-  <script src="assets/shop-assets/bootstrap.min.js"></script>
-  <!-- Jquery -->
-  <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
-  <!-- Swiper Slider -->
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <!-- Bootstrap -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- Magnific Popup -->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <!-- Counter Up -->
-  <script src="assets/js/jquery.counterup.min.js"></script>
-  <!-- Circle Progress -->
-  <script src="assets/js/circle-progress.js"></script>
-  <!-- Range Slider -->
-  <script src="assets/js/jquery-ui.min.js"></script>
-  <!-- Imagesloadedr -->
-  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-  <!-- isotope -->
-  <script src="assets/js/isotope.pkgd.min.js"></script>
-  <!-- Tilt.jquery -->
-  <script src="assets/js/tilt.jquery.min.js"></script>
-  <!-- Nice-select -->
-  <script src="assets/js/nice-select.min.js"></script>
-  <!-- wow -->
-  <script src="assets/js/wow.min.js"></script>
-  <!-- Particles JS -->
-  <script src="assets/js/particles.min.js"></script>
-
-
-  <script src="assets/js/particles-config.js"></script>
-
-  <!-- Gsap JS -->
-  <script src="assets/js/gsap.min.js"></script>
-  <script src="assets/js/ScrollTrigger.min.js"></script>
-  <script src="assets/js/Splitetext.js"></script>
-  <script src="assets/js/lenis.min.js"></script>
-
-  <!-- imageRevealHover JS -->
-  <script src="assets/js/imageRevealHover.js"></script>
-
-  <!-- Main Js File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 
