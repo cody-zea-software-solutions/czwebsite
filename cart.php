@@ -427,7 +427,7 @@ $res = Databases::search($query);
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="qModal" tabindex="-1"
+            <div class="modal fade" style="z-index: 1000;" id="qModal" tabindex="-1"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content rounded-0 border-0">

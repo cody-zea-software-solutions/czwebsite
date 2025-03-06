@@ -121,7 +121,7 @@
      Preloader
   ==============================-->
     <?php require_once "header.php" ?>
-   
+
     <div class="popup-search-box d-none d-lg-block">
         <button class="searchClose"><i class="fal fa-times"></i></button>
         <form action="#">
@@ -129,22 +129,37 @@
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
     </div>
+    <a class="float-button" target="_blank"
+        href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
+        <i class="fa-solid fa-phone-volume cta-btn"></i>
+        <span class="fs-4">Talk Now<span>
+    </a>
+ 
     <div class="container space-extra2">
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
                     <span class="display-1 text-black"><span class="text-orange">Get in Touch,</span> Let’s Grow</span>
-                    <p class="text-black fs-2 fw-semibold">
+                    <p class="text-black fs-2">
                         Got an idea? Let’s turn it into reality. Reach out today, and let’s build something amazing
                         together!
                     </p>
                     <div class="row">
-                        <div class="col-10 col-lg-6 mt-3">
-                            <div class="btn-group col-12">
-                                <a href="contact.php"
-                                    class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black">Book a Call
-                                    <i class="fa-regular fa-arrow-right ms-2"></i></a>
-                            </div>
+                        <div class="col-10 col-lg-6 mt-3" >
+                        <!-- Calendly Stylesheet -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+<!-- Custom Button to Trigger Calendly Popup -->
+<div class="btn-group col-12">
+    <a href="#" 
+       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;" 
+       class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black">
+       Book a Call <i class="fa-regular fa-arrow-right ms-2"></i>
+    </a>
+</div>
+
+<!-- Calendly Widget Script -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
                         </div>
                         <div class="col-10 col-lg-6 mt-3">
                             <div class="btn-group col-12">
@@ -186,7 +201,7 @@
                     <span class="fs-1 text-black">Send a Message</span>
                     <br /><br />
                     <p class="text-dark fw-thin fs-5">
-                    Drop Us a Line – We’re All Ears <span class="text-orange">info@codyzea.com</span>
+                        Drop Us a Line – We’re All Ears <span class="text-orange">info@codyzea.com</span>
                     </p>
                 </div>
             </div>
@@ -197,7 +212,8 @@
                     <span class="fs-1 text-black">Visit Us</span>
                     <br /><br />
                     <p class="text-dark fw-thin fs-5">
-                    Come Say G'day – Find Us Here <span class="text-orange">6A, Tidey Road, Mount Wellington. Auckland, New Zealand
+                        Come Say G'day – Find Us Here <span class="text-orange">6A, Tidey Road, Mount Wellington.
+                            Auckland, New Zealand
                             1072</span>
                     </p>
                 </div>
