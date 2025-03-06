@@ -1,5 +1,5 @@
 <?php
-require_once "db.php";
+require_once "guest.php";
 $s_d = Databases::Search("SELECT * FROM `solution`");
 ?>
 <!doctype html>
