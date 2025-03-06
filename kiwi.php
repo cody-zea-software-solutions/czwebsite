@@ -191,48 +191,91 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
             <div class="fullscreen-container">
 
                 <div class="fullscreen-wrapper">
-                    <div class="fullscreen-slide px-md-5 active-slide">
+                    <div class="fullscreen-slide px-md-5">
                         <div class="col-12 px-md-5 bg-white rounded-3">
                             <div class="row">
-                                <div class="col-12 col-md-6 ">
-                                    <img src="assets/review.svg" class="img-fluid p-2">
-                                </div>
-                                <div class="col-12 col-md-6 px-5 mt-md-5 ">
-                                    <h2 class="text-center text-md-start">Reliable and Innovative Solutions</h2>
-                                    <p class="fs-5 text-secondary fw-normal text-justify">"The team has been a huge asset in developing our brand's online presence. They're quick to assist and really know their craft."</p>
-                                    <p class="fs-5 text-o fw-normal">★★★★★ - John Doe (CEO)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fullscreen-slide px-md-5 ">
-                        <div class="col-12 px-md-5 bg-white rounded-3">
-                            <div class="row">
-                                <div class="col-12 col-md-6 ">
+                                <div class="col-12 col-md-6">
                                     <img src="assets/review.svg" class="img-fluid p-2">
                                 </div>
                                 <div class="col-12 col-md-6 px-5 mt-md-5">
-                                    <h2 class="text-center text-md-start">Seamless Integration and Support</h2>
-                                    <p class="fs-5 text-secondary fw-normal text-justify">"Working with this team was a dream. Their support has been prompt, and they truly understand the needs of our business."</p>
-                                    <p class="fs-5 text-o fw-normal">★★★★★ - Sarah Lee (Marketing Manager)</p>
+                                    <h2 class="text-center text-md-start">Highly Recommended for Professional Websites</h2>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">
+                                        "I had a great experience with Cody Zea while building my e-commerce website. They delivered a high-quality site on time and provided excellent customer support throughout the process. I highly recommend them for anyone looking to create a professional website!"
+                                    </p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - Ceynap, Auckland</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="fullscreen-slide px-md-5 ">
+
+                    <div class="fullscreen-slide px-md-5">
                         <div class="col-12 px-md-5 bg-white rounded-3">
                             <div class="row">
-                                <div class="col-12 col-md-6 ">
+                                <div class="col-12 col-md-6">
                                     <img src="assets/review.svg" class="img-fluid p-2">
                                 </div>
                                 <div class="col-12 col-md-6 px-5 mt-md-5">
-                                    <h2 class="text-center text-md-start">A True Partner in Success</h2>
-                                    <p class="fs-5 text-secondary fw-normal text-justify">"They helped us launch our new online store with great results. Their team is responsive and easy to work with."</p>
-                                    <p class="fs-5 text-o fw-normal">★★★★★ - Michael Smith (Founder)</p>
+                                    <h2 class="text-center text-md-start">Exceptional Service and Creative Solutions</h2>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">
+                                        "Booze Bites has had an outstanding experience working with Cody Zea Software Solutions. Their team delivered a seamless and efficient service, helping us establish our online presence with a sleek, user-friendly website. Their attention to detail, creativity, and ability to understand our brand made the process smooth and hassle-free."
+                                    </p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - Booze Bites, Auckland</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="fullscreen-slide px-md-5">
+                        <div class="col-12 px-md-5 bg-white rounded-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <img src="assets/review.svg" class="img-fluid p-2">
+                                </div>
+                                <div class="col-12 col-md-6 px-5 mt-md-5">
+                                    <h2 class="text-center text-md-start">Perfectly Capturing Our Artistic Vision</h2>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">
+                                        "At Pradeepa Sangeeth Institute, we were looking for a reliable partner to help us enhance our digital presence, and Cody Zea Software Solutions exceeded our expectations. Their team created a beautifully designed website that perfectly reflects our institute’s artistic vision and cultural values."
+                                    </p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - Pradeepa Sangeeth Institute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fullscreen-slide px-md-5">
+                        <div class="col-12 px-md-5 bg-white rounded-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <img src="assets/review.svg" class="img-fluid p-2">
+                                </div>
+                                <div class="col-12 col-md-6 px-5 mt-md-5">
+                                    <h2 class="text-center text-md-start">Transforming Business Growth with Expertise</h2>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">
+                                        "Working with Cody Zea Software Solutions was a game-changer for our business. They took our vision and transformed it into a powerful digital presence. From a sleek, user-friendly website to strategic branding and digital marketing, every detail was handled with expertise and professionalism. Their team truly understands business growth and goes beyond just creating a website – they craft solutions that drive real results. Highly recommended for anyone looking to elevate their brand!"
+                                    </p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - Ceylon Coir World</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fullscreen-slide px-md-5">
+                        <div class="col-12 px-md-5 bg-white rounded-3">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <img src="assets/review.svg" class="img-fluid p-2">
+                                </div>
+                                <div class="col-12 col-md-6 px-5 mt-md-5">
+                                    <h2 class="text-center text-md-start">Driving Growth in the Tourism Industry</h2>
+                                    <p class="fs-5 text-secondary fw-normal text-justify">
+                                        "Cody Zea Software Solutions has been instrumental in transforming our travel business. They designed a stunning, user-friendly website that makes booking seamless for our customers. Their expertise in branding and digital marketing helped us attract more travelers and stand out in the competitive tourism industry. The team is professional, innovative, and always ready to go the extra mile. If you're looking for real business growth, Cody Zea is the way to go!"
+                                    </p>
+                                    <p class="fs-5 text-o fw-normal">★★★★★ - Cheers Travels</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
 
@@ -431,21 +474,21 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                <img src="assets/2-1.svg" width="100px" height="100px" class="mb-4" alt=""><br>
+                    <img src="assets/2-1.svg" width="100px" height="100px" class="mb-4" alt=""><br>
                     <span class="fs-3 fw-medium text-dark">Reach Out to Us</span>
                     <p class=" text-o mt-2 text-justify mt-3 ">Simply fill out our contact form, give us a call, or send an email, and our founder, Jamie Twigg, will get back to you within 24 hours to discuss your project. Want to chat right away? Schedule a time that works for you below! 📅</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1 ">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                <img src="assets/2-2.svg" width="100px" height="100px" class="mb-4" alt=""><br>
+                    <img src="assets/2-2.svg" width="100px" height="100px" class="mb-4" alt=""><br>
                     <span class="fs-3 fw-medium text-dark">We Create Your Website</span>
                     <p class=" text-o mt-2 text-justify mt-3">Within two weeks (or sooner if needed), we'll present an initial homepage draft. From there, we'll refine it as many times as necessary until you're completely satisfied! ❤️</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 px-3 mt-4 mt-md-1">
                 <div class="border border-1 p-4 shadow zoom-effect">
-                <img src="assets/2-3.svg" width="100px" height="100px" class="mb-4" alt=""><br>
+                    <img src="assets/2-3.svg" width="100px" height="100px" class="mb-4" alt=""><br>
                     <span class="fs-3 fw-medium text-dark">We Launch Your Website</span>
                     <p class=" text-o mt-2 text-justify mt-3">Once you're happy with the design, we'll add content, optimize it for SEO, make it live, secure it with an SSL certificate, and submit it to Google Search Console for indexing. Your website will be up and running in just a few weeks! 🎉</p>
                 </div>
@@ -467,11 +510,17 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                 </span>
                 <div class="mt-4"></div>
                 <span class="fs-4 text-dark text-justify">
-                    Our experts are always ready to assist. We’re here to offer the best guidance, whether you go with 543 or another option.
+                    Our experts are always ready to assist. We’re here to offer the best guidance, whether you go with this or another option.
                 </span>
                 <p class="text-o mt-4 text-justify">
                     Have questions about design or anything online? Feel free to reach out today. Our consultation is free, and we'll ensure you walk away with a clear plan tailored to your needs.
                 </p>
+                <div class="row">
+                    <div class="col-12 pb-5 px-50 mt-1 d-flex justify-content-center">
+                        <a href="contact.php" class="th-btn th-radius th-icon text-white fs-4">Contact Us<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-4 col-lg-6 mb-5">
                 <img src="assets/kiwi-last.webp" alt="" srcset="">

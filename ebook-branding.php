@@ -59,6 +59,37 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <style>
+        /* Basic spinner styles */
+        .spinner-border {
+            width: 2rem;
+            height: 2rem;
+            border: 0.3em solid transparent;
+            border-top-color:rgb(77, 77, 77);
+            /* Spinner color */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            /* Ensures the spinner is inline with text */
+        }
+
+        /* Spinner rotation animation */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Optional: Add a custom text for "loading" */
+        .visually-hidden {
+            visibility: hidden;
+        }
+    </style>
+
 </head>
 
 <body class="bg-color">
@@ -153,7 +184,7 @@
                         <!-- Submit Button -->
                         <div class="btn-group col-12">
                             <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
-                                onclick="sendEBook('ebook_name');">Get Your Free
+                                onclick="sendEBook('branding_ebook');">Get Your Free
                                 E-Book Now!
 
 

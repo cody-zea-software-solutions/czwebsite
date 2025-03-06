@@ -43,12 +43,12 @@ function submitVisitRequest() {
     // Create a new XMLHttpRequest object
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'req_a_vist.php', true);
-    
+
     // Handle response
     xhr.onload = function () {
         if (xhr.status === 200) {
             // If everything is OK
-            var responseT =  xhr.responseText;
+            var responseT = xhr.responseText;
             if (responseT === 'success') {
                 Swal.fire('Success', 'Your request has been submitted!', 'success');
             } else {
@@ -76,7 +76,7 @@ function addToCart(id) {
     var url = "assets/process/addtocart.php";      // The PHP file that will handle the request
 
     // Prepare the request parameters
-    var params = "id=" + encodeURIComponent(id) ;
+    var params = "id=" + encodeURIComponent(id);
 
     // Set up the HTTP request
     xmlhttp.open("POST", url, true);
@@ -86,7 +86,7 @@ function addToCart(id) {
         if (xmlhttp.readyState === 4) { // Check if the request is completed
 
             if (xmlhttp.status === 200) {
-                if(xmlhttp.responseText=="success"){
+                if (xmlhttp.responseText == "success") {
                     Swal.fire({
                         text: "Package has been added to the cart.",
                         showCancelButton: true,
@@ -103,9 +103,9 @@ function addToCart(id) {
                             window.location.href = 'cart.php';
                         }
                     });
-                    
-                    
-                }else if("aa"){
+
+
+                } else if ("aa") {
                     Swal.fire({
                         text: "Package has been already added.",
                         showCancelButton: true,
@@ -122,9 +122,9 @@ function addToCart(id) {
                             window.location.href = 'cart.php';
                         }
                     });
-                    
+
                 }
-                
+
             } else {
                 // Error: log the error status
                 console.error("Error: " + xmlhttp.status);
@@ -134,6 +134,84 @@ function addToCart(id) {
 
     // Send the request with the ID and UID as parameters
     xmlhttp.send(params);
+}
+
+function getAQ(id) {
+
+    var uname = document.getElementById('uname').value;
+    var umobile = document.getElementById('umobile').value;
+    var uemail = document.getElementById('uemail').value;
+
+    // Validate required fields (basic validation)
+    if (!uname || !umobile || !uemail) {
+        Swal.fire({
+            text: "All fields are required.",
+            confirmButtonText: 'OK',
+            customClass: {
+                confirmButton: 'th-btn style4',
+                htmlContainer: 'box-text2 fw-semibold mt-3',
+            }
+        })
+    }
+
+    // Prepare form data to send
+    var formData = new FormData();
+    formData.append('uname', uname);
+    formData.append('umobile', umobile);
+    formData.append('uemail', uemail);
+    formData.append('uid', id);
+
+    // Get button element
+    var submitButton = document.getElementById('th-btnq');
+
+    // Change button text to show spinner
+    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'addquot.php', true);
+
+    // Handle response
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            // If everything is OK
+            var responseT = xhr.responseText;
+            if (responseT === 'success') {
+                Swal.fire({
+                    text: "Your request was received successfully. Our team will reach out to you shortly.",
+                    allowOutsideClick: false,
+                    confirmButtonText: 'OK',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 text-success fw-semibold mt-3',
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.reload();
+                    }
+                });
+            } else {
+                Swal.fire({
+                    text: responseT,
+                    allowOutsideClick: false,
+                    confirmButtonText: 'OK',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 fw-semibold mt-3',
+                    }
+                });
+            }
+
+            submitButton.innerHTML = 'Send&nbsp;<i class="fa fa-credit-card-alt ms-2"></i>';
+        } else {
+            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+
+            submitButton.innerHTML = 'Send&nbsp;<i class="fa fa-credit-card-alt ms-2"></i>';
+        }
+    };
+
+    // Send the request with form data
+    xhr.send(formData);
+
 }
 
 function applyCoupon(total) {
@@ -153,9 +231,9 @@ function applyCoupon(total) {
         if (xmlhttp.readyState === 4) { // Check if the request is completed
 
             if (xmlhttp.status === 200) {
-                if(xmlhttp.responseText=="success"){
+                if (xmlhttp.responseText == "success") {
                     location.reload();
-                }else if(xmlhttp.responseText=="em"){
+                } else if (xmlhttp.responseText == "em") {
                     Swal.fire({
                         text: "Please Enter the Coupon Code.",
                         confirmButtonText: 'OK',
@@ -164,8 +242,8 @@ function applyCoupon(total) {
                             htmlContainer: 'box-text2 fw-semibold mt-3',
                         }
                     })
-                    
-                }else if(xmlhttp.responseText=="au"){
+
+                } else if (xmlhttp.responseText == "au") {
                     Swal.fire({
                         text: "Coupon Limit Exceeded.",
                         confirmButtonText: 'OK',
@@ -174,8 +252,8 @@ function applyCoupon(total) {
                             htmlContainer: 'box-text2 fw-semibold mt-3',
                         }
                     })
-                    
-                }else if(xmlhttp.responseText=="ex"){
+
+                } else if (xmlhttp.responseText == "ex") {
                     Swal.fire({
                         text: "Sorry! Coupon Code has been Expired or Invalid.",
                         confirmButtonText: 'OK',
@@ -184,8 +262,8 @@ function applyCoupon(total) {
                             htmlContainer: 'box-text2 fw-semibold mt-3',
                         }
                     })
-                    
-                }else if(xmlhttp.responseText=="ot"){
+
+                } else if (xmlhttp.responseText == "ot") {
                     Swal.fire({
                         text: "Please add Packages to the Cart First.",
                         confirmButtonText: 'OK',
@@ -194,8 +272,8 @@ function applyCoupon(total) {
                             htmlContainer: 'box-text2 fw-semibold mt-3',
                         }
                     })
-                    
-                }else{
+
+                } else {
                     Swal.fire({
                         text: xmlhttp.responseText,
                         confirmButtonText: 'OK',
@@ -205,7 +283,7 @@ function applyCoupon(total) {
                         }
                     })
                 }
-                
+
             } else {
                 // Error: log the error status
                 console.error("Error: " + xmlhttp.status);
@@ -217,7 +295,7 @@ function applyCoupon(total) {
     xmlhttp.send(params);
 }
 
-function removeFromCart(id,total) {
+function removeFromCart(id, total) {
 
     var xmlhttp = new XMLHttpRequest();  // Create a new XMLHttpRequest object
     var url = "assets/process/removefromcart.php";      // The PHP file that will handle the request
@@ -233,12 +311,12 @@ function removeFromCart(id,total) {
         if (xmlhttp.readyState === 4) { // Check if the request is completed
 
             if (xmlhttp.status === 200) {
-                if(xmlhttp.responseText=="success"){
+                if (xmlhttp.responseText == "success") {
                     location.reload();
-                }else{
+                } else {
                     alert(xmlhttp.responseText);
                 }
-                
+
             } else {
                 // Error: log the error status
                 console.error("Error: " + xmlhttp.status);
@@ -256,7 +334,7 @@ function removeCoupon(id) {
     var url = "assets/process/removecoupon.php";      // The PHP file that will handle the request
 
     // Prepare the request parameters
-    var params = "id=" + encodeURIComponent(id) ;
+    var params = "id=" + encodeURIComponent(id);
 
     // Set up the HTTP request
     xmlhttp.open("POST", url, true);
@@ -266,12 +344,12 @@ function removeCoupon(id) {
         if (xmlhttp.readyState === 4) { // Check if the request is completed
 
             if (xmlhttp.status === 200) {
-                if(xmlhttp.responseText=="success"){
+                if (xmlhttp.responseText == "success") {
                     location.reload();
-                }else{
+                } else {
                     alert(xmlhttp.responseText);
                 }
-                
+
             } else {
                 // Error: log the error status
                 console.error("Error: " + xmlhttp.status);
@@ -290,7 +368,7 @@ function sendMessage() {
     const message = document.getElementById('fmessage').value;
 
     // Validate required fields (basic validation)
-    if (!fullName || !email || !message ) {
+    if (!fullName || !email || !message) {
         Swal.fire('Error', 'All fields are required!', 'error');
         return;
     }
@@ -310,12 +388,12 @@ function sendMessage() {
     // Create a new XMLHttpRequest object
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'sendmessage.php', true);
-    
+
     // Handle response
     xhr.onload = function () {
         if (xhr.status === 200) {
             // If everything is OK
-            var responseT =  xhr.responseText;
+            var responseT = xhr.responseText;
             if (responseT === 'success') {
                 Swal.fire('Success', 'Your request has been submitted!', 'success');
             } else {
@@ -346,9 +424,16 @@ function sendEBook(rbook) {
     const mobileNumber = document.getElementById('mobileNumber').value;
 
     // Validate required fields (basic validation)
-    if (!firstname || !lastname || !workEmail || !companyName || !mobileNumber ) {
-        Swal.fire('Error', 'All fields are required!', 'error');
-        return;
+    if (!firstname || !lastname || !workEmail || !companyName || !mobileNumber) {
+        Swal.fire({
+            text: "All fields are required.",
+            allowOutsideClick: false,
+            confirmButtonText: 'OK',
+            customClass: {
+                confirmButton: 'th-btn style4',
+                htmlContainer: 'box-text2 text-success fw-semibold mt-3',
+            }
+        })
     }
 
     // Prepare form data to send
@@ -369,29 +454,42 @@ function sendEBook(rbook) {
     // Create a new XMLHttpRequest object
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'sendebook.php', true);
-    
+
     // Handle response
     xhr.onload = function () {
         if (xhr.status === 200) {
             // If everything is OK
             var responseT = xhr.responseText;
             if (responseT === 'success') {
-                Swal.fire('Success', 'Done! Please check your Email.', 'success');
-                submitButton.style.backgroundColor = '#FF5C35'; // Change button color
+                Swal.fire({
+                    text: "Your request was received successfully. Our team will reach out to you shortly.",
+                    confirmButtonText: 'OK',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 text-success fw-semibold mt-3',
+                    }
+                })
             } else {
-                Swal.fire(responseT);
+                Swal.fire({
+                    text: responseT,
+                    confirmButtonText: 'OK',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 fw-semibold mt-3',
+                    }
+                })
             }
-        
+
             // Reset the button text to original
             submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
         } else {
             // Handle server error
             Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
-        
+
             // Reset the button text to original
             submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
         }
-        
+
     };
 
     // Send the request with form data
@@ -481,8 +579,8 @@ function changeCategory(event, id) {
 }
 
 function toggleReadMore(id) {
-    const blogDesc = document.getElementById('blogDesc'+id);
-    const readMoreBtn = document.getElementById('readMoreBtn'+id);
+    const blogDesc = document.getElementById('blogDesc' + id);
+    const readMoreBtn = document.getElementById('readMoreBtn' + id);
 
     // If the text is currently truncated, reveal the full text
     if (blogDesc.classList.contains('truncate')) {

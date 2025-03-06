@@ -104,8 +104,8 @@ Version: 1.0.0
   --success-color: #28a745;
   --error-color: #dc3545;
   --th-border-color: #E0E0E0;
-  --title-font: "Outfit", serif;
-  --body-font: "Outfit", serif;
+  --title-font:  "Outfit",  sans-serif;
+  --body-font: "Outfit",  sans-serif;
   --body-font2: "DM Sans", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1290px;
@@ -131,7 +131,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
 @font-face {
   font-family: "sofia";
   src: url("font/sofia.otf");

@@ -36,14 +36,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'asd@gmail.com'; // Your email
-        $mail->Password   = 'bwybhghvunrrknxa'; // Your app password
+        $mail->Username   = 'udithanethsara079@gmail.com'; // Your email
+        $mail->Password   = 'zihonwjpqzvvaaoa'; // Your app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Recipients
-        $mail->setFrom('asd@gmail.com', 'Cody Zea');
-        $mail->addAddress('asd@gmail.com', 'Cody Zea');
+        $mail->setFrom('udithanethsara079@gmail.com', 'Cody Zea');
+        $mail->addAddress('udithanethsara079@gmail.com', 'Cody Zea');
 
         // Email Content
         $mail->isHTML(true);
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <p><strong>Full Name:</strong> ' . $firstname .' '. $lastname . '</p>
                                 <p><strong>Email:</strong> ' . $workEmail . '</p>
                                 <p><strong>Mobile:</strong> ' . $mobileNumber . '</p>
-                                <p><strong>Mobile:</strong> ' . $companyName . '</p>
+                                <p><strong>Company Name:</strong> ' . $companyName . '</p>
                                 
                             </body>
                           </html>';
