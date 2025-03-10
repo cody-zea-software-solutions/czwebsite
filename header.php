@@ -1,9 +1,18 @@
 <?php
+$cart_d = '';
 $included_files = get_included_files();
 
 if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets/process/database.php'), $included_files)) {
     require_once "db.php";
 }
+if(isset($_COOKIE['cz_user_id'])){
+    $cart_q = Databases::Search("SELECT * FROM `cart` INNER JOIN pack ON  pack.pack_id = cart.pack_id INNER JOIN solution ON solution.sol_id = pack.solution_sol_id WHERE `user_id` = " . $_COOKIE['cz_user_id'] . " ORDER BY `cart_id` DESC");
+    if($cart_q->num_rows !=0){
+        $cart_d = 'cart-icon';
+    }
+}
+
+
 ?>
 
 <!--==============================
@@ -30,8 +39,8 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
 
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
 <!-- <div class="popup-search-box d-none d-lg-block">
     <button class="searchClose"><i class="fal fa-times"></i></button>
     <form action="#">
@@ -303,7 +312,28 @@ if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-button">
-                            <a href="cart.php" class=""><i class="fa fa-cart-plus fs-3" aria-hidden="true"></i></a>
+                            <style>
+                                .cart-icon {
+                                    position: relative;
+                                    display: inline-block;
+                                }
+
+                                .cart-icon::after {
+                                    content: "";
+                                    position: absolute;
+                                    top: -10px;
+                                    right: -10px;
+                                    width: 20px;
+                                    /* Size of the dot */
+                                    height: 20px;
+                                    /* Size of the dot */
+                                    background-color: rgb(6, 189, 6);
+                                    /* Color of the dot */
+                                    border-radius: 50%;
+                                    /* Make it a circle */
+                                }
+                            </style>
+                            <a href="cart.php" class="<?php echo $cart_d; ?>"><i class="fa fa-cart-plus fs-3" aria-hidden="true"></i></a>
                             <!-- <button type="button" class="icon-btn th-radius searchBoxToggler"><i
                                     class="far fa-search text-b fw-semibold"></i></button> -->
                             <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i

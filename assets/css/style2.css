@@ -104,8 +104,8 @@ Version: 1.0.0
   --success-color: #28a745;
   --error-color: #dc3545;
   --th-border-color: #E0E0E0;
-  --title-font:  "Outfit",  sans-serif;
-  --body-font: "Outfit",  sans-serif;
+  --title-font: "Outfit", sans-serif;
+  --body-font: "Outfit", sans-serif;
   --body-font2: "DM Sans", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1290px;
@@ -131,6 +131,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
 @font-face {
   font-family: "sofia";
   src: url("font/sofia.otf");
@@ -159,6 +160,11 @@ body.theme-bg {
 
 .cody-bg {
   background-color: #FEF4EA !important;
+}
+
+.nav-btn {
+  background-color: #FF5C35;
+  border: 2px solid #000000;
 }
 
 .text-b {
@@ -268,8 +274,10 @@ a:hover {
 }
 
 .feature-box-2:hover {
-  transform: scale(1.05); /* Scales the div by 5% */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional shadow for better effect */
+  transform: scale(1.05);
+  /* Scales the div by 5% */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for better effect */
 }
 
 .icon-container {
@@ -291,40 +299,47 @@ a:hover {
 
 @keyframes flip {
   0% {
-      transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
+
   50% {
-      transform: rotateY(20deg);
+    transform: rotateY(20deg);
   }
+
   100% {
-      transform: rotateY(-20deg);
+    transform: rotateY(-20deg);
   }
 }
 
 @media (max-width: 575px) {
   .cdf {
-      margin-top: 20px; /* Adjust margin-top for small screens */
+    margin-top: 20px;
+    /* Adjust margin-top for small screens */
   }
 }
 
 /* Medium devices (tablets, >=576px and <992px) */
 @media (min-width: 576px) and (max-width: 991px) {
   .cdf {
-      margin-top: 60px; /* Adjust margin-top for medium screens */
+    margin-top: 60px;
+    /* Adjust margin-top for medium screens */
   }
 }
 
 /* Large devices (desktops, >=992px) */
 @media (min-width: 992px) {
   .cdf {
-      margin-top: 120px; /* Maintain original margin-top for large screens */
+    margin-top: 120px;
+    /* Maintain original margin-top for large screens */
   }
 }
 
 .cart {
   margin: 20px;
-  display: inline-block; /* Ensures the div only takes up as much width as its content */
-  text-align: left; /* Align content to the left */
+  display: inline-block;
+  /* Ensures the div only takes up as much width as its content */
+  text-align: left;
+  /* Align content to the left */
 }
 
 .coupon-section {
@@ -339,7 +354,8 @@ a:hover {
   padding: 10px 15px;
   border-radius: 5px;
   margin-bottom: 10px;
-  white-space: nowrap; /* Prevents text from wrapping */
+  white-space: nowrap;
+  /* Prevents text from wrapping */
 }
 
 .coupon-text {
@@ -350,37 +366,44 @@ a:hover {
 .remove-coupon-btn {
   background-color: transparent;
   border: none;
-  color: #fff; /* Ensure the color is white */
-  font-size: 40px; /* Increase font size for a larger "×" */
+  color: #fff;
+  /* Ensure the color is white */
+  font-size: 40px;
+  /* Increase font size for a larger "×" */
   cursor: pointer;
   padding: 0;
-  margin-left: 10px; /* Optional: Space between text and the remove button */
+  margin-left: 10px;
+  /* Optional: Space between text and the remove button */
 }
 
-.pricing-box{
+.pricing-box {
   animation: float 3s ease-in-out infinite, glow 3s ease-in-out infinite alternate !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.pricing-box-2{
+.pricing-box-2 {
   animation: float 3s ease-in-out infinite !important;
 }
 
 @keyframes float {
-  0%, 100% {
-      transform: translateY(0);
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
+
   50% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
 @keyframes glow {
   0% {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
+
   100% {
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -3873,13 +3896,15 @@ hr.title-line {
 
 @keyframes zoomOutEffect {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
+
   50% {
-      transform: scale(0.9);
+    transform: scale(0.9);
   }
+
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -29876,6 +29901,58 @@ span.select2-selection.select2-selection--single:focus {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+}
+
+.feature-list ul {
+  list-style-type: none;
+  /* Removes the default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  /* Ensures vertical alignment of the check mark and text */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.offer-button {
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.feature-list li::before {
+  content: "🟠";
+  /* Adds the check icon before the text */
+  font-size: 1.5em;
+  color: #FF5C35 !important;
+  /* Green color for the check mark */
+  margin-right: 15px;
+  /* Space between icon and text */
+}
+
+.feature-list strong {
+  font-weight: 600;
+  margin-right: 5px;
+  /* Adds space between title and description */
+}
+
+.feature-list li span {
+  margin-left: 5px;
+  /* Adds space between description */
 }
 
 .fullscreen-slide {

@@ -10,9 +10,9 @@ $dd = $d_r->fetch_assoc();
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Saor - SEO Digital Marketing Agency HTML Template - Services Details</title>
     <meta name="author" content="Cody Zea Software Solutions">
-<meta name="description" content="Startup Success Made Simple – Get expert solutions in web development, branding, digital marketing, and custom software to grow your business effortlessly.">
-<meta name="keywords" content="Cody Zea, Startup Solutions, Business Growth, Web Development, Digital Marketing, Branding, Custom Software, E-Commerce, App Development">
-<meta name="robots" content="INDEX,FOLLOW">
+    <meta name="description" content="Startup Success Made Simple – Get expert solutions in web development, branding, digital marketing, and custom software to grow your business effortlessly.">
+    <meta name="keywords" content="Cody Zea, Startup Solutions, Business Growth, Web Development, Digital Marketing, Branding, Custom Software, E-Commerce, App Development">
+    <meta name="robots" content="INDEX,FOLLOW">
 
 
     <!-- Mobile Specific Metas -->
@@ -468,7 +468,7 @@ $dd = $d_r->fetch_assoc();
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-6 vh-100 bg-black">
-                <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4">
+                <div class="col-12 col-lg-7 offset-0 offset-lg-7 mt-4" id="scrollableDiv">
                     <?php $dd = $d_r->fetch_assoc(); ?>
                     <div class="price-box th-ani " style="z-index: 7 !important; border-bottom: 2px solid #FF5C35;">
                         <span class="offer-tag"></span>
@@ -514,6 +514,15 @@ $dd = $d_r->fetch_assoc();
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    const scrollableDiv = document.getElementById('scrollableDiv');
+                    scrollableDiv.addEventListener('scroll', () => {
+                        if (scrollableDiv.scrollHeight - scrollableDiv.scrollTop === scrollableDiv.clientHeight) {
+                            alert('Hi');
+                        }
+                    });
+                </script>
 
             </div>
             <div class="col-12 col-lg-1">
