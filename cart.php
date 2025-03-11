@@ -139,13 +139,13 @@ $res = Databases::search($query);
                 $discount = 0;
 
                 if ($res->num_rows == 0) {
-                    ?>
+                ?>
                     <div class="py-5 bg-color my-5"><span class="text-dark h6">Cart is Empty</span><br>
                         <a href="pricing.php" class="h4 text-orange text-decoration-underline mt-5">Continue Shopping</a>
                     </div>
-                    <?php
+                <?php
                 } else {
-                    ?>
+                ?>
                     <div class="mt-5 text-dark text-start fw-semibold "><a href="pricing.php"
                             class="text-o text-decoration-underline"><i class="fa fa-long-arrow-left"
                                 aria-hidden="true"></i>&nbsp;Back to Shopping</a></div>
@@ -167,7 +167,7 @@ $res = Databases::search($query);
                                 $subtotal = $subtotal + $results['pack_price'];
                                 $beforePriceAdded = 0;
 
-                                ?>
+                            ?>
                                 <tr class="cart_item">
                                     <td data-title="Product">
                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -198,7 +198,7 @@ $res = Databases::search($query);
                                         while ($ci = $cid->fetch_assoc()) {
                                             if ($ci['offer_pack_id'] == 0) {
 
-                                                ?>
+                                ?>
                                                 <tr class="cart_item">
                                                     <td data-title="Product">
                                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -232,7 +232,7 @@ $res = Databases::search($query);
                                                     $isPrintedD = Databases::Search("SELECT * FROM `cart` WHERE `user_id`= '" . $_SESSION['user_id'] . "' AND `pack_id`='" . $ci['offer_pack_id'] . "' ");
                                                     if ($isPrintedD->num_rows == 0) {
 
-                                                        ?>
+                                                ?>
                                                         <tr class="cart_item">
                                                             <td data-title="Product">
                                                                 <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -251,7 +251,7 @@ $res = Databases::search($query);
                                                             </td>
                                                             <td data-title="Remove"></td>
                                                         </tr>
-                                                        <?php
+                            <?php
 
                                                     }
                                                 }
@@ -263,58 +263,66 @@ $res = Databases::search($query);
                             ?>
                             <tr>
                                 <td colspan="6" class="actions pb-0">
-                                    <?php
-                                    $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $_SESSION['user_id'] . "' AND `c_status` = '1' ");
-                                    if ($coupond->num_rows == 0) {
-                                    ?>
-                                        <div class="th-cart-coupon mt-4">
-                                            <input type="text" class="form-control" placeholder="Coupon Code..." id="c_code">
-                                            <button type="submit" class="th-btn rounded-pill text-white"
-                                                onclick="applyCoupon(<?php echo $subtotal; ?>);">Apply Coupon</button>
-                                        </div>
-                                    <?php
-                                    } elseif ($coupond->num_rows == 1) {
-                                        $coupon = $coupond->fetch_assoc();
-                                        $couponHasPackD = Databases::Search("SELECT * FROM `coupon_offers` WHERE `coupon_id`='" . $coupon['c_id'] . "' AND `offer_pack_id` != 0 ");
-                                        if ($couponHasPackD->num_rows == 0) {
-                                            if ($coupon['c_mode'] == 1) {
-                                                $max_expend = $coupon['max_expend'];
-                                                $discount = $coupon['amount'];
+                                    <div class="th-cart-coupon mt-4">
+                                        <input type="text" class="form-control" placeholder="Coupon Code..." id="c_code">
+                                        <button type="submit" class="th-btn rounded-pill text-white"
+                                            onclick="applyCoupon(<?php echo $subtotal; ?>);">Apply Coupon</button>
+                                    </div>
+                                    <a href="cart.php" class="pe-5 h2 text-o mt-4 d-none d-md-block"><i
+                                            class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="actions p-0 d-flex justify-content-start mb-4">
+                                    <div class="cart mt-0 mb-0">
+                                        <div class="coupon-section p-0 m-0">
 
-                                                if ($subtotal >= $max_expend) {
-                                                    $final_price = $subtotal - $discount;
-                                                    // Ensure final price has exactly two decimal places
-                                                    $final_price = number_format($final_price, 2, '.', '');
-                                                }
-                                            }
+                                            <!-- Discount Process  Start -->
 
-                                            if ($coupon['c_mode'] == 2) {
-                                                $max_expend = $coupon['max_expend'];
-                                                $percentage = $coupon['amount'];
+                                            <?php
+                                            $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $_SESSION['user_id'] . "' AND `c_status` = '1' ");
+                                            if ($coupond->num_rows == 1) {
+                                                $coupon = $coupond->fetch_assoc();
+                                                $couponHasPackD = Databases::Search("SELECT * FROM `coupon_offers` WHERE `coupon_id`='" . $coupon['c_id'] . "' AND `offer_pack_id` != 0 ");
+                                                if ($couponHasPackD->num_rows == 0) {
+                                                    if ($coupon['c_mode'] == 1) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $discount = $coupon['amount'];
 
-                                                if ($subtotal >= $max_expend) {
-                                                    $perc = $subtotal * $percentage / 100;
-                                                    $final_price = $subtotal - $perc;
-                                                    // Ensure final price has exactly two decimal places
-                                                    $final_price = number_format($final_price, 2, '.', '');
-                                                    $discount = $subtotal - $final_price;
-                                                }
-                                            }
-                                        } else {
-                                            if ($coupon['c_mode'] == 1) {
-                                                $max_expend = $coupon['max_expend'];
-                                                $discount = $coupon['amount'];
+                                                        if ($subtotal >= $max_expend) {
+                                                            $final_price = $subtotal - $discount;
+                                                            // Ensure final price has exactly two decimal places
+                                                            $final_price = number_format($final_price, 2, '.', '');
+                                                        }
+                                                    }
 
-                                                if ($subtotal >= $max_expend) {
-                                                    $final_price = $subtotal - $discount;
-                                                    // Ensure final price has exactly two decimal places
-                                                    $final_price = number_format($final_price, 2, '.', '');
-                                                }
-                                            }
+                                                    if ($coupon['c_mode'] == 2) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $percentage = $coupon['amount'];
 
-                                            if ($coupon['c_mode'] == 2) {
-                                                $max_expend = $coupon['max_expend'];
-                                                $percentage = $coupon['amount'];
+                                                        if ($subtotal >= $max_expend) {
+                                                            $perc = $subtotal * $percentage / 100;
+                                                            $final_price = $subtotal - $perc;
+                                                            // Ensure final price has exactly two decimal places
+                                                            $final_price = number_format($final_price, 2, '.', '');
+                                                            $discount = $subtotal - $final_price;
+                                                        }
+                                                    }
+                                                } else {
+                                                    if ($coupon['c_mode'] == 1) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $discount = $coupon['amount'];
+
+                                                        if ($subtotal >= $max_expend) {
+                                                            $final_price = $subtotal - $discount;
+                                                            // Ensure final price has exactly two decimal places
+                                                            $final_price = number_format($final_price, 2, '.', '');
+                                                        }
+                                                    }
+
+                                                    if ($coupon['c_mode'] == 2) {
+                                                        $max_expend = $coupon['max_expend'];
+                                                        $percentage = $coupon['amount'];
 
                                                         if ($distotal >= $max_expend) {
                                                             $perc = $distotal * $percentage / 100;
@@ -344,20 +352,12 @@ $res = Databases::search($query);
                                             <!-- Discount Process  End -->
 
                                         </div>
-                                    <?php
-                                    $subtotal = number_format($subtotal, 2, '.', '');
-                                    }
-                                    ?>
-
-                                    <a class="pe-5 h2 text-o mt-4 d-none d-md-block"><i
-                                            class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
                                 </td>
                             </tr>
-                            
 
                         </tbody>
                     </table>
-                    <?php
+                <?php
                 }
                 ?>
 
@@ -375,7 +375,7 @@ $res = Databases::search($query);
                                 <div class="col-12 h6 fw-semibold text-o mt-5 text-center">Select your <span
                                         class="text-orange">desired packages</span> , apply any available <span
                                         class="text-orange">coupons for discounts</span>, review your order, and <span
-                                        class="text-orange">proceed to get a quotation.</span></div>
+                                        class="text-orange">proceed to checkout</span> to complete your purchase.</div>
                             </div>
                         </div>
                     </div>
@@ -421,16 +421,17 @@ $res = Databases::search($query);
                         <button type="submit" class="th-btn rounded-pill text-white fs-4 mt-3" data-bs-target="#qModal"
                             data-bs-toggle="modal">Get a Quotation&nbsp;<i class="fa fa-credit-card-alt ms-2"></i></button>
                     </div>
-                    <div class="text-secondary text-center mt-4 mb-30">Request a <b>quotation</b> to get more details and proceed with your order.</div>
-
+                    <div class="text-secondary text-center mt-4 mb-30">Enjoy <b>secure payments</b> with advanced
+                        encryption to protect your information.</div>
                 </div>
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" style="z-index: 1000;" id="qModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" style="z-index: 1000;" id="qModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content rounded-0 border-0">
+
                         <div class="modal-body m-0 p-0">
                             <div class="row m-0 p-0">
                                 <div class="col-12 col-lg-6 p-0 m-0 d-none d-lg-block border-end border-dark"
@@ -444,17 +445,12 @@ $res = Databases::search($query);
                                     <span class="display-6 text-orange fw-bold">Get Your Free Quote!
                                     </span>
                                     <div class="col-12 mt-3">
-                                        <span class="text-o fs-4 ">Fill in the details, and we’ll send you a custom
-                                            quotation.
+                                        <span class="text-o fs-4 ">Fill in the details, and we’ll send you a custom quotation.
                                         </span>
                                     </div>
                                     <div class="col-12 mt-4">
                                         <label for="exampleFormControlInput1" class="form-label">Full Name</label>
                                         <input type="text" class="form-control" id="uname">
-                                    </div>
-                                    <div class="col-12 mt-4">
-                                        <label for="exampleFormControlInput1" class="form-label">Company Name</label>
-                                        <input type="text" class="form-control" id="cname">
                                     </div>
                                     <div class="col-12 mt-3">
                                         <label for="exampleFormControlInput1" class="form-label">E mail</label>
@@ -469,7 +465,7 @@ $res = Databases::search($query);
                                             <a onclick="getAQ(<?php echo $_SESSION['user_id']; ?>);" id="th-btnq"
                                                 style="cursor: pointer;"
                                                 class="th-btn th-radius fs-5 fs-5 col-12 text-white text-decoration-none ">
-                                                Send&nbsp;<i class="fa fa-paper-plane ms-2"></i>
+                                                Send&nbsp;<i class="fa fa-credit-card-alt ms-2"></i>
                                             </a>
                                         </div>
                                     </div>

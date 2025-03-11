@@ -329,7 +329,7 @@ About Area
                 <div class="col-12 d-flex justify-content-center mt-3">
                     <div class="btn-group">
                         <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
-                            FREE quote today<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            FREE quote today</a>
                     </div>
                 </div>
             </div>
@@ -1005,10 +1005,10 @@ Cta Area
 
 
     </div>
-    <div class="container-fluid ani-b">
+    <div class="container-fluid ani-b d-none d-lg-block">
         <div class="row vh-100 d-flex justify-content-end align-items-center p-5"
             style="background-image: url(assets/branding.jpg); background-size: cover;">
-            <div class="col-12 col-lg-4 bg-white text-center p-5" style="height:70vh;">
+            <div class="col-12 col-lg-4 bg-white text-center p-lg-3 p-3" style="height:70vh;">
                 <span class="text-uppercase sans fs-5 text-black">Cody Zea - bRANDING</span><br><br>
                 <span class="text-uppercase rel fs-4 text-orange">Need Branding Solutions to Stand Out in New
                     Zealand?</span><br>
@@ -1021,7 +1021,7 @@ Cta Area
 
                 <div class="btn-group d-flex justify-content-center">
                     <a href="branding.php" class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">Create Your
-                        Brand Identity<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        Brand Identity<i class="fa-regular fa-arrow-right ms-2 d-none d-lg-block"></i></a>
                 </div>
             </div>
         </div>
