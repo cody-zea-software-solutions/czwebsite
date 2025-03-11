@@ -126,7 +126,7 @@ Hero Area
                                 your business. Whether it's a website, a mobile app, or software, we help you scale,
                                 optimize, and succeed in the digital world.</p>
                             <div class="btn-group">
-                                <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started
+                                <a href="pricing.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started
                                     Now<i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
@@ -154,7 +154,7 @@ Hero Area
     </div>
 
     <div class="container space-extra m-5 d-none d-lg-block">
-        <div class="container position-absolute start-50 translate-middle space-extra" style="z-index: 1000;">
+        <div class="container position-absolute start-50 translate-middle space-extra" style="z-index: 5;">
             <div class="row d-flex justify-content-center">
 
                 <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
@@ -267,8 +267,62 @@ About Area
         </div>
 
     </div>
-
-    <div class="container ani-c">
+    <div class="choose-area bg-title overflow-hidden ani-c" data-mask-src="assets/img/bg/choose_bg_3.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="title-area mb-20">
+                        <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us</span>
+                        <h2 class="sec-title text-ani-style3 text-white">Cody Zea – Solutions Bright, Done Right</h2>
+                    </div>
+                    <p class="sec-text mb-35 fs-4">In a fast-moving digital world, choosing the right tech partner is
+                        crucial
+                    </p>
+                    <div class="choose-feature-wrap">
+                        <div class="choose-feature">
+                            <div class="box-icon">
+                                <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
+                                <p class="box-text">Our SEO strategies will attract more qualified visitors to your
+                                    website, bringing you closer.</p>
+                            </div>
+                        </div>
+                        <div class="choose-feature">
+                            <div class="box-icon">
+                                <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title">Affordable Pricing Solutions</h3>
+                                <p class="box-text">Increased website traffic and the improved rankings naturally lead
+                                    to greater brand awareness.</p>
+                            </div>
+                        </div>
+                        <div class="choose-feature">
+                            <div class="box-icon">
+                                <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title">Virtual & Physical Meetings</h3>
+                                <p class="box-text">By attracting qualified the traffic and optimizing your website for
+                                    conversions, we'll help you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="choose-image">
+                        <div class="img1 tilt-active">
+                            <img src="assets/man-wcu.png" alt="Choose">
+                            <div class="choose-shape"><img src="assets/img/shape/choose-shape.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ani-c space">
         <div class="row bg-color rounded-20 shadow-sm p-5">
 
             <div class="col-12 col-lg-8 border-end border-1 border-dark">
@@ -464,10 +518,6 @@ Service Area
                         <p class="text-black fs-5 fw-lighter">We provide smart solutions that fuel your business growth.
                             Our
                             custom software ensures seamless evolution, tailored to meet your unique needs.</p>
-                    </div>
-                    <div class="sec-btn text-center text-lg-start">
-                        <a href="service.html" class="th-btn th-icon th-radius text-white fs-5">View All Services<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-8 mb-3">
@@ -733,61 +783,7 @@ portfolio Area
     </div>
 
 
-    <div class="choose-area bg-title overflow-hidden ani-c" data-mask-src="assets/img/bg/choose_bg_3.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="title-area mb-20">
-                        <span class="sub-title sub-title6 style1 text-ani-style2 text-white">Why Choose Us</span>
-                        <h2 class="sec-title text-ani-style3 text-white">Cody Zea – Solutions Bright, Done Right</h2>
-                    </div>
-                    <p class="sec-text mb-35 fs-4">In a fast-moving digital world, choosing the right tech partner is
-                        crucial
-                    </p>
-                    <div class="choose-feature-wrap">
-                        <div class="choose-feature">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
-                                <p class="box-text">Our SEO strategies will attract more qualified visitors to your
-                                    website, bringing you closer.</p>
-                            </div>
-                        </div>
-                        <div class="choose-feature">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="box-title">Affordable Pricing Solutions</h3>
-                                <p class="box-text">Increased website traffic and the improved rankings naturally lead
-                                    to greater brand awareness.</p>
-                            </div>
-                        </div>
-                        <div class="choose-feature">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="box-title">Virtual & Physical Meetings</h3>
-                                <p class="box-text">By attracting qualified the traffic and optimizing your website for
-                                    conversions, we'll help you.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="choose-image">
-                        <div class="img1 tilt-active">
-                            <img src="assets/man-wcu.png" alt="Choose">
-                            <div class="choose-shape"><img src="assets/img/shape/choose-shape.png" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--==============================
+   <!--==============================
 
 Testimonial Area  
 ==============================-->
@@ -1008,7 +1004,7 @@ Cta Area
     <div class="container-fluid ani-b d-none d-lg-block">
         <div class="row vh-100 d-flex justify-content-end align-items-center p-5"
             style="background-image: url(assets/branding.jpg); background-size: cover;">
-            <div class="col-12 col-lg-4 bg-white text-center p-lg-3 p-3" style="height:70vh;">
+            <div class="col-12 col-lg-4 bg-white text-center p-lg-5 p-3" style="height:70vh;">
                 <span class="text-uppercase sans fs-5 text-black">Cody Zea - bRANDING</span><br><br>
                 <span class="text-uppercase rel fs-4 text-orange">Need Branding Solutions to Stand Out in New
                     Zealand?</span><br>
@@ -1054,7 +1050,7 @@ Cta Area
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black">Lightning-Fast Load Speeds</span>
                     <p class="text-black fw-thin fs-5">
-                    Keep visitors engaged with a seamless experience.
+                        Keep visitors engaged with a seamless experience.
                     </p>
                 </div>
 
@@ -1064,7 +1060,7 @@ Cta Area
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black">Conversion-Driven Designs </span>
                     <p class="text-black fw-thin fs-5">
-                    More than just looks—our sites turn clicks into customers.
+                        More than just looks—our sites turn clicks into customers.
                     </p>
                 </div>
 
@@ -1072,9 +1068,9 @@ Cta Area
             <div class="col-10 col-lg-3 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                 <img src="assets/homei003.png" class="img-flud w-25" alt="Feature001"> <br />
                 <div class="col-12 mt-3">
-                    <span class="fs-2 text-black">  SEO-Ready & Scalable </span>
+                    <span class="fs-2 text-black"> SEO-Ready & Scalable </span>
                     <p class="text-black fw-thin fs-5">
-                    Future-proof your business with built-in growth potential.</p>
+                        Future-proof your business with built-in growth potential.</p>
                 </div>
 
             </div>

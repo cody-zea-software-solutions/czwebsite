@@ -29,20 +29,22 @@ require_once "guest.php";
 
     <style>
         @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+            0% {
+                transform: scale(1);
+            }
 
-.offer-button {
-    animation: pulse 1s infinite ease-in-out;
-}
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .offer-button {
+            animation: pulse 1s infinite ease-in-out;
+        }
     </style>
 
     <!--==============================
@@ -148,68 +150,39 @@ require_once "guest.php";
             <?php
             $couponD = Databases::Search("SELECT * FROM `offer` INNER JOIN `coupon` ON `coupon`.`c_id`=`offer`.`of_coupon` ");
             while ($coupon = $couponD->fetch_assoc()) {
-            ?>
-                <div class="col-12 col-lg-5 mt-5 mx-2" data-bs-target="#couponModal<?php echo $coupon['of_id']; ?>"
-                    data-bs-toggle="modal">
-                    <img src="<?php echo $coupon['of_img']; ?>" class="img-fluid shadow" alt="">
-                </div>
-                <!-- Modal 001 -->
-                <div class="modal fade" id="couponModal<?php echo $coupon['of_id']; ?>" tabindex="-1"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content rounded-0 border-0">
+                ?>
 
-                            <div class="modal-body m-0 p-0">
-                                <div class="row m-0 p-0">
-                                    <div class="col-12 col-lg-6 p-0 m-0 d-none d-md-block border-end border-dark"
-                                        style="background-image: url('<?php echo $coupon['of_img']; ?>'); background-size: cover;">
-
-                                    </div>
-                                    <div class="col-12 col-lg-6 p-4 ">
-                                        <div class="col-12 d-flex justify-content-end " data-bs-dismiss="modal">
-                                            <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
-                                        </div>
-                                        <div class="col-12 text-center mt-4">
-                                            <span class="fs-1 text-orange">
-                                                <?php echo $coupon['of_name']; ?>
-                                            </span>
-                                            <p class="text-black fs-6">
-                                                <?php echo $coupon['of_desc']; ?>
-                                            </p>
-                                        </div>
-                                        <div class="col-12 d-flex justify-content-center">
-                                            <div class="coupon-row">
-                                                <span class="cpnCode"
-                                                    id="cpnCode<?php echo $coupon['of_id']; ?>"><?php echo $coupon['c_code']; ?></span>
-                                                <span class="cpnBtn" id="cpnBtn<?php echo $coupon['of_id']; ?>"
-                                                    onclick="copyCode(<?php echo $coupon['of_id']; ?>)">Copy Code</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mt-2 d-flex justify-content-center">
-                                            <div class="text-center text-xl-start col-10">
-                                                <a onclick="claimCoupon(<?php echo $coupon['c_id']; ?>);"
-                                                    style="cursor: pointer;"
-                                                    class="th-btn th-radius text-white fs-5 fs-5 col-12 shadow offer-button">
-                                                    Claim Your Offer &nbsp;&nbsp;<i class="fa-solid fa-hand-pointer"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="text-dark my-3 text-center">After clicking on Claim button you will be <span class="text-orange">redirect to the cart</span> with the offer and coupon.</div>
-
-                                    </div>
+                <div class="col-12 col-lg-4 mt-5 mx-2 bg-white rounded-20 shadow"
+                    data-bs-target="#couponModal<?php echo $coupon['of_id']; ?>" data-bs-toggle="modal">
+                    <img src="<?php echo $coupon['of_img']; ?>" class="img-fluid rounded-20" alt="">
+                    <div class="row p-3">
+                        <div class="col-12 col-lg-6">
+                            <div class="th-cart-coupon">
+                                <div class="coupon p-3 rounded-20 text-center"
+                                    style="border: 2px dashed rgb(0, 0, 0) !important;">
+                                    <span
+                                        class="coupon-text text-o fw-semibold mx-3 fs-4 text-uppercase"><?php echo $coupon['c_code'] ?></span>
                                 </div>
-
                             </div>
-
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a onclick="claimCoupon(<?php echo $coupon['c_id']; ?>);" style="cursor: pointer;"
+                                class="th-btn th-radius text-white fs-6 col-12 shadow bg-black">
+                                <i class="fa-light fa-ticket"></i>&nbsp;&nbsp;Apply Savings
+                            </a>
                         </div>
                     </div>
+
                 </div>
-            <?php
-            };
+                <!-- Modal 001 -->
+        
+                <?php
+            }
+            ;
             ?>
         </div>
 
-        
+
     </div>
 
     <section class="d-flex justify-content-center">
@@ -236,7 +209,7 @@ require_once "guest.php";
     <?php
     require "footer.php"
 
-    ?>
+        ?>
 
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

@@ -55,7 +55,7 @@ if(isset($_COOKIE['cz_user_id'])){
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-            <a href="index.php"><img src="assets/img/logo.svg" alt="Cody zea"></a>
+            <a href="index.php"><img src="loader.svg" alt="Cody zea"></a>
         </div>
 
         <div class="th-mobile-menu">
@@ -72,17 +72,7 @@ if(isset($_COOKIE['cz_user_id'])){
                 </li>
                 <li><a href="pricing.php">Pricing</a></li>
                 <li><a href="cart.php">Cart</a></li>
-                <li class="menu-item-has-children">
-                    <a href="offers.php">Offers</a>
-                    <ul class="sub-menu">
-                        <li><a href="offers.php">SmartHost Deal
-                            </a></li>
-                        <li><a href="offers.php">Pay for Hosting, Get a Website Free
-                            </a></li>
-                        <li><a href="offers.php">Exclusive Package for Small Businesses
-                            </a></li>
-                    </ul>
-                </li>
+              
                 <li><a href="solutions.php">Solutions</a></li>
                 <li class="menu-item-has-children">
                     <a href="offers.php">Offers</a>
@@ -180,7 +170,7 @@ if(isset($_COOKIE['cz_user_id'])){
                                             $offerD = Databases::Search("SELECT * FROM `offer` LIMIT 3");
                                             while ($offer = $offerD->fetch_assoc()) {
                                             ?>
-                                                <div class="col-12 col-lg-4 d-flex">
+                                                <div class="col-12 col-lg-4 d-flex" style="cursor: pointer;" onclick="window.location.href='offers.php'">
                                                     <div class="choose-feature-wrap">
                                                         <div class="choose-feature cody-bg p-3 rounded-20">
                                                             <div class="box-icon">
