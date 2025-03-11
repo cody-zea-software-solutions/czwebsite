@@ -5,9 +5,9 @@ $included_files = get_included_files();
 if (!in_array(realpath('db.php'), $included_files) && !in_array(realpath('assets/process/database.php'), $included_files)) {
     require_once "db.php";
 }
-if(isset($_COOKIE['cz_user_id'])){
+if (isset($_COOKIE['cz_user_id'])) {
     $cart_q = Databases::Search("SELECT * FROM `cart` INNER JOIN pack ON  pack.pack_id = cart.pack_id INNER JOIN solution ON solution.sol_id = pack.solution_sol_id WHERE `user_id` = " . $_COOKIE['cz_user_id'] . " ORDER BY `cart_id` DESC");
-    if($cart_q->num_rows !=0){
+    if ($cart_q->num_rows != 0) {
         $cart_d = 'cart-icon';
     }
 }
@@ -18,16 +18,14 @@ if(isset($_COOKIE['cz_user_id'])){
 <!--==============================
      Preloader
   ==============================-->
-<div class="preloader ">
+<div class="preloader">
     <div class="preloader-inner">
-        <img src="assets/loader.svg" class="w-50 img-fluid" alt="Rasm">
+        <img src="assets/loader.svg" class="w-50 img-fluid" alt="LoaderCodyZea">
         <div class="col-12 d-flex justify-content-center">
             <div class="loader-2">
             </div>
         </div>
-
     </div>
-
 </div>
 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 
@@ -72,7 +70,7 @@ if(isset($_COOKIE['cz_user_id'])){
                 </li>
                 <li><a href="pricing.php">Pricing</a></li>
                 <li><a href="cart.php">Cart</a></li>
-              
+
                 <li><a href="solutions.php">Solutions</a></li>
                 <li class="menu-item-has-children">
                     <a href="offers.php">Offers</a>
@@ -80,10 +78,10 @@ if(isset($_COOKIE['cz_user_id'])){
                         <?php
                         $offerD = Databases::Search("SELECT * FROM `offer` LIMIT 3");
                         while ($offer = $offerD->fetch_assoc()) {
-                        ?>
+                            ?>
                             <li><a href="offers.php"><?php echo $offer['of_name'] ?>
                                 </a></li>
-                        <?php
+                            <?php
                         }
                         ?>
                     </ul>
@@ -94,9 +92,9 @@ if(isset($_COOKIE['cz_user_id'])){
                         <?php
                         $blogD = Databases::Search("SELECT * FROM `blogs` LIMIT 2");
                         while ($blog = $blogD->fetch_assoc()) {
-                        ?>
+                            ?>
                             <li><a href="blog.php"><?php echo $blog['blog_name'] ?></a></li>
-                        <?php
+                            <?php
                         }
                         ?>
                     </ul>
@@ -133,10 +131,11 @@ if(isset($_COOKIE['cz_user_id'])){
                         <div class="social-links">
                             <a href="https://web.facebook.com/profile.php?id=61570825186554" class="text-white"><i
                                     class="fab fa-facebook-f text-white"></i></a>
-                            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105796820&keywords=cody%20zea%20(pvt)%20ltd&origin=RICH_QUERY_SUGGESTION&position=0&searchId=14363f48-1b82-45c2-b16e-3e9ad3f7f4af&sid=.GT&spellCorrectionEnabled=false" class="text-white">
-                                <i
-                                    class="fab fa-linkedin-in text-white"></i></a>
-                            <a href="https://x.com/codyzeashehan" class="text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105796820&keywords=cody%20zea%20(pvt)%20ltd&origin=RICH_QUERY_SUGGESTION&position=0&searchId=14363f48-1b82-45c2-b16e-3e9ad3f7f4af&sid=.GT&spellCorrectionEnabled=false"
+                                class="text-white">
+                                <i class="fab fa-linkedin-in text-white"></i></a>
+                            <a href="https://x.com/codyzeashehan" class="text-white"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
                             <a href="https://www.youtube.com/@CodyZea" class="text-white"><i
                                     class="fab fa-youtube text-white"></i></a>
                         </div>
@@ -169,8 +168,9 @@ if(isset($_COOKIE['cz_user_id'])){
                                             <?php
                                             $offerD = Databases::Search("SELECT * FROM `offer` LIMIT 3");
                                             while ($offer = $offerD->fetch_assoc()) {
-                                            ?>
-                                                <div class="col-12 col-lg-4 d-flex" style="cursor: pointer;" onclick="window.location.href='offers.php'">
+                                                ?>
+                                                <div class="col-12 col-lg-4 d-flex" style="cursor: pointer;"
+                                                    onclick="window.location.href='offers.php'">
                                                     <div class="choose-feature-wrap">
                                                         <div class="choose-feature cody-bg p-3 rounded-20">
                                                             <div class="box-icon">
@@ -184,7 +184,7 @@ if(isset($_COOKIE['cz_user_id'])){
                                                         </div>
                                                     </div>
                                                 </div>
-                                            <?php
+                                                <?php
                                             }
                                             ?>
 
@@ -258,7 +258,7 @@ if(isset($_COOKIE['cz_user_id'])){
                                             <?php
                                             $blogD = Databases::Search("SELECT * FROM `blogs` LIMIT 2");
                                             while ($blog = $blogD->fetch_assoc()) {
-                                            ?>
+                                                ?>
                                                 <div class="col-12 col-lg-6 d-flex">
                                                     <div class="choose-feature-wrap">
                                                         <div class="choose-feature cody-bg p-3 rounded-20">
@@ -285,7 +285,7 @@ if(isset($_COOKIE['cz_user_id'])){
                                                         </div>
                                                     </div>
                                                 </div>
-                                            <?php
+                                                <?php
                                             }
                                             ?>
                                         </div>
@@ -323,11 +323,12 @@ if(isset($_COOKIE['cz_user_id'])){
                                     /* Make it a circle */
                                 }
                             </style>
-                            <a href="cart.php" class="<?php echo $cart_d; ?>"><i class="fa fa-cart-plus fs-3" aria-hidden="true"></i></a>
+                            <a href="cart.php" class="<?php echo $cart_d; ?>"><i class="fa fa-cart-plus fs-3"
+                                    aria-hidden="true"></i></a>
                             <!-- <button type="button" class="icon-btn th-radius searchBoxToggler"><i
                                     class="far fa-search text-b fw-semibold"></i></button> -->
-                            <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A Quote<i
-                                    class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get A
+                                Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
 
                         </div>
                         <!-- <div class="btn-group">
@@ -342,14 +343,14 @@ if(isset($_COOKIE['cz_user_id'])){
 </header>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/67cf455d16f9e2190ced40a8/1im0qdtf1';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/67cf455d16f9e2190ced40a8/1im0qdtf1';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
 </script>
 <!--End of Tawk.to Script-->

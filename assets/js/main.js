@@ -54,7 +54,7 @@
             // Once the container has finished, the scroll appears
             if ($('#loader').hasClass('loaded')) {
                 // It is so that once the container is gone, the entire preloader section is deleted
-                $('#preloader').delay(9000).queue(function () {
+                $('#preloader').delay(1000).queue(function () {
                     $(this).remove();
                 });
             }
