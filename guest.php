@@ -9,11 +9,52 @@ $cookie_lifetime = time() + (365 * 24 * 60 * 60); // Store cookies for 1 year
 date_default_timezone_set('Asia/Colombo');
 
 // Check if guest ID exists in cookies
-if (isset($_COOKIE[$cookie_name_guest])) {
+
+if (isset($_COOKIE[$cookie_name_guest]) && !isset($_COOKIE[$cookie_name_user])) {
+    // Instruct browser to delete the cookie
+
+    setcookie("cz_guest_id", "", time() - 3600, "/", "", true, true);  // Secure, HttpOnly cookie
+    setcookie("cz_user_id", "", time() - 3600, "/", "", true, true);   // Secure, HttpOnly cookie
+
+    session_unset();  // Clear session variables
+    session_destroy();  // Destroy the session
+
+    
+} elseif (!isset($_COOKIE[$cookie_name_guest]) && isset($_COOKIE[$cookie_name_user])) {
+    // Instruct browser to delete the cookie
+    setcookie("cz_guest_id", "", time() - 3600, "/", "", true, true);  // Secure, HttpOnly cookie
+    setcookie("cz_user_id", "", time() - 3600, "/", "", true, true);   // Secure, HttpOnly cookie
+
+    session_unset();  // Clear session variables
+    session_destroy();  // Destroy the session
+
+    
+} elseif (isset($_COOKIE[$cookie_name_guest]) && isset($_COOKIE[$cookie_name_user])) {
+
     $guest_id = $_COOKIE[$cookie_name_guest];
-    $_SESSION['guest_id'] = $guest_id; // Store in session
-    $user_id = $_COOKIE[$cookie_name_user]; // Get user_id from cookie
-    $_SESSION['user_id'] = $user_id; // Store in session
+    $user_id = $_COOKIE[$cookie_name_user];
+
+    // Use prepared statement to avoid SQL injection
+    $query = "SELECT * FROM `user` WHERE `unique_code` = ? AND `user_id` = ?";
+    $params = [$guest_id, $user_id];
+
+    $u_row = Databases::Search($query, $params, "is"); // Assuming `ss` means two string parameters
+
+    if ($u_row->num_rows == 1) {
+        $_SESSION['guest_id'] = $guest_id; // Store in session
+        $_SESSION['user_id'] = $user_id;  // Store in session
+    } else {
+        // Clear cookies and session if validation fails
+        setcookie("cz_guest_id", "", time() - 3600, "/", "", true, true);  // Secure, HttpOnly cookie
+        setcookie("cz_user_id", "", time() - 3600, "/", "", true, true);   // Secure, HttpOnly cookie
+
+        session_unset();  // Clear session variables
+        session_destroy();  // Destroy the session
+
+        // Optionally, redirect to a login page or homepage
+        header("Location: index.php");
+        exit;
+    }
 } else {
     // Generate a unique guest ID
     $guest_id = hash('sha256', uniqid('', true) . mt_rand());

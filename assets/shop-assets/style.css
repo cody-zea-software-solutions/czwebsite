@@ -28,7 +28,8 @@
     border: none;
     font-weight: bold;
     color: white;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
 }
 
 .c-btn:hover {
@@ -37,8 +38,10 @@
     border: none;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    transform: scale(1.05); /* Slightly enlarges the button */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    transform: scale(1.05);
+    /* Slightly enlarges the button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow effect */
 }
 
 .i-btn {
@@ -47,7 +50,8 @@
     border: none;
     font-weight: bold;
     color: #FF5C35;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
 }
 
 .i-btn:hover {
@@ -56,8 +60,10 @@
     border: none;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    transform: scale(1.05); /* Slightly enlarges the button */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    transform: scale(1.05);
+    /* Slightly enlarges the button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow effect */
 }
 
 .cb {
@@ -124,19 +130,42 @@
     animation-delay: 0.5s;
 }
 
-.pricing-image{
+.pricing-image {
     animation: floatAnimation 6s infinite ease-in-out alternate;
 }
+
+@keyframes floatAnimation2 {
+    0% {
+        transform: scaleX(-1);
+    }
+
+    50% {
+        transform: rotate(5deg) scaleX(-1);
+        /* Adjust the Y position if needed */
+    }
+
+    100% {
+        transform: rotate(0deg) scaleX(-1);
+        /* Adjust the Y position if needed */
+    }
+}
+
+.pricing-image2 {
+    animation: floatAnimation2 6s infinite ease-in-out alternate;
+}
+
 
 @keyframes moveImage {
     0% {
         transform: translateX(0);
         opacity: 0;
     }
+
     50% {
         transform: translateX(20px);
         opacity: 0.7;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -367,7 +396,7 @@
         width: 50px !important;
         height: 50px !important;
     }
-    
+
     .plus-btn img {
         padding-top: 5px;
         width: 20px;
@@ -406,11 +435,15 @@
     font-size: 20px;
     font-weight: 500;
     color: #121212;
-    white-space: nowrap;       /* Prevents text from wrapping */
-    overflow: hidden;          /* Hides overflow text */
-    text-overflow: ellipsis;   /* Adds "..." when text is cut off */
-    max-width: 100%;           /* Ensures it doesn't exceed the container */
-    display: block;  
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    overflow: hidden;
+    /* Hides overflow text */
+    text-overflow: ellipsis;
+    /* Adds "..." when text is cut off */
+    max-width: 100%;
+    /* Ensures it doesn't exceed the container */
+    display: block;
 }
 
 .card {

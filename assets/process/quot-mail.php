@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -15,8 +14,9 @@
         </tr>
         <tr>
             <td style="padding: 20px;">
-                <p>Name : <strong><?php echo $uname; ?></strong> </p>
                 <p>ID : <strong><?php echo $uid; ?></strong> </p>
+                <p>Full Name : <strong><?php echo $uname; ?></strong> </p>
+                <p>Company Name : <strong><?php echo $cname; ?></strong> </p>
                 <p>Date : <strong><?php echo $date; ?></strong> </p>
                 <p>Email : <strong><a href="mailto:<?php echo $uemail; ?>" style="color: #e67e22; text-decoration: underline;"><?php echo $uemail; ?></a></strong> </p>
                 <p>Mobile : <strong><a href="https://wa.me/<?php echo $umobile; ?>" style="color: #e67e22; text-decoration: underline;"><?php echo $umobile; ?></a></strong> </p>
@@ -179,10 +179,10 @@
 
         ?>
             <tr>
-            <td style="padding-right: 20px; text-align: right;">
-                <p>Coupon Code :: <strong><?php echo $coupon['c_code'] ?> </strong> </p>
-            </td>
-        </tr>
+                <td style="padding-right: 20px; text-align: right;">
+                    <p>Coupon Code :: <strong><?php echo $coupon['c_code'] ?> </strong> </p>
+                </td>
+            </tr>
         <?php
         }
         $subtotal = number_format($subtotal, 2, '.', '');
@@ -191,15 +191,16 @@
         <!-- Discount Process  End -->
 
         <?php
-                        $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $uid . "' AND `c_status` = '1' ");
-                        if ($coupond->num_rows == 0) {
-                            $final_price = $subtotal;
-                        }
-                        ?>
+        $coupond = Databases::Search("SELECT * FROM `user_has_coupon` INNER JOIN `coupon` ON `coupon`.`c_id` = `user_has_coupon`.`coupon_id` WHERE `user_id` = '" . $uid . "' AND `c_status` = '1' ");
+        if ($coupond->num_rows == 0) {
+            $final_price = $subtotal;
+        }
+        ?>
 
         <tr>
             <td style="padding: 20px; text-align: right;">
-                <p>Subtotal : <strong><?php echo $subtotal; ?></strong><p>
+                <p>Subtotal : <strong><?php echo $subtotal; ?></strong>
+                <p>
                 <p>Discount : <strong>- <?php echo $discount; ?></strong></p>
                 <p style="font-size: 20px; color: #e67e22;">Total : <strong><?php echo $final_price; ?></strong></p>
             </td>

@@ -139,11 +139,12 @@ function addToCart(id) {
 function getAQ(id) {
 
     var uname = document.getElementById('uname').value;
+    var cname = document.getElementById('cname').value;
     var umobile = document.getElementById('umobile').value;
     var uemail = document.getElementById('uemail').value;
 
     // Validate required fields (basic validation)
-    if (!uname || !umobile || !uemail) {
+    if (!uname || !cname || !umobile || !uemail) {
         Swal.fire({
             text: "All fields are required.",
             confirmButtonText: 'OK',
@@ -157,6 +158,7 @@ function getAQ(id) {
     // Prepare form data to send
     var formData = new FormData();
     formData.append('uname', uname);
+    formData.append('cname', cname);
     formData.append('umobile', umobile);
     formData.append('uemail', uemail);
     formData.append('uid', id);

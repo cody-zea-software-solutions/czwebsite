@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get POST data from the form
     $uid = isset($_POST['uid']) ? trim($_POST['uid']) : '';
     $uname = isset($_POST['uname']) ? trim($_POST['uname']) : '';
+    $cname = isset($_POST['cname']) ? trim($_POST['cname']) : '';
     $uemail = isset($_POST['uemail']) ? trim($_POST['uemail']) : '';
     $umobile = isset($_POST['umobile']) ? trim($_POST['umobile']) : '';
     $copid = 0;
@@ -28,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $date = date('Y-m-d H:i:s');
 
     // Validate fields (basic validation)
-    if (empty($uid) || empty($uname) || empty($uemail) || empty($umobile)) {
+    if (empty($uid) || empty($uname) || empty($cname) || empty($uemail) || empty($umobile)) {
         die('All fields are required.');
     }
 
@@ -67,8 +68,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Connect to the database (replace with your own database connection)
             $conn = Databases::getConnection();
             $unique_id = uniqid('quot_', false);
-            $stmt = $conn->prepare("INSERT INTO `quot` (qu_id,quname, qemail, `qmobile`,`qcoupon`,`qdate`,`unique_id`) VALUES (?, ?, ?, ?, ?, ?, ?) ; ");
-            $stmt->bind_param("isssiss", $uid, $uname, $uemail, $umobile, $copid, $date, $unique_id);
+            $stmt = $conn->prepare("INSERT INTO `quot` (qu_id,quname, qcname, qemail, `qmobile`,`qcoupon`,`qdate`,`unique_id`) VALUES (?, ?, ?, ?, ?, ?, ?,?) ; ");
+            $stmt->bind_param("issssiss", $uid, $uname, $cname, $uemail, $umobile, $copid, $date, $unique_id);
 
             if ($stmt->execute()) {
                 $q_id = Databases::Search("SELECT * FROM quot WHERE unique_id = '" . $unique_id . "' ");
