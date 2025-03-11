@@ -139,13 +139,13 @@ $res = Databases::search($query);
                 $discount = 0;
 
                 if ($res->num_rows == 0) {
-                ?>
+                    ?>
                     <div class="py-5 bg-color my-5"><span class="text-dark h6">Cart is Empty</span><br>
                         <a href="pricing.php" class="h4 text-orange text-decoration-underline mt-5">Continue Shopping</a>
                     </div>
-                <?php
+                    <?php
                 } else {
-                ?>
+                    ?>
                     <div class="mt-5 text-dark text-start fw-semibold "><a href="pricing.php"
                             class="text-o text-decoration-underline"><i class="fa fa-long-arrow-left"
                                 aria-hidden="true"></i>&nbsp;Back to Shopping</a></div>
@@ -167,7 +167,7 @@ $res = Databases::search($query);
                                 $subtotal = $subtotal + $results['pack_price'];
                                 $beforePriceAdded = 0;
 
-                            ?>
+                                ?>
                                 <tr class="cart_item">
                                     <td data-title="Product">
                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -198,7 +198,7 @@ $res = Databases::search($query);
                                         while ($ci = $cid->fetch_assoc()) {
                                             if ($ci['offer_pack_id'] == 0) {
 
-                                ?>
+                                                ?>
                                                 <tr class="cart_item">
                                                     <td data-title="Product">
                                                         <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -232,7 +232,7 @@ $res = Databases::search($query);
                                                     $isPrintedD = Databases::Search("SELECT * FROM `cart` WHERE `user_id`= '" . $_SESSION['user_id'] . "' AND `pack_id`='" . $ci['offer_pack_id'] . "' ");
                                                     if ($isPrintedD->num_rows == 0) {
 
-                                                ?>
+                                                        ?>
                                                         <tr class="cart_item">
                                                             <td data-title="Product">
                                                                 <a class="cart-productimage rounded-20" href="pricing.php"><img width="91" height="91"
@@ -251,7 +251,7 @@ $res = Databases::search($query);
                                                             </td>
                                                             <td data-title="Remove"></td>
                                                         </tr>
-                            <?php
+                                                        <?php
 
                                                     }
                                                 }
@@ -336,7 +336,7 @@ $res = Databases::search($query);
 
 
 
-                                            ?>
+                                                ?>
                                                 <div class="coupon p-3 mt-md-3 rounded-0 bg-color"
                                                     style="border: 2px dashed rgb(167, 162, 162) !important;">
                                                     <span
@@ -344,7 +344,7 @@ $res = Databases::search($query);
                                                     <button class="remove-coupon-btn text-o fw-bold ms-3"
                                                         onclick="removeCoupon(<?php echo $coupon['uc_id']; ?>);">×</button>
                                                 </div>
-                                            <?php
+                                                <?php
                                             }
                                             $subtotal = number_format($subtotal, 2, '.', '');
                                             ?>
@@ -357,7 +357,7 @@ $res = Databases::search($query);
 
                         </tbody>
                     </table>
-                <?php
+                    <?php
                 }
                 ?>
 
@@ -419,7 +419,8 @@ $res = Databases::search($query);
                     </table>
                     <div class="wc-proceed-to-checkout text-center mt-5">
                         <button type="submit" class="th-btn rounded-pill text-white fs-4 mt-3" data-bs-target="#qModal"
-                            data-bs-toggle="modal">Get a Quotation&nbsp;<i class="fa fa-credit-card-alt ms-2"></i></button>
+                            data-bs-toggle="modal">Get a Quotation&nbsp;<i
+                                class="fa fa-credit-card-alt ms-2"></i></button>
                     </div>
                     <div class="text-secondary text-center mt-4 mb-30">Enjoy <b>secure payments</b> with advanced
                         encryption to protect your information.</div>
@@ -427,11 +428,10 @@ $res = Databases::search($query);
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" style="z-index: 1000;" id="qModal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" style="z-index: 1000;" id="qModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content rounded-0 border-0">
-
                         <div class="modal-body m-0 p-0">
                             <div class="row m-0 p-0">
                                 <div class="col-12 col-lg-6 p-0 m-0 d-none d-lg-block border-end border-dark"
@@ -445,7 +445,8 @@ $res = Databases::search($query);
                                     <span class="display-6 text-orange fw-bold">Get Your Free Quote!
                                     </span>
                                     <div class="col-12 mt-3">
-                                        <span class="text-o fs-4 ">Fill in the details, and we’ll send you a custom quotation.
+                                        <span class="text-o fs-4 ">Fill in the details, and we’ll send you a custom
+                                            quotation.
                                         </span>
                                     </div>
                                     <div class="col-12 mt-4">
