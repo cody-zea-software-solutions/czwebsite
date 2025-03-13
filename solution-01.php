@@ -8,7 +8,7 @@ $dd = $d_r->fetch_assoc();
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saor - SEO Digital Marketing Agency HTML Template - Services Details</title>
+    <title>Startup Made Easy – Choose Cody Zea</title>
     <meta name="author" content="Cody Zea Software Solutions">
     <meta name="description" content="Startup Success Made Simple – Get expert solutions in web development, branding, digital marketing, and custom software to grow your business effortlessly.">
     <meta name="keywords" content="Cody Zea, Startup Solutions, Business Growth, Web Development, Digital Marketing, Branding, Custom Software, E-Commerce, App Development">
@@ -51,6 +51,7 @@ $dd = $d_r->fetch_assoc();
     <link rel="stylesheet" href="assets/css/imageRevealHover.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 </head>
 
@@ -80,6 +81,7 @@ $dd = $d_r->fetch_assoc();
         </div>
     </div>
     <div class="container">
+
         <div class="row">
             <div class="col-12 col-lg-6">
                 <span class="display-4 text-black">
@@ -122,6 +124,29 @@ $dd = $d_r->fetch_assoc();
                 </div> -->
             </div>
 
+        </div>
+        <div class="row px-3 px-md-2 px-lg-5 my-5">
+            <div class="col-12 bg-black px-3 py-5 p-md-5 meeting">
+                <div class="row">
+                    <div class="col-12 col-md-2 d-flex justify-content-center align-items-center ">
+                        <img src="assets/bulb-2.svg" class="img-fluid bulb-img">
+                    </div>
+                    <div class="col-12 col-md-10 text-center mt-3">
+                        <h3 class="text-white">Have an issue? <span class="text-orange">Schedule a meeting</span> with us to get it resolved!</h3>
+
+                        <!-- Custom Button to Trigger Calendly Popup -->
+                        <div class="row mt-4">
+                            <div class="btn-group col-12 d-flex justify-content-center">
+                                <a href="#"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;"
+                                    class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 w-auto px-5 py-4">
+                                    Schedule a meeting <i class="fa-regular fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-12 text-center">
@@ -692,6 +717,7 @@ $dd = $d_r->fetch_assoc();
     <!--==============================
     All Js File
 ============================== -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <!-- Jquery -->
     <script src="assets/js/pricing.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>

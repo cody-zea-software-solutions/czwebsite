@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Codyzea - Coco Coir World - Sustainable Coir Solutions</title>
+    <title>Codyzea - Ceylon Coir World - Sustainable Coir Solutions</title>
     <meta name="author" content="Cody Zea Software Solutions">
 <meta name="description" content="See how Cody Zea Software Solutions helped Ceylon Coir World expand its global presence with a modern website, branding, and strategic marketing.">
 <meta name="keywords" content="Ceylon Coir World, Cody Zea, Export Business, Web Design, Branding, International Marketing, Digital Solutions">
@@ -85,7 +85,7 @@
         <div class="row" style="background-image: url(assets/works-cover/coco-coir-banner.jpg); background-size: cover; background-position: center;">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column mt-5">
-                    <span class="display-1 text-white">Coco Coir World - Web Design</span>
+                    <span class="display-1 text-white">Ceylon Coir World - Web Design</span>
                     <p class="fs-2 fw-semibold text-white">Sustainability, Quality, Innovation</p>
                     <div class="btn-group">
                         <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get in Touch <i class="fa-regular fa-arrow-right ms-2"></i></a>

@@ -20031,6 +20031,27 @@ span.select2-selection.select2-selection--single:focus {
   position: relative;
 }
 
+.meeting{
+  border-radius: 60px !important;
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .meeting{
+    border-radius: 60px !important;
+  }
+}
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+  .meeting{
+    border-radius: 60px !important;
+  }
+  .bulb-img{
+    width: 70px;
+  }
+}
+
 .counter-card-wrap {
   display: -webkit-box;
   display: -webkit-flex;

@@ -323,68 +323,154 @@ About Area
         </div>
     </div>
     <div class="container ani-c space">
-        <div class="row bg-color rounded-20 shadow-sm p-5">
 
-            <div class="col-12 col-lg-8 border-end border-1 border-dark">
-                <span class="text-black fs-1">Effortless Web Presence – Simple Monthly Plan
-                </span>
+        <div class="row mt-5 mt-md-0 ">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-color">
+                            <div class="row bg-color rounded-20 shadow-sm p-5">
 
-                <p class="text-dark fs-5 mt-3">
-                    Get a custom website with free secure hosting, full maintenance, monthly updates, and a fresh UI
-                    redesign every year—all for a simple monthly fee!
-                </p>
-                <span class="text-black fs-2">What's Included</span>
-                <div class="row mt-3">
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Custom
-                                website design & content
-                            </li>
-                            <li class="text-black fs-5"></li>
-                        </ul>
+                                <div class="col-12 col-lg-8 border-end border-1 border-dark">
+                                    <span class="text-black fs-1">Effortless Web Presence – Simple Monthly Plan
+                                    </span>
+
+                                    <p class="text-dark fs-5 mt-3">
+                                        Get a custom website with free secure hosting, full maintenance, monthly updates, and a fresh UI
+                                        redesign every year—all for a simple monthly fee!
+                                    </p>
+                                    <span class="text-black fs-2">What's Included</span>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Custom
+                                                    website design & content
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Free
+                                                    secure hosting & full maintenance
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Monthly
+                                                    updates (1 hour of changes)
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Annual UI
+                                                    redesign for a fresh look
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 text-center">
+                                    <div class="col-12 mt-3">
+                                        <span class="text-black fs-5">No upfront fee! Just a fixed monthly price.
+                                        </span> <br />
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <span class="text-black display-3">NZ$ 125</span> <br />
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <span class="text-black fs-1">Claim This Offer</span> <br />
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center mt-3">
+                                        <div class="btn-group">
+                                            <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
+                                                FREE quote today</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-color">
+                            <div class="row bg-color rounded-20 shadow-sm p-5">
+
+                                <div class="col-12 col-lg-8 border-end border-1 border-dark">
+                                    <span class="text-black fs-1">Effortless Web Presence – Simple Monthly Plan
+                                    </span>
+
+                                    <p class="text-dark fs-5 mt-3">
+                                        Get a custom website with free secure hosting, full maintenance, monthly updates, and a fresh UI
+                                        redesign every year—all for a simple monthly fee!
+                                    </p>
+                                    <span class="text-black fs-2">What's Included</span>
+                                    <div class="row mt-3">
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Custom
+                                                    website design & content
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Free
+                                                    secure hosting & full maintenance
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Monthly
+                                                    updates (1 hour of changes)
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <ul class="list-unstyled">
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Annual UI
+                                                    redesign for a fresh look
+                                                </li>
+                                                <li class="text-black fs-5"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 text-center">
+                                    <div class="col-12 mt-3">
+                                        <span class="text-black fs-5">No upfront fee! Just a fixed monthly price.
+                                        </span> <br />
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <span class="text-black display-3">NZ$ 125</span> <br />
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <span class="text-black fs-1">Claim This Offer</span> <br />
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center mt-3">
+                                        <div class="btn-group">
+                                            <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
+                                                FREE quote today</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Free
-                                secure hosting & full maintenance
-                            </li>
-                            <li class="text-black fs-5"></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Monthly
-                                updates (1 hour of changes)
-                            </li>
-                            <li class="text-black fs-5"></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <ul class="list-unstyled">
-                            <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Annual UI
-                                redesign for a fresh look
-                            </li>
-                            <li class="text-black fs-5"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 text-center">
-                <div class="col-12 mt-3">
-                    <span class="text-black fs-5">No upfront fee! Just a fixed monthly price.
-                    </span> <br />
-                </div>
-                <div class="col-12 mt-3">
-                    <span class="text-black display-3">NZ$ 125</span> <br />
-                </div>
-                <div class="col-12 mt-3">
-                    <span class="text-black fs-1">Claim This Offer</span> <br />
-                </div>
-                <div class="col-12 d-flex justify-content-center mt-3">
-                    <div class="btn-group">
-                        <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
-                            FREE quote today</a>
-                    </div>
+                    <button class="carousel-control-prev bg-transparent text-dark border-0">
+                        <span class="carousel-control-prev-icon nav-btn" aria-hidden="true" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next bg-transparent text-dark border-0">
+                        <span class="carousel-control-next-icon nav-btn" aria-hidden="true" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -682,7 +768,7 @@ portfolio Area
                     <div class="portfolio-area">
                         <div class="row gy-4 filter-active">
                             <div class="col-md-4 col-xl-auto filter-item cat1">
-                                <div class="project-item">
+                                <div class="project-item" onclick="window.location.href='work-ceylonmoss.php'">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_2.jpg" alt="project image">
                                     </div>
@@ -698,7 +784,7 @@ portfolio Area
                             </div>
 
                             <div class="col-md-6 col-xl-auto filter-item cat2 d-none d-lg-block">
-                                <div class="project-item">
+                                <div class="project-item" onclick="window.location.href='work-boozebites.php'">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_5.jpg" alt="project image">
                                     </div>
@@ -725,7 +811,7 @@ portfolio Area
                     <div class="portfolio-area">
                         <div class="row gy-4 filter-active">
                             <div class="col-md-4 col-xl-auto filter-item cat1">
-                                <div class="project-item">
+                                <div class="project-item" onclick="window.location.href='work-cococoirworld.php'">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/ccw.svg" alt="project image">
                                     </div>
@@ -741,8 +827,13 @@ portfolio Area
                                     </div>
                                 </div>
                             </div>
+                            <script>
+                                function ad(){
+                                    alert('as');
+                                }
+                            </script>
                             <div class="col-md-4 col-xl-auto filter-item cat1">
-                                <div class="project-item">
+                                <div class="project-item" onclick="window.location.href='work-boozebites.php'">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_3.jpg" alt="project image">
                                     </div>
@@ -757,7 +848,7 @@ portfolio Area
                                 </div>
                             </div>
                             <div class="col-md-4 col-xl-auto filter-item cat1">
-                                <div class="project-item">
+                                <div class="project-item" onclick="window.location.href='work-ceynap.php'">
                                     <div class="box-img global-img">
                                         <img src="assets/img/project/project_1_4.jpg" alt="project image">
                                     </div>
@@ -783,7 +874,7 @@ portfolio Area
     </div>
 
 
-   <!--==============================
+    <!--==============================
 
 Testimonial Area  
 ==============================-->
@@ -1142,7 +1233,7 @@ Price Area
         if ($result->num_rows > 0) {
             $sol_name = $result->fetch_assoc();
 
-            ?>
+        ?>
 
             <div class="container px-md-5">
                 <div class="title-area text-center">
@@ -1162,17 +1253,17 @@ Price Area
 
                         for ($x = 1; $x <= $result->num_rows; $x++) {
                             $data = $result->fetch_assoc();
-                            ?>
+                        ?>
 
                             <div class="col-xl-4 col-md-8">
                                 <div class="price-box th-ani <?php if ($x == 2) {
-                                    echo "active orange-border";
-                                } else {
-                                    echo "side-border";
-                                } ?>">
+                                                                    echo "active orange-border";
+                                                                } else {
+                                                                    echo "side-border";
+                                                                } ?>">
                                     <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                        echo "popular";
-                                    } ?></span>
+                                                                            echo "popular";
+                                                                        } ?></span>
                                     <div class="text-center">
                                         <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
@@ -1217,13 +1308,13 @@ Price Area
                                                     $n = $n + 1;
                                                     $fet = $results->fetch_assoc();
                                                     if ($fet['status'] == 1) {
-                                                        ?>
+                                                ?>
                                                         <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                    <?php
                                                     } else {
-                                                        ?>
+                                                    ?>
                                                         <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                <?php
                                                     }
                                                 }
                                                 ?>
@@ -1233,13 +1324,13 @@ Price Area
                                                     for ($y = 1; $y <= $part2; $y++) {
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                            ?>
+                                                    ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                        <?php
                                                         } else {
-                                                            ?>
+                                                        ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                    <?php
                                                         }
                                                     }
                                                     ?>
@@ -1257,7 +1348,7 @@ Price Area
                                 </div>
                             </div>
 
-                            <?php
+                        <?php
                         }
                         ?>
 
@@ -1265,7 +1356,7 @@ Price Area
                 </div>
 
             </div>
-            <?php
+        <?php
         }
         ?>
     </section>
@@ -1296,7 +1387,7 @@ Price Area
                         for ($x = 1; $x <= $db->num_rows; $x++) {
                             $res = $db->fetch_assoc();
                             $formattedDate = date('F j, Y', strtotime($res['blog_date']));
-                            ?>
+                        ?>
                             <div class="swiper-slide">
                                 <div class="blog-card style2">
                                     <div class="box-img global-img">
@@ -1316,7 +1407,7 @@ Price Area
                                     </div>
                                 </div>
                             </div>
-                            <?php
+                        <?php
                         }
                         ?>
 
@@ -1332,7 +1423,7 @@ Price Area
                                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                                 // Define what happens on successful response
-                                xhr.onload = function () {
+                                xhr.onload = function() {
                                     if (xhr.status === 200) {
                                         if (xhr.responseText == 'success') {
                                             location.href = "blog.php";
@@ -1446,7 +1537,7 @@ Cta Area
     </div>
 
     <script>
-        window.onload = function () {
+        window.onload = function() {
             var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
             myModal.show();
         };
@@ -1459,19 +1550,55 @@ Cta Area
             delay: 200,
 
         });
-        ScrollReveal().reveal('.contact ,  .tag', { delay: 100, origin: "left" });
-        ScrollReveal().reveal('.i1', { delay: 50, origin: "left" });
-        ScrollReveal().reveal('.i2', { delay: 50, origin: "right" });
-        ScrollReveal().reveal('.ani-b', { delay: 50, origin: "bottom" });
-        ScrollReveal().reveal('.i4', { delay: 50, origin: "left" });
-        ScrollReveal().reveal('.i5', { delay: 50, origin: "top" });
-        ScrollReveal().reveal('.i6', { delay: 50, origin: "left" });
-        ScrollReveal().reveal('.i7', { delay: 50, origin: "right" });
-        ScrollReveal().reveal('.ani-c', { delay: 50, origin: "top" });
-        ScrollReveal().reveal('.i9', { delay: 50, origin: "left" });
+        ScrollReveal().reveal('.contact ,  .tag', {
+            delay: 100,
+            origin: "left"
+        });
+        ScrollReveal().reveal('.i1', {
+            delay: 50,
+            origin: "left"
+        });
+        ScrollReveal().reveal('.i2', {
+            delay: 50,
+            origin: "right"
+        });
+        ScrollReveal().reveal('.ani-b', {
+            delay: 50,
+            origin: "bottom"
+        });
+        ScrollReveal().reveal('.i4', {
+            delay: 50,
+            origin: "left"
+        });
+        ScrollReveal().reveal('.i5', {
+            delay: 50,
+            origin: "top"
+        });
+        ScrollReveal().reveal('.i6', {
+            delay: 50,
+            origin: "left"
+        });
+        ScrollReveal().reveal('.i7', {
+            delay: 50,
+            origin: "right"
+        });
+        ScrollReveal().reveal('.ani-c', {
+            delay: 50,
+            origin: "top"
+        });
+        ScrollReveal().reveal('.i9', {
+            delay: 50,
+            origin: "left"
+        });
 
-        ScrollReveal().reveal('.tag-2', { delay: 200, origin: "right" });
-        ScrollReveal().reveal('.tag-3', { delay: 300, origin: "right" });
+        ScrollReveal().reveal('.tag-2', {
+            delay: 200,
+            origin: "right"
+        });
+        ScrollReveal().reveal('.tag-3', {
+            delay: 300,
+            origin: "right"
+        });
     </script>
     <!--============================== All Js File ============================== -->
     <script src="assets/js/pricing.js"></script>

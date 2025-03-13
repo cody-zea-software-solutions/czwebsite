@@ -43,6 +43,7 @@ $dd = $d_r->fetch_assoc();
     <!--==============================
         All CSS File
     ============================== -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -331,6 +332,31 @@ $dd = $d_r->fetch_assoc();
                         integration, WhatsApp inquiries, and Google My Business setup. This ensures your business is
                         easily discoverable, attracts more customers, and drives more bookings and sales.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row px-3 px-md-2 px-lg-5">
+            <div class="col-12 bg-black px-3 py-5 p-md-5 meeting" >
+                <div class="row">
+                    <div class="col-12 col-md-2 d-flex justify-content-center align-items-center ">
+                        <img src="assets/bulb-2.svg" class="img-fluid bulb-img" >
+                    </div>
+                    <div class="col-12 col-md-10 text-center mt-3">
+                        <h3 class="text-white">Have an issue? <span class="text-orange">Schedule a meeting</span> with us to get it resolved!</h3>
+
+                        <!-- Custom Button to Trigger Calendly Popup -->
+                        <div class="row mt-4">
+                            <div class="btn-group col-12 d-flex justify-content-center">
+                                <a href="#"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;"
+                                    class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 w-auto px-5 py-4">
+                                    Schedule a meeting <i class="fa-regular fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -827,6 +853,7 @@ $dd = $d_r->fetch_assoc();
     <!--==============================
     All Js File
 ============================== -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <!-- Jquery -->
     <script src="assets/js/pricing.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>

@@ -10,9 +10,9 @@ $dd = $d_r->fetch_assoc();
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Growth Business Solutions for Shop Owners</title>
     <meta name="author" content="Cody Zea Software Solutions">
-<meta name="description" content="Growth Business Solution for Shop Owners – Boost your online and offline store with expert e-commerce, branding, digital marketing, and custom software solutions.">
-<meta name="keywords" content="Cody Zea, Business Growth Solutions, Shop Owners, E-Commerce Solutions, Retail Software, Digital Marketing, Branding, Custom Software">
-<meta name="robots" content="INDEX,FOLLOW">
+    <meta name="description" content="Growth Business Solution for Shop Owners – Boost your online and offline store with expert e-commerce, branding, digital marketing, and custom software solutions.">
+    <meta name="keywords" content="Cody Zea, Business Growth Solutions, Shop Owners, E-Commerce Solutions, Retail Software, Digital Marketing, Branding, Custom Software">
+    <meta name="robots" content="INDEX,FOLLOW">
 
 
     <!-- Mobile Specific Metas -->
@@ -43,12 +43,13 @@ $dd = $d_r->fetch_assoc();
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
         All CSS File
     ============================== -->
     <!-- Bootstrap -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -195,9 +196,9 @@ $dd = $d_r->fetch_assoc();
                                         $fd = Databases::Search("SELECT * FROM `pack_features` WHERE `pack_pack_id` = '" . $dd["pack_id"] . "' AND `status` = 1");
                                         for ($x = 0; $x < 2; $x++) {
                                             $ff = $fd->fetch_assoc();
-                                            ?>
+                                        ?>
                                             <li class="text-black"><?php echo $ff["f_name"]; ?></li>
-                                            <?php
+                                        <?php
                                         }
                                         $rest = $fd->num_rows - 2;
                                         ?>
@@ -205,9 +206,9 @@ $dd = $d_r->fetch_assoc();
                                             <?php
                                             for ($x = 0; $x < $rest; $x++) {
                                                 $ff = $fd->fetch_assoc();
-                                                ?>
+                                            ?>
                                                 <li class="text-black"><?php echo $ff["f_name"]; ?></li>
-                                                <?php
+                                            <?php
                                             }
                                             ?>
                                         </div>
@@ -292,9 +293,9 @@ $dd = $d_r->fetch_assoc();
                                         $fd = Databases::Search("SELECT * FROM `pack_features` WHERE `pack_pack_id` = '" . $dd["pack_id"] . "' AND `status` = 1");
                                         for ($x = 0; $x < 2; $x++) {
                                             $ff = $fd->fetch_assoc();
-                                            ?>
+                                        ?>
                                             <li class="text-black"><?php echo $ff["f_name"]; ?></li>
-                                            <?php
+                                        <?php
                                         }
                                         $rest = $fd->num_rows - 2;
                                         ?>
@@ -302,9 +303,9 @@ $dd = $d_r->fetch_assoc();
                                             <?php
                                             for ($x = 0; $x < $rest; $x++) {
                                                 $ff = $fd->fetch_assoc();
-                                                ?>
+                                            ?>
                                                 <li class="text-black"><?php echo $ff["f_name"]; ?></li>
-                                                <?php
+                                            <?php
                                             }
                                             ?>
                                         </div>
@@ -347,6 +348,31 @@ $dd = $d_r->fetch_assoc();
                         campaigns. Email and SMS marketing keep customers coming back, while reputation management
                         builds trust and credibility. More visibility means more sales!
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row px-3 px-md-2 px-lg-5">
+            <div class="col-12 bg-black px-3 py-5 p-md-5 meeting">
+                <div class="row">
+                    <div class="col-12 col-md-2 d-flex justify-content-center align-items-center ">
+                        <img src="assets/bulb-2.svg" class="img-fluid bulb-img">
+                    </div>
+                    <div class="col-12 col-md-10 text-center mt-3">
+                        <h3 class="text-white">Have an issue? <span class="text-orange">Schedule a meeting</span> with us to get it resolved!</h3>
+
+                        <!-- Custom Button to Trigger Calendly Popup -->
+                        <div class="row mt-4">
+                            <div class="btn-group col-12 d-flex justify-content-center">
+                                <a href="#"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;"
+                                    class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 w-auto px-5 py-4">
+                                    Schedule a meeting <i class="fa-regular fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -842,7 +868,8 @@ $dd = $d_r->fetch_assoc();
     <!--==============================
     All Js File
 ============================== -->
-<script src="assets/js/pricing.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="assets/js/pricing.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
