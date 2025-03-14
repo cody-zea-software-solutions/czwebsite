@@ -328,7 +328,7 @@ About Area
             <div class="col-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-inner">
-                        <div class="carousel-item active bg-color">
+                        <div class="carousel-item active bg-color rounded-20">
                             <div class="row bg-color rounded-20 shadow-sm p-5">
 
                                 <div class="col-12 col-lg-8 border-end border-1 border-dark">
@@ -395,7 +395,7 @@ About Area
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item bg-color">
+                        <div class="carousel-item bg-color rounded-20">
                             <div class="row bg-color rounded-20 shadow-sm p-5">
 
                                 <div class="col-12 col-lg-8 border-end border-1 border-dark">
@@ -827,11 +827,6 @@ portfolio Area
                                     </div>
                                 </div>
                             </div>
-                            <script>
-                                function ad(){
-                                    alert('as');
-                                }
-                            </script>
                             <div class="col-md-4 col-xl-auto filter-item cat1">
                                 <div class="project-item" onclick="window.location.href='work-boozebites.php'">
                                     <div class="box-img global-img">
@@ -862,7 +857,6 @@ portfolio Area
                                     </div>
                                 </div>
                             </div>
-
 
                         </div>
 
