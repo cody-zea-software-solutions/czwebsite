@@ -328,8 +328,8 @@ About Area
             <div class="col-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-inner">
-                        <div class="carousel-item active bg-color rounded-20">
-                            <div class="row bg-color rounded-20 shadow-sm p-5">
+                        <div class="carousel-item active rounded-20">
+                            <div class="row rounded-20 shadow-sm p-5">
 
                                 <div class="col-12 col-lg-8 border-end border-1 border-dark">
                                     <span class="text-black fs-1">Effortless Web Presence – Simple Monthly Plan
@@ -395,47 +395,42 @@ About Area
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item bg-color rounded-20">
-                            <div class="row bg-color rounded-20 shadow-sm p-5">
+                        <div class="carousel-item rounded-20">
+                            <div class="row rounded-20 shadow-sm p-5">
 
                                 <div class="col-12 col-lg-8 border-end border-1 border-dark">
-                                    <span class="text-black fs-1">Effortless Web Presence – Simple Monthly Plan
+                                    <span class="text-black fs-1">E-Commerce Growth / Launch Package – Simple Monthly Plan
                                     </span>
 
                                     <p class="text-dark fs-5 mt-3">
-                                        Get a custom website with free secure hosting, full maintenance, monthly updates, and a fresh UI
-                                        redesign every year—all for a simple monthly fee!
+                                    Take your business online with our comprehensive monthly plan, designed to give you everything you need for a successful digital presence:
                                     </p>
                                     <span class="text-black fs-2">What's Included</span>
                                     <div class="row mt-3">
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Custom
-                                                    website design & content
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Custom Website – Designed to fit your business needs
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Free
-                                                    secure hosting & full maintenance
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Speed Hosting – Fast & reliable performance
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Monthly
-                                                    updates (1 hour of changes)
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Full Maintenance – We keep your website running smoothly
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Annual UI
-                                                    redesign for a fresh look
+                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Technical Support – 24/7 assistance for any issues
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
@@ -448,7 +443,7 @@ About Area
                                         </span> <br />
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <span class="text-black display-3">NZ$ 125</span> <br />
+                                        <span class="text-black display-3">NZ$ 355</span> <br />
                                     </div>
                                     <div class="col-12 mt-3">
                                         <span class="text-black fs-1">Claim This Offer</span> <br />

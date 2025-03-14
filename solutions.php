@@ -156,6 +156,22 @@
                 </div>
 
             </div>
+            <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='chat-bot.php'"
+                style="cursor: pointer;">
+                <div class="col-12 rounded-20"
+                    style="background-image: url(assets/hmsolbg2.jpg); background-size: cover; background-position: center; min-height: 40vh;">
+                </div>
+                <div class="col-12 p-4">
+                    <span class="text-black fs-4 text-orange-hover">
+                        <i class="fa-regular fa-rocket text-orange"></i> Boost Your Website with Free AI Chatbot for 3 Months!</span>
+                    <hr class="text-black">
+
+                    <p class="text-black fs-5">
+                    Get a smart AI chatbot added to your website with any of our packages, completely free for the first 3 months! Enhance customer interaction and improve user experience today.
+                    </p>
+                </div>
+
+            </div>
             <div class="col-10 col-lg-4 rounded-20 shadow-lg mx-3 mt-3" onclick="window.location.href='solution-03.php'"
                 style="cursor: pointer;">
                 <div class="col-12 rounded-20"
