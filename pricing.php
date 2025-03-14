@@ -115,7 +115,7 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                 </div>
 
                 <div class="btn-group about-btn justify-content-center justify-content-md-start">
-                    <a href="about.html" class="th-btn th-icon th-radius">Learn More About Us<i
+                    <a href="works.php" class="th-btn blue-btn style3 bg-orange th-icon th-radius fs-5 col-12 w-auto">See Our Works<i
                             class="fa-regular fa-arrow-right ms-2"></i></a>
 
                 </div>
@@ -144,13 +144,13 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
                 <div class="row d-flex gap-4 align-items-center justify-content-center px-0 px-md-5">
                     <?php
                     while ($sd = $s_d->fetch_assoc()) {
-                        ?>
+                    ?>
                         <button class="gradient-border-button w-auto px-3 px-md-5 py-2 py-md-3"
                             id="triggerBtn_<?php echo $sd['sol_id']; ?>"
                             onclick="triggerBtn('<?php echo $sd['sol_id']; ?>');">
                             <span><?php echo $sd['sol_name']; ?></span>
                         </button>
-                        <?php
+                    <?php
                     }
                     ?>
                 </div>
@@ -166,6 +166,30 @@ $s_d = Databases::Search("SELECT * FROM `solution`");
             <section class="overflow-hidden space bg-color mt-4" style="padding-top: 60px !important;" id="resultsView">
 
             </section>
+
+            <section class="overflow-hidden space mt-5" style="padding-top: 60px !important;">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-10  rounded-20 cant-find">
+                        <div class="row">
+                            <div class="col-lg-4 p-5 order-2 order-lg-1">
+                                <img src="assets/3d-man-thinking.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-8 pt-5  p-3 p-lg-5 d-flex align-items-center order-1 order-lg-2">
+                                <div class="bg-white py-5 px-3 px-lg-5 rounded-20 text-center shadow">
+                                    <h2 class="text-o">Can't find the perfect package above?</h2>
+                                    <h5 class="fw-light text-o">Feel free to reach out to us! We’ll be happy to create a <span class="text-orange">custom package</span> tailored just for you.</h5>
+                                    <div class="d-flex justify-content-center mt-5 ">
+                                        <a href="contact.php" class="th-btn blue-btn style1 bg-black th-icon th-radius fs-5 col-12 w-auto position-absolute shadow" style="margin-top: 15px !important;">Get
+                                            Your Quote
+                                            <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
 

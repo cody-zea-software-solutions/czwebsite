@@ -381,6 +381,10 @@ a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.cant-find{
+  background-color: #FF5C35;
+}
+
 .pricing-box-2 {
   animation: float 3s ease-in-out infinite !important;
 }
