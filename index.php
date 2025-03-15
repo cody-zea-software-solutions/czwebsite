@@ -279,37 +279,35 @@ About Area
                         crucial
                     </p>
                     <div class="choose-feature-wrap">
-                        <div class="choose-feature">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
-                                <p class="box-text">Our SEO strategies will attract more qualified visitors to your
-                                    website, bringing you closer.</p>
-                            </div>
-                        </div>
-                        <div class="choose-feature">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="box-title">Affordable Pricing Solutions</h3>
-                                <p class="box-text">Increased website traffic and the improved rankings naturally lead
-                                    to greater brand awareness.</p>
-                            </div>
-                        </div>
-                        <div class="choose-feature">
-                            <div class="box-icon">
-                                <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="box-title">Virtual & Physical Meetings</h3>
-                                <p class="box-text">By attracting qualified the traffic and optimizing your website for
-                                    conversions, we'll help you.</p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="choose-feature">
+        <div class="box-icon">
+            <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
+        </div>
+        <div class="media-body">
+            <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
+            <p class="box-text">We are legally registered in both countries, ensuring credibility and seamless operations.</p>
+        </div>
+    </div>
+    <div class="choose-feature">
+        <div class="box-icon">
+            <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
+        </div>
+        <div class="media-body">
+            <h3 class="box-title">Affordable Pricing Solutions</h3>
+            <p class="box-text">We provide budget-friendly web solutions without compromising quality or performance.</p>
+        </div>
+    </div>
+    <div class="choose-feature">
+        <div class="box-icon">
+            <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
+        </div>
+        <div class="media-body">
+            <h3 class="box-title">Virtual & Physical Meetings</h3>
+            <p class="box-text">Meet us online or in person to discuss your project at your convenience.</p>
+        </div>
+    </div>
+</div>
+
                 </div>
                 <div class="col-xl-6">
                     <div class="choose-image">
@@ -403,7 +401,7 @@ About Area
                                     </span>
 
                                     <p class="text-dark fs-5 mt-3">
-                                    Take your business online with our comprehensive monthly plan, designed to give you everything you need for a successful digital presence:
+                                        Take your business online with our comprehensive monthly plan, designed to give you everything you need for a successful digital presence:
                                     </p>
                                     <span class="text-black fs-2">What's Included</span>
                                     <div class="row mt-3">
@@ -1491,18 +1489,14 @@ Cta Area
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="title-area mb-25 mt-n2 text-center">
-                            <span class="sub-title2">Join Our Community</span>
-                            <h2 class="sec-title cta-title">Subscribe to our newsletter</h2>
-                            <p class="cta-text text-black">But I must explain to you how all this mistaken idea of
-                                denouncing
-                                pleasure and praising pain was born.</p>
+                            <span class="sub-title2">Stay in Touch</span>
+                            <h2 class="sec-title cta-title text-orange">Connect with Us</h2>
+                            <p class="cta-text text-black">Have questions or need assistance? Reach out to us, and let's discuss how we can help.</p>
                         </div>
-                        <form class="newsletter-form style4">
-                            <input class="form-control" type="email" placeholder="Enter Your Email Address....."
-                                required="">
-                            <button type="submit" class="th-btn style4 th-icon">Get Started<i
+                        <div class="">
+                            <button type="button" onclick="window.location.href='contact.php'" class="th-btn bg-orange text-white th-icon w-auto rounded-pill fs-5 shadow">Contact Us<i
                                     class="fa-regular fa-arrow-right ms-2"></i></button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
