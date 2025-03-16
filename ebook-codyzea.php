@@ -78,7 +78,7 @@
             width: 2rem;
             height: 2rem;
             border: 0.3em solid transparent;
-            border-top-color:rgb(77, 77, 77);
+            border-top-color: rgb(77, 77, 77);
             /* Spinner color */
             border-radius: 50%;
             animation: spin 1s linear infinite;
@@ -129,7 +129,7 @@
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
-                <img src="assets/ebook-water.png" class="img-fluid w-25" alt="">
+                    <img src="assets/ebook-water.png" class="img-fluid w-25" alt="">
 
                     <span class="display-5 text-orange">Ready to Supercharge Your Website?
 
@@ -156,46 +156,50 @@
                         <span class="display-6 text-black">Get the Power of a Fast Website
                         </span>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mt-3">
-                            <label for="fullName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstname" placeholder="Enter your First name"
-                                required>
-                        </div>
-                        <div class="col-12 col-lg-6 mt-3">
-                            <label for="fullName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastname" placeholder="Enter your Last name"
-                                required>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <label for="workEmail" class="form-label">Work Email</label>
-                            <input type="email" class="form-control" id="workEmail" placeholder="Enter your work email"
-                                required>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <label for="companyName" class="form-label">Company Name</label>
-                            <input type="text" class="form-control" id="companyName"
-                                placeholder="Enter your company name" required>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <label for="mobileNumber" class="form-label">Mobile Number</label>
-                            <input type="tel" class="form-control" id="mobileNumber"
-                                placeholder="Enter your mobile number" required>
-                        </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mt-3">
+                                <label for="fullName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstname"
+                                    placeholder="Enter your First name" required>
+                            </div>
+                            <div class="col-12 col-lg-6 mt-3">
+                                <label for="fullName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Enter your Last name"
+                                    required>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <label for="workEmail" class="form-label">Work Email</label>
+                                <input type="email" class="form-control" id="workEmail"
+                                    placeholder="Enter your work email" required>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <label for="companyName" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="companyName"
+                                    placeholder="Enter your company name" required>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                <input type="tel" class="form-control" id="mobileNumber"
+                                    placeholder="Enter your mobile number" required>
+                            </div>
 
-                    </div>
-
-                    <div class="col-10 mt-3 d-flex justify-content-center">
-                        <!-- Submit Button -->
-                        <div class="btn-group col-12">
-                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
-                                onclick="sendEBook('ebook_name');">Get Your Free
-                                E-Book Now!
-
-
-                                <i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
-                    </div>
+                        <div class="col-10 mt-3 d-flex justify-content-center">
+                            <!-- Submit Button -->
+                            <div class="btn-group col-12">
+                                <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" type="submit" id="thh-btn"
+                                    onclick="sendEBook('ebook_name');">Get Your Free
+                                    E-Book Now!
+
+
+                                    <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </form>
+
+
+
                 </div>
             </div>
 

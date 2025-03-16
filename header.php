@@ -195,7 +195,7 @@ if (isset($_COOKIE['cz_user_id'])) {
                                     <a href="solutions.php" class="text-black fw-semibold fs-6 hover-nav">Solutions</a>
                                     <ul class="mega-menu" style="width: 1200px;">
                                         <!-- <li><a href="service.html" class="text-b fw-semibold">Service</a></li> -->
-                                        <div class="row">
+                                        <div class="row d-flex justify-content-center">
                                             <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
                                                 onclick="window.location.href='solution-01.php'"
                                                 style="cursor: pointer;">
@@ -245,11 +245,28 @@ if (isset($_COOKIE['cz_user_id'])) {
                                                 </div>
 
                                             </div>
+                                            <div class="col-10 col-lg-3 rounded-20 shadow-lg mx-3 mt-3"
+                                                onclick="window.location.href='chat-bot.php'" style="cursor: pointer;">
+                                                <div class="col-12 rounded-20"
+                                                    style="background-image: url(assets/hmsolbg2.jpg); background-size: cover; background-position: center; min-height: 40vh;">
+                                                </div>
+                                                <div class="col-12 p-4">
+                                                    <span class="text-black fs-4 text-orange-hover">
+                                                        <i class="fa-regular fa-rocket text-orange"></i> Boost User
+                                                        Engagement by a
+                                                        FREE LIVE CHATBOT</span>
+
+
+                                                </div>
+
+                                            </div>
 
 
                                         </div>
                                     </ul>
                                 </li>
+                                <li><a href="works.php" class="text-black fw-semibold fs-6 hover-nav">Works</a></li>
+
                                 <li class="menu-item-has-children">
                                     <a href="blog.php" class="text-black fw-semibold fs-6 hover-nav">Blogs</a>
                                     <ul class="mega-menu" style="width: 1500px;">
@@ -354,3 +371,12 @@ if (isset($_COOKIE['cz_user_id'])) {
     })();
 </script>
 <!--End of Tawk.to Script-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2R14CV971L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2R14CV971L');
+</script>

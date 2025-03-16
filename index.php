@@ -67,7 +67,7 @@ require_once "assets/process/database.php";
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style2.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+ 
 
     <style>
         .orange-border {
@@ -84,23 +84,7 @@ require_once "assets/process/database.php";
 
 
 
-    <div class="wrapper" style="z-index: 1000;">
-        <div class="title-box">
-            <i class="bx bx-cookie"></i>
-            <h3>Cookies Consent</h3>
-        </div>
-        <div class="info">
-            <p>
-                This website use cookies to help you have a superior and more relevant
-                browsing experience on the website. <a href="#"> Read more...</a>
-            </p>
-        </div>
-        <div class="buttons">
-            <button class="button bg-orange" id="acceptBtn">Accept</button>
-            <button class="button">Decline</button>
-        </div>
-    </div>
-
+   
     <a class="float-button" target="_blank"
         href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
         <i class="fa-solid fa-phone-volume cta-btn"></i>
@@ -293,34 +277,37 @@ About Area
                         crucial
                     </p>
                     <div class="choose-feature-wrap">
-    <div class="choose-feature">
-        <div class="box-icon">
-            <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
-        </div>
-        <div class="media-body">
-            <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
-            <p class="box-text">We are legally registered in both countries, ensuring credibility and seamless operations.</p>
-        </div>
-    </div>
-    <div class="choose-feature">
-        <div class="box-icon">
-            <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
-        </div>
-        <div class="media-body">
-            <h3 class="box-title">Affordable Pricing Solutions</h3>
-            <p class="box-text">We provide budget-friendly web solutions without compromising quality or performance.</p>
-        </div>
-    </div>
-    <div class="choose-feature">
-        <div class="box-icon">
-            <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
-        </div>
-        <div class="media-body">
-            <h3 class="box-title">Virtual & Physical Meetings</h3>
-            <p class="box-text">Meet us online or in person to discuss your project at your convenience.</p>
-        </div>
-    </div>
-</div>
+                        <div class="choose-feature">
+                            <div class="box-icon">
+                                <img src="assets/img/icon/choose_feature_1_1.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title">Registered in New Zealand & Sri Lanka</h3>
+                                <p class="box-text">We are legally registered in both countries, ensuring credibility
+                                    and seamless operations.</p>
+                            </div>
+                        </div>
+                        <div class="choose-feature">
+                            <div class="box-icon">
+                                <img src="assets/img/icon/choose_feature_1_2.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title">Affordable Pricing Solutions</h3>
+                                <p class="box-text">We provide budget-friendly web solutions without compromising
+                                    quality or performance.</p>
+                            </div>
+                        </div>
+                        <div class="choose-feature">
+                            <div class="box-icon">
+                                <img src="assets/img/icon/choose_feature_1_3.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h3 class="box-title">Virtual & Physical Meetings</h3>
+                                <p class="box-text">Meet us online or in person to discuss your project at your
+                                    convenience.</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="col-xl-6">
@@ -348,14 +335,16 @@ About Area
                                     </span>
 
                                     <p class="text-dark fs-5 mt-3">
-                                        Get a custom website with free secure hosting, full maintenance, monthly updates, and a fresh UI
+                                        Get a custom website with free secure hosting, full maintenance, monthly
+                                        updates, and a fresh UI
                                         redesign every year—all for a simple monthly fee!
                                     </p>
                                     <span class="text-black fs-2">What's Included</span>
                                     <div class="row mt-3">
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Custom
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i> Custom
                                                     website design & content
                                                 </li>
                                                 <li class="text-black fs-5"></li>
@@ -363,7 +352,8 @@ About Area
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Free
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i> Free
                                                     secure hosting & full maintenance
                                                 </li>
                                                 <li class="text-black fs-5"></li>
@@ -371,7 +361,8 @@ About Area
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Monthly
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i> Monthly
                                                     updates (1 hour of changes)
                                                 </li>
                                                 <li class="text-black fs-5"></li>
@@ -379,7 +370,8 @@ About Area
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i> Annual UI
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i> Annual UI
                                                     redesign for a fresh look
                                                 </li>
                                                 <li class="text-black fs-5"></li>
@@ -400,7 +392,8 @@ About Area
                                     </div>
                                     <div class="col-12 d-flex justify-content-center mt-3">
                                         <div class="btn-group">
-                                            <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
+                                            <a href="contact.php#form"
+                                                class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
                                                 FREE quote today</a>
                                         </div>
                                     </div>
@@ -411,38 +404,48 @@ About Area
                             <div class="row rounded-20 shadow-sm p-5">
 
                                 <div class="col-12 col-lg-8 border-end border-1 border-dark">
-                                    <span class="text-black fs-1">E-Commerce Growth / Launch Package – Simple Monthly Plan
+                                    <span class="text-black fs-1">E-Commerce Growth / Launch Package – Simple Monthly
+                                        Plan
                                     </span>
 
                                     <p class="text-dark fs-5 mt-3">
-                                        Take your business online with our comprehensive monthly plan, designed to give you everything you need for a successful digital presence:
+                                        Take your business online with our comprehensive monthly plan, designed to give
+                                        you everything you need for a successful digital presence:
                                     </p>
                                     <span class="text-black fs-2">What's Included</span>
                                     <div class="row mt-3">
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Custom Website – Designed to fit your business needs
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i>Custom Website
+                                                    – Designed to fit your business needs
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Speed Hosting – Fast & reliable performance
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i>Speed Hosting
+                                                    – Fast & reliable performance
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Full Maintenance – We keep your website running smoothly
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i>Full
+                                                    Maintenance – We keep your website running smoothly
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li class="text-black fs-5"><i class="fa-solid fa-circle-check text-success"></i>Technical Support – 24/7 assistance for any issues
+                                                <li class="text-black fs-5"><i
+                                                        class="fa-solid fa-circle-check text-success"></i>Technical
+                                                    Support – 24/7 assistance for any issues
                                                 </li>
                                                 <li class="text-black fs-5"></li>
                                             </ul>
@@ -462,7 +465,8 @@ About Area
                                     </div>
                                     <div class="col-12 d-flex justify-content-center mt-3">
                                         <div class="btn-group">
-                                            <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
+                                            <a href="contact.php#form"
+                                                class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a
                                                 FREE quote today</a>
                                         </div>
                                     </div>
@@ -470,13 +474,15 @@ About Area
                             </div>
                         </div>
                     </div>
+                    
                     <button class="carousel-control-prev bg-transparent text-dark border-0">
-                        <span class="carousel-control-prev-icon nav-btn" aria-hidden="true" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <i class="fa-solid fa-arrow-left bg-dark rounded-circle p-2 text-white"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"></i>
+
                     </button>
                     <button class="carousel-control-next bg-transparent text-dark border-0">
-                        <span class="carousel-control-next-icon nav-btn" aria-hidden="true" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"></span>
-                        <span class="visually-hidden">Next</span>
+                        <i class="fa-solid fa-arrow-right bg-dark shadow rounded-circle p-2 text-white"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next"></i>
                     </button>
                 </div>
             </div>
@@ -1044,28 +1050,30 @@ Testimonial Area
     </section><!--==============================
 Cta Area  
 ==============================-->
-    <section class="cta-sec2 overflow-hidden space-bottom mt-4" data-pos-for=".testi-sec" data-sec-pos="top-half">
-        <div class="container">
-            <div class="cta-area4">
-                <div class="title-area mb-0">
-                    <h3 class="sec-title text-ani-style3 text-white mb-0">Elevate a Business to New Heights!</h3>
+    <div class="row px-3 px-md-2 px-lg-5 my-5">
+        <div class="col-12 bg-black px-3 py-5 p-md-5 meeting rounded-20">
+            <div class="row">
+                <div class="col-12 col-md-2 d-flex justify-content-center align-items-center ">
+                    <img src="assets/bulb-2.svg" class="img-fluid bulb-img">
                 </div>
-                <div class="cta-play-btn">
-                    <div class="discount-wrapp">
-                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video">
-                            <i class="fa-solid fa-play"></i></a>
-                        <div class="discount-tag">
-                            <span class="discount-anime">play video play video play video play video</span>
+                <div class="col-12 col-md-10 text-center mt-3">
+                    <h3 class="text-white">Have an issue? <span class="text-orange">Schedule a meeting</span> with us to
+                        get it resolved!</h3>
+
+                    <!-- Custom Button to Trigger Calendly Popup -->
+                    <div class="row mt-4">
+                        <div class="btn-group col-12 d-flex justify-content-center">
+                            <a href="#"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;"
+                                class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 w-auto px-5 py-4">
+                                Schedule a meeting <i class="fa-regular fa-arrow-right ms-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="cta-image">
-                    <img src="assets/img/normal/cta-img.png" class="img-fluid" style="width: 300px; height:250px">
-                </div>
-                <div class="cta-shate"><img src="assets/img/shape/cta-shape.png" alt=""></div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="container ani-c">
         <div class="row">
@@ -1234,7 +1242,7 @@ Price Area
         if ($result->num_rows > 0) {
             $sol_name = $result->fetch_assoc();
 
-        ?>
+            ?>
 
             <div class="container px-md-5">
                 <div class="title-area text-center">
@@ -1254,17 +1262,17 @@ Price Area
 
                         for ($x = 1; $x <= $result->num_rows; $x++) {
                             $data = $result->fetch_assoc();
-                        ?>
+                            ?>
 
                             <div class="col-xl-4 col-md-8">
                                 <div class="price-box th-ani <?php if ($x == 2) {
-                                                                    echo "active orange-border";
-                                                                } else {
-                                                                    echo "side-border";
-                                                                } ?>">
+                                    echo "active orange-border";
+                                } else {
+                                    echo "side-border";
+                                } ?>">
                                     <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                                                            echo "popular";
-                                                                        } ?></span>
+                                        echo "popular";
+                                    } ?></span>
                                     <div class="text-center">
                                         <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
@@ -1309,13 +1317,13 @@ Price Area
                                                     $n = $n + 1;
                                                     $fet = $results->fetch_assoc();
                                                     if ($fet['status'] == 1) {
-                                                ?>
+                                                        ?>
                                                         <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
+                                                        <?php
                                                     } else {
-                                                    ?>
+                                                        ?>
                                                         <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                <?php
+                                                        <?php
                                                     }
                                                 }
                                                 ?>
@@ -1325,13 +1333,13 @@ Price Area
                                                     for ($y = 1; $y <= $part2; $y++) {
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                    ?>
+                                                            ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                            <?php
                                                         } else {
-                                                        ?>
+                                                            ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
+                                                            <?php
                                                         }
                                                     }
                                                     ?>
@@ -1349,7 +1357,7 @@ Price Area
                                 </div>
                             </div>
 
-                        <?php
+                            <?php
                         }
                         ?>
 
@@ -1357,7 +1365,7 @@ Price Area
                 </div>
 
             </div>
-        <?php
+            <?php
         }
         ?>
     </section>
@@ -1388,7 +1396,7 @@ Price Area
                         for ($x = 1; $x <= $db->num_rows; $x++) {
                             $res = $db->fetch_assoc();
                             $formattedDate = date('F j, Y', strtotime($res['blog_date']));
-                        ?>
+                            ?>
                             <div class="swiper-slide">
                                 <div class="blog-card style2">
                                     <div class="box-img global-img">
@@ -1408,7 +1416,7 @@ Price Area
                                     </div>
                                 </div>
                             </div>
-                        <?php
+                            <?php
                         }
                         ?>
 
@@ -1424,7 +1432,7 @@ Price Area
                                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                                 // Define what happens on successful response
-                                xhr.onload = function() {
+                                xhr.onload = function () {
                                     if (xhr.status === 200) {
                                         if (xhr.responseText == 'success') {
                                             location.href = "blog.php";
@@ -1505,10 +1513,12 @@ Cta Area
                         <div class="title-area mb-25 mt-n2 text-center">
                             <span class="sub-title2">Stay in Touch</span>
                             <h2 class="sec-title cta-title text-orange">Connect with Us</h2>
-                            <p class="cta-text text-black">Have questions or need assistance? Reach out to us, and let's discuss how we can help.</p>
+                            <p class="cta-text text-black">Have questions or need assistance? Reach out to us, and let's
+                                discuss how we can help.</p>
                         </div>
                         <div class="">
-                            <button type="button" onclick="window.location.href='contact.php'" class="th-btn bg-orange text-white th-icon w-auto rounded-pill fs-5 shadow">Contact Us<i
+                            <button type="button" onclick="window.location.href='contact.php'"
+                                class="th-btn bg-orange text-white th-icon w-auto rounded-pill fs-5 shadow">Contact Us<i
                                     class="fa-regular fa-arrow-right ms-2"></i></button>
                         </div>
                     </div>
@@ -1533,70 +1543,7 @@ Cta Area
         </svg>
     </div>
 
-    <script>
-        window.onload = function() {
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-            myModal.show();
-        };
-
-
-        ScrollReveal({
-            reset: false,
-            distance: '60px',
-            duration: 1500,
-            delay: 200,
-
-        });
-        ScrollReveal().reveal('.contact ,  .tag', {
-            delay: 100,
-            origin: "left"
-        });
-        ScrollReveal().reveal('.i1', {
-            delay: 50,
-            origin: "left"
-        });
-        ScrollReveal().reveal('.i2', {
-            delay: 50,
-            origin: "right"
-        });
-        ScrollReveal().reveal('.ani-b', {
-            delay: 50,
-            origin: "bottom"
-        });
-        ScrollReveal().reveal('.i4', {
-            delay: 50,
-            origin: "left"
-        });
-        ScrollReveal().reveal('.i5', {
-            delay: 50,
-            origin: "top"
-        });
-        ScrollReveal().reveal('.i6', {
-            delay: 50,
-            origin: "left"
-        });
-        ScrollReveal().reveal('.i7', {
-            delay: 50,
-            origin: "right"
-        });
-        ScrollReveal().reveal('.ani-c', {
-            delay: 50,
-            origin: "top"
-        });
-        ScrollReveal().reveal('.i9', {
-            delay: 50,
-            origin: "left"
-        });
-
-        ScrollReveal().reveal('.tag-2', {
-            delay: 200,
-            origin: "right"
-        });
-        ScrollReveal().reveal('.tag-3', {
-            delay: 300,
-            origin: "right"
-        });
-    </script>
+   
     <!--============================== All Js File ============================== -->
     <script src="assets/js/pricing.js"></script>
     <!-- Jquery -->
