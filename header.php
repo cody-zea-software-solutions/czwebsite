@@ -53,7 +53,7 @@ if (isset($_COOKIE['cz_user_id'])) {
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-            <a href="index.php"><img src="loader.svg" alt="Cody zea"></a>
+            <a href="index.php"><img src="assets/loader.svg" alt="Cody zea"></a>
         </div>
 
         <div class="th-mobile-menu">
@@ -70,6 +70,7 @@ if (isset($_COOKIE['cz_user_id'])) {
                 </li>
                 <li><a href="pricing.php">Pricing</a></li>
                 <li><a href="cart.php">Cart</a></li>
+                <li><a href="works.php">Cart</a></li>
 
                 <li><a href="solutions.php">Solutions</a></li>
                 <li class="menu-item-has-children">

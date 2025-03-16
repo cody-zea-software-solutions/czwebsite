@@ -186,10 +186,9 @@ require_once "guest.php";
                             </a>
                         </div>
                     </div>
-
                 </div>
                 <!-- Modal 001 -->
-        
+
                 <?php
             }
             ;
