@@ -15,6 +15,12 @@
 
         gtag('config', 'G-2R14CV971L');
     </script>
+<!-- Google tag (gtag.js) event -->
+<script>
+  gtag('event', 'ads_conversion_Submit_lead_form_Form_s_1', {
+    // <event_parameters>
+  });
+</script>
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">

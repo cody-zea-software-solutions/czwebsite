@@ -70,8 +70,7 @@ if (isset($_COOKIE['cz_user_id'])) {
                 </li>
                 <li><a href="pricing.php">Pricing</a></li>
                 <li><a href="cart.php">Cart</a></li>
-                <li><a href="works.php">Cart</a></li>
-
+                <li><a href="works.php">Works</a></li>
                 <li><a href="solutions.php">Solutions</a></li>
                 <li class="menu-item-has-children">
                     <a href="offers.php">Offers</a>
