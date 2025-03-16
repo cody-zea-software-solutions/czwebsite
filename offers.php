@@ -179,7 +179,7 @@ require_once "guest.php";
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6 mt-3">
                             <a onclick="claimCoupon(<?php echo $coupon['c_id']; ?>);" style="cursor: pointer;"
                                 class="th-btn th-radius text-white fs-6 col-12 shadow bg-black">
                                 <i class="fa-light fa-ticket"></i>&nbsp;&nbsp;Apply Savings
