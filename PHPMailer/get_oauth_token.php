@@ -51,6 +51,12 @@ if (!isset($_GET['code']) && !isset($_POST['provider'])) {
     ?>
 <html>
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPFLMB3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <form method="post">
     <h1>Select Provider</h1>
     <input type="radio" name="provider" value="Google" id="providerGoogle">

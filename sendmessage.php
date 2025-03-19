@@ -46,6 +46,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Subject = 'Cody Zea';
         $mail->Body    = '<html>
                             <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPFLMB3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
                                 <h2>Message</h2>
                                 <p><strong>Full Name:</strong> ' . $fullName . '</p>
                                 <p><strong>E mail:</strong> ' . $email . '</p>
