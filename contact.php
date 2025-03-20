@@ -3,13 +3,16 @@
 
 <head>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KDPFLMB3');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDPFLMB3');</script>
+    <!-- End Google Tag Manager -->
 
 
     <!-- Google tag (gtag.js) -->
@@ -25,12 +28,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         gtag('config', 'G-2R14CV971L');
     </script>
 
-<!-- Google tag (gtag.js) event -->
-<script>
-  gtag('event', 'ads_conversion_Request_quote_Page_load_1', {
-    // <event_parameters>
-  });
-</script>
+    <!-- Google tag (gtag.js) event -->
+    <script>
+        gtag('event', 'ads_conversion_Request_quote_Page_load_1', {
+            // <event_parameters>
+        });
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -104,7 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             width: 2rem;
             height: 2rem;
             border: 0.3em solid transparent;
-            border-top-color:rgb(77, 77, 77);
+            border-top-color: rgb(77, 77, 77);
             /* Spinner color */
             border-radius: 50%;
             animation: spin 1s linear infinite;
@@ -133,10 +136,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPFLMB3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPFLMB3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 
 
@@ -169,7 +172,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="fa-solid fa-phone-volume cta-btn"></i>
         <span class="fs-4">Talk Now<span>
     </a>
- 
+
     <div class="container space-extra2">
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
@@ -180,21 +183,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         together!
                     </p>
                     <div class="row">
-                        <div class="col-10 col-lg-6 mt-3" >
-                        <!-- Calendly Stylesheet -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <div class="col-10 col-lg-6 mt-3">
+                            <!-- Calendly Stylesheet -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
-<!-- Custom Button to Trigger Calendly Popup -->
-<div class="btn-group col-12">
-    <a href="#" 
-       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;" 
-       class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black">
-       Book a Call <i class="fa-regular fa-arrow-right ms-2"></i>
-    </a>
-</div>
+                            <!-- Custom Button to Trigger Calendly Popup -->
+                            <div class="btn-group col-12">
+                                <a href="#"
+                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;"
+                                    class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black">
+                                    Book a Call <i class="fa-regular fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
 
-<!-- Calendly Widget Script -->
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                            <!-- Calendly Widget Script -->
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
                         </div>
                         <div class="col-10 col-lg-6 mt-3">
                             <div class="btn-group col-12">
@@ -277,7 +281,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         <!-- Modal -->
-        <div class="modal fade" style="z-index: 1000;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" style="z-index: 1000;" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content rounded-0 border-0">
 
@@ -321,7 +326,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label for="phone" class="form-label">Phone Number</label>
-                                            <input type="tel" class="form-control" id="phone"
+                                            <input type="tel" class="form-control text-black" id="phone"
                                                 placeholder="Your contact number" required>
                                         </div>
                                     </div>
@@ -330,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label for="businessName" class="form-label">Business Name</label>
-                                            <input type="text" class="form-control" id="businessName"
+                                            <input type="text" class="form-control text-black" id="businessName"
                                                 placeholder="Your company name" required>
                                         </div>
                                     </div>
@@ -338,7 +343,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <!-- Message -->
                                 <div class="mb-3">
                                     <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="2"
+                                    <textarea class="form-control text-black" id="message" rows="2"
                                         placeholder="Any details or special requests?" required></textarea>
                                 </div>
 
@@ -376,17 +381,17 @@ Contact Area
                     <div class="row">
                         <div class="col-12 mt-3">
                             <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fname">
+                            <input type="text" class="form-control text-black" id="fname">
                         </div>
                         <div class="col-12 mt-3">
                             <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="fmail">
+                            <input type="email" class="form-control text-black" id="fmail">
                         </div>
                         <div class="col-12">
                             <!-- Message -->
                             <div class="mt-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="fmessage" rows="2"
+                                <textarea class="form-control text-black" id="fmessage" rows="2"
                                     placeholder="Any details or special requests?" required></textarea>
                             </div>
                         </div>

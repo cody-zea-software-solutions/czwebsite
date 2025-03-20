@@ -105,9 +105,9 @@ require_once "assets/process/database.php";
 
 
     <a class="float-button" target="_blank"
-        href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
-        <i class="fa-solid fa-phone-volume cta-btn"></i>
-        <span class="fs-4">Talk Now<span>
+        href="contact.php#form">
+       
+        <span class="fs-4">Get A Quote<span> <i class="fa-regular fa-arrow-right"></i>
     </a>
 
 
@@ -1504,17 +1504,17 @@ Price Area
                     <div class="row">
                         <div class="col-12 mt-3">
                             <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fname">
+                            <input type="text" class="form-control text-black" id="fname">
                         </div>
                         <div class="col-12 mt-3">
                             <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="fmail">
+                            <input type="email" class="form-control text-black" id="fmail">
                         </div>
                         <div class="col-12">
                             <!-- Message -->
                             <div class="mt-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="fmessage" rows="2"
+                                <textarea class="form-control text-black" id="fmessage" rows="2"
                                     placeholder="Any details or special requests?" required></textarea>
                             </div>
                         </div>
