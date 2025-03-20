@@ -104,10 +104,10 @@ require_once "assets/process/database.php";
 
 
 
-    <a class="float-button" target="_blank"
+    <a class="float-button bg-black" target="_blank"
         href="contact.php#form">
        
-        <span class="fs-4">Get A Quote<span> <i class="fa-regular fa-arrow-right"></i>
+        <span class="fs-4 text-white">Get A Quote<span> <i class="fa-regular fa-arrow-right text-white"></i>
     </a>
 
 
