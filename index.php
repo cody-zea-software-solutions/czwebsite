@@ -136,8 +136,7 @@ Hero Area
                             <!-- <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span> -->
                             <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software &
                                 App
-                                Solutions <div class="mt-3"></div> <span class="text-large">Built
-                                    for Your Success</span></h6>
+                                Solutions <div class="mt-3"></div> <span class="text-large"> Grow Your Business Now</span></h6>
                             <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that
                                 empower
                                 your business. Whether it's a website, a mobile app, or software, we help you scale,
