@@ -635,7 +635,7 @@ Service Area
                             custom software ensures seamless evolution, tailored to meet your unique needs.</p>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-8 mb-3">
+                        <div class="col-12 col-lg-8 mb-3" onclick="window.location='ecommerce.php'" style="cursor: pointer;">
                             <div class="service-grid hover-item">
                                 <div class="box-icon">
                                     <img src="assets/ecommerce.png" class="img-fluid w-50" alt="Icon">
@@ -655,7 +655,7 @@ Service Area
                 </div>
                 <div class="col-xl-7">
                     <div class="service-grid_wrapp">
-                        <div class="service-grid hover-item">
+                        <div class="service-grid hover-item" onclick="window.location='web-design.php'" style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_1.png" class="img-fluid w-50" alt="Icon">
                             </div>
@@ -668,7 +668,7 @@ Service Area
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item">
+                        <div class="service-grid hover-item" onclick="window.location='app-development.php'" style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_2.png" class="img-fluid w-50" alt="Icon">
                             </div>
@@ -682,7 +682,7 @@ Service Area
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
 
-                        <div class="service-grid hover-item item-active">
+                        <div class="service-grid hover-item item-active"  onclick="window.location='digital-marketing.php'" style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_4.svg" alt="Icon">
                             </div>
@@ -695,7 +695,7 @@ Service Area
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item">
+                        <div class="service-grid hover-item"  onclick="window.location='custom-software.php'" style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_4.png" class="img-fluid w-50" alt="Icon">
                             </div>
@@ -708,7 +708,7 @@ Service Area
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item">
+                        <div class="service-grid hover-item"  onclick="window.location='branding.php'" style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/brand-icon.png" class="img-fluid w-50" alt="Icon">
                             </div>

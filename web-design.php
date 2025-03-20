@@ -146,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Design that dazzles. Speed that sells. Websites built to wow and win.
                     </p>
                     <div class="btn-group">
-                        <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Build Your Website <i
+                        <a href="contact.php#form" class="th-btn blue-btn style1 th-icon th-radius fs-5">Build Your Website <i
                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
@@ -644,7 +644,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                                 <div class="col-12 mt-5 d-flex justify-content-center">
                                     <div class="btn-group">
-                                        <a href="works.html"
+                                        <a href="works.php"
                                             class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black">View More
                                             Website
                                             Work <i class="fa-regular fa-arrow-right ms-2"></i></a>
@@ -726,7 +726,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     established NZ business, we create a site that makes a strong, lasting first impression.
                 </p>
                 <div class="btn-group">
-                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a Free Consultation<i
+                    <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a Free Consultation<i
                             class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
@@ -748,7 +748,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     are in New Zealand or beyond, they’ll enjoy a smooth, user-friendly experience.
                 </p>
                 <div class="btn-group">
-                    <a href="about.html" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a Free Consultation<i
+                    <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get a Free Consultation<i
                             class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
@@ -877,7 +877,7 @@ Brand Area
                         life.
                     </p>
                     <div class="text-center text-xl-start">
-                        <a href="about.html" class="th-btn style4 th-radius fs-5 bg-orange">Ask a Question</a>
+                        <a href="contact.php" class="th-btn style4 th-radius fs-5 bg-orange">Ask a Question</a>
                     </div>
                 </div>
             </div>
