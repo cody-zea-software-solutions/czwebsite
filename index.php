@@ -6,13 +6,16 @@ require_once "assets/process/database.php";
 
 <head>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KDPFLMB3');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDPFLMB3');</script>
+    <!-- End Google Tag Manager -->
 
 
     <!-- Google tag (gtag.js) -->
@@ -57,7 +60,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--==============================
         All CSS File
@@ -77,7 +80,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style2.css">
- 
+
 
     <style>
         .orange-border {
@@ -92,15 +95,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPFLMB3"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDPFLMB3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 
 
 
-   
+
     <a class="float-button" target="_blank"
         href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
         <i class="fa-solid fa-phone-volume cta-btn"></i>
@@ -490,7 +493,7 @@ About Area
                             </div>
                         </div>
                     </div>
-                    
+
                     <button class="carousel-control-prev bg-transparent text-dark border-0">
                         <i class="fa-solid fa-arrow-left bg-dark rounded-circle p-2 text-white"
                             data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"></i>
@@ -635,7 +638,8 @@ Service Area
                             custom software ensures seamless evolution, tailored to meet your unique needs.</p>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-8 mb-3" onclick="window.location='ecommerce.php'" style="cursor: pointer;">
+                        <div class="col-12 col-lg-8 mb-3" onclick="window.location='ecommerce.php'"
+                            style="cursor: pointer;">
                             <div class="service-grid hover-item">
                                 <div class="box-icon">
                                     <img src="assets/ecommerce.png" class="img-fluid w-50" alt="Icon">
@@ -655,7 +659,8 @@ Service Area
                 </div>
                 <div class="col-xl-7">
                     <div class="service-grid_wrapp">
-                        <div class="service-grid hover-item" onclick="window.location='web-design.php'" style="cursor: pointer;">
+                        <div class="service-grid hover-item" onclick="window.location='web-design.php'"
+                            style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_1.png" class="img-fluid w-50" alt="Icon">
                             </div>
@@ -668,7 +673,8 @@ Service Area
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item" onclick="window.location='app-development.php'" style="cursor: pointer;">
+                        <div class="service-grid hover-item" onclick="window.location='app-development.php'"
+                            style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_2.png" class="img-fluid w-50" alt="Icon">
                             </div>
@@ -682,7 +688,8 @@ Service Area
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
 
-                        <div class="service-grid hover-item item-active"  onclick="window.location='digital-marketing.php'" style="cursor: pointer;">
+                        <div class="service-grid hover-item item-active"
+                            onclick="window.location='digital-marketing.php'" style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_4.svg" alt="Icon">
                             </div>
@@ -695,7 +702,8 @@ Service Area
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item"  onclick="window.location='custom-software.php'" style="cursor: pointer;">
+                        <div class="service-grid hover-item" onclick="window.location='custom-software.php'"
+                            style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/img/icon/service_2_4.png" class="img-fluid w-50" alt="Icon">
                             </div>
@@ -708,7 +716,8 @@ Service Area
                             </div>
                             <div class="ser-shape"><img src="assets/img/shape/ser-shape.png" alt=""></div>
                         </div>
-                        <div class="service-grid hover-item"  onclick="window.location='branding.php'" style="cursor: pointer;">
+                        <div class="service-grid hover-item" onclick="window.location='branding.php'"
+                            style="cursor: pointer;">
                             <div class="box-icon">
                                 <img src="assets/brand-icon.png" class="img-fluid w-50" alt="Icon">
                             </div>
@@ -1075,7 +1084,8 @@ Cta Area
                 <div class="col-12 col-md-10 text-center mt-3">
                     <h3 class="text-white">Have an issue? <span class="text-orange">Schedule a meeting</span> with us to
                         get it resolved!</h3>
-
+                    <!-- Calendly Stylesheet -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                     <!-- Custom Button to Trigger Calendly Popup -->
                     <div class="row mt-4">
                         <div class="btn-group col-12 d-flex justify-content-center">
@@ -1086,6 +1096,10 @@ Cta Area
                             </a>
                         </div>
                     </div>
+
+                    <!-- Calendly Widget Script -->
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                        async></script>
                 </div>
             </div>
         </div>
@@ -1559,7 +1573,7 @@ Cta Area
         </svg>
     </div>
 
-   
+
     <!--============================== All Js File ============================== -->
     <script src="assets/js/pricing.js"></script>
     <!-- Jquery -->
