@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home - Cody Zea</title>
+    <title>Book A Call - Cody Zea</title>
     <meta name="author" content="Cody Zea Software Solutions">
     <meta name="description"
-        content="Cody Zea Software Solutions - Expert Web Design, Branding, Digital Marketing, and App Development Services. Build faster, smarter, and better with us!">
+        content="Book a call with Cody Zea Software Solutions to discuss expert Web Design, Branding, Digital Marketing, and App Development. Let's bring your ideas to life!">
     <meta name="keywords"
-        content="Cody Zea, Web Design, App Development, Branding, Digital Marketing, Software Solutions, E-Commerce, Fast Websites, Business Growth">
+        content="Book a Call, Cody Zea, Web Design Consultation, App Development, Branding Strategy, Digital Marketing Advice, Software Solutions, Business Growth, Free Consultation">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
 
     <!-- Mobile Specific Metas -->
