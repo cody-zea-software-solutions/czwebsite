@@ -1,5 +1,5 @@
 <?php require_once "db.php";
-$d_r = Databases::Search("SELECT * FROM pack WHERE solution_sol_id=1");
+$d_r = Databases::Search("SELECT * FROM pack WHERE pack_id IN (1,13,10) ORDER BY FIELD(pack_id, 1,13,10);");
 $dd = $d_r->fetch_assoc();
 ?>
 <!doctype html>
@@ -86,8 +86,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
     <?php require_once "header.php" ?>
-
-
 
     <div class="container-fluid space-extra2">
         <div class="row d-flex justify-content-center align-items-center"

@@ -1,5 +1,5 @@
 <?php require_once "db.php";
-$d_r = Databases::Search("SELECT * FROM pack WHERE `pack_id` = 5 OR `pack_id` = 11 ");
+$d_r = Databases::Search("SELECT * FROM pack WHERE pack_id IN (5, 11) ORDER BY FIELD(pack_id, 5, 11);");
 $dd = $d_r->fetch_assoc();
 ?>
 <!doctype html>

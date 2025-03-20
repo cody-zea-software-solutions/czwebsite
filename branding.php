@@ -539,7 +539,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
     <section>
         <?php
-        $gg = 4;
+        $gg = 5;
         $conn = Databases::getConnection();
         $stmt = $conn->prepare("SELECT * FROM `pack` INNER JOIN `solution` ON `solution`.`sol_id`=`pack`.`solution_sol_id` WHERE `solution_sol_id` = ? ORDER BY `pack_id` ASC ");
         $stmt->bind_param("i", $gg);
