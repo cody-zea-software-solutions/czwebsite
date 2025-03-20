@@ -149,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div> <!-- / Title row -->
             <div class="row gx-80">
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-ceylonmoss.php'">
                         <div class="box-img global-img">
                             <img src="assets/works/work001.svg" alt="project image">
                         </div>
@@ -165,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-boozebites.php'">
                         <div class="box-img global-img">
                             <img src="assets/works/work002.svg" alt="project image">
                         </div>
@@ -181,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-p-s-Vidyapeetaya.php'">
                         <div class="box-img global-img">
                             <img src="assets/works/work003.svg" alt="project image">
                         </div>
@@ -197,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-ceynap.php'">
                         <div class="box-img global-img">
                             <img src="assets/works/work004.svg" alt="project image">
                         </div>
@@ -211,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-edupathlk.php'">
                         <div class="box-img global-img">
                             <img src="assets/works/work005.svg" alt="project image">
                         </div>
@@ -225,7 +225,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-cl-travel.php'">
                         <div class="box-img global-img">
                             <img src="assets/works/work006.jpg" alt="project image">
                         </div>
@@ -239,7 +239,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-cococoirworld.php'">
                         <div class="box-img global-img">
                             <img src="assets/conillus.jpg" alt="project image">
                         </div>
@@ -253,7 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 <div class="col-md-6 project-box_wrapp">
-                    <div class="project-box style2">
+                    <div class="project-box style2" onclick="window.location.href='work-readinglk.php'">
                         <div class="box-img global-img">
                             <img src="assets/works-cover/img_caro-005.jpg" alt="project image">
                         </div>
