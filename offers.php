@@ -142,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
     </div>
-    <div class="container-fluid space-extra2">
+    <div class="container-fluid space-extra2" data-track="Offers Hero Section">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <img src="assets/offer-hero.png" class="img-fluid" alt="">
@@ -173,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" data-track="Offers Loaded Section">
         <div class="row d-flex justify-content-center">
 
             <?php
@@ -213,7 +213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-    <section class="d-flex justify-content-center">
+    <section class="d-flex justify-content-center" data-track="Final CTA Section">
         <div class="container mt-5 m-5">
             <div class="row bg-black rounded-20 p-2 p-lg-5">
                 <div class="col-12 col-lg-4">

@@ -169,11 +169,11 @@
     </div>
     <a class="float-button" target="_blank"
         href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
-        <i class="fa-solid fa-phone-volume cta-btn"></i>
-        <span class="fs-4">Talk Now<span>
+        <i class="fa-brands fa-whatsapp"></i>
+                <span class="fs-4">Chat on WhatsApp<span>
     </a>
 
-    <div class="container space-extra2">
+    <div class="container space-extra2" data-track="Hero Section In Contact Us Section">
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
@@ -218,7 +218,7 @@
 
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" data-track="Contact Details Section">
         <div class="row d-flex justify-content-center">
             <div class="col-10 col-lg-3 bg-white p-5 mt-3 mx-3">
                 <img src="assets/contact/call-icon.png" class="img-flud w-25" alt="Feature001"> <br />
@@ -259,7 +259,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" data-track="Place Visit Section">
 
         <div class="row space-extra">
 
@@ -365,7 +365,7 @@
     <!--==============================
 Contact Area  
 ==============================-->
-    <div class="container mb-3" id="form">
+    <div class="container mb-3" data-track="Contact Form Section" id="form">
         <div class="row">
             <div class="col-12 col-lg-6 mt-2">
                 <img src="assets/contact-hero.png" class="img-fluid" alt="ContactUsFormCover">

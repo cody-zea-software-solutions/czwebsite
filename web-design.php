@@ -101,20 +101,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--==============================
      Preloader
   ==============================-->
-    <div class="preloader ">
-        <button class="th-btn style1 preloaderCls">Cancel Preloader </button>
-        <div class="preloader-inner">
-            <img src="assets/img/logo.svg" alt="Rasm">
-            <span class="loader"></span>
-        </div>
-    </div>
-    <div class="popup-search-box d-none d-lg-block">
-        <button class="searchClose"><i class="fal fa-times"></i></button>
-        <form action="#">
-            <input type="text" placeholder="What are you looking for?">
-            <button type="submit"><i class="fal fa-search"></i></button>
-        </form>
-    </div><!--==============================
+   
+  <!--==============================
 
     Header Area
 ==============================-->
@@ -134,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div> -->
-    <div class="container space-extra2">
+    <div class="container space-extra2" data-track="Hero-wd Section">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <img src="assets/webdesigncol6.jpg" class="img-fluid" alt="">
@@ -158,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--==============================
     Service Area
 ==============================-->
-    <section class="space-top space-extra">
+    <section class="space-top space-extra" data-track="CTA-Widget wd Section">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-8">
@@ -262,7 +250,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div>
                                             <span class="info-box_subtitle"> Call Us</span>
                                             <p class="info-box_text">
-                                                <a href="tel:+2869852156" class="info-box_link">+286 985 2156</a>
+                                                <a href="tel:+2869852156" class="info-box_link">+64 22 356 8614
+
+</a>
                                             </p>
                                         </div>
                                     </div>
@@ -273,8 +263,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <div>
                                             <span class="info-box_subtitle">Mail Us</span>
                                             <p class="info-box_text">
-                                                <a href="mailto:info@example.com"
-                                                    class="info-box_link">info@example.com</a>
+                                                <a href="mailto:info@codyzea.com"
+                                                    class="info-box_link">info@codyzea.com</a>
                                             </p>
                                         </div>
                                     </div>
@@ -285,7 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </div>
                                         <div>
                                             <span class="info-box_subtitle">Office Address</span>
-                                            <p class="info-box_text">125 Berlin, Germany</p>
+                                            <p class="info-box_text">6A, Tidey Road, Mount Wellington. Auckland, New Zealand 1072</p>
                                         </div>
                                     </div>
                                 </div>
@@ -330,7 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <img class="w-100" src="assets/wyg.jpg" alt="service">
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6" data-track="What You Get Section">
                         <h4 class="mb-20 display-4">What You Get</h4>
                         <p class="mt-n1 mb-4 blog-text text-black fs-5">Your website is more than just a
                             page—it’s your brand’s first impression, sales engine, and credibility booster.
@@ -361,7 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 ?>
 
-                    <div class="container px-md-5 mb-5">
+                    <div class="container px-md-5 mb-5" data-track="Pricing Plan Web Design Section">
                         <div class="title-area text-center">
                             <div class="title-area text-center">
                                 <span class="sub-title sub-title6 style1 text-ani-style2">Pricing Plan</span>
@@ -669,7 +659,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <section class="space-extra-top space-bottom overflow-hidden" id="process-sec">
+    <section class="space-extra-top space-bottom overflow-hidden" data-track="Working Process Section" id="process-sec">
         <div class="container">
             <div class="row flex-row-reverse align-items-end">
                 <div class="col-xl-6">
@@ -714,7 +704,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="shape-mockup spin  d-none d-xl-block" data-top="3%" data-right="18%"><img
                 src="assets/img/shape/shape-9.png" alt=""></div>
     </section>
-    <div class="container">
+    <div class="container" data-track="Free Section">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <span class="display-3 text-black">
@@ -756,7 +746,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-track="FAQs Section">
         <div class="row">
             <div class="row">
                 <div class="col-xl-6">
@@ -862,7 +852,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 Brand Area  
 ==============================-->
 
-    <section class="d-flex justify-content-center">
+    <section class="d-flex justify-content-center" data-track="CTA-final we design Section">
         <div class="container mt-5 m-5">
             <div class="row bg-black rounded-20 p-5">
                 <div class="col-12 col-lg-4">

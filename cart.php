@@ -146,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <!--============================== Cart Area ==============================-->
-    <div class="th-cart-wrapper space-extra" style="margin-top: 80px !important;">
+    <div class="th-cart-wrapper space-extra"  style="margin-top: 80px !important;">
         <div class="container-fluid p-5">
             <div class="row">
                 <div class="col-12">
@@ -394,7 +394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mt-5 bg-color p-4 rounded-20">
+                <div class="col-12 col-lg-4 mt-5 bg-color p-4 rounded-20" data-track="Package Totals Loaded">
                     <h2 class="h3 summary-title text-center">Package Totals</h2>
                     <div class="row p-3 mt-5 bg-white rounded-20">
                         <div class="col-12 d-flex justify-content-between mt-3">
@@ -435,7 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
             <!-- Modal -->
-            <div class="modal fade" style="z-index: 1000;" id="qModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" data-track="Cart Quote Modal Loaded" style="z-index: 1000;" id="qModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content rounded-0 border-0">
@@ -555,7 +555,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
+            let userLocation = {}; // Store user location details
 
+            // Fetch user IP, country, and city
+            fetch("https://ipapi.co/json/")
+                .then(response => response.json())
+                .then(data => {
+                    userLocation = {
+                        ip: data.ip,
+                        country: data.country_name,
+                        city: data.city
+                    };
+                })
+                .catch(error => console.error("Location fetch error:", error));
+
+            function sendVisitData(action, extraData = {}) {
+                const visitData = {
+                    action: action,
+                    timestamp: new Date().toISOString(),
+                    url: window.location.href,
+                    userAgent: navigator.userAgent,
+                    ip: userLocation.ip || "Unknown",
+                    country: userLocation.country || "Unknown",
+                    city: userLocation.city || "Unknown",
+                    ...extraData
+                };
+
+                navigator.sendBeacon(endpoint, JSON.stringify(visitData));
+            }
+
+            // Track tab changes
+            document.addEventListener("visibilitychange", function () {
+                if (document.visibilityState === "visible") {
+                    sendVisitData("User returned to tab");
+                } else {
+                    sendVisitData("User left the tab");
+                }
+            });
+
+            // Track scroll depth
+            let lastScroll = 0;
+            function trackScroll() {
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const scrollPercentage = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
+
+                if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Log every 10% scroll change
+                    sendVisitData("User scrolled", { scrollPercentage: scrollPercentage });
+                    lastScroll = scrollPercentage;
+                }
+            }
+
+            // Track when user enters specific sections
+            function trackSectionVisibility() {
+                document.querySelectorAll("[data-track]").forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        sendVisitData("User viewed section", { section: section.getAttribute("data-track") });
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", function () {
+                trackScroll();
+                trackSectionVisibility();
+            });
+
+        })();
+    </script>
 </body>
 
 </html>

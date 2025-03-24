@@ -107,7 +107,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
     </div>
-    <div class="container space-extra2">
+    <div class="container space-extra2" data-track="Works Hero Section">
         <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="p-5 d-flex justify-content-center flex-column">
@@ -130,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <section class="project-area2 position-relative space overflow-hidden" id="project-sec">
+    <section class="project-area2 position-relative space overflow-hidden" data-track="Works Loads Section" id="project-sec">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center align-items-end">
                 <div class="col-lg-7">
@@ -329,7 +329,78 @@ Brand Area
 
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
+            let userLocation = {}; // Store user location details
 
+            // Fetch user IP, country, and city
+            fetch("https://ipapi.co/json/")
+                .then(response => response.json())
+                .then(data => {
+                    userLocation = {
+                        ip: data.ip,
+                        country: data.country_name,
+                        city: data.city
+                    };
+                })
+                .catch(error => console.error("Location fetch error:", error));
+
+            function sendVisitData(action, extraData = {}) {
+                const visitData = {
+                    action: action,
+                    timestamp: new Date().toISOString(),
+                    url: window.location.href,
+                    userAgent: navigator.userAgent,
+                    ip: userLocation.ip || "Unknown",
+                    country: userLocation.country || "Unknown",
+                    city: userLocation.city || "Unknown",
+                    ...extraData
+                };
+
+                navigator.sendBeacon(endpoint, JSON.stringify(visitData));
+            }
+
+            // Track tab changes
+            document.addEventListener("visibilitychange", function () {
+                if (document.visibilityState === "visible") {
+                    sendVisitData("User returned to tab");
+                } else {
+                    sendVisitData("User left the tab");
+                }
+            });
+
+            // Track scroll depth
+            let lastScroll = 0;
+            function trackScroll() {
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const scrollPercentage = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
+
+                if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Log every 10% scroll change
+                    sendVisitData("User scrolled", { scrollPercentage: scrollPercentage });
+                    lastScroll = scrollPercentage;
+                }
+            }
+
+            // Track when user enters specific sections
+            function trackSectionVisibility() {
+                document.querySelectorAll("[data-track]").forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        sendVisitData("User viewed section", { section: section.getAttribute("data-track") });
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", function () {
+                trackScroll();
+                trackSectionVisibility();
+            });
+
+        })();
+    </script>
 </body>
 
 </html>
