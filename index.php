@@ -283,7 +283,8 @@ About Area
         </div>
 
     </div>
-    <div class="choose-area bg-title overflow-hidden ani-c"  data-track="WHS Section" data-mask-src="assets/img/bg/choose_bg_3.png">
+    <div class="choose-area bg-title overflow-hidden ani-c" data-track="WHS Section"
+        data-mask-src="assets/img/bg/choose_bg_3.png">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -624,7 +625,8 @@ About Area
     <!--==============================
 Service Area  
 ==============================-->
-    <section class="space ani-b" id="service-sec" data-track="Services Section" data-bg-src="assets/img/bg/service_bg_2.jpg">
+    <section class="space ani-b" id="service-sec" data-track="Services Section"
+        data-bg-src="assets/img/bg/service_bg_2.jpg">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center">
                 <div class="col-xl-5">
@@ -1618,7 +1620,20 @@ Cta Area
     <script src="assets/js/main.js"></script>
     <script>
         (function () {
-            const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
+            const endpoint = "http://localhost/czwebsite/track-visit.php"; // Update with your server URL
+            let userLocation = {}; // Store user location details
+
+            // Fetch user IP, country, and city
+            fetch("https://ipapi.co/json/")
+                .then(response => response.json())
+                .then(data => {
+                    userLocation = {
+                        ip: data.ip,
+                        country: data.country_name,
+                        city: data.city
+                    };
+                })
+                .catch(error => console.error("Location fetch error:", error));
 
             function sendVisitData(action, extraData = {}) {
                 const visitData = {
@@ -1626,6 +1641,9 @@ Cta Area
                     timestamp: new Date().toISOString(),
                     url: window.location.href,
                     userAgent: navigator.userAgent,
+                    ip: userLocation.ip || "Unknown",
+                    country: userLocation.country || "Unknown",
+                    city: userLocation.city || "Unknown",
                     ...extraData
                 };
 
@@ -1649,7 +1667,7 @@ Cta Area
                 const documentHeight = document.documentElement.scrollHeight;
                 const scrollPercentage = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
 
-                if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Send data only every 10% change
+                if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Log every 10% scroll change
                     sendVisitData("User scrolled", { scrollPercentage: scrollPercentage });
                     lastScroll = scrollPercentage;
                 }
@@ -1672,6 +1690,8 @@ Cta Area
 
         })();
     </script>
+
+
 
 
 </body>
