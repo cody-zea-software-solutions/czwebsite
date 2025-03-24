@@ -110,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row space-extra"></div>
     </div>
 
-    <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5 bg-color">
+    <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5 bg-color" data-track="Hero Pricing Page">
         <div class="row mt-0 mt-md-3">
             <div class="col-lg-6 order-2 order-lg-1 d-flex justify-content-center">
                 <img src="assets/img/hero/hero_3_1.png" alt="" class="img-fluid pricing-image d-none d-md-flex"
@@ -151,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" data-track="Pricng Page Pricing Area">
         <div class="col-12 position-relative overflow-hidden">
             <div class="random-svg-container">
                 <img src="assets/img/a1.svg" class="random-svg">
@@ -186,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <div class="container-fluid" id="resBox">
+    <div class="container-fluid" id="resBox" data-track="Pricing Page Plan Quote">
 
         <div class="row">
 
@@ -282,7 +282,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
+            let userLocation = {}; // Store user location details
 
+            // Fetch user IP, country, and city
+            fetch("https://ipapi.co/json/")
+                .then(response => response.json())
+                .then(data => {
+                    userLocation = {
+                        ip: data.ip,
+                        country: data.country_name,
+                        city: data.city
+                    };
+                })
+                .catch(error => console.error("Location fetch error:", error));
+
+            function sendVisitData(action, extraData = {}) {
+                const visitData = {
+                    action: action,
+                    timestamp: new Date().toISOString(),
+                    url: window.location.href,
+                    userAgent: navigator.userAgent,
+                    ip: userLocation.ip || "Unknown",
+                    country: userLocation.country || "Unknown",
+                    city: userLocation.city || "Unknown",
+                    ...extraData
+                };
+
+                navigator.sendBeacon(endpoint, JSON.stringify(visitData));
+            }
+
+            // Track tab changes
+            document.addEventListener("visibilitychange", function () {
+                if (document.visibilityState === "visible") {
+                    sendVisitData("User returned to tab");
+                } else {
+                    sendVisitData("User left the tab");
+                }
+            });
+
+            // Track scroll depth
+            let lastScroll = 0;
+            function trackScroll() {
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const scrollPercentage = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
+
+                if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Log every 10% scroll change
+                    sendVisitData("User scrolled", { scrollPercentage: scrollPercentage });
+                    lastScroll = scrollPercentage;
+                }
+            }
+
+            // Track when user enters specific sections
+            function trackSectionVisibility() {
+                document.querySelectorAll("[data-track]").forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        sendVisitData("User viewed section", { section: section.getAttribute("data-track") });
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", function () {
+                trackScroll();
+                trackSectionVisibility();
+            });
+
+        })();
+    </script>
 </body>
 
 </html>
