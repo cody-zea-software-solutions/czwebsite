@@ -104,9 +104,8 @@ require_once "assets/process/database.php";
 
 
 
-    <a class="float-button bg-black" target="_blank"
-        href="contact.php#form">
-       
+    <a class="float-button bg-black" target="_blank" href="contact.php#form">
+
         <span class="fs-4 text-white">Get A Quote<span> <i class="fa-regular fa-arrow-right text-white"></i>
     </a>
 
@@ -127,7 +126,7 @@ require_once "assets/process/database.php";
 Hero Area
 ==============================-->
     <!--============================== Hero Area ==============================-->
-    <div class="container-fluid p-0 m-0">
+    <div class="container-fluid p-0 m-0" data-track="Hero Section">
         <div class="th-hero-wrapper hero-3 bg-color" id="hero">
             <div class="container px-md-5 p-3">
                 <div class="row">
@@ -136,7 +135,8 @@ Hero Area
                             <!-- <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span> -->
                             <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software &
                                 App
-                                Solutions <div class="mt-3"></div> <span class="text-large"> Grow Your Business Now</span></h6>
+                                Solutions <div class="mt-3"></div> <span class="text-large"> Grow Your
+                                    Business Now</span></h6>
                             <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that
                                 empower
                                 your business. Whether it's a website, a mobile app, or software, we help you scale,
@@ -212,7 +212,7 @@ Hero Area
     <!--==============================
 About Area  
 ==============================-->
-    <div class="container space-extra">
+    <div class="container space-extra" data-track="About Section">
         <div class="position-relative overflow-hidden" id="about-sec">
             <div class="container">
                 <div class="row gy-4 align-items-end">
@@ -283,7 +283,7 @@ About Area
         </div>
 
     </div>
-    <div class="choose-area bg-title overflow-hidden ani-c" data-mask-src="assets/img/bg/choose_bg_3.png">
+    <div class="choose-area bg-title overflow-hidden ani-c"  data-track="WHS Section" data-mask-src="assets/img/bg/choose_bg_3.png">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -339,7 +339,7 @@ About Area
             </div>
         </div>
     </div>
-    <div class="container ani-c space">
+    <div class="container ani-c space" data-track="Effortless WP Section">
 
         <div class="row mt-5 mt-md-0 ">
             <div class="col-12">
@@ -624,7 +624,7 @@ About Area
     <!--==============================
 Service Area  
 ==============================-->
-    <section class="space ani-b" id="service-sec" data-bg-src="assets/img/bg/service_bg_2.jpg">
+    <section class="space ani-b" id="service-sec" data-track="Services Section" data-bg-src="assets/img/bg/service_bg_2.jpg">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center">
                 <div class="col-xl-5">
@@ -909,7 +909,7 @@ portfolio Area
 
 Testimonial Area  
 ==============================-->
-    <section class="overflow-hidden space-bottom mt-5 space ani-c" id="testi-sec">
+    <section class="overflow-hidden space-bottom mt-5 space ani-c" id="testi-sec" data-track="Testomonials Section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
@@ -1074,7 +1074,7 @@ Testimonial Area
     </section><!--==============================
 Cta Area  
 ==============================-->
-    <div class="row px-3 px-md-2 px-lg-5 my-5">
+    <div class="row px-3 px-md-2 px-lg-5 my-5" data-track="meeting Section">
         <div class="col-12 bg-black px-3 py-5 p-md-5 meeting rounded-20">
             <div class="row">
                 <div class="col-12 col-md-2 d-flex justify-content-center align-items-center ">
@@ -1259,7 +1259,7 @@ Cta Area
     <!--==============================
 Price Area  
 ==============================-->
-    <section class=" bg-smoke2 overflow-hidden space">
+    <section class=" bg-smoke2 overflow-hidden space" data-track="Pricing Section">
         <?php
         $gg = 1;
         $conn = Databases::getConnection();
@@ -1399,7 +1399,7 @@ Price Area
         ?>
     </section>
 
-    <section class="blog-area3 overflow-hidden space ani-c" id="blog-sec">
+    <section class="blog-area3 overflow-hidden space ani-c" id="blog-sec" data-track="News & Blog Section">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-lg-7">
@@ -1487,7 +1487,7 @@ Price Area
         </div>
     </section>
 
-    <div class="container mb-3 ani-b">
+    <div class="container mb-3 ani-b" data-track="Contact Us hq Section">
         <div class="row">
             <div class="col-12 col-lg-6 mt-2">
                 <img src="assets/contact-hero.png" class="img-fluid" alt="ContactUsFormCover">
@@ -1534,7 +1534,7 @@ Price Area
     <!--==============================
 Cta Area  
 ==============================-->
-    <section class="cta-sec" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
+    <section class="cta-sec" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half" data-track="CTA Final Section">
         <div class="container">
             <div class="cta-area space-extra2 text-center">
                 <div class="row justify-content-center">
@@ -1616,6 +1616,63 @@ Cta Area
 
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        (function () {
+            const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
+
+            function sendVisitData(action, extraData = {}) {
+                const visitData = {
+                    action: action,
+                    timestamp: new Date().toISOString(),
+                    url: window.location.href,
+                    userAgent: navigator.userAgent,
+                    ...extraData
+                };
+
+                navigator.sendBeacon(endpoint, JSON.stringify(visitData));
+            }
+
+            // Track tab changes
+            document.addEventListener("visibilitychange", function () {
+                if (document.visibilityState === "visible") {
+                    sendVisitData("User returned to tab");
+                } else {
+                    sendVisitData("User left the tab");
+                }
+            });
+
+            // Track scroll depth
+            let lastScroll = 0;
+            function trackScroll() {
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                const scrollPercentage = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
+
+                if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Send data only every 10% change
+                    sendVisitData("User scrolled", { scrollPercentage: scrollPercentage });
+                    lastScroll = scrollPercentage;
+                }
+            }
+
+            // Track when user enters specific sections
+            function trackSectionVisibility() {
+                document.querySelectorAll("[data-track]").forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                        sendVisitData("User viewed section", { section: section.getAttribute("data-track") });
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", function () {
+                trackScroll();
+                trackSectionVisibility();
+            });
+
+        })();
+    </script>
+
 
 </body>
 
