@@ -57,14 +57,94 @@
 
 <body>
     <?php require_once "header.php"; ?>
-    <div class="container-fluid space-extra">
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/codyzeaofficial"
-            style="min-width:320px;height:700px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline widget end -->
-    </div>
 
+    <div class="container space-extra2" data-track="Hero Section In Contact Us Section">
+        <div class="row">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="p-5 d-flex justify-content-center flex-column">
+                    <span class="display-1 text-black mt-5"><span class="text-black">Book a Call with Us! </span>
+                        <p class="text-orange fs-2">
+                            Let’s Chat About Your Project.
+                        </p>
+                        <div class="row">
+                            <div class="col-12 col-lg-12 mt-3">
+                                <!-- Calendly Stylesheet -->
+                                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+                                <!-- Custom Button to Trigger Calendly Popup -->
+                                <div class="btn-group col-lg-8 col-12" data-track-button="Shedule the meeting button">
+                                    <a href="#" 
+                                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codyzeaofficial'}); return false;"
+                                        class="th-btn blue-btn style1 th-radius fs-5 col-12 bg-black">
+                                        <i class="fa-thin fa-calendar-days"></i> &nbsp; Schedule Your Call
+
+                                    </a>
+                                </div>
+
+                                <!-- Calendly Widget Script -->
+                                <script src="https://assets.calendly.com/assets/external/widget.js"
+                                    type="text/javascript" async></script>
+                            </div>
+                            <div class="col-12 col-lg-12 mt-3" data-track-button="Chat On Whatsapp Button">
+                                <div class="btn-group col-lg-8 col-12">
+                                    <a href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!"
+                                        class="th-btn blue-btn style1 th-radius fs-5 col-12">
+                                        <i class="fa-brands fa-whatsapp"></i> &nbsp; Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 mt-5">
+                <img src="assets/bc.svg" class="img-fluid" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid" data-track="Contact Details Section">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 col-lg-3 bg-white p-5 mt-3 mx-3">
+                <img src="assets/contact/call-icon.png" class="img-flud w-25" alt="Feature001"> <br />
+                <div class="col-12 mt-3">
+                    <span class="fs-1 text-black">Say Hello</span>
+                    <br />
+                    <br />
+                    <p class="text-dark fw-thin fs-5">
+                        Say Hello at <br>
+                        <span>Kia Ora, Let’s Connect</span><br>
+                        <span class="text-orange">+64 22 356 8614</span>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-10 col-lg-3 bg-white p-5 mt-3 mx-3">
+                <img src="assets/contact/email-icon.png" class="img-fluid w-25" alt="Feature002"> <br />
+                <div class="col-12 mt-3">
+                    <span class="fs-1 text-black">Send a Message</span>
+                    <br /><br />
+                    <p class="text-dark fw-thin fs-5">
+                        Drop Us a Line – We’re All Ears <span class="text-orange">info@codyzea.com</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-10 col-lg-3 bg-white p-5 mt-3 mx-3">
+                <img src="assets/contact/map-icon.png" class="img-fluid w-25" alt="Feature003"> <br />
+                <div class="col-12 mt-3">
+                    <span class="fs-1 text-black">Visit Us</span>
+                    <br /><br />
+                    <p class="text-dark fw-thin fs-5">
+                        Come Say G'day – Find Us Here <span class="text-orange">6A, Tidey Road, Mount Wellington.
+                            Auckland, New Zealand
+                            1072</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <?php require_once "footer.php"; ?>
 
@@ -115,10 +195,10 @@
     <script src="assets/js/main.js"></script>
     <script>
         (function () {
-            const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
+            const endpoint = "http://localhost/czwebsite/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
-            // Fetch user IP, country, and city
+            // Fetch user IP, city, and country
             fetch("https://ipapi.co/json/")
                 .then(response => response.json())
                 .then(data => {
@@ -178,13 +258,26 @@
                 });
             }
 
+            // Track button clicks
+            function trackButtonClicks() {
+                document.querySelectorAll("[data-track-button]").forEach(button => {
+                    button.addEventListener("click", function () {
+                        sendVisitData("User clicked button", { button: button.getAttribute("data-track-button") });
+                    });
+                });
+            }
+
+            // Initialize event listeners
             window.addEventListener("scroll", function () {
                 trackScroll();
                 trackSectionVisibility();
             });
 
+            document.addEventListener("DOMContentLoaded", trackButtonClicks);
+
         })();
     </script>
+
 </body>
 
 </html>
