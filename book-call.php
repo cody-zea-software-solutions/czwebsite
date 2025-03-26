@@ -195,7 +195,7 @@
     <script src="assets/js/main.js"></script>
     <script>
         (function () {
-            const endpoint = "http://localhost/czwebsite/track-visit.php"; // Update with your server URL
+            const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
             // Fetch user IP, city, and country
