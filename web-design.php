@@ -568,7 +568,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <img src="assets/img/project/project_1_2.jpg" alt="project image">
                                                 </div>
                                                 <div class="box-content">
-                                                    <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss -
+                                                    <h3 class="box-title"><a href="works.php">Ceylon Moss -
                                                             https://ceylonmoss.com/</a></h3>
                                                     <p class="box-subtitle">Web Design & Development</p>
                                                 </div>
@@ -584,7 +584,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <img src="assets/img/project/project_1_3.jpg" alt="project image">
                                                 </div>
                                                 <div class="box-content">
-                                                    <h3 class="box-title"><a href="portfolio-details.html">Booze Bites -
+                                                    <h3 class="box-title"><a href="works.php">Booze Bites -
                                                             https://boozebites.co.nz/</a></h3>
                                                     <p class="box-subtitle">Web Design & Development</p>
                                                 </div>
@@ -600,7 +600,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <img src="assets/img/project/project_1_4.jpg" alt="project image">
                                                 </div>
                                                 <div class="box-content">
-                                                    <h3 class="box-title"><a href="portfolio-details.html">Ceynap -
+                                                    <h3 class="box-title"><a href="works.php">Ceynap -
                                                             https://ceynap.co.nz/</a></h3>
                                                     <p class="box-subtitle">Web Design & Development</p>
                                                 </div>
@@ -616,7 +616,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <img src="assets/img/project/project_1_2.jpg" alt="project image">
                                                 </div>
                                                 <div class="box-content">
-                                                    <h3 class="box-title"><a href="portfolio-details.html">Ceylon Moss -
+                                                    <h3 class="box-title"><a href="works.php">Ceylon Moss -
                                                             https://ceylonmoss.com/</a></h3>
                                                     <p class="box-subtitle">Web Design & Development</p>
                                                 </div>

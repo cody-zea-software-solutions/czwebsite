@@ -175,27 +175,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="row">
                             <div class="col-12 col-lg-6 mt-3">
                                 <label for="fullName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstname"
+                                <input type="text" class="form-control text-black" id="firstname"
                                     placeholder="Enter your First name" required>
                             </div>
                             <div class="col-12 col-lg-6 mt-3">
                                 <label for="fullName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastname" placeholder="Enter your Last name"
+                                <input type="text" class="form-control text-black" id="lastname" placeholder="Enter your Last name"
                                     required>
                             </div>
                             <div class="col-12 mt-3">
                                 <label for="workEmail" class="form-label">Work Email</label>
-                                <input type="email" class="form-control" id="workEmail"
+                                <input type="email" class="form-control text-black" id="workEmail"
                                     placeholder="Enter your work email" required>
                             </div>
                             <div class="col-12 mt-3">
                                 <label for="companyName" class="form-label">Company Name</label>
-                                <input type="text" class="form-control" id="companyName"
+                                <input type="text" class="form-control text-black" id="companyName"
                                     placeholder="Enter your company name" required>
                             </div>
                             <div class="col-12 mt-3">
                                 <label for="mobileNumber" class="form-label">Mobile Number</label>
-                                <input type="tel" class="form-control" id="mobileNumber"
+                                <input type="tel" class="form-control text-black" id="mobileNumber"
                                     placeholder="Enter your mobile number" required>
                             </div>
 
