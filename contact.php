@@ -170,7 +170,7 @@
     <a class="float-button" target="_blank"
         href="https://wa.me/64223568614?text=Hello,%20I%20came%20across%20Cody%20Zea%20and%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Looking%20forward%20to%20connecting!">
         <i class="fa-brands fa-whatsapp"></i>
-                <span class="fs-4">Chat on WhatsApp<span>
+        <span class="fs-4">Chat on WhatsApp<span>
     </a>
 
     <div class="container space-extra2" data-track="Hero Section In Contact Us Section">
@@ -229,7 +229,9 @@
                     <p class="text-dark fw-thin fs-5">
                         Say Hello at <br>
                         <span>Kia Ora, Let’s Connect</span><br>
-                        <span class="text-orange">+64 22 356 8614</span>
+                        <a href="tel:+64223568614">
+                            <span class="text-orange">+64 22 356 8614</span>
+                        </a>
                     </p>
                 </div>
 
@@ -240,7 +242,11 @@
                     <span class="fs-1 text-black">Send a Message</span>
                     <br /><br />
                     <p class="text-dark fw-thin fs-5">
-                        Drop Us a Line – We’re All Ears <span class="text-orange">info@codyzea.com</span>
+                        Drop Us a Line – We’re All Ears 
+                        <a href="mailto:info@codyzea.com">
+                          <span class="text-orange">info@codyzea.com</span>
+                        </a>
+       
                     </p>
                 </div>
             </div>
