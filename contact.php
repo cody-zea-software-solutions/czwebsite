@@ -4,14 +4,22 @@
 <head>
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KDPFLMB3');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDPFLMB3');
+    </script>
     <!-- End Google Tag Manager -->
 
 
@@ -242,11 +250,11 @@
                     <span class="fs-1 text-black">Send a Message</span>
                     <br /><br />
                     <p class="text-dark fw-thin fs-5">
-                        Drop Us a Line – We’re All Ears 
+                        Drop Us a Line – We’re All Ears
                         <a href="mailto:info@codyzea.com">
-                          <span class="text-orange">info@codyzea.com</span>
+                            <span class="text-orange">info@codyzea.com</span>
                         </a>
-       
+
                     </p>
                 </div>
             </div>
@@ -283,7 +291,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6" style="background-image: url('assets/visit_place.png');">
-                <img src="assets/visit_place.png" class="img-fluid" alt="contactusillustration">
+                <img src="assets/visit_place.png" class="img-fluid d-none d-lg-flex" alt="contactusillustration">
             </div>
         </div>
         <!-- Modal -->
@@ -374,14 +382,14 @@ Contact Area
     <div class="container mb-3" data-track="Contact Form Section" id="form">
         <div class="row">
             <div class="col-12 col-lg-6 mt-2">
-                <img src="assets/contact-hero.png" class="img-fluid" alt="ContactUsFormCover">
+                <img src="assets/contact-hero.png" class="img-fluid d-none d-lg-flex" alt="ContactUsFormCover">
             </div>
             <div class="col-12 col-lg-6 mt-2">
                 <div class="col-12 bg-white rounded-20 border border-2 black-border p-2 p-lg-5">
-                    <span class="text-black display-6 text-orange">Have Questions?
+                    <span class="text-black display-6 text-orange">Get a Quotation?
                     </span>
                     <div class="col-12">
-                        <span class="display-5 text-black">Send us a Message
+                        <span class="display-5 text-black">Send us Your Requests
                         </span>
                     </div>
                     <div class="row">
@@ -396,17 +404,21 @@ Contact Area
                         <div class="col-12">
                             <!-- Message -->
                             <div class="mt-3">
-                                <label for="message" class="form-label">Message</label>
+                                <label for="message" class="form-label">Project Requirements</label>
                                 <textarea class="form-control text-black" id="fmessage" rows="2"
                                     placeholder="Any details or special requests?" required></textarea>
                             </div>
                         </div>
+
+                        <div class="col-12 text-center mt-3">
+                            <p class="text-o h6 fw-normal">Get your quotation <span class="text-orange">within 24 hours</span> — fast and easy!</p>
+                        </div>
                     </div>
-                    <div class="col-10 mt-3 d-flex justify-content-center">
+                    <div class="col-12 mt-3 d-flex justify-content-center">
                         <!-- Submit Button -->
-                        <div class="btn-group col-12">
+                        <div class="btn-group col-10 text-center">
                             <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
-                                onclick="sendMessage();">Get in Touch
+                                onclick="sendMessage();">Get a Quotation
                                 <i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -464,7 +476,7 @@ Contact Area
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
     <script>
-        (function () {
+        (function() {
             const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
@@ -496,7 +508,7 @@ Contact Area
             }
 
             // Track tab changes
-            document.addEventListener("visibilitychange", function () {
+            document.addEventListener("visibilitychange", function() {
                 if (document.visibilityState === "visible") {
                     sendVisitData("User returned to tab");
                 } else {
@@ -506,6 +518,7 @@ Contact Area
 
             // Track scroll depth
             let lastScroll = 0;
+
             function trackScroll() {
                 const scrollTop = window.scrollY;
                 const windowHeight = window.innerHeight;
@@ -513,7 +526,9 @@ Contact Area
                 const scrollPercentage = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
 
                 if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Log every 10% scroll change
-                    sendVisitData("User scrolled", { scrollPercentage: scrollPercentage });
+                    sendVisitData("User scrolled", {
+                        scrollPercentage: scrollPercentage
+                    });
                     lastScroll = scrollPercentage;
                 }
             }
@@ -523,12 +538,14 @@ Contact Area
                 document.querySelectorAll("[data-track]").forEach(section => {
                     const rect = section.getBoundingClientRect();
                     if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-                        sendVisitData("User viewed section", { section: section.getAttribute("data-track") });
+                        sendVisitData("User viewed section", {
+                            section: section.getAttribute("data-track")
+                        });
                     }
                 });
             }
 
-            window.addEventListener("scroll", function () {
+            window.addEventListener("scroll", function() {
                 trackScroll();
                 trackSectionVisibility();
             });
