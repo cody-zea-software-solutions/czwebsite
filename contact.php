@@ -430,12 +430,12 @@ Contact Area
                                 <span class="form-label text-dark">Select a Service Type</span>
                             </div>
                             <div class="row d-flex justify-content-center mt-1 px-3">
-                                <div class="col-auto features-">Custom Web development</div>
-                                <div class="col-auto features-">E commerce web development</div>
-                                <div class="col-auto features-">Digital Marketing</div>
-                                <div class="col-auto features-">Branding</div>
-                                <div class="col-auto features-">App development</div>
-                                <div class="col-auto features- active">Other Digital Services</div>
+                                <div class="col-auto features-" onclick="changeFeature(1)" id="cf_1">Custom Web development</div>
+                                <div class="col-auto features-" onclick="changeFeature(2)" id="cf_2">E commerce web development</div>
+                                <div class="col-auto features-" onclick="changeFeature(3)" id="cf_3">Digital Marketing</div>
+                                <div class="col-auto features-" onclick="changeFeature(4)" id="cf_4">Branding</div>
+                                <div class="col-auto features-" onclick="changeFeature(5)" id="cf_5">App development</div>
+                                <div class="col-auto features- active" onclick="changeFeature(6)" id="cf_6">Other Digital Services</div>
                             </div>
                         </div>
 
