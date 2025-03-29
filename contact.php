@@ -409,6 +409,35 @@ Contact Area
                                     placeholder="Any details or special requests?" required></textarea>
                             </div>
                         </div>
+                        <style>
+                            .features- {
+                                border: 2px solid #000;
+                                margin-right: 10px;
+                                margin-top: 10px;
+                                border-radius: 30px;
+                                cursor: pointer;
+                                color: #000;
+                                transition: all 0.3s ease;
+                            }
+
+                            .features-.active {
+                                background-color: #000;
+                                color: #fff;
+                            }
+                        </style>
+                        <div class="col-12 mt-3">
+                            <div class="">
+                                <span class="form-label text-dark">Select a Service Type</span>
+                            </div>
+                            <div class="row d-flex justify-content-center mt-1 px-3">
+                                <div class="col-auto features-">Custom Web development</div>
+                                <div class="col-auto features-">E commerce web development</div>
+                                <div class="col-auto features-">Digital Marketing</div>
+                                <div class="col-auto features-">Branding</div>
+                                <div class="col-auto features-">App development</div>
+                                <div class="col-auto features- active">Other Digital Services</div>
+                            </div>
+                        </div>
 
                         <div class="col-12 text-center mt-3">
                             <p class="text-o h6 fw-normal">Get your quotation <span class="text-orange">within 24 hours</span> — fast and easy!</p>
