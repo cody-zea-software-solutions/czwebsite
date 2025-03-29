@@ -363,17 +363,17 @@ function removeCoupon(id) {
     xmlhttp.send(params);
 }
 
-let selectedFeature = "Other Digital Services";
+// let selectedFeature = "Other Digital Services";
 
-function changeFeature(id) {
-    for (let x = 1; x <= 6; x++) {
-        const feature = document.getElementById('cf_' + x);
-        feature.classList.remove('active');
-    }
-    const active = document.getElementById('cf_' + id);
-    active.classList.add('active');
-    selectedFeature = active.innerText;
-}
+// function changeFeature(id) {
+//     for (let x = 1; x <= 6; x++) {
+//         const feature = document.getElementById('cf_' + x);
+//         feature.classList.remove('active');
+//     }
+//     const active = document.getElementById('cf_' + id);
+//     active.classList.add('active');
+//     selectedFeature = active.innerText;
+// }
 
 function sendMessage() {
     // Get form values

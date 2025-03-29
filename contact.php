@@ -461,6 +461,19 @@ Contact Area
     <!--==============================
     All Js File
 ============================== -->
+    <script>
+        let selectedFeature = "Other Digital Services";
+
+        function changeFeature(id) {
+            for (let x = 1; x <= 6; x++) {
+                const feature = document.getElementById('cf_' + x);
+                feature.classList.remove('active');
+            }
+            const active = document.getElementById('cf_' + id);
+            active.classList.add('active');
+            selectedFeature = active.innerText;
+        }
+    </script>
     <!-- Jquery -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/pricing.js"></script>
