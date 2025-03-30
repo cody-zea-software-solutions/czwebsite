@@ -1576,7 +1576,7 @@ Cta Area
 
 
     <!--============================== All Js File ============================== -->
-    <script src="assets/js/pricing.js"></script>
+    <script src="forms.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->

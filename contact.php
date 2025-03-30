@@ -491,7 +491,7 @@ Contact Area
     </script>
     <!-- Jquery -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets/js/pricing.js"></script>
+    <script src="forms.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
     <script src="assets/js/swiper-bundle.min.js"></script>
