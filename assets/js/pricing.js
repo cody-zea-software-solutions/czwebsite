@@ -50,7 +50,12 @@ function submitVisitRequest() {
             // If everything is OK
             var responseT = xhr.responseText;
             if (responseT === 'success') {
-                Swal.fire('Success', 'Your request has been submitted!', 'success');
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Your request has been submitted!',
+                    icon: 'success',
+                    confirmButtonText: 'Close'
+                });
                 document.getElementById("visit-form").reset();
 
             } else {
@@ -413,7 +418,12 @@ function sendMessage() {
             // If everything is OK
             var responseT = xhr.responseText;
             if (responseT === 'success') {
-                Swal.fire('Success', 'Your request has been submitted!', 'success');
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Your request has been submitted!',
+                    icon: 'success',
+                    confirmButtonText: 'Done'
+                });
                  document.getElementById("contact-form").reset();
 
             } else {
@@ -483,7 +493,7 @@ function sendEBook(rbook) {
             if (responseT === 'success') {
                 Swal.fire({
                     text: "Your request was received successfully. Our team will reach out to you shortly.",
-                    confirmButtonText: 'OK',
+                    confirmButtonText: 'Okay, Thanks!',
                     customClass: {
                         confirmButton: 'th-btn style4',
                         htmlContainer: 'box-text2 text-success fw-semibold mt-3',
