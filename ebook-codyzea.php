@@ -171,7 +171,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <span class="display-6 text-black">Get the Power of a Fast Website
                         </span>
                     </div>
-                    <form>
+                    <form class="ebook-branding-form">
                         <div class="row">
                             <div class="col-12 col-lg-6 mt-3">
                                 <label for="fullName" class="form-label">First Name</label>

@@ -5,7 +5,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -315,58 +315,63 @@
                                     <span class="text-black fs-1">Request a Visit</span>
                                 </div>
                                 <br />
-                                <div class="row">
-                                    <!-- Full Name -->
-                                    <div class="col-12 col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="fullName" class="form-label">Full Name</label>
-                                            <input type="text" class="form-control text-black" id="fullName"
-                                                placeholder="Enter your full name" required>
+                                <form id="visit-form">
+                                    <div class="row">
+                                        <!-- Full Name -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="fullName" class="form-label">Full Name</label>
+                                                <input type="text" class="form-control text-black" id="fullName"
+                                                    placeholder="Enter your full name" required>
+                                            </div>
+                                        </div>
+
+                                        <!-- Email Address -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Email Address</label>
+                                                <input type="email" class="form-control text-black" id="email"
+                                                    placeholder="Your email address" required>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <!-- Email Address -->
-                                    <div class="col-12 col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="email" class="form-label">Email Address</label>
-                                            <input type="email" class="form-control text-black" id="email"
-                                                placeholder="Your email address" required>
+                                    <div class="row">
+                                        <!-- Phone Number -->
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Phone Number</label>
+                                                <input type="tel" class="form-control text-black" id="phone"
+                                                    placeholder="Your contact number" required>
+                                            </div>
+                                        </div>
+
+                                        <!-- Business Name -->
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="businessName" class="form-label">Business Name</label>
+                                                <input type="text" class="form-control text-black" id="businessName"
+                                                    placeholder="Your company name" required>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="row">
-                                    <!-- Phone Number -->
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="phone" class="form-label">Phone Number</label>
-                                            <input type="tel" class="form-control text-black" id="phone"
-                                                placeholder="Your contact number" required>
-                                        </div>
+                                    <!-- Message -->
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control text-black" id="message" rows="2"
+                                            placeholder="Any details or special requests?" required></textarea>
                                     </div>
 
-                                    <!-- Business Name -->
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="businessName" class="form-label">Business Name</label>
-                                            <input type="text" class="form-control text-black" id="businessName"
-                                                placeholder="Your company name" required>
-                                        </div>
+                                    <!-- Submit Button -->
+                                    <div class="btn-group">
+                                        <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12" id="th-btn"
+                                            onclick="submitVisitRequest();">Request a Visit<i
+                                                class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
-                                </div>
-                                <!-- Message -->
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control text-black" id="message" rows="2"
-                                        placeholder="Any details or special requests?" required></textarea>
-                                </div>
 
-                                <!-- Submit Button -->
-                                <div class="btn-group">
-                                    <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12" id="th-btn"
-                                        onclick="submitVisitRequest();">Request a Visit<i
-                                            class="fa-regular fa-arrow-right ms-2"></i></a>
-                                </div>
+
+                                </form>
+
                             </div>
                         </div>
 
@@ -392,65 +397,75 @@ Contact Area
                         <span class="display-5 text-black">Send us Your Requests
                         </span>
                     </div>
-                    <div class="row">
-                        <div class="col-12 mt-3">
-                            <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                            <input type="text" class="form-control text-black" id="fname">
-                        </div>
-                        <div class="col-12 mt-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                            <input type="email" class="form-control text-black" id="fmail">
-                        </div>
-                        <div class="col-12">
-                            <!-- Message -->
-                            <div class="mt-3">
-                                <label for="message" class="form-label">Project Requirements</label>
-                                <textarea class="form-control text-black" id="fmessage" rows="2"
-                                    placeholder="Any details or special requests?" required></textarea>
+                    <form id="contact-form">
+                        <div class="row">
+                            <div class="col-12 mt-3">
+                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                <input type="text" class="form-control text-black" id="fname">
                             </div>
-                        </div>
-                        <style>
-                            .features- {
-                                border: 2px solid #000;
-                                margin-right: 10px;
-                                margin-top: 10px;
-                                border-radius: 30px;
-                                cursor: pointer;
-                                color: #000;
-                                transition: all 0.3s ease;
-                            }
+                            <div class="col-12 mt-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                                <input type="email" class="form-control text-black" id="fmail">
+                            </div>
+                            <div class="col-12">
+                                <!-- Message -->
+                                <div class="mt-3">
+                                    <label for="message" class="form-label">Project Requirements</label>
+                                    <textarea class="form-control text-black" id="fmessage" rows="2"
+                                        placeholder="Any details or special requests?" required></textarea>
+                                </div>
+                            </div>
+                            <style>
+                                .features- {
+                                    border: 2px solid #000;
+                                    margin-right: 10px;
+                                    margin-top: 10px;
+                                    border-radius: 30px;
+                                    cursor: pointer;
+                                    color: #000;
+                                    transition: all 0.3s ease;
+                                }
 
-                            .features-.active {
-                                background-color: #000;
-                                color: #fff;
-                            }
-                        </style>
-                        <div class="col-12 mt-3">
-                            <div class="">
-                                <span class="form-label text-dark">Select a Service Type</span>
+                                .features-.active {
+                                    background-color: #000;
+                                    color: #fff;
+                                }
+                            </style>
+                            <div class="col-12 mt-3">
+                                <div class="">
+                                    <span class="form-label text-dark">Select a Service Type</span>
+                                </div>
+                                <div class="row d-flex justify-content-center mt-1 px-3">
+                                    <div class="col-auto features-" onclick="changeFeature(1)" id="cf_1">Custom Web
+                                        development</div>
+                                    <div class="col-auto features-" onclick="changeFeature(2)" id="cf_2">E commerce web
+                                        development</div>
+                                    <div class="col-auto features-" onclick="changeFeature(3)" id="cf_3">Digital
+                                        Marketing</div>
+                                    <div class="col-auto features-" onclick="changeFeature(4)" id="cf_4">Branding</div>
+                                    <div class="col-auto features-" onclick="changeFeature(5)" id="cf_5">App development
+                                    </div>
+                                    <div class="col-auto features- active" onclick="changeFeature(6)" id="cf_6">Other
+                                        Digital Services</div>
+                                </div>
                             </div>
-                            <div class="row d-flex justify-content-center mt-1 px-3">
-                                <div class="col-auto features-" onclick="changeFeature(1)" id="cf_1">Custom Web development</div>
-                                <div class="col-auto features-" onclick="changeFeature(2)" id="cf_2">E commerce web development</div>
-                                <div class="col-auto features-" onclick="changeFeature(3)" id="cf_3">Digital Marketing</div>
-                                <div class="col-auto features-" onclick="changeFeature(4)" id="cf_4">Branding</div>
-                                <div class="col-auto features-" onclick="changeFeature(5)" id="cf_5">App development</div>
-                                <div class="col-auto features- active" onclick="changeFeature(6)" id="cf_6">Other Digital Services</div>
+
+                            <div class="col-12 text-center mt-3">
+                                <p class="text-o h6 fw-normal">Get your quotation <span class="text-orange">within 24
+                                        hours</span> — fast and easy!</p>
                             </div>
                         </div>
 
-                        <div class="col-12 text-center mt-3">
-                            <p class="text-o h6 fw-normal">Get your quotation <span class="text-orange">within 24 hours</span> — fast and easy!</p>
+                        <div class="col-12 mt-3 d-flex justify-content-center">
+                            <!-- Submit Button -->
+                            <div class="btn-group col-10 text-center">
+                                <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
+                                    onclick="sendMessage();">Get a Quotation
+                                    <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 mt-3 d-flex justify-content-center">
-                        <!-- Submit Button -->
-                        <div class="btn-group col-10 text-center">
-                            <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black" id="thh-btn"
-                                onclick="sendMessage();">Get a Quotation
-                                <i class="fa-regular fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -518,7 +533,7 @@ Contact Area
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
     <script>
-        (function() {
+        (function () {
             const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
@@ -550,7 +565,7 @@ Contact Area
             }
 
             // Track tab changes
-            document.addEventListener("visibilitychange", function() {
+            document.addEventListener("visibilitychange", function () {
                 if (document.visibilityState === "visible") {
                     sendVisitData("User returned to tab");
                 } else {
@@ -587,7 +602,7 @@ Contact Area
                 });
             }
 
-            window.addEventListener("scroll", function() {
+            window.addEventListener("scroll", function () {
                 trackScroll();
                 trackSectionVisibility();
             });

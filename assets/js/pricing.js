@@ -51,6 +51,8 @@ function submitVisitRequest() {
             var responseT = xhr.responseText;
             if (responseT === 'success') {
                 Swal.fire('Success', 'Your request has been submitted!', 'success');
+                document.getElementById("visit-form").reset();
+
             } else {
                 Swal.fire(responseT);
             }
@@ -412,6 +414,8 @@ function sendMessage() {
             var responseT = xhr.responseText;
             if (responseT === 'success') {
                 Swal.fire('Success', 'Your request has been submitted!', 'success');
+                 document.getElementById("contact-form").reset();
+
             } else {
                 Swal.fire(responseT);
             }
@@ -485,6 +489,8 @@ function sendEBook(rbook) {
                         htmlContainer: 'box-text2 text-success fw-semibold mt-3',
                     }
                 })
+                document.getElementById("ebook-branding-form").reset();
+
             } else {
                 Swal.fire({
                     text: responseT,
