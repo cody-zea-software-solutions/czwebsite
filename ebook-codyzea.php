@@ -275,7 +275,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     All Js File
 ============================== -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src=" assets/js/pricing.js"></script>
+    <script src="forms.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
