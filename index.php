@@ -126,49 +126,37 @@ require_once "assets/process/database.php";
 Hero Area
 ==============================-->
     <!--============================== Hero Area ==============================-->
-    <div class="container-fluid p-0 m-0" data-track="Hero Section">
-        <div class="th-hero-wrapper hero-3 bg-color" id="hero">
-            <div class="container px-md-5 p-3">
-                <div class="row">
-                    <div class="col-12 col-lg-7">
-                        <div class="hero-style3">
-                            <!-- <span class="sub-title text-ani-style2 text-o">Codyzea - Your Digital Solutions Partner</span> -->
-                            <h6 class="hero-title text-ani-style3 text-o mt-4 header-text">Innovative Web, Software &
-                                App
-                                Solutions <div class="mt-3"></div> <span class="text-large"> Grow Your
-                                    Business Now</span></h6>
-                            <p class="hero-text text-black">At Codyzea, we craft customized digital solutions that
-                                empower
-                                your business. Whether it's a website, a mobile app, or software, we help you scale,
-                                optimize, and succeed in the digital world.</p>
-                            <div class="btn-group">
-                                <a href="pricing.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Get Started
-                                    Now<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
+    <div class="container-fluid p-0 m-0 bg-color p-lg-5 p-3 mt-5 mt-lg-0" data-track="Hero Section">
+        <div class="container space-extra-top pb-5" id="hero">
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center flex-column">
+                    <div class="col-12">
+                        <span class="display-3 text-black fw-bold">Hi, we’re Cody Zea – a digital agency that creates</span> <br/>
+                        <span class="display-6 text-black fw-medium">Stunning websites, brands, and apps to help your business thrive</span>
+
                     </div>
-                    <div class="col-12 d-md-none d-lg-block col-lg-5 d-flex justify-content-center align-items-center">
-                        <div class="hero-img tilt-active">
-                            <img src="assets/img/hero/hero_3_1.png" class="img-fluid" alt="Hero Image">
-                        </div>
+                    <br>
+                    <div class="btn-group col-12">
+                        <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Book Your Free Consultation<i class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
+
                 </div>
 
-                <div class="th-circle">
-                    <span class="circle style1"></span>
-                    <span class="circle style2"></span>
+                <div class="col-12 col-lg-6 col-md-5">
+                    <img src="assets/hero-new.webp" class="img-fluid w-100 d-none d-lg-block" alt="Hero Image">
+
                 </div>
-
-
             </div>
-            <div class="shape-mockup z-index-3 movingX d-none d-xl-block" data-top="26%" data-right="9%"><img
-                    src="assets/img/shape/shape-17.png" alt=""></div>
+
+            <div class="th-circle">
+                <span class="circle style1"></span>
+                <span class="circle style2"></span>
+            </div>
 
 
         </div>
-
     </div>
-
+    <!-- 
     <div class="container space-extra m-5 d-none d-lg-block">
         <div class="container position-absolute start-50 translate-middle space-extra" style="z-index: 5;">
             <div class="row d-flex justify-content-center">
@@ -205,7 +193,7 @@ Hero Area
 
             </div>
         </div>
-    </div>
+    </div> -->
     <!--======== / Hero Section ========-->
 
 
@@ -792,7 +780,8 @@ portfolio Area
             <!--======== / Work Section ========-->
         </div>
         <div class="col-12 col-lg-6">
-            <div class="overflow-hidden position-relative space-extra-top space-bottom" data-track="Our Works Section" id="portfolio-sec">
+            <div class="overflow-hidden position-relative space-extra-top space-bottom" data-track="Our Works Section"
+                id="portfolio-sec">
                 <div class="container">
                     <div class="title-area text-center mb-25">
                         <span class="sub-title sub-title6 style1 text-ani-style2">Our Portfolio</span>
