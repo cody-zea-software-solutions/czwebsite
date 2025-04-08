@@ -131,13 +131,13 @@ Hero Area
             <div class="row">
                 <div class="col-12 col-lg-6 mt-5 d-flex justify-content-center align-items-center flex-column">
                     <div class="col-12">
-                        <span class="display-3 text-black fw-bold">Hi, we’re Cody Zea – a digital agency that creates</span> <br/>
+                        <span class="display-3 text-black fw-bold">Hi, we’re <span class="text-orange"> Cody Zea </span>– a digital agency that creates</span> <br/>
                         <span class="display-6 text-black fw-medium">Stunning websites, brands, and apps to help your business thrive</span>
 
                     </div>
                     <br>
                     <div class="btn-group col-12">
-                        <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Book Your Free Consultation<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <a href="contact.php" class="th-btn blue-btn style1 th-icon th-radius fs-5">Book Your Free Call<i class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
 
                 </div>
@@ -152,8 +152,6 @@ Hero Area
                 <span class="circle style1"></span>
                 <span class="circle style2"></span>
             </div>
-
-
         </div>
     </div>
     <!-- 
@@ -1390,7 +1388,7 @@ Price Area
         ?>
     </section>
 
-    <section class="blog-area3 overflow-hidden space ani-c" id="blog-sec" data-track="News & Blog Section">
+    <!-- <section class="blog-area3 overflow-hidden space ani-c" id="blog-sec" data-track="News & Blog Section">
         <div class="container">
             <div class="row align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-lg-7">
@@ -1476,7 +1474,7 @@ Price Area
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <div class="container mb-3 ani-b" data-track="Contact Us hq Section">
         <div class="row">
