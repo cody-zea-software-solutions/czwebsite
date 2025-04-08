@@ -1,6 +1,47 @@
+
 <?php
 require_once "assets/process/database.php";
+
+// Capture the 'utm_term' parameter from the URL
+$keyword = isset($_GET['utm_term']) ? $_GET['utm_term'] : 'default keyword';
+
+// Default headline
+$headline = "Affordable Web Design Built for Business";
+
+// Change the headline based on the keyword
+if ($keyword == "web design auckland") {
+    $headline = "Creative Web Design Solutions for Auckland Businesses!";
+} elseif ($keyword == "website design auckland") {
+    $headline = "Expert Website Design for Auckland’s Growing Businesses!";
+} elseif ($keyword == "website design christchurch") {
+    $headline = "Top Website Design Services for Christchurch Businesses!";
+} elseif ($keyword == "web design chch") {
+    $headline = "Affordable Web Design for Christchurch Companies!";
+} elseif ($keyword == "digital agency auckland") {
+    $headline = "Your Trusted Digital Agency in Auckland for Business Growth!";
+} elseif ($keyword == "auckland web designers") {
+    $headline = "Professional Auckland Web Designers for Stunning Websites!";
+} elseif ($keyword == "website designers") {
+    $headline = "Expert Website Designers Crafting Unique Online Experiences!";
+} elseif ($keyword == "website design company") {
+    $headline = "The Website Design Company That Elevates Your Brand!";
+} elseif ($keyword == "website design wellington") {
+    $headline = "High-Quality Website Design Services for Wellington Businesses!";
+} elseif ($keyword == "web development near me") {
+    $headline = "Professional Web Development Near You — Affordable & Fast!";
+} elseif ($keyword == "web design new zealand") {
+    $headline = "Custom Web Design Solutions for New Zealand Businesses!";
+} elseif ($keyword == "website developers nz") {
+    $headline = "Skilled Website Developers Serving All of New Zealand!";
+} elseif ($keyword == "website developers auckland") {
+    $headline = "Experienced Auckland Website Developers for Your Business!";
+} else {
+    // Default headline will be shown if no keyword matches
+    $headline = "Affordable Web Design Built for Business";
+}
 ?>
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -67,7 +108,7 @@ require_once "assets/process/database.php";
             <div class="col-12 col-lg-6">
                 <div class="d-flex justify-content-center flex-column mt-5 p-2 p-lg-5">
                     <span class="fs-5 fw-medium text-orange">Hey, we’re Cody Zea — Experts in Stunning Web Design</span>
-                    <p class="display-4 fw-semibold text-black">Affordable Web Design Built for Business.
+                    <p class="display-4 fw-semibold text-black"><?php echo $headline ?>
                     </p>
                     <p class="text-black fs-5">
                         Your business, your call — let our expert developers build it for you, or start with your own
