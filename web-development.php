@@ -1,4 +1,3 @@
-
 <?php
 require_once "assets/process/database.php";
 
@@ -223,22 +222,22 @@ if ($keyword == "web design auckland") {
                     <form id="offer-form-ad">
                         <div class="row">
                             <div class="col-12 mt-3">
-                                <input type="text" class="form-control text-black" id="firstname"
+                                <input type="text" class="form-control text-black" id="ef2_firstname"
                                     placeholder="Enter your Name" required>
                             </div>
 
                             <div class="col-12 mt-3">
-                                <input type="email" class="form-control text-black" id="workEmail"
+                                <input type="email" class="form-control text-black" id="ef2_workEmail"
                                     placeholder="Enter your work email" required>
                             </div>
                             <div class="col-12 mt-3">
-                                <input type="tel" class="form-control text-black" id="mobileNumber"
+                                <input type="tel" class="form-control text-black" id="ef2_mobileNumber"
                                     placeholder="Enter your mobile number" required>
                             </div>
                             <div class="col-12">
                                 <!-- Message -->
                                 <div class="mt-3">
-                                    <textarea class="form-control text-black" id="fmessage" rows="2"
+                                    <textarea class="form-control text-black" id="ef2_fmessage" rows="2"
                                         placeholder="To help us understand better,enter a brief description about your project"
                                         required></textarea>
                                 </div>
@@ -248,7 +247,7 @@ if ($keyword == "web design auckland") {
                             <!-- Submit Button -->
                             <div class="btn-group col-12">
                                 <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange" type="submit"
-                                    id="thh-btn" onclick="sendEBook('branding_ebook');">Get A Free
+                                    id="ef2_thh-btn" onclick="freeConsultationEF2();">Get A Free
                                     Consultancy
 
 
@@ -280,7 +279,7 @@ if ($keyword == "web design auckland") {
             if ($result->num_rows > 0) {
                 $sol_name = $result->fetch_assoc();
 
-                ?>
+            ?>
 
                 <div class="container px-md-5">
                     <div id="monthly" class="wrapper-full mt-5">
@@ -293,17 +292,17 @@ if ($keyword == "web design auckland") {
 
                             for ($x = 1; $x <= $result->num_rows; $x++) {
                                 $data = $result->fetch_assoc();
-                                ?>
+                            ?>
 
                                 <div class="col-xl-4 col-md-8">
                                     <div class="price-box th-ani <?php if ($x == 2) {
-                                        echo "active orange-border";
-                                    } else {
-                                        echo "side-border";
-                                    } ?>">
+                                                                        echo "active orange-border";
+                                                                    } else {
+                                                                        echo "side-border";
+                                                                    } ?>">
                                         <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                            echo "popular";
-                                        } ?></span>
+                                                                                echo "popular";
+                                                                            } ?></span>
                                         <div class="text-center">
                                             <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
@@ -355,13 +354,13 @@ if ($keyword == "web design auckland") {
                                                         $n = $n + 1;
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                            ?>
+                                                    ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                        <?php
                                                         } else {
-                                                            ?>
+                                                        ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                    <?php
                                                         }
                                                     }
                                                     ?>
@@ -371,14 +370,14 @@ if ($keyword == "web design auckland") {
                                                         for ($y = 1; $y <= $part2; $y++) {
                                                             $fet = $results->fetch_assoc();
                                                             if ($fet['status'] == 1) {
-                                                                ?>
+                                                        ?>
                                                                 <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                                <?php
+                                                            <?php
                                                             } else {
-                                                                ?>
+                                                            ?>
                                                                 <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?>
                                                                 </li>
-                                                                <?php
+                                                        <?php
                                                             }
                                                         }
                                                         ?>
@@ -396,7 +395,7 @@ if ($keyword == "web design auckland") {
                                     </div>
                                 </div>
 
-                                <?php
+                            <?php
                             }
                             ?>
 
@@ -404,7 +403,7 @@ if ($keyword == "web design auckland") {
                     </div>
 
                 </div>
-                <?php
+            <?php
             }
             ?>
         </section>
@@ -758,17 +757,17 @@ if ($keyword == "web design auckland") {
                         <div class="row">
                             <div class="col-12 mt-3">
                                 <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                                <input type="text" class="form-control text-black" id="fname">
+                                <input type="text" class="form-control text-black" id="last_fname">
                             </div>
                             <div class="col-12 mt-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                                <input type="email" class="form-control text-black" id="fmail">
+                                <input type="email" class="form-control text-black" id="last_fmail">
                             </div>
                             <div class="col-12">
                                 <!-- Message -->
                                 <div class="mt-3">
                                     <label for="message" class="form-label">Project Requirements</label>
-                                    <textarea class="form-control text-black" id="fmessage" rows="2"
+                                    <textarea class="form-control text-black" id="last_fmessage" rows="2"
                                         placeholder="Any details or special requests?" required></textarea>
                                 </div>
                             </div>
@@ -817,8 +816,8 @@ if ($keyword == "web design auckland") {
                             <!-- Submit Button -->
                             <div class="btn-group col-10 text-center">
                                 <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black"
-                                    data-bs-target="#gfc" data-bs-toggle="modal" id="thh-btn"
-                                    onclick="sendMessage();">Get a Quotation
+                                    id="last_thh-btn"
+                                    onclick="sendMessage_2();">Get a Quotation
                                     <i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
@@ -840,8 +839,8 @@ if ($keyword == "web design auckland") {
                             <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
                                 <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                             </div>
-                            <span class="text-black fs-3 text-orange">Let’s Discuss Your Project — Free of Charge</span><br/><span
-                                    class="text-orange fs-5">Schedule a call and get expert insights tailored to your business. I'll contact you within 24 hours.
+                            <span class="text-black fs-3 text-orange">Let’s Discuss Your Project — Free of Charge</span><br /><span
+                                class="text-orange fs-5">Schedule a call and get expert insights tailored to your business. I'll contact you within 24 hours.
 
 
                             </span>
@@ -849,22 +848,22 @@ if ($keyword == "web design auckland") {
                             <form id="offer-form-ad">
                                 <div class="row">
                                     <div class="col-12 mt-3">
-                                        <input type="text" class="form-control text-black" id="firstname"
+                                        <input type="text" class="form-control text-black" id="c_firstname"
                                             placeholder="Enter your Name" required>
                                     </div>
 
                                     <div class="col-12 mt-3">
-                                        <input type="email" class="form-control text-black" id="workEmail"
+                                        <input type="email" class="form-control text-black" id="c_workEmail"
                                             placeholder="Enter your work email" required>
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <input type="tel" class="form-control text-black" id="mobileNumber"
+                                        <input type="text" class="form-control text-black" id="c_mobileNumber"
                                             placeholder="Enter your mobile number" required>
                                     </div>
                                     <div class="col-12">
                                         <!-- Message -->
                                         <div class="mt-3">
-                                            <textarea class="form-control text-black" id="fmessage" rows="2"
+                                            <textarea class="form-control text-black" id="c_fmessage" rows="2"
                                                 placeholder="To help us understand better,enter a brief description about your project"
                                                 required></textarea>
                                         </div>
@@ -874,7 +873,7 @@ if ($keyword == "web design auckland") {
                                     <!-- Submit Button -->
                                     <div class="btn-group col-12">
                                         <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
-                                            type="submit" id="thh-btn" onclick="sendEBook('branding_ebook');">Get A Free
+                                            type="submit" id="c_thh-btn" onclick="freeConsultation();">Get A Free
                                             Consultancy
 
 
@@ -904,8 +903,8 @@ if ($keyword == "web design auckland") {
                             <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
                                 <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                             </div>
-                            <span class="text-black fs-3 text-orange">Exclusive Offer: Business Website for <span class="text-orange">NZD 399</span></span><br/><span
-                                    class="text-black fs-5">Limited Availability — Only 13 Coupons Left to Claim This Special Price.
+                            <span class="text-black fs-3 text-orange">Exclusive Offer: Business Website for <span class="text-orange">NZD 399</span></span><br /><span
+                                class="text-black fs-5">Limited Availability — Only 13 Coupons Left to Claim This Special Price.
 
 
                             </span>
@@ -913,22 +912,22 @@ if ($keyword == "web design auckland") {
                             <form id="offer-form-ad">
                                 <div class="row">
                                     <div class="col-12 mt-3">
-                                        <input type="text" class="form-control text-black" id="firstname"
+                                        <input type="text" class="form-control text-black" id="ef1_firstname"
                                             placeholder="Enter your Name" required>
                                     </div>
 
                                     <div class="col-12 mt-3">
-                                        <input type="email" class="form-control text-black" id="workEmail"
+                                        <input type="email" class="form-control text-black" id="ef1_workEmail"
                                             placeholder="Enter your work email" required>
                                     </div>
                                     <div class="col-12 mt-3">
-                                        <input type="tel" class="form-control text-black" id="mobileNumber"
+                                        <input type="tel" class="form-control text-black" id="ef1_mobileNumber"
                                             placeholder="Enter your mobile number" required>
                                     </div>
                                     <div class="col-12">
                                         <!-- Message -->
                                         <div class="mt-3">
-                                            <textarea class="form-control text-black" id="fmessage" rows="2"
+                                            <textarea class="form-control text-black" id="ef1_fmessage" rows="2"
                                                 placeholder="To help us understand better,enter a brief description about your project"
                                                 required></textarea>
                                         </div>
@@ -938,7 +937,7 @@ if ($keyword == "web design auckland") {
                                     <!-- Submit Button -->
                                     <div class="btn-group col-12">
                                         <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
-                                            type="submit" id="thh-btn">Submit
+                                            type="submit" id="ef1_thh-btn" onclick="freeConsultationEF1();">Submit
 
                                             <i class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
@@ -957,8 +956,23 @@ if ($keyword == "web design auckland") {
     <?php require_once "footer.php"; ?>
 
 
+    <script>
+        let selectedFeature = "Other Digital Services";
+
+        function changeFeature(id) {
+            for (let x = 1; x <= 6; x++) {
+                const feature = document.getElementById('cf_' + x);
+                feature.classList.remove('active');
+            }
+            const active = document.getElementById('cf_' + id);
+            active.classList.add('active');
+            selectedFeature = active.innerText;
+        }
+    </script>
 
     <!--============================== All Js File ============================== -->
+
+    <script src="forms.js"></script>
     <script src="assets/js/pricing.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
@@ -1002,7 +1016,7 @@ if ($keyword == "web design auckland") {
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
     <script>
-        (function () {
+        (function() {
             const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
@@ -1034,7 +1048,7 @@ if ($keyword == "web design auckland") {
             }
 
             // Track tab changes
-            document.addEventListener("visibilitychange", function () {
+            document.addEventListener("visibilitychange", function() {
                 if (document.visibilityState === "visible") {
                     sendVisitData("User returned to tab");
                 } else {
@@ -1044,6 +1058,7 @@ if ($keyword == "web design auckland") {
 
             // Track scroll depth
             let lastScroll = 0;
+
             function trackScroll() {
                 const scrollTop = window.scrollY;
                 const windowHeight = window.innerHeight;
@@ -1051,7 +1066,9 @@ if ($keyword == "web design auckland") {
                 const scrollPercentage = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
 
                 if (Math.abs(scrollPercentage - lastScroll) >= 10) { // Log every 10% scroll change
-                    sendVisitData("User scrolled", { scrollPercentage: scrollPercentage });
+                    sendVisitData("User scrolled", {
+                        scrollPercentage: scrollPercentage
+                    });
                     lastScroll = scrollPercentage;
                 }
             }
@@ -1061,7 +1078,9 @@ if ($keyword == "web design auckland") {
                 document.querySelectorAll("[data-track]").forEach(section => {
                     const rect = section.getBoundingClientRect();
                     if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-                        sendVisitData("User viewed section", { section: section.getAttribute("data-track") });
+                        sendVisitData("User viewed section", {
+                            section: section.getAttribute("data-track")
+                        });
                     }
                 });
             }
@@ -1069,14 +1088,16 @@ if ($keyword == "web design auckland") {
             // Track button clicks
             function trackButtonClicks() {
                 document.querySelectorAll("[data-track-button]").forEach(button => {
-                    button.addEventListener("click", function () {
-                        sendVisitData("User clicked button", { button: button.getAttribute("data-track-button") });
+                    button.addEventListener("click", function() {
+                        sendVisitData("User clicked button", {
+                            button: button.getAttribute("data-track-button")
+                        });
                     });
                 });
             }
 
             // Initialize event listeners
-            window.addEventListener("scroll", function () {
+            window.addEventListener("scroll", function() {
                 trackScroll();
                 trackSectionVisibility();
             });

@@ -77,6 +77,178 @@ function submitVisitRequest() {
     xhr.send(formData);
 }
 
+
+function freeConsultation() {
+    // Get form values
+    var fullName = document.getElementById('c_firstname').value;
+    var email = document.getElementById('c_workEmail').value;
+    var phone = document.getElementById('c_mobileNumber').value;
+    var message = document.getElementById('c_fmessage').value;
+
+    // Validate required fields (basic validation)
+    if (!fullName || !email || !phone || !message) {
+        Swal.fire('Error', 'All fields are required!', 'error');
+        return;
+    }
+
+    // Prepare form data to send
+    var formData = new FormData();
+    formData.append('fullName', fullName);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('message', message);
+
+    // Get button element
+    var submitButton = document.getElementById('c_thh-btn');
+
+    // Change button text to show spinner
+    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+    // Create a new XMLHttpRequest object
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'free_consultation.php', true);
+
+    // Handle response
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            var responseT = xhr.responseText;
+            if (responseT === 'success') {
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Your request has been submitted!',
+                    icon: 'success',
+                    confirmButtonText: 'Awesome!'
+                });
+                document.getElementById('c_firstname').value = '';
+                document.getElementById('c_workEmail').value = '';
+                document.getElementById('c_mobileNumber').value = '';
+                document.getElementById('c_fmessage').value = '';
+            } else {
+                Swal.fire('Error', responseT, 'error');
+            }
+
+            // Reset button text
+            submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+        } else {
+            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+            submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+        }
+    };
+
+    // Send the request with form data
+    xhr.send(formData);
+}
+
+function freeConsultationEF1() {
+    // Get form values from ef1_*
+    var fullName = document.getElementById('ef1_firstname').value.trim();
+    var email = document.getElementById('ef1_workEmail').value.trim();
+    var phone = document.getElementById('ef1_mobileNumber').value.trim();
+    var message = document.getElementById('ef1_fmessage').value.trim();
+
+    // Validate required fields
+    if (!fullName || !email || !phone || !message) {
+        Swal.fire('Error', 'All fields are required!', 'error');
+        return;
+    }
+
+    // Prepare form data
+    var formData = new FormData();
+    formData.append('fullName', fullName);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('message', message);
+
+    // Get button
+    var submitButton = document.getElementById('ef1_thh-btn');
+    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+    // Send AJAX
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'free_consultation_2.php', true);
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            var response = xhr.responseText;
+            if (response === 'success') {
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Your request has been submitted!',
+                    icon: 'success',
+                    confirmButtonText: 'Ok, I got it'
+                });
+
+                document.getElementById('ef1_firstname').value = '';
+                document.getElementById('ef1_workEmail').value = '';
+                document.getElementById('ef1_mobileNumber').value = '';
+                document.getElementById('ef1_fmessage').value = '';
+            } else {
+                Swal.fire('Error', response, 'error');
+            }
+        } else {
+            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+        }
+
+        // Reset button text
+        submitButton.innerHTML = 'Submit <i class="fa-regular fa-arrow-right ms-2"></i>';
+    };
+    xhr.send(formData);
+}
+
+function freeConsultationEF2() {
+    // Get form values from ef1_*
+    var fullName = document.getElementById('ef2_firstname').value.trim();
+    var email = document.getElementById('ef2_workEmail').value.trim();
+    var phone = document.getElementById('ef2_mobileNumber').value.trim();
+    var message = document.getElementById('ef2_fmessage').value.trim();
+
+    // Validate required fields
+    if (!fullName || !email || !phone || !message) {
+        Swal.fire('Error', 'All fields are required!', 'error');
+        return;
+    }
+
+    // Prepare form data
+    var formData = new FormData();
+    formData.append('fullName', fullName);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('message', message);
+
+    // Get button
+    var submitButton = document.getElementById('ef2_thh-btn');
+    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+    // Send AJAX
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'free_consultation_3.php', true);
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            var response = xhr.responseText;
+            if (response === 'success') {
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Your request has been submitted!',
+                    icon: 'success',
+                    confirmButtonText: 'Close Now'
+                });
+
+                document.getElementById('ef2_firstname').value = '';
+                document.getElementById('ef2_workEmail').value = '';
+                document.getElementById('ef2_mobileNumber').value = '';
+                document.getElementById('ef2_fmessage').value = '';
+            } else {
+                Swal.fire('Error', response, 'error');
+            }
+        } else {
+            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+        }
+
+        // Reset button text
+        submitButton.innerHTML = 'Submit <i class="fa-regular fa-arrow-right ms-2"></i>';
+    };
+    xhr.send(formData);
+}
+
 function addToCart(id) {
 
     var xmlhttp = new XMLHttpRequest();  // Create a new XMLHttpRequest object
@@ -394,7 +566,7 @@ function sendMessage() {
         return;
     }
 
-    const msg = selectedFeature+' || '+message;
+    const msg = selectedFeature + ' || ' + message;
 
     // Prepare form data to send
     var formData = new FormData();
@@ -403,7 +575,7 @@ function sendMessage() {
     formData.append('message', msg);
 
     // Get button element
-    var submitButton = document.getElementById('thh-btn');
+    var submitButton = document.getElementById('last_thh-btn');
 
     // Change button text to show spinner
     submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
@@ -422,9 +594,72 @@ function sendMessage() {
                     title: 'Success',
                     text: 'Your request has been submitted!',
                     icon: 'success',
-                    confirmButtonText: 'Done'
+                    confirmButtonText: 'Great'
                 });
-                 document.getElementById("contact-form").reset();
+                document.getElementById("contact-form").reset();
+
+            } else {
+                Swal.fire(responseT);
+            }
+
+            // Reset the button text to original
+            submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
+        } else {
+            // Handle server error
+            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+
+            // Reset the button text to original
+            submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
+        }
+    };
+
+    // Send the request with form data
+    xhr.send(formData);
+}
+
+function sendMessage_2() {
+    // Get form values
+    const fullName = document.getElementById('last_fname').value;
+    const email = document.getElementById('last_fmail').value;
+    const message = document.getElementById('last_fmessage').value;
+
+    // Validate required fields (basic validation)
+    if (!fullName || !email || !message) {
+        Swal.fire('Error', 'All fields are required!', 'error');
+        return;
+    }
+
+    const msg = selectedFeature + ' || ' + message;
+
+    // Prepare form data to send
+    var formData = new FormData();
+    formData.append('fullName', fullName);
+    formData.append('email', email);
+    formData.append('message', msg);
+
+    // Get button element
+    var submitButton = document.getElementById('last_thh-btn');
+
+    // Change button text to show spinner
+    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+    // Create a new XMLHttpRequest object
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'sendmessage.php', true);
+
+    // Handle response
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            // If everything is OK
+            var responseT = xhr.responseText;
+            if (responseT === 'success') {
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Your request has been submitted!',
+                    icon: 'success',
+                    confirmButtonText: 'Great'
+                });
+                document.getElementById("contact-form").reset();
 
             } else {
                 Swal.fire(responseT);
