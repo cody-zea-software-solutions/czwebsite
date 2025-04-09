@@ -447,68 +447,7 @@ function sendMessage() {
     xhr.send(formData);
 }
 
-function sendMessage_2() {
-    // Get form values
-    const fullName = document.getElementById('last_fname').value;
-    const email = document.getElementById('last_fmail').value;
-    const message = document.getElementById('last_fmessage').value;
 
-    // Validate required fields (basic validation)
-    if (!fullName || !email || !message) {
-        Swal.fire('Error', 'All fields are required!', 'error');
-        return;
-    }
-
-    const msg = selectedFeature + ' || ' + message;
-
-    // Prepare form data to send
-    var formData = new FormData();
-    formData.append('fullName', fullName);
-    formData.append('email', email);
-    formData.append('message', msg);
-
-    // Get button element
-    var submitButton = document.getElementById('last_thh-btn');
-
-    // Change button text to show spinner
-    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
-
-    // Create a new XMLHttpRequest object
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'sendmessage.php', true);
-
-    // Handle response
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            // If everything is OK
-            var responseT = xhr.responseText;
-            if (responseT === 'success') {
-                Swal.fire({
-                    title: 'Success',
-                    text: 'Your request has been submitted!',
-                    icon: 'success',
-                    confirmButtonText: 'Great'
-                });
-                document.getElementById("contact-form").reset();
-
-            } else {
-                Swal.fire(responseT);
-            }
-
-            // Reset the button text to original
-            submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
-        } else {
-            // Handle server error
-            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
-
-            // Reset the button text to original
-            submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
-        }
-    };
-
-    // Send the request with form data
-    xhr.send(formData);
-}
 
 function sendEBook(rbook) {
     // Get form values

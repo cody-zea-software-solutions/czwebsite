@@ -47,7 +47,7 @@ if ($keyword == "web design auckland") {
 <head>
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
+        (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -313,7 +313,7 @@ if ($keyword == "web design auckland") {
             if ($result->num_rows > 0) {
                 $sol_name = $result->fetch_assoc();
 
-                ?>
+            ?>
 
                 <div class="container px-md-5">
                     <div id="monthly" class="wrapper-full mt-5">
@@ -326,17 +326,17 @@ if ($keyword == "web design auckland") {
 
                             for ($x = 1; $x <= $result->num_rows; $x++) {
                                 $data = $result->fetch_assoc();
-                                ?>
+                            ?>
 
                                 <div class="col-xl-4 col-md-8">
                                     <div class="price-box th-ani <?php if ($x == 2) {
-                                        echo "active orange-border";
-                                    } else {
-                                        echo "side-border";
-                                    } ?>">
+                                                                        echo "active orange-border";
+                                                                    } else {
+                                                                        echo "side-border";
+                                                                    } ?>">
                                         <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                            echo "popular";
-                                        } ?></span>
+                                                                                echo "popular";
+                                                                            } ?></span>
                                         <div class="text-center">
                                             <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
@@ -388,13 +388,13 @@ if ($keyword == "web design auckland") {
                                                         $n = $n + 1;
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                            ?>
+                                                    ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                        <?php
                                                         } else {
-                                                            ?>
+                                                        ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                    <?php
                                                         }
                                                     }
                                                     ?>
@@ -404,14 +404,14 @@ if ($keyword == "web design auckland") {
                                                         for ($y = 1; $y <= $part2; $y++) {
                                                             $fet = $results->fetch_assoc();
                                                             if ($fet['status'] == 1) {
-                                                                ?>
+                                                        ?>
                                                                 <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                                <?php
+                                                            <?php
                                                             } else {
-                                                                ?>
+                                                            ?>
                                                                 <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?>
                                                                 </li>
-                                                                <?php
+                                                        <?php
                                                             }
                                                         }
                                                         ?>
@@ -429,7 +429,7 @@ if ($keyword == "web design auckland") {
                                     </div>
                                 </div>
 
-                                <?php
+                            <?php
                             }
                             ?>
 
@@ -437,7 +437,7 @@ if ($keyword == "web design auckland") {
                     </div>
 
                 </div>
-                <?php
+            <?php
             }
             ?>
         </section>
@@ -850,7 +850,7 @@ if ($keyword == "web design auckland") {
                             <!-- Submit Button -->
                             <div class="btn-group col-10 text-center">
                                 <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black"
-                                    id="last_thh-btn" onclick="sendMessage();">Get a Quotation
+                                    id="last_thh-btn" onclick="sendMessage_2();">Get a Quotation
                                     <i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
@@ -1051,6 +1051,69 @@ if ($keyword == "web design auckland") {
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
     <script>
+        function sendMessage_2() {
+            // Get form values
+            const fullName = document.getElementById('last_fname').value;
+            const email = document.getElementById('last_fmail').value;
+            const message = document.getElementById('last_fmessage').value;
+
+            // Validate required fields (basic validation)
+            if (!fullName || !email || !message) {
+                Swal.fire('Error', 'All fields are required!', 'error');
+                return;
+            }
+
+            const msg = selectedFeature + ' || ' + message;
+
+            // Prepare form data to send
+            var formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('message', msg);
+
+            // Get button element
+            var submitButton = document.getElementById('last_thh-btn');
+
+            // Change button text to show spinner
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'sendmessage.php', true);
+
+            // Handle response
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    // If everything is OK
+                    var responseT = xhr.responseText;
+                    if (responseT === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Great'
+                        });
+                        document.getElementById("contact-form").reset();
+
+                    } else {
+                        Swal.fire(responseT);
+                    }
+
+                    // Reset the button text to original
+                    submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
+                } else {
+                    // Handle server error
+                    Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+
+                    // Reset the button text to original
+                    submitButton.innerHTML = 'Get in Touch<i class="fa-regular fa-arrow-right ms-2"></i>';
+                }
+            };
+
+            // Send the request with form data
+            xhr.send(formData);
+        }
+
         function freeConsultation() {
             // Get form values
             var fullName = document.getElementById('c_firstname').value;
@@ -1082,7 +1145,7 @@ if ($keyword == "web design auckland") {
             xhr.open('POST', 'free_consultation.php', true);
 
             // Handle response
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     var responseT = xhr.responseText;
                     if (responseT === 'success') {
@@ -1139,7 +1202,7 @@ if ($keyword == "web design auckland") {
             // Send AJAX
             var xhr = new XMLHttpRequest();
             xhr.open('POST', 'free_consultation_2.php', true);
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     var response = xhr.responseText;
                     if (response === 'success') {
@@ -1166,6 +1229,7 @@ if ($keyword == "web design auckland") {
             };
             xhr.send(formData);
         }
+
         function sendMessage() {
             // Get form values
             const fullName = document.getElementById('fname').value;
@@ -1197,7 +1261,7 @@ if ($keyword == "web design auckland") {
             xhr.open('POST', 'sendmessage.php', true);
 
             // Handle response
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     // If everything is OK
                     var responseT = xhr.responseText;
@@ -1228,6 +1292,7 @@ if ($keyword == "web design auckland") {
             // Send the request with form data
             xhr.send(formData);
         }
+
         function freeConsultationEF2() {
             // Get form values from ef1_*
             var fullName = document.getElementById('ef2_firstname').value.trim();
@@ -1255,7 +1320,7 @@ if ($keyword == "web design auckland") {
             // Send AJAX
             var xhr = new XMLHttpRequest();
             xhr.open('POST', 'free_consultation_3.php', true);
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     var response = xhr.responseText;
                     if (response === 'success') {
@@ -1283,7 +1348,9 @@ if ($keyword == "web design auckland") {
             xhr.send(formData);
         }
 
-        (function () {
+
+
+        (function() {
             const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
@@ -1315,7 +1382,7 @@ if ($keyword == "web design auckland") {
             }
 
             // Track tab changes
-            document.addEventListener("visibilitychange", function () {
+            document.addEventListener("visibilitychange", function() {
                 if (document.visibilityState === "visible") {
                     sendVisitData("User returned to tab");
                 } else {
@@ -1355,7 +1422,7 @@ if ($keyword == "web design auckland") {
             // Track button clicks
             function trackButtonClicks() {
                 document.querySelectorAll("[data-track-button]").forEach(button => {
-                    button.addEventListener("click", function () {
+                    button.addEventListener("click", function() {
                         sendVisitData("User clicked button", {
                             button: button.getAttribute("data-track-button")
                         });
@@ -1364,7 +1431,7 @@ if ($keyword == "web design auckland") {
             }
 
             // Initialize event listeners
-            window.addEventListener("scroll", function () {
+            window.addEventListener("scroll", function() {
                 trackScroll();
                 trackSectionVisibility();
             });
