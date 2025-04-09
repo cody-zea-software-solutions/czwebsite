@@ -168,7 +168,7 @@ if ($keyword == "web design auckland") {
                 </div>
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-start align-items-center flex-column">
-                <img src="assets/main-hero-web.webp" class="img-fluid w-75 d-none d-lg-block" alt="">
+                <img src="assets/main-hero-web.webp" class="img-fluid w-75 d-none d-lg-block mt-md-5" alt="">
 
             </div>
         </div>
