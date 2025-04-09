@@ -850,7 +850,7 @@ if ($keyword == "web design auckland") {
                             <!-- Submit Button -->
                             <div class="btn-group col-10 text-center">
                                 <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black"
-                                    id="last_thh-btn" onclick="sendMessage_2();">Get a Quotation
+                                    id="last_thh-btn" onclick="sendMessage();">Get a Quotation
                                     <i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
