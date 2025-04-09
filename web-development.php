@@ -47,13 +47,14 @@ if ($keyword == "web design auckland") {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Book A Call - Cody Zea</title>
+    <title><?php echo $headline ?></title>
     <meta name="author" content="Cody Zea Software Solutions">
     <meta name="description"
-        content="Book a call with Cody Zea Software Solutions to discuss expert Web Design, Branding, Digital Marketing, and App Development. Let's bring your ideas to life!">
+        content="Need a website? Get fast, secure, and affordable web development services in NZ from Cody Zea. Book a free call today and take your business online.">
     <meta name="keywords"
-        content="Book a Call, Cody Zea, Web Design Consultation, App Development, Branding Strategy, Digital Marketing Advice, Software Solutions, Business Growth, Free Consultation">
+        content="Web Development NZ, Website Developers Auckland, Affordable Web Design, Fast Websites NZ, Business Website NZ, Cody Zea Web Development, Custom Website Design, Web Developers Near Me, Auckland Web Design, Web Solutions NZ">
     <meta name="robots" content="INDEX,FOLLOW">
+
 
 
 
@@ -279,7 +280,7 @@ if ($keyword == "web design auckland") {
             if ($result->num_rows > 0) {
                 $sol_name = $result->fetch_assoc();
 
-            ?>
+                ?>
 
                 <div class="container px-md-5">
                     <div id="monthly" class="wrapper-full mt-5">
@@ -292,17 +293,17 @@ if ($keyword == "web design auckland") {
 
                             for ($x = 1; $x <= $result->num_rows; $x++) {
                                 $data = $result->fetch_assoc();
-                            ?>
+                                ?>
 
                                 <div class="col-xl-4 col-md-8">
                                     <div class="price-box th-ani <?php if ($x == 2) {
-                                                                        echo "active orange-border";
-                                                                    } else {
-                                                                        echo "side-border";
-                                                                    } ?>">
+                                        echo "active orange-border";
+                                    } else {
+                                        echo "side-border";
+                                    } ?>">
                                         <span class="offer-tag text-orange"><?php if ($x == 2) {
-                                                                                echo "popular";
-                                                                            } ?></span>
+                                            echo "popular";
+                                        } ?></span>
                                         <div class="text-center">
                                             <h3 class="box-title"><?php echo $data['pack_name']; ?></h3>
 
@@ -354,13 +355,13 @@ if ($keyword == "web design auckland") {
                                                         $n = $n + 1;
                                                         $fet = $results->fetch_assoc();
                                                         if ($fet['status'] == 1) {
-                                                    ?>
+                                                            ?>
                                                             <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                        <?php
+                                                            <?php
                                                         } else {
-                                                        ?>
+                                                            ?>
                                                             <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?></li>
-                                                    <?php
+                                                            <?php
                                                         }
                                                     }
                                                     ?>
@@ -370,14 +371,14 @@ if ($keyword == "web design auckland") {
                                                         for ($y = 1; $y <= $part2; $y++) {
                                                             $fet = $results->fetch_assoc();
                                                             if ($fet['status'] == 1) {
-                                                        ?>
+                                                                ?>
                                                                 <li class="f-list text-dark"><?php echo $fet['f_name']; ?></li>
-                                                            <?php
+                                                                <?php
                                                             } else {
-                                                            ?>
+                                                                ?>
                                                                 <li class="nf-list unavailable text-dark"><?php echo $fet['f_name']; ?>
                                                                 </li>
-                                                        <?php
+                                                                <?php
                                                             }
                                                         }
                                                         ?>
@@ -395,7 +396,7 @@ if ($keyword == "web design auckland") {
                                     </div>
                                 </div>
 
-                            <?php
+                                <?php
                             }
                             ?>
 
@@ -403,7 +404,7 @@ if ($keyword == "web design auckland") {
                     </div>
 
                 </div>
-            <?php
+                <?php
             }
             ?>
         </section>
@@ -816,8 +817,7 @@ if ($keyword == "web design auckland") {
                             <!-- Submit Button -->
                             <div class="btn-group col-10 text-center">
                                 <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black"
-                                    id="last_thh-btn"
-                                    onclick="sendMessage_2();">Get a Quotation
+                                    id="last_thh-btn" onclick="sendMessage_2();">Get a Quotation
                                     <i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
@@ -827,8 +827,8 @@ if ($keyword == "web design auckland") {
             </div>
         </div>
     </div>
-    <div class="modal fade" data-track="Get a Free Cosultancy Modal Loaded" style="z-index: 1000;" id="gfc" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" data-track="Get a Free Cosultancy Modal Loaded" style="z-index: 1000;" id="gfc"
+        tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content rounded-0 border-0">
 
@@ -839,8 +839,9 @@ if ($keyword == "web design auckland") {
                             <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
                                 <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                             </div>
-                            <span class="text-black fs-3 text-orange">Let’s Discuss Your Project — Free of Charge</span><br /><span
-                                class="text-orange fs-5">Schedule a call and get expert insights tailored to your business. I'll contact you within 24 hours.
+                            <span class="text-black fs-3 text-orange">Let’s Discuss Your Project — Free of
+                                Charge</span><br /><span class="text-orange fs-5">Schedule a call and get expert
+                                insights tailored to your business. I'll contact you within 24 hours.
 
 
                             </span>
@@ -891,8 +892,8 @@ if ($keyword == "web design auckland") {
             </div>
         </div>
     </div>
-    <div class="modal fade" data-track="NZD 399 Offer Filling Modal Loaded" style="z-index: 1000;" id="offer_modal" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" data-track="NZD 399 Offer Filling Modal Loaded" style="z-index: 1000;" id="offer_modal"
+        tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content rounded-0 border-0">
 
@@ -903,8 +904,9 @@ if ($keyword == "web design auckland") {
                             <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
                                 <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                             </div>
-                            <span class="text-black fs-3 text-orange">Exclusive Offer: Business Website for <span class="text-orange">NZD 399</span></span><br /><span
-                                class="text-black fs-5">Limited Availability — Only 13 Coupons Left to Claim This Special Price.
+                            <span class="text-black fs-3 text-orange">Exclusive Offer: Business Website for <span
+                                    class="text-orange">NZD 399</span></span><br /><span class="text-black fs-5">Limited
+                                Availability — Only 13 Coupons Left to Claim This Special Price.
 
 
                             </span>
@@ -1017,177 +1019,177 @@ if ($keyword == "web design auckland") {
     <script src="assets/js/main.js"></script>
     <script>
         function freeConsultation() {
-    // Get form values
-    var fullName = document.getElementById('c_firstname').value;
-    var email = document.getElementById('c_workEmail').value;
-    var phone = document.getElementById('c_mobileNumber').value;
-    var message = document.getElementById('c_fmessage').value;
+            // Get form values
+            var fullName = document.getElementById('c_firstname').value;
+            var email = document.getElementById('c_workEmail').value;
+            var phone = document.getElementById('c_mobileNumber').value;
+            var message = document.getElementById('c_fmessage').value;
 
-    // Validate required fields (basic validation)
-    if (!fullName || !email || !phone || !message) {
-        Swal.fire('Error', 'All fields are required!', 'error');
-        return;
-    }
-
-    // Prepare form data to send
-    var formData = new FormData();
-    formData.append('fullName', fullName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('message', message);
-
-    // Get button element
-    var submitButton = document.getElementById('c_thh-btn');
-
-    // Change button text to show spinner
-    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
-
-    // Create a new XMLHttpRequest object
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'free_consultation.php', true);
-
-    // Handle response
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            var responseT = xhr.responseText;
-            if (responseT === 'success') {
-                Swal.fire({
-                    title: 'Success',
-                    text: 'Your request has been submitted!',
-                    icon: 'success',
-                    confirmButtonText: 'Awesome!'
-                });
-                document.getElementById('c_firstname').value = '';
-                document.getElementById('c_workEmail').value = '';
-                document.getElementById('c_mobileNumber').value = '';
-                document.getElementById('c_fmessage').value = '';
-            } else {
-                Swal.fire('Error', responseT, 'error');
+            // Validate required fields (basic validation)
+            if (!fullName || !email || !phone || !message) {
+                Swal.fire('Error', 'All fields are required!', 'error');
+                return;
             }
 
-            // Reset button text
-            submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
-        } else {
-            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
-            submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+            // Prepare form data to send
+            var formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('message', message);
+
+            // Get button element
+            var submitButton = document.getElementById('c_thh-btn');
+
+            // Change button text to show spinner
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'free_consultation.php', true);
+
+            // Handle response
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var responseT = xhr.responseText;
+                    if (responseT === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Awesome!'
+                        });
+                        document.getElementById('c_firstname').value = '';
+                        document.getElementById('c_workEmail').value = '';
+                        document.getElementById('c_mobileNumber').value = '';
+                        document.getElementById('c_fmessage').value = '';
+                    } else {
+                        Swal.fire('Error', responseT, 'error');
+                    }
+
+                    // Reset button text
+                    submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+                } else {
+                    Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+                    submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+                }
+            };
+
+            // Send the request with form data
+            xhr.send(formData);
         }
-    };
 
-    // Send the request with form data
-    xhr.send(formData);
-}
+        function freeConsultationEF1() {
+            // Get form values from ef1_*
+            var fullName = document.getElementById('ef1_firstname').value.trim();
+            var email = document.getElementById('ef1_workEmail').value.trim();
+            var phone = document.getElementById('ef1_mobileNumber').value.trim();
+            var message = document.getElementById('ef1_fmessage').value.trim();
 
-function freeConsultationEF1() {
-    // Get form values from ef1_*
-    var fullName = document.getElementById('ef1_firstname').value.trim();
-    var email = document.getElementById('ef1_workEmail').value.trim();
-    var phone = document.getElementById('ef1_mobileNumber').value.trim();
-    var message = document.getElementById('ef1_fmessage').value.trim();
-
-    // Validate required fields
-    if (!fullName || !email || !phone || !message) {
-        Swal.fire('Error', 'All fields are required!', 'error');
-        return;
-    }
-
-    // Prepare form data
-    var formData = new FormData();
-    formData.append('fullName', fullName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('message', message);
-
-    // Get button
-    var submitButton = document.getElementById('ef1_thh-btn');
-    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
-
-    // Send AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'free_consultation_2.php', true);
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            var response = xhr.responseText;
-            if (response === 'success') {
-                Swal.fire({
-                    title: 'Success',
-                    text: 'Your request has been submitted!',
-                    icon: 'success',
-                    confirmButtonText: 'Ok, I got it'
-                });
-
-                document.getElementById('ef1_firstname').value = '';
-                document.getElementById('ef1_workEmail').value = '';
-                document.getElementById('ef1_mobileNumber').value = '';
-                document.getElementById('ef1_fmessage').value = '';
-            } else {
-                Swal.fire('Error', response, 'error');
+            // Validate required fields
+            if (!fullName || !email || !phone || !message) {
+                Swal.fire('Error', 'All fields are required!', 'error');
+                return;
             }
-        } else {
-            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+
+            // Prepare form data
+            var formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('message', message);
+
+            // Get button
+            var submitButton = document.getElementById('ef1_thh-btn');
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            // Send AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'free_consultation_2.php', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var response = xhr.responseText;
+                    if (response === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Ok, I got it'
+                        });
+
+                        document.getElementById('ef1_firstname').value = '';
+                        document.getElementById('ef1_workEmail').value = '';
+                        document.getElementById('ef1_mobileNumber').value = '';
+                        document.getElementById('ef1_fmessage').value = '';
+                    } else {
+                        Swal.fire('Error', response, 'error');
+                    }
+                } else {
+                    Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+                }
+
+                // Reset button text
+                submitButton.innerHTML = 'Submit <i class="fa-regular fa-arrow-right ms-2"></i>';
+            };
+            xhr.send(formData);
         }
 
-        // Reset button text
-        submitButton.innerHTML = 'Submit <i class="fa-regular fa-arrow-right ms-2"></i>';
-    };
-    xhr.send(formData);
-}
+        function freeConsultationEF2() {
+            // Get form values from ef1_*
+            var fullName = document.getElementById('ef2_firstname').value.trim();
+            var email = document.getElementById('ef2_workEmail').value.trim();
+            var phone = document.getElementById('ef2_mobileNumber').value.trim();
+            var message = document.getElementById('ef2_fmessage').value.trim();
 
-function freeConsultationEF2() {
-    // Get form values from ef1_*
-    var fullName = document.getElementById('ef2_firstname').value.trim();
-    var email = document.getElementById('ef2_workEmail').value.trim();
-    var phone = document.getElementById('ef2_mobileNumber').value.trim();
-    var message = document.getElementById('ef2_fmessage').value.trim();
-
-    // Validate required fields
-    if (!fullName || !email || !phone || !message) {
-        Swal.fire('Error', 'All fields are required!', 'error');
-        return;
-    }
-
-    // Prepare form data
-    var formData = new FormData();
-    formData.append('fullName', fullName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('message', message);
-
-    // Get button
-    var submitButton = document.getElementById('ef2_thh-btn');
-    submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
-
-    // Send AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'free_consultation_3.php', true);
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            var response = xhr.responseText;
-            if (response === 'success') {
-                Swal.fire({
-                    title: 'Success',
-                    text: 'Your request has been submitted!',
-                    icon: 'success',
-                    confirmButtonText: 'Close Now'
-                });
-
-                document.getElementById('ef2_firstname').value = '';
-                document.getElementById('ef2_workEmail').value = '';
-                document.getElementById('ef2_mobileNumber').value = '';
-                document.getElementById('ef2_fmessage').value = '';
-            } else {
-                Swal.fire('Error', response, 'error');
+            // Validate required fields
+            if (!fullName || !email || !phone || !message) {
+                Swal.fire('Error', 'All fields are required!', 'error');
+                return;
             }
-        } else {
-            Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+
+            // Prepare form data
+            var formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('message', message);
+
+            // Get button
+            var submitButton = document.getElementById('ef2_thh-btn');
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            // Send AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'free_consultation_3.php', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var response = xhr.responseText;
+                    if (response === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Close Now'
+                        });
+
+                        document.getElementById('ef2_firstname').value = '';
+                        document.getElementById('ef2_workEmail').value = '';
+                        document.getElementById('ef2_mobileNumber').value = '';
+                        document.getElementById('ef2_fmessage').value = '';
+                    } else {
+                        Swal.fire('Error', response, 'error');
+                    }
+                } else {
+                    Swal.fire('Error', 'Something went wrong. Please try again later.', 'error');
+                }
+
+                // Reset button text
+                submitButton.innerHTML = 'Submit <i class="fa-regular fa-arrow-right ms-2"></i>';
+            };
+            xhr.send(formData);
         }
 
-        // Reset button text
-        submitButton.innerHTML = 'Submit <i class="fa-regular fa-arrow-right ms-2"></i>';
-    };
-    xhr.send(formData);
-}
-
-        (function() {
+        (function () {
             const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
@@ -1219,7 +1221,7 @@ function freeConsultationEF2() {
             }
 
             // Track tab changes
-            document.addEventListener("visibilitychange", function() {
+            document.addEventListener("visibilitychange", function () {
                 if (document.visibilityState === "visible") {
                     sendVisitData("User returned to tab");
                 } else {
@@ -1259,7 +1261,7 @@ function freeConsultationEF2() {
             // Track button clicks
             function trackButtonClicks() {
                 document.querySelectorAll("[data-track-button]").forEach(button => {
-                    button.addEventListener("click", function() {
+                    button.addEventListener("click", function () {
                         sendVisitData("User clicked button", {
                             button: button.getAttribute("data-track-button")
                         });
@@ -1268,7 +1270,7 @@ function freeConsultationEF2() {
             }
 
             // Initialize event listeners
-            window.addEventListener("scroll", function() {
+            window.addEventListener("scroll", function () {
                 trackScroll();
                 trackSectionVisibility();
             });
