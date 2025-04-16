@@ -8,38 +8,27 @@ $keyword = isset($_GET['utm_term']) ? $_GET['utm_term'] : 'default keyword';
 $headline = "Affordable Web Design Built for Business";
 
 // Change the headline based on the keyword
-if ($keyword == "web design auckland") {
-    $headline = "Creative Web Design Solutions for Auckland Businesses!";
-} elseif ($keyword == "website design auckland") {
-    $headline = "Expert Website Design for Auckland’s Growing Businesses!";
-} elseif ($keyword == "website design christchurch") {
-    $headline = "Top Website Design Services for Christchurch Businesses!";
-} elseif ($keyword == "web design chch") {
-    $headline = "Affordable Web Design for Christchurch Companies!";
-} elseif ($keyword == "digital agency auckland") {
-    $headline = "Your Trusted Digital Agency in Auckland for Business Growth!";
-} elseif ($keyword == "auckland web designers") {
-    $headline = "Professional Auckland Web Designers for Stunning Websites!";
-} elseif ($keyword == "website designers") {
-    $headline = "Expert Website Designers Crafting Unique Online Experiences!";
-} elseif ($keyword == "website design company") {
-    $headline = "The Website Design Company That Elevates Your Brand!";
-} elseif ($keyword == "website design wellington") {
-    $headline = "High-Quality Website Design Services for Wellington Businesses!";
-} elseif ($keyword == "web development near me") {
-    $headline = "Professional Web Development Near You — Affordable & Fast!";
-} elseif ($keyword == "web design new zealand") {
-    $headline = "Custom Web Design Solutions for New Zealand Businesses!";
-} elseif ($keyword == "website developers nz") {
-    $headline = "Skilled Website Developers Serving All of New Zealand!";
-} elseif ($keyword == "website developers auckland") {
-    $headline = "Experienced Auckland Website Developers for Your Business!";
+if ($keyword == "website design sydney") {
+    $headline = "Creative Website Design Solutions for Sydney Businesses!";
+} elseif ($keyword == "website design melbourne") {
+    $headline = "Expert Website Design for Melbourne’s Growing Businesses!";
+} elseif ($keyword == "web design company sydney") {
+    $headline = "Leading Web Design Company in Sydney for Exceptional Results!";
+} elseif ($keyword == "website developers brisbane") {
+    $headline = "Experienced Website Developers for Brisbane Businesses!";
+} elseif ($keyword == "web design perth") {
+    $headline = "Affordable Web Design Services for Perth Businesses!";
+} elseif ($keyword == "web developers melbourne") {
+    $headline = "Top Melbourne Web Developers Creating Digital Success!";
+} elseif ($keyword == "website design brisbane") {
+    $headline = "Custom Website Design for Brisbane-Based Companies!";
+} elseif ($keyword == "web developers near me") {
+    $headline = "Local Web Developers Near You — Fast, Reliable, Affordable!";
 } else {
     // Default headline will be shown if no keyword matches
     $headline = "Affordable Web Design Built for Business";
 }
 ?>
-
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -241,7 +230,7 @@ if ($keyword == "web design auckland") {
                         <div class="btn-group mt-3 d-flex justify-content-center">
                             <a data-bs-target="#offer_modal" data-bs-toggle="modal"
                                 class="th-btn blue-btn style1 th-icon th-radius fs-5 bg-black col-12 col-lg-8">Let’s
-                                Build My Website for NZD 399 <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                Build My Website for $399 <i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
 
@@ -250,7 +239,7 @@ if ($keyword == "web design auckland") {
             <div class="col-12 col-lg-5 space-extra d-flex justify-content-center">
                 <div class="col-11 bg-white rounded-20 border border-2 black-border p-4 p-lg-5">
                     <span class="text-black fs-3 text-orange">Fill out the form below to claim your <span
-                            class="text-orange">NZD 399 </span> business website
+                            class="text-orange">$399 </span> business website
                         plan today.
                     </span>
                     <form id="offer-form-ad">
@@ -925,7 +914,8 @@ if ($keyword == "web design auckland") {
             </div>
         </div>
     </div>
-    <div class="modal fade" data-track="NZD 399 Offer Filling Modal Loaded" style="z-index: 1000;" id="offer_modal"
+    <div class="modal fade" data-track="
+     399 Offer Filling Modal Loaded" style="z-index: 1000;" id="offer_modal"
         tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content rounded-0 border-0">
@@ -938,7 +928,7 @@ if ($keyword == "web design auckland") {
                                 <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                             </div>
                             <span class="text-black fs-3 text-orange">Exclusive Offer: Business Website for <span
-                                    class="text-orange">NZD 399</span></span><br /><span class="text-black fs-5">Limited
+                                    class="text-orange">$399</span></span><br /><span class="text-black fs-5">Limited
                                 Availability — Only 13 Coupons Left to Claim This Special Price.
 
 
