@@ -386,6 +386,35 @@
         </div>
     </div>
 
+    <div class="container px-5 mt-5 pt-5">
+
+        <div class="row pt-5">
+            <div class="col-12">
+                <div class="title-area mb-40 text-center">
+                    <span class="sub-title sub-title4 style1 text-ani-style2 text-orange">Real Voices, Real Impact</span>
+                    <h1 class="sec-title text-ani-style3 fw-bold">What People Say About <br> <span class="text-orange">Cody Clip</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-11 shadow border p-5" style="border-radius: 20px;">
+                <div class="row py-md-5">
+                    <div class="col-12 col-md-3 col-lg-4 d-flex justify-content-center align-items-center">
+                        <img src="assets/cody/channels4_profile.jpg" style="border-radius: 20px !important;" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-md-9 col-lg-8 mt-5 mt-md-0">
+                        <div class="fw-bold h3 fst-italic text-md-end">Dam Sathara Wewurukannala TV.</div>
+                        <div class="mt-4 h6 fst-italic">
+                        <span class="h6">"&nbsp;&nbsp;&nbsp;</span>Implementing Cody Clip transformed our entire media workflow. With its intuitive metadata management, seamless integration with our editing and playout systems, and powerful AI-driven capabilities, Cody Clip significantly enhanced our operational efficiency and content discoverability. The proactive support and continuous updates ensure we always stay ahead in the rapidly evolving broadcast landscape. Highly recommended for any media organization aiming for excellence.
+                        <span class="h6">&nbsp;&nbsp;&nbsp;"</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <div class="container px-5 mt-5 pt-5">
         <div class="row mt-5">
