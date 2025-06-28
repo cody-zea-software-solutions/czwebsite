@@ -49,7 +49,7 @@ if ($keyword == "web design auckland") {
 <head>
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
+        (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -175,7 +175,7 @@ if ($keyword == "web design auckland") {
                 </div>
             </div>
             <div class="col-12 col-lg-5 space-extra d-flex justify-content-center">
-            <div class="col-11 bg-white rounded-20 border border-2 black-border p-4 p-lg-5">
+                <div class="col-11 bg-white rounded-20 border border-2 black-border p-4 p-lg-5">
                     <span class="text-black fs-3 text-orange">Fill out the form below to claim your <span
                             class="text-orange"> USD 9,999 </span>Lifetime
                         Custom ERP Plan.
@@ -575,194 +575,188 @@ if ($keyword == "web design auckland") {
             </div>
             <div class="col-12 col-lg-5 space-extra d-flex justify-content-center">
                 <div class="col-11 bg-white rounded-20 border border-2 black-border p-4 p-lg-5">
-                    <span class="text-black fs-3 text-orange">Fill out the form below to claim your <span
-                            class="text-orange"> USD 9,999 </span>Lifetime
-                        Custom ERP Plan.
+                    <span class="text-black fs-3 text-orange">
+                        Fill out the form below to claim your <span class="text-orange"> USD 9,999 </span>Lifetime Custom ERP Plan.
                     </span>
-                    <form id="offer-form-ad">
+
+                    <form id="form1">
                         <div class="row">
+                            <!-- Name -->
                             <div class="col-12 mt-3">
-                                <input type="text" class="form-control text-black" id="ef2_firstname"
-                                    placeholder="Enter your Name" required>
+                                <input type="text" class="form-control text-black" id="form1_name" placeholder="Enter your Name" required>
                             </div>
 
+                            <!-- Email -->
                             <div class="col-12 mt-3">
-                                <input type="email" class="form-control text-black" id="ef2_workEmail"
-                                    placeholder="Enter your work email" required>
+                                <input type="email" class="form-control text-black" id="form1_email" placeholder="Enter your work email" required>
                             </div>
 
+                            <!-- Phone -->
                             <div class="col-12 mt-3">
-                                <input type="tel" class="form-control text-black" id="ef2_mobileNumber"
-                                    placeholder="Enter your mobile number" required>
+                                <input type="tel" class="form-control text-black" id="form1_phone" placeholder="Enter your mobile number" required>
                             </div>
 
-                            <!-- ✅ New Business Name Field -->
+                            <!-- Business Name -->
                             <div class="col-12 mt-3">
-                                <input type="text" class="form-control text-black" id="ef2_businessName"
-                                    placeholder="Enter your Business Name" required>
+                                <input type="text" class="form-control text-black" id="form1_bn" placeholder="Enter your Business Name" required>
                             </div>
 
-                            <div class="col-12">
-                                <!-- Message -->
-                                <div class="mt-3">
-                                    <textarea class="form-control text-black" id="ef2_fmessage" rows="2"
-                                        placeholder="Tell us what modules or processes you’d like to manage with ERP"
-                                        required></textarea>
-                                </div>
+                            <!-- Message -->
+                            <div class="col-12 mt-3">
+                                <textarea class="form-control text-black" id="form1_message" rows="2"
+                                    placeholder="Tell us what modules or processes you’d like to manage with ERP" required></textarea>
                             </div>
-                        </div>
 
-                        <div class="col-12 mt-3 d-flex justify-content-center">
-                            <!-- Submit Button -->
-                            <div class="btn-group col-12">
-                                <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange" type="submit"
-                                    id="ef2_thh-btn" onclick="freeConsultationEF2();">
+                            <!-- Submit -->
+                            <div class="col-12 mt-3 d-flex justify-content-center">
+                                <button type="button" class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
+                                    id="form1_btn" onclick="submitForm1();">
                                     Get A Free Consultancy
                                     <i class="fa-regular fa-arrow-right ms-2"></i>
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </form>
-
                 </div>
+
             </div>
         </div>
     </div>
-   
 
 
-  
+
+
     <section class="overflow-hidden space-bottom mt-5 ani-c" id="testi-sec" data-track="Testimonials Section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-6">
-                <div class="title-area mb-20 text-center">
-                    <span class="sub-title sub-title7 text-ani-style2">Testimonials</span>
-                    <h2 class="sec-title text-ani-style3">What our ERP clients say?</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="title-area mb-20 text-center">
+                        <span class="sub-title sub-title7 text-ani-style2">Testimonials</span>
+                        <h2 class="sec-title text-ani-style3">What our ERP clients say?</h2>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid p-0 space">
-        <div class="slider-area testi-box-area">
-            <div class="swiper th-slider has-shadow testiSlider3" id="testiSlide3"
-                data-slider-options='{"centeredSlides":true,"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"3"}}}'>
-                <div class="swiper-wrapper">
+        <div class="container-fluid p-0 space">
+            <div class="slider-area testi-box-area">
+                <div class="swiper th-slider has-shadow testiSlider3" id="testiSlide3"
+                    data-slider-options='{"centeredSlides":true,"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"3"}}}'>
+                    <div class="swiper-wrapper">
 
-                    <!-- Testimonial 1 -->
-                    <div class="swiper-slide">
-                        <div class="testi-box th-ani">
-                            <p class="box-text">Cody Zea delivered an ERP system that completely transformed how we run our operations. From managing HR to tracking inventory and generating reports, everything is now streamlined and centralized. Highly reliable and easy to use!</p>
-                            <div class="box-wrapper">
-                                <div class="box-profile">
-                                    <div class="box-author">
-                                        <img src="assets/clients/ceynap.png" alt="Avatar">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">Cody Zea delivered an ERP system that completely transformed how we run our operations. From managing HR to tracking inventory and generating reports, everything is now streamlined and centralized. Highly reliable and easy to use!</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/clients/ceynap.png" alt="Avatar">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Ceynap, Auckland</h3>
+                                            <span class="box-desig">Coco Coir NZ</span>
+                                        </div>
                                     </div>
-                                    <div class="box-info">
-                                        <h3 class="box-title">Ceynap, Auckland</h3>
-                                        <span class="box-desig">Coco Coir NZ</span>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                                     </div>
                                 </div>
-                                <div class="box-review">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">Our franchise business needed a custom ERP to manage multiple branches, staff roles, and stock. Cody Zea provided a tailored solution that exceeded expectations. The system is powerful, user-friendly, and fully scalable.</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/clients/boozebites.png" alt="Avatar">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Booze Bites, Auckland</h3>
+                                            <span class="box-desig">Food & Drinks</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">We implemented Cody Zea’s ERP system to manage student records, attendance, and finance. It was custom-built to reflect our institute’s structure and is now an essential part of our operations. Brilliant support and execution!</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/clients/pradeepasv.png" alt="Avatar">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Pradeepa Sangeeth Institute</h3>
+                                            <span class="box-desig">Founder</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">We needed a robust ERP to manage our growing supply chain. Cody Zea delivered a custom solution with real-time dashboards, procurement workflows, and role-based access. It's now the backbone of our operations.</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/mini-ccw.svg" alt="Avatar">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Ceylon Coir World</h3>
+                                            <span class="box-desig">Founder</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="testi-box th-ani">
+                                <p class="box-text">Managing our tour business used to be a challenge until Cody Zea deployed a travel-specific ERP system for us. It handles bookings, customer info, payments, and even reporting. It’s efficient, mobile-ready, and saves us hours daily.</p>
+                                <div class="box-wrapper">
+                                    <div class="box-profile">
+                                        <div class="box-author">
+                                            <img src="assets/cl-mini.svg" alt="Avatar">
+                                        </div>
+                                        <div class="box-info">
+                                            <h3 class="box-title">Cheers Travels</h3>
+                                            <span class="box-desig">Founder</span>
+                                        </div>
+                                    </div>
+                                    <div class="box-review">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 2 -->
-                    <div class="swiper-slide">
-                        <div class="testi-box th-ani">
-                            <p class="box-text">Our franchise business needed a custom ERP to manage multiple branches, staff roles, and stock. Cody Zea provided a tailored solution that exceeded expectations. The system is powerful, user-friendly, and fully scalable.</p>
-                            <div class="box-wrapper">
-                                <div class="box-profile">
-                                    <div class="box-author">
-                                        <img src="assets/clients/boozebites.png" alt="Avatar">
-                                    </div>
-                                    <div class="box-info">
-                                        <h3 class="box-title">Booze Bites, Auckland</h3>
-                                        <span class="box-desig">Food & Drinks</span>
-                                    </div>
-                                </div>
-                                <div class="box-review">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="swiper-slide">
-                        <div class="testi-box th-ani">
-                            <p class="box-text">We implemented Cody Zea’s ERP system to manage student records, attendance, and finance. It was custom-built to reflect our institute’s structure and is now an essential part of our operations. Brilliant support and execution!</p>
-                            <div class="box-wrapper">
-                                <div class="box-profile">
-                                    <div class="box-author">
-                                        <img src="assets/clients/pradeepasv.png" alt="Avatar">
-                                    </div>
-                                    <div class="box-info">
-                                        <h3 class="box-title">Pradeepa Sangeeth Institute</h3>
-                                        <span class="box-desig">Founder</span>
-                                    </div>
-                                </div>
-                                <div class="box-review">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 4 -->
-                    <div class="swiper-slide">
-                        <div class="testi-box th-ani">
-                            <p class="box-text">We needed a robust ERP to manage our growing supply chain. Cody Zea delivered a custom solution with real-time dashboards, procurement workflows, and role-based access. It's now the backbone of our operations.</p>
-                            <div class="box-wrapper">
-                                <div class="box-profile">
-                                    <div class="box-author">
-                                        <img src="assets/mini-ccw.svg" alt="Avatar">
-                                    </div>
-                                    <div class="box-info">
-                                        <h3 class="box-title">Ceylon Coir World</h3>
-                                        <span class="box-desig">Founder</span>
-                                    </div>
-                                </div>
-                                <div class="box-review">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 5 -->
-                    <div class="swiper-slide">
-                        <div class="testi-box th-ani">
-                            <p class="box-text">Managing our tour business used to be a challenge until Cody Zea deployed a travel-specific ERP system for us. It handles bookings, customer info, payments, and even reporting. It’s efficient, mobile-ready, and saves us hours daily.</p>
-                            <div class="box-wrapper">
-                                <div class="box-profile">
-                                    <div class="box-author">
-                                        <img src="assets/cl-mini.svg" alt="Avatar">
-                                    </div>
-                                    <div class="box-info">
-                                        <h3 class="box-title">Cheers Travels</h3>
-                                        <span class="box-desig">Founder</span>
-                                    </div>
-                                </div>
-                                <div class="box-review">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="slider-pagination"></div>
+                    <button data-slider-prev="#testiSlide3" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button>
+                    <button data-slider-next="#testiSlide3" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
                 </div>
-
-                <div class="slider-pagination"></div>
-                <button data-slider-prev="#testiSlide3" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button>
-                <button data-slider-next="#testiSlide3" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button>
             </div>
-        </div>
-</section>
+    </section>
 
-   
+
 
     <div class="container mb-3" data-track="Contact Form Section" id="form">
         <div class="row">
@@ -770,83 +764,51 @@ if ($keyword == "web design auckland") {
                 <img src="assets/contact-hero.png" class="img-fluid d-none d-lg-flex" alt="ContactUsFormCover">
             </div>
             <div class="col-12 col-lg-6 mt-2">
-                <div class="col-12 bg-white rounded-20 border border-2 black-border p-2 p-lg-5">
-                    <span class="text-black display-6 text-orange">Get a Quotation?
+                <div class="col-11 bg-white rounded-20 border border-2 black-border p-4 p-lg-5">
+                    <span class="text-black fs-3 text-orange">
+                        Fill out the form below to claim your <span class="text-orange"> USD 9,999 </span>Lifetime Custom ERP Plan.
                     </span>
-                    <div class="col-12">
-                        <span class="display-5 text-black">Send us Your Requests
-                        </span>
-                    </div>
-                    <form id="contact-form">
+
+                    <form id="form4">
                         <div class="row">
+                            <!-- Name -->
                             <div class="col-12 mt-3">
-                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                                <input type="text" class="form-control text-black" id="last_fname">
-                            </div>
-                            <div class="col-12 mt-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                                <input type="email" class="form-control text-black" id="last_fmail">
-                            </div>
-                            <div class="col-12">
-                                <!-- Message -->
-                                <div class="mt-3">
-                                    <label for="message" class="form-label">Project Requirements</label>
-                                    <textarea class="form-control text-black" id="last_fmessage" rows="2"
-                                        placeholder="Any details or special requests?" required></textarea>
-                                </div>
-                            </div>
-                            <style>
-                                .features- {
-                                    border: 2px solid #000;
-                                    margin-right: 10px;
-                                    margin-top: 10px;
-                                    border-radius: 30px;
-                                    cursor: pointer;
-                                    color: #000;
-                                    transition: all 0.3s ease;
-                                }
-
-                                .features-.active {
-                                    background-color: #000;
-                                    color: #fff;
-                                }
-                            </style>
-                            <div class="col-12 mt-3">
-                                <div class="">
-                                    <span class="form-label text-dark">Select a Service Type</span>
-                                </div>
-                                <div class="row d-flex justify-content-center mt-1 px-3">
-                                    <div class="col-auto features-" onclick="changeFeature(1)" id="cf_1">Custom Web
-                                        development</div>
-                                    <div class="col-auto features-" onclick="changeFeature(2)" id="cf_2">E commerce web
-                                        development</div>
-                                    <div class="col-auto features-" onclick="changeFeature(3)" id="cf_3">Digital
-                                        Marketing</div>
-                                    <div class="col-auto features-" onclick="changeFeature(4)" id="cf_4">Branding</div>
-                                    <div class="col-auto features-" onclick="changeFeature(5)" id="cf_5">App development
-                                    </div>
-                                    <div class="col-auto features- active" onclick="changeFeature(6)" id="cf_6">Other
-                                        Digital Services</div>
-                                </div>
+                                <input type="text" class="form-control text-black" id="form4_name" placeholder="Enter your Name" required>
                             </div>
 
-                            <div class="col-12 text-center mt-3">
-                                <p class="text-o h6 fw-normal">Get your quotation <span class="text-orange">within 24
-                                        hours</span> — fast and easy!</p>
+                            <!-- Email -->
+                            <div class="col-12 mt-3">
+                                <input type="email" class="form-control text-black" id="form4_email" placeholder="Enter your work email" required>
                             </div>
-                        </div>
 
-                        <div class="col-12 mt-3 d-flex justify-content-center">
-                            <!-- Submit Button -->
-                            <div class="btn-group col-10 text-center">
-                                <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-black"
-                                    id="last_thh-btn" onclick="sendMessage_2();">Get a Quotation
-                                    <i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <!-- Phone -->
+                            <div class="col-12 mt-3">
+                                <input type="tel" class="form-control text-black" id="form4_phone" placeholder="Enter your mobile number" required>
+                            </div>
+
+                            <!-- Business Name -->
+                            <div class="col-12 mt-3">
+                                <input type="text" class="form-control text-black" id="form4_bn" placeholder="Enter your Business Name" required>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12 mt-3">
+                                <textarea class="form-control text-black" id="form4_message" rows="2"
+                                    placeholder="Tell us what modules or processes you’d like to manage with ERP" required></textarea>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-12 mt-3 d-flex justify-content-center">
+                                <button type="button" class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
+                                    id="form4_btn" onclick="submitForm4();">
+                                    Get A Free Consultancy
+                                    <i class="fa-regular fa-arrow-right ms-2"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
-
                 </div>
+
             </div>
         </div>
     </div>
@@ -862,50 +824,51 @@ if ($keyword == "web design auckland") {
                             <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
                                 <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                             </div>
-                            <span class="text-black fs-3 text-orange">Let’s Discuss Your Project — Free of
-                                Charge</span><br /><span class="text-orange fs-5">Schedule a call and get expert
-                                insights tailored to your business. I'll contact you within 24 hours.
+                            <div class="">
+                                <span class="text-black fs-3 text-orange">
+                                    Fill out the form below to claim your <span class="text-orange"> USD 9,999 </span>Lifetime Custom ERP Plan.
+                                </span>
 
+                                <form id="form2">
+                                    <div class="row">
+                                        <!-- Name -->
+                                        <div class="col-12 mt-3">
+                                            <input type="text" class="form-control text-black" id="form2_name" placeholder="Enter your Name" required>
+                                        </div>
 
-                            </span>
+                                        <!-- Email -->
+                                        <div class="col-12 mt-3">
+                                            <input type="email" class="form-control text-black" id="form2_email" placeholder="Enter your work email" required>
+                                        </div>
 
-                            <form id="offer-form-ad">
-                                <div class="row">
-                                    <div class="col-12 mt-3">
-                                        <input type="text" class="form-control text-black" id="c_firstname"
-                                            placeholder="Enter your Name" required>
-                                    </div>
+                                        <!-- Phone -->
+                                        <div class="col-12 mt-3">
+                                            <input type="tel" class="form-control text-black" id="form2_phone" placeholder="Enter your mobile number" required>
+                                        </div>
 
-                                    <div class="col-12 mt-3">
-                                        <input type="email" class="form-control text-black" id="c_workEmail"
-                                            placeholder="Enter your work email" required>
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <input type="text" class="form-control text-black" id="c_mobileNumber"
-                                            placeholder="Enter your mobile number" required>
-                                    </div>
-                                    <div class="col-12">
+                                        <!-- Business Name -->
+                                        <div class="col-12 mt-3">
+                                            <input type="text" class="form-control text-black" id="form2_bn" placeholder="Enter your Business Name" required>
+                                        </div>
+
                                         <!-- Message -->
-                                        <div class="mt-3">
-                                            <textarea class="form-control text-black" id="c_fmessage" rows="2"
-                                                placeholder="To help us understand better,enter a brief description about your project"
-                                                required></textarea>
+                                        <div class="col-12 mt-3">
+                                            <textarea class="form-control text-black" id="form2_message" rows="2"
+                                                placeholder="Tell us what modules or processes you’d like to manage with ERP" required></textarea>
+                                        </div>
+
+                                        <!-- Submit -->
+                                        <div class="col-12 mt-3 d-flex justify-content-center">
+                                            <button type="button" class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
+                                                id="form2_btn" onclick="submitForm2();">
+                                                Get A Free Consultancy
+                                                <i class="fa-regular fa-arrow-right ms-2"></i>
+                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 mt-3 d-flex justify-content-center">
-                                    <!-- Submit Button -->
-                                    <div class="btn-group col-12">
-                                        <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
-                                            type="submit" id="c_thh-btn" onclick="freeConsultation();">Get A Free
-                                            Consultancy
+                                </form>
+                            </div>
 
-
-                                            <i class="fa-regular fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-
-                            </form>
 
                         </div>
                     </div>
@@ -927,48 +890,51 @@ if ($keyword == "web design auckland") {
                             <div class="col-12 d-flex justify-content-end" data-bs-dismiss="modal">
                                 <i class="fa-light fa-xmark-large fs-4 text-black" style="cursor: pointer;"></i>
                             </div>
-                            <span class="text-black fs-3 text-orange">Exclusive Offer: Business Website for <span
-                                    class="text-orange">NZD 399</span></span><br /><span class="text-black fs-5">Limited
-                                Availability — Only 13 Coupons Left to Claim This Special Price.
+                            <div class="">
+                                <span class="text-black fs-3 text-orange">
+                                    Fill out the form below to claim your <span class="text-orange"> USD 9,999 </span>Lifetime Custom ERP Plan.
+                                </span>
 
+                                <form id="form3">
+                                    <div class="row">
+                                        <!-- Name -->
+                                        <div class="col-12 mt-3">
+                                            <input type="text" class="form-control text-black" id="form3_name" placeholder="Enter your Name" required>
+                                        </div>
 
-                            </span>
+                                        <!-- Email -->
+                                        <div class="col-12 mt-3">
+                                            <input type="email" class="form-control text-black" id="form3_email" placeholder="Enter your work email" required>
+                                        </div>
 
-                            <form id="offer-form-ad">
-                                <div class="row">
-                                    <div class="col-12 mt-3">
-                                        <input type="text" class="form-control text-black" id="ef1_firstname"
-                                            placeholder="Enter your Name" required>
-                                    </div>
+                                        <!-- Phone -->
+                                        <div class="col-12 mt-3">
+                                            <input type="tel" class="form-control text-black" id="form3_phone" placeholder="Enter your mobile number" required>
+                                        </div>
 
-                                    <div class="col-12 mt-3">
-                                        <input type="email" class="form-control text-black" id="ef1_workEmail"
-                                            placeholder="Enter your work email" required>
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <input type="tel" class="form-control text-black" id="ef1_mobileNumber"
-                                            placeholder="Enter your mobile number" required>
-                                    </div>
-                                    <div class="col-12">
+                                        <!-- Business Name -->
+                                        <div class="col-12 mt-3">
+                                            <input type="text" class="form-control text-black" id="form3_bn" placeholder="Enter your Business Name" required>
+                                        </div>
+
                                         <!-- Message -->
-                                        <div class="mt-3">
-                                            <textarea class="form-control text-black" id="ef1_fmessage" rows="2"
-                                                placeholder="To help us understand better,enter a brief description about your project"
-                                                required></textarea>
+                                        <div class="col-12 mt-3">
+                                            <textarea class="form-control text-black" id="form3_message" rows="2"
+                                                placeholder="Tell us what modules or processes you’d like to manage with ERP" required></textarea>
+                                        </div>
+
+                                        <!-- Submit -->
+                                        <div class="col-12 mt-3 d-flex justify-content-center">
+                                            <button type="button" class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
+                                                id="form3_btn" onclick="submitForm3();">
+                                                Get A Free Consultancy
+                                                <i class="fa-regular fa-arrow-right ms-2"></i>
+                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 mt-3 d-flex justify-content-center">
-                                    <!-- Submit Button -->
-                                    <div class="btn-group col-12">
-                                        <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange"
-                                            type="submit" id="ef1_thh-btn" onclick="freeConsultationEF1();">Submit
+                                </form>
+                            </div>
 
-                                            <i class="fa-regular fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-
-                            </form>
 
                         </div>
                     </div>
@@ -1041,6 +1007,326 @@ if ($keyword == "web design auckland") {
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
     <script>
+        function submitForm1() {
+            const fullName = document.getElementById('form1_name').value.trim();
+            const email = document.getElementById('form1_email').value.trim();
+            const phone = document.getElementById('form1_phone').value.trim();
+            const bn = document.getElementById('form1_bn').value.trim();
+            const message = document.getElementById('form1_message').value.trim();
+
+            if (!fullName || !email || !phone || !bn || !message) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'All fields are required!',
+                    icon: 'error',
+                    confirmButtonText: 'Close Now',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                    }
+                });
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('bn', bn);
+            formData.append('message', message);
+
+            const submitButton = document.getElementById('form1_btn');
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'free_consultation_4.php', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    const response = xhr.responseText;
+                    if (response === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+
+                        document.getElementById('form1').reset();
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: response,
+                            icon: 'error',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+                    }
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Something went wrong. Please try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'Close Now',
+                        customClass: {
+                            confirmButton: 'th-btn style4',
+                            htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                        }
+                    });
+                }
+
+                submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+            };
+            xhr.send(formData);
+        }
+
+        function submitForm4() {
+            const fullName = document.getElementById('form4_name').value.trim();
+            const email = document.getElementById('form4_email').value.trim();
+            const phone = document.getElementById('form4_phone').value.trim();
+            const bn = document.getElementById('form4_bn').value.trim();
+            const message = document.getElementById('form4_message').value.trim();
+
+            if (!fullName || !email || !phone || !bn || !message) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'All fields are required!',
+                    icon: 'error',
+                    confirmButtonText: 'Close Now',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                    }
+                });
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('bn', bn);
+            formData.append('message', message);
+
+            const submitButton = document.getElementById('form4_btn');
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'free_consultation_4.php', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    const response = xhr.responseText;
+                    if (response === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+
+                        document.getElementById('form4').reset();
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: response,
+                            icon: 'error',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+                    }
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Something went wrong. Please try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'Close Now',
+                        customClass: {
+                            confirmButton: 'th-btn style4',
+                            htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                        }
+                    });
+                }
+
+                submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+            };
+            xhr.send(formData);
+        }
+
+
+        function submitForm3() {
+            const fullName = document.getElementById('form3_name').value.trim();
+            const email = document.getElementById('form3_email').value.trim();
+            const phone = document.getElementById('form3_phone').value.trim();
+            const bn = document.getElementById('form3_bn').value.trim();
+            const message = document.getElementById('form3_message').value.trim();
+
+            if (!fullName || !email || !phone || !bn || !message) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'All fields are required!',
+                    icon: 'error',
+                    confirmButtonText: 'Close Now',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                    }
+                });
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('bn', bn);
+            formData.append('message', message);
+
+            const submitButton = document.getElementById('form3_btn');
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'free_consultation_4.php', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    const response = xhr.responseText;
+                    if (response === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+
+                        document.getElementById('form3').reset();
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: response,
+                            icon: 'error',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+                    }
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Something went wrong. Please try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'Close Now',
+                        customClass: {
+                            confirmButton: 'th-btn style4',
+                            htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                        }
+                    });
+                }
+
+                submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+            };
+            xhr.send(formData);
+        }
+
+
+        function submitForm2() {
+            const fullName = document.getElementById('form2_name').value.trim();
+            const email = document.getElementById('form2_email').value.trim();
+            const phone = document.getElementById('form2_phone').value.trim();
+            const bn = document.getElementById('form2_bn').value.trim();
+            const message = document.getElementById('form2_message').value.trim();
+
+            if (!fullName || !email || !phone || !bn || !message) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'All fields are required!',
+                    icon: 'error',
+                    confirmButtonText: 'Close Now',
+                    customClass: {
+                        confirmButton: 'th-btn style4',
+                        htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                    }
+                });
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('fullName', fullName);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('bn', bn);
+            formData.append('message', message);
+
+            const submitButton = document.getElementById('form2_btn');
+            submitButton.innerHTML = '<div class="spinner-border text-light" role="status"><span class="visually-hidden"></span></div>';
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'free_consultation_4.php', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    const response = xhr.responseText;
+                    if (response === 'success') {
+                        Swal.fire({
+                            title: 'Success',
+                            text: 'Your request has been submitted!',
+                            icon: 'success',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+
+                        document.getElementById('form2').reset();
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: response,
+                            icon: 'error',
+                            confirmButtonText: 'Close Now',
+                            customClass: {
+                                confirmButton: 'th-btn style4',
+                                htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                            }
+                        });
+                    }
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Something went wrong. Please try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'Close Now',
+                        customClass: {
+                            confirmButton: 'th-btn style4',
+                            htmlContainer: 'box-text2 text-success fw-semibold mt-3'
+                        }
+                    });
+                }
+
+                submitButton.innerHTML = 'Get A Free Consultancy <i class="fa-regular fa-arrow-right ms-2"></i>';
+            };
+            xhr.send(formData);
+        }
+
+
+
         function sendMessage_2() {
             // Get form values
             const fullName = document.getElementById('last_fname').value;
@@ -1072,7 +1358,7 @@ if ($keyword == "web design auckland") {
             xhr.open('POST', 'sendmessage.php', true);
 
             // Handle response
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     // If everything is OK
                     var responseT = xhr.responseText;
@@ -1135,7 +1421,7 @@ if ($keyword == "web design auckland") {
             xhr.open('POST', 'free_consultation.php', true);
 
             // Handle response
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     var responseT = xhr.responseText;
                     if (responseT === 'success') {
@@ -1192,7 +1478,7 @@ if ($keyword == "web design auckland") {
             // Send AJAX
             var xhr = new XMLHttpRequest();
             xhr.open('POST', 'free_consultation_2.php', true);
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     var response = xhr.responseText;
                     if (response === 'success') {
@@ -1251,7 +1537,7 @@ if ($keyword == "web design auckland") {
             xhr.open('POST', 'sendmessage.php', true);
 
             // Handle response
-            xhr.onload = function () {
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     // If everything is OK
                     var responseT = xhr.responseText;
@@ -1288,10 +1574,11 @@ if ($keyword == "web design auckland") {
             var fullName = document.getElementById('ef2_firstname').value.trim();
             var email = document.getElementById('ef2_workEmail').value.trim();
             var phone = document.getElementById('ef2_mobileNumber').value.trim();
+            var bn = document.getElementById('ef2_businessName').value.trim();
             var message = document.getElementById('ef2_fmessage').value.trim();
 
             // Validate required fields
-            if (!fullName || !email || !phone || !message) {
+            if (!fullName || !email || !phone || !bn || !message) {
                 Swal.fire('Error', 'All fields are required!', 'error');
                 return;
             }
@@ -1301,6 +1588,7 @@ if ($keyword == "web design auckland") {
             formData.append('fullName', fullName);
             formData.append('email', email);
             formData.append('phone', phone);
+            formData.append('bn', bn);
             formData.append('message', message);
 
             // Get button
@@ -1309,8 +1597,8 @@ if ($keyword == "web design auckland") {
 
             // Send AJAX
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'free_consultation_3.php', true);
-            xhr.onload = function () {
+            xhr.open('POST', 'free_consultation_4.php', true);
+            xhr.onload = function() {
                 if (xhr.status === 200) {
                     var response = xhr.responseText;
                     if (response === 'success') {
@@ -1324,6 +1612,7 @@ if ($keyword == "web design auckland") {
                         document.getElementById('ef2_firstname').value = '';
                         document.getElementById('ef2_workEmail').value = '';
                         document.getElementById('ef2_mobileNumber').value = '';
+                        document.getElementById('ef2_businessName').value = '';
                         document.getElementById('ef2_fmessage').value = '';
                     } else {
                         Swal.fire('Error', response, 'error');
@@ -1340,7 +1629,7 @@ if ($keyword == "web design auckland") {
 
 
 
-        (function () {
+        (function() {
             const endpoint = "https://codyzea.co.nz/track-visit.php"; // Update with your server URL
             let userLocation = {}; // Store user location details
 
@@ -1372,7 +1661,7 @@ if ($keyword == "web design auckland") {
             }
 
             // Track tab changes
-            document.addEventListener("visibilitychange", function () {
+            document.addEventListener("visibilitychange", function() {
                 if (document.visibilityState === "visible") {
                     sendVisitData("User returned to tab");
                 } else {
@@ -1412,7 +1701,7 @@ if ($keyword == "web design auckland") {
             // Track button clicks
             function trackButtonClicks() {
                 document.querySelectorAll("[data-track-button]").forEach(button => {
-                    button.addEventListener("click", function () {
+                    button.addEventListener("click", function() {
                         sendVisitData("User clicked button", {
                             button: button.getAttribute("data-track-button")
                         });
@@ -1421,7 +1710,7 @@ if ($keyword == "web design auckland") {
             }
 
             // Initialize event listeners
-            window.addEventListener("scroll", function () {
+            window.addEventListener("scroll", function() {
                 trackScroll();
                 trackSectionVisibility();
             });
