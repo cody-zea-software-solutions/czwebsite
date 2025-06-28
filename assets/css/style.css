@@ -200,6 +200,10 @@ color: #FF5C35 !important;
 .font-jon{
   font-family: "Joan";
 }
+.font-landing{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
 .font-sofia{
   font-family: "sofia";
 }
