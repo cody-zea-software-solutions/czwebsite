@@ -5,7 +5,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -62,8 +62,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--==============================
-	  Google Fonts
-	============================== -->
+      Google Fonts
+    ============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -82,8 +82,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <!--==============================
-	    All CSS File
-	============================== -->
+        All CSS File
+    ============================== -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -111,34 +111,75 @@
 
     <div class="container-fluid px-5 py-5 px-md-0 pe-lg-5 bg-color" style="padding-bottom: 150px !important;">
         <div class="row mt-0 mt-md-3">
-            <div class="col-lg-6 order-2 order-md-1">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center mt-4 d-md-none">
-                        <a href="contact.php" class="th-btn th-icon th-black th-radius fs-4 py-4 px-5 shadow col-12 w-auto text-white">Contact Us
-                            <i class="fa-regular fa-arrow-right ms-2"></i></a>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="assets/cody/dashboard_codyclip.png" alt="" class="img-fluid pricing-image "
-                            style="width: 750px;">
-                    </div>
-                    <div class="col-12 d-flex justify-content-center mt-4 d-none d-md-flex">
-                        <a href="contact.php" class="th-btn th-icon th-black th-radius fs-4 py-4 px-5 shadow col-12 w-auto text-white">Contact Us
-                            <i class="fa-regular fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-lg-6 mt-3 px-md-5 px-lg-0 order-1 order-md-2">
+    <div class="col-lg-6 mt-3 px-md-5 px-lg-0">
                 <div class="title-area mb-25 mt-n1 mt-4 text-center text-md-center text-lg-end">
-                    <span class="sub-title sub-title4 style1 text-ani-style2 d-none d-lg-inline">Fast, Reliable, Custom POS Solutions</span>
+                    <span class="sub-title sub-title4 style1 text-ani-style2 d-none d-lg-inline">Fast, Reliable, Custom
+                        POS Solutions</span>
                     <span class="sub-title sub-title4 style1 text-ani-style2 d-lg-none">Custom POS Solutions</span>
-                    <h1 class="sec-title text-ani-style3 text-center mt-lg-3">Simplify Your Sales with <span class="text-orange">All in One POS.</span></h1>
+                    <h1 class="sec-title text-ani-style3 text-center mt-lg-3">Simplify Your Sales with <span
+                            class="text-orange">All in One POS.</span></h1>
                 </div>
-                <p class="hero-text text-dark h6 fw-bolder">Streamline your sales process with our fast, reliable, and user-friendly POS system designed to boost efficiency and grow your business. It works seamlessly on <span class="text-orange">Windows</span> and <span class="text-orange">Mac OS</span>.
-</p>
+                <p class="hero-text text-dark h6 fw-bolder">Streamline your sales process with our fast, reliable, and
+                    user-friendly POS system designed to boost efficiency and grow your business. It works seamlessly on
+                    <span class="text-orange">Windows</span> and <span class="text-orange">Mac OS</span>.
+                </p>
 
 
             </div>
+            <div class="col-12 col-lg-6 space-extra d-flex justify-content-center">
+                <div class="col-11 bg-white rounded-20 border border-2 black-border p-4 p-lg-5">
+                    <span class="text-black fs-3 text-orange">Fill out the form below to claim your <span
+                            class="text-orange"> USD 9,999 </span>Lifetime
+                        Custom ERP Plan.
+                    </span>
+                    <form id="offer-form-ad">
+                        <div class="row">
+                            <div class="col-12 mt-3">
+                                <input type="text" class="form-control text-black" id="ef2_firstname"
+                                    placeholder="Enter your Name" required>
+                            </div>
+
+                            <div class="col-12 mt-3">
+                                <input type="email" class="form-control text-black" id="ef2_workEmail"
+                                    placeholder="Enter your work email" required>
+                            </div>
+
+                            <div class="col-12 mt-3">
+                                <input type="tel" class="form-control text-black" id="ef2_mobileNumber"
+                                    placeholder="Enter your mobile number" required>
+                            </div>
+
+                            <!-- ✅ New Business Name Field -->
+                            <div class="col-12 mt-3">
+                                <input type="text" class="form-control text-black" id="ef2_businessName"
+                                    placeholder="Enter your Business Name" required>
+                            </div>
+
+                            <div class="col-12">
+                                <!-- Message -->
+                                <div class="mt-3">
+                                    <textarea class="form-control text-black" id="ef2_fmessage" rows="2"
+                                        placeholder="Tell us what modules or processes you’d like to manage with ERP"
+                                        required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-3 d-flex justify-content-center">
+                            <!-- Submit Button -->
+                            <div class="btn-group col-12">
+                                <a class="th-btn blue-btn style1 th-icon th-radius fs-5 col-12 bg-orange" type="submit"
+                                    id="ef2_thh-btn" onclick="freeConsultationEF2();">
+                                    Get A Free Consultancy
+                                    <i class="fa-regular fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        
         </div>
     </div>
 
@@ -216,7 +257,8 @@
         <div class="row d-flex justify-content-center">
             <div class="col-10 col-lg-5 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                 <div class="col-12 d-flex justify-content-end">
-                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px" alt="Feature Icon">
+                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px"
+                        alt="Feature Icon">
                 </div>
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black fw-semibold">Custom POS Setup</span>
@@ -227,7 +269,8 @@
             </div>
             <div class="col-10 col-lg-5 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                 <div class="col-12 d-flex justify-content-end">
-                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px" alt="Feature Icon">
+                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px"
+                        alt="Feature Icon">
                 </div>
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black fw-semibold">Easy Billing Interface</span>
@@ -238,7 +281,8 @@
             </div>
             <div class="col-10 col-lg-5 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                 <div class="col-12 d-flex justify-content-end">
-                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px" alt="Feature Icon">
+                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px"
+                        alt="Feature Icon">
                 </div>
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black fw-semibold">Inventory Management</span>
@@ -249,7 +293,8 @@
             </div>
             <div class="col-10 col-lg-5 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                 <div class="col-12 d-flex justify-content-end">
-                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px" alt="Feature Icon">
+                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px"
+                        alt="Feature Icon">
                 </div>
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black fw-semibold">Business Insights</span>
@@ -260,7 +305,8 @@
             </div>
             <div class="col-10 col-lg-5 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                 <div class="col-12 d-flex justify-content-end">
-                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px" alt="Feature Icon">
+                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px"
+                        alt="Feature Icon">
                 </div>
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black fw-semibold">Role Management</span>
@@ -271,7 +317,8 @@
             </div>
             <div class="col-10 col-lg-5 bg-white rounded-20 shadow-lg p-5 mt-3 mx-3">
                 <div class="col-12 d-flex justify-content-end">
-                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px" alt="Feature Icon">
+                    <img src="assets/cody/ai-platform-unified-svgrepo-com.svg" class="img-fluid" width="50px"
+                        alt="Feature Icon">
                 </div>
                 <div class="col-12 mt-3">
                     <span class="fs-2 text-black fw-semibold">Seamless Integrations</span>
@@ -327,18 +374,24 @@
             <div class="col-12">
                 <div class="title-area mb-40 text-center">
                     <span class="sub-title sub-title4 style1 text-ani-style2 text-orange">Why Codyzea?</span>
-                    <h1 class="sec-title text-ani-style3 fw-bold">What Makes <span class="text-orange">Codyzea</span> the Perfect POS Solution?</h1>
+                    <h1 class="sec-title text-ani-style3 fw-bold">What Makes <span class="text-orange">Codyzea</span>
+                        the Perfect POS Solution?</h1>
                 </div>
             </div>
             <div class="col-12 mt-5">
-                <p class="h4 text-center fw-bold text-justify">Built for Retailers, Powered by Innovation, Designed for You.</p>
-                <p class="h5 fw-normal text-justify">Codyzea is not just a point-of-sale system—it’s a comprehensive sales platform designed to simplify operations and boost growth for retailers, salons, and small businesses. From seamless checkout to inventory and staff management, every feature is created to improve your daily workflow and customer experience.</p>
+                <p class="h4 text-center fw-bold text-justify">Built for Retailers, Powered by Innovation, Designed for
+                    You.</p>
+                <p class="h5 fw-normal text-justify">Codyzea is not just a point-of-sale system—it’s a comprehensive
+                    sales platform designed to simplify operations and boost growth for retailers, salons, and small
+                    businesses. From seamless checkout to inventory and staff management, every feature is created to
+                    improve your daily workflow and customer experience.</p>
             </div>
         </div>
 
         <div class="row mt-5 d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-10">
-                <h2 class="text-orange text-center text-uppercase">Top Reasons to <span class="text-dark">Choose Codyzea</span></h2>
+                <h2 class="text-orange text-center text-uppercase">Top Reasons to <span class="text-dark">Choose
+                        Codyzea</span></h2>
                 <ul class="list-unstyled mt-4 border shadow p-2 p-md-5">
                     <li class="h6 text-o mt-3">
                         <div class="list-item">
@@ -373,7 +426,8 @@
                     <li class="h6 text-o mt-3">
                         <div class="list-item">
                             <i class="fas fa fa-check me-3 text-orange"></i>
-                            <span>Seamless integrations with popular accounting and ERP software for smooth workflows.</span>
+                            <span>Seamless integrations with popular accounting and ERP software for smooth
+                                workflows.</span>
                         </div>
                     </li>
                 </ul>
@@ -391,13 +445,16 @@
                     <span class="h2 text-orange">Let's Talk Codyzea.</span>
                 </div>
                 <div class="px-3 px-md-5 text-white mb-5 fs-4 text-justify text-center fw-normal">
-                    Whether you're looking to upgrade your checkout process or streamline your business, we’re here to help. Simply
+                    Whether you're looking to upgrade your checkout process or streamline your business, we’re here to
+                    help. Simply
                     <span class="fw-semibold text-orange">schedule a call</span>,
                     <span class="fw-semibold text-orange">request a demo</span>, or
-                    <span class="fw-semibold text-orange">send us a message</span> — and our team will get back to you promptly.
+                    <span class="fw-semibold text-orange">send us a message</span> — and our team will get back to you
+                    promptly.
                 </div>
                 <div>
-                    <a href="contact.php" class="th-btn blue-btn text-dark style4 bg-white th-icon th-radius fs-4 col-12 w-auto">
+                    <a href="contact.php"
+                        class="th-btn blue-btn text-dark style4 bg-white th-icon th-radius fs-4 col-12 w-auto">
                         Contact Us <i class="fa-regular fa-arrow-right ms-2"></i>
                     </a>
                 </div>
@@ -411,8 +468,10 @@
         <div class="row pt-5">
             <div class="col-12">
                 <div class="title-area mb-40 text-center">
-                    <span class="sub-title sub-title4 style1 text-ani-style2 text-orange">Real Voices, Real Impact</span>
-                    <h1 class="sec-title text-ani-style3 fw-bold">What People Say About <br> <span class="text-orange">Cody Clip</span></h1>
+                    <span class="sub-title sub-title4 style1 text-ani-style2 text-orange">Real Voices, Real
+                        Impact</span>
+                    <h1 class="sec-title text-ani-style3 fw-bold">What People Say About <br> <span
+                            class="text-orange">Cody Clip</span></h1>
                 </div>
             </div>
         </div>
@@ -421,12 +480,18 @@
             <div class="col-12 col-lg-11 shadow border p-5" style="border-radius: 20px;">
                 <div class="row py-md-5">
                     <div class="col-12 col-md-3 col-lg-4 d-flex justify-content-center align-items-center">
-                        <img src="assets/cody/channels4_profile.jpg" style="border-radius: 20px !important;" class="img-fluid" alt="">
+                        <img src="assets/cody/channels4_profile.jpg" style="border-radius: 20px !important;"
+                            class="img-fluid" alt="">
                     </div>
                     <div class="col-12 col-md-9 col-lg-8 mt-5 mt-md-0">
                         <div class="fw-bold h3 fst-italic text-md-end">Dam Sathara Wewurukannala TV.</div>
                         <div class="mt-4 h6 fst-italic">
-                            <span class="h6">"&nbsp;&nbsp;&nbsp;</span>Implementing Cody Clip transformed our entire media workflow. With its intuitive metadata management, seamless integration with our editing and playout systems, and powerful AI-driven capabilities, Cody Clip significantly enhanced our operational efficiency and content discoverability. The proactive support and continuous updates ensure we always stay ahead in the rapidly evolving broadcast landscape. Highly recommended for any media organization aiming for excellence.
+                            <span class="h6">"&nbsp;&nbsp;&nbsp;</span>Implementing Cody Clip transformed our entire
+                            media workflow. With its intuitive metadata management, seamless integration with our
+                            editing and playout systems, and powerful AI-driven capabilities, Cody Clip significantly
+                            enhanced our operational efficiency and content discoverability. The proactive support and
+                            continuous updates ensure we always stay ahead in the rapidly evolving broadcast landscape.
+                            Highly recommended for any media organization aiming for excellence.
                             <span class="h6">&nbsp;&nbsp;&nbsp;"</span>
                         </div>
                     </div>
@@ -441,72 +506,94 @@
         <div class="row mt-5">
             <div class="title-area mb-40 text-center">
                 <span class="sub-title sub-title4 style1 text-ani-style2 text-orange">Visual Highlights</span>
-                <h1 class="sec-title text-ani-style3 mt-1">Explore Our <span class="text-orange">Image Gallery</span></h1>
+                <h1 class="sec-title text-ani-style3 mt-1">Explore Our <span class="text-orange">Image Gallery</span>
+                </h1>
             </div>
 
         </div>
         <div class="row gap-3 d-flex justify-content-center align-items-center">
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/ana_rep.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/anaarep.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/analytics_reports_mockup.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/archive_storage.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/codyclip_ingestfinished.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/dashboard_codyclip.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/ingest_channels.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/integrations_hub.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/media_library.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/metadata_panel.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/mockup-001.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/mockup-002.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/mockup-003-new.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/proj-timeline-001.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/proj_timeline-002.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/prxied_assets.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/publishig_playout_002.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/publishing_and_playout.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/sheduled_ingest.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/system_settings_page.png" class="img-fluid" alt="">
             </div>
-            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper" style="border-radius: 20px; cursor: pointer;">
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2 shadow d-flex justify-content-center align-items-center image-wrapper"
+                style="border-radius: 20px; cursor: pointer;">
                 <img src="assets/cody/userandrolesmanagement.png" class="img-fluid" alt="">
             </div>
         </div>
@@ -558,7 +645,7 @@
     <!-- JavaScript -->
     <script>
         document.querySelectorAll('.image-wrapper').forEach(div => {
-            div.addEventListener('click', function() {
+            div.addEventListener('click', function () {
                 const imgSrc = this.querySelector('img').getAttribute('src');
                 const modal = document.getElementById('imageModal');
                 const modalImg = document.getElementById('modalImage');
@@ -567,12 +654,12 @@
             });
         });
 
-        document.getElementById('closeModal').addEventListener('click', function() {
+        document.getElementById('closeModal').addEventListener('click', function () {
             document.getElementById('imageModal').style.display = 'none';
         });
 
         // Close modal on outside click
-        window.addEventListener('click', function(e) {
+        window.addEventListener('click', function (e) {
             const modal = document.getElementById('imageModal');
             if (e.target === modal) {
                 modal.style.display = 'none';
@@ -600,13 +687,14 @@
     <?php require_once "footer.php"; ?>
 
     <!--********************************
-			Code End  Here 
-	******************************** -->
+            Code End  Here 
+    ******************************** -->
 
     <!-- Scroll To Top -->
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
         </svg>
     </div>
