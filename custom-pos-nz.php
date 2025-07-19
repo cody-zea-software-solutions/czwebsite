@@ -5,41 +5,40 @@ require_once "assets/process/database.php";
 $keyword = isset($_GET['utm_term']) ? $_GET['utm_term'] : 'default keyword';
 
 // Default headline
-$headline = "Transform the Way You Work with Custom ERP Solutions";
+$headline = "Run Your Business Smarter with Cody Zea POS";
 
 // Change the headline based on the keyword
-if ($keyword == "web design auckland") {
-    $headline = "Creative Web Design Solutions for Auckland Businesses!";
-} elseif ($keyword == "website design auckland") {
-    $headline = "Expert Website Design for Auckland’s Growing Businesses!";
-} elseif ($keyword == "website design christchurch") {
-    $headline = "Top Website Design Services for Christchurch Businesses!";
-} elseif ($keyword == "web design chch") {
-    $headline = "Affordable Web Design for Christchurch Companies!";
-} elseif ($keyword == "digital agency auckland") {
-    $headline = "Your Trusted Digital Agency in Auckland for Business Growth!";
-} elseif ($keyword == "auckland web designers") {
-    $headline = "Professional Auckland Web Designers for Stunning Websites!";
-} elseif ($keyword == "website designers") {
-    $headline = "Expert Website Designers Crafting Unique Online Experiences!";
-} elseif ($keyword == "website design company") {
-    $headline = "The Website Design Company That Elevates Your Brand!";
-} elseif ($keyword == "website design wellington") {
-    $headline = "High-Quality Website Design Services for Wellington Businesses!";
-} elseif ($keyword == "web development near me") {
-    $headline = "Professional Web Development Near You — Affordable & Fast!";
-} elseif ($keyword == "web design new zealand") {
-    $headline = "Custom Web Design Solutions for New Zealand Businesses!";
-} elseif ($keyword == "website developers nz") {
-    $headline = "Skilled Website Developers Serving All of New Zealand!";
-} elseif ($keyword == "website developers auckland") {
-    $headline = "Experienced Auckland Website Developers for Your Business!";
+if ($keyword == "pos") {
+    $headline = "Simple, Smart POS for NZ Businesses!";
+} elseif ($keyword == "pos software") {
+    $headline = "All-in-One POS Software for Retail, Salons & Cafés!";
+} elseif ($keyword == "pos system") {
+    $headline = "Modern POS System – Just NZ$240/mo!";
+} elseif ($keyword == "retail pos") {
+    $headline = "Retail POS That Tracks Sales & Stock Instantly!";
+} elseif ($keyword == "point of sale") {
+    $headline = "Point of Sale System That Works Online & Offline!";
+} elseif ($keyword == "point of sales") {
+    $headline = "Fast, Easy Point of Sales Solution for NZ Shops!";
+} elseif ($keyword == "pos point of sale system") {
+    $headline = "POS + Point of Sale in One – Powerful & Easy!";
+} elseif ($keyword == "salon pos system") {
+    $headline = "POS System Built for Salons & Spa Businesses!";
+} elseif ($keyword == "cafe pos system") {
+    $headline = "Serve Fast with Café POS Built for NZ Hospitality!";
+} elseif ($keyword == "mobile pos") {
+    $headline = "Mobile-Friendly POS for On-the-Go Sales!";
+} elseif ($keyword == "cloud pos system") {
+    $headline = "Cloud POS System with Offline Capability!";
+} elseif ($keyword == "multi branch pos") {
+    $headline = "POS for Multi-Branch Retail & Franchise Stores!";
+} elseif ($keyword == "small business pos") {
+    $headline = "POS for Small NZ Businesses – No Setup Fee!";
 } else {
-    // Default headline will be shown if no keyword matches
-    $headline = "Transform the Way You Work with Custom ERP Solutions
-
-";
+    // Default fallback headline
+    $headline = "Run Your Business Smarter with Cody Zea POS";
 }
+
 ?>
 
 
@@ -80,15 +79,16 @@ if ($keyword == "web design auckland") {
         gtag('config', 'G-2R14CV971L');
     </script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo $headline ?></title>
-    <meta name="author" content="Cody Zea Software Solutions">
-    <meta name="description"
-        content="Need a website? Get fast, secure, and affordable web development services in NZ from Cody Zea. Book a free call today and take your business online.">
-    <meta name="keywords"
-        content="Web Development NZ, Website Developers Auckland, Affordable Web Design, Fast Websites NZ, Business Website NZ, Cody Zea Web Development, Custom Website Design, Web Developers Near Me, Auckland Web Design, Web Solutions NZ">
-    <meta name="robots" content="INDEX,FOLLOW">
+  <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title><?php echo $headline ?></title>
+<meta name="author" content="Cody Zea Software Solutions">
+<meta name="description"
+    content="Looking for a POS system in New Zealand? Cody Zea offers smart, affordable POS software for retail, salons, cafés, and more. Try it today — just NZ$240/month.">
+<meta name="keywords"
+    content="POS System NZ, Point of Sale Software, Retail POS New Zealand, Salon POS, POS for Café, Cloud POS System, POS Software NZ, Cody Zea POS, Inventory Management POS, Small Business POS NZ">
+<meta name="robots" content="INDEX,FOLLOW">
+
 
 
 
